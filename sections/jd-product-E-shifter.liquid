@@ -1,0 +1,55 @@
+{{ 'jd-product-E-shifter.css' | asset_url | stylesheet_tag }}
+
+<div id="brakebanner">
+    <div class="brakebanner_right">
+        <section class="b-interactive-feature" id="feature-brakes">
+            <div class="brakebanner_text">
+                <div class="brakebanner_textBox">
+                     <div class="brakebanner_textTitle ebike_h1">
+                         {{section.settings.title}}
+                     </div>
+                     <div class="brakebanner_textText">
+                         {{section.settings.text}}
+                     </div>
+                </div>
+             </div>
+            <section class="b-interactive-feature__animation" data-bike-animation="hydraulic-brakes" data-bike-model="bee">
+            </section>
+        </section>
+        
+    </div>
+</div>
+
+<script src="https://cdn.shopify.com/s/files/1/0554/7098/1274/files/jquery.min.js?v=1667543998" type="text/javascript"></script>
+<script src="https://cdn.shopify.com/s/files/1/0554/7098/1274/files/motor1.js?v=1666929598"></script>
+<script src="{{ 'jd-productImage_describe.js' | asset_url }}"></script>
+<script src="https://cdn.shopify.com/s/files/1/0554/7098/1274/files/motor3.js?v=1666929599"></script>
+{% schema %}
+{
+    "name": "product E-shifter",
+    "class": "product-E-shifter",
+    
+    "settings":[
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"  
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+        }
+    ],
+    "blocks":[
+      
+    ],
+    "presets": [
+        {
+            "name": "product E-shifter"
+        }
+    ]
+}
+
+
+{% endschema %}

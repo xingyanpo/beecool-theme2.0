@@ -1,0 +1,425 @@
+@media (max-width:999px) {
+    .pagePolicy_righ_mobile{
+        display: flex;
+        align-items: center;
+    }
+    .pagePolicy_righ_mobile svg{
+        width: 25px;
+        height: auto;
+        margin-right: 10px;
+    }
+    .pagePolicy_righ_mobile svg path{
+        fill: #2A408E;
+    }
+    .pagePolicy_righ_mobile .cls-2{
+        fill: #2A408E;
+    }
+    /* bannet img*/
+    .banner_or_videos{
+        width: 100%;
+    }
+    .banner_or_video_positions{
+        position: relative;
+    }
+    .banner_or_video_positions img, .banner_or_video_positions video{
+        width: 100%;
+    }
+    .banner_or_video_positionBoxs {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #251A1A1a;
+    }
+    .banner_or_video_positionBox_boxs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+  
+    .banner_or_video_positionBox_heads{
+        font-size: 35px;
+        color: #fff;
+        line-height: 1;
+        text-align: center;
+        font-weight: 600;
+        margin: 0;
+    }
+  
+    /* end */
+    .page-Policy .container{
+        padding: 0;
+    }   
+    .jd_pagePolicy_left{
+        width: 100%;
+        padding: 36px 20px 0;
+    }
+    
+    .jd_pagePolicy_right{
+        padding: 50px 15px;
+    }
+    .jd_pagePolicy_leftBox{
+        display: flex;  
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .pagePolicy_left_box{
+        width: 48.5%;
+        display: flex;
+        margin-top: 14px;
+        height: 30px;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        background: #2A408E;
+        border: 1px solid #2A408E;
+        align-items: center;
+    }  
+    .pagePolicy_left_title{
+        font-size: 14px;
+    }
+  
+   
+    /* 右边内容 */
+    .jd_pagePolicy_right{
+        width: 100%;
+
+
+    }
+    .jd_pagePolicyFaq{
+        padding-top: 25px;
+    }
+    .pagePolicy_right_title{
+        font-size: 16px;
+        color: #2A408E;
+        font-weight: 600;
+        line-height: 1;
+      
+    }
+    .pagePolicy_right_title:not(:first-child){
+        margin-top: 25px;
+    }
+   
+    .pagePolicy_right_faq_text{
+        font-size: 14px;
+        color: #15151590;
+        padding: 0 10px;
+        background: #F6F6F6;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #DADADC;   
+    }
+    .pagePolicy_right_faq [aria-expanded="false"]{
+        font-size: 14px;
+        color: #151515;
+        font-weight: 600;
+        padding: 16px 10px 12px;
+        line-height: 15px;
+        border-bottom: 1px solid #DADADC;   
+    
+    }
+    .pagePolicy_right_faq [aria-expanded="true"] {
+        font-size: 14px;
+        border-bottom: unset;
+        padding: 16px 10px 12px;
+        line-height: 15px;
+        border-top: 1px solid #DADADC; 
+        color: #2A408E;
+        font-weight: 600;
+        background: #F6F6F6;
+        margin-top: 14px;
+    }
+  
+    .jd_pagePolicy_content{
+        color: #151515;
+    }
+    /* endfaq */
+    /* 其他page */
+    .jd_pagePolicy_content p strong{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .jd_pagePolicy_content h2 b{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .jd_pagePolicy_content ul{
+        padding: 0;
+    }
+    .jd_pagePolicy_content ol{
+        padding: 0;
+    }
+    .jd_pagePolicy_content li{
+        font-size: 14px;
+        font-weight: 300;
+        list-style: none;
+    }
+    .jd_pagePolicy_content li b ,.jd_pagePolicy_content p b{
+        font-weight: 400;
+    }
+    .jd_pagePolicy_content li::before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #2A408E;
+        border-radius: 50%;
+        margin-right:10px;
+    }
+    .jd_pagePolicy_content p{
+        font-size: 14px;
+        font-weight: 300;
+        
+    }
+    .jd_pagePolicy_content u{
+        color: #2A408E;
+    }
+    .pagePolicy_links{
+        display: flex;
+        align-items: center;
+        opacity: 1;
+        color: #2A408E;
+        border: 1px solid #2A408E;
+        padding: 0 3px;
+        background: #fff;
+    }
+  
+    .pagePolicy_links svg path{
+        fill: #2A408E;
+    }
+    
+
+}
+@media (min-width:1000px) {
+    /* bannet img*/
+    .banner_or_videos{
+        width: 100%;
+    }
+    
+    .banner_or_video_positions{
+        position: relative;
+    }
+    .banner_or_video_positions img, .banner_or_video_positions video{
+        width: 100%;
+    }
+    .banner_or_video_positionBoxs {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #251A1A1a;
+    }
+    .banner_or_video_positionBox_boxs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+  
+    .banner_or_video_positionBox_heads{
+        color: #fff;
+        line-height: 155px;
+        text-align: center;
+        font-weight: 600;
+        margin: 0;
+    }
+  
+    /* end */
+    .jd_pagePolicy_all{
+        display: flex;
+        margin: 70px auto 128px;
+        justify-content: space-between;
+    }
+    .jd_pagePolicy_left{
+        width: 100%;
+        padding-top: 28px;
+        max-width: 281px;
+    }
+    
+    .pagePolicy_left_box{
+        display: flex;
+        padding: 0 30px;
+        height: 58px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #151515;
+        opacity: 0.8;
+        align-items: center;
+    }
+    .pagePolicy_left_svg{
+        width: 36px;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .pagePolicy_left_box:nth-child(3) svg path {
+        fill: #151515;
+    }
+  
+    .pagePolicy_left_svg svg{
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+    }
+    .pagePolicy_left_box:nth-child(3) svg{
+        width: 27px;
+        height: 27px;
+    }
+    .pagePolicy_left_box:nth-child(4) svg{
+        width: 36px;
+        height: 36px;
+    }
+ 
+
+    .pagePolicy_left_box:nth-child(7) svg{
+        width: 32px;
+        height: 32px;
+       
+        margin-top: 10px;
+    }
+ 
+    .pagePolicy_left_box:nth-child(8) svg{
+        width: 26px;
+        height: 26px;
+    }
+  
+  
+   
+    /* 右边内容 */
+    .jd_pagePolicy_right{
+        width: 100%;
+        margin-top: 12px;
+      
+    }
+    .jd_pagePolicyFaq{
+        padding-top: 28px;
+        margin-left: 108px;
+    }
+    .pagePolicy_right_title{
+        font-size: 27px;
+        color: #2A408E;
+        font-weight: 600;
+        line-height: 30px;
+        padding: 0 22px;
+      
+    }
+    .pagePolicy_right_title:not(:first-child){
+        margin-top: 60px;
+    }
+   
+    .pagePolicy_right_faq_text{
+        font-size: 18px;
+        color: #15151590;
+        padding: 0 25px;
+        background: #F6F6F6;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #DADADC;   
+    }
+    .pagePolicy_right_faq [aria-expanded="false"]{
+        font-size: 20px;
+        color: #151515;
+        font-weight: 600;
+        padding: 30px 46px 30px 22px;
+        line-height: 30px;
+        border-bottom: 1px solid #DADADC;   
+        /* padding-bottom: 40px; */
+    
+    }
+    .pagePolicy_right_faq [aria-expanded="true"] {
+        font-size: 20px;
+        border-bottom: unset;
+        padding: 30px 46px 30px 22px;
+        line-height: 30px;
+        border-top: 1px solid #DADADC; 
+        color: #2A408E;
+        font-weight: 600;
+        background: #F6F6F6;
+        margin-top: 40px;
+    }
+    .jd_pagePolicy_leftBox{
+        position: sticky;
+        top: 128px;
+        overflow: hidden;
+    }
+    .jd_pagePolicy_content{
+        color: #151515;
+        border-left: 1px solid #DADADC;
+        padding: 28px 50px 0 50px;
+        margin-left: 50px;
+    }
+    /* endfaq */
+    /* 其他page */
+    .jd_pagePolicy_content p strong{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .jd_pagePolicy_content h2 b{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .jd_pagePolicy_content ul{
+        padding: 0;
+    }
+    .jd_pagePolicy_content ol{
+        padding: 0;
+    }
+    .jd_pagePolicy_content li{
+        font-size: 18px;
+        font-weight: 300;
+        list-style: none;
+    }
+    .jd_pagePolicy_content li b ,.jd_pagePolicy_content p b{
+        font-weight: 400;
+    }
+    .jd_pagePolicy_content li::before {
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #2A408E;
+        border-radius: 50%;
+        margin-right:10px;
+    }
+    .jd_pagePolicy_content p{
+        font-size: 18px;
+        font-weight: 300;
+        
+    }
+    .jd_pagePolicy_content u{
+        color: #2A408E;
+    }
+    .pagePolicy_links{
+        color: #fff;
+        margin: 16px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 29px;
+        opacity: 1;
+        background: #2A408E;
+      
+    }
+    .pagePolicy_links svg path{
+        fill: #fff !important;
+    }
+    .pagePolicy_links .zhuiz-2{
+        fill: none !important;
+    }
+    .pagePolicy_links .zhuiz-1, .pagePolicy_links .zhuiz-2{
+        stroke: #fff;
+    }
+    .pagePolicy_links .cls-2,.pagePolicy_links .cls-1{
+        fill: #fff !important;
+    }
+    .pagePolicy_links .pagePolicy_left_box svg{
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+}

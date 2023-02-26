@@ -1,0 +1,94 @@
+{{ 'jd-genera-icon.css' | asset_url | stylesheet_tag }}
+<div class="general_icon-all">
+   <div class="container">
+     
+        
+    <div class="pc">
+        <div class="general_icon">
+            {% for block in section.blocks %}
+            <div class="general_icon_box">
+                <div class="general_icon_svg">
+                    <img loading="lazy"  {% render 'image-attributes' , image: block.settings.svg%}>
+                    
+                </div>
+                <div class="general_icon-text">
+                    {{block.settings.text }}
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+       
+    </div>
+          
+       <div class="mobile">
+        <div class="general_icon">
+            <div class="swiper generalIconSwiper">
+                <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    <div class="swiper-slide">
+                        <div class="general_icon_box">
+                            <div class="general_icon_svg">
+                                <img loading="lazy"  {% render 'image-attributes' , image: block.settings.svg_mobile%}>
+                            </div>
+                            <div class="general_icon-text">
+                                {{block.settings.text }}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+   
+</div>
+<script>
+    var swiper = new Swiper(".generalIconSwiper", {
+        slidesPerView: 2,
+        loop:true,
+        spaceBetween: 16,
+        // centeredSlides: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+     
+    });
+  </script>
+{% schema %}
+{
+    "name": "General Icon",
+    "settings": [
+   
+  
+    ],
+    "blocks": [
+        {
+            "name": "General Icon",
+            "type": "General_Icon",
+            "settings": [
+              {
+                "type": "image_picker",
+                "id": "svg",
+                "label": "icon"
+              },
+              {
+                "type": "image_picker",
+                "id": "svg_mobile",
+                "label": "icon Mobile"
+              },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "text"
+                }
+            ]
+        }
+    ],
+    "presets": [{
+    "name": "General Icon"
+    
+    }]
+}
+{% endschema %}

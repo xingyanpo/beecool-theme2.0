@@ -1,0 +1,77 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "page_width": "large"
+      }
+    },
+    "16626180705f7d57a3": {
+      "type": "jd-JoinOurOfflineNetwork",
+      "settings": {
+        "header": "<p>Join BeeCool Bikes' Offline Network<\/p>",
+        "header_mobile": "<p>Join BeeCool <br\/>Bikes' <br\/>Offline Network<\/p>",
+        "text": "<p>To become a BeeCool Bikes’ offline dealer and a test ride spot,<br\/> please provide your business information below. Our representatives will contact you ASAP.<\/p>",
+        "text_mobile": "<p>To become a BeeCool Bikes’ offline dealer and a test ride spot, please provide your business information below.<br\/>Our representatives will contact you ASAP.<\/p>",
+        "img_banner": "shopify:\/\/shop_images\/1_e17c62a8-2a5d-408d-918e-2bb71cbd936c.png",
+        "img_bannerMobile": "shopify:\/\/shop_images\/2_33dcb73b-a4fa-4f96-bed6-5f9430c04976.png",
+        "describe_title": "<p>Join Us Now<\/p>",
+        "describe_text": "<p>As BeeCool gets more and more fans, we want more people to try our e-bikes and enjoy riding with us. Great dealer policies and nice team communication! What are you waiting for? Join us now! By partnering with beecoolbikes you will be part of the electric bike revolution.<\/p>"
+      }
+    },
+    "2b168b32-67eb-42b0-959d-3d66bda4b0e3": {
+      "type": "jd-afterSales",
+      "blocks": {
+        "1b51e1ef-75d1-4eb6-b288-552223c2267b": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
+            "title": "Free Shipping",
+            "subtitle": "<p>To the lower 48 states<\/p>"
+          }
+        },
+        "59ab64dc-581b-4b45-861d-584e9eb6efcf": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
+            "title": "2-Year Warranty",
+            "subtitle": "<p>Buy with confidence<\/p>"
+          }
+        },
+        "773252bb-4a1e-4501-a872-ac6131fcd161": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
+            "title": "Secure Payment",
+            "subtitle": "<p>Secure payment with Shopify<\/p>"
+          }
+        },
+        "7223283e-7c4c-4f52-85fc-d843f9c86cd6": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
+            "title": "Cost-effective",
+            "subtitle": "<p>Direct to consumer pricing<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1b51e1ef-75d1-4eb6-b288-552223c2267b",
+        "59ab64dc-581b-4b45-861d-584e9eb6efcf",
+        "773252bb-4a1e-4501-a872-ac6131fcd161",
+        "7223283e-7c4c-4f52-85fc-d843f9c86cd6"
+      ],
+      "settings": {
+        "policy_color": "#f3f5f5",
+        "policy_scolor_mobile": "#f3f5f5"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16626180705f7d57a3",
+    "2b168b32-67eb-42b0-959d-3d66bda4b0e3"
+  ]
+}

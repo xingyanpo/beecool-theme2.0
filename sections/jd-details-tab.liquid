@@ -1,0 +1,171 @@
+{{ 'jd-details-tab.css' | asset_url | stylesheet_tag }}
+  <div class="details-product_all" style="background: {{section.settings.bgcolor}};">
+    <div class="details-product_head container">
+      <div class="details_p_h">{{section.settings.header}}</div>
+      <div class="details_p_d">{{section.settings.desc}}</div>
+    </div>
+    <div>
+      <div class="details-product_box container">
+        <ul class="box-ul">
+            <div class="swiper smySwiper">
+                <div class="swiper-wrapper">
+                    {% for item in section.blocks %}
+                        <li class="swiper-slide {% if forloop.first %}active{%endif%}">{{item.settings.cate_name}}</li>
+                    {% endfor %}
+                </div>      
+            </div>
+        </ul>
+        
+        <ul class="box-de">
+          {% for block in section.blocks %}
+            <li class="{% if forloop.first %}selected{%endif%}">
+                <div class="box-de-box">
+                
+                    <div class="box-de-left">
+                        <div>
+                            {{block.settings.cate_title}}
+                        </div>
+                        <div>
+                            {{block.settings.cate_text}}
+                        </div>
+                    </div>
+                    <div class="box-de-right">
+                          <div class="box-de-right-img">
+                              <img loading="lazy" class="gallery__image" {% render 'image-attributes', image: block.settings.img %}>
+                             
+                           </div>
+                         
+                    </div>
+                </div>
+            </li>
+          {% endfor %}
+            
+        </ul>
+       
+      </div>
+    </div>
+    
+  </div>
+
+  <script>
+     (()=>{
+          
+            var swiper = new Swiper(".smySwiper",{
+                slidesPerView: "auto",
+                
+                breakpoints: { 
+                320: { 
+                    slideToClickedSlide: true,
+                    slidesPerView: 'auto',
+                    spaceBetween: 20
+                },
+                768: {  
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                1280: { 
+                    slidesPerView: 4,
+                    spaceBetween: 46,
+                },
+                1400: { 
+                    slidesPerView: 5,
+                    spaceBetween: 46,
+                }
+               
+            }
+                
+            })
+            // var swiper = new Swiper(".msmySwiper",{
+            //     slidesPerView: 3.5,
+            //     freeMode: true,
+            //     watchSlidesProgress: true,
+            // })
+            // var swiper2 = new Swiper(".mobileSwiper", {
+            //     spaceBetween: 10,
+            //     thumbs: {
+            //         swiper: swiper,
+            //     }
+            // });
+        
+
+     
+            $(".box-ul li").click(function () {
+                $(this).addClass("active active::after").siblings("li").removeClass("active");
+                var index = $(this).index();
+                $(".box-de>li:eq(" + index + ")").fadeIn(1000).siblings("li").hide()
+            })
+          
+         
+          
+       
+    })()
+    
+   
+ 
+  
+  </script>
+  
+  {% schema %}
+  {
+  "name": "Details Product",
+  "class": "shopify-section--Details-product",
+  "settings": [
+  {
+  "type": "text",
+  "id": "header",
+  "label": "Header"
+  },
+  {
+  "type": "richtext",
+  "id": "desc",
+  "label": "Desc"
+  },
+ {
+    "type": "color",
+    "id": "bgcolor",
+    "label": "background"
+   
+ }
+  ],
+  "blocks": [
+  {
+  "name": "categroy",
+  "type": "categroy",
+  "settings": [
+    {
+        "type": "text",
+        "id": "cate_name",
+        "label": "Categroy Name"
+    },
+    {
+        "type": "richtext",
+        "id": "cate_title",
+        "label": "title"
+    },
+    {
+        "type": "richtext",
+        "id": "cate_text",
+        "label": "Text"
+    },
+  
+    {
+        "type": "image_picker",
+        "id": "img",
+        "label": "img"
+    },
+    {
+        "type": "image_picker",
+        "id": "img_mobile",
+        "label": "img Mobile"
+    }
+  
+  ]
+  }
+  ],
+  "presets": [
+  {
+  "name": "Details Product"
+  }
+  ]
+  }
+  {% endschema %}

@@ -1,0 +1,62 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "collections_to_show": "all",
+        "show_collection_title": true
+      }
+    },
+    "c7537f4c-59c1-485c-875b-dd8b1b04d853": {
+      "type": "jd-afterSales",
+      "blocks": {
+        "d593b06f-0da3-40d0-9fd0-778f013dbe13": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
+            "title": "Free Shipping",
+            "subtitle": "<p><strong> <\/strong>To the lower 48 states<\/p>"
+          }
+        },
+        "4c52601d-3319-4d06-aab2-6e60ae7e35c3": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
+            "title": "2-Year Warranty",
+            "subtitle": "<p>Buy with confidence<\/p>"
+          }
+        },
+        "136fd7a1-25d8-425d-8429-9b7e61f2cd63": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
+            "title": "Secure Payment",
+            "subtitle": "<p>Secure payment with Shopify<\/p>"
+          }
+        },
+        "4baee929-ff98-43e6-8d50-36e6eeb62142": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
+            "title": "Cost-effective",
+            "subtitle": "<p>Direct to consumer pricing<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d593b06f-0da3-40d0-9fd0-778f013dbe13",
+        "4c52601d-3319-4d06-aab2-6e60ae7e35c3",
+        "136fd7a1-25d8-425d-8429-9b7e61f2cd63",
+        "4baee929-ff98-43e6-8d50-36e6eeb62142"
+      ],
+      "settings": {
+        "policy_color": "#F3F5F5",
+        "policy_scolor_mobile": "#fff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "c7537f4c-59c1-485c-875b-dd8b1b04d853"
+  ]
+}

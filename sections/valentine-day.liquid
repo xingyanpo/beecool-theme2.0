@@ -1,0 +1,236 @@
+{% if section.settings.is_use_popup == true %}
+<style>
+@keyframes interOut {
+    0% {
+        transform: translate(0, -120%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+@keyframes interAfterOut {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, -120%);
+        opacity: 0;
+    }
+}
+
+.valentine-day-close {display: none;}
+.valentine-day-open {display: block;}
+.valentine-day-content-open {animation: interOut 0.6s ease-in-out;}
+.valentine-day-content-close {animation: interAfterOut 0.6s ease-in-out;transform: translate(0, -120%);}
+.valentine-day-wrap {overflow:auto;width: 100%;height: 100%;position: fixed;left: 0;top: 0;bottom: 0;right: 0;background-color: rgba(0, 0, 0, 0.3);display: flex;justify-content: center;align-items: center;z-index: 9999;}
+.valentine-day-content {position: relative;;width: 668px;background-color: #fff;text-align: center;border-radius: 10px;display: flex;align-items: center;flex-wrap: wrap;justify-content: center;overflow: auto;max-height:100%;}
+.valentine-day-content::-webkit-scrollbar {display:none;}  
+.valentine-day-content-background-image {background-image:url({{section.settings.background_image}});background-repeat: no-repeat;background-position: center;background-size: cover;}
+.valentine-day-title {line-height: 1;margin: 0;padding: 80px 20px 0 20px;font-size: 32px;font-weight: 600;color: {{section.settings.title_color}};}
+.valentine-day-subtitle {line-height: 1;margin: 0;padding: 20px 20px 0 20px;font-size: 26px;font-weight: 600;color: {{section.settings.subtitle_color}};}
+.valentine-day-description {margin: 0;padding: 20px 20px 20px 20px ;font-size: 20px;color: {{section.settings.description_color}};font-weight: 500;}
+.valentine-day-button {width: 160px;height: 40px;background-color: {{section.settings.button_background_color}};color: {{section.settings.button_text_color}};display: block;line-height: 40px;border-radius: 4px;text-decoration: none;font-size: 18px;}
+.valentine-day-video {width: 100%;padding: 30px 0 0 0 ;transform: translate(0, 3px);}
+.valentine-day-img {width: 100%;object-fit:cover;padding: 30px 0 0 0 ;transform: translate(0, 3px);}
+.valentine-day-close-button {position: absolute;right: 10px;top:10px;width: 24px;height: 24px;cursor: pointer;}
+.valentine-day-close-button > svg {width: 100%;height: 100%;}
+.valentine-day-video-wrap {position: relative;}
+.valentine-day-video-tag {position: absolute;top: 36px;right: 3px;background-color: {{section.settings.tag_background_color}};padding: 2px 5px;border-radius: 3px;font-weight: 500;color: {{section.settings.tag_text_color}};line-height:1.2;}
+
+@media screen and (max-width: 768px) {
+    .valentine-day-content {width: 95%;}
+    .valentine-day-title {font-size: 28px;padding: 60px 0 0 0;}
+    .valentine-day-description {font-size: 16px;}
+    .valentine-day-button {width: 140px;height: 36px;line-height: 36px;font-size: 16px;}
+    .valentine-day-video {transform: translate(0, 4px);padding-top:15px;}
+    .valentine-day-img {padding-top:15px;}
+}
+</style>
+
+<section class="valentine-day valentine-day-close">
+    <div class="valentine-day-wrap">
+        <div class="valentine-day-content valentine-day-content-open {% if section.settings.background_image %}valentine-day-content-background-image{% endif %}">
+            <h2 class="valentine-day-title">{{ section.settings.title }}</h2>
+            <h4 class="valentine-day-subtitle">{{ section.settings.subtitle }}</h4>
+            <p class="valentine-day-description">{{ section.settings.description }}</p>
+            <a class="valentine-day-button" href="{{ section.settings.button_url }}">{{ section.settings.button_text }}</a>
+            <div class="valentine-day-video-wrap">
+                {% assign type_url = section.settings.video_url | split: "." | last  %}
+                {% if type_url == 'mp4' %}
+                  <video id="videos" class="valentine-day-video" muted="muted" src="{{ section.settings.video_url }}" autoplay="autoplay" loop preload="auto" webkit-playsinline="true" playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="true" x-webkit-airplay="allow" x5-video-orientation="portraint"></video>
+                {% else %}
+                  <img  class="valentine-day-img" src={{  section.settings.video_url }}>
+                {% endif %}
+                {% if section.settings.tag_text != blank %}<div class="valentine-day-video-tag">video</div>{% endif %}
+            </div>
+            <div class="valentine-day-close-button"><svg t="1674030291926" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2702" width="200" height="200"><path d="M842.947458 778.116917 576.847937 512.013303 842.946434 245.883083c8.67559-8.674567 13.447267-20.208251 13.43908-32.477692-0.008186-12.232602-4.7727-23.715121-13.414521-32.332383-8.655124-8.677637-20.149922-13.450337-32.384571-13.4575-12.286838 0-23.808242 4.771677-32.474622 13.434987L512.019443 447.143876 245.88206 181.050496c-8.66331-8.66331-20.175505-13.434987-32.416294-13.434987-12.239765 0-23.75196 4.770653-32.414247 13.43294-8.66024 8.636704-13.428847 20.12434-13.437034 32.356942-0.008186 12.269441 4.76349 23.803125 13.437034 32.476669l266.135336 266.13022L181.050496 778.11794c-8.664334 8.66331-13.43601 20.173458-13.43601 32.41527 0 12.239765 4.7727 23.752983 13.437034 32.417317 8.662287 8.66331 20.173458 13.43294 32.413224 13.43294 12.240789 0 23.754007-4.770653 32.416294-13.43294l266.134313-266.100544 266.101567 266.100544c8.66331 8.66331 20.185738 13.43294 32.4429 13.43294 12.265348-0.008186 23.74889-4.771677 32.369222-13.412474C860.81643 825.081555 860.821547 795.991006 842.947458 778.116917z" fill="#272636" p-id="2703"></path></svg></div>
+        </div>
+    </div>
+</section>
+  
+<script>
+window.onload = function () {
+  (() => {
+    let session_storage = sessionStorage.getItem('valentine_day_popup')
+    if (!session_storage) {
+        sessionStorage.setItem('valentine_day_popup', true)
+
+        let valentine_day = document.querySelector('.valentine-day')
+        let valentine_day_close = document.querySelector('.valentine-day-close-button')
+        let valentine_day_content = document.querySelector('.valentine-day-content')
+        let valentine_day_wrap = document.querySelector('.valentine-day-wrap')
+
+        setTimeout(() => {
+            valentine_day.classList.add('valentine-day-open')
+            valentine_day.classList.remove('valentine-day-close')
+            document.body.style.overflow = 'hidden'; //can't scroll
+            document.addEventListener('touchmove', function (e) {
+                passive: false;
+            }, false);
+        }, 2000)
+
+        valentine_day_close.addEventListener('click', (e) => {
+            e.stopPropagation()
+            closePopup()
+        })
+
+        function closePopup() {
+            valentine_day_content.classList.remove('valentine-day-content-open')
+            valentine_day_content.classList.add('valentine-day-content-close')
+            setTimeout(() => {
+                valentine_day.classList.remove('valentine-day-open')
+                valentine_day.classList.add('valentine-day-close')
+            }, 600)
+            document.body.style.overflow = 'auto'; //can scroll
+            document.removeEventListener('touchmove', function (e) {
+                passive: false;
+            }, false);
+        }
+
+        valentine_day_wrap.addEventListener('click', (e) => {
+            e.stopPropagation()
+            closePopup()
+        })
+        valentine_day_content.addEventListener('click', (e) => {
+            e.stopPropagation()
+        })
+      
+        setTimeout(() => {
+          closePopup()
+        }, 10000)
+      
+    }
+  })()
+}
+</script>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Valentine day",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "is_use_popup",
+        "label": "Whether to enable popups",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Valentine's Day hot sale"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title Color",
+        "default": "#000"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle",
+        "default": "Valentine's Day hot sale"
+      },
+      {
+        "type": "color",
+        "id": "subtitle_color",
+        "label": "Subtitle Color",
+        "default": "#000"
+      },
+      {
+        "type": "textarea",
+        "id": "description",
+        "label": "description",
+        "default": "Valentine's Day is a hot sale. There are many activities during Valentine's Day" 
+      },
+      {
+        "type": "color",
+        "id": "description_color",
+        "label": "Description Color",
+        "default": "#666"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Get to"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Url",
+        "default": "/collections"
+      },
+      {
+        "type": "color",
+        "id": "button_background_color",
+        "label": "Button Background Color",
+        "default": "#2a408e"
+      },
+      {
+        "type": "color",
+        "id": "button_text_color",
+        "label": "Button Text Color",
+        "default": "#FFF"
+      },
+      {
+        "type": "url",
+        "id": "video_url",
+        "label": "Video Or Image Url"
+      },
+      {
+        "type": "text",
+        "id": "tag_text",
+        "label": "Tag Text",
+        "default": "Video",
+        "info": "If you do not fill in, it will not be displayed"
+      },
+      {
+        "type": "color",
+        "id": "tag_text_color",
+        "label": "Tag Text Color",
+        "default": "#FFF"
+      },
+      {
+        "type": "color",
+        "id": "tag_background_color",
+        "label": "Tag Background Color",
+        "default": "#2a408e"
+      },
+      {
+        "type": "url",
+        "id": "background_image",
+        "label": "Background Image",
+        "info": "If you do not fill in, it will not be displayed"
+      }
+    ],
+    "presets": [{
+      "name": "Valentine day"
+    }]
+  }
+{% endschema %}

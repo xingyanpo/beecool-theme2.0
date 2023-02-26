@@ -1,0 +1,41 @@
+{
+  "layout": false,
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons"
+      ],
+      "settings": {
+      }
+    },
+    "sma_reviews_section_auto": {
+      "type": "reviews-importer-product",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sma_reviews_section_auto"
+  ]
+}

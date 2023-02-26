@@ -1,0 +1,123 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "1662621338c52e7006": {
+      "type": "jd-dealers-top",
+      "blocks": {
+        "f3194dc1-7e89-4732-bafd-0574f0f1d569": {
+          "type": "dealers_top",
+          "settings": {
+            "title": "<p>Coastal-Ebikes at Carolina Beach, NC (Test Rides & Dealer)<\/p>",
+            "text": "<p>Contact: Brett G<br\/>Location: Carolina Beach, NC 28428<br\/>Phone: 910-543-2233<br\/>Email:  sales@coastal-ebikes.com<\/p>"
+          }
+        },
+        "e263be24-ee93-471f-8012-fbf98725ce74": {
+          "type": "dealers_top",
+          "settings": {
+            "title": "<p>Test Ride & Dealer in Phoenix, Arizona<\/p>",
+            "text": "<p><strong>Contact<\/strong>:  Robert<br\/><strong>Location<\/strong>:  Wittmann, AZ 85361 <br\/><strong>Email<\/strong>:robolc4@gmail.com<br\/><br\/>*Please make an appointment via e-mail before you come to the spot.<\/p>"
+          }
+        },
+        "80c4c0ad-fbfc-4614-8cb2-58637b602903": {
+          "type": "dealers_top",
+          "settings": {
+            "title": "<p>Orange County Test Ride & Dealer<\/p>",
+            "text": "<p><strong>Contact<\/strong>:  Neil<br\/><strong>Location<\/strong>:  Stanton, CA 90680<br\/><strong>Phone: <\/strong>(714) 341-7998 (9:30am to 5pm PST）<\/p>"
+          }
+        },
+        "f622507f-fc55-435b-8a12-284184c2c510": {
+          "type": "dealers_top",
+          "settings": {
+            "title": "<p>BeeCool Bikes Test Ride & Reparing Station in Delaware<\/p>",
+            "text": "<p><strong>Contact<\/strong>:  Mr. Lee<br\/><strong>Location<\/strong>:  Hockessin, DE, 19707 <br\/><strong>Email<\/strong>: lizhy0307new@yahoo.com<br\/><\/p><p>*Please make an appointment via e-mail before you come to the spot.<\/p>"
+          }
+        },
+        "16c8ee6c-25ba-49b3-90e7-1f5c196bf4e1": {
+          "type": "dealers_top",
+          "settings": {
+            "title": "<p>VRooMeBike Rentals (Test Ride)<\/p>",
+            "text": "<p><strong>Contact<\/strong>:  Tom<br\/><strong>Location<\/strong>:  Virgin, UT 84779<br\/><strong>Phone<\/strong>:  (435) 668-1878<\/p>"
+          }
+        },
+        "fe3cb5ff-ca1c-497b-b791-c519e20c5b87": {
+          "type": "dealers_top",
+          "settings": {
+            "title": "<p>Test Ride in Star, Idaho<\/p>",
+            "text": "<p><strong>Contact<\/strong>:  Doug W<br\/><strong>Location<\/strong>:  Star, ID 83669<br\/><strong>E - Mail<\/strong>:  Twisterback@gmail.com<\/p>"
+          }
+        },
+        "c4493430-7ce7-4d7c-9ac9-7bbd197a0ec1": {
+          "type": "dealers_top",
+          "settings": {
+            "title": "<p>Test Ride Spot in Los Angeles Area, California<\/p>",
+            "text": "<p><strong>Contact<\/strong>:   John<br\/><strong>Location<\/strong>:   Los Angeles, CA<br\/><strong>E - Mail<\/strong>:  jonnysezebike@gmail.com<\/p>"
+          }
+        },
+        "cfa3a046-65bd-4547-85c8-8035935eb41c": {
+          "type": "dealers_top",
+          "settings": {
+            "title": "<p>Test Ride Spot in Buffalo, New York<\/p>",
+            "text": "<p><strong>Contact<\/strong>:  Shanne<br\/><strong>Location<\/strong>:  West Seneca, NY 14224<br\/><strong>E - Mail<\/strong>:  shanne@wnybikes.com<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "f3194dc1-7e89-4732-bafd-0574f0f1d569",
+        "e263be24-ee93-471f-8012-fbf98725ce74",
+        "80c4c0ad-fbfc-4614-8cb2-58637b602903",
+        "f622507f-fc55-435b-8a12-284184c2c510",
+        "16c8ee6c-25ba-49b3-90e7-1f5c196bf4e1",
+        "fe3cb5ff-ca1c-497b-b791-c519e20c5b87",
+        "c4493430-7ce7-4d7c-9ac9-7bbd197a0ec1",
+        "cfa3a046-65bd-4547-85c8-8035935eb41c"
+      ],
+      "settings": {
+        "title": "<p>Test Ride & Local Dealers<\/p>",
+        "text": "<p style=\"line-height:1.4\">Would you like to test or buy BeeCool e-bikes offline? Please check the following test spots or offline dealers. Email or call the representatives at the spot to make a reservation about the walk-in time for testing or offline purchase.<br>\n<\/p><p style=\"font-size: 18px;line-height:1.4;background-color:#FF4b00;padding:15px;color:#FFF;border-radius:5px;font-weight:350\">As for all the after-sales problems, please contact our official customer service staff directly and provide the corresponding proof for your issues. Do not contact our offline dealers directly for after-sales problems without consulting us first or we will not bear the repairing cost\/purchase cost of the replacement parts unauthorized by our official customer service staff directly. <\/p>"
+      }
+    },
+    "16626153940d81d594": {
+      "type": "jd-dealers-bottom",
+      "blocks": {
+        "55061643-3906-4272-b74c-b574cbb01f9c": {
+          "type": "dealers_bottom",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/1_2918fd7d-577b-4cdf-b56e-8c6dc2e08f7b.png",
+            "text": "<p>Welcome to partner with us<br\/>Become our dealer!<\/p>",
+            "button": "JOIN NOW",
+            "link": "shopify:\/\/pages\/join-our-offline-network"
+          }
+        },
+        "ac3d3320-10be-4fe1-84dc-795bb866f4fe": {
+          "type": "dealers_bottom",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/2_4e35e6e5-1bff-4fa0-a9ec-1cec7cdd1eab.png",
+            "text": "<p>Want to get your dream BeeCool bike right now?<br\/>Shop online and it will be delivered to your door with no shipping fee!<\/p>",
+            "button": "BUY NOW",
+            "link": "shopify:\/\/collections\/ebike"
+          }
+        }
+      },
+      "block_order": [
+        "55061643-3906-4272-b74c-b574cbb01f9c",
+        "ac3d3320-10be-4fe1-84dc-795bb866f4fe"
+      ],
+      "settings": {
+        "title": "<p>Welcome <br\/>to contact us<\/p>",
+        "text": "<p>Join us and change the world with us<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1662621338c52e7006",
+    "16626153940d81d594"
+  ]
+}

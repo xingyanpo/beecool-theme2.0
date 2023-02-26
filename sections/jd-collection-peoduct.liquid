@@ -1,0 +1,87 @@
+{%- comment -%}
+<div class="collection-peoduct-all">
+    <div class="container">
+        {% for block in section.blocks %}
+            <div class="collection-peoductBlock">
+                 <!-- 描述部分 -->
+                <div class="collection-peoduct-left">
+                    <div class="collection-peoduct-leftTitle">
+                        {{block.settings.title}}
+                    </div>
+                    <div class="collection-peoduct-leftText">
+                        {{block.settings.text}}
+                    </div>
+                    <div class="collection-peoduct-leftDec">
+                        {{block.settings.des}}
+                    </div>
+                    <a href=" {{block.settings.link}}" class="collection-peoductButton"> {{block.settings.button}}</a>
+                </div>
+                <!-- 产品 -->
+                <div class="collection-peoduct-right ">
+                    {%- for product in block.settings.products -%}
+                        {%- render 'product-item-collection', product: product -%}
+                    {%- endfor -%}
+            
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "collection peoduct",
+    "settings": [
+   
+    ],
+    "blocks": [
+    {
+        "type": "collectionProduct",
+        "name": "collectionProduct",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "title"
+            
+            },
+            {
+                "type": "text",
+                "id": "text",
+                "label": "text"
+            
+            },
+            {
+                "type": "richtext",
+                "id": "des",
+                "label": "des"
+            
+            },
+            {
+                "type": "url",
+                "id": "link",
+                "label": "link"
+            
+            },
+            {
+                "type": "text",
+                "id": "button",
+                "label": "button"
+            
+            },
+            {
+                "type": "product_list",
+                "id": "products",
+                "label": "products"
+               
+              }
+        ]
+    }
+    ],
+    "presets": [{
+    "name": "collection peoduct"
+    
+    }]
+}
+{% endschema %}
+{%- endcomment -%}

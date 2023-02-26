@@ -1,0 +1,804 @@
+<style>
+  @keyframes easeInOut {
+      0% {
+          opacity: 0;
+          transform: translate(0, 100%);
+      }
+
+      100% {
+          opacity: 1;
+
+          transform: translate(0, 0);
+      }
+  }
+
+  .mini-popup {
+      width: 100%;
+      z-index: 999;
+      position: relative;
+  }
+
+  .mini-popup-button-wrap {
+      width: 70px;
+      height: 70px;
+      position: fixed;
+      right: 40px;
+      bottom: 40px;
+      cursor: pointer;
+  }
+
+  .mini-popup-button {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+  }
+
+  .mini-popup-content {
+      overflow: hidden;
+      width: 360px;
+      position: fixed;
+      right: 100px;
+      bottom: 120px;
+      border-radius: 6px;
+      max-height: 600px;
+      height: calc(100vh - 220px);
+      background-color: #FFF;
+      animation: easeInOut 1s ease;
+      animation-fill-mode: forwards;
+  }
+
+  .mini-popup-content-wrap {
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+  }
+
+  .mini-popup-button-close {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      cursor: pointer;
+  }
+
+  .mini-popup-button-close>svg {
+      width: 20px;
+      height: 20px;
+      fill: #FFF;
+  }
+
+  .mini-popup-content-wrap::-webkit-scrollbar {
+      width: 6px;
+      background-color: #F5F5F5;
+  }
+
+  .mini-popup-content-wrap::-webkit-scrollbar-track {
+      background-color: #F5F5F5;
+  }
+
+  .mini-popup-content-wrap::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #ccc;
+  }
+
+  .mini-popup-hide {
+      display: none;
+  }
+
+  .mini-popup-head {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background-color: #2a408e;
+  }
+
+  .mini-popup-head>p {
+      padding: 0 30px 0 10px;
+      margin: 0;
+      overflow: hidden;
+      color: #FFF;
+      line-height: 50px;
+  }
+
+  .content-head-img {
+      background-image: url("{{ section.settings.title_img | image_url: width: 1080 }}");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 150px;
+  }
+
+  .content-head-img>h4 {
+      padding: 20px 50px 0 10px;
+      margin: 0;
+      color: #FFF;
+      font-weight: 500;
+      font-size: 18px;
+  }
+
+  .content-head-img>h2 {
+      padding: 10px 50px 10px 10px;
+      margin: 0;
+      color: #FFF;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 1;
+  }
+
+  .content-body-content {
+      width: 92%;
+      margin: 0 auto;
+      box-shadow: 0 0 13px 0 rgb(0 0 0 / 9%);
+      transform: translate(0, -20px);
+      background-color: #FFF;
+      border-radius: 6px;
+  }
+  .product-recommend,.recommentded-accessories,.mini-popup-activity,.mini-popup-media {
+    padding:16px 0 0 0;
+    box-sizing: border-box;
+  }
+  .product-recommend > h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+    color: #333;
+    padding: 10px 0 5px 0;
+  }
+  .product-recommend > p {
+    line-height: 120%;
+    margin-bottom: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #666;
+    font-size: 14px;
+    text-align:center;
+  }
+  .swiper-slide-img {
+    width: 100%;
+    height:180px;
+  }
+  .swiper-slide-img > img {
+     width: 100%;
+     height: 100%;
+    object-fit:cover;
+   }
+  .x-swiper-pagination {
+    transform: translate(0, -10px);
+  }
+  .x-swiper-pagination  .swiper-pagination-bullet {
+    background-color: #FFF;
+    opacity: 0.5;
+  }
+  .x-swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #FFF ;
+    opacity: 1 !important;
+  }
+  .mini-popup-swiper {
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .recommentded-accessories-wrap {
+    display:flex;
+    padding-bottom:10px;
+  }
+  .recommentded-accessories-left {
+    width:30%;
+    aspect-ratio:1/1;
+  }
+  .recommentded-accessories-left > img {
+    width:100%;
+    height:100%;
+    object-fit:contain;
+  }
+  .recommentded-accessories-right {
+    padding-top: 10px;
+    flex:1;
+  }
+  .recommentded-accessories-right > p{
+    font-size:12px;
+    line-height:1.2;
+    padding:2px 5px;
+  }
+  .recommentded-accessories-right-button {
+    padding: 5px 10px;
+    display:flex;
+    justify-content:space-between;
+  }
+  .recommentded-accessories-right-button > button, .recommentded-accessories-right-button > form {
+    width:46%;
+    line-height:30px;
+    background-color:#FFF;
+    box-shadow:0 0 6px 0 rgb(0 0 0 / 9%);
+    font-size:14px;
+    height:30px;
+    text-align:center;
+    color: #333;
+    border-radius:4px;
+  }
+  .recommentded-accessories-right-button > form > button {
+    width:100%;
+    border-radius:4px;
+  }
+  .recommentded-accessories-right-button button:first-child {
+    border:1px solid #ccc;
+  }
+  .recommentded-accessories-right-button button:first-child > a {
+    width:100%;
+    height:100%;
+    display:block;
+  }
+  .recommentded-accessories-right-button form > button {
+    background-color: #2a408e;
+    color: #FFF;
+  }
+
+  .mini-popup-activity > h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+    color: #333;
+    padding: 5px 0 5px 0;
+  }
+  .mini-popup-activity > p {
+    line-height: 120%;
+    margin-bottom: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #666;
+    font-size: 14px;
+    text-align:center;
+  }
+  .mini-popup-activity > .mini-popup-login {
+    text-align:center;
+    padding: 10px 0 0 0;
+  }
+  .mini-popup-activity > a {
+    width:120px;
+    height:50px;
+    border-radius: 6px;
+    background-color:#2a408e;
+    text-align:center;
+    font-size: 16px;
+    color: #FFF;
+    cursor: pointer;
+    margin:0 auto;
+    padding: 10px 0;
+    display: block;
+  }
+  .shielded-wire {
+    background-color: #ccc;
+    height: 1px;
+    width: 100%;
+    margin: 30px 0 15px 0;
+  }
+   .mini-popup-media > h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+    color: #333;
+    padding: 5px 0 5px 0;
+  }
+  .mini-popup-media > p {
+    line-height: 120%;
+    margin-bottom: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #666;
+    font-size: 14px;
+    text-align:center;
+  }
+  .mini-popup-media-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  .mini-popup-media-content > a {
+    width:35%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .mini-popup-media-content > a >img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: block !important;
+    bottom: 0 !important;
+  }
+  .mini-popup-form {
+    padding:0 12px 10px 12px;
+  }
+   .form-input-wrap {
+    display:flex;
+    justify-content: space-between;
+  }
+  .from-field-text  {
+    width: 68%;
+    height: 38px;
+    border: #ccc 1px solid;
+    border-radius: 4px;
+    padding:0 5px;
+  }
+  .form-button-submit {
+    width:30%;
+    margin:0;
+    background: red;
+    color: #FFF;
+    text-align: center;
+    border-radius: 4px;
+    height: 38px;
+  }
+ .form-error {
+   background-color: rgba(222, 42, 42, 0.5);
+   margin-bottom: 5px;
+   color:#FFF;
+   padding: 5px;
+   border-radius:4px;
+ }
+ .form-success {
+   margin-bottom: 5px;
+   background-color: rgba(42,64,142 ,0.5);
+   color:#000;
+   padding: 5px;
+ }
+  .mini-popup-button-box {
+    position: relative;
+  }
+
+  .mini-popup-button-warn {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index:1;
+    border-radius:50%;
+    color: #FFF;
+    line-height: 20px;
+    text-align:center;
+    font-size:18px;
+    font-weight:600;
+    display: var(--button-show)
+  }
+
+  @media screen and (max-width: 768px) {
+      .mini-popup-content {
+          width: 100%;
+          right: 0;
+          bottom: 0;
+          border-radius: 0;
+          max-height: 600px;
+          height: 100%;
+          top: 45px;
+          max-height: unset;
+      }
+
+      .mini-popup-button-wrap {
+          width: 50px;
+          height: 50px;
+          right: 20px;
+          bottom: 20px;
+          z-index:999;
+      }
+     .mini-popup-button-warn {
+       width: 18px;
+       height:18px;
+       line-height:18px;
+       font-size: 16px;
+       top: -3px;
+       right: -3px;
+     }
+  }
+</style>
+
+<section class="mini-popup">
+  <div class="mini-popup-button-wrap">
+    <div class="mini-popup-button-box">
+      <img
+      src="https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/icon1.png?v=1673423315"
+      alt="mini-popup"
+      class="mini-popup-button"
+    >
+    <img
+      src="https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/icon2.png?v=1673423316"
+      alt="mini-popup"
+      class="mini-popup-button mini-popup-hide"
+    >
+    <div class='mini-popup-button-warn' style="--button-show: none;">1</div>
+    </div>
+  </div>
+
+  <div class="mini-popup-content mini-popup-hide">
+    <div class="mini-popup-content-wrap">
+      <div class="content-head-img">
+        <h4>{{ section.settings.title_line_one }}</h4>
+        <h2>{{ section.settings.title_line_two }}</h2>
+      </div>
+      <div class="content-body-content">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            
+            {%- when 'product_recommend' -%}
+                <div class='product-recommend'>
+                  <h2>{{ block.settings.recomment_title }}</h2>
+                  <p>{{ block.settings.recomment_description }}</p>
+                  <div class="swiper mini-popup-swiper">
+                      <div class="swiper-wrapper">
+                         {%- if block.settings.recomment_img_one != blank -%}<div class="swiper-slide swiper-slide-img">{{ block.settings.recomment_img_one | image_url: width: 1080 | image_tag }}</div>{%- endif -%}
+                         {%- if block.settings.recomment_img_two != blank -%}<div class="swiper-slide swiper-slide-img">{{ block.settings.recomment_img_two | image_url: width: 1080 | image_tag }}</div>{%- endif -%}
+                         {%- if block.settings.recomment_img_three != blank -%}<div class="swiper-slide swiper-slide-img">{{ block.settings.recomment_img_three | image_url: width: 1080 | image_tag }}</div>{%- endif -%}
+                         {%- if block.settings.recomment_img_four != blank -%}<div class="swiper-slide swiper-slide-img">{{ block.settings.recomment_img_four | image_url: width: 1080 | image_tag }}</div>{%- endif -%}
+                         {%- if block.settings.recomment_img_five != blank -%}<div class="swiper-slide swiper-slide-img">{{ block.settings.recomment_img_five | image_url: width: 1080 | image_tag }}</div>{%- endif -%}
+                      </div>
+                      <div class="swiper-pagination x-swiper-pagination"></div>
+                  </div>
+                </div>
+        
+            {%- when 'recommentded_accessories' -%}
+              <div class='recommentded-accessories'>
+                {%- for product in block.settings.accessories_list -%}
+                  <div class='recommentded-accessories-wrap'>
+                    <div class='recommentded-accessories-left'>
+                      <img
+                          class="product-item__primary-image"
+                          loading="lazy"
+                          data-media-id="{{ product.featured_media.id | escape }}"
+                          sizes="{{ sizes_attribute }}"
+                          {% render 'image-attributes',
+                            image: product.featured_media,
+                            sizes: '200,300,400,500,600,700,800,900,1000,1100,1200'
+                          %}
+                      >
+                  </div>
+                  <div class='recommentded-accessories-right'>
+                    <p>{{ product.title }}</p>
+                    <p style='color: #2a408e;font-weight: 500;font-size: 14px;'><span>{{ product.price | money }}</span>{% if product.price != product.compare_at_price %}<span style="color:red;text-decoration: line-through;padding-left: 5px;">{{ product.compare_at_price | money }}</span>{% endif %}</p>
+                    <div class='recommentded-accessories-right-button'>
+                      <button><a href='{{ product.url }}'>See More</a></button>
+                      {%- form 'product', product, is: 'product-form' -%}
+                        <input type="hidden" name="quantity" value="1">
+                        <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
+                        <button
+                          is="loader-button"
+                          type="submit"
+                        >
+                          Add Cart
+                        </button>
+                      {%- endform -%}
+                    </div>
+                  </div>
+                  </div>
+                {%- endfor -%}
+              <div class='shielded-wire'></div>
+              </div>
+        
+        {%- when 'activity' -%}
+            <div class="mini-popup-activity">
+              <h2>{{ block.settings.activity_title}}</h2>
+              <p>{{ block.settings.activity_desc }}</p>
+              <a href="{{ block.settings.button_url }}" {% if block.settings.is_opon_in_new_tag == true %}target="_blank"{% endif %}>{{ block.settings.button_text }}</a>
+              <p class='mini-popup-login'>Already have an account? <a href="/account/login">Sign in</a></p>
+              <div class='mini-popup-form'>
+                 {%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form' -%}
+                    {%- if form.posted_successfully? -%}
+                      <p class="alert alert--success alert--center form-success">{{ 'footer.newsletter.success' | t }}</p>
+                    {%- else -%}
+                      {%- if form.errors -%}
+                      <p class="alert alert--error alert--center form-error">{{ form.errors.messages['email'] }}</p>
+                    {%- endif -%}
+                      <div class='form__input-wrapper form-input-wrap'>
+                        <input type="hidden" name="contact[tags]" value="newsletter">
+                        <input placeholder="Enter your email address" type="email" id="footer[{{ section.id }}][contact][email]" name="contact[email]" class="form__field form__field--text from-field-text" required="">
+                        <label style='display:none;' for="footer[{{ section.id }}][contact][email]" class="form__floating-label">Enter your email address</label>
+                        <button type="submit" class="form__submit form__submit--tight button--primary form-button-submit">Subscribe</button>
+                      </div>
+                    {%- endif -%}
+                  {%- endform -%}
+              </div>
+              <div class='shielded-wire'></div>
+            </div>
+
+        {%- when 'media' -%}
+            <div class="mini-popup-media">
+              <h2>{{ block.settings.media_title}}</h2>
+              <p>{{ block.settings.media_desc }}</p>
+              <div class='mini-popup-media-content'>
+                <a href='{{ block.settings.facebook_url }}' target="_blank"><img src="{{ block.settings.facebook_img |image_url: width:1080 }}"></a>
+                <a href='{{ block.settings.instagram_url }}' target="_blank"><img src="{{ block.settings.instagram_img |image_url: width:1080 }}"></a>
+                <a href='{{ block.settings.twitter_url }}' target="_blank"><img src="{{ block.settings.twitter_img |image_url: width:1080 }}"></a>
+                <a href='{{ block.settings.tiktok_url }}' target="_blank"><img src="{{ block.settings.tiktok_img |image_url: width:1080 }}"></a>
+              </div>
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    <div class="mini-popup-head mini-popup-hide">
+      <p>{{ section.settings.scroll_title }}</p>
+    </div>
+    <div class="mini-popup-button-close">
+      <svg
+        t="1673341495567"
+        class="icon"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="2698"
+        width="200"
+        height="200"
+      >
+        <path d="M97.1 91.2c11.3-11.3 29.8-11.3 41.1 0l782.2 782.2c11.3 11.3 11.3 29.8 0 41.1s-29.8 11.3-41.1 0L97.1 132.2c-11.3-11.3-11.3-29.7 0-41z" fill="#ffffff" p-id="2699"></path>
+        <path d="M920.4 91.1c11.3 11.3 11.3 29.8 0 41.1L138.2 914.5c-11.3 11.3-29.8 11.3-41.1 0s-11.3-29.8 0-41.1L879.3 91.1c11.4-11.3 29.8-11.3 41.1 0z" fill="#ffffff" p-id="2700"></path>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    
+     var swiper = new Swiper(".mini-popup-swiper", {
+       slidesPerView: 1,
+       grabCursor: true,
+       loop: true,
+       autoplay: true,
+       pagination: {
+          el: '.swiper-pagination',
+        }
+     })
+    
+      let mini_popup_button_wrap = document.querySelector('.mini-popup-button-wrap')
+      let mini_popup_button = document.querySelectorAll('.mini-popup-button')
+      let mini_popup_content = document.querySelector('.mini-popup-content')
+      let mini_popup_button_close = document.querySelector('.mini-popup-button-close')
+      let mini_popup_content_warp = document.querySelector('.mini-popup-content-wrap')
+      let mini_popup_head = document.querySelector('.mini-popup-head')
+      let mini_popup_button_warn = document.querySelector('.mini-popup-button-warn')
+
+      if(sessionStorage.getItem('mini_button_warn_isshwo')) {
+         mini_popup_button_warn.style.setProperty('--button-show', 'none')
+      } else {
+        mini_popup_button_warn.style.setProperty('--button-show', 'block')
+      }
+
+      let calss_close = 'mini-popup-hide'
+      let screen_width = document.body.clientWidth
+      mini_popup_button_wrap.addEventListener('click', () => {
+          if (mini_popup_button[0].classList.contains(calss_close)) {
+              mini_popup_button[0].classList.remove(calss_close)
+              mini_popup_button[1].classList.add(calss_close)
+              mini_popup_content.classList.add(calss_close)
+              document.body.style.overflow = 'auto'; //can scroll
+                document.removeEventListener('touchmove', function (e) {
+                    passive: false;
+                }, false);
+          } else {
+              mini_popup_button[1].classList.remove(calss_close)
+              mini_popup_button[0].classList.add(calss_close)
+              mini_popup_content.classList.remove(calss_close)
+              mini_popup_button_warn.style.setProperty('--button-show', 'none')
+              sessionStorage.setItem('mini_button_warn_isshwo', true)
+          }
+      })
+      mini_popup_button_close.addEventListener('click', () => {
+          mini_popup_button[1].classList.add(calss_close)
+          mini_popup_button[0].classList.remove(calss_close)
+          mini_popup_content.classList.add(calss_close)
+          if (screen_width < 768) {
+              document.body.style.overflow = 'auto'; //can scroll
+              document.removeEventListener('touchmove', function (e) {
+                  passive: false;
+              }, false);
+          }
+      })
+      mini_popup_content_warp.addEventListener('scroll', () => {
+          let offsetHeight = mini_popup_content_warp.scrollTop
+          if (offsetHeight > 100) {
+              mini_popup_head.classList.remove('mini-popup-hide')
+          } else {
+              mini_popup_head.classList.add('mini-popup-hide')
+          }
+          if (screen_width < 768) {
+              document.body.style.overflow = 'hidden'; //can't scroll
+              document.addEventListener('touchmove', function (e) {
+                  passive: false;
+              }, false);
+          }
+      })
+  })()
+</script>
+
+{% schema %}
+{
+  "name": "Mini Popup",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Title Line 1",
+      "id": "title_line_one",
+      "default": "Welcome to"
+    },
+    {
+      "type": "text",
+      "label": "Title Line 2",
+      "id": "title_line_two",
+      "default": "Beecool"
+    },
+    {
+      "type": "image_picker",
+      "id": "title_img",
+      "label": "Title Image"
+    },
+    {
+      "type": "text",
+      "label": "Scroll Title",
+      "id": "scroll_title",
+      "default": "beecool bikes"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Product Recommend",
+      "type": "product_recommend",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Recommend Title",
+          "id": "recomment_title",
+          "default": "Recommend"
+        },
+        {
+          "type": "textarea",
+          "label": "Recommend Description",
+          "id": "recomment_description",
+          "default": "We have a complete accessories system for you to choose from"
+        },
+        {
+          "type": "image_picker",
+          "id": "recomment_img_one",
+          "label": "Image One"
+        },
+        {
+          "type": "image_picker",
+          "id": "recomment_img_two",
+          "label": "Image Two"
+        },
+        {
+          "type": "image_picker",
+          "id": "recomment_img_three",
+          "label": "Image Three"
+        },
+        {
+          "type": "image_picker",
+          "id": "recomment_img_four",
+          "label": "Image Four"
+        },
+        {
+          "type": "image_picker",
+          "id": "recomment_img_five",
+          "label": "Image five"
+        }
+      ]
+    },
+    {
+      "name": "Recommended Accessories",
+      "type": "recommentded_accessories",
+      "settings": [
+        {
+          "type": "product_list",
+          "id": "accessories_list",
+          "label": "Accessories"
+        }
+      ]
+    }, 
+    {
+      "name": "Activity",
+      "type": "activity",
+      "settings": [
+        {
+          "type": "text",
+          "id": "activity_title",
+          "label": "Activity Title",
+          "default": "Activity"
+        },
+        {
+          "type": "textarea",
+          "id": "activity_desc",
+          "label": "Activity Description",
+          "default": "Great discounts at this event, choose as many products as you need"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "Join Us"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button Url"
+        },
+        {
+            "type": "checkbox",
+            "id": "is_opon_in_new_tag",
+            "label": "Is Open In New Tag",
+            "default": false
+          }
+      ]
+    },
+    {
+      "name": "Media",
+      "type": "media",
+      "settings": [
+        {
+          "type": "text",
+          "id": "media_title",
+          "label": "Media Title",
+          "default": "Media"
+        },
+        {
+          "type": "textarea",
+          "id": "media_desc",
+          "label": "Media Description",
+          "default": "Find more fun in social media"
+        },
+        {
+          "type": "image_picker",
+          "id": "facebook_img",
+          "label": "Facebook Image"
+        },
+        {
+          "type": "url",
+          "id": "facebook_url",
+          "label": "Facebook Url"
+        },
+        {
+          "type": "image_picker",
+          "id": "instagram_img",
+          "label": "Instagram Image"
+        },
+        {
+          "type": "url",
+          "id": "instagram_url",
+          "label": "Instagram Url"
+        },
+        {
+          "type": "image_picker",
+          "id": "twitter_img",
+          "label": "Twitter Image"
+        },
+        {
+          "type": "url",
+          "id": "twitter_url",
+          "label": "Twitter Url"
+        },
+        {
+          "type": "image_picker",
+          "id": "tiktok_img",
+          "label": "Tiktok Image"
+        },
+        {
+          "type": "url",
+          "id": "tiktok_url",
+          "label": "Tiktok Url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mini Popup"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,78 @@
+
+  <div id="{{section.settings.key}}" class=" index-img-container">
+    <div  class="container">
+      <div class="pc-image-box"  style=" background-repeat: no-repeat;
+      background-size: 90%; background-position: {{section.settings.position}}; background-image: url({{section.settings.image | img_url: '1520x'}});">
+
+      </div>
+      <div class="m-image-box" style=" background-repeat: no-repeat;
+      background-size: cover !important; background: url({{section.settings.mImage | img_url: '500x'}}) no-repeat;">
+
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    (()=>{
+
+    })()
+  </script>
+
+  {% schema %}
+  {
+  "name": "index image",
+  "class": "index-image",
+  "presets": [{
+    "name": "index-image",
+    "settings": {
+  
+    }
+  }],
+  "blocks": [],
+  "settings": [
+  {
+    "type": "text",
+    "id": "key",
+    "label": "unique key"
+  },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "accessories",
+      "info": "1520 x 957px .png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "mImage",
+      "label": "mobile accessories"
+    },{
+      "type": "select",
+      "id": "position",
+      "label": "position",
+      "options": [
+        {
+          "value": "top",
+          "label": "top"
+        },
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "bottom",
+          "label": "bottom"
+        }
+      ],
+      "default": "top"
+    }
+  ]
+  }
+  {% endschema %}
+
+
+  <style>
+
+  </style>
+
+  {{ 'index-img.css' | asset_url | stylesheet_tag }}

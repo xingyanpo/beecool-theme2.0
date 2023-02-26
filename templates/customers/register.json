@@ -1,0 +1,74 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-customers-register",
+      "blocks": {
+        "register_form": {
+          "type": "register",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "register_form"
+      ],
+      "settings": {
+        "text": "<p>Yes. I'd like to receive Beecoolbikes emails & communications to hear about new products, promotions and more<\/p>",
+        "text_mobile": "<p>Yes. I'd like to receive Beecoolbikes <br\/>emails & communications to hear about new products, <br\/>promotions and more<\/p>",
+        "text2": "<p>I agree to the <a href=\"\/pages\/privacy-policy\" title=\"Privacy Policy_1\">Beecoolbikes Privacy Policy <\/a>and <a href=\"\/pages\/terms-of-service_1\" title=\"Terms Of Service_1\">Terms of Use*<\/a><\/p>",
+        "text2_mobile": "<p>I agree to the <a href=\"\/pages\/privacy-policy\" title=\"Privacy Policy_1\">Beecoolbikes Privacy Policy <br\/><\/a>and <a href=\"\/pages\/terms-of-service_1\" title=\"Terms Of Service_1\">Terms of Use*<\/a><\/p>"
+      }
+    },
+    "fda5ce41-3d5c-464e-96dc-491e51a1a7b6": {
+      "type": "jd-afterSales",
+      "blocks": {
+        "be687521-d94f-427f-840c-1448f1698e33": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
+            "title": "Free Shipping",
+            "subtitle": "<p>To the lower 48 states<\/p>"
+          }
+        },
+        "fd47603c-a52d-4916-bef9-0108f2c4ee4c": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
+            "title": "2-Year Warranty",
+            "subtitle": "<p>Buy with confidence<\/p>"
+          }
+        },
+        "ed53819e-8882-42bc-abaa-0425021f5ae6": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
+            "title": "Secure Payment",
+            "subtitle": "<p>Secure payment with Shopify<\/p>"
+          }
+        },
+        "cc690de4-d7f6-43b2-a524-b5f4a9bd8e76": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
+            "title": "Cost-effective",
+            "subtitle": "<p>Direct to consumer pricing<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "be687521-d94f-427f-840c-1448f1698e33",
+        "fd47603c-a52d-4916-bef9-0108f2c4ee4c",
+        "ed53819e-8882-42bc-abaa-0425021f5ae6",
+        "cc690de4-d7f6-43b2-a524-b5f4a9bd8e76"
+      ],
+      "settings": {
+        "policy_color": "#f3f5f5",
+        "policy_scolor_mobile": "#f3f5f5"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "fda5ce41-3d5c-464e-96dc-491e51a1a7b6"
+  ]
+}

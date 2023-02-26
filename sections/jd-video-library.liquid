@@ -1,0 +1,138 @@
+{{ 'jd_video_library_all.css' | asset_url | stylesheet_tag }}
+<div class="jd_video_library_all">
+    <div class="container">
+        <div class="jd_video_library_title ebike_h1">
+            {{section.settings.title}}
+        </div>
+        <div class="jd_video_library_bottom">
+            <div class="swiper VideolibrarySwiper">
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        <div class="swiper-slide">
+                            <div class="VideolibrarySwiper_box">
+                                <div class="Hideimg4">
+                                    <img loading="lazy" {% render 'image-attributes' , image: block.settings.img%}>
+                                </div>
+                                <div class="VideolibrarySwiper_url">{{block.settings.link}}</div>
+                                <div class="VideolibrarySwiper_svg">
+                                    <svg t="1665725153643" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1876" width="32" height="32"><path d="M512 42.666667C252.793333 42.666667 42.666667 252.793333 42.666667 512s210.126667 469.333333 469.333333 469.333333 469.333333-210.126667 469.333333-469.333333S771.206667 42.666667 512 42.666667z m0 896c-235.64 0-426.666667-191.026667-426.666667-426.666667s191.026667-426.666667 426.666667-426.666667 426.666667 191.026667 426.666667 426.666667-191.026667 426.666667-426.666667 426.666667z m-74.666667-213.38a53.373333 53.373333 0 0 1-53.333333-53.333334V352.066667A53.333333 53.333333 0 0 1 467.373333 308L702 467.933333a53.333333 53.333333 0 0 1 0 88.133334L467.373333 716a53.286667 53.286667 0 0 1-30.04 9.286667z m0.08-383.933334a11.093333 11.093333 0 0 0-5.08 1.28 10.446667 10.446667 0 0 0-5.666666 9.433334v319.866666a10.666667 10.666667 0 0 0 16.666666 8.82l234.666667-159.94a10.666667 10.666667 0 0 0 0-17.626666l-234.666667-159.933334a10.313333 10.313333 0 0 0-5.906666-1.92z" fill="#ffffff" p-id="1877"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+           <div class="VideolibrarySwiper_bottom">
+            <div class="swiper-button-next">
+                <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1664351569014" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4963" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128"><path d="M885.113 489.373L628.338 232.599c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255l203.3 203.3H158.025c-17.036 0-30.846 13.811-30.846 30.846 0 17.036 13.811 30.846 30.846 30.846h628.36L583.084 746.147c-12.497 12.496-12.497 32.758 0 45.255 6.248 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372l256.775-256.775a31.999 31.999 0 0 0 0-45.254z" fill="" p-id="4964"></path></svg>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev">
+                <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1664351565319" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4814" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128"><path d="M862.485 481.154H234.126l203.3-203.3c12.497-12.497 12.497-32.758 0-45.255s-32.758-12.497-45.255 0L135.397 489.373c-12.497 12.497-12.497 32.758 0 45.254l256.774 256.775c6.249 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372c12.497-12.497 12.497-32.759 0-45.255l-203.3-203.301h628.36c17.036 0 30.846-13.81 30.846-30.846s-13.81-30.846-30.846-30.846z" fill="" p-id="4815"></path></svg>
+            </div>
+            
+           </div>
+           
+        </div>
+       
+    </div>
+</div>
+<div class="swi_video_fixed">
+    <div class="video_mid_cha">x</div>
+    <video data-component="responsive-video" playsinline=""
+    class="responsive-videos" preload="auto" 
+    controls
+    src=" "
+    >
+    Your browser does not support the video tag
+  </video>
+</div>
+<div class="bg-color"></div>
+<script>
+      // 弹窗视频
+      $(".VideolibrarySwiper_svg").click(function () {
+            $(".swi_video_fixed").show();
+            // 获取当前点击的src
+            $(this).parent().parent().find(".VideolibrarySwiper_url").html();
+            var viveoPC = $(this).parent().parent().find(".VideolibrarySwiper_url").html();
+            $(".swi_video_fixed").children(".responsive-videos").attr("src",viveoPC.trim())
+            $(".swi_video_fixed").children(".responsive-videos")[0].play();
+           
+           
+            $(".no-focus-outline").addClass("adlink-html");
+            $(".bg-color").addClass("bg-colors");
+
+          
+           
+        })
+        $(".video_mid_cha").click(function(){
+            $(".swi_video_fixed").hide();
+            $(".no-focus-outline").removeClass("adlink-html");
+            $(".swi_video_fixed").children(".responsive-videos")[0].load();
+            $(".bg-color").removeClass("bg-colors")
+        })
+   
+
+    var swiper = new Swiper(".VideolibrarySwiper", {
+     
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: { 
+            280: {  //当屏幕宽度大于等于320
+                slidesPerView: 1,
+                // spaceBetween: 10
+            },
+            768: {  //当屏幕宽度大于等于768 
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            1280: {  //当屏幕宽度大于等于1280
+                slidesPerView: 4,
+                spaceBetween: 26,
+            }
+        }
+    });
+  </script>
+{% schema %}
+{
+    "name": "Video library",
+    "settings": [
+    {
+        "type": "richtext",
+        "id": "title",
+        "label": "title"
+    }
+    ],
+    "blocks": [
+    {
+        "type": "Video-library",
+        "name": "Video library",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "img",
+                "label": "Img"
+            },
+           {
+            "type": "url",
+            "id": "link",
+            "label": "link"
+           
+           }
+    
+          
+  ]
+}
+    ],
+    "presets": [{
+    "name": "Video library"
+    
+    }]
+}
+{% endschema %}

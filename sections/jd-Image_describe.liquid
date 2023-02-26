@@ -1,0 +1,184 @@
+{{ 'jd-Image_describe.css' | asset_url | stylesheet_tag }}
+  <div class="img-describe-all" style="margin-bottom:{{ section.settings.margin_bottom}}px;">
+    <div class="container">
+        <div class="pc">
+            {% for block in section.blocks %}
+            <div class="img_describe_box {%if block.settings.check %} img_describe_boxs {%endif%}" {%if block.settings.check %} style="flex-flow:row-reverse" {%endif%}>
+                <div class="img_describe_left">
+                    {% if block.settings.link !=blank %}
+                        <video playsinline="" x5-video-player-fullscreen="true" x5-playsinline playsinline webkit-playsinline
+                            class="responsive-video" preload="auto" autoplay
+                            loop="" muted="muted"  
+                            src="{{block.settings.link}}"
+                            poster="">
+    
+                        </video>
+                    {% else %}
+                        <img loading="lazy" {% render 'image-attributes' , image: block.settings.img%}>
+                    {% endif %}
+                   
+                </div>
+                <div class="img_describe_right" style="{%if block.settings.check %} align-items: flex-start; {% else %} align-items: flex-end; {%endif%} background-color: {{ block.settings.bg_color}};" >
+                <div class="img_describe_rightDiv" style="width: {{block.settings.div_width}}%;">
+                        <div class="img_describe_title">
+                            {{ block.settings.title}}
+                        </div>
+                        <div class="img_describe_text" style="width: {{block.settings.text_width}}%;">
+                            {{ block.settings.text}}
+                        </div>
+                        
+                </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="mobile">
+            {% for block in section.blocks %}
+            <div class="img_describe_box {%if block.settings.check %} img_describe_boxs {%endif%}" style="background-color: {{ block.settings.bg_color2}}; {%if block.settings.check %} flex-flow:row-reverse {%endif%}">
+                <div class="img_describe_left">
+                    {% if block.settings.link !=blank %}
+                    <video playsinline="" x5-video-player-fullscreen="true" x5-playsinline playsinline webkit-playsinline
+                        class="responsive-video" preload="auto" autoplay
+                        loop="" muted="muted"  
+                        src="{{block.settings.link}}"
+                        poster="">
+    
+                    </video>
+                    {% else %}
+                        <img loading="lazy" {% render 'image-attributes' , image: block.settings.img_mobile%}>
+                    {% endif %}
+                </div>
+                <div class="img_describe_right" {%if block.settings.check %} style="align-items: flex-end;" {%endif%}>
+                <div class="img_describe_rightDiv" style="color: {{block.settings.color_mobile}};" >
+                        <div class="img_describe_title">
+                            {{ block.settings.title_mobile}}
+                        </div>
+                        <div class="img_describe_text">
+                            {{ block.settings.text_mobile}}
+                        </div>
+                        
+                </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+  </div>
+  {% schema %}
+  {
+  "name": "Image describe",
+  "class": "shopify-section--Image_describe",
+  "settings": [
+    {
+        "type": "range",
+        "id": "margin_bottom",
+        "min": 0,
+        "max": 60,
+        "step": 6,
+        "unit": "px",
+        "label": "margin bottom",
+        "default": 0
+    }
+  ],
+  "blocks": [
+    {
+        "name": "Image describe",
+        "type": "Image_describe",
+        "settings": [
+        {
+            "type": "checkbox",
+            "id": "check",
+            "label": "Right picture and left text"
+           
+           },
+            {
+                "type": "image_picker",
+                "id": "img",
+                "label": "Img"
+            },
+            {
+                "type": "url",
+                "id": "link",
+                "label": "video link"
+            },
+            {
+                "type": "image_picker",
+                "id": "img_mobile",
+                "label": "Img mobile"
+            },
+            {
+                "type": "range",
+                "id": "div_width",
+                "label": "width",
+                "unit": "%",
+                "min": 1,
+                "max": 100,
+                "step": 1,
+                "default": 100
+            },
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "title"
+            },
+            {
+                "type": "richtext",
+                "id": "title_mobile",
+                "label": "title mobile"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "text"
+            },
+            {
+                "type": "range",
+                "id": "text_width",
+                "label": "text width",
+                "unit": "%",
+                "min": 1,
+                "max": 100,
+                "step": 1,
+                "default": 100
+            },
+            {
+                "type": "richtext",
+                "id": "text_mobile",
+                "label": "text mobile"
+            },
+
+          
+            {
+                "type": "color",
+                "id": "bg_color",
+                "label": "background color"
+              
+            },
+            {
+                "type": "color",
+                "id": "bg_color2",
+                "label": "background color Mobile"
+              
+            },
+            {
+                "type": "color",
+                "id": "color_mobile",
+                "label": "color Mobile"
+              
+            }
+           
+          
+            
+           
+        ]
+    }
+    
+  ],
+  "presets": [
+  {
+  "name": "Image describe"
+  }
+  ]
+  }
+  {% endschema %}

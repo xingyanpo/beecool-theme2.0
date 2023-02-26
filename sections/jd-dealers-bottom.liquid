@@ -1,0 +1,82 @@
+{{ 'jd-dealers-bottom.css' | asset_url | stylesheet_tag }}
+    <div class="dealers_bottom_all">
+        <div class="container">
+            <div class="dealers_bottomBox mobile">
+                <div class="dealers_bottomox_title">{{section.settings.title}}</div>
+                <div class="dealers_bottomox_text">{{section.settings.text}}</div>
+            </div>
+            <div class="dealers_bottom_box">
+                {% for block in section.blocks %}
+                <div class="dealers_bottomBox">
+                   <div class="dealers_bottomBoxImg">
+                    <img loading="lazy" {% render 'image-attributes' , image: block.settings.img%}>
+                   </div>
+                    <div class="dealers_bottomPosition">
+                        <div class="dealers_bottomPosition_title">
+                            {{block.settings.text}}
+                        </div>
+                        {% if block.settings.link !=blank %}
+                            <a href="{{block.settings.link}}" class="dealers_bottomPosition_A">{{block.settings.button}}</a>
+                            {% else %}
+                                <div class="dealers_bottomPosition_A">{{block.settings.button}}</div>
+                        {% endif %}
+                       
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% schema %}
+    {
+        "name": "dealers bottom",
+        "class": "shopify-section--banner_or_video",
+        "max_blocks": 2,
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "title"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "text"
+            }
+        ],
+    "blocks": [
+    {
+        "type": "dealers_bottom",
+        "name": "dealers_bottom",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "img",
+                "label": "Img"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "text"
+            },
+            {
+                "type": "text",
+                "id": "button",
+                "label": "button"
+            },
+            {
+                "type": "url",
+                "id": "link",
+                "label": "link"
+            }
+          
+  ]
+}
+    ],
+    "presets": [
+    {
+    "name": "dealers bottom"
+    }
+    ]
+    }
+    {% endschema %}

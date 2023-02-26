@@ -1,0 +1,97 @@
+@media (min-width:1000px) {
+      
+    .general_text-all{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 0;
+    }
+  
+   
+    .general_text-text{
+        position: relative;
+        color: #151515;
+        text-align: center;
+        width: 92%;
+        margin: 0 auto;
+        margin: 0 auto;
+        line-height: 1.5;
+        font-weight: 400;
+        
+    }
+    .general_text-text p{
+      display: inline;
+    }
+    .general_text_svg{
+      position: absolute;
+      top: -28px;
+      left: 0;
+    }
+    .general_text_svg svg{
+      width: 60px;
+      height: auto;
+      margin-right: 10px;
+      display:inline-block;
+     
+    }
+    .general_text_svg svg path{
+      fill: #b3bad6;
+    }
+    .general_text_svg2{
+      position: absolute;
+      right: 0;
+      bottom: -58px;
+    }
+    .general_text_svg2 svg{
+      width: 60px;
+      display:inline-block;
+      margin-left: 10px;
+      height: auto;
+    }
+    .general_text_svg2 svg path{
+      fill: #b3bad6;
+    }
+  }
+  
+  @media (max-width:999px) {
+    .general_text-all{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0;
+    }
+  
+   
+    .general_text-text{
+        color: #151515;
+        line-height: 1.5;
+    }
+    .general_text-text p{
+      display: inline;
+    }
+    .general_text_svg{
+      display:inline-block;
+    }
+    .general_text_svg svg{
+      width: 20px;
+      height: auto;
+      margin-right: 5px;
+      display:inline-block;
+     
+    }
+    .general_text_svg svg path{
+      fill: #cfcfcf;
+    }
+    .general_text_svg2{
+      display:inline-block;
+      margin-left: 5px;
+    }
+    .general_text_svg2 svg{
+      width: 20px;
+      display:inline-block;
+      height: auto;
+    }
+    .general_text_svg2 svg path{
+      fill: #cfcfcf;
+    }
+  }

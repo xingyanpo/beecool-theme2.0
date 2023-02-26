@@ -1,0 +1,56 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-search",
+      "blocks": {
+        "934a4b98-ce90-4e24-8666-67f8647e2436": {
+          "type": "category",
+          "settings": {
+            "title": "Electric Bikes",
+            "link": "shopify:\/\/collections\/ebike"
+          }
+        },
+        "275972ee-fe9b-481e-bb07-9db2e2332d07": {
+          "type": "category",
+          "settings": {
+            "title": "Accessories",
+            "link": "shopify:\/\/collections\/accessories-1"
+          }
+        },
+        "870f201d-b843-4185-995d-139b52f71d4a": {
+          "type": "category",
+          "settings": {
+            "title": "Help Center",
+            "link": "shopify:\/\/pages\/help-center"
+          }
+        },
+        "d3bbfada-95aa-4561-a75c-5557d0d54a7b": {
+          "type": "category",
+          "settings": {
+            "title": "Blog",
+            "link": "shopify:\/\/blogs\/latest-news"
+          }
+        }
+      },
+      "block_order": [
+        "934a4b98-ce90-4e24-8666-67f8647e2436",
+        "275972ee-fe9b-481e-bb07-9db2e2332d07",
+        "870f201d-b843-4185-995d-139b52f71d4a",
+        "d3bbfada-95aa-4561-a75c-5557d0d54a7b"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/20221010162053.png",
+        "img_mobile": "shopify:\/\/shop_images\/1_a4408c0b-ece1-4b3f-a540-e13789780625.png",
+        "products_per_page": 26,
+        "mobile_products_per_row": "2",
+        "desktop_products_per_row": 4,
+        "show_filter_group_name": false,
+        "show_color_swatch": true,
+        "filter_position": "always_visible"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

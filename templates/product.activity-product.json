@@ -1,0 +1,140 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "7ea91e32-d9e2-4e1a-b669-664f89a5eb6d": {
+          "type": "saveText",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "dd9329a6-3bef-47f8-baf4-991e2ee0a802": {
+          "type": "off",
+          "settings": {
+            "is_can_copy": false,
+            "copy_img": "shopify:\/\/shop_images\/1_3e735aa4-c540-4fd5-a4eb-f72164d1287d.png",
+            "title": "Limited Gift",
+            "copy_text": "",
+            "text": "<p><strong>Buy One Bundle Get 1 Free Cargo Trailer (Limited Amount)<\/strong><\/p>"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "atc_button_background": "#2a408e",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "#1f2633",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "ccd235c9-7dac-4970-9369-a60ea7672368": {
+          "type": "free_gifts",
+          "settings": {
+            "free_gifts_icon": "<svg t=\"1675763361201\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"2852\" width=\"200\" height=\"200\"><path d=\"M847.57 475.078c0 24.279-19.68 43.967-43.967 43.967H221.015c-24.287 0-43.967-19.688-43.967-43.967V352.08c0-24.288 19.68-43.969 43.967-43.969h582.589c24.287 0 43.967 19.681 43.967 43.969v122.998z\" fill=\"#8AC78A\" p-id=\"2853\"><\/path><path d=\"M803.604 543.061H221.015c-37.487 0-67.982-30.496-67.982-67.982V352.08c0-37.487 30.495-67.983 67.982-67.983h582.589c37.487 0 67.982 30.496 67.982 67.983v122.998c0 37.486-30.495 67.983-67.982 67.983zM221.015 332.128c-10.999 0-19.942 8.945-19.942 19.952v122.998c0 10.998 8.943 19.951 19.942 19.951h582.589c10.998 0 19.943-8.953 19.943-19.951V352.08c0-11.007-8.945-19.952-19.943-19.952H221.015z\" fill=\"#363634\" p-id=\"2854\"><\/path><path d=\"M804.567 791.678c0 24.288-19.687 43.975-43.976 43.975H264.025c-24.287 0-43.965-19.687-43.965-43.975v-268.23c51.047-2.085 543.492-0.256 584.507 0v268.23z\" fill=\"#F1CA4E\" p-id=\"2855\"><\/path><path d=\"M760.592 859.67H264.025c-37.486 0-67.991-30.506-67.991-67.992V500.389l23.042-0.942c16.357-0.666 77.563-1.005 181.929-1.005 163.833 0 377.19 0.824 403.72 0.989l23.859 0.148v292.099c0 37.486-30.504 67.992-67.992 67.992zM244.074 546.994v244.684c0 10.998 8.946 19.951 19.951 19.951h496.566c11.008 0 19.96-8.953 19.96-19.951V547.349c-65.716-0.281-240.472-0.866-379.547-0.866-85.789-0.001-132.236 0.222-156.93 0.511z\" fill=\"#3E3A39\" p-id=\"2856\"><\/path><path d=\"M488.288 230.92h48.032v604.732h-48.032z\" fill=\"#363634\" p-id=\"2857\"><\/path><path d=\"M665.271 328.616H512.305c-13.266 0-24.017-10.751-24.017-24.017V187.982c0-3.379 0.719-6.726 2.095-9.811 31.031-69.325 80.506-79.673 107.234-79.673 50.208 0 99.164 34.94 119.041 84.975 19.408 48.84 6.686 99.354-34.897 138.597a24.041 24.041 0 0 1-16.49 6.546z m-128.951-48.04h118.908c29.07-32.005 23.259-63.085 16.785-79.359-12.381-31.173-44.37-54.686-74.396-54.686-25.252 0-46.365 16.15-61.297 46.778v87.267z\" fill=\"#363634\" p-id=\"2858\"><\/path><path d=\"M512.305 328.616H359.348a24.032 24.032 0 0 1-16.489-6.546c-41.584-39.243-54.306-89.757-34.899-138.597 19.877-50.034 68.832-84.975 119.043-84.975 26.719 0 76.193 10.348 107.227 79.673a23.957 23.957 0 0 1 2.092 9.811V304.6c-0.002 13.265-10.751 24.016-24.017 24.016z m-142.916-48.04h118.899V193.31c-14.929-30.628-36.044-46.778-61.286-46.778-30.027 0-62.018 23.513-74.398 54.686-6.473 16.273-12.284 47.353 16.785 79.358z\" fill=\"#363634\" p-id=\"2859\"><\/path><\/svg>",
+            "free_gifts_title": "Don't Forget To Add It to Your Cart!",
+            "free_gifts_img_one": "shopify:\/\/shop_images\/1_c473a694-56b1-479f-af35-7e4691919e22.jpg",
+            "free_gifts_text_one": "Foldable Ebike Cargo Trailer",
+            "free_gifts_url_one": "https:\/\/beecoolbikes.com\/products\/foldable-ebike-cargo-trailer",
+            "free_gifts_price_one": "$299",
+            "free_gifts_quantity_one": "",
+            "free_gifts_img_two": "shopify:\/\/shop_images\/gift-2.jpg",
+            "free_gifts_text_two": "",
+            "free_gifts_price_two": "$15.00",
+            "free_gifts_quantity_two": "X2",
+            "free_gifts_img_three": "shopify:\/\/shop_images\/product.jpg",
+            "free_gifts_text_three": "",
+            "free_gifts_price_three": "$5.00",
+            "free_gifts_quantity_three": "X2"
+          }
+        },
+        "1878aa0d-5dcc-408f-b726-7d083314177d": {
+          "type": "image",
+          "settings": {
+            "image_alignment": "center",
+            "image_width": 360,
+            "text": "<div style=\"text-align:left;\">\n        <h4 style=\"font-size: 18px;margin: 10px 0 10px 0;\">Scheduled to ship:<\/h4>\n        <div style=\"text-indent:1em;font-size: 16px;margin: 5px 0 0 0;\">\n            <svg style=\"position:relative;top:-2px;display:inline;\" t=\"1669278898519\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"3944\" width=\"20\" height=\"20\"><path d=\"M512 512m-442.7 0a442.7 442.7 0 1 0 885.4 0 442.7 442.7 0 1 0-885.4 0Z\" fill=\"#9BBFFD\" p-id=\"3945\"><\/path><path d=\"M512 512m-263 0a263 263 0 1 0 526 0 263 263 0 1 0-526 0Z\" fill=\"#377FFC\" p-id=\"3946\"><\/path><\/svg>\n            <span style=\"background-color: #333;padding:2px 5px;border-radius:3px;color:#FFF;\">Black:<\/span> <b style=\"color: #666;\">Within 2 business Days<\/b>\n<\/div>\n    <\/div>",
+            "ship": ""
+          }
+        },
+        "94ff6497-bcb7-487c-95de-ea653891a1d0": {
+          "type": "fedex",
+          "settings": {
+            "fedex_title": "Shipping:",
+            "img": "shopify:\/\/shop_images\/1_3d93ff84-9b20-428e-88e3-528a02568e29.png",
+            "fedex_text1": "UPS Ground Free",
+            "fedex_svg": "<svg t=\"1668148261596\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"1482\" width=\"32\" height=\"32\"><path d=\"M511.514 63.894c-114.532 0-229.062 43.51-316.72 131.168-174.677 174.676-174.677 458.764 0 633.44 87.658 87.659 202.188 131.168 316.72 131.168s229.063-43.51 316.72-131.168c174.677-174.676 174.677-458.764 0-633.44-87.657-87.659-202.189-131.168-316.72-131.168z m0 44.79c52.467 0 103.654 10.236 151.642 29.432 49.907 20.475 94.695 49.907 133.086 88.937 39.03 38.39 68.463 83.18 88.937 133.086 19.195 47.988 29.433 99.175 29.433 151.642s-10.238 103.654-29.433 151.642c-20.474 49.907-49.907 94.695-88.937 133.086-38.39 39.03-83.18 68.463-133.086 88.937-47.988 19.196-99.175 29.433-151.642 29.433s-103.654-10.237-151.642-29.433c-49.907-20.475-94.696-49.907-133.086-88.937-39.03-38.39-68.463-83.18-88.937-133.086-19.196-47.988-29.433-99.175-29.433-151.642s10.237-103.654 29.433-151.642c20.475-49.907 49.907-94.695 88.937-133.086 38.39-39.03 83.18-68.463 133.086-88.937 47.988-19.196 99.175-29.433 151.642-29.433z\" p-id=\"1483\" fill=\"#151515\"><\/path><path d=\"M511.514 674.3c-18.556 0-34.551 15.356-34.551 34.551 0 18.556 15.996 33.912 34.55 33.912 19.196 0 34.552-15.356 34.552-33.912 0-19.194-15.356-34.55-34.551-34.55z m0.64-393.5c-42.23 0-76.14 10.877-101.734 33.91-25.593 22.395-41.589 55.027-46.707 97.896l58.225 7.039c4.479-31.992 15.356-55.666 31.352-70.382 15.996-15.356 35.83-22.394 59.505-22.394 24.953 0 46.068 8.317 63.344 24.953 16.636 15.996 24.953 35.191 24.953 57.585 0 11.518-2.56 23.035-8.317 33.272-5.758 10.237-18.556 23.674-37.751 40.95-19.835 17.275-33.272 30.073-40.95 39.03-9.597 12.157-17.275 24.314-21.754 36.47-6.399 15.997-9.598 35.192-9.598 56.946l0.64 17.276h53.746c0.64-22.394 1.92-39.03 4.479-48.628 3.199-10.237 7.038-19.195 12.796-26.873 5.758-7.678 17.276-19.834 35.831-35.83 26.873-24.315 45.429-44.79 55.027-61.426 8.958-16.636 14.076-35.191 14.076-55.026 0-34.55-13.437-63.984-40.31-88.298-26.233-24.314-62.064-36.47-106.852-36.47z\" p-id=\"1484\" fill=\"#151515\"><\/path><\/svg>",
+            "fedex_text3": "Why UPS",
+            "text": "Important: Please double check your address is correct when checking out. The shipping address can't be adjusted \nafter shipped out.",
+            "hide_text": "To ensure the safe delivery of our e-bikes, all of our e-bikes are delivered by UPS. Since it is a large package, the shipping address cannot be changed again once it is sent out, so please confirm the correct shipping address when placing an order. Tracking info update may get delayed sometimes even the tracking number is generated but this is normal when we have too many orders. Please be patient when that happens and if there is anything abnormal, we will contact you first."
+          }
+        }
+      },
+      "block_order": [
+        "7ea91e32-d9e2-4e1a-b669-664f89a5eb6d",
+        "variant_picker",
+        "dd9329a6-3bef-47f8-baf4-991e2ee0a802",
+        "quantity_selector",
+        "buy_buttons",
+        "ccd235c9-7dac-4970-9369-a60ea7672368",
+        "1878aa0d-5dcc-408f-b726-7d083314177d",
+        "94ff6497-bcb7-487c-95de-ea653891a1d0"
+      ],
+      "settings": {
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_share_buttons": true,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": true,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "52409229-6914-460c-8bbb-930766847f95": {
+      "type": "jd-accessoryBlock",
+      "settings": {
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "disabled": true,
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "description"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "52409229-6914-460c-8bbb-930766847f95",
+    "product-content"
+  ]
+}

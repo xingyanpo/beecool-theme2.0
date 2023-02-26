@@ -1,0 +1,134 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "page_width": "medium"
+      }
+    },
+    "1661845384fd3e729a": {
+      "type": "jd-comment",
+      "blocks": {
+        "3026df76-b408-4011-b9d5-84c16e1f73c9": {
+          "type": "review1",
+          "settings": {
+            "product": "bee-adventurer",
+            "link": "shopify:\/\/pages\/comment"
+          }
+        },
+        "22a68e64-295d-4d39-aa9e-cd9db475f779": {
+          "type": "review1",
+          "settings": {
+            "product": "bee-challenger",
+            "link": "shopify:\/\/pages\/challenger-comment"
+          }
+        },
+        "da73cf15-ebe6-4f53-baa6-b0a5d4023f2a": {
+          "type": "review1",
+          "settings": {
+            "product": "bee-explorer",
+            "link": "shopify:\/\/pages\/explorer-comment"
+          }
+        },
+        "44280623-c2b1-41ab-b2d6-af0efce2f2e1": {
+          "type": "review1",
+          "settings": {
+            "product": "bee-pathfinder",
+            "link": "shopify:\/\/pages\/pathfinder-comment"
+          }
+        },
+        "6dffdbfc-ed94-4ad4-b81e-1b3e45625d55": {
+          "type": "review1",
+          "settings": {
+            "product": "bee-pathfinder-step-thru",
+            "link": "shopify:\/\/pages\/pathfinder-step-thru-comment"
+          }
+        },
+        "ba14b544-574f-4af7-b68e-691fd4c37276": {
+          "type": "review1",
+          "settings": {
+            "product": "bee-rambler",
+            "link": "shopify:\/\/pages\/rambler-comment"
+          }
+        }
+      },
+      "block_order": [
+        "3026df76-b408-4011-b9d5-84c16e1f73c9",
+        "22a68e64-295d-4d39-aa9e-cd9db475f779",
+        "da73cf15-ebe6-4f53-baa6-b0a5d4023f2a",
+        "44280623-c2b1-41ab-b2d6-af0efce2f2e1",
+        "6dffdbfc-ed94-4ad4-b81e-1b3e45625d55",
+        "ba14b544-574f-4af7-b68e-691fd4c37276"
+      ],
+      "settings": {
+        "title": "See why customers love beecoolbikes",
+        "text_pc": "",
+        "text_mobile": ""
+      }
+    },
+    "16618465422db69209": {
+      "type": "reviews-importer-product",
+      "settings": {
+        "title": "Bee Pathfinder Step-Thru Reviews",
+        "text": "Just ask our customers",
+        "lai_product": "bee-pathfinder-step-thru",
+        "color": "#f9f9f9"
+      }
+    },
+    "fdab7015-9f61-4993-8084-19d4c7a48661": {
+      "type": "jd-afterSales",
+      "blocks": {
+        "0d281973-3094-495f-a7f2-ae29c7dcb53a": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
+            "title": "Free Shipping",
+            "subtitle": "<p>To the lower 48 states<\/p>"
+          }
+        },
+        "3c723770-a19c-437b-9da1-cfa9e5863bcc": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
+            "title": "2-Year Warranty",
+            "subtitle": "<p>Buy with confidence<\/p>"
+          }
+        },
+        "3d1fbe44-dd2b-406e-a9d9-2074b0bdc3e5": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
+            "title": "Secure Payment",
+            "subtitle": "<p>Secure payment with Shopify<\/p>"
+          }
+        },
+        "45631a6f-a77b-4fe9-ad2a-a43ba19868aa": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
+            "title": "Cost-effective",
+            "subtitle": "<p>Direct to consumer pricing<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "0d281973-3094-495f-a7f2-ae29c7dcb53a",
+        "3c723770-a19c-437b-9da1-cfa9e5863bcc",
+        "3d1fbe44-dd2b-406e-a9d9-2074b0bdc3e5",
+        "45631a6f-a77b-4fe9-ad2a-a43ba19868aa"
+      ],
+      "settings": {
+        "policy_color": "#F3F5F5",
+        "policy_scolor_mobile": "#fff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1661845384fd3e729a",
+    "16618465422db69209",
+    "fdab7015-9f61-4993-8084-19d4c7a48661"
+  ]
+}

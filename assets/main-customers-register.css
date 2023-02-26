@@ -1,0 +1,218 @@
+@media(min-width:1000px) {
+    .login_nav .breadcrumb__list{
+        padding: 0;
+        font-size: 16px;
+        color: #222;
+    }
+    .login_nav .breadcrumb__link{
+        opacity: 1 !important;
+    }
+    .login_nav .breadcrumb__item+.breadcrumb__item:before{
+        opacity: 1;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .login_nav{
+        width: 100%;
+        line-height: 49px;
+        height: 49px;
+        background: #F5F5F7;
+    }
+    /* 注册 */
+    .register_content_box{
+        margin: 100px auto;
+    }
+    .register_title{
+        margin: 0;
+        line-height: 1;
+        font-weight:bold;
+        font-size:24px;
+    }
+    .register-content{
+        max-width: 633px;
+        width: 100%;
+        text-align: center;
+        margin: 50px auto;
+    }
+    .register-content .input input{
+        height: 67px;
+        border-radius: 33px;
+    }
+    .register-content .input .input__label{
+        font-size: 18px;
+        left: 30px;
+        opacity: 0.6;
+        top: 23px;
+        color: #151515;
+    }
+    .register-content .input__field-link{
+        font-size: 18px;
+        opacity: 0.6;
+        right: 30px;
+        color: #151515;
+    }
+    .register-content .input__field{
+        padding: 0 30px;
+    }
+    .register-content .input+.input{
+        margin-top: 50px;
+    }
+
+    .register-content .form__submit {
+        width: 344px;
+        height: 60px;
+        background: #151515;
+        border-radius: 30px;
+        margin: 38px auto 0;
+        letter-spacing: 0;
+    }
+    .register-content .loader-button__text{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .register-content .form__secondary-action{
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 42px;
+    }
+    .register_agree{
+        margin-top: 50px;
+    }
+    .register_agree_box{
+        display: flex;
+        align-items: center;
+    }
+    .register_agree_box label{
+        font-size: 18px;
+        line-height: 30px;
+        text-align: left;
+        font-weight: 400;
+    }
+    .register_agree_box a{
+        color: #2A408E;
+    }
+    .register_agree_box .checkbox{
+        width: 29px;
+        height: 28px;
+        border: 1px solid #AFAFAF;
+        border-radius: 5px;
+    }
+    .register_agree_box:nth-child(2){
+        margin-top: 30px;
+    }
+}
+@media(max-width:999px) {
+    .login_nav .breadcrumb__list{
+        padding: 0;
+        font-size: 14px;
+        color: #222;
+    }
+    .login_nav .breadcrumb__link{
+        opacity: 1 !important;
+    }
+    .login_nav .breadcrumb__item+.breadcrumb__item:before{
+        opacity: 1;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .login_nav{
+        width: 100%;
+        line-height: 24px;
+        height: 24px;
+        background: #F5F5F7;
+    }
+    /* 注册 */
+    .register_content_box{
+        margin: 50px auto;
+    }
+    .register_title{
+        margin: 0;
+        width: 70%;
+        margin: 0 auto;
+        line-height: 22px;
+        font-weight:bold;
+        font-size:16px;
+    }
+    .register-content{
+        width: 100%;
+        text-align: center;
+        margin: 20px auto 50px;
+    }
+    .register-content .input input{
+        height: 33px;
+        border-radius: 16px;
+    }
+    .register-content .input .input__label{
+        font-size: 14px;
+        left: 20px;
+        opacity: 0.6;
+        top: 11px;
+        color: #151515;
+    }
+    .register-content .input__field-link{
+        font-size: 14px;
+        opacity: 0.6;
+        right: 26px;
+        color: #151515;
+    }
+    .register-content .input__field{
+        padding: 0 30px;
+    }
+    .register-content .input+.input{
+        margin-top: 14px;
+    }
+
+    .register-content .form__submit {
+        width: 172px;
+        height: 30px;
+        background: #151515;
+        border-radius: 15px;
+        margin: 25px auto 0;
+        letter-spacing: 0;
+    }
+    .register-content .loader-button__text{
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+    .register-content .form__secondary-action{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 42px;
+    }
+    .register_agree{
+        margin-top: 20px;
+    }
+    .register_agree_box{
+        display: flex;
+        align-items: center;
+    }
+    .register_agree_box label{
+        font-size: 14px;
+        line-height: 15px;
+        text-align: left;
+        font-weight: 400;
+        margin-left: 10px;
+    }
+    .register_agree_box a{
+        color: #2A408E;
+    }
+    .register_agree_box .checkbox{
+        width: 16px;
+        height: 16px;
+        border: 1px solid #AFAFAF;
+        border-radius: 3px;
+    }
+    .register_agree_box:nth-child(2){
+        margin-top: 14px;
+    }
+    .register_agree_box:nth-child(2) label{
+        line-height: 18px;
+    }
+}
+/*自动填充  */
+.register-content input:-internal-autofill-previewed,
+.register-content input:-internal-autofill-selected {
+  -webkit-text-fill-color: #222 !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}

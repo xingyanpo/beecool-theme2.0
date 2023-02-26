@@ -1,0 +1,741 @@
+
+{%- assign direction = 'ltr' -%}
+{%- case request.locale.iso_code -%}
+  {%- when 'ar' or 'arc' or 'dv' or 'fa' or 'ha' or 'he' or 'kwh' or 'ks' or 'ku' or 'ps' or 'ur' or 'yi' -%}
+    {%- assign direction = 'rtl' -%}
+{%- endcase -%}
+
+<mobile-navigation append-body id="mobile-menu-drawer" class="drawer  mobile_menu_drawer {% if direction == 'ltr' %}drawer--from-left{% endif %}">
+  <span class="drawer__overlay"></span>
+
+
+
+  <div class="drawer__content">
+    <ul class="mobile-nav list--unstyled" role="list">
+      {%- for link in menu.links -%}
+      {%- assign link_title_downcase = link.title | strip | downcase -%}
+      {%- assign mega_menu_block = '' -%}
+      {%- assign mega_menu_block2 = '' -%}
+      {%- assign mega_menu_block3 = '' -%}
+      {%- assign mega_menu_block4 = '' -%}
+
+      {%- assign mega_menu_images = '' -%}
+
+      {%- for block in section.blocks -%}
+        {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
+        {%- assign menu_item_downcase2 = block.settings.menu_item_accessories | strip | downcase -%}
+        {%- assign menu_item_downcase3 = block.settings.menu_item_support | strip | downcase -%}
+        {%- assign menu_item_downcase4 = block.settings.menu_item_community | strip | downcase -%}
+
+        {%- case block.type-%}
+            {%- when 'mega_menu'-%}
+            {%- if menu_item_downcase == link_title_downcase -%}
+              {%- assign mega_menu_block = block -%}
+              {%- break -%}
+            {%- endif -%}
+            {%- when 'accessories'-%}
+            {%- if menu_item_downcase2 == link_title_downcase -%}
+              {%- assign mega_menu_block2 = block -%}
+              {%- break -%}
+            {%- endif -%}
+
+            {%- when 'Support'-%}
+            {%- if menu_item_downcase3 == link_title_downcase -%}
+              {%- assign mega_menu_block3 = block -%}
+              {%- break -%}
+            {%- endif -%}
+            
+            
+            {%- when 'Community'-%}
+            {%- if menu_item_downcase4 == link_title_downcase -%}
+              {%- assign mega_menu_block4 = block -%}
+              {%- break -%}
+            {%- endif -%}
+
+        {%- endcase-%}
+      {%- endfor -%}
+
+        
+      
+        <li class="mobile-nav__item" data-level="1">
+          <!-- {%- if link.links.size > 0 or mega_menu_images != blank -%} --><!-- {%- endif -%} -->
+          
+            {%- if mega_menu_block != '' -%}
+                <div class="mobile-nav__item_title">{{- link.title -}}</div>
+                {%- if link.links.size > 0 or mega_menu_images != blank -%}
+                  <div id="desktop-menu-{{ forloop.index }}" class="mobile_nav__itemBox1" {{ mega_menu_block.shopify_attributes }}>
+                      <div class="desktop_header">
+                        <div class="desktop_headerRightTop"><svg t="1666056671768" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1479" width="32" height="32"><path d="M862.485 481.154H234.126l203.3-203.3c12.497-12.497 12.497-32.758 0-45.255s-32.758-12.497-45.255 0L135.397 489.373c-12.497 12.497-12.497 32.758 0 45.254l256.774 256.775c6.249 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372c12.497-12.497 12.497-32.759 0-45.255l-203.3-203.301h628.36c17.036 0 30.846-13.81 30.846-30.846s-13.81-30.846-30.846-30.846z" fill="#151515" p-id="1480"></path></svg><div>{{- link.title -}}</div></div>
+                        <div class="desktop_headerRight container">
+                          <div class="desktop_headerTab">
+                            <div class="bikeSwiper">
+                              <div class="swiper-wrapper">
+                                {% if mega_menu_block.settings.collection !=blank %}
+                                  <div class="swiper-slide active">
+                                    <div class="desktoptab_li">{{mega_menu_block.settings.collection.title}}</div>
+                                  </div>
+                                  
+                                {% endif %}
+                                
+                                  {% if mega_menu_block.settings.collection2 !=blank %}
+                                  <div class="swiper-slide">
+                                    <div class="desktoptab_li">{{mega_menu_block.settings.collection2.title}}</div>
+                                  </div>
+                                {% endif %}
+                                
+                              
+                                {% if mega_menu_block.settings.collection3 !=blank %}
+                                <div class="swiper-slide">
+                                  <div class="desktoptab_li">{{mega_menu_block.settings.collection3.title}}</div>
+                                </div>
+                                  
+                                {% endif %}
+                                {% if mega_menu_block.settings.collection4 !=blank %}
+                                <div class="swiper-slide">
+                                  <div class="desktoptab_li">{{mega_menu_block.settings.collection4.title}}</div>
+                                </div>
+                                  
+                                {% endif %}
+                            
+                                {% if mega_menu_block.settings.collection5 !=blank %}
+                                <div class="swiper-slide">
+                                  <div class="desktoptab_li">{{mega_menu_block.settings.collection5.title}}</div>
+                                </div>
+                                  
+                                {% endif %}
+                              </div>
+                            </div>
+                          </div>
+                            <div class="desktop_headerBox">
+                              <div class="desktop_headerBox_list desktop_headerBox_lists selected">
+                                  {% for product in mega_menu_block.settings.collection.products %}
+                                      <a href="{{product.url}}" class="item">
+                                        <div class="desktop_headerBox_list_first">
+                                            <div class="title">
+                                              {{product.title}}
+                                            </div>
+                                            <div class="price">
+                                              <div class="price--highlight">{{- product.price | money -}}</div>
+                                              <s class="price--compare"> {{- product.compare_at_price | money -}}</s>
+                                            </div>
+                                        </div>
+                                        <div class="img-box">
+                                          <img src="{{product.featured_image | img_url: '500x'}}" alt="">
+                                        </div>
+                                      </a>
+                                  {% endfor %}
+                              </div>
+                              <div class="desktop_headerBox_list desktop_headerBox_lists">
+                               
+                                {% for product in mega_menu_block.settings.collection2.products %}
+                                <a href="{{product.url}}" class="item">
+                                  <div class="desktop_headerBox_list_first">
+                                      <div class="title">
+                                        {{product.title}}
+                                      </div>
+                                      <div class="price">
+                                        <div class="price--highlight">{{- product.price | money -}}</div>
+                                        <s class="price--compare"> {{- product.compare_at_price | money -}}</s>
+                                      </div>
+                                  </div>
+                                  <div class="img-box">
+                                    <img src="{{product.featured_image | img_url: '500x'}}" alt="">
+                                  </div>
+                                </a>
+                            {% endfor %}
+                              </div>
+                              <div class="desktop_headerBox_list desktop_headerBox_lists">
+                               
+                                {% for product in mega_menu_block.settings.collection3.products %}
+                                <a href="{{product.url}}" class="item">
+                                  <div class="desktop_headerBox_list_first">
+                                      <div class="title">
+                                        {{product.title}}
+                                      </div>
+                                      <div class="price">
+                                        <div class="price--highlight">{{- product.price | money -}}</div>
+                                        <s class="price--compare"> {{- product.compare_at_price | money -}}</s>
+                                      </div>
+                                  </div>
+                                  <div class="img-box">
+                                    <img src="{{product.featured_image | img_url: '500x'}}" alt="">
+                                  </div>
+                                </a>
+                            {% endfor %}
+                              </div>
+                              <div class="desktop_headerBox_list desktop_headerBox_lists">
+                               
+                                {% for product in mega_menu_block.settings.collection4.products %}
+                                <a href="{{product.url}}" class="item">
+                                  <div class="desktop_headerBox_list_first">
+                                      <div class="title">
+                                        {{product.title}}
+                                      </div>
+                                      <div class="price">
+                                        <div class="price--highlight">{{- product.price | money -}}</div>
+                                        <s class="price--compare"> {{- product.compare_at_price | money -}}</s>
+                                      </div>
+                                  </div>
+                                  <div class="img-box">
+                                    <img src="{{product.featured_image | img_url: '500x'}}" alt="">
+                                  </div>
+                                </a>
+                            {% endfor %}
+                              </div>
+                              <div class="desktop_headerBox_list desktop_headerBox_lists">
+                               
+                                {% for product in mega_menu_block.settings.collection5.products %}
+                                <a href="{{product.url}}" class="item">
+                                  <div class="desktop_headerBox_list_first">
+                                      <div class="title">
+                                        {{product.title}}
+                                      </div>
+                                      <div class="price">
+                                        <div class="price--highlight">{{- product.price | money -}}</div>
+                                        <s class="price--compare"> {{- product.compare_at_price | money -}}</s>
+                                      </div>
+                                  </div>
+                                  <div class="img-box">
+                                    <img src="{{product.featured_image | img_url: '500x'}}" alt="">
+                                  </div>
+                                </a>
+                            {% endfor %}
+                              </div>
+                            </div>
+                            <a href="{{link.url}}" class="desktop_headerBox_bottom">Shop All Ebikes <svg t="1666057872557" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2454" width="16" height="16"><path d="M301.99808 44.9792l-47.04768 47.09888 419.9424 419.98848-419.9424 419.90144 47.0528 47.0528 419.93728-419.89632h0.00512l47.104-47.09888-47.0528-47.04768z" p-id="2455" fill="#2A408E"></path></svg></a>
+                        </div>
+                                
+                      </div>
+                  </div>
+                {%- endif -%}
+            {% elsif mega_menu_block2 != ''  %}
+                <div class="mobile-nav__item_title">{{- link.title -}}</div>
+                <div id="desktop-menu-{{ forloop.index }}" class="mobile_nav__itemBox1" {{ mega_menu_block.shopify_attributes }}>
+                  <div class="desktop_header">
+                    <div class="desktop_headerRightTop"><svg t="1666056671768" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1479" width="32" height="32"><path d="M862.485 481.154H234.126l203.3-203.3c12.497-12.497 12.497-32.758 0-45.255s-32.758-12.497-45.255 0L135.397 489.373c-12.497 12.497-12.497 32.758 0 45.254l256.774 256.775c6.249 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372c12.497-12.497 12.497-32.759 0-45.255l-203.3-203.301h628.36c17.036 0 30.846-13.81 30.846-30.846s-13.81-30.846-30.846-30.846z" fill="#151515" p-id="1480"></path></svg><div>{{- link.title -}}</div></div>
+                    <div class="desktop_headerRight container">
+                      <div class="pj_desktop_headerRight">
+                          <div>
+                            <div class="pj_desktoptab accessoriesSwiper">
+                              <div class="swiper-wrapper">
+                                {% if mega_menu_block2.settings.collection !=blank %}
+                                  <div class="swiper-slide active">
+                                    <div class="pj_desktoptab_li">{{mega_menu_block2.settings.collection.title}}</div>
+                                  </div>
+                                  
+                                {% endif %}
+                                
+                                  {% if mega_menu_block2.settings.collection2 !=blank %}
+                                  <div class="swiper-slide">
+                                    <div class="pj_desktoptab_li">{{mega_menu_block2.settings.collection2.title}}</div>
+                                  </div>
+                                {% endif %}
+                                
+                              
+                                {% if mega_menu_block2.settings.collection3 !=blank %}
+                                <div class="swiper-slide">
+                                  <div class="pj_desktoptab_li">{{mega_menu_block2.settings.collection3.title}}</div>
+                                </div>
+                                  
+                                {% endif %}
+                                {% if mega_menu_block2.settings.collection4 !=blank %}
+                                <div class="swiper-slide">
+                                  <div class="pj_desktoptab_li">{{mega_menu_block2.settings.collection4.title}}</div>
+                                </div>
+                                  
+                                {% endif %}
+                                {% if mega_menu_block2.settings.collection5 !=blank %}
+                                <div class="swiper-slide">
+                                  <div class="pj_desktoptab_li">{{mega_menu_block2.settings.collection5.title}}</div>
+                                </div>
+                                  
+                                {% endif %}
+                                {% if mega_menu_block2.settings.collection6 !=blank %}
+                                <div class="swiper-slide">
+                                  <div class="pj_desktoptab_li">{{mega_menu_block2.settings.collection6.title}}</div>
+                                </div>
+                                  
+                                {% endif %}
+                              </div>
+                            </div>
+                          <div class="pj_desktopBottom">
+                            <div class="pj_desktoptab_boxs selected">
+                                <div class="pj_desktoptab_boxBox">
+                                  {% for product in mega_menu_block2.settings.collection.products %}
+                                  <a href="{{product.url}}" class="pj_desktoptab_boxBox_s">
+                                    <div class="pj_desktoptab_box_img Hideimg">
+                                      <img src="{{product.featured_image | img_url: '500x'}}" alt="">
+                                    </div>
+                                    <div class="pj_desktoptab_box_title">
+                                      {{product.title}}
+                                    </div>
+                                    <!-- <div class="pj_desktoptab_box_a">
+                                      <a href="{{product.url}}">see more</a>
+                                    </div> -->
+                                  </a>
+                                {% endfor %}
+                                </div>
+                                <a class="pj_desktoptab_boxA" href="{{mega_menu_block2.settings.collection.url}}">View All <svg t="1666057872557" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2454" width="16" height="16"><path d="M301.99808 44.9792l-47.04768 47.09888 419.9424 419.98848-419.9424 419.90144 47.0528 47.0528 419.93728-419.89632h0.00512l47.104-47.09888-47.0528-47.04768z" p-id="2455" fill="#2A408E"></path></svg></a>
+                            </div>
+                            <div class="pj_desktoptab_boxs">
+                              <div class="pj_desktoptab_boxBox">
+                                {% for product in mega_menu_block2.settings.collection2.products %}
+                                <a href="{{product.url}}" class="pj_desktoptab_boxBox_s">
+                                  <div class="pj_desktoptab_box_img Hideimg">
+                                    <img src="{{product.featured_image | img_url: '500x'}}" alt="">
+                                  </div>
+                                  <div class="pj_desktoptab_box_title">
+                                    {{product.title}}
+                                  </div>
+                                  <!-- <div class="pj_desktoptab_box_a">
+                                    <a href="{{product.url}}">see more</a>
+                                  </div> -->
+                                </a>
+                              {% endfor %}
+                              </div>
+                              <a class="pj_desktoptab_boxA" href="{{mega_menu_block2.settings.collection2.url}}">View All <svg t="1666057872557" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2454" width="16" height="16"><path d="M301.99808 44.9792l-47.04768 47.09888 419.9424 419.98848-419.9424 419.90144 47.0528 47.0528 419.93728-419.89632h0.00512l47.104-47.09888-47.0528-47.04768z" p-id="2455" fill="#2A408E"></path></svg></a>
+                            </div>
+                            <div class="pj_desktoptab_boxs">
+                              <div class="pj_desktoptab_boxBox">
+                                {% for product in mega_menu_block2.settings.collection3.products %}
+                                <div class="pj_desktoptab_boxBox_s">
+                                  <div class="pj_desktoptab_box_img Hideimg">
+                                    <img src="{{product.featured_image | img_url: '500x'}}" alt="">
+                                  </div>
+                                  <div class="pj_desktoptab_box_title">
+                                    {{product.title}}
+                                  </div>
+                                  <div class="pj_desktoptab_box_a">
+                                    <a href="{{product.url}}">see more</a>
+                                  </div>
+                                </div>
+                              {% endfor %}
+                              </div>
+                              <a class="pj_desktoptab_boxA" href="{{mega_menu_block2.settings.collection3.url}}">View All <svg t="1666057872557" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2454" width="16" height="16"><path d="M301.99808 44.9792l-47.04768 47.09888 419.9424 419.98848-419.9424 419.90144 47.0528 47.0528 419.93728-419.89632h0.00512l47.104-47.09888-47.0528-47.04768z" p-id="2455" fill="#2A408E"></path></svg></a>
+                            </div>
+                            <div class="pj_desktoptab_boxs">
+                              <div class="pj_desktoptab_boxBox">
+                                {% for product in mega_menu_block2.settings.collection4.products %}
+                                <a href="{{product.url}}" class="pj_desktoptab_boxBox_s">
+                                  <div class="pj_desktoptab_box_img Hideimg">
+                                    <img src="{{product.featured_image | img_url: '500x'}}" alt="">
+                                  </div>
+                                  <div class="pj_desktoptab_box_title">
+                                    {{product.title}}
+                                  </div>
+                                  <!-- <div class="pj_desktoptab_box_a">
+                                    <a href="{{product.url}}">see more</a>
+                                  </div> -->
+                                </a>
+                              {% endfor %}
+                              </div>
+                              <a class="pj_desktoptab_boxA" href="{{mega_menu_block2.settings.collection4.url}}">View All <svg t="1666057872557" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2454" width="16" height="16"><path d="M301.99808 44.9792l-47.04768 47.09888 419.9424 419.98848-419.9424 419.90144 47.0528 47.0528 419.93728-419.89632h0.00512l47.104-47.09888-47.0528-47.04768z" p-id="2455" fill="#2A408E"></path></svg></a>
+                            </div>
+                            <!-- 5 -->
+                            <div class="pj_desktoptab_boxs">
+                              <div class="pj_desktoptab_boxBox">
+                                {% for product in mega_menu_block2.settings.collection5.products %}
+                                <a href="{{product.url}}" class="pj_desktoptab_boxBox_s">
+                                  <div class="pj_desktoptab_box_img Hideimg">
+                                    <img src="{{product.featured_image | img_url: '500x'}}" alt="">
+                                  </div>
+                                  <div class="pj_desktoptab_box_title">
+                                    {{product.title}}
+                                  </div>
+                                  <!-- <div class="pj_desktoptab_box_a">
+                                    <a href="{{product.url}}">see more</a>
+                                  </div> -->
+                                </a>
+                              {% endfor %}
+                              </div>
+                              <a class="pj_desktoptab_boxA" href="{{mega_menu_block2.settings.collection5.url}}">View All <svg t="1666057872557" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2454" width="16" height="16"><path d="M301.99808 44.9792l-47.04768 47.09888 419.9424 419.98848-419.9424 419.90144 47.0528 47.0528 419.93728-419.89632h0.00512l47.104-47.09888-47.0528-47.04768z" p-id="2455" fill="#2A408E"></path></svg></a>
+                            </div>
+                            <!-- 6 -->
+                            <div class="pj_desktoptab_boxs">
+                              <div class="pj_desktoptab_boxBox">
+                                {% for product in mega_menu_block2.settings.collection6.products %}
+                                <a href="{{product.url}}" class="pj_desktoptab_boxBox_s">
+                                  <div class="pj_desktoptab_box_img Hideimg">
+                                    <img src="{{product.featured_image | img_url: '500x'}}" alt="">
+                                  </div>
+                                  <div class="pj_desktoptab_box_title">
+                                    {{product.title}}
+                                  </div>
+                                  <!-- <div class="pj_desktoptab_box_a">
+                                    <a href="{{product.url}}">see more</a>
+                                  </div> -->
+                                </a>
+                              {% endfor %}
+                              </div>
+                              <a class="pj_desktoptab_boxA" href="{{mega_menu_block2.settings.collection6.url}}">View All <svg t="1666057872557" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2454" width="16" height="16"><path d="M301.99808 44.9792l-47.04768 47.09888 419.9424 419.98848-419.9424 419.90144 47.0528 47.0528 419.93728-419.89632h0.00512l47.104-47.09888-47.0528-47.04768z" p-id="2455" fill="#2A408E"></path></svg></a>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="pj_desktoptab_boxA_button">
+                            <a href="{{mega_menu_block2.settings.buttonLink}}" class="pj_desktop_headerLeftButton">{{mega_menu_block2.settings.buttonText}} <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1662451023759" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3840" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128"><path d="M885.113 489.373L628.338 232.599c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255l203.3 203.3H158.025c-17.036 0-30.846 13.811-30.846 30.846 0 17.036 13.811 30.846 30.846 30.846h628.36L583.084 746.147c-12.497 12.496-12.497 32.758 0 45.255 6.248 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372l256.775-256.775a31.999 31.999 0 0 0 0-45.254z" fill="#ffffff" p-id="3841"></path></svg></a>    
+                          </div>
+                      </div>    
+                      
+                    </div> 
+                  </div>
+               </div>
+
+            {% elsif mega_menu_block3 != ''  %}
+                <div class="mobile-nav__item_title">{{- link.title -}}</div>
+                <div hidden id="desktop-menu-{{ forloop.index }}" class="mobile_nav__itemBox1" {{ mega_menu_block.shopify_attributes }}>
+                  <div class="desktop_header">
+                    <div class="desktop_headerRightTop"><svg t="1666056671768" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1479" width="32" height="32"><path d="M862.485 481.154H234.126l203.3-203.3c12.497-12.497 12.497-32.758 0-45.255s-32.758-12.497-45.255 0L135.397 489.373c-12.497 12.497-12.497 32.758 0 45.254l256.774 256.775c6.249 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372c12.497-12.497 12.497-32.759 0-45.255l-203.3-203.301h628.36c17.036 0 30.846-13.81 30.846-30.846s-13.81-30.846-30.846-30.846z" fill="#151515" p-id="1480"></path></svg><div>{{- link.title -}}</div></div>
+                    <div class="desktop_headerRight container">
+                        <div class="support_desktop_headerRightTop">
+                          <div class="grid page-width x-support-left">
+                            {% for childlink in link.links %}
+                              {% assign index = forloop.index %}
+                              <div class="grid__item one-fifth text-center index-{{ index }}  x-support-li">
+                                  <a href='{{ childlink.url }}'>
+                                    {% if index == 1 %}
+                                    <div class='support-icon'>{{mega_menu_block3.settings.svg1}}</div>
+                                    {% elsif index == 2 %}
+                                    <div class='support-icon'>{{mega_menu_block3.settings.svg2}}</div>
+                                    {% elsif index == 3 %}
+                                    <div class='support-icon'>{{mega_menu_block3.settings.svg3}}</div>
+                                    {% elsif index == 4 %}
+                                    <div class='support-icon'>{{mega_menu_block3.settings.svg4}}</div>
+                                    {% elsif index == 5 %}
+                                    <div class='support-icon'>{{mega_menu_block3.settings.svg5}}</div>
+                                    {% elsif index == 6 %}
+                                    <div class='support-icon'>{{mega_menu_block3.settings.svg6}}</div>
+                                    {% elsif index == 7 %}
+                                    <div class='support-icon'>{{mega_menu_block3.settings.svg7}}</div>
+                                    {% elsif index == 8 %}
+                                    <div class='support-icon'>{{mega_menu_block3.settings.svg8}}</div>
+                                    {% elsif index == 9 %}
+                                    <div class='support-icon'>{{mega_menu_block3.settings.svg9}}</div>
+                                    {% elsif index == 10 %}
+                                    <div class='support-icon'>{{mega_menu_block3.settings.svg10}}</div>
+                                    {% endif %}
+                                    <div class='support-text'>{{ childlink.title }}</div>
+                                  </a>
+                              </div>
+                            {% endfor %}
+                          </div>
+                          {%- assign support_img = mega_menu_block3.settings.support_img -%}
+                          <div class ='support-right'>
+                              <div class="support-right_img">
+                                <img src="{{ support_img | image_url: width: 500 }}">
+                                  <a href="{{mega_menu_block3.settings.contact_us}}" class="support_right_position">
+                                  {{mega_menu_block3.settings.supportImg_text}}
+                                  </a>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="support_desktop_headerRightBottom">
+                            <div class="support_headerRightBottom_title">{{mega_menu_block3.settings.supportBottom_title}}</div>
+                            <div class="support_headerRightBottom_text">{{mega_menu_block3.settings.supportBottom_text_mobile}}</div>
+                            <div class="support_headerRightBottom_text">{{mega_menu_block3.settings.supportBottom_text2_mobile}}</div>
+                            <div class="support_headerRightBottom_text">{{mega_menu_block3.settings.supportBottom_text3_mobile}}</div>
+                        </div>
+                        <div class="pj_desktoptab_boxA_button">
+                          <a href="{{mega_menu_block3.settings.buttonLink}}" class="pj_desktop_headerLeftButton">{{mega_menu_block3.settings.buttonText}} <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1662451023759" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3840" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128"><path d="M885.113 489.373L628.338 232.599c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255l203.3 203.3H158.025c-17.036 0-30.846 13.811-30.846 30.846 0 17.036 13.811 30.846 30.846 30.846h628.36L583.084 746.147c-12.497 12.496-12.497 32.758 0 45.255 6.248 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372l256.775-256.775a31.999 31.999 0 0 0 0-45.254z" fill="#ffffff" p-id="3841"></path></svg></a>    
+                        </div>
+                    </div>
+                
+                  </div>
+                </div>
+            {% elsif mega_menu_block4 != ''  %}
+            <div class="mobile-nav__item_title">{{- link.title -}}</div>
+            <div hidden id="desktop-menu-{{ forloop.index }}" class="mobile_nav__itemBox1 mobile_nav__itemBoxCommunity" {{ mega_menu_block.shopify_attributes }}>
+              <div class="desktop_header">
+                <div class="desktop_headerRightTop"><svg t="1666056671768" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1479" width="32" height="32"><path d="M862.485 481.154H234.126l203.3-203.3c12.497-12.497 12.497-32.758 0-45.255s-32.758-12.497-45.255 0L135.397 489.373c-12.497 12.497-12.497 32.758 0 45.254l256.774 256.775c6.249 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372c12.497-12.497 12.497-32.759 0-45.255l-203.3-203.301h628.36c17.036 0 30.846-13.81 30.846-30.846s-13.81-30.846-30.846-30.846z" fill="#151515" p-id="1480"></path></svg><div>{{- link.title -}}</div></div>
+                <div class="desktop_headerRight container">
+                  <div class="community_desktop_headerRightTop">
+                    <div class="grid page-width x-community-left">
+                      {% for childlink in link.links %}
+                        {% assign index = forloop.index %}
+                        <a href="{{childlink.url}}" class="grid__item one-fifth text-center index-{{ index }}  x-community-li">
+                            <div class="x-community-li_box">
+                              {% if index == 1 %}
+                                <div class='community-icon'>{{mega_menu_block4.settings.svg1}}</div>
+                                <div class='community-text'>{{ childlink.title }}</div>
+                                <div class="community-text_dec">{{mega_menu_block4.settings.text1_mobile}}</div>
+                              {% elsif index == 2 %}
+                                <div class='community-icon'>{{mega_menu_block4.settings.svg2}}</div>
+                                <div class='community-text'>{{ childlink.title }}</div>
+                                <div class="community-text_dec">{{mega_menu_block4.settings.text2_mobile}}</div>
+                              {% elsif index == 3 %}
+                                <div class='community-icon'>{{mega_menu_block4.settings.svg3}}</div>
+                                <div class='community-text'>{{ childlink.title }}</div>
+                                <div class="community-text_dec">{{mega_menu_block4.settings.text3_mobile}}</div>
+                              {% elsif index == 4 %}
+                                <div class='community-icon'>{{mega_menu_block4.settings.svg4}}</div>
+                                <div class='community-text'>{{ childlink.title }}</div>
+                                <div class="community-text_dec">{{mega_menu_block4.settings.text4_mobile}}</div>
+                              {% elsif index == 5 %}
+                                <div class='community-icon'>{{mega_menu_block4.settings.svg5}}</div>
+                                <div class='community-text'>{{ childlink.title }}</div>
+                                <div class="community-text_dec">{{mega_menu_block4.settings.text5_mobile}}</div>
+                              {% endif %}
+                              
+                              <div class="community-learn_more">Learn more</div>
+                            </div>
+                        </a>
+                      {% endfor %}
+                    </div>
+                  
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+            {%- else -%}
+              {%- if link.links.size > 0 or mega_menu_images != blank -%}
+            
+                  <button is="toggle-button" class="mobile-nav__link {% if settings.heading_text_transform == 'uppercase' %}{% endif %}" aria-controls="mobile-menu-{{ forloop.index }}" aria-expanded="false">
+                    {{- link.title -}}
+                    <span class="animated-plus"></span>
+                  </button>
+
+                  <collapsible-content id="mobile-menu-{{ forloop.index }}" class="mobile_nav__itemBox1_xia collapsible">
+                    {%- if link.links.size > 0 -%}
+                      <ul class="mobile-nav list--unstyled" role="list">
+                        {%- for sub_link in link.links -%}
+                          <li class="mobile-nav__item" data-level="2">
+                            {%- if sub_link.links.size > 0 -%}
+                              <button is="toggle-button" class="mobile-nav__link" aria-controls="mobile-menu-{{ forloop.parentloop.index }}-{{ forloop.index }}" aria-expanded="false">
+                                {{- sub_link.title -}}
+                                <span class="animated-plus"></span>
+                              </button>
+
+                              <collapsible-content id="mobile-menu-{{ forloop.parentloop.index }}-{{ forloop.index }}" class="collapsible">
+                                <ul class="mobile-nav list--unstyled" role="list">
+                                  {%- for sub_sub_link in sub_link.links -%}
+                                    <li class="mobile-nav__item" data-level="3">
+                                      <a href="{{ sub_sub_link.url }}" class="mobile-nav__link">{{ sub_sub_link.title }}</a>
+                                    </li>
+                                  {%- endfor -%}
+                                </ul>
+                              </collapsible-content>
+                            {%- else -%}
+                              <a href="{{ sub_link.url }}" class="mobile-nav__link">{{ sub_link.title }}</a>
+                            {%- endif -%}
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                    {%- endif -%}
+
+                    {%- if mega_menu_images != blank -%}
+                      <div class="mobile-nav__images-wrapper {% if images_count >= 3 %}mobile-nav__images-wrapper--tight{% endif %} hide-scrollbar">
+                        <div class="mobile-nav__images-scroller">
+                          {{- mega_menu_images -}}
+                        </div>
+                      </div>
+                    {%- endif -%}
+                  </collapsible-content>
+                {%- else -%}
+                <a href="{{ link.url }}" class=" {% if settings.heading_text_transform == 'uppercase' %}{% endif %}">{{ link.title }}</a>
+                {%- endif -%}
+           
+            {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+   <div class="mobile_drawer_bottomBox mobile-nav__item" data-level="1">
+      <div class="mobileDrawer_bottomBox_top">
+          <div class="mobileDrawer_bottomBox_topTitle">{{ section.settings.mobile_title }}</div>
+          <div class="mobileDrawer_bottomBox_topBottom">
+            <div> {{ section.settings.mobile_svg1}}{{ section.settings.mobile_svg_text }}</div>
+            <div>{{ section.settings.mobile_svg2}}{{ section.settings.mobile_svg_text2 }}</div>
+          </div>
+      </div>
+      <div class="mobileDrawer_bottomBox_bottom">
+        <div class="mobileDrawer_bottomBox_bottomTitle">{{ section.settings.mobile_title2 }}</div>
+        <div class="mobileDrawer_bottomBox_bottomDes">{{ section.settings.mobile_description2 }}</div>
+        <div class="mobileDrawer_bottomBox_bottomBottom">
+          <div> {{ section.settings.mobile2_svg1}}{{ section.settings.mobile2_svg_text }}</div>
+          <div>{{ section.settings.mobile2_svg2}}{{ section.settings.mobile2_svg_text2 }}</div>
+        </div>
+    </div>
+   </div>
+  </div>
+  {%- if section.settings.show_locale_selector and shop.published_locales.size > 1 -%}
+    {%- assign locale_selector = true -%}
+  {%- endif -%}
+
+  {%- if section.settings.show_currency_selector and shop.enabled_currencies.size > 1 -%}
+    {%- assign currency_selector = true -%}
+  {%- endif -%}
+
+  {%- if shop.customer_accounts_enabled or locale_selector or currency_selector -%}
+    <div class="drawer__footer drawer__footer--tight drawer__footer--bordered">
+      <div class="mobile-nav__footer">
+        {%- if shop.customer_accounts_enabled -%}
+          <a class="icon-text" href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}">
+            {%- render 'icon' with 'header-customer' -%}
+            {{- 'header.general.account' | t -}}
+          </a>
+        {%- endif -%}
+
+        {%- if locale_selector or currency_selector -%}
+          {%- form 'localization', id: 'header-sidebar-localization-form', class: 'header__cross-border' -%}
+            {%- if currency_selector -%}
+              <div class="popover-container">
+                <input type="hidden" name="currency_code" value="{{ form.current_currency.iso_code }}">
+                <span class="visually-hidden">{{ 'header.general.currency' | t }}</span>
+
+                <button type="button" is="toggle-button" class="popover-button text--xsmall tap-area" aria-expanded="false" aria-controls="header-sidebar-localization-form-currency">
+                  {{- form.current_currency.iso_code }} {% if form.current_currency.symbol %}{{ form.current_currency.symbol -}}{%- endif -%}
+                  {%- render 'icon' with 'chevron', width: 9, height: 6, inline: true -%}
+                </button>
+
+                <popover-content id="header-sidebar-localization-form-currency" class="popover popover--top popover--small">
+                  <span class="popover__overlay"></span>
+
+                  <header class="popover__header">
+                    <span class="popover__title heading h6">{{- 'header.general.currency' | t -}}</span>
+
+                    <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+                      {%- render 'icon' with 'close' -%}
+                    </button>
+                  </header>
+
+                  <div class="popover__content">
+                    <div class="popover__choice-list">
+                      {%- for currency in form.available_currencies -%}
+                        <button type="submit" name="currency_code" value="{{ currency.iso_code }}" class="popover__choice-item">
+                          <span class="popover__choice-label" {% if currency.iso_code == form.current_currency.iso_code %}aria-current="true"{% endif %}>
+                            {{ currency.iso_code }} {% if currency.symbol %}{{ currency.symbol }}{% endif %}
+                          </span>
+                        </button>
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                </popover-content>
+              </div>
+            {%- endif -%}
+
+            {%- if locale_selector -%}
+              <div class="popover-container">
+                <input type="hidden" name="locale_code" value="{{ form.current_locale.iso_code }}">
+                <span class="visually-hidden">{{ 'header.general.language' | t }}</span>
+
+                <button type="button" is="toggle-button" class="popover-button text--xsmall tap-area" aria-expanded="false" aria-controls="header-sidebar-localization-form-locale">
+                  {{- form.current_locale.endonym_name | capitalize -}}
+                  {%- render 'icon' with 'chevron', width: 9, height: 6, inline: true -%}
+                </button>
+
+                <popover-content id="header-sidebar-localization-form-locale" class="popover popover--top popover--small">
+                  <span class="popover__overlay"></span>
+
+                  <header class="popover__header">
+                    <span class="popover__title heading h6">{{- 'header.general.language' | t -}}</span>
+
+                    <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+                      {%- render 'icon' with 'close' -%}
+                    </button>
+                  </header>
+
+                  <div class="popover__content">
+                    <div class="popover__choice-list">
+                      {%- for locale in form.available_locales -%}
+                        <button type="submit" name="locale_code" value="{{ locale.iso_code }}" class="popover__choice-item">
+                          <span class="popover__choice-label" {% if locale.iso_code == form.current_locale.iso_code %}aria-current="true"{% endif %}>
+                            {{- locale.endonym_name | capitalize -}}
+                          </span>
+                        </button>
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                </popover-content>
+              </div>
+            {%- endif -%}
+          {%- endform -%}
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+</mobile-navigation>
+<script>
+  // tab bike
+
+    $(".bikeSwiper .swiper-slide").click(function () {
+            
+            $(this).addClass("active");
+            $(this).siblings().removeClass("active");
+            var index = $(this).index();
+            console.log(index)
+            $(".desktop_headerBox_lists:eq(" + index + ")").show().siblings(".desktop_headerBox_lists").hide()
+      })
+  
+
+    var swiper = new Swiper(".bikeSwiper", {
+        slidesPerView: 'auto',
+        observer: true,
+        observeParents: true,
+        slideToClickedSlide:true,
+        spaceBetween: 36,
+      
+     });
+
+     $(".accessoriesSwiper .swiper-slide ").click(function () {
+          
+          $(this).addClass("active");
+          $(this).siblings().removeClass("active");
+          var index = $(this).index();
+          console.log(index)
+          $(".pj_desktoptab_boxs:eq(" + index + ")").show().siblings(".pj_desktoptab_boxs").hide()
+    })
+  
+    // 配件二
+    
+    var swiper = new Swiper(".accessoriesSwiper", {
+      slidesPerView: 'auto',
+      //  spaceBetween: 34,
+      observer: true,
+      observeParents: true,
+      slideToClickedSlide:true,
+      breakpoints: { 
+         
+         300: {  //当屏幕宽度大于等于768 
+          slidesPerView: 'auto',
+          spaceBetween: 20,
+         
+         },
+         700:{
+          slidesPerView: 'auto',
+          spaceBetween: 20,
+         }
+       
+       }
+      
+     });
+    $(".accessoriesSwiper .swiper-slide ").click(function () {
+          
+          $(this).addClass("active");
+          $(this).siblings().removeClass("active");
+          var index = $(this).index();
+          console.log(index)
+          $(".pj_desktoptab_boxs:eq(" + index + ")").show().siblings(".pj_desktoptab_boxs").hide()
+    })
+  
+    // tab top
+    $(".desktop_headerRightTop").click(function(event){
+      event.stopPropagation()
+      $(this).parent().parent().removeClass("mobile_nav__itemBox1sBlock");
+      $(this).parent().parent().addClass("mobile_nav__itemBox1sHide");
+    
+    })
+    // 移动端弹窗
+    $(".header_lastSvg").click(function(){
+        if($(this).attr("aria-expanded")){
+          $(".mobile-nav__item").find(".mobile-nav__item_title").next().removeClass("mobile_nav__itemBox1sBlock");
+          $("html").removeClass("ovhtml")
+         
+        }
+      
+      })
+      $(".mobile-nav__item").click(function(){
+        $("html").addClass("ovhtml")
+        $(this).find(".mobile-nav__item_title").next().removeClass("mobile_nav__itemBox1sHide");
+        $(this).find(".mobile-nav__item_title").next().addClass("mobile_nav__itemBox1sBlock");
+      })
+    
+</script>

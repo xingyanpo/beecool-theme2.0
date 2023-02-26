@@ -1,0 +1,117 @@
+@media (max-width:999px) {
+      /* logo */
+      .banner_Logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+    .banner_Logo img{
+       width: 66% !important;
+    }
+    
+    /* end */
+  .banners{
+      width: 100%;
+  }
+  .banners_position{
+      position: relative;
+  }
+  .banners_position img, .banners_position video{
+      width: 100%;
+  }
+  .banners_positionBox {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #251A1A1a;
+  }
+  .banners_positionBox_box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+  }
+
+  .banners_positionBox_head{
+      font-size: 70px;
+      color: #fff;
+      line-height: 60px;
+      text-align: center;
+      margin: 0;
+      font-weight: 600;
+  }
+
+  /* text */
+  .banner_text{
+    text-align: center;
+    font-weight: 400;
+    color: #fff;   
+    line-height: 18px; 
+  }
+    .banner_Subheading{
+        text-align: center;
+        width: 78%;
+        font-weight: 500;
+        color: #fff;   
+        line-height: 18px; 
+    }  
+  
+}
+@media(min-width:1000px) {
+    /* logo */
+    .banner_Logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner_Logo img{
+       width: 26% !important;
+    }
+    
+    /* end */
+  .banners{
+      width: 100%;
+  }
+  .banners_position{
+      position: relative;
+  }
+  .banners_position img, .banners_position video{
+      width: 100%;
+  }
+  .banners_positionBox {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #251A1A1a;
+  }
+  .banners_positionBox_box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+  }
+
+  .banners_positionBox_head{
+      font-size: 70px;
+      color: #fff;
+      line-height: 155px;
+      text-align: center;
+      margin: 0;
+      font-weight: 600;
+  }
+
+  /* text */
+  .banner_text{
+    text-align: center;
+    font-weight: 600;
+    color: #fff;   
+    line-height: 40px; 
+  }
+
+
+}

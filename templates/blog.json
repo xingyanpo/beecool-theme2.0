@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "166148086327c5f9c3": {
+      "type": "jd-blog-or-video",
+      "blocks": {
+        "47c83c6b-7b14-4602-9f2f-1516fd1a918b": {
+          "type": "exhibition",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/278456089_5402708669774131_6684227566223118513_n.jpg",
+            "article": "video\/buyers-guide-parts-you-need-to-know-about-electric-bicycle",
+            "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/57394f704d7d4cc8bd0f462cd5849a73.mp4"
+          }
+        },
+        "5c7154be-4854-4bd2-ab5b-84b9e3c28c9f": {
+          "type": "exhibition",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/tumblr_2d65984d0450d870b42e2c07d751513f_c38c0cb9_2048.jpg",
+            "article": "latest-news\/introducing-of-pathfinder-series",
+            "link": ""
+          }
+        },
+        "cf78012e-f395-415e-8a05-dcb11ae8499a": {
+          "type": "exhibition",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/20221018110650_600x_30516e91-9f2c-4334-b91c-3cb2af66e11e.webp",
+            "article": "latest-news\/battery-cell-comparison-old-fashion-vs-new-star",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "47c83c6b-7b14-4602-9f2f-1516fd1a918b",
+        "5c7154be-4854-4bd2-ab5b-84b9e3c28c9f",
+        "cf78012e-f395-415e-8a05-dcb11ae8499a"
+      ],
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "show_blog_title": true,
+        "show_tags": true,
+        "show_category": true,
+        "show_excerpt": true,
+        "articles_per_page": 9
+      }
+    },
+    "aa5d8798-0027-4451-bc60-0a2b354165a8": {
+      "type": "jd-afterSales",
+      "blocks": {
+        "2e03af80-4f12-4a90-9c1e-b4a11b4cbc34": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
+            "title": "Free Shipping",
+            "subtitle": "<p>To the lower 48 states<\/p>"
+          }
+        },
+        "b604b384-495c-4ce6-b7b9-ada072e64d49": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
+            "title": "2-Year Warranty",
+            "subtitle": "<p>Buy with confidence<\/p>"
+          }
+        },
+        "27033c23-cfe6-4af8-87dc-d55afa3c2fc3": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
+            "title": "Secure Payment",
+            "subtitle": "<p>Secure payment with Shopify<\/p>"
+          }
+        },
+        "8d8b83a2-6d3e-414a-b938-a49d006a66d3": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
+            "title": "Cost-effective",
+            "subtitle": "<p>Direct to consumer pricing<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "2e03af80-4f12-4a90-9c1e-b4a11b4cbc34",
+        "b604b384-495c-4ce6-b7b9-ada072e64d49",
+        "27033c23-cfe6-4af8-87dc-d55afa3c2fc3",
+        "8d8b83a2-6d3e-414a-b938-a49d006a66d3"
+      ],
+      "settings": {
+        "policy_color": "#f3f5f5",
+        "policy_scolor_mobile": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "166148086327c5f9c3",
+    "main",
+    "aa5d8798-0027-4451-bc60-0a2b354165a8"
+  ]
+}

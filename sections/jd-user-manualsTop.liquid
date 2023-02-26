@@ -1,0 +1,133 @@
+{{ 'jd-user-manualsTop.css' | asset_url | stylesheet_tag }}
+    <div class="user_manualsTop_all">
+        <div class="container">
+            <div class="user_manualsTop_Top">
+                <div class="user_manualsTop_TopTitle ebike_h1">
+                    {{section.settings.title}}
+                </div>
+                <div class="user_manualsTop_TopText">
+                    {{section.settings.text}}
+                </div>
+            </div>
+            <div class="user_manualsTop_Bottom">
+                <div class="swiper manualsTopSwiper">
+                    <div class="swiper-wrapper">
+                        {% for block in section.blocks %}
+                            <div class="swiper-slide">
+                                <div class="manualsTopSwiperBox">
+                                    <div class="manualsTopSwiperBox_img">
+                                        <img src="{{block.settings.img | img_url: '1920x'}}" alt="">
+                                    </div>
+                                    <div class="manualsTopSwiperBox_text">
+                                      <div class="manualsTopSwiperBox_textBox">
+                                            <div class="manualsTopSwiperBox_text_left">
+                                                <div>
+                                                    {{block.settings.text}}
+                                                </div>
+                                            </div>
+                                            <a href="{{block.settings.link}}" target="_blank" class="manualsTopSwiperBox_text_right">
+                                                <div>Download</div>
+                                                <div>
+                                                    <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1661848113046" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="85803" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128"><path d="M176 560v288h672V560h64v352H112V560h64z m368 77.492L687.362 494.13l45.255 45.255L512 760.002 291.383 539.385l45.255-45.255L480 637.492V112h64v525.492z" fill="#000000" p-id="85804"></path></svg>
+                                                </div>
+                                            </a>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                     
+                    </div>
+                   
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script>
+            (()=>{
+                var swiper = new Swiper(".manualsTopSwiper", {
+               
+                spaceBetween: 28,
+               
+                breakpoints: { 
+                    280: {  //当屏幕宽度大于等于320
+                        slidesPerView: 1.2,
+                    
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    },
+                    768: {  //当屏幕宽度大于等于768 
+                        slidesPerView: 2,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    },
+                    1200: {  //当屏幕宽度大于等于1280
+                        slidesPerView: 3,
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    },
+                    1400: {  //当屏幕宽度大于等于1280
+                        slidesPerView: 3,
+                    },
+                    1600: {  //当屏幕宽度大于等于1280
+                        slidesPerView: 4,
+                    }
+                }
+                });
+            })()
+      </script>
+    {% schema %}
+    {
+        "name": "user manuals Top",
+        "class": "shopify-section--user_manuals_Top",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "title"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "text"
+            }
+        ],
+    "blocks": [
+    {
+        "type": "user_manuals_Top",
+        "name": "user manuals Top",
+        "settings": [
+            
+            {
+                "type": "image_picker",
+                "id": "img",
+                "label": "img"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "text"
+            },
+            {
+                "type": "url",
+                "id": "link",
+                "label": "link"
+            }
+            
+          
+  ]
+}
+    ],
+    "presets": [
+    {
+    "name": "user manuals Top"
+    }
+    ]
+    }
+    {% endschema %}

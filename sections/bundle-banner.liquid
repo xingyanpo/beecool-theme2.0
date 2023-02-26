@@ -1,0 +1,65 @@
+<style>
+  .bundle-block { background-image: url("{{ section.settings.bundle_back_image | image_url: width:1920 }}");background-repeat: no-repeat;background-position: center;background-size: cover;width: 100%;height: 170px; display:flex;justify-content: {{ section.settings.title_position }};align-items:center;}
+  .bundle-title { font-size: 48px;color:#FFF;padding:0 50px;}
+
+  @media screen and (max-width: 992px) and (min-width: 768px) {
+    .bundle-title  {font-size: 36px;}
+  }
+  
+  @media screen and (max-width: 768px) {
+    .bundle-title  {font-size: 30px;}
+  }
+</style>
+
+
+<section class="bundle-item">
+  {%- if section.settings.bundle_back_image -%} 
+  <div class="bundle-block">
+    <h1 class="bundle-title">{{ section.settings.bundle_back_title }}</h1>
+  </div> 
+  {%- endif -%}
+</section>
+
+{% schema %}
+  {
+    "name": "Bundle Banner",
+    "settings": [
+      {
+        "type": "text",
+        "id": "bundle_back_title",
+        "label": "Title",
+        "default": "Bundles"
+      },
+      {
+        "type": "select",
+        "id": "title_position",
+        "label": "Title Position",
+        "options": [
+          {
+            "value": "start",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "end",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      }
+      ,
+      {
+      "type": "image_picker",
+      "id": "bundle_back_image",
+      "label": "Head Banner"
+    }],
+    "presets": [
+      {
+        "name": "Bundle Banner"
+      }
+    ]
+  }
+{% endschema %}

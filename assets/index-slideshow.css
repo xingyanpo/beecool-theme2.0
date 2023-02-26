@@ -1,0 +1,141 @@
+@media screen and (min-width: 1000px) {
+  .slideshow__progress-bar {
+    flex-basis: 20px;
+  }
+  .slideshow__progress-bar:after{
+    background-color: #2A408E;
+  }
+  .slideshow__nav {
+    justify-content: flex-start;
+  }
+
+  .alink-button {
+    background: rgba(0, 0, 0, 0);
+    align-items: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .alink-button svg {
+    width: 70px;
+    height: 70px;
+  }
+  .alink-button svg .cls-2{
+    fill: #fff;
+  }
+  .alink-button svg .a {
+    transition: all 0.5s;
+    fill: rgba(0, 0, 0, 0);
+  }
+  .alink-button svg .b {
+    fill: #FFF;
+  }
+  .alink-button svg .c {
+    fill: #FFF;
+    transition: all 0.5s;
+  }
+  .alink-button svg:hover .a {
+    fill: #FFF;
+  }
+  .alink-button svg:hover .c {
+    fill: #181818;
+  }
+
+  .content-box--medium {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 999px) {
+  .slideshow__progress-bar {
+    flex-basis: 20px;
+  }
+  .slideshow__progress-bar:after{
+    background-color: #2A408E;
+  }
+  .slideshow__nav {
+    justify-content: flex-start;
+  }
+
+  .alink-button {
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .alink-button svg {
+    width: 70px;
+    height: 70px;
+  }
+  .alink-button svg .cls-2{
+    fill: #fff;
+  }
+  .alink-button svg .a {
+    transition: all 0.5s;
+    fill: rgba(0, 0, 0, 0);
+  }
+  .alink-button svg .b {
+    fill: #FFF;
+  }
+  .alink-button svg .c {
+    fill: #FFF;
+    transition: all 0.5s;
+  }
+  .alink-button svg:hover .a {
+    fill: #FFF;
+  }
+  .alink-button svg:hover .c {
+    fill: #181818;
+  }
+
+  .content-box--medium {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .slide_h3{
+    font-size: 70px;
+  }
+  .slide_h2{
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 999px) {
+  .alink-button {
+    background: rgba(0, 0, 0, 0);
+    align-items: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .content-box--medium{
+    margin: 0;
+  }
+  .slide_h3{
+    font-size: 35px;
+    margin-bottom: 25px;
+    margin: 0 !important;
+  }
+  .slide_h2{
+    font-size: 16px;
+    margin: 25px 0 0 !important;
+  }
+  .alink-button{
+    background: transparent;
+  }
+  .alink-button svg{
+    width: 40px;
+    height: 40px;
+  }
+  .content-box .button-wrapper{
+    margin-top: 25px;
+  }
+  .slideshow__progress-bar {
+    padding: 0;
+    flex-basis: 10px;
+    margin: 0 2px;
+  }
+  .slideshow__progress-bar:after{
+    background-color: #2A408E;
+  }
+
+
+}
+/*# sourceMappingURL=index-slideshow.css.map */

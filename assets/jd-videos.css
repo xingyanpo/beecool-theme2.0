@@ -1,0 +1,373 @@
+@media (max-width:999px) {
+    .videos_nav .breadcrumb__list{
+        padding: 0;
+        font-size: 14px;
+        color: #222;
+    }
+    .videos_nav .breadcrumb__link{
+        opacity: 1 !important;
+    }
+    .videos_nav .breadcrumb__item+.breadcrumb__item:before{
+        opacity: 1;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .videos_nav{
+        width: 100%;
+        line-height: 24px;
+        height: 24px;
+        background: #F5F5F7;
+    }
+    .jd_videos_title{
+        color: #333;
+        line-height: 1;
+        text-align: center;
+    }
+    .jd_videos_all{
+        padding: 50px 0 0;
+    }
+    /* 元子段css */
+    .jd_videos_box{
+        margin-top: 24px;
+    }
+    .videos_boxVideo_bottomBoxs{
+        margin-top: 24px;
+    }
+    .videos_title{
+        line-height: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+    .jd_videos_boxVideo_Title{
+        height: 25px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 500;
+        justify-content: center;
+        max-width: 108px;
+        width: 100%;
+        color: #15151560;
+        font-size: 14px;
+        border: 1px solid #6B6B6B;
+    }
+  
+    .jd_videos_all .selected{
+        display: block;
+    }
+    .jd_videos_boxVideo_bottoms{
+        display: none;
+    }
+    .jd_videos_all .active {
+        background: #2B408F;
+        color: #fff;
+    }
+    .boxVideo_bottomBox_videoImgs{
+        position: relative;
+    }
+    .boxVideo_bottomBox_videoTitles{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1;
+        color: #151515;
+        margin-top: 24px;
+    }
+    .boxVideo_bottomBox_videos:not(:first-child){
+        margin-top: 24px;
+    }
+    .boxVideo_bottomBox_videos:nth-child(-n+8){
+        display: block;
+    }
+    .boxVideo_bottomBox_videos:not(:nth-child(-n+8)){
+        display: none;
+    }
+    .boxVideo_bottomBox_videoTexts{
+        margin-top: 10px;
+        font-size: 14px;
+        color: #151515;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+   
+    .boxVideo_bottomBox_videoImg_positions{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .boxVideo_bottomBox_videoImg_positions svg{
+        width: 20%;
+        height: 22%;
+        cursor: pointer;
+        box-shadow: 0px 4px 0px 0px #00000059;
+        border-radius: 15px;
+    }
+    .videos_boxVideo_bottomBoxSvg{
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+    }
+    /* 弹窗 */
+    .videos_video_fixed{
+        width: 88%;
+        height: 50%;
+        display: none;
+        z-index: 333;
+        height: auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #fff;
+        box-shadow: 0px 1px 5px 0px rgb(98 98 98 / 30%);
+      }
+      .videos_video_fixed video {
+          width: 100%;
+      }
+      .videos_video_fixed .responsive-video{
+          width: 100%;
+      }
+    
+      .adlink-html{
+          overflow: hidden;
+      }
+    .bg-colors{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        z-index: 6;
+        background-color: #00000075;
+    }
+    .video_mid_cha{
+          z-index: 9;
+          cursor: pointer;
+          font-size: 20px;
+          position: absolute;
+          top: -30px;
+          right:-12px;
+          color: #fff;
+    }
+    /* 分页 */
+    .pagination-container{
+        text-align: center;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+    }
+    .paginationBox{
+        display: flex;
+    }
+    .paginationBox span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 63px;
+        height: 63px;
+        color: #5c5c5c;
+        cursor: pointer;
+        background: transparent;
+        border-radius: 50%;
+    }
+    .paginationBox span.active{
+        background: #2A408E;
+        color: #fff;
+    }
+    .page-change{
+        margin: 0 15px;
+        cursor:pointer;
+    }
+     
+
+}
+.boxVideo_bottomBox_videoImg img{
+    width: 100%;
+}
+@media(min-width:1000px) {
+    .videos_nav .breadcrumb__list{
+        padding: 0;
+        font-size: 16px;
+        color: #222;
+    }
+    .videos_nav .breadcrumb__link{
+        opacity: 1 !important;
+    }
+    .videos_nav .breadcrumb__item+.breadcrumb__item:before{
+        opacity: 1;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .videos_nav{
+        width: 100%;
+        line-height: 49px;
+        height: 49px;
+        background: #F5F5F7;
+    }
+    .jd_videos_title{
+        color: #333;
+        line-height: 1;
+        text-align: center;
+    }
+    .jd_videos_all{
+        padding: 100px 0;
+    }
+    /* 元子段css */
+    .jd_videos_box{
+        margin-top: 48px;
+    }
+    .videos_title{
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+    }
+    .jd_videos_boxVideo_Title{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: center;
+        max-width: 208px;
+        width: 100%;
+        color: #15151560;
+        font-size: 18px;
+        border: 1px solid #6B6B6B;
+    }
+    .jd_videos_boxVideo_Title:not(:first-child){
+        border-left: unset;
+    }
+    .jd_videos_all .selected{
+        display: block;
+    }
+    .jd_videos_boxVideo_bottom{
+        display: none;
+    }
+    .jd_videos_all .active {
+        background: #2B408F;
+        color: #fff;
+    }
+    .boxVideo_bottomBox_videoImg{
+        position: relative;
+    }
+    .boxVideo_bottomBox_videoTitle{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1;
+        color: #151515;
+        margin-top: 30px;
+    }
+    .boxVideo_bottomBox_videoText{
+        margin-top: 10px;
+        font-size: 18px;
+        color: #151515;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+    .videos_boxVideo_bottomList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+    }
+    .boxVideo_bottomBox_video{
+        width: 32%;
+        margin-top: 80px;
+    }
+    .boxVideo_bottomBox_video:not(:nth-child(3n-2)){
+        margin-left: 2%;
+    }
+    .boxVideo_bottomBox_videoImg_position{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .boxVideo_bottomBox_videoImg_position svg{
+        width: 20%;
+        height: 22%;
+        cursor: pointer;
+        box-shadow: 0px 4px 0px 0px #00000059;
+        border-radius: 15px;
+    }
+    /* 弹窗 */
+    .videos_video_fixed{
+        width: 50%;
+        height: 50%;
+        display: none;
+        z-index: 333;
+        height: auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #fff;
+        box-shadow: 0px 1px 5px 0px rgb(98 98 98 / 30%);
+      }
+      .videos_video_fixed video {
+          width: 100%;
+      }
+      .videos_video_fixed .responsive-video{
+          width: 100%;
+      }
+    
+      .adlink-html{
+          overflow: hidden;
+      }
+    .bg-colors{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        z-index: 6;
+        background-color: #00000075;
+    }
+    .video_mid_cha{
+          z-index: 9;
+          cursor: pointer;
+          font-size: 20px;
+          position: absolute;
+          top: -30px;
+          right:-12px;
+          color: #fff;
+    }
+    /* 分页 */
+    .pagination-container{
+        text-align: center;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+    }
+    .paginationBox{
+        display: flex;
+    }
+    .paginationBox span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 63px;
+        height: 63px;
+        color: #5c5c5c;
+        cursor: pointer;
+        background: transparent;
+        border-radius: 50%;
+    }
+    .paginationBox span.active{
+        background: #2A408E;
+        color: #fff;
+    }
+    .page-change{
+        margin: 0 15px;
+        cursor:pointer;
+    }
+}

@@ -1,0 +1,372 @@
+<style>
+    @media(min-width:100px) {
+     
+        
+      
+        .describe-video-all #testImg {
+            z-index: 3;
+            width: 100%;
+            top: 0px;
+            position: sticky;
+            background-position: center;
+            background-size: cover;
+            background-image: url({{section.settings.img_pc | img_url:'1920x' }});
+        }
+        
+      
+       
+        
+    }
+    @media (min-width:750px){
+        .describe-video-all .box_info{
+            z-index: 3;
+            top: 137px;
+            width: 100%;
+            overflow: hidden;
+            position: sticky;
+            background-position: center;
+            background-size: cover;
+        }
+        .describe-video-all .box {
+            /* height: calc( 303vh + 137px ); */
+            width: 100%;
+            line-height: 0;
+            background-color: #151515;
+            /* position: relative; */
+        }
+        .describe-video-all{
+            margin-top: 120px;
+        }
+        .describe_last_title{
+            font-size: 18px;
+            font-weight: 600;
+            position: absolute;
+            top: 100px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            opacity: 1;
+            line-height: 1.2;
+            width: 88%;
+            margin: 0 auto;
+            right: 0;
+            left: 0;
+            color: #ffffff;
+            z-index: 10;
+            flex-direction: column;
+        }
+        .describe-video-all .video_title div{
+            width: 35%;
+            line-height: 1.5;
+        }
+        .describe_last_title div:first-child{
+            line-height: 1.5;
+            font-size: 32px;
+        }
+        .describe_last_title div:last-child{
+            line-height: 1.2;
+            margin-top: 20px;
+            font-size: 70px;
+        }
+        .describe_top_title{
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: 600;
+            position: absolute;
+            top: 300px;
+            text-align: left;
+            right: 11%;
+            display: flex;
+            justify-content: center;
+            opacity: 1;
+            width: 100%;
+            color: #ffffff;
+            opacity: 1;
+            z-index: 10;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .describe-video-all .video_title{
+            font-size: 21px;
+            font-weight: 500;
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            top: 220px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            align-items: flex-start;
+            width: 80%;
+            bottom: 120px;
+            color: #ffffff;
+            z-index: 10;
+            flex-direction: column;
+        }
+    }
+    @media (min-width:750px) and (max-width:1200px){
+        .describe-video-all .box {
+            /* height: calc( 303vh + 137px ); */
+            width: 100%;
+            line-height: 0;
+            background-color: #151515;
+            /* position: relative; */
+        }
+       
+        .describe-video-all #testImg {
+            z-index: 3;
+            width: 100%;
+            top: 0px;
+            position: sticky;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .describe-video-all .video_title div{
+            width: 35%;
+            line-height: 1.5;
+        }
+        .describe-video-all .video_title div:last-child{
+            text-align: right;
+        }
+        .describe-video-all .video_title{
+            font-size: 21px;
+            font-weight: 500;
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            top: 220px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            align-items: flex-start;
+            width: 80%;
+            bottom: 120px;
+            color: #ffffff;
+            z-index: 10;
+            flex-direction: column;
+        }
+        .describe_last_title{
+            font-size: 18px;
+            font-weight: 600;
+            position: absolute;
+            top: 100px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            opacity: 1;
+            line-height: 1.2;
+            width: 88%;
+            margin: 0 auto;
+            right: 0;
+            left: 0;
+            color: #ffffff;
+            z-index: 10;
+            flex-direction: column;
+        }
+        .describe_last_title div:first-child{
+            line-height: 1.5;
+            font-size: 32px;
+        }
+        .describe_last_title div:last-child{
+            line-height: 1.2;
+            margin-top: 20px;
+            font-size: 35px;
+        }
+        .describe_top_title{
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: 600;
+            position: absolute;
+            top: 300px;
+            text-align: left;
+            right: 11%;
+            display: flex;
+            justify-content: center;
+            opacity: 1;
+            width: 100%;
+            color: #ffffff;
+            opacity: 1;
+            z-index: 10;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+    }
+    @media (max-width:750px){
+        .describe-video-all{
+            margin-top: 50px;
+        }
+        .describe-video-all .box_info{
+            z-index: 3;
+            top: 122px;
+            width: 100%;
+            overflow: hidden;
+            position: sticky;
+            background-position: center;
+            background-size: cover;
+        }
+        .describe-video-all .box {
+            /* height: calc( 303vh + 122px ); */
+            width: 100%;
+            line-height: 0;
+            background-color: #151515;
+            /* position: relative; */
+        }
+        .describe-video-all #testImg {
+            width: 100%;
+            height: 86vh;
+            z-index: 3;
+            top: 0;
+            position: sticky;
+            background-position: center;
+            background-size: cover;
+            background-image: url({{section.settings.img_mobile | img_url:'750x' }});
+            position: relative;
+        }
+        .describe-video-all .introduction{
+            padding: 29px 18px;
+            color: #ffffff;
+            position: absolute;
+            bottom: 15px;
+        }
+        .describe-video-all .title:first-child{
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+        .describe-video-all .title:last-child{
+            font-size: 14px;
+            font-weight: 400;
+            padding-top: 16px;
+        }
+
+        .describe_last_title{
+            font-size: 14px;
+            font-weight: 600;
+            position: absolute;
+            top: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            opacity:  1;
+            padding: 0 15px;
+            width: 100%;
+            color: #ffffff;
+            z-index: 10;
+            flex-direction: column;
+        }
+        .describe_last_title div:first-child{
+            line-height: 1.5;
+            font-size: 16px;
+        }
+        .describe_last_title div:last-child{
+            line-height: 1.2;
+            font-size: 35px;
+            padding: 0 10px;
+            margin-top: 10px;
+        }
+        .describe-video-all .video_title{
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            top:0;
+            left: 0;
+            padding-left: 20px;
+            opacity: 0;
+            align-items: flex-start;
+            width: 100%;
+            bottom: 30px;
+            color: #ffffff;
+            z-index: 10;
+            flex-direction: column;
+        }
+        .describe-video-all .video_title div{
+            line-height: 1.5;
+        }
+        .describe_top_title{
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            top:0;
+            left: 0;
+            line-height: 1.5;
+            padding-left: 20px;
+            opacity: 1;
+            align-items: flex-start;
+            width: 100%;
+            bottom: 30px;
+            color: #ffffff;
+            z-index: 10;
+            flex-direction: column;
+        }
+    }
+   
+</style>
+<section>
+    <div class="describe-video-all" >
+        <div class="box">
+            <div class="box_info">
+                <canvas id="testImg"></canvas>
+                <div class="describe_last_title">
+                    <div>{{section.settings.top_title}}</div>
+                    <div>
+                        {{section.settings.bottom_title}}
+                    </div>
+                </div>
+                <div class="describe_top_title">
+                    {{section.settings.text1}}
+                </div>
+                <div class="video_title">
+                    <div>{{section.settings.text2}}</div>
+                   
+                </div>
+                
+            </div>
+        </div>
+        <!-- <div style="width: 100%; height: 100vh;" ></div> -->
+    </div>
+</section>
+{% schema %}
+{
+    "name": "describe video",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "img_pc",
+            "label": "img pc"
+        },
+        {
+            "type": "image_picker",
+            "id": "img_mobile",
+            "label": "img mobile"
+        },
+        {
+            "type": "richtext",
+            "id": "top_title",
+            "label": "top title"
+        },
+        {
+            "type": "richtext",
+            "id": "bottom_title",
+            "label": "bottom title"
+        },
+        {
+            "type": "richtext",
+            "id": "text2",
+            "label": "text2"
+        }
+      
+     
+    ],
+    "presets": [
+        {
+            "name":"describe video text"
+        }
+    ]
+}
+{% endschema %}

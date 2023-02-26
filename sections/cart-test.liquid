@@ -1,0 +1,42 @@
+<button id="cart-test-button">Test</button>
+
+<script>
+  (function () {
+    let add_to_cart = document.querySelector("#cart-test-button")
+    add_to_cart.addEventListener("click", () => {
+      console.log("已点击",mini_cart)
+      let formData = {
+       'items': [{
+        'id': 43944651784411,
+        'quantity': 1
+        }]
+      };
+      fetch(window.Shopify.routes.root + 'cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(response => {
+        mini_cart.setAttribute("open","")
+        return response.json();
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+    })
+  })()
+</script>
+
+{% schema %}
+  {
+    "name": "Cart Test",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Cart Test"
+      }
+    ]
+  }
+{% endschema %}

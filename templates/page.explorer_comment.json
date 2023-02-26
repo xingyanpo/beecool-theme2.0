@@ -1,0 +1,83 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "page_width": "medium"
+      }
+    },
+    "1661845384fd3e729a": {
+      "type": "jd-comment",
+      "blocks": {
+        "3026df76-b408-4011-b9d5-84c16e1f73c9": {
+          "type": "review1",
+          "settings": {
+            "product": "bee-adventurer",
+            "link": "shopify:\/\/pages\/comment"
+          }
+        },
+        "22a68e64-295d-4d39-aa9e-cd9db475f779": {
+          "type": "review1",
+          "settings": {
+            "product": "bee-challenger",
+            "link": "shopify:\/\/pages\/challenger-comment"
+          }
+        },
+        "da73cf15-ebe6-4f53-baa6-b0a5d4023f2a": {
+          "type": "review1",
+          "settings": {
+            "product": "bee-explorer",
+            "link": "shopify:\/\/pages\/explorer-comment"
+          }
+        },
+        "44280623-c2b1-41ab-b2d6-af0efce2f2e1": {
+          "type": "review1",
+          "settings": {
+            "product": "bee-pathfinder",
+            "link": "shopify:\/\/pages\/pathfinder-comment"
+          }
+        },
+        "6dffdbfc-ed94-4ad4-b81e-1b3e45625d55": {
+          "type": "review1",
+          "settings": {
+            "product": "bee-pathfinder-step-thru",
+            "link": "shopify:\/\/pages\/pathfinder-step-thru-comment"
+          }
+        },
+        "ba14b544-574f-4af7-b68e-691fd4c37276": {
+          "type": "review1",
+          "settings": {
+            "product": "bee-rambler",
+            "link": "shopify:\/\/pages\/rambler-comment"
+          }
+        }
+      },
+      "block_order": [
+        "3026df76-b408-4011-b9d5-84c16e1f73c9",
+        "22a68e64-295d-4d39-aa9e-cd9db475f779",
+        "da73cf15-ebe6-4f53-baa6-b0a5d4023f2a",
+        "44280623-c2b1-41ab-b2d6-af0efce2f2e1",
+        "6dffdbfc-ed94-4ad4-b81e-1b3e45625d55",
+        "ba14b544-574f-4af7-b68e-691fd4c37276"
+      ],
+      "settings": {
+        "title": "See why customers love beecoolbikes",
+        "text_pc": "",
+        "text_mobile": ""
+      }
+    },
+    "16618465422db69209": {
+      "type": "reviews-importer-product",
+      "settings": {
+        "lai_product": "bee-explorer"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1661845384fd3e729a",
+    "16618465422db69209"
+  ]
+}

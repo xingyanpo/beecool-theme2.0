@@ -1,0 +1,87 @@
+@media(min-width:1000px) {
+    .jd-faq-all{
+        margin-top: 95px;
+    }
+    
+    .title_one{
+        font-weight: 600;
+        color: #151515;
+        line-height: 1;
+    }
+    .jd-faq-rightContent{
+        width: 100%;
+        margin-top: 60px;
+        position: relative;
+    }
+    .jd-faq-rightContent .title{
+        cursor: pointer;
+        height: 82px;
+        background: #FFFFFF;
+        box-shadow: -4px 7px 64px 1px rgba(225,225,225,0.38);
+        border-radius: 10px;
+        line-height: 82px;
+        font-size: 20px;
+        padding: 0 28px;
+        color: #151515;
+        position: relative;
+        font-weight: 400;
+    }
+    .jd-faq-rightContent .title span{
+        position: absolute;
+        right: 30px;
+    }
+    .jd-faq-rightContent .jd-faq-inte .title{
+        margin-bottom: 20px;
+    }
+    .jd-faq-rightContent .collapsible__content {
+        font-size: 18px;
+        padding: 0 30px 20px;
+    }
+    .jd-faq-all .collapsible-toggle{
+        align-items: center;
+    }
+    
+}
+@media(max-width:999px) {
+    .jd-faq-all{
+        margin-top: 50px;
+    }
+    
+    .title_one{
+        line-height: 40px;
+        font-weight: 600;
+        color: #151515;
+        line-height: 1;
+    }
+    .jd-faq-rightContent{
+        width: 100%;
+        margin-top: 24px;
+        position: relative;
+    }
+    .jd-faq-rightContent .title{
+        cursor: pointer;
+        background: #FFFFFF;
+        box-shadow: -4px 7px 64px 1px rgba(208,205,205,0.38);
+        border-radius: 5px;
+        line-height: 1.2;
+        font-size: 16px;
+        padding: 10px 12px;
+        color: #151515;
+        position: relative;
+        font-weight: 400;
+    }
+    .jd-faq-rightContent .title span{
+        position: absolute;
+        right: 15px;
+    }
+    .jd-faq-rightContent .jd-faq-inte .title{
+        margin-bottom: 20px;
+    }
+    .jd-faq-rightContent .collapsible__content {
+        font-size: 14px;
+        padding: 0 12px 20px;
+    }
+    .jd-faq-all .collapsible-toggle{
+        align-items: center;
+    }
+}

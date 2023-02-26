@@ -1,0 +1,53 @@
+{{ 'jd-compare-describe.css' | asset_url | stylesheet_tag }}
+<div class="guide_describe-all">
+   <div class="guide_describe-box container">
+        <div class="guide_describe-title ebike_h1">
+            {{section.settings.title }}
+        </div>
+        <div class="guide_describe-text">
+            {{section.settings.text }}
+        </div>
+   </div>
+</div>
+
+{% schema %}
+{
+    "name": "compare Describe",
+    "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+    },
+    {
+        "type": "textarea",
+        "id": "text",
+        "label": "text"
+    },
+   
+    {
+        "type": "color",
+        "id": "color",
+        "label": "color"
+    },
+    {
+        "type": "color",
+        "id": "text_color",
+        "label": "text_color"
+    },
+    
+    {
+        "type": "color",
+        "id": "bg_color",
+        "label": "background color"
+    }
+    ],
+    "blocks": [
+  
+    ],
+    "presets": [{
+    "name": "compare Describe"
+    
+    }]
+}
+{% endschema %}

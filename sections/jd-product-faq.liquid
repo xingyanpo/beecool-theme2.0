@@ -1,0 +1,72 @@
+{{ 'jd-product-faq.css' | asset_url | stylesheet_tag }}
+<section>
+    <div class="jd-faq-all container">
+        <div class="title_one ebike_h1">{{section.settings.title}}</div>
+        <div class="jd-faq-rightContent">
+            {% for block in section.blocks %}
+                {% if block.settings.title !=blank %}
+                    <div class="jd-faq-inte">
+                        <!-- <div class="title">{{block.settings.title}}<span class="animated-plus"></span></div>
+                        <div class="describe">{{block.settings.text}}</div> -->
+                        <button is="toggle-button" class="title collapsible-toggle text--strong" aria-controls="block-{{ section.id }}-{{ block.id }}" aria-expanded="false" itemprop="name">
+                            {{- block.settings.title -}}
+                            <span class="animated-plus"></span>
+                          </button>
+        
+                          <collapsible-content id="block-{{ section.id }}-{{ block.id }}" class="collapsible anchor" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" {{ block.shopify_attributes }}>
+                            <div class="collapsible__content text-container" itemprop="text">
+                              {{ block.settings.text }}
+                            </div>
+                          </collapsible-content>
+                    </div>
+                       
+                {% endif %}
+              
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<script>
+     
+    
+    
+</script>
+{% schema %}
+{
+    "name": "faq introduction",
+    "class": "faq-introduction",
+    
+    "settings":[
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"  
+        }
+    ],
+    "blocks":[
+        {
+            "type": "exhibition",
+            "name": "faqBlock",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"  
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "Text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "faq introduction"
+        }
+    ]
+}
+
+
+{% endschema %}

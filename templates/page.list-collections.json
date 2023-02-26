@@ -1,0 +1,62 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "collections_to_show": "selected",
+        "show_collection_title": true
+      }
+    },
+    "1e6ca783-e073-47ca-8598-5fb5de88b63c": {
+      "type": "jd-afterSales",
+      "blocks": {
+        "178d595d-6e21-4b57-99f1-24f81ca1e8cd": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
+            "title": "Free Shipping",
+            "subtitle": "<p>To the lower 48 states<\/p>"
+          }
+        },
+        "a762c817-ad99-46ac-b1f0-feac5ee66eb7": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
+            "title": "2-Year Warranty",
+            "subtitle": "<p>Buy with confidence<\/p>"
+          }
+        },
+        "ae8d41c0-8a29-4ba8-9535-2867c60b4dd0": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
+            "title": "Secure Payment",
+            "subtitle": "<p>Secure payment with Shopify<\/p>"
+          }
+        },
+        "8310474e-94b9-40be-b097-7aca9dd717d4": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
+            "title": "Cost-effective",
+            "subtitle": "<p>Direct to consumer pricing<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "178d595d-6e21-4b57-99f1-24f81ca1e8cd",
+        "a762c817-ad99-46ac-b1f0-feac5ee66eb7",
+        "ae8d41c0-8a29-4ba8-9535-2867c60b4dd0",
+        "8310474e-94b9-40be-b097-7aca9dd717d4"
+      ],
+      "settings": {
+        "policy_color": "#F3F5F5",
+        "policy_scolor_mobile": "#fff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1e6ca783-e073-47ca-8598-5fb5de88b63c"
+  ]
+}

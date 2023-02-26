@@ -1,0 +1,73 @@
+{{ 'jd-collaboration-icon.css' | asset_url | stylesheet_tag }}
+<div class="collaboration-all">
+   <div class="container">
+        <div class="collaboration-title ebike_h1">
+            {{section.settings.title }}
+        </div>
+        <div class="collaboration-text pc">
+            {{section.settings.text }}
+        </div>
+        <div class="collaboration-text mobile"> {{section.settings.text_mobile }}</div>
+        <div class="collaboration_bottom">
+            {% for block in section.blocks %}
+                <div class="collaboration_bottomBox">
+                    <div class="collaboration_bottomBox_img"> {{block.settings.svg }}</div>
+                    <div class="collaboration_bottomBox_text pc"> {{block.settings.text }}</div>
+                    <div class="collaboration_bottomBox_text mobile"> {{block.settings.text_mobile }}</div>
+                </div>
+            {% endfor %}
+        </div>
+   </div>
+</div>
+
+{% schema %}
+{
+    "name": "collaboration Text",
+   "max_blocks": 3,
+    "settings": [
+    {
+        "type": "richtext",
+        "id": "title",
+        "label": "title"
+    },
+    {
+        "type": "richtext",
+        "id": "text",
+        "label": "text"
+    },
+    {
+        "type": "richtext",
+        "id": "text_mobile",
+        "label": "text Mobile"
+    }
+    ],
+    "blocks": [
+    {
+        "type": "collaboration",
+        "name": "collaboration",
+        "settings": [
+            {
+                "type": "textarea",
+                "id": "svg",
+                "label": "svg"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "text"
+            },
+            {
+                "type": "richtext",
+                "id": "text_mobile",
+                "label": "text Mobile"
+            }
+          
+  ]
+}
+    ],
+    "presets": [{
+    "name": "collaboration Text"
+    
+    }]
+}
+{% endschema %}

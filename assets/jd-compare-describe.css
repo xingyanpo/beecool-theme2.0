@@ -1,0 +1,67 @@
+@media (min-width:1000px) {
+    #shopify-section-{{ section.id }} .guide_describe-all{
+       display: flex;
+       
+       align-items: center;
+      
+       background-color: {{section.settings.bg_color}};
+   }
+   .guide_describe-box{
+       width: 100%;
+       max-width: 88%;
+       margin: 0 auto;
+   }
+   #shopify-section-{{ section.id }} .guide_describe-title{
+       font-weight: 600;
+       line-height: 1;
+       text-align: center;
+       padding-top: 120px;
+      color: #1d1d1d;
+   }
+   #shopify-section-{{ section.id }} .guide_describe-text{
+       font-size: 20px;
+       padding: 26px 0 128px 0;
+       text-align: center;
+         color: #6D747D;
+   }
+   .guide_describe-all svg{
+       width: 31px;
+       vertical-align: middle;
+   }
+}
+
+@media (max-width:999px) {
+#shopify-section-{{ section.id }} .guide_describe-all{
+   display: flex;
+   align-items: center;
+ 
+   background-color: {{section.settings.bg_color}};
+}
+.guide_describe-box{
+   width: 100%;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+#shopify-section-{{ section.id }}  .guide_describe-title{
+   font-size: 35px;
+   font-weight: 600;
+   line-height: 40px;
+   text-align: left;
+   padding-top: 50px;
+  color: #1d1d1d;
+}
+#shopify-section-{{ section.id }}  .guide_describe-text{
+   font-size: 14px;
+   padding: 22px 0;
+   text-align: left;
+   line-height: 18px;
+   color: #6D747D;
+   
+}
+.guide_describe-all svg{
+       width: 16px;
+       vertical-align: middle;
+       margin: 0 5px;
+   }
+
+}

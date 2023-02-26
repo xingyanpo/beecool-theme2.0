@@ -1,0 +1,40 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "1660553926bf2e35ae": {
+      "type": "jd-compare-describe",
+      "settings": {
+        "title": "Compare Beecool's Ebikes",
+        "text": "Not sure which model is right for you? Let's take a look at them side by side.",
+        "color": "",
+        "text_color": "",
+        "bg_color": ""
+      }
+    },
+    "1660549992a2089b20": {
+      "type": "jd-page-compare",
+      "settings": {
+        "title": "",
+        "product": "bee-adventurer",
+        "product2": "bee-challenger",
+        "product3": "bee-explorer",
+        "product4": "bee-pathfinder",
+        "product5": "bee-pathfinder-step-thru",
+        "product6": "bee-rambler",
+        "product7": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1660553926bf2e35ae",
+    "1660549992a2089b20"
+  ]
+}

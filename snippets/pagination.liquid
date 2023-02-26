@@ -1,0 +1,25 @@
+{%- if paginate.pages > 1 -%}
+  <page-pagination {% if use_ajax %}ajax{% endif %} class="pagination">
+    <nav class="pagination__nav">
+      {%- if paginate.previous -%}
+        <a class="pagination__nav-item" rel="prev" aria-label="{{ 'general.pagination.previous_page' | t }}" data-page="{{ paginate.current_page | minus: 1 }}" href="{{ paginate.previous.url }}{{ hash }}">
+          <svg t="1661318351475" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4421" width="32" height="32"><path d="M677.391515 873.916768c-7.86101 0-15.618586-2.999596-21.617778-8.895354L324.473535 533.721212c-11.998384-11.894949-11.998384-31.340606 0-43.235555L655.670303 159.288889c5.999192-5.999192 13.756768-8.895354 21.617778-8.895354 7.757576 0 15.618586 2.999596 21.617778 8.895354 11.894949 11.894949 11.894949 31.237172 0 43.235555L389.223434 512.103434 698.905859 821.785859c11.894949 11.998384 11.894949 31.340606 0 43.235555-5.895758 5.895758-13.756768 8.895354-21.514344 8.895354z m0 0" p-id="4422" fill="#151515"></path></svg>
+        </a>
+      {%- endif -%}
+
+      {%- for part in paginate.parts -%}
+        {%- if part.is_link -%}
+          <a href="{{ part.url }}{{ hash }}" data-page="{{ part.title }}" class="pagination__nav-item heading heading--small" aria-label="{{ 'general.pagination.go_to_page' | t: page: part.title }}">{{ part.title }}</a>
+        {%- else -%}
+          <span class="pagination__nav-item heading heading--small" {% if part.title == paginate.current_page %}aria-current="page" {% endif %}>{{ part.title }}</span>
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- if paginate.next -%}
+        <a class="pagination__nav-item" rel="next" aria-label="{{ 'general.pagination.next_page' | t }}" data-page="{{ paginate.current_page | plus: 1 }}" href="{{ paginate.next.url }}{{ hash }}">
+          <svg t="1661318233293" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2546" width="32" height="32"><path d="M372.679931 191.690834c8.782014 0 17.565051 3.235694 24.26873 9.708106l297.484322 287.175535c13.408381 12.932544 13.408381 33.9226 0 46.855144l-297.485345 287.172465c-13.408381 12.9438-35.130102 12.9438-48.53746 0-13.408381-12.932544-13.408381-33.9226 0-46.855144l273.215592-263.744893L348.411201 248.25306c-13.408381-12.932544-13.408381-33.9226 0-46.855144C355.11488 194.926528 363.897917 191.68981 372.679931 191.690834z" p-id="2547" fill="#151515"></path></svg>
+        </a>
+      {%- endif -%}
+    </nav>
+  </page-pagination>
+{%- endif -%}

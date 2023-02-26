@@ -1,0 +1,103 @@
+{
+  "sections": {
+    "f4a8d3c1-8428-4ef6-b25b-98e694f79dd2": {
+      "type": "slideshow",
+      "blocks": {
+        "da01d864-b9ca-4093-932b-a742fc8ce599": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/page-banner_c0d6aa1f-bb78-4ae3-a96e-5929be1bbde9.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "swiper_item_button_color": "#000000",
+            "swiper_item_button_border_color": "#ffffff",
+            "swiper_item_button_background_color": "#ffffff",
+            "swiper_item_button_color_hover": "#2a408e",
+            "swiper_item_button_back_color_hover": "#ffffff",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "da01d864-b9ca-4093-932b-a742fc8ce599"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "reveal",
+        "autoplay": false,
+        "cycle_speed": 4,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "50bc3c85-abff-4406-b314-c5a9b7e632da": {
+      "type": "christmas-amazing-gifts-item",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/img-1_572addd1-fa08-45b2-9ac5-3693e558e565.jpg",
+        "title": "1st AMAZING GIFT",
+        "half_title": "Pathfinders <span class=\"christmas-color-red\">$1,200 OFF<\/span> Bundle",
+        "description": "During the Christmas season, we will have a Black Pathfinder and Pathfinder Step-Thru Bundle available at <span class=\"christmas-color-red\">$2,798<\/span>. The original price is $3,998. You will save $1,200!",
+        "button_text": "Buy Now",
+        "button_url": "https:\/\/beecoolbikes.com\/products\/pathfinders-black-bundle"
+      }
+    },
+    "21d04435-d867-432c-88b8-9fafe826aeac": {
+      "type": "christmas-amazing-gifts-item",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/img-2.jpg",
+        "title": "2nd AMAZING GIFT",
+        "half_title": "Discount on ALL Models Up to <span class=\"christmas-color-red\">30% OFF<\/span>",
+        "description": "During the Christmas season, all ebike models of BeeCool will come with discounts. This is the last chance to get a great deal of this year!",
+        "button_text": "SHOP NOW",
+        "button_url": "https:\/\/beecoolbikes.com\/collections\/ebike"
+      }
+    },
+    "4bfebeba-ef07-4634-8f78-045028586594": {
+      "type": "christmas-amazing-gifts-item",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/img-3.jpg",
+        "title": "3st AMAZING GIFT",
+        "half_title": "Buy 2 Ebikes Get Extra <span class=\"christmas-color-red\">$150 OFF<\/span>",
+        "description": "Buy any 2 ebike products and get an extra $150 OFF<br> \n(Please note: Pathfinders Bundle will be counted as ONE product)",
+        "button_text": "SHOP NOW",
+        "button_url": "https:\/\/beecoolbikes.com\/collections\/ebike"
+      }
+    },
+    "1e336833-a2c5-4650-abcc-d0ffbeea35e6": {
+      "type": "christmas-amazing-gifts-item",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/img-4.jpg",
+        "title": "4th AMAZING GIFT",
+        "half_title": "Returning Customers Get <span class=\"christmas-color-red\">$150 OFF<\/span>",
+        "description": "Any Returning Customers who purchased at least one BeeCool ebike Before December 4, 2022, can  enjoy a $150 extra discount for re-purchase.\n<br>\nSend an email with your name and order to <a style=\"text-decoration:underline;\" href=\"mailto:event@beecoolbikes.com\" title=\"event@beecoolbikes.com\">event@beecoolbikes.com<\/a> to apply for the $150 coupon code.<br>\nWe will verify your original order info and will send you $150 off code after we confirm your original order info. If you have re-purchase plan, please send us email in advance.",
+        "button_text": "",
+        "button_url": "shopify:\/\/collections"
+      }
+    },
+    "397b66fd-8aad-477e-b5b3-6693ba0c2afc": {
+      "type": "christmas-amazing-gifts-item",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/img-5.jpg",
+        "title": "5th AMAZING GIFT",
+        "half_title": "Christmas Gifts for Any Ebike Purchase",
+        "description": "You will receive a Christmas gift package from us if you purchase an ebike during the Christmas season. The Gift is worth $99.99.\n<br><br>\nThe package will contain: <br>\n1 Winter Hat, <br>\n1 Pair of Winter Gloves (Touch Screen Friendly),<br>\n1 Winter Neck Gaiter,<br>\n1 Pair of Christmas Socks<br>\n1 Christmas Bag",
+        "button_text": "",
+        "button_url": "shopify:\/\/collections"
+      }
+    }
+  },
+  "order": [
+    "f4a8d3c1-8428-4ef6-b25b-98e694f79dd2",
+    "50bc3c85-abff-4406-b314-c5a9b7e632da",
+    "21d04435-d867-432c-88b8-9fafe826aeac",
+    "4bfebeba-ef07-4634-8f78-045028586594",
+    "1e336833-a2c5-4650-abcc-d0ffbeea35e6",
+    "397b66fd-8aad-477e-b5b3-6693ba0c2afc"
+  ]
+}

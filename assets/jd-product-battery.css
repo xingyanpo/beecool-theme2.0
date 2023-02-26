@@ -1,0 +1,184 @@
+@media(max-width:999px) {
+    .jd_product_batteryAll{
+        width: 100%;
+    }
+    .jd_product_batteryBox {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 16px 26px 50px;
+        justify-content: flex-end;
+    }
+   
+    .product_batteryBox_top{
+        color: #fff;
+    }
+    .product_batteryBox_top .ebike_h1 {
+        line-height: 40px;
+    }
+
+    .product_batteryBox_top div:nth-child(4){
+        font-size: 14px;
+        font-weight: 200;
+        margin-top: 16px;
+        line-height: 18px;
+    }
+    .product_batteryBox_baner{
+        color: #fff;
+        display: flex;
+        padding-top: 30px;
+    }
+    .batteryBox_baner_data{
+        margin-right: 30px;
+    }
+    .batteryBox_baner_data div:nth-child(1){
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+    .batteryBox_baner_data div:nth-child(2){
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+    .product_batteryBox_bottom{
+        padding-top: 16px;
+        color: #fff;
+    }
+    .batteryBox_show{
+        display: flex;
+        align-items: center;
+    }
+    .batteryBox_show div:nth-child(2){
+        font-size: 14px;
+        font-weight: 200;
+        margin-left: 13px;
+        color: #FEFEFE;
+    }
+    .product_batteryBox_bottomSvg{
+        line-height: 1;
+    }
+    .product_batteryBox_bottomSvg svg{
+        width: 36px;
+        height: 36px;
+    }
+    .batteryBox_hide{
+        display: none;
+        padding-top: 16px;
+    }
+    .batteryBox_hide_box{
+        display: flex;
+    }
+    .batteryBox_hideBox{
+        margin-right: 30px;
+    }
+    .batteryBox_hideBox div:nth-child(1){
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+    .batteryBox_hideBox div:nth-child(2){
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+}
+.jd_product_batteryAll img{
+    width: 100%;
+}
+.jd_product_batteryAll video{
+    width: 100%;
+}
+@media(min-width:1000px) {
+    .jd_product_batteryAll{
+        width: 100%;
+        height: auto;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .jd_product_batteryBox {
+        top: 0;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+    
+    .product_batteryBox_top{
+        color: #fff;
+    }
+    .product_batteryBox_top div:nth-child(1){
+        font-weight: 600;
+        line-height: 1;
+    }
+    .product_batteryBox_top div:nth-child(3){
+        font-size: 18px;
+        font-weight: 200;
+        margin-top: 16px;
+        line-height: 35px;
+    }
+    .product_batteryBox_baner{
+        color: #fff;
+        display: flex;
+        padding-top: 60px;
+    }
+    .batteryBox_baner_data{
+        margin-right: 94px;
+    }
+    .batteryBox_baner_data div:nth-child(1){
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 106px;
+    }
+    .batteryBox_baner_data div:nth-child(2){
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 35px;
+    }
+    .product_batteryBox_bottom{
+        padding-top: 70px;
+        color: #fff;
+    }
+    .batteryBox_show{
+        display: flex;
+        align-items: center;
+    }
+    .batteryBox_show div:nth-child(2){
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 26px;
+        color: #FEFEFE;
+    }
+    .product_batteryBox_bottomSvg{
+        cursor: pointer;
+    }
+    .product_batteryBox_bottomSvg svg{
+        width: 74px;
+        height: auto;
+    }
+    .batteryBox_hide{
+        display: none;
+        padding-top: 40px;
+    }
+    .batteryBox_hide_box{
+        display: flex;
+    }
+    .batteryBox_hideBox{
+        margin-right: 94px;
+    }
+    .batteryBox_hideBox div:nth-child(1){
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 106px;
+    }
+    .batteryBox_hideBox div:nth-child(2){
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 35px;
+    }
+}

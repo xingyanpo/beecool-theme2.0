@@ -1,0 +1,187 @@
+{{ 'jd-pagePolicy.css' | asset_url | stylesheet_tag }}
+<div class="banner_or_videos">
+    <div class="banner_or_video-boxs">
+        <div class="banner_or_video_positions">
+            <img loading="lazy" class="pc" {% render 'image-attributes' , image: section.settings.img_banner%}>
+            <img loading="lazy" class="mobile" {% render 'image-attributes' , image: section.settings.img_bannerMobile%}>
+            <div class="banner_or_video_positionBoxs">
+                <div class="banner_or_video_positionBox_boxs">
+                    <h1 class="banner_or_video_positionBox_heads pc" style="font-size: {{section.settings.font}}px;">{{page.title}}</h1>
+                    <h1 class="banner_or_video_positionBox_heads mobile" style="font-size: {{section.settings.font_mobile}}px;">{{page.title}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="jd_pagePolicy_all container">
+   <div class="jd_pagePolicy_left">
+        <div class="jd_pagePolicy_leftBox">
+            
+            {%- for block in section.blocks -%}
+            {%- case block.type -%}
+                {%- when 'pagePolicy_nav' -%}
+                <a href="{{block.settings.link}}#jd_pagePolicy" class="pagePolicy_left_box {% if block.settings.link == page.url %} pagePolicy_links {%endif%}">
+                    <div class="pagePolicy_left_svg pc">
+                        {{block.settings.svg}}
+                    </div>
+                    <div class="pagePolicy_left_title">
+                        {{block.settings.title}}
+                    </div>
+                </a>
+            {%- endcase -%}
+        {%- endfor -%}
+        </div>
+   </div>
+   <div class="jd_pagePolicy_right">
+    {% if page.content !=blank %}
+        <div class="jd_pagePolicy_content">
+            {{- page.content -}}
+        </div>
+        {% else %}
+       <div class="jd_pagePolicyFaq">
+        {%- for block in section.blocks -%}
+        {%- case block.type -%}
+            {%- when 'faq' -%}
+                {% if block.settings.head !=blank %}
+                    <div class="pagePolicy_right_title">
+                        <div class="pc">
+                            {{block.settings.head}}
+                        </div>
+                        <div class="mobile">
+                            <div class="pagePolicy_righ_mobile">
+                                <div>{{block.settings.headSvg}}</div>
+                                <div>{{block.settings.head_mobile}}</div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+               
+                <div class="pagePolicy_right_faq">
+                    <button is="toggle-button" class="collapsible-toggle pagePolicy_right_faq_title" aria-controls="block-{{ section.id }}-{{ block.id }}" aria-expanded="false">
+                        {{- block.settings.title -}}
+                        <span class="animated-plus"></span>
+                    </button>
+    
+                    <collapsible-content id="block-{{ section.id }}-{{ block.id }}" class="collapsible anchor">
+                        <div class="pagePolicy_right_faq_text">
+                            {{ block.settings.text }}
+                        </div>
+                    </collapsible-content>
+               
+                </div>
+        {%- endcase -%}
+    {%- endfor -%}
+       </div>
+    {% endif %}
+  
+   
+   </div>
+</div>
+<script>
+
+      
+  
+  
+</script>
+{% schema %}
+{
+    "name": "page Policy",
+    "class": "page-Policy",
+    
+    "settings":[
+    {
+        "type": "range",
+        "id": "font",
+        "label": "font size",
+        "unit": "px",
+        "min": 48,
+        "max": 70,
+        "step": 1,
+        "default": 70
+    },
+    {
+        "type": "range",
+        "id": "font_mobile",
+        "label": "font size Mobile",
+        "unit": "px",
+        "min": 12,
+        "max": 35,
+        "step": 1,
+        "default": 35
+    },
+    {
+        "type": "image_picker",
+        "id": "img_banner",
+        "label": "banner Img"
+    },
+    {
+        "type": "image_picker",
+        "id": "img_bannerMobile",
+        "label": "banner Img Mobile"
+    }
+    ],
+    "blocks":[
+        {
+            "type": "pagePolicy_nav",
+            "name": "page Policy nav",
+            "settings": [
+                {
+                    "type": "textarea",
+                    "id": "svg",
+                    "label": "Svg"  
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "url",
+                    "id": "link",
+                    "label": "link"
+                }
+            ]
+        },
+      
+        {
+            "type": "faq",
+            "name": "faq",
+            "settings": [
+                {
+                    "type": "textarea",
+                    "id": "headSvg",
+                    "label": "head svg mobile"  
+                },
+                {
+                    "type": "text",
+                    "id": "head",
+                    "label": "header"
+                },
+                {
+                    "type": "text",
+                    "id": "head_mobile",
+                    "label": "header mobile"
+                },
+                {
+                    "type": "textarea",
+                    "id": "title",
+                    "label": "title"  
+                },
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "text"
+                }
+            ]
+        }
+       
+    ],
+    "presets": [
+        {
+            "name": "page Policy"
+        }
+    ]
+}
+
+
+{% endschema %}

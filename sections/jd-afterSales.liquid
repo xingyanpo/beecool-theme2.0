@@ -1,0 +1,61 @@
+{{ 'jd-afterSales.css' | asset_url | stylesheet_tag }}
+<style>
+     @media (max-width:999px) {
+      .afterSales{
+        background: {{section.settings.policy_scolor_mobile}};
+      }
+    }
+    @media (min-width:1000px) {
+      .afterSales{
+        background: {{section.settings.policy_color}};
+      }
+    }
+</style>
+
+  {% schema %}
+{
+    "name": "afterSales",
+    "class":"afterSales_s",
+    "settings": [
+      {
+        "type": "color",
+        "id": "policy_color",
+        "label": "policy color pc",
+        "default": "#F3F5F5"
+      },
+      {
+        "type": "color",
+        "id": "policy_scolor_mobile",
+        "label": "policy color mobile",
+        "default": "#fff"
+      }
+    ],
+    "blocks":[
+    {
+        "type": "afterSales",
+        "name": "afterSales",
+        "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "img"
+        },{
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },{
+          "type": "richtext",
+          "id": "subtitle",
+          "label": "subtitle"
+        }
+        ]
+      }
+    ],
+    "presets": [
+        {
+            "name": "afterSales"
+        }
+    ]
+}
+{% endschema %}
+ 

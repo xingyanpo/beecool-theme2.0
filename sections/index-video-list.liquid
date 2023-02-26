@@ -1,0 +1,634 @@
+<style>
+  @media screen and (max-width: 999px){
+    .index-video-list .containers .menu-box .right .button-box .after {
+      width: 10px !important;
+      clip-path: polygon(0 0,10px 0px,10px 30px, 1px 36px) !important;
+    }
+    .index-video-list .containers .title {font-size: 26px !important;}
+  }
+   @media screen and (max-width: 999px) and (min-width:768px){
+     .index-video-list .containers .title {font-size: 36px !important;}
+   }
+  @media screen and (min-width: 1000px) {
+    .index-video-list .containers .title {
+      font-size: 56px !important;
+    }
+  }
+
+</style>
+
+
+<div class="index-video-list">
+  <div class="containers">
+    <div class="header">
+      <h2 class="title">
+        {{ section.settings.title }}
+      </h2>
+      <div class="description">
+        <span class="pc">
+          {{ section.settings.description }}
+        </span>
+        <span class="mobile">
+          {{ section.settings.description_mobile }}
+        </span>
+      </div>
+
+      <div style="display: flex; justify-content: center;">
+        <a href="{{section.settings.buttonLink}}" class="button-box">
+          <div>{{ section.settings.buttonText }}</div>
+          <img
+            src="https://cdn.shopify.com/s/files/1/0554/7098/1274/files/1_1846f70a-3978-4cbc-915a-d78a5b4849d2.png?v=1659939379"
+            alt=""
+          >
+        </a>
+      </div>
+    </div>
+
+    <div class="menu-box pc">
+      <div class="left">
+
+        <div class="video-progress-bar">
+          {% for item in section.blocks %}
+            <div class="item">
+              <div class="image-box">
+                <img loading="lazy" {% render 'image-attributes', image: item.settings.img_bike %}>
+                <svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.42 105.29">
+                  <defs>
+                    <style>
+                      .cls_videos-1 {
+                        fill: #2a408e;
+                      }
+
+                      .cls_videos-2 {
+                        fill: none;
+                        stroke: #2a408e;
+                        stroke-miterlimit: 10;
+                      }
+                    </style>
+                  </defs>
+                  <circle class="cls_videos-1" cx="1.53" cy="63.98" r="1.53" />
+                  <path class="cls_videos-2" d="M409.79,215.68a50.3,50.3,0,0,1,26.87,35.79,51.65,51.65,0,0,1,.85,8.59"
+                    transform="translate(-336.17 -206.24)" />
+                  <circle class="cls_videos-1" cx="101.16" cy="54.86" r="1.53" />
+                  <circle class="cls_videos-1" cx="89.47" cy="86.46" r="1.53" />
+                  <circle class="cls_videos-1" cx="16.88" cy="91.25" r="1.53" />
+                  <circle class="cls_videos-1" cx="72.88" cy="9.44" r="1.53" />
+                  <circle class="cls_videos-1" cx="29.01" cy="8.66" r="1.53" />
+                  <path class="cls_videos-2" d="M425.73,293a50.34,50.34,0,0,1-72.59,4.79" transform="translate(-336.17 -206.24)" />
+                  <path class="cls_videos-2" d="M337.64,269.85a50.3,50.3,0,0,1,27.65-54.56" transform="translate(-336.17 -206.24)" />
+                  <rect class="cls_videos-1" x="383.52" y="214.05" width="0.71" height="4.22"
+                    transform="translate(-350.32 -178.93) rotate(-4)" />
+                  <rect class="cls_videos-1" x="50.44" y="5.68" width="0.71" height="6.22" />
+                  <rect class="cls_videos-1" x="380.46" y="214.4" width="0.71" height="4.22"
+                    transform="translate(-362.6 -151.13) rotate(-8)" />
+                  <rect class="cls_videos-1" x="377.42" y="214.96" width="0.71" height="4.22"
+                    transform="translate(-373.05 -122.95) rotate(-12)" />
+                  <rect class="cls_videos-1" x="374.43" y="215.73" width="0.71" height="4.22"
+                    transform="translate(-381.7 -94.49) rotate(-16)" />
+                  <rect class="cls_videos-1" x="371.5" y="216.71" width="0.71" height="4.22"
+                    transform="translate(-388.59 -65.86) rotate(-20)" />
+                  <rect class="cls_videos-1" x="368.64" y="217.89" width="0.71" height="4.22"
+                    transform="translate(-393.75 -37.13) rotate(-24)" />
+                  <rect class="cls_videos-1" x="365.88" y="219.26" width="0.71" height="4.22"
+                    transform="translate(-397.23 -8.39) rotate(-28)" />
+                  <rect class="cls_videos-1" x="363.22" y="220.83" width="0.71" height="4.22"
+                    transform="matrix(0.85, -0.53, 0.53, 0.85, -399.07, 20.3)" />
+                  <rect class="cls_videos-1" x="360.67" y="222.57" width="0.71" height="4.22"
+                    transform="translate(-399.29 48.88) rotate(-36)" />
+                  <rect class="cls_videos-1" x="358.25" y="224.49" width="0.71" height="4.22"
+                    transform="translate(-397.93 77.29) rotate(-40)" />
+                  <rect class="cls_videos-1" x="355.97" y="226.58" width="0.71" height="4.22"
+                    transform="translate(-395.03 105.47) rotate(-44)" />
+                  <rect class="cls_videos-1" x="353.84" y="228.82" width="0.71" height="4.22"
+                    transform="translate(-390.59 133.39) rotate(-48)" />
+                  <rect class="cls_videos-1" x="351.88" y="231.2" width="0.71" height="4.22"
+                    transform="translate(-384.64 161) rotate(-52)" />
+                  <rect class="cls_videos-1" x="350.08" y="233.71" width="0.71" height="4.22"
+                    transform="translate(-377.2 188.24) rotate(-56)" />
+                  <rect class="cls_videos-1" x="348.46" y="236.34" width="0.71" height="4.22"
+                    transform="translate(-368.27 215.08) rotate(-60)" />
+                  <rect class="cls_videos-1" x="347.04" y="239.08" width="0.71" height="4.22"
+                    transform="translate(-357.85 241.46) rotate(-64)" />
+                  <rect class="cls_videos-1" x="345.8" y="241.91" width="0.71" height="4.22"
+                    transform="translate(-345.94 267.32) rotate(-68)" />
+                  <rect class="cls_videos-1" x="344.77" y="244.82" width="0.71" height="4.22"
+                    transform="translate(-332.54 292.62) rotate(-72)" />
+                  <rect class="cls_videos-1" x="343.94" y="247.8" width="0.71" height="4.22"
+                    transform="translate(-317.65 317.28) rotate(-76)" />
+                  <rect class="cls_videos-1" x="343.32" y="250.82" width="0.71" height="4.22"
+                    transform="translate(-301.26 341.23) rotate(-80)" />
+                  <rect class="cls_videos-1" x="342.91" y="253.88" width="0.71" height="4.22"
+                    transform="translate(-283.37 364.39) rotate(-84)" />
+                  <rect class="cls_videos-1" x="342.72" y="256.97" width="0.71" height="4.22"
+                    transform="translate(-263.98 386.67) rotate(-88)" />
+                  <rect class="cls_videos-1" x="342.75" y="260.05" width="0.71" height="4.22"
+                    transform="translate(-243.1 407.97) rotate(-92)" />
+                  <rect class="cls_videos-1" x="342.99" y="263.13" width="0.71" height="4.22"
+                    transform="translate(-220.73 428.2) rotate(-96)" />
+                  <rect class="cls_videos-1" x="343.44" y="266.19" width="0.71" height="4.22"
+                    transform="translate(-196.9 447.23) rotate(-100)" />
+                  <rect class="cls_videos-1" x="344.11" y="269.2" width="0.71" height="4.22"
+                    transform="translate(-171.63 464.95) rotate(-104)" />
+                  <rect class="cls_videos-1" x="344.98" y="272.17" width="0.71" height="4.22"
+                    transform="translate(-144.97 481.23) rotate(-108)" />
+                  <rect class="cls_videos-1" x="346.06" y="275.06" width="0.71" height="4.22"
+                    transform="translate(-116.98 495.96) rotate(-112)" />
+                  <rect class="cls_videos-1" x="347.34" y="277.87" width="0.71" height="4.22"
+                    transform="translate(-87.71 508.99) rotate(-116)" />
+                  <rect class="cls_videos-1" x="348.81" y="280.59" width="0.71" height="4.22"
+                    transform="translate(-57.25 520.2) rotate(-120)" />
+                  <polygon class="cls_videos-1" points="16.2 77.59 16.6 78.18 11.35 81.52 10.95 80.93 16.2 77.59" />
+                  <rect class="cls_videos-1" x="352.3" y="285.68" width="0.71" height="4.22"
+                    transform="translate(6.82 536.63) rotate(-128)" />
+                  <rect class="cls_videos-1" x="354.3" y="288.03" width="0.71" height="4.22"
+                    transform="translate(40.19 541.61) rotate(-132)" />
+                  <rect class="cls_videos-1" x="356.47" y="290.23" width="0.71" height="4.22"
+                    transform="translate(74.25 544.27) rotate(-136)" />
+                  <rect class="cls_videos-1" x="358.78" y="292.28" width="0.71" height="4.22"
+                    transform="translate(108.84 544.52) rotate(-140)" />
+                  <rect class="cls_videos-1" x="361.22" y="294.16" width="0.71" height="4.22"
+                    transform="translate(143.79 542.26) rotate(-144)" />
+                  <rect class="cls_videos-1" x="363.8" y="295.87" width="0.71" height="4.22"
+                    transform="translate(178.9 537.42) rotate(-148)" />
+                  <rect class="cls_videos-1" x="366.48" y="297.39" width="0.71" height="4.22"
+                    transform="translate(213.96 529.94) rotate(-152)" />
+                  <rect class="cls_videos-1" x="369.27" y="298.73" width="0.71" height="4.22"
+                    transform="translate(248.77 519.77) rotate(-156)" />
+                  <rect class="cls_videos-1" x="372.14" y="299.86" width="0.71" height="4.22"
+                    transform="translate(283.08 506.9) rotate(-160)" />
+                  <rect class="cls_videos-1" x="375.09" y="300.79" width="0.71" height="4.22"
+                    transform="translate(316.68 491.32) rotate(-164)" />
+                  <rect class="cls_videos-1" x="378.09" y="301.52" width="0.71" height="4.22"
+                    transform="translate(349.33 473.07) rotate(-168)" />
+                  <rect class="cls_videos-1" x="381.14" y="302.03" width="0.71" height="4.22"
+                    transform="translate(380.77 452.18) rotate(-172)" />
+                  <rect class="cls_videos-1" x="384.21" y="302.33" width="0.71" height="4.22"
+                    transform="translate(410.79 428.73) rotate(-176)" />
+                  <rect class="cls_videos-1" x="387.3" y="302.41" width="0.71" height="4.22"
+                    transform="translate(439.14 402.81) rotate(-180)" />
+                  <rect class="cls_videos-1" x="390.38" y="302.28" width="0.71" height="4.22"
+                    transform="translate(465.59 374.55) rotate(176)" />
+                  <rect class="cls_videos-1" x="393.45" y="301.93" width="0.71" height="4.22"
+                    transform="translate(489.93 344.09) rotate(172)" />
+                  <rect class="cls_videos-1" x="396.49" y="301.37" width="0.71" height="4.22"
+                    transform="translate(511.95 311.59) rotate(168)" />
+                  <rect class="cls_videos-1" x="399.48" y="300.6" width="0.71" height="4.22"
+                    transform="translate(531.45 277.26) rotate(164)" />
+                  <rect class="cls_videos-1" x="402.41" y="299.63" width="0.71" height="4.22"
+                    transform="translate(548.27 241.29) rotate(160)" />
+                  <rect class="cls_videos-1" x="405.26" y="298.45" width="0.71" height="4.22"
+                    transform="translate(562.25 203.91) rotate(156)" />
+                  <rect class="cls_videos-1" x="408.03" y="297.07" width="0.71" height="4.22"
+                    transform="translate(573.26 165.38) rotate(152)" />
+                  <rect class="cls_videos-1" x="410.69" y="295.51" width="0.71" height="4.22"
+                    transform="translate(581.18 125.95) rotate(148)" />
+                  <rect class="cls_videos-1" x="413.24" y="293.76" width="0.71" height="4.22"
+                    transform="translate(585.94 85.89) rotate(144)" />
+                  <rect class="cls_videos-1" x="415.66" y="291.84" width="0.71" height="4.22"
+                    transform="translate(587.48 45.48) rotate(140)" />
+                  <rect class="cls_videos-1" x="417.94" y="289.76" width="0.71" height="4.22"
+                    transform="translate(585.77 5.01) rotate(136)" />
+                  <rect class="cls_videos-1" x="420.06" y="287.52" width="0.71" height="4.22"
+                    transform="translate(580.8 -35.24) rotate(132)" />
+                  <rect class="cls_videos-1" x="422.03" y="285.14" width="0.71" height="4.22"
+                    transform="translate(572.62 -74.99) rotate(128)" />
+                  <rect class="cls_videos-1" x="423.83" y="282.62" width="0.71" height="4.22"
+                    transform="translate(561.27 -113.94) rotate(124)" />
+                  <rect class="cls_videos-1" x="425.44" y="279.99" width="0.71" height="4.22"
+                    transform="translate(546.84 -151.84) rotate(120)" />
+                  <rect class="cls_videos-1" x="426.87" y="277.25" width="0.71" height="4.22"
+                    transform="translate(529.43 -188.4) rotate(116)" />
+                  <rect class="cls_videos-1" x="428.11" y="274.42" width="0.71" height="4.22"
+                    transform="translate(509.2 -223.38) rotate(112)" />
+                  <polygon class="cls_videos-1" points="91.21 67.07 91.43 66.39 97.44 68.7 97.22 69.38 91.21 67.07" />
+                  <rect class="cls_videos-1" x="429.97" y="268.54" width="0.71" height="4.22"
+                    transform="translate(460.87 -287.66) rotate(104)" />
+                  <rect class="cls_videos-1" x="430.59" y="265.51" width="0.71" height="4.22"
+                    transform="translate(433.16 -316.54) rotate(100)" />
+                  <rect class="cls_videos-1" x="430.99" y="262.45" width="0.71" height="4.22"
+                    transform="translate(403.38 -343.01) rotate(96)" />
+                  <rect class="cls_videos-1" x="431.18" y="259.37" width="0.71" height="4.22"
+                    transform="translate(371.75 -366.91) rotate(92)" />
+                  <rect class="cls_videos-1" x="431.16" y="256.28" width="0.71" height="4.22"
+                    transform="translate(338.52 -388.12) rotate(88)" />
+                  <rect class="cls_videos-1" x="430.92" y="253.2" width="0.71" height="4.22"
+                    transform="translate(303.94 -406.53) rotate(84)" />
+                  <rect class="cls_videos-1" x="430.47" y="250.15" width="0.71" height="4.22"
+                    transform="translate(268.27 -422.06) rotate(80)" />
+                  <rect class="cls_videos-1" x="429.8" y="247.13" width="0.71" height="4.22"
+                    transform="translate(231.76 -434.67) rotate(76)" />
+                  <rect class="cls_videos-1" x="428.93" y="244.17" width="0.71" height="4.22"
+                    transform="translate(194.68 -444.34) rotate(72)" />
+                  <rect class="cls_videos-1" x="427.85" y="241.27" width="0.71" height="4.22"
+                    transform="translate(157.29 -451.05) rotate(68)" />
+                  <rect class="cls_videos-1" x="426.57" y="238.46" width="0.71" height="4.22"
+                    transform="translate(119.83 -454.84) rotate(64)" />
+                  <rect class="cls_videos-1" x="425.1" y="235.75" width="0.71" height="4.22"
+                    transform="translate(82.55 -455.76) rotate(60)" />
+                  <rect class="cls_videos-1" x="423.44" y="233.14" width="0.71" height="4.22"
+                    transform="translate(45.68 -453.88) rotate(56)" />
+                  <rect class="cls_videos-1" x="421.61" y="230.66" width="0.71" height="4.22"
+                    transform="translate(9.43 -449.29) rotate(52)" />
+                  <rect class="cls_videos-1" x="419.6" y="228.31" width="0.71" height="4.22"
+                    transform="translate(-25.99 -442.09) rotate(48)" />
+                  <rect class="cls_videos-1" x="417.44" y="226.1" width="0.71" height="4.22"
+                    transform="translate(-60.38 -432.42) rotate(44)" />
+                  <rect class="cls_videos-1" x="415.13" y="224.05" width="0.71" height="4.22"
+                    transform="translate(-93.59 -420.4) rotate(40)" />
+                  <rect class="cls_videos-1" x="412.68" y="222.17" width="0.71" height="4.22"
+                    transform="translate(-125.46 -406.18) rotate(36)" />
+                  <rect class="cls_videos-1" x="410.11" y="220.46" width="0.71" height="4.22"
+                    transform="translate(-155.85 -389.93) rotate(32)" />
+                  <rect class="cls_videos-1" x="407.42" y="218.94" width="0.71" height="4.22"
+                    transform="translate(-184.66 -371.8) rotate(28)" />
+                  <rect class="cls_videos-1" x="404.64" y="217.61" width="0.71" height="4.22"
+                    transform="translate(-211.79 -351.97) rotate(24)" />
+                  <rect class="cls_videos-1" x="401.76" y="216.47" width="0.71" height="4.22"
+                    transform="translate(-237.16 -330.59) rotate(20)" />
+                  <rect class="cls_videos-1" x="398.82" y="215.54" width="0.71" height="4.22"
+                    transform="translate(-260.71 -307.83) rotate(16)" />
+                  <rect class="cls_videos-1" x="395.82" y="214.82" width="0.71" height="4.22"
+                    transform="translate(-282.41 -283.87) rotate(12)" />
+                  <rect class="cls_videos-1" x="392.77" y="214.3" width="0.71" height="4.22"
+                    transform="translate(-302.23 -258.84) rotate(8)" />
+                  <rect class="cls_videos-1" x="389.7" y="214.01" width="0.71" height="4.22"
+                    transform="translate(-320.15 -232.92) rotate(4)" />
+                  <path class="cls_videos-1" d="M422.41,234.86" transform="translate(-336.17 -206.24)" />
+                  <path class="cls_videos-1" d="M421.68,230.4" transform="translate(-336.17 -206.24)" />
+                  <path class="cls_videos-1"
+                    d="M387.21,210.77l2.38-4.11a.28.28,0,0,0-.25-.42h-4.75a.28.28,0,0,0-.24.42l2.38,4.11A.27.27,0,0,0,387.21,210.77Z"
+                    transform="translate(-336.17 -206.24)" />
+                  <path class="cls_videos-1"
+                    d="M434.49,276l3.31,3.42a.28.28,0,0,0,.47-.12l1.31-4.57a.28.28,0,0,0-.34-.34l-4.61,1.15A.28.28,0,0,0,434.49,276Z"
+                    transform="translate(-336.17 -206.24)" />
+                  <path class="cls_videos-1"
+                    d="M340.24,289.38l2.66,3.94a.28.28,0,0,0,.48,0l2.08-4.28a.28.28,0,0,0-.27-.4l-4.74.34A.27.27,0,0,0,340.24,289.38Z"
+                    transform="translate(-336.17 -206.24)" />
+                </svg>
+              </div>
+              <div class="content">
+                {{ item.settings.product.title }}
+              </div>
+              <div class="check-item">
+                <div class="check-box">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+
+          <div class="line">
+            <div class="active-box">
+              <span></span>
+            </div>
+          </div>
+          <div class="line-2"></div>
+        </div>
+        <div class="video-box">
+          <video
+            preload="metadata"
+            style="object-fit:cover;object-position:center center"
+            autoplay
+            data-testid="championroles:video-1:video"
+            playsinline=""
+            loop=""
+            muted=""
+            class="style__Video-fydk49-2 gCXmmQ"
+            data-object-fit="cover"
+            x5-video-player-fullscreen="true"
+            x5-playsinline
+            playsinline
+            webkit-playsinline
+            data-object-position="center center"
+          >
+            <source src="https://cdn.shopify.com/videos/c/o/v/116a3924e75b4c13b68619e42a133dd3.mp4" type="video/webm">
+          </video>
+        </div>
+      </div>
+      <div class="right">
+        {% for item in section.blocks %}
+          <div style="width: 100%;" class="image-box">
+            <img loading="lazy" src="{{item.settings.img | img_url: '1920x'}}" alt="{{ item.settings.img.alt }}">
+          </div>
+        {% endfor %}
+
+        <div class="bg-box">
+          <img
+            style="opacity: 0;"
+            src="//cdn.shopify.com/s/files/1/0554/7098/1274/files/index1-ram2_1920x.png?v=1667461514"
+            alt=""
+          >
+          <div class="inner-bg-box"></div>
+        </div>
+
+        <div class="product-price">
+          {{ item.settings.product.price | money }}
+          <s style="opacity: 0.6; margin-left:4px; text-decoration-color: red;">
+            {{- item.settings.product.compare_at_price | money -}}
+          </s>
+        </div>
+
+        <div>
+          <div class="button-box">
+            <div class="befor"></div>
+            <a href="#" class="button "> Buy Now </a>
+            <div class="after"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile">
+      <div class="menu-box menu-boxMobile">
+
+        <div class="left">
+          <div class="video-progress-bar swiper indexVideoSwiper">
+            <div class="swiper-wrapper">
+              {% for item in section.blocks %}
+                <div class="swiper-slide mobile_listClick {% if forloop.first %}active{%endif%}">
+                  {{ item.settings.product.title }}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          {% for item in section.blocks %}
+            <div class="mobile_rightHide{% if forloop.first %} selected{%endif%}">
+              <div style="width: 100%;" class="image-box">
+                <img loading="lazy" src="{{item.settings.img | img_url: '1920x'}}" alt="{{ item.settings.img.alt }}">
+              </div>
+
+              <div class="mobile_rightHideposition">
+                <div class="product-price">
+                  {{ item.settings.product.price | money }}
+                  <s style="opacity: 0.6; margin-left:4px; text-decoration-color: red;">
+                    {{- item.settings.product.compare_at_price | money -}}
+                  </s>
+                </div>
+
+                <div>
+                  <div class="button-box">
+                    <div class="befor"></div>
+                    <a href="{{item.settings.product.url}}" class="button "> Buy Now </a>
+                    <div class="after"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+
+          <div class="bg-box">
+            <img style="opacity: 0;" src="" alt="">
+            <div class="inner-bg-box"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  
+  
+  
+      
+    $(document).ready(()=>{
+     
+        
+
+
+       let rootDom = document.querySelector('.index-video-list');
+     // 点击切换右侧图片
+     let checkItemDomList = Array.from(rootDom.querySelectorAll('.menu-box .left .video-progress-bar .item'));
+     let activeFlag = -1;
+     let activeCheckDom = rootDom.querySelector('.menu-box .left .video-progress-bar .line .active-box')
+
+     let rightBox = rootDom.querySelector('.menu-box .right')
+     let rightImgDomList = rightBox.querySelectorAll('.image-box img')
+     let timer = null
+
+     let productInfoList = [
+       {% for item in section.blocks %}
+         {
+           url:'{{item.settings.link}}',
+           price:'{{item.settings.product.price_min}}',
+           pricecom:'{{item.settings.product.compare_at_price}}',
+           videoUrl:`{{item.settings.video_link | strip }}`
+         },
+       {% endfor %}
+     ]
+
+
+     checkItemDomList.forEach((e,i)=>{
+       e.addEventListener('click',()=>{
+         // 设置定时器 3s 后自动切换到下一张
+         clearTimeout(timer)
+         timer = setTimeout(()=>{
+           FireEvent(checkItemDomList[i+1 > 5 ? 0 : i+1],'click')
+         },10000)
+         if(activeFlag != -1) {
+           checkItemDomList[activeFlag].classList.remove('active');
+         }
+         e.classList.add('active');
+         
+         console.log()
+         
+         let dis = e.querySelector('.check-item').offsetLeft - activeCheckDom.parentElement.offsetLeft;
+         activeCheckDom.style.transform = `translate(${dis}px,-50%)`
+
+
+         rightImgDomList.forEach(e=>{
+           e.classList.remove('active')
+           e.classList.remove('remove-active')
+         })
+
+         // 右侧切换图片动画
+         rightImgDomList[i].classList.add('active')
+         if(activeFlag != -1) {
+           // console.log(activeFlag)
+           rightImgDomList[activeFlag].classList.add('remove-active')
+         }
+
+
+         // 切换显示价格以及跳转路由
+         let priceDom = rootDom.querySelector('.menu-box .right .product-price');
+         
+         let menuButton = rootDom.querySelector('.menu-box .right .button-box .button')
+         priceDom.innerHTML = `<span class="price--highlight">$${(productInfoList[i].price/100).toFixed(2)}</span>`+`<s style="margin-left:10px; opacity:0.6;font-size:16px; text-decoration-color: red;" class="price--compare">$${(productInfoList[i].pricecom/100).toFixed(2)}<s>`;
+         menuButton.setAttribute('href',productInfoList[i].url)
+         rootDom.querySelector('.menu-box .left .video-box video').setAttribute('src',`${productInfoList[i].videoUrl}`)
+         activeFlag = i
+         
+       }) 
+     })
+       FireEvent(checkItemDomList[0],'click')
+
+       // 获取右侧dom 元素高度
+       let imgbox = rootDom.querySelector('.menu-box .right .bg-box img')
+
+       imgbox.onload = ()=>{
+          let imgboxInfo = rootDom.querySelector('.menu-box .right .bg-box img').getBoundingClientRect()
+          let height = imgboxInfo.width
+          rootDom.querySelector('.menu-box .left .video-progress-bar').style.marginTop = `${height/2 - 140}px`
+          rootDom.querySelector('.menu-box .right .bg-box').style.height = `${imgboxInfo.width}px`
+          
+
+          rightImgDomList.forEach(e=>{
+            e.parentElement.style.marginTop = `${-(imgboxInfo.height - imgboxInfo.width)/2}px`
+          })
+       }
+       
+       let imgboxInfo = rootDom.querySelector('.menu-box .right .bg-box img').getBoundingClientRect()
+       let height = imgboxInfo.width
+       rootDom.querySelector('.menu-box .left .video-progress-bar').style.marginTop = `${height/2 - 140}px`
+       rootDom.querySelector('.menu-box .right .bg-box').style.height = `${imgboxInfo.width}px`
+       
+
+       rightImgDomList.forEach(e=>{
+         e.parentElement.style.marginTop = `${-(imgboxInfo.height - imgboxInfo.width)/2}px`
+       })
+
+
+   
+
+     window.addEventListener('resize', ()=>{
+       // 获取右侧dom 元素高度
+       let imgboxInfo = rootDom.querySelector('.menu-box .right .bg-box img').getBoundingClientRect()
+       let height = imgboxInfo.width
+       rootDom.querySelector('.menu-box .left .video-progress-bar').style.marginTop = `${height/2 - 140}px`
+       rootDom.querySelector('.menu-box .right .bg-box').style.height = `${imgboxInfo.width}px`
+       
+
+       rightImgDomList.forEach(e=>{
+         e.parentElement.style.marginTop = `${-(imgboxInfo.height - imgboxInfo.width)/2}px`
+       })
+     });
+     
+
+     function FireEvent(elem, eventName){
+       if(typeof(elem) == 'object')
+       {
+           eventName = eventName.replace(/^on/i,'');
+           if (document.all)
+           {//
+               eventName = "on"+eventName;
+               elem.fireEvent(eventName);
+           }
+           else
+           {
+               var evt = document.createEvent('HTMLEvents');
+               evt.initEvent(eventName,true,true);
+               elem.dispatchEvent(evt);
+           }
+       }
+   
+    }
+    // mobile
+    $(".menu-boxMobile .left .mobile_listClick").click(function(){
+       $(this).addClass("active").siblings("div").removeClass("active");
+       var index=$(this).index();
+
+       $(".mobile_rightHide:eq(" + index + ")").show().siblings(".mobile_rightHide").hide()
+       console.log(index)
+     })
+     var swiper = new Swiper(".indexVideoSwiper", {
+       observer:true,
+       observeParents:true,
+       slideToClickedSlide: true,
+       slidesPerView: 'auto',
+       spaceBetween: 30,
+       slidesOffsetBefore: 0,
+       slidesOffsetAfter: 0
+     });
+   })
+
+
+
+</script>
+
+{% schema %}
+{
+"name": "index video list",
+"class": "index-video-list-box",
+"presets": [{
+  "name": "index video list",
+  "settings": {
+
+  }
+}],
+"blocks": [
+  {
+    "type": "product",
+    "name": "product",
+    "settings": [
+
+    {
+      "type": "image_picker",
+      "id": "img_bike",
+      "label": "tab bike img"
+    },
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "img"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "url",
+      "id": "video_link",
+      "label": "video link"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "button link"
+    }
+    ]
+  }
+],
+"settings": [
+  {
+    "type": "text",
+    "id": "title",
+    "label": "title",
+    "default":"Electric Bicycle"
+  },{
+    "type": "richtext",
+    "id": "description",
+    "label": "description"
+
+  },
+  {
+    "type": "richtext",
+    "id": "description_mobile",
+    "label": "description Mobile"
+
+  },
+  {
+    "type": "text",
+    "id": "buttonText",
+    "label": "button text",
+    "default":"Collection page"
+  },
+  {
+    "type": "url",
+    "id": "buttonLink",
+    "label": "button link"
+  },
+  {
+    "type": "text",
+    "id": "starting",
+    "label": "Starting label"
+  }
+
+]
+}
+{% endschema %}
+
+<style></style>
+
+{{ 'index-video-list.css' | asset_url | stylesheet_tag }}

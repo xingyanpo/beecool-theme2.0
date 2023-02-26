@@ -1,0 +1,281 @@
+@media (max-width:999px) {
+    .details-product_all {
+        padding: 50px 0;
+  
+    }
+  
+    /*  标题加描述css*/
+    .details_p_h{
+        font-size:35px;
+    } 
+    /* end */
+    .details-product_box{
+        margin: 0 auto;
+    }
+  
+    .details-product_all .box-ul {
+        display: flex;
+        border-bottom: 1px solid #6C6C6C;
+    }
+    .details_p_h{
+        font-weight: 600;
+    
+        color: #151515;
+        line-height: 1;
+
+    }
+    .details-product_all ul{
+        padding: 0;
+    }
+    .details_p_d{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #151515;
+        padding:25px 0 50px;
+    }
+    .details-product_all .box-ul{
+        position: relative;
+        margin-bottom: 0;
+    }
+   
+    .details-product_all .box-ul li.active {
+        position: relative;
+        font-weight: 600;
+        opacity: 1;
+    }
+    .details-product_all .box-ul li.active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 68%;
+        transform: translateX(-68%);
+        width:100%;
+        height: 3px;
+        background-color: #2A408E;
+    }
+
+    .details-product_all .box-ul li {
+        display: flex;
+        list-style: none;
+        font-size: 16px;
+        color: #151515;
+        cursor: pointer;
+        line-height: 24px;
+        font-weight: 600;
+        align-items: center;
+        opacity: 0.6;
+        justify-content: center;
+       
+    }
+    .details-product_all .box-de .selected{
+        display: block;
+    }
+    .details-product_all .box-de {
+        margin-top: 0;
+        overflow: hidden;
+    }
+    .details-product_all .box-de li{
+        display: none;
+    }
+ 
+    /* tab切换显示区域 */
+  
+    .details-product_all .box-de-left div:nth-child(1){
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1;
+        padding-top: 40px;
+        color: #151515;
+    }
+    .details-product_all .box-de-box{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .details-product_all .box-de-left div:nth-child(2){
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 25px;
+        color: #151515;
+    }
+     .details-product_all .box-de-right-img{
+        overflow: hidden; 
+     }
+    .details-product_all .box-de-right img{
+      transition: all 1s;
+    }
+   
+    .details-product_all .box-de-right-text{
+        font-size: 20px;
+        margin-top: 30px;
+        color: #151515;
+        font-weight: 500;
+        line-height: 33px;
+    }
+    .details-product_all .swiper{
+        width: 100%;
+        
+    }
+    
+    .details-product_all .smySwiper  .swiper-wrapper .swiper-slide{
+        width:auto !important;
+        text-align: center;
+        line-height: 1.2;
+        padding: 0 10px 16px;
+    }
+    
+
+}
+@media(min-width:1000px) {
+    .details-product_all {
+        padding: 123px 0 110px 0;
+  
+    }
+  
+    .details-product_head {
+      margin: 0 auto;
+  
+    }
+    /*  标题加描述css*/
+    .details_p_h{
+        font-size:70px;
+    } 
+    /* end */
+    .details-product_box{
+        margin: 0 auto;
+    }
+  
+    .details-product_all .box-ul {
+        display: flex;
+        border-bottom: 1px solid #6C6C6C;
+    }
+    .details_p_h{
+        font-weight: 600;
+    
+        color: #151515;
+        line-height: 1;
+
+    }
+    .details-product_all ul{
+        padding: 0;
+    }
+    .details_p_d{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 35px;
+        color: #151515;
+        padding: 44px 20px 80px 0;
+    }
+    .details-product_all .box-ul{
+        position: relative;
+    }
+    .details-product_all .box-ul li:last-child{
+        width: 16%;
+    }
+    .details-product_all .box-ul li.active {
+        position: relative;
+        font-weight: 600;
+    }
+    .details-product_all .box-ul li.active::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 68%;
+        transform: translateX(-68%);
+        width:100%;
+        height: 5px;
+        background-color: #2A408E;
+    }
+
+    .details-product_all .box-ul li {
+        display: flex;
+        list-style: none;
+        font-size: 20px;
+        color: #151515;
+        cursor: pointer;
+        line-height: 54px;
+        width: 14%;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    /* .details-product_all .box-ul li:not(:nth-child(1)){
+        margin-left: 43px;
+    } */
+    .details-product_all .box-de .selected{
+        display: block;
+    }
+    .details-product_all .box-de {
+      
+        overflow: hidden;
+        margin-top: 92px;
+    }
+    .details-product_all .box-de li{
+        display: none;
+    }
+    /* .details-product_all .pj_desktopBottom div {
+         display: none;
+    }
+
+    .details-product_all .pj_desktopBottom div.selected {
+        display: block;
+    } */
+    /* tab切换显示区域 */
+    .box-de-box{
+        display: flex;
+        justify-content: space-between;
+    }
+    .details-product_all .box-de-left{
+        width: 38%;
+    }
+    .details-product_all .box-de-left div:nth-child(1){
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 35px;
+        padding-top: 7px;
+        color: #151515;
+    }
+    .details-product_all .box-de-left div:nth-child(2){
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 35px;
+        padding-top: 50px;
+        color: #151515;
+    }
+   
+    .details-product_all .box-de-right{
+        width: 56%;
+        cursor: pointer;
+      
+    }
+     .details-product_all .box-de-right-img{
+  overflow: hidden;
+       
+     }
+    .details-product_all .box-de-right img{
+      transition: all 1s;
+    }
+    .details-product_all .box-de-right img:hover{
+     transform: scale(1.05);
+    }
+    .details-product_all .box-de-right-text{
+        font-size: 20px;
+        margin-top: 30px;
+        color: #151515;
+        font-weight: 500;
+        line-height: 33px;
+    }
+    .details-product_all .swiper{
+        width: 100%;
+        
+    }
+    
+    .details-product_all .smySwiper  .swiper-wrapper .swiper-slide{
+        width: 12%;
+        text-align: center;
+        line-height: 1.2;
+        padding-bottom: 35px;
+    }
+}

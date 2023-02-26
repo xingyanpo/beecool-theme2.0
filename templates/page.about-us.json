@@ -1,0 +1,341 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "page_width": "medium"
+      }
+    },
+    "1660115307eec0c752": {
+      "type": "jd-banner_or_video",
+      "settings": {
+        "header": "<p>About BeeCool Bikes<\/p>",
+        "text": "",
+        "link": "",
+        "link2": "",
+        "img_banner": "shopify:\/\/shop_images\/1_c396b8fb-47d2-45ef-ba64-8410665ed585.png",
+        "img_bannerMobile": "shopify:\/\/shop_images\/1_8f3ae2d0-5500-4786-805f-c4132771e459.png"
+      }
+    },
+    "1660116698e64dc055": {
+      "type": "jd-general_text",
+      "settings": {
+        "text_svg": "",
+        "text_svg2": "",
+        "text": "<p>BeeCool Bikes was born in the calling of a group of cycling enthusiasts. <br\/>Their strong desire for better cycling experience gets them, a group of cyclists of different ages, from different industries or backgrounds <br\/>together. The shared passion among them for cycling made BeeCool Bikes gradually take shape.<\/p>",
+        "text2": "",
+        "pc_font": 18,
+        "text_mobile": "<p>BeeCool Bikes was born in the calling of a group of cycling enthusiasts. Their strong desire for better cycling experience gets them, a group of cyclists of different ages, from different industries or backgrounds together. The shared passion among them for cycling made BeeCool Bikes gradually take shape.<\/p>",
+        "position": "center",
+        "font_weight": "400",
+        "mobile_font": 12,
+        "background_color": ""
+      }
+    },
+    "16601132849abee0cb": {
+      "type": "jd-Image_describe",
+      "blocks": {
+        "40c28a7b-ffae-40c2-9f19-c6ea70eae84b": {
+          "type": "Image_describe",
+          "settings": {
+            "check": true,
+            "img": "shopify:\/\/shop_images\/1_cb7e6c53-f414-46a4-862f-18f5e8a63427.jpg",
+            "link": "",
+            "img_mobile": "shopify:\/\/shop_images\/1_35c06a70-8070-465b-897e-680eede94337.png",
+            "div_width": 92,
+            "title": "<p>Kevin is a programmer <br\/>in San Francisco, <br\/>California.<\/p>",
+            "title_mobile": "<p>Kevin is a programmer in San Francisco, California. <\/p>",
+            "text": "<p>He suffered from the uphill roads, busy traffic and expensive parking in San Francisco for a long time. He is a bike lover too, but riding from home to work every day really made him feel tired. He found that an electric bike would release this tension a lot or even make everyday commuting enjoyable.<\/p>",
+            "text_width": 93,
+            "text_mobile": "<p>Kevin is a programmer in San Francisco, California.<br\/>He suffered from the uphill roads, busy traffic and<br\/> expensive parking in San Francisco for a long time. He is<br\/> a bike lover too, but riding from home to work every day<br\/> really made him feel tired. He found that an electric bike<br\/> would release this tension a lot or even make everyday<br\/>commuting enjoyable.<\/p>",
+            "bg_color": "rgba(0,0,0,0)",
+            "bg_color2": "#f4f7fe",
+            "color_mobile": ""
+          }
+        },
+        "c088aac4-8f0e-4609-8783-189bf696871b": {
+          "type": "Image_describe",
+          "settings": {
+            "check": false,
+            "img": "shopify:\/\/shop_images\/2_2da6db86-e3de-4143-8a29-04577096f2f2.png",
+            "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a66c6e48dcbf497aa2d62bb5b23fa185.mp4",
+            "div_width": 86,
+            "title": "<p>Dylan is a marketer<br\/>in Grand Rapids,<br\/>Michigan. <\/p>",
+            "title_mobile": "<p>Dylan is a marketer in GrandRapids, Michigan.<\/p>",
+            "text": "<p>His family loves traveling to Northern Michigan for every holiday with their RV. His father, John, a 60 years old gentleman, is a cycling enthusiast. With his age getting older and older, most of the bike trails become harder for him to ride through. John is just shy of his age but would still like to ride further. Dylan needs to find out a long-endurance electric bike for his father.<\/p>",
+            "text_width": 100,
+            "text_mobile": "<p>His family loves traveling to Northern Michigan for every holiday with their RV. His father, John, a 60 years old gentleman, is a cycling enthusiast. With his age getting older and older, most of the bike trails become harder for him to ride through. John is just shy of his age but would still like to ride further. Dylan needs to find out a long-endurance electric bike for his father.<\/p>",
+            "bg_color": "",
+            "bg_color2": "#ffffff",
+            "color_mobile": "#151515"
+          }
+        },
+        "3c712c8b-2f61-4cdd-b3c9-92a576cc1bbf": {
+          "type": "Image_describe",
+          "settings": {
+            "check": true,
+            "img": "shopify:\/\/shop_images\/2_2cf1bf5f-6533-4bc5-ab7a-df76964144cf.png",
+            "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/0a8f4f84fabf40b3a8f7e766165599b9.mp4",
+            "div_width": 95,
+            "title": "<p>Jason is a bike-packing<br\/>lover from Chicago,<br\/>Illinois. <\/p>",
+            "title_mobile": "<p>Jason is a bike-packing lover from Chicago, Illinois. <\/p>",
+            "text": "<p>He has ridden through the States twice during his college years. During his trip, he always needs to cross bumpy roads and bad terrains, and his bike has been broken several times on the roads, so he had no choice but to temperately stop his trip and find a local bike shop to repair his bike. He also needs a more durable bike to help him out on his trip.<\/p>",
+            "text_width": 95,
+            "text_mobile": "<p>He has ridden through the States twice during his college years. During his trip, he always needs to cross bumpy roads and bad terrains, and his bike has been broken several times on the roads, so he had no choice but to temperately stop his trip and find a local bike shop to repair his bike. He also needs a more durable bike to help him out on his trip.<\/p>",
+            "bg_color": "",
+            "bg_color2": "#f4f7fe",
+            "color_mobile": "#151515"
+          }
+        }
+      },
+      "block_order": [
+        "40c28a7b-ffae-40c2-9f19-c6ea70eae84b",
+        "c088aac4-8f0e-4609-8783-189bf696871b",
+        "3c712c8b-2f61-4cdd-b3c9-92a576cc1bbf"
+      ],
+      "settings": {
+        "margin_bottom": 0
+      }
+    },
+    "166012082307278047": {
+      "type": "jd-genera-video",
+      "settings": {
+        "text": "<p>There must be many others suffering the same as they did. We keep searching best parts with the highest <br\/>cost-performance from different trustworthy suppliers. Finally, our first two awesome e-bike models were born, Bee Adventurer and Bee Explorer.<\/p>",
+        "mobile_text": "",
+        "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dfc0a64bcd73425189a0796f78090f84.mp4",
+        "img": "shopify:\/\/shop_images\/10_14_-_1_3.png",
+        "img_mobile": "shopify:\/\/shop_images\/10_14_-_1_3.png"
+      }
+    },
+    "1f26c3ef-c879-4349-9808-35536abf8160": {
+      "type": "jd-general_text",
+      "settings": {
+        "text_svg": "",
+        "text_svg2": "",
+        "text": "<p>With e-bikes, cycling is not a professional activity for athletes only, and we believe that people from all ages, all industries, <br\/>and all fields can also enjoy the fun of cycling. We are just like the “bees” in this world: studying hard and working hard for our lives. Even we are busy “bees”, we can still be cool, and never lose <br\/>the passion for enjoying life! So we named the brand “BeeCool”. Our mission is to bring all bike lovers an eco-friendly and comfortable travel choice as well as pure riding pleasure. <br\/>Moreover, we can be cool riders together, and will never lose hope to cycling.<\/p>",
+        "text2": "",
+        "pc_font": 18,
+        "text_mobile": "<p>With e-bikes, cycling is not a professional activity for athletes only, and we believe that people from all ages, all industries, and all fields can also enjoy the fun of cycling. We are just like the “bees” in this world: studying hard and working hard for our lives. Even we are busy “bees”, we can still be cool, and never lose the passion for enjoying life! So we named the brand “BeeCool”. Our mission is to bring all bike lovers an eco-friendly and comfortable travel choice as well as pure riding pleasure. Moreover, we can be cool riders together, and will never lose hope to cycling.<\/p>",
+        "position": "left",
+        "font_weight": "400",
+        "mobile_font": 12,
+        "background_color": ""
+      }
+    },
+    "1d8bba99-0bf4-41c9-9fe2-527f0debfc9b": {
+      "type": "jd-general_text",
+      "settings": {
+        "text_svg": "<?xml version=\"1.0\" standalone=\"no\"?><svg t=\"1666600842604\" class=\"icon\" viewbox=\"0 0 1195 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"16589\" width=\"149.375\" height=\"128\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><path d=\"M1125.400405 972.814933 651.636395 972.814933 651.636395 631.106304C651.636395 491.702016 663.719168 382.333696 687.885227 302.997931 712.0512 223.662165 737.181781 170.700459 802.935893 107.231829 868.68992 43.763285 914.312789 24.717568 1010.828373 0L1078.255957 145.030059C1010.828373 170.796971 969.749333 182.289237 906.391381 248.024235 843.033429 313.759232 838.360149 377.340075 838.360149 431.988736L1125.400405 431.988736 1125.400405 972.814933ZM473.764096 972.814933 0 972.814933 0 631.106304C0 491.702016 12.082859 382.333696 36.248832 302.997931 60.414891 223.662165 85.545472 170.700459 151.299499 107.231829 217.053611 43.763285 262.676395 24.717568 359.192064 0L426.619563 145.030059C359.192064 170.796971 318.112939 182.289237 254.754987 248.024235 191.397035 313.759232 186.723755 377.340075 186.723755 431.988736L473.764096 431.988736 473.764096 972.814933Z\" p-id=\"16590\"><\/path><\/svg>",
+        "text_svg2": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 900.32 778.25\"><path d=\"M-201,206.59H28.63c0-43.72-3.74-94.58-54.42-147.17S-109.34-2.36-163.28-23l53.94-116C-32.13-119.23,4.37-104,57-53.22s72.71,93.15,92,156.62,29,151,29,262.49V639.25H-201Zm521.31,0H549.94c0-43.72-3.74-94.58-54.43-147.17S412-2.36,358-23L412-139c77.22,19.77,113.72,35,166.32,85.78s72.71,93.15,92,156.62,29,151,29,262.49V639.25h-379Zm0,432.66\" transform=\"translate(201 139)\"><\/path><\/svg>",
+        "text": "<p>Our team puts great effort in offering all bike lovers affordable, <br\/>better equipped, cost-efficient,and comfortable electric bikes. Once BeeCool, Always Be Cool! <br\/>Ride further with us. It’s simple but the best.<\/p>",
+        "text2": "",
+        "pc_font": 32,
+        "text_mobile": "<p>Our Team puts Great effort in Offering <br\/>all bike Lovers Affordable, Better Equipped, <br\/>Cost-efficient, and Comfortable Electric <br\/>bikes. Once BeeCool, <br\/>Always Be Cool! Ride further with us. <br\/>It’s simple but the best.<\/p>",
+        "position": "center",
+        "font_weight": "600",
+        "mobile_font": 16,
+        "background_color": "#f4f7fe"
+      }
+    },
+    "89bc1714-1f57-4a20-9ee3-27ca7d005a84": {
+      "type": "jd-about-photoWall",
+      "blocks": {
+        "fff356ad-4b39-4baa-b5f3-f10ea4d1973e": {
+          "type": "photoWall",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/12_aca59268-fabe-41a8-b4cf-162f95c8f84b.png"
+          }
+        },
+        "77a53463-30ce-49d0-8801-a6d1b47bc067": {
+          "type": "photoWall",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/11_8dfb3d64-0574-42f0-b15a-e85e5e56583f.png"
+          }
+        },
+        "40e9e4d4-62e4-460d-b450-2db3a4ac7cae": {
+          "type": "photoWall",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/7_da0a7868-1879-4b24-b79f-1646963df61f.png"
+          }
+        },
+        "295bcd7b-0bb3-413d-9a25-bf2d6696b4b2": {
+          "type": "photoWall",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/6_0f22ae63-d6eb-4d9b-904d-0351bd6b945b.png"
+          }
+        },
+        "3174eac7-d3d3-4e08-aac3-b4fb99b8af2f": {
+          "type": "photoWall",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/QQ_20230111150651.png"
+          }
+        },
+        "5604082c-009f-4a75-8800-b320c7853590": {
+          "type": "photoWall",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8_3065861b-d635-4e78-a801-dabe454e615a.png"
+          }
+        },
+        "df841424-ed02-4c31-9026-86cc4fa56cb7": {
+          "type": "photoWall",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/4_32b037d7-6b8b-477d-b0f0-de69cf758dee.png"
+          }
+        },
+        "8bdbb705-bbba-494d-a7f0-469a41673f01": {
+          "type": "photoWall",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/10_c8d70088-3fbd-452d-be3b-339d6ff3bc40.png"
+          }
+        },
+        "c4e6befa-3674-4b37-9b0d-f88b088bd24c": {
+          "type": "photoWall",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/3_35d286e9-8b52-4449-9382-215def2d8a39.png"
+          }
+        },
+        "47c4e18b-b542-42de-9373-8de29a5c7d30": {
+          "type": "photoWall",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/2_cd3f4a9d-be79-441c-a3cf-c35c9d7d75b5.png"
+          }
+        },
+        "a6a61270-7902-4f6e-a727-e62034f5d174": {
+          "type": "photoWall",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/1_7ed9cb12-8895-499f-a113-f025aeb1c971.png"
+          }
+        },
+        "c9f333d7-1e0d-407a-a207-a8c0f1f51b52": {
+          "type": "photoWall",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/9_53e5786b-d2a5-4f4a-9091-589768019dd0.png"
+          }
+        },
+        "84432ead-17d3-4e7f-80eb-6799e9563e6c": {
+          "type": "photoTop",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/product-video-path-thru.jpg"
+          }
+        },
+        "ea3befa7-9472-4514-bb1c-4f52852a0986": {
+          "type": "photoTop",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/20221026_132339.jpg"
+          }
+        },
+        "de04148a-f3e9-4b15-bd0a-400402096af8": {
+          "type": "photoTop",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/product-video-exp.jpg"
+          }
+        },
+        "c96bfd4f-b9d2-455d-b6f2-7f3032f98cbc": {
+          "type": "photoTop",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/20221111101800.png"
+          }
+        },
+        "ac6c8fbf-4942-410f-9387-867b492b3b00": {
+          "type": "photoTop",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/20221111101623.png"
+          }
+        },
+        "189a0be6-8f0c-4826-a21d-f74182042768": {
+          "type": "photoTop",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/20221111103800.png"
+          }
+        }
+      },
+      "block_order": [
+        "fff356ad-4b39-4baa-b5f3-f10ea4d1973e",
+        "77a53463-30ce-49d0-8801-a6d1b47bc067",
+        "40e9e4d4-62e4-460d-b450-2db3a4ac7cae",
+        "295bcd7b-0bb3-413d-9a25-bf2d6696b4b2",
+        "3174eac7-d3d3-4e08-aac3-b4fb99b8af2f",
+        "5604082c-009f-4a75-8800-b320c7853590",
+        "df841424-ed02-4c31-9026-86cc4fa56cb7",
+        "8bdbb705-bbba-494d-a7f0-469a41673f01",
+        "c4e6befa-3674-4b37-9b0d-f88b088bd24c",
+        "47c4e18b-b542-42de-9373-8de29a5c7d30",
+        "a6a61270-7902-4f6e-a727-e62034f5d174",
+        "c9f333d7-1e0d-407a-a207-a8c0f1f51b52",
+        "84432ead-17d3-4e7f-80eb-6799e9563e6c",
+        "ea3befa7-9472-4514-bb1c-4f52852a0986",
+        "de04148a-f3e9-4b15-bd0a-400402096af8",
+        "c96bfd4f-b9d2-455d-b6f2-7f3032f98cbc",
+        "ac6c8fbf-4942-410f-9387-867b492b3b00",
+        "189a0be6-8f0c-4826-a21d-f74182042768"
+      ],
+      "settings": {
+        "title": "Test Ride",
+        "text": "<p>BeeCool family will always be here for you. <br\/>Test our e-bikes and join Bee Riders to enjoy each of your ride.<\/p>",
+        "button": "<p>Test Ride Now<\/p>",
+        "link": "shopify:\/\/pages\/dealers",
+        "img": "shopify:\/\/shop_images\/1_1d4b87f9-4a03-45d8-a2b5-166f068c1e53.png"
+      }
+    },
+    "b061a28c-bb3d-4908-a212-13369e22ee54": {
+      "type": "jd-afterSales",
+      "blocks": {
+        "c5b06e15-e18d-4c93-b963-54f8f39b2384": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
+            "title": "Free Shipping",
+            "subtitle": "<p>To the lower 48 states<\/p>"
+          }
+        },
+        "d67a2903-0eb5-4dea-90c5-f2a0fcded8f0": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
+            "title": "2-Year Warranty",
+            "subtitle": "<p>Buy with confidence<\/p>"
+          }
+        },
+        "2b0d033b-6d22-49ae-90f6-bcefe6a6f773": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
+            "title": "Secure Payment",
+            "subtitle": "<p>Secure payment with Shopify<\/p>"
+          }
+        },
+        "6253e3e5-d7f0-499c-accc-bfb77c3efbc0": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
+            "title": "Cost-effective",
+            "subtitle": "<p>Direct to consumer pricing<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c5b06e15-e18d-4c93-b963-54f8f39b2384",
+        "d67a2903-0eb5-4dea-90c5-f2a0fcded8f0",
+        "2b0d033b-6d22-49ae-90f6-bcefe6a6f773",
+        "6253e3e5-d7f0-499c-accc-bfb77c3efbc0"
+      ],
+      "settings": {
+        "policy_color": "#f3f5f5",
+        "policy_scolor_mobile": "#f3f5f5"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1660115307eec0c752",
+    "1660116698e64dc055",
+    "16601132849abee0cb",
+    "166012082307278047",
+    "1f26c3ef-c879-4349-9808-35536abf8160",
+    "1d8bba99-0bf4-41c9-9fe2-527f0debfc9b",
+    "89bc1714-1f57-4a20-9ee3-27ca7d005a84",
+    "b061a28c-bb3d-4908-a212-13369e22ee54"
+  ]
+}

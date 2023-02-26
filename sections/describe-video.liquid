@@ -1,0 +1,651 @@
+{{ 'describe-video.css' | asset_url | stylesheet_tag }}
+<style>
+    /* .video_title,.describe_last_title,.describe_top_title {
+        display: none !important;
+    } */
+    /* @media screen and (max-width:1000px) { */
+      
+        .describe-video-all #testImg {
+            width: auto !important;
+            height: auto !important;
+        }
+    /* } */
+    
+    
+    @media(min-width:1301px){
+        .describe-video-all .box_info {
+            height: calc(100vh - 100px);
+        }
+    }
+    @media(max-width:1300px){
+        .describe-video-all .box_info {
+            height: calc(100vh - 126px);
+        }
+        
+    }
+    @media(min-width:100px) {
+        .describe-video-all #testImg {
+            z-index: 3;
+            width: 100%;
+            top: 0px;
+            position: sticky;
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://cdn.shopify.com/s/files/1/0554/7098/1274/files/{{product.id}}-pcs_1.jpg?v=1666749801);
+        }
+    }
+    
+    @media (min-width:1000px) {
+        .describe-video-all .box_info {
+            /* height: 100vh; */
+            z-index: 3;
+            top: 100px;
+            width: 100%;
+            overflow: hidden;
+            position: sticky;
+            background-position: center;
+            background-size: cover;
+        }
+        .describe-video-all .box {
+            height: calc( 303vh + 137px);
+            width: 100%;
+            line-height: 0;
+            background-color: #151515;
+            /* position: relative; */
+        }
+        .describe-video-all {
+            margin-top: 120px;
+        }
+        .describe_last_title {
+            font-size: 18px;
+            font-weight: 600;
+            position: absolute;
+            margin: 0 auto;
+            top: 100px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            opacity: 1;
+            width: 80%;
+            left: 0;
+            right: 0;
+            color: #ffffff;
+            z-index: 10;
+            flex-direction: column;
+        }
+        .describe-video-all .video_title div {
+            width: 35%;
+            line-height: 1.5;
+        }
+        .describe_last_title div:first-child {
+            line-height: 1.5;
+            font-size: 32px;
+        }
+        .describe_last_title div:last-child {
+            line-height: 1.5;
+            font-size: 70px;
+        }
+        .describe_top_title {
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: 600;
+            position: absolute;
+            top: 300px;
+            text-align: left;
+            right: 11%;
+            display: flex;
+            justify-content: center;
+            opacity: 1;
+            width: 100%;
+            color: #ffffff;
+            opacity: 1;
+            z-index: 10;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .describe-video-all .video_title {
+            font-size: 21px;
+            font-weight: 500;
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            top: 220px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            align-items: flex-start;
+            width: 80%;
+            bottom: 120px;
+            color: #ffffff;
+            z-index: 10;
+            flex-direction: column;
+        }
+    }
+    
+    @media (min-width:1000px) and (max-width:1500px) {
+        .describe-video-all #testImg {
+            height: 100vh;
+        }
+        .describe_last_title div:last-child {
+            line-height: 1.5;
+            font-size: 35px;
+        }
+        .product-sticky-form{
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        .product-sticky-form{
+            top: 119px;
+        }
+        .monaka-header-not-on-top .monaka-header{
+            top: -20px;
+        }
+        .monaka-header-not-on-top .monaka-headers{
+            height: 50px;
+            line-height: 50px;
+        }
+        .product_sticky_form_Overview div.active:after{
+            bottom: -21px;
+        }
+    }
+    
+    @media (min-width:1000px) and (max-width:1200px) {
+        .describe-video-all .box {
+            height: calc( 303vh + 137px);
+            width: 100%;
+            line-height: 0;
+            background-color: #151515;
+            /* position: relative; */
+        }
+        .describe-video-all .box_info {
+            height: calc(100vh - 192px);
+            top: 192px;
+        }
+        
+        .describe-video-all #testImg {
+            z-index: 3;
+            width: 100%;
+            top: 0px;
+            /* height: calc(100vh + 24px) !important; */
+            position: sticky;
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://cdn.shopify.com/s/files/1/0554/7098/1274/files/{{product.id}}-pcs_1.jpg?v=1666749801);
+        }
+        .describe-video-all .video_title div {
+            width: 35%;
+            line-height: 1.5;
+        }
+        .describe-video-all .video_title div:last-child {
+            text-align: right;
+        }
+        .describe-video-all .video_title {
+            font-size: 21px;
+            font-weight: 500;
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            top: 220px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            align-items: flex-start;
+            width: 80%;
+            bottom: 120px;
+            color: #ffffff;
+            z-index: 10;
+            flex-direction: column;
+        }
+        .describe_last_title {
+            font-size: 18px;
+            font-weight: 600;
+            position: absolute;
+            top: 100px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            opacity: 1;
+            width: 80%;
+            left: 0;
+            right: 0;
+            color: #ffffff;
+            margin: 0 auto;
+            z-index: 10;
+            flex-direction: column;
+        }
+        .describe_last_title div:first-child {
+            line-height: 1.5;
+            font-size: 32px;
+        }
+        .describe_last_title div:last-child {
+            line-height: 1.2;
+            font-size: 35px !important;
+            padding: 0 15px;
+        }
+        .describe_top_title {
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: 600;
+            position: absolute;
+            top: 300px;
+            text-align: left;
+            right: 11%;
+            display: flex;
+            justify-content: center;
+            opacity: 1;
+            width: 100%;
+            color: #ffffff;
+            opacity: 1;
+            z-index: 10;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+    
+    @media (max-width:999px) {
+        .describe-video-all {
+            margin-top: 50px;
+        }
+        .describe-video-all .box_info {
+            z-index: 3;
+            top: 156px;
+            width: 100%;
+            overflow: hidden;
+            position: sticky;
+            background-position: center;
+            background-size: cover;
+        }
+        .describe-video-all .box {
+            height: calc( 303vh + 156px);
+            width: 100%;
+            line-height: 0;
+            background-color: #151515;
+            /* position: relative; */
+        }
+        .describe-video-all #testImg {
+            width: 100%;
+            height: 88vh;
+            z-index: 3;
+            top: 0;
+            position: sticky;
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://cdn.shopify.com/s/files/1/0554/7098/1274/files/{{product.id}}-ms_1.jpg?v=1666751198);
+            position: relative;
+        }
+        .describe-video-all .introduction {
+            padding: 29px 18px;
+            color: #ffffff;
+            position: absolute;
+            bottom: 15px;
+        }
+        .describe-video-all .title:first-child {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+        .describe-video-all .title:last-child {
+            font-size: 14px;
+            font-weight: 400;
+            padding-top: 16px;
+        }
+        .describe_last_title {
+            font-size: 14px;
+            font-weight: 600;
+            position: absolute;
+            top: 50px;
+            padding: 0 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            opacity: 1;
+            width: 100%;
+            color: #ffffff;
+            z-index: 10;
+            flex-direction: column;
+        }
+        .describe_last_title div:first-child {
+            line-height: 1.5;
+            font-size: 16px;
+        }
+        .describe_last_title div:last-child {
+            line-height: 1.2;
+            font-size: 35px;
+            padding: 0 10px;
+            margin-top: 10px;
+        }
+        .describe-video-all .video_title {
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding:0 20px;
+            opacity: 0;
+            align-items: flex-start;
+            width: 100%;
+            bottom: 30px;
+            color: #ffffff;
+            z-index: 10;
+            flex-direction: column;
+        }
+        .describe-video-all .video_title div {
+            display: flex;
+            height: 100%;
+            line-height: 1.5;
+            align-items: flex-end;
+        }
+        .describe_top_title {
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            justify-content: flex-end;
+            position: absolute;
+            top: 0;
+            left: 0;
+            line-height: 1.5;
+            padding-left: 20px;
+            opacity: 1;
+            align-items: flex-start;
+            width: 100%;
+            bottom: 30px;
+            color: #ffffff;
+            z-index: 10;
+            flex-direction: column;
+        }
+    }
+</style>
+<section>
+    <div class="describe-video-all">
+        <div class="box">
+            <div class="box_info">
+                <canvas id="testImg"></canvas>
+                <div class="describe_last_title">
+                    <div>{{section.settings.top_title}}</div>
+                    <div>
+                        {{section.settings.bottom_title}}
+                    </div>
+                </div>
+                <div class="describe_top_title">
+                    {{section.settings.text1}}
+                </div>
+                <div class="video_title">
+                    <div>{{section.settings.text2}}</div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- <div style="width: 100%; height: 100vh;" ></div> -->
+    </div>
+</section>
+<script>
+    let whbi = document.documentElement.clientWidth/document.documentElement.clientHeight
+    var imgList = [];
+    // let productTitle = document.querySelector('.product-meta__title').innerText+''
+    let productTitle = `{{ product.id }}`
+    let tips = '-pcs'
+
+
+    let rootDom = document.querySelector('.box')
+    let canvas = rootDom.querySelector('#testImg')
+    canvas.setAttribute('width', document.documentElement.clientWidth)
+    canvas.setAttribute('height', document.documentElement.clientHeight)
+    let flag = 0
+    var ctx = canvas.getContext('2d');
+
+    let video = document.createElement("video");
+    let videoUrl = ``
+    if (whbi < 1) {
+        videoUrl = `{{section.settings.handbrake_m_link}}`
+    } else {
+        videoUrl = `{{section.settings.handbrake_p_link}}`
+    }
+    video.src = videoUrl
+    console.log(videoUrl, '123')
+    video.preload = 'auto'
+
+    let timer = null
+    var videoTit = document.querySelector('.video_title')
+    var videoTititle = document.querySelector('.describe_last_title')
+    var describe_top_title = document.querySelector('.describe_top_title')
+
+    if (whbi < 1) {
+        tips = '-ms'
+    } else {
+        let dom = document.querySelector('#testImg');
+        console.log(dom)
+        dom.style.backgroundImage = `url(https://cdn.shopify.com/s/files/1/0554/7098/1274/files/${productTitle}${tips}_0.jpg?v=1668136986)`
+        console.log(dom)
+    }
+    productTitle = productTitle.replace(/ /g, '-').toLowerCase()
+    console.log(productTitle)
+    for (let i = 1; i <= 61; i++) {
+        let url = (`${productTitle}${tips}_${i}`)
+        let img = new Image()
+        img.src = `https://cdn.shopify.com/s/files/1/0554/7098/1274/files/${url}.jpg?v=1668136986`;
+        imgList.push(img)
+    }
+    
+    if (whbi > 1) {
+        window.onscroll = () => {
+            // 获取父元素距离顶部距离
+            let top = rootDom.getBoundingClientRect().top;
+            document.querySelector('#testImg').style.backgroundImage = `url(https://cdn.shopify.com/s/files/1/0554/7098/1274/files/${productTitle}${tips}_1.jpg?v=1668136986)`;
+            if (top < 0) {
+                // console.log(imgList[0].height - document.documentElement.clientHeight)
+                top = -top;
+                let sss = Math.floor(((top / 3) / document.documentElement.clientHeight) * 100);
+                // console.log(flag,'flag',sss)
+                if (sss < 61) {
+                    videoTit.style.top = `${-3 * sss + 400}px`
+
+                    videoTit.style.opacity = `${sss / 60}`
+
+                    describe_top_title.opacity = `${sss / 60}`
+
+                    clearInterval(timer);
+                    document.querySelector('#testImg').style.opacity = '1';
+
+                    // document.querySelector('#testVideo').style.opacity = '0';
+                    // let 
+                    ctx.clearRect(0, 0, document.documentElement.clientWidth, document.documentElement.clientHeight)
+                    let clientHeight = document.documentElement.clientHeight
+
+                    let pcWidth = document.documentElement.clientWidth > 500 ? 1920 : 375
+                    let pcHeight = document.documentElement.clientWidth > 500 ? 1080 : 625
+                    console.log(imgList[0].width,imgList[0].width)
+                    ctx.drawImage(imgList[sss], (canvas.width - pcWidth) / 2, (canvas.height - pcHeight) / 2, pcWidth, pcHeight);
+                    if (document.documentElement.clientWidth < 1282) {
+                        ctx.drawImage(
+                            imgList[sss],
+                            0,0,
+                            imgList[sss].width,imgList[sss].height,
+                            0,0,
+                            document.documentElement.clientWidth, imgList[sss].height * document.documentElement.clientWidth / imgList[sss].width,
+                        );
+                    } else {
+                        ctx.drawImage(imgList[sss], (canvas.width - pcWidth) / 2, (canvas.height - pcHeight) / 2, pcWidth, pcHeight);
+                    }
+                    document.querySelector('.video_title').style.opacity = (1 * sss) / 60;
+
+                    document.querySelector('.describe_top_title').style.opacity = (1) / sss;
+                    // console.log(document.querySelector('.video_title').getBoundingClientRect().top)
+
+                    // document.querySelector('#testImg').style.backgroundImage = `url(https://bs-1258923593.cos.ap-shanghai.myqcloud.com/video-scroll-test/%E6%89%8B%E5%88%B9629_${ss}.jpg)`
+                } else if (sss > 60 && flag <= 60) {
+                    function play() {
+                        // init();
+
+                        // video.setAttribute('muted','muted')
+                        video.muted = true
+                            // video.setAttribute('loop','loop')
+                            // video.setAttribute('autoplay','autoplay')
+                            // console.log(video)
+                        video.play();
+                        timer = setInterval(function() {
+                            // console.log(flag,'flag',sss,video.currentTime,video.duration)
+                            if (video.currentTime >= video.duration) {
+                                stop();
+                                clearInterval(timer)
+                            };
+
+                            if (document.documentElement.clientWidth < 1282) {
+                               
+                                // console.log(imgList[0].width)
+                                // console.log(video.videoWidth)
+                                ctx.drawImage(
+                                    video,
+                                    0,0,
+                                    imgList[0].width,imgList[0].height,
+                                    0,0,
+                                    document.documentElement.clientWidth, imgList[0].height * document.documentElement.clientWidth / imgList[0].width,
+                                );
+                            } else {
+                               
+                                // ctx.drawImage(video, (canvas.width-video.videoWidth)/2, (canvas.height-video.videoHeight)/2, video.videoWidth, video.videoHeight);//绘制视频
+                                let pcWidth = document.documentElement.clientWidth > 500 ? 1920 : 375
+                                let pcHeight = document.documentElement.clientWidth > 500 ? 1080 : 625
+                                ctx.drawImage(video, (canvas.width - pcWidth) / 2, (canvas.height - pcHeight) / 2, pcWidth, pcHeight);
+                            }
+
+
+                        }, 16);
+                    }
+                    console.log('123456')
+                    play()
+                }
+                flag = sss
+            }
+        }
+    } else {
+        console.log('7897897897987')
+        window.onscroll = () => {
+            // 获取父元素距离顶部距离
+            let top = rootDom.getBoundingClientRect().top;
+            document.querySelector('#testImg').style.backgroundImage = `url(https://cdn.shopify.com/s/files/1/0554/7098/1274/files/${productTitle}${tips}_1.jpg?v=1668136986)`;
+            if (top < 0) {
+                // console.log(imgList[0].height - document.documentElement.clientHeight)
+                top = -top;
+                let sss = Math.floor(((top / 3) / document.documentElement.clientHeight) * 100);
+                // console.log(flag,'flag',sss)
+                if (sss < 61) {
+
+
+                    videoTit.style.opacity = `${sss / 60}`
+
+                    describe_top_title.opacity = `${sss / 60}`
+                    clearInterval(timer);
+                    document.querySelector('#testImg').style.opacity = '1';
+
+                    ctx.clearRect(0, 0, document.documentElement.clientWidth, document.documentElement.clientHeight)
+
+                    
+                    let clientHeight = document.documentElement.clientHeight
+
+                    let pcWidth = document.documentElement.clientWidth > 500 ? 1920 : 375
+                    let pcHeight = document.documentElement.clientWidth > 500 ? 1080 : 625
+                    let bii = document.documentElement.clientWidth/1200
+                    canvas.style.transform = `scale(${document.documentElement.clientWidth/1200})`;
+                    let imgH = (document.documentElement.clientWidth / 1200) * 3200;
+
+                    canvas.width = 1200;
+                    canvas.height = 3200;
+
+                    canvas.style.transformOrigin = `left top`
+                    // console.log(sss,document.documentElement.clientHeight)
+                    ctx.drawImage(
+                        imgList[sss],
+                        0, 0,
+                        1200, 3200,
+                        0,((3200  - ((document.documentElement.clientHeight - 160) / bii)  )/-2) ,
+                        1200,3200
+                    );
+                    document.querySelector('.video_title').style.opacity = (1 * sss) / 60;
+
+                    document.querySelector('.describe_top_title').style.opacity = (1) / sss;
+
+                } else if (sss > 60 && flag <= 60) {
+                    function play() {
+                        // init();
+                        let bii = document.documentElement.clientWidth/1200
+
+                        // video.setAttribute('muted','muted')
+                        video.muted = true
+                        video.setAttribute('x5-playsinline', 'x5-playsinline')
+                        video.setAttribute('playsinline', 'playsinline')
+                        video.setAttribute('webkit-playsinline', 'webkit-playsinline')
+
+                        console.log(video)
+                        video.play();
+                        timer = setInterval(function() {
+
+                            if (video.currentTime >= video.duration) {
+                                stop();
+                                clearInterval(timer)
+                            };
+                            let imgH = (document.documentElement.clientWidth / 1200) * 3200;
+                            // console.log(imgH )
+                            ctx.drawImage(
+                                video,
+                                0, 0,
+                                1200, 3200,
+                                0,((3200  - ((document.documentElement.clientHeight - 160) / bii)  )/-2) ,
+                                1200,3200
+                            );
+
+                        }, 16);
+                    }
+                    console.log('123456')
+                    play()
+                }
+                flag = sss
+            }
+        }
+    }
+</script>
+{% schema %}
+{
+    "name": "describe video",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "top_title",
+            "label": "top title"
+        },
+        {
+            "type": "richtext",
+            "id": "bottom_title",
+            "label": "bottom title"
+        },
+        {
+            "type": "richtext",
+            "id": "text2",
+            "label": "text2"
+        },
+        {
+            "type": "richtext",
+            "id": "text1",
+            "label": "text1"
+        },
+        {
+            "type": "text",
+            "id": "handbrake_p_link",
+            "label": "Pc Url"
+        },
+        {
+            "type": "text",
+            "id": "handbrake_m_link",
+            "label": "Mobile Url"
+        }
+    ],
+    "presets": [
+        {
+            "name":"describe video"
+        }
+    ]
+}
+{% endschema %}
+{{ 'describe-video.css' | asset_url | stylesheet_tag }}

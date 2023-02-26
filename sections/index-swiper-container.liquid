@@ -1,0 +1,443 @@
+{{ 'index-swiper.css' | asset_url | stylesheet_tag }}
+<style>
+    
+   .index-swiper-container .swiper-box .slider img {
+    max-width: none;
+    filter: opacity(0.5);
+  }
+  .index-swiper-container .swiper-box .slider.active img{
+    filter: unset;
+  }
+</style>
+<div class="index-swiper-container" >
+  <div class="pc">
+    <!-- <div class="container"></div> -->
+    <div class="product-detail-box">
+      <div class="tips">
+        <div class="hide-button">
+          <svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.79 141.79"><defs><style>.cls-5{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:3px;}.cls-2{fill:#fff;}</style></defs><path class="cls-5" d="M259.88,266.29l-19.06-15.21a.38.38,0,0,1,0-.65l19.07-17.35" transform="translate(-188.86 -178.79)"/><path class="cls-2" d="M250.26,181.1l59.39,34.29V284l-59.39,34.29L190.86,284V215.39l59.4-34.29m0-2.31-61.4,35.45v70.9l61.4,35.44,61.39-35.44v-70.9l-61.39-35.45Z" transform="translate(-188.86 -178.79)"/></svg>
+        </div>
+    
+        <div class="description">
+          The consumption and emissions values in the website refer to your geographical IP. This value might be unrealistic if you navigate using VPN or if the position of your Internet provider is imprecise. If you believe you are incorrectly geolocalized, contact your dealer to get valid consumption and emissions information in your area.
+        </div>
+      </div>
+    </div>
+    <div class="swiper-box">
+      {% for item in section.blocks %}
+        <div data-index = '{{forloop.index | minus: 1}}' class="slider  ">
+          <img src="{{item.settings.backgroudImage | img_url: '1920x'}}" alt="">
+        </div>
+      {% endfor %}
+
+    </div>
+    <div class="tips-marsk">
+      <div>
+        <div class="title">
+          MODELS
+        </div>
+        <div class="button-list">
+          
+          <div class="prev">
+            <svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.79 141.79"><defs><style>.cls-5{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:3px;}.cls-2{fill:#fff;}</style></defs><path class="cls-5" d="M259.88,266.29l-19.06-15.21a.38.38,0,0,1,0-.65l19.07-17.35" transform="translate(-188.86 -178.79)"/><path class="cls-2" d="M250.26,181.1l59.39,34.29V284l-59.39,34.29L190.86,284V215.39l59.4-34.29m0-2.31-61.4,35.45v70.9l61.4,35.44,61.39-35.44v-70.9l-61.39-35.45Z" transform="translate(-188.86 -178.79)"/></svg>
+          </div>
+          <div class="next">
+            <svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.79 141.79"><defs><style>.cls-5{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:3px;}.cls-2{fill:#fff;}</style></defs><path class="cls-5" d="M240.63,233.08l19.06,15.21a.38.38,0,0,1,0,.65l-19.07,17.35" transform="translate(-188.86 -178.79)"/><path class="cls-2" d="M250.26,181.1l59.39,34.29V284l-59.39,34.29L190.86,284V215.39l59.4-34.29m0-2.31-61.4,35.45v70.9l61.4,35.44,61.39-35.44v-70.9l-61.39-35.45Z" transform="translate(-188.86 -178.79)"/></svg>
+          </div>
+        </div>
+      </div>
+
+    <div>
+      <div class="info">
+        <div class="title">
+          <span style="--delay-time:1" >B</span>
+          <span style="--delay-time:2" >l</span>
+          <span style="--delay-time:3" >a</span>
+          <span style="--delay-time:4" >c</span>
+          <span style="--delay-time:5" >k</span>
+          <span style="--delay-time:6" > </span>
+          <span style="--delay-time:7" >L</span>
+          <span style="--delay-time:8" >e</span>
+          <span style="--delay-time:9" >o</span>
+          <span style="--delay-time:10" >p</span>
+          <span style="--delay-time:11" >a</span>
+          <span style="--delay-time:12" >r</span>
+          <span style="--delay-time:13" >d</span>
+        </div>
+        <div class="description">All-Terrain Fat Tire Electric Bike</div>
+      </div>
+      
+      <div class="button-box view-all-button">
+        
+        <svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202.45 227.58">
+          <defs>
+            <style>
+              .indexSwiper1-1 {
+                fill: none;
+                stroke: #fff;
+                stroke-miterlimit: 10;
+                stroke-width: 4px;
+              }
+            </style>
+          </defs>
+          <polygon class="indexSwiper1-1"
+            points="106.52 226.43 6.33 174.7 1.03 62.06 95.92 1.15 196.12 52.88 201.42 165.52 106.52 226.43" />
+          <line class="indexSwiper1-1" x1="69.42" y1="113.79" x2="133.03" y2="113.79" />
+          <line class="indexSwiper1-1" x1="101.22" y1="81.99" x2="101.22" y2="145.6" />
+        </svg>
+        
+        <span>
+          see more
+        </span>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="mobile">
+    <div class="swiper indexproductSwiper">
+      <div class="swiper-wrapper">
+        {% for item in section.blocks %}
+        <div class="swiper-slide">
+          <div class="productDetail-mobbleBox">
+            <div class="productDetail_mobbleBox_tag">MODELS</div>
+            <div>
+              <div class="productDetail_mobbleBox_img">
+                <img src="{{item.settings.backgroudImage_mobile | img_url: '1920x'}}" alt="">
+              </div>
+              <div class="productDetail_mobbleBox_title">
+                {{item.settings.title}}
+              </div>
+              <div class="productDetail_mobbleBox_subtitle">{{item.settings.subtitle}}</div>
+              <div class="productDetail_mobbleBox_subtext">
+                <div class="productDetail_mobbleBox_subtextTitle">
+                  Product Description
+                </div>
+                <div class="productDetail_mobbleBox_subtextText">
+                  {{item.settings.description}}
+                </div>
+              </div>
+              <a href="{{item.settings.product.url}}" class="productDetail_mobbleBox_seemore">
+                see more
+              </a>
+            
+            </div>
+          </div>
+          </div>
+        {% endfor %}
+        </div>
+    </div>
+  </div>
+</div>
+
+  <script>
+    (
+      ()=>{
+        let rootDom = document.querySelector('.index-swiper-container');
+        let nextDom = rootDom.querySelector('.next');
+        let prevDom = rootDom.querySelector('.prev');
+
+        let swiperBoxDom = rootDom.querySelector('.swiper-box')
+
+        let infoBoxDom = rootDom.querySelector('.tips-marsk')
+        let infoTitleDom = rootDom.querySelector('.tips-marsk .info .title')
+        let infoDescriptionDom = rootDom.querySelector('.tips-marsk .info .description');
+
+        let overButtonDOm = rootDom.querySelector('.product-detail-box .tips .hide-button')
+        let productDetailBox = rootDom.querySelector('.product-detail-box');
+        
+
+        let detailDom = rootDom.querySelector('.product-detail-box .tips .description')
+
+        let activeFlag = 2
+        let canClick = true
+
+        let infoList = [
+          {% for item in section.blocks %}
+            {
+              title:'{{item.settings.title}}',
+              description:'{{item.settings.subtitle}}',
+              detail:'{{item.settings.description}}'
+            },
+          {% endfor %}
+        ]
+
+        // 查看详情点击事件
+        let viewAllButton = rootDom.querySelector('.view-all-button');
+        let hideFlag = false
+        viewAllButton.addEventListener('click',()=>{
+          if( !hideFlag ) {
+            swiperBoxDom.classList.add('swiper-hide')
+            infoBoxDom.classList.add('tips-hide')
+            productDetailBox.classList.add('detail-hide')
+          } else {
+            infoBoxDom.classList.remove('tips-hide')
+            productDetailBox.classList.remove('detail-hide')
+            swiperBoxDom.classList.remove('swiper-hide')
+          }
+          hideFlag = !hideFlag
+
+        })
+
+        overButtonDOm.addEventListener('click',()=>{
+          if( !hideFlag ) {
+            swiperBoxDom.classList.add('swiper-hide')
+            infoBoxDom.classList.add('tips-hide')
+            productDetailBox.classList.add('detail-hide')
+          } else {
+            infoBoxDom.classList.remove('tips-hide')
+            swiperBoxDom.classList.remove('swiper-hide')
+            productDetailBox.classList.remove('detail-hide')
+          }
+          hideFlag = !hideFlag
+
+        })
+
+        nextDom.addEventListener('click',(e,i)=>{
+          if(canClick) {
+            let sliderList = Array.from(rootDom.querySelectorAll('.swiper-box .slider'))
+            if(sliderList.length <= 3) {
+              let showIndex = 1;
+              sliderList[showIndex].classList.add('active')
+              changeInfo(sliderList[showIndex].getAttribute('data-index'))
+              let readyRemoveDom = sliderList[activeFlag]
+              readyRemoveDom.classList.remove('active')
+              let readyAddDom = sliderList[activeFlag].cloneNode(true)
+              readyRemoveDom.classList.add('remove')
+              swiperBoxDom.insertBefore(readyAddDom, swiperBoxDom.children[0])
+              readyAddDom.classList.add('new-item')
+              // activeFlag = showIndex
+              
+              canClick = false;
+              setTimeout(()=>{
+                canClick = true
+                readyAddDom.classList.remove('new-item')
+                swiperBoxDom.removeChild(readyRemoveDom)
+              },500)
+            } else {
+              let showIndex = 1;
+              sliderList[showIndex].classList.add('active')
+              changeInfo(sliderList[showIndex].getAttribute('data-index'))
+              let readyRemoveDom = sliderList[sliderList.length-1]
+              sliderList[activeFlag].classList.remove('active')
+              let readyAddDom = readyRemoveDom.cloneNode(true)
+              sliderList[2].classList.add('remove')
+              swiperBoxDom.insertBefore(readyAddDom, swiperBoxDom.children[0])
+              readyAddDom.classList.add('new-item')
+              // activeFlag = showIndex
+              
+              canClick = false;
+              setTimeout(()=>{
+                canClick = true
+                readyAddDom.classList.remove('new-item')
+                sliderList[2].classList.remove('remove')
+                swiperBoxDom.removeChild(readyRemoveDom)
+              },500)
+            }
+          }
+        })
+
+        prevDom.addEventListener('click',(e,i)=>{
+          if(canClick) {
+            let sliderList = Array.from(rootDom.querySelectorAll('.swiper-box .slider'))
+            if(sliderList.length <= 3) {
+             
+              let showIndex = 0;
+              let readyRemoveDom = sliderList[showIndex]
+              let readyAddDom = readyRemoveDom.cloneNode(true)
+              swiperBoxDom.classList.add('swiper-box-right')
+              swiperBoxDom.appendChild(readyAddDom);
+              readyAddDom.classList.add('new-item-right')
+
+              sliderList[activeFlag].classList.remove('active')
+              readyAddDom.classList.add('active')
+              changeInfo(readyAddDom.getAttribute('data-index'))
+
+              canClick = false;
+              setTimeout(()=>{
+                canClick = true
+                swiperBoxDom.removeChild(readyRemoveDom)
+                readyAddDom.classList.remove('new-item-right')
+                swiperBoxDom.classList.remove('swiper-box-right')
+              },500)
+            } else {
+              let showIndex = 0;
+              let readyRemoveDom = sliderList[showIndex]
+              let readyAddDom = sliderList[3]
+              swiperBoxDom.classList.add('swiper-box-right')
+              swiperBoxDom.appendChild(readyRemoveDom.cloneNode(true));
+              readyAddDom.classList.add('new-item-right')
+
+              sliderList[activeFlag].classList.remove('active')
+              readyAddDom.classList.add('active')
+              changeInfo(readyAddDom.getAttribute('data-index'))
+
+              canClick = false;
+              setTimeout(()=>{
+                canClick = true
+                swiperBoxDom.removeChild(readyRemoveDom)
+                readyAddDom.classList.remove('new-item-right')
+                swiperBoxDom.classList.remove('swiper-box-right')
+              },500)
+            }
+
+          }
+        })
+      
+
+        FireEvent(prevDom,'click')
+        function FireEvent(elem, eventName){
+            if(typeof(elem) == 'object')
+            {
+                eventName = eventName.replace(/^on/i,'');
+                if (document.all)
+                {//
+                    eventName = "on"+eventName;
+                    elem.fireEvent(eventName);
+                }
+                else
+                {
+                    var evt = document.createEvent('HTMLEvents');
+                    evt.initEvent(eventName,true,true);
+                    elem.dispatchEvent(evt);
+                }
+            }
+        
+        }
+        // 打字机
+        let timer = null
+        function changeInfo(ind) {
+
+          let index = new Number(ind)
+          infoTitleDom.innerHTML = ''
+
+          let title = infoList[index].title;
+
+          let titleList = title.split('')
+          titleList.forEach((e,i) => {
+            let spanDom = document.createElement('span');
+
+            spanDom.innerText = e;
+            spanDom.setAttribute('style',`--delay-time:${i}`)
+            infoTitleDom.appendChild(spanDom)
+
+          });
+          
+          // 文字左出动画
+          infoDescriptionDom.innerHTML = infoList[index].description;
+
+          
+          infoDescriptionDom.classList.add('alink__fadeInLeft')
+
+
+          infoDescriptionDom.parentNode.replaceChild(infoDescriptionDom,infoDescriptionDom)
+        
+          detailDom.innerHTML = infoList[index].detail;
+        }
+
+        // swiper
+        var swiper = new Swiper(".indexproductSwiper", {
+          breakpoints: { 
+                280: {  //当屏幕宽度大于等于768 
+                  spaceBetween: 30,
+                  slidesPerView: 1,
+                 
+                },
+                769: {  //当屏幕宽度大于等于768 
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
+                }
+            },
+        // spaceBetween: 30,
+        // centeredSlides: true,
+        // autoplay: {
+        //   delay: 5000,
+        //   disableOnInteraction: false,
+        // },
+        observer: true,
+        observeParents: true,
+      
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+  
+      $(".productDetail_mobbleBox_subtextTitle").click(function(){
+          if ($(this).next().css("display") == "none") {
+              $(this).addClass("productDetail_mobbleBox_subtextTitles");
+              $(this).next().slideDown();
+            
+              $(this).parents(".swiper-slide-active").siblings().find(".productDetail_mobbleBox_subtextText").slideUp()
+              $(this).parents(".swiper-slide-active").siblings().find(".productDetail_mobbleBox_subtextTitle").removeClass("productDetail_mobbleBox_subtextTitles")
+          }else{
+              $(this).removeClass("productDetail_mobbleBox_subtextTitles");
+              $(this).next().slideUp()
+          }
+      })
+     
+      }
+    )()
+  
+  </script>
+
+  {% schema %}
+  {
+  "name": "index swiper",
+  "class": "index-swiper",
+  "presets": [{
+    "name": "index swiper",
+    "settings": {
+  
+    }
+  }],
+  "blocks": [
+    {
+      "type": "slider",
+      "name": "slider",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "product"
+        },
+        {
+          "type": "image_picker",
+          "id": "backgroudImage",
+          "label": "background"
+        },
+        {
+          "type": "image_picker",
+          "id": "backgroudImage_mobile",
+          "label": "background Mobile"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title"
+        },{
+          "type": "richtext",
+          "id": "subtitle",
+          "label": "subtitle"
+        },{
+          "type": "textarea",
+          "id": "description",
+          "label": "description"
+        }
+      ]
+    }
+  ],
+  "settings": [
+  
+  ]
+  }
+  {% endschema %}
+
+
+  <style>
+
+  </style>

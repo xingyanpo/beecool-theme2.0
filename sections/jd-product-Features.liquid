@@ -1,0 +1,102 @@
+{{ 'jd-product-Features.css' | asset_url | stylesheet_tag }}
+<div class="procuct_Features_all">
+    <div class="container">
+        <div class="procuct_Features_title ebike_h1 pc">
+           {{ section.settings.title }}
+        </div>
+        <div class="procuct_Features_title ebike_h1 mobile">
+            {{ section.settings.title_mobile }}
+        </div>
+       <div class="pc">
+            <div class="procuct_Features_box">
+                {% for block in  section.blocks %}
+                        <div class="procuct_FeaturesBox">
+                            <img loading="lazy" {% render 'image-attributes' , image: block.settings.img%} class="procuct_FeaturesBoxImg">
+                            <div class="procuct_FeaturesPositon">
+                                {{ block.settings.text }}
+                            </div>
+                        </div>
+                {% endfor %}
+            </div>
+       </div>
+       <div class="mobile">
+        <div class="procuct_Features_box">
+            <div class="swiper FeaturesBoxSwiper">
+                <div class="swiper-wrapper">
+                    {% for block in  section.blocks %}
+                        <div class="swiper-slide">
+                            <div class="procuct_FeaturesBox">
+                                <img loading="lazy" {% render 'image-attributes' , image: block.settings.img%} class="procuct_FeaturesBoxImg">
+                                <div class="procuct_FeaturesPositon">
+                                    {{ block.settings.text }}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="procuct_Features_box_next">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+</div>
+<script>
+     (()=>{
+        var swiper = new Swiper(".FeaturesBoxSwiper", {
+            slidesPerView: 1.3,
+            spaceBetween: 24,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+      });
+    })()
+</script>
+{% schema %}
+{
+    "name": "product FeaturesBox",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "title"
+        },
+        {
+            "type": "richtext",
+            "id": "title_mobile",
+            "label": "title mobile"
+        }
+    ],
+    "blocks": [
+    {
+        "type": "FeaturesBox",
+        "name": "FeaturesBox",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "img",
+                "label": "img"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "text"
+            
+            }
+        ]
+    }
+    ],
+    "presets": [{
+    "name": "product FeaturesBox"
+    
+    }]
+}
+{% endschema %}

@@ -1,0 +1,125 @@
+<style>
+  #christmas-amazing-gifts-item {width: 100%;}
+  .christmas-amazing-gifts-item-wrap {width:88%;margin:0 auto;display:flex;padding:100px 0;box-sizing:border-box;}
+  .christmas-part-left {width:35%;}
+  .christmas-part-left > img {width:100%;aspect-ratio:1/1;object-fit:cover;}
+  .christmas-part-right {width: 60%;padding-left: 8%;}
+  .christmas-part-right > h1 {font-size: 66px;font-weight: 700;line-height:1.5;margin: 0;color: #333;}
+  .christmas-part-right > h3 {font-size: 46px;font-weight: 500;margin: 0;color: #333;line-height: 1.2;}
+  .christmas-part-right .christmas-description {font-size: 26px;color: #666;line-height: 1.5;padding-top: 20px;}
+  .christmas-part-right .christmas-button {text-align:center;padding-top: 50px;}
+  .christmas-part-right .christmas-button a {position:relative;display:inline-block;width:210px;height:70px;color: #FFF;font-size: 24px;line-height: 48px;background-image: url('https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/6f4dbc97d8928309b9056a08548614a7.png?v=1670221640');background-repeat: no-repeat;background-position:center -15px;background-size:cover;}
+  .christmas-part-right .christmas-button a:hover {transform: translateY(-5px);transition:all 0.3s;}
+  .christmas-part-right .christmas-button a:hover::before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);}
+  .christmas-part-right .christmas-button a::before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+  }
+  .christmas-color-red {color:red;}
+  @media screen and (max-width: 1300px) and (min-width: 992px) {
+    .christmas-amazing-gifts-item-wrap {width: 100%;}
+    .christmas-part-left {width:45%;}
+    .christmas-part-right {width: 55%;padding-left: 5%;}
+    .christmas-part-right > h1 {font-size: 54px;}
+    .christmas-part-right > h3 {font-size: 38px;}
+    .christmas-part-right .christmas-description {font-size: 22px;}
+    .christmas-part-right .christmas-button {padding-top:40px}
+    .christmas-part-right .christmas-button a {width:180px;height:60px;line-height: 46px;font-size: 22px;background-position-y: -13px;}
+  }
+  @media screen and (max-width: 992px) and (min-width: 768px) {
+    .christmas-amazing-gifts-item-wrap {width: 100%;}
+    .christmas-part-left {width:45%;}
+    .christmas-part-right {width: 55%;padding-left: 4%;}
+    .christmas-part-right > h1 {font-size: 48px;}
+    .christmas-part-right > h3 {font-size: 34px;}
+    .christmas-part-right .christmas-description {font-size: 20px;}
+    .christmas-part-right .christmas-button {padding-top:30px}
+    .christmas-part-right .christmas-button a {width:180px;height:60px;line-height: 44px;font-size: 20px;}
+  }
+   @media screen and (max-width: 768px) {
+     .christmas-amazing-gifts-item-wrap {flex-wrap:wrap;width: 100%;padding:10px 0 50px; }
+     .christmas-part-left {width:100%;}
+     .christmas-part-right {width: 100%;padding: 3%;box-sizing: border-box;}
+     .christmas-part-right > h1 {font-size: 40px;}
+     .christmas-part-right > h3 {font-size: 24px;}
+     .christmas-part-right .christmas-description {font-size: 18px;}
+     .christmas-part-right .christmas-button a {width:150px;height:50px;line-height: 44px;}
+     .christmas-part-right .christmas-button {padding-top: 30px;}
+     .christmas-part-right .christmas-button a {font-size: 20px;background-position-y: -7px;}
+   }
+</style>
+
+<section id="christmas-amazing-gifts-item">
+  <div class="christmas-amazing-gifts-item-wrap">
+    <div class="christmas-part-left">
+      <img loading="lazy" {% render 'image-attributes', image: section.settings.img %}>
+    </div>
+    <div class="christmas-part-right">
+      <h1>{{ section.settings.title }}</h1>
+      <h3>{{ section.settings.half_title }}</h3>
+      <div class="christmas-description">{{ section.settings.description }}</div>
+      {%- if section.settings.button_text != empty -%}
+        <div class="christmas-button">
+          <a href="{{ section.settings.button_url }}">{{ section.settings.button_text }}</a>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Christmas Item",
+  "settings": [{
+  "type": "image_picker",
+  "id": "img",
+  "label": "Picture"
+  },{
+    "type": "textarea",
+    "id": "title",
+    "label": "Title",
+    "default": "I`am Title"
+  },{
+    "type": "html",
+    "id": "half_title",
+    "label": "Half Title",
+    "default": "<p>I`am Half Title</p>"
+  },{
+    "type": "html",
+    "id": "description",
+    "label": "Description",
+    "default": "<p>I`am Description</p>"
+  },{
+    "type": "text",
+    "id": "button_text",
+    "label": "Button Text",
+    "default": "Buy Now"
+  },{
+    "type": "url",
+    "id": "button_url",
+    "label": "Button Url",
+    "default": "/collections"
+  }
+  ],
+  "presets": [
+      {
+          "name": "Christmas Item"
+      }
+  ]
+}
+{% endschema %}

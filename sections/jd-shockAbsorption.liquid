@@ -1,0 +1,148 @@
+<style>
+    @media(max-width:999px) {
+    .jd_shockAbsorption_all{
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+        .shockAbsorption_rightTitle{
+        line-height: 1.2;
+      }
+      .jd_shockAbsorption_right{
+        padding: 0 15px;
+      }
+      .shockAbsorption_rightText{
+        font-size: 14px;
+        padding-top: 20px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+      .jd_shockAbsorption_left{
+        padding-top: 40px;
+      }
+    }
+    @media(min-width:1000px) {
+      .jd_shockAbsorption_all{
+        padding: 200px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .jd_shockAbsorption_left{
+        width: 50%;
+      }
+      .jd_shockAbsorption_left video,.jd_shockAbsorption_left img{
+        width: 100%;
+      }
+      .shockAbsorption_rightTitle{
+        line-height: 1;
+      }
+      .shockAbsorption_rightText{
+        font-size: 18px;
+        padding-top: 40px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+     
+      .jd_shockAbsorption_right{
+        width: 45%;
+        padding-left: 20px;
+        padding-right: 10%;
+      }
+      
+     
+    }
+@media (min-width: 1360px) and (max-width: 1700px) {
+    .shockAbsorption_rightTitle {
+        font-size: 48px;
+    }
+   .shockAbsorption_rightText {
+        font-size: 18px;
+     }
+}
+@media (min-width:1201px) and (max-width:1359px){
+    .shockAbsorption_rightTitle {
+        font-size: 38px;
+    }
+   .shockAbsorption_rightText {
+        font-size: 14px;
+     }
+   
+}
+@media (min-width:769px) and (max-width:1199px){
+    .shockAbsorption_rightTitle {
+        font-size: 30px;
+     }
+     .shockAbsorption_rightText {
+        font-size: 14px;
+     }
+   
+}
+</style>
+<div class="jd_shockAbsorption_all">
+   <div class="jd_shockAbsorption_left">
+    {% if section.settings.link !=blank %}
+        <video x5-video-player-fullscreen="true" x5-playsinline playsinline webkit-playsinline id="pageAppVideo" loop="loop" autoplay muted src="{{section.settings.link}}"></video>
+        {% else %}
+        <img loading="lazy" {% render 'image-attributes' , image: section.settings.img%} alt="{{section.settings.img.alt}}">
+    {% endif %}
+   </div>
+   <div class="jd_shockAbsorption_right">
+        <div class="shockAbsorption_rightTitle ebike_h1">
+            {{section.settings.title}}
+        </div>
+       
+        <div class="shockAbsorption_rightText">
+            {{section.settings.text}}
+        </div> 
+       
+   </div>
+</div>
+<script>
+  
+  
+  
+</script>
+{% schema %}
+{
+    "name": "product shockAbsorption",
+    "class": "product-shockAbsorption",
+    
+    "settings":[
+        {
+            "type": "image_picker",
+            "id": "img",
+            "label": "img"
+        },
+        {
+            "type": "url",
+            "id": "link",
+            "label": "link"
+        },
+     
+        {
+            "type": "textarea",
+            "id": "title",
+            "label": "Title"  
+        },
+      
+        {
+            "type": "textarea",
+            "id": "text",
+            "label": "text"  
+        }
+        
+      
+    ],
+    "blocks":[
+      
+    ],
+    "presets": [
+        {
+            "name": "product shockAbsorption"
+        }
+    ]
+}
+
+
+{% endschema %}

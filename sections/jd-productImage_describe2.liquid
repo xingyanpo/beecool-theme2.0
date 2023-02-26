@@ -1,0 +1,183 @@
+{{ 'jd-productImage_describe.css' | asset_url | stylesheet_tag }}
+
+  <div class="ProductImg-describe-all" style="margin-bottom:{{ section.settings.margin_bottom}}px;">
+    {% for block in section.blocks %}
+    <div class="img_describe_box {%if block.settings.check %} img_describe_boxs {%endif%}" {%if block.settings.check %} style="flex-flow:row-reverse" {%endif%}>
+        <div class="img_describe_left">
+            
+              
+            <section class="b-interactive-feature"  id="feature-motor" >
+                <section
+                class="b-interactive-feature__animation"
+                        data-bike-animation="intelligent-motor"
+                    data-bike-model="s4"></section>
+            </section>
+         
+            <!-- <img loading="lazy" {% render 'image-attributes' , image: block.settings.img%}> -->
+        </div>
+        <div class="img_describe_right" style="background-color: {{ block.settings.bg_color}};">
+           <div class="img_describe_rightDiv">
+                <div class="img_describe_title">
+                    {{ block.settings.title}}
+                </div>
+                <div class="img_describe_text pc">
+                    {{ block.settings.text}}
+                </div>
+                <div class="img_describe_text mobile">
+                    {{ block.settings.text_mobile}}
+                </div>
+                {% if block.settings.number_text != blank %}
+                    <div class="img_describe_numbers">
+                        <div class="img_describe_numberLeft">
+                            <div><span  id="number1">{{ block.settings.number}}</span>{{ block.settings.number_company}}</div>
+                            <div>{{ block.settings.number_text}}</div>
+                        </div>
+                        <div class="img_describe_numberRight">
+                            <div><span id="number2">{{ block.settings.number2}}</span>{{ block.settings.number_company2}}</div>
+                            <div>{{ block.settings.number_text2}}</div>
+                        </div>
+                    </div>
+                {% endif %}
+               
+           </div>
+        </div>
+    </div>
+    {% endfor %}
+      
+  </div>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdn.shopify.com/s/files/1/0554/7098/1274/files/motor1.js?v=1666929598"></script>
+  <script src="{{ 'jd-productImage_describe2.js' | asset_url }}"></script>
+  <script src="https://cdn.shopify.com/s/files/1/0554/7098/1274/files/motor3.js?v=1666929599"></script>
+  <script>
+
+    (()=>{
+    
+        
+        var numberOne = $("#number1").html();
+        var numberTwo = $("#number2").html();
+
+        $(document).scroll(function(){
+         
+            var options = {
+                useEasing: true,    
+                useGrouping: true,
+                separator: ',',
+                decimal: '.',
+            };
+            var top = $(document).scrollTop();
+            var block = $(".ProductImg-describe-all").offset().top-200;
+            // console.log(top,block)
+            if(top>block){
+                var demo = new CountUp('number1', 0, numberOne, 0, 5, options);
+                if(!demo.error) {
+                    demo.start();
+                }else {
+                    console.error(demo.error);
+                }
+                var demo2 = new CountUp('number2', 0, numberTwo, 0, 5, options);
+                if(!demo2.error) {
+                        demo2.start();
+                }else {
+                    console.error(demo2error);
+                }
+                $(document).unbind("scroll");
+            }
+          
+            
+                  
+              
+        })
+    
+    })()
+      
+  
+  </script>
+  {% schema %}
+  {
+  "name": "productImage describe2",
+  "class": "shopify-section--Image_describe",
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+        "name": "productImage describe2",
+        "type": "productImage_describe",
+        "settings": [
+       
+           
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "title"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "text"
+            },
+            {
+                "type": "richtext",
+                "id": "text_mobile",
+                "label": "text Mobile"
+            },
+            {
+                "type": "text",
+                "id": "number",
+                "label": "number"
+              
+            },
+            {
+                "type": "text",
+                "id": "number_company",
+                "label": "number company"
+              
+            },
+            {
+                "type": "text",
+                "id": "number_text",
+                "label": "number text"
+              
+            },
+            {
+                "type": "text",
+                "id": "number2",
+                "label": "number2"
+              
+            },
+            {
+                "type": "text",
+                "id": "number_company2",
+                "label": "number company2"
+              
+            },
+            {
+                "type": "text",
+                "id": "number_text2",
+                "label": "number text2"
+              
+            },
+            {
+                "type": "color",
+                "id": "bg_color",
+                "label": "background color"
+              
+            }
+           
+          
+            
+           
+        ]
+    }
+    
+  ],
+  "presets": [
+  {
+  "name": "product Image describe2"
+  }
+  ]
+  }
+  {% endschema %}

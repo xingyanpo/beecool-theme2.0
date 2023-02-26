@@ -1,0 +1,221 @@
+@media screen and (max-width: 999px) {
+  .index-service-swiper-container .pc{
+    display: none;
+  }
+  .index-service-swiper-container .mobile{
+    display: block;
+  }
+  .index-service-swiper-container {
+    background-color: #F4F7FE;
+    padding: 50px 0 0;
+  }
+  .index-service-swiper-container .container .title {
+    font-size: 35px;
+    font-weight: 600;
+    color: #151515;
+    line-height: 1;
+    text-align: center;
+  }
+  .index-service-swiper-container .container{
+    padding: 0;
+    padding-left: 10px;
+  }
+  .index-service-swiper-container .container .description {
+    width: 86%;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+  }
+  .index-service-swiper-container .container .serviceMObileSwiper {
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  .index-service-swiper-container .container .serviceMObileSwiper .swiper-pagination-bullet-active {
+    background: #2A408E !important;
+  }
+  .index-service-swiper-container .container .serviceMObileSwiper .swiper-pagination-bullet {
+    width: 65px !important;
+    height: 3px !important;
+    background: #2A408E;
+    border-radius: 5px;
+    transition: all 0.2s;
+  }
+  .index-service-swiper-container .container .serviceMObileSwiper .swiper-pagination-bullet-active {
+    border-radius: 5px;
+    width: 30px;
+  }
+  .index-service-swiper-container .container .serviceMObileSwiper .swiper-slide .tips {
+    position: absolute;
+    top: 0;
+    display: flex;
+    bottom: 2px;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .index-service_box{
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  .index-service-swiper-container .container .serviceMObileSwiper .swiper-slide-active .tips{
+    position: absolute;
+    top: 0;
+    display: flex;
+    bottom: 2px;
+    height: 100%;
+    width: 100%;
+    background: #15151554;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .index-service-swiper-container .container .serviceMObileSwiper .swiper-slide .tips .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 1.1;
+  }
+  .index-service-swiper-container .container .serviceMObileSwiper .swiper-slide .tips .item-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    width: 90%;
+    margin-top: 12px;
+    text-align: center;
+  }
+  .index-service-swiper-container .container .serviceMObileSwiper .swiper-slide .tips .item-description .icon-box img {
+    width: 18px;
+    height: 18px;
+    display: block;
+  }
+  .index-service-swiper-container .container .serviceMObileSwiper .swiper-slide .tips .item-description span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 1.5;
+  }
+  .index-service_box img{
+    width: 100%;
+  }
+  .index-service-swiper-container .container .serviceMObileSwiper .swiper-slide-active .title {
+    display: block !important;
+  }
+  .index-service-swiper-container .container .serviceMObileSwiper .swiper-pagination {
+    bottom: 40px;
+  }
+  /*# sourceMappingURL=index-service-swiper.css.map */
+  
+}
+@media screen and (min-width: 1000px) {
+  .index-service-swiper-container {
+    background-color: #F4F7FE;
+    padding: 111px 0 94px;
+  }
+  .index-service-swiper-container .container .title {
+    font-size: 70px;
+    font-weight: 600;
+    color: #151515;
+    line-height: 1;
+    text-align: center;
+  }
+  .index-service-swiper-container .container .description {
+    padding-top: 43px;
+    padding-bottom: 78px;
+    font-size: 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: 200;
+  }
+  .index-service-swiper-container .container .serviceSwiper {
+    width: 100%;
+    padding-bottom: 80px;
+  }
+  .index-service-swiper-container .container .serviceSwiper .swiper-pagination-bullet-active {
+    background: #2A408E !important;
+  }
+  .index-service-swiper-container .container .serviceSwiper .swiper-pagination-bullet {
+    width: 65px !important;
+    height: 3px !important;
+    background: #2A408E;
+    border-radius: 5px;
+    transition: all 0.2s;
+  }
+  .index-service-swiper-container .container .serviceSwiper .swiper-pagination-bullet-active {
+    border-radius: 5px;
+    width: 30px;
+  }
+  .index-service-swiper-container .container .serviceSwiper .swiper-slide .tips {
+    position: absolute;
+    top: 0;
+    display: flex;
+    bottom: 2px;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #15151560;
+  }
+  .index-service_box{
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+  }
+  .index-service-swiper-container .container .serviceSwiper .swiper-slide-active .tips{
+    position: absolute;
+    top: 0;
+    display: flex;
+    bottom: 2px;
+    height: 100%;
+    width: 100%;
+    background: #15151520;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .index-service-swiper-container .container .serviceSwiper .swiper-slide .tips .title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 1.1;
+    display: none;
+  }
+  .index-service-swiper-container .container .serviceSwiper .swiper-slide .tips .item-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0 15px;
+  }
+  .index-service-swiper-container .container .serviceSwiper .swiper-slide .tips .item-description .icon-box img {
+    width: 26px;
+    height: 26px;
+    display: block;
+  }
+  .index-service-swiper-container .container .serviceSwiper .swiper-slide .tips .item-description span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    
+  }
+  .index-service_box img{
+    width: 100%;
+  }
+  .index-service-swiper-container .container .serviceSwiper .swiper-slide-active .title {
+    display: block !important;
+  }
+  
+  /*# sourceMappingURL=index-service-swiper.css.map */
+  
+}

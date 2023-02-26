@@ -1,0 +1,132 @@
+{{ 'jd-banner.css' | asset_url | stylesheet_tag }}
+    
+    <div class="banners">
+      <div class="banners-box">
+          <div class="">
+              <div class="banners_position">
+                    <img loading="lazy" class="pc" {% render 'image-attributes' , image: section.settings.img_banner%}>
+                    <img loading="lazy" class="mobile" {% render 'image-attributes' , image: section.settings.img_bannerMobile%}>
+
+                    <div class="banners_positionBox">
+                      <div class="banners_positionBox_box container">
+                        {% if section.settings.logo !=blank %}
+                            <div class="banner_Logo">
+                                <img loading="lazy" {% render 'image-attributes' , image: section.settings.logo%}>
+                            </div>
+                        {% endif %}
+                        <h1 class="banners_positionBox_head pc" style="font-size: {{section.settings.font}}px;">{{section.settings.header }}</h1>
+                        {% if section.settings.text !=blank %}
+                            <div class="banner_text pc" style="font-size: {{section.settings.font_text}}px;">{{section.settings.text}}</div>
+                        {% endif %}
+                       
+                        <h1 class="banners_positionBox_head mobile" style="font-size: {{section.settings.font_mobile}}px;">{{section.settings.header }}</h1>
+                        {% if section.settings.Subheading !=blank %}
+                            <div class="banner_Subheading mobile" style="font-size: {{section.settings.font_text_mobile}}px;">{{section.settings.Subheading}}</div>
+                        {% endif %}
+                        {% if section.settings.text !=blank %}
+                            <div class="banner_text mobile" style="font-size: {{section.settings.font_text_mobile}}px;">{{section.settings.text_mobile}}</div>
+                        {% endif %}
+                      </div>
+                  </div>
+              </div>
+            </a>
+          </div>
+  
+        
+          
+      </div>
+    </div>
+
+    {% schema %}
+    {
+    "name": "Banner",
+    "class": "shopify-section--banners",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "logo Img"
+        },
+        {
+            "type": "richtext",
+            "id": "header",
+            "label": "Header"
+        },
+        {
+            "type": "range",
+            "id": "font",
+            "label": "font Title",
+            "unit": "px",
+            "min": 48,
+            "max": 70,
+            "step": 1,
+            "default": 70
+        },
+        {
+            "type": "range",
+            "id": "font_mobile",
+            "label": "font Title mobile",
+            "unit": "px",
+            "min": 16,
+            "max": 35,
+            "step": 1,
+            "default": 35
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "text"
+        },
+        {
+            "type": "richtext",
+            "id": "Subheading",
+            "label": "Subheading Mobile"
+        },
+        {
+            "type": "richtext",
+            "id": "text_mobile",
+            "label": "text Mobile"
+        },
+        
+        {
+            "type": "range",
+            "id": "font_text",
+            "label": "font Text",
+            "unit": "px",
+            "min": 12,
+            "max": 35,
+            "step": 1,
+            "default": 30
+        },
+        {
+            "type": "range",
+            "id": "font_text_mobile",
+            "label": "font Text mobile",
+            "unit": "px",
+            "min": 12,
+            "max": 35,
+            "step": 1,
+            "default": 30
+        },
+        {
+            "type": "image_picker",
+            "id": "img_banner",
+            "label": "banner Img"
+        },
+        {
+            "type": "image_picker",
+            "id": "img_bannerMobile",
+            "label": "banner Img Mobile"
+        }
+      
+    ],
+    "blocks": [
+      
+    ],
+    "presets": [
+    {
+    "name": "Banner"
+    }
+    ]
+    }
+    {% endschema %}

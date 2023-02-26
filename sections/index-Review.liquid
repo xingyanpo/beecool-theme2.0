@@ -1,0 +1,264 @@
+{{ 'index-Review.css' | asset_url | stylesheet_tag }}
+<div class="indexReview-all">
+    <div class="container">
+        <div class="indexReview_top">
+            <div class="bg_img" style="background-image: url({{section.settings.bg | img_url: '500x'}});"></div>
+            <a href="{{section.settings.link}}" class="indexReview_title">
+                {{section.settings.title}}
+            </a>
+            <div class="swiper textReviewSwiper">
+                <div class="swiper-wrapper">
+                    {%- for block in section.blocks-%}
+                        {%- case block.type-%}
+                            {% when 'text' %}
+                            <div class="swiper-slide indexReview_text">
+                                <a href="{{section.settings.link}}">
+                                    <div class="pc"> {{block.settings.text}}</div>
+                                    <div class="mobile"> {{block.settings.text_mobile}}</div>
+                                </a>
+                                
+                            </div>
+                        {%- endcase-%}  
+                    {% endfor %}
+                 
+                </div>
+               
+            </div>
+         
+            <div class="swiper-button-next">
+                <svg t="1666865724733" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2536" width="32" height="32"><path d="M853.333333 507.733333H128v42.666667h733.866667l-145.066667 145.066667 29.866667 29.866666 192-192L746.666667 341.333333l-29.866667 29.866667 136.533333 136.533333z" fill="#151515" p-id="2537"></path></svg>
+            </div>
+            <div class="swiper-button-prev">
+                <svg t="1666865724733" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2536" width="32" height="32"><path d="M853.333333 507.733333H128v42.666667h733.866667l-145.066667 145.066667 29.866667 29.866666 192-192L746.666667 341.333333l-29.866667 29.866667 136.533333 136.533333z" fill="#151515" p-id="2537"></path></svg>
+            </div>
+          
+            <div class="indexReview_review">
+                <div>
+                    <img loading="lazy" {% render 'image-attributes' , image: section.settings.img%}>
+                </div>
+                <div>
+                    {{section.settings.number}}
+                </div>
+                <div class="indexReview_reviewSvg">
+                    <svg t="1667551210258" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1625" width="200" height="200"><path d="M895.52 226.432V136.672L544 448l-171.264-147.2L102.4 543.52l-38.208-52.352 315.232-275.2L544 352l297.184-255.04H765.76V32.256h194.624v194.176h-64.864zM160 992H96v-256h64v256z m256 0h-64V608h64v384z m256 0h-64V480h64v512z m256 0h-64V352h64v640z" p-id="1626"></path></svg>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    <div class="indexReview_paly">
+        <div class="paly_swiper">
+            <svg t="1660644273146" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8977" width="50" height="50"><path d="M533.333333 896C332.8 896 170.666667 733.866667 170.666667 533.333333S332.8 170.666667 533.333333 170.666667 896 332.8 896 533.333333 733.866667 896 533.333333 896z m0-42.666667c174.933333 0 320-145.066667 320-320S708.266667 213.333333 533.333333 213.333333 213.333333 358.4 213.333333 533.333333 358.4 853.333333 533.333333 853.333333zM469.333333 426.666667v213.333333h-42.666666v-213.333333h42.666666z m170.666667 0v213.333333h-42.666667v-213.333333h42.666667z" fill="#000000" p-id="8978"></path></svg>
+        </div>
+        <div class="paly_swiper2">
+            <svg t="1660644301330" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9144" width="50" height="50"><path d="M533.333333 896C332.8 896 170.666667 733.866667 170.666667 533.333333S332.8 170.666667 533.333333 170.666667 896 332.8 896 533.333333 733.866667 896 533.333333 896z m0-42.666667c174.933333 0 320-145.066667 320-320S708.266667 213.333333 533.333333 213.333333 213.333333 358.4 213.333333 533.333333 358.4 853.333333 533.333333 853.333333z m149.333334-320L469.333333 682.666667V384l213.333334 149.333333z m-68.266667 0L512 460.8v145.066667l102.4-72.533334z" fill="#000000" p-id="9145"></path></svg>
+        </div>
+   </div>
+    <div class="swiper indexReview">
+        <div class="swiper-wrapper">
+            {%- for block in section.blocks-%}
+                {%- case block.type-%}
+                {% when 'review1' %}
+                    <div class="swiper-slide">
+                        <div class="Hideimg8_s">
+                            <img loading="lazy" {% render 'image-attributes' , image: block.settings.img%}>
+                        </div>
+                        
+                    </div>
+                {%- endcase-%}  
+            {%- endfor-%}
+        </div>
+        
+    </div>
+    <div class="swiper indexReview2">
+        <div class="swiper-wrapper">
+            {%- for block in section.blocks-%}
+            {%- case block.type-%}
+            {% when 'review2' %}
+                <div class="swiper-slide">
+                    <div class="Hideimg8_s">
+                        <img loading="lazy" {% render 'image-attributes' , image: block.settings.img%}>
+                    </div>
+                   
+                </div>
+            {%- endcase-%}  
+        {%- endfor-%}
+        </div>
+    
+    </div>
+</div>
+<script>
+      (()=>{
+            var swiper = new Swiper(".textReviewSwiper", {
+                autoHeight: true,
+                spaceBetween: 30,
+                loop: true,
+                slidesPerView: 'auto',
+                loopedSlides: 5,
+                        autoplay: {
+                            delay: 5000,
+                            disableOnInteraction: false,
+                        },
+                
+                
+                loop:true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+        });
+        var swiper1 = new Swiper(".indexReview", {
+            centeredSlides: false,
+            touchRatio: 0.2,
+            slideToClickedSlide: true,
+            autoplay: {
+                delay:0,
+                disableOnInteraction: false,
+            },
+            freeMode:true,
+            speed: 8000,
+            loop: true,		
+            breakpoints: { 
+                280: {  //当屏幕宽度大于等于768 
+                    slidesPerView: 1.6,
+                    spaceBetween: 6,
+                },
+                769: {  //当屏幕宽度大于等于768 
+                    slidesPerView: 2.5,
+                    spaceBetween: 16,
+                },
+                1300: {  //当屏幕宽度大于等于768 
+                    slidesPerView: 6,
+                    spaceBetween: 16,
+                }
+            },
+       
+        
+      });
+      
+      var swiper2 = new Swiper(".indexReview2", {
+            centeredSlides: false,
+            touchRatio: 0.2,
+            slideToClickedSlide: true,
+            autoplay: {
+                delay:0,
+                disableOnInteraction: false,
+            },
+            freeMode:true,
+            speed: 12000,
+            loop: true,	
+            breakpoints: { 
+                280: {  //当屏幕宽度大于等于768 
+                    slidesPerView: 1.6,
+                    spaceBetween: 10,		
+                    	
+                },
+                769: {  //当屏幕宽度大于等于768 
+                    slidesPerView: 2.5,
+                    spaceBetween: 16,
+                },
+                1300: {  //当屏幕宽度大于等于768 
+                    slidesPerView: 6,
+                    spaceBetween: 16,
+                }
+            },
+      
+      });
+      
+  
+ 
+    $('.paly_swiper').click(function(){
+        console.log(1)
+        $('.paly_swiper2').show();
+        $(this).hide()
+        swiper1.autoplay.stop();
+        swiper2.autoplay.stop();
+    })
+     $('.paly_swiper2').click(function(){
+        $('.paly_swiper').show();
+        $(this).hide()
+        swiper1.autoplay.start();
+        swiper2.autoplay.start();
+    })
+        })()
+    
+
+</script>
+{% schema %}
+{
+    "name": "index Review",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "bg",
+            "label": "background img"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "url",
+            "id": "link",
+            "label": "link"
+        },
+      
+        {
+            "type": "image_picker",
+            "id": "img",
+            "label": "img"
+        },
+        {
+            "type": "text",
+            "id": "number",
+            "label": "number"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "text",
+            "name": "text",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "text"
+                },
+                {
+                    "type": "richtext",
+                    "id": "text_mobile",
+                    "label": "text mobile"
+                }
+               
+            ]
+        },
+        {
+            "type": "review1",
+            "name": "Review1",
+            "settings": [
+            {
+                "type": "image_picker",
+                "id": "img",
+                "label": "img"
+            }
+            ]
+        },
+        {
+            "type": "review2",
+            "name": "Review2",
+            "settings": [
+            {
+                "type": "image_picker",
+                "id": "img",
+                "label": "img"
+            }
+            ]
+        }
+    ],
+    "presets": [{
+    "name": "index Review"
+    
+    }]
+}
+{% endschema %}

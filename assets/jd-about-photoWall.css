@@ -1,0 +1,130 @@
+@media screen and (max-width: 999px) {
+    .about_photoWall_all{
+        padding: 50px 0;
+    }
+    .about_photoWall_all .container{
+        padding: 0;
+    }
+    .about_photoWall_box{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about_photoWall_left{
+        padding-top: 50px;
+        padding: 50px 15px 0 15px;
+    }
+    .about_photoWall_leftTitle{
+        font-weight: 600;
+        line-height: 1;
+        text-align: center;
+    }
+    .about_photoWall_leftText{
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 24px;
+    }
+    .about_photoWall_leftButton{
+        width: 133px;
+        height: 35px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #2A408E;
+        border-radius: 18px;
+        margin: 0 auto;
+        margin-top: 25px;
+        color: #fff;
+    }
+    .about_photoWall_rightImg{
+        position: relative;
+        /* max-width: 1145px;
+        height: 661px; */
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .about_photoWall_rightBoxImg{
+        width: 76.8%;
+        position: relative;
+        padding-top: 3.6%;
+        margin: 0 auto;
+     
+    }
+    .about_photoWall_rightBoxPosition{
+        width: 76.8%;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 5px;
+        padding-bottom: 8.2%;
+    }
+    .about_photoWall_rightBoxImg img{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 769px) {
+    .about_photoWall_all{
+        padding: 120px 0;
+    }
+    .about_photoWall_box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .about_photoWall_left{
+        width: 34%;
+    }
+    .about_photoWall_leftTitle{
+        font-weight: 600;
+        line-height: 1;
+    }
+    .about_photoWall_leftText{
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 400;
+        margin-top: 30px;
+    }
+    .about_photoWall_leftButton{
+        width: 215px;
+        height: 60px;
+        font-size: 18px;
+        margin-top: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #2A408E;
+        border-radius: 35px;
+        color: #fff;
+    }
+    .about_photoWall_right{
+        width: 66%;
+       
+    }
+    .about_photoWall_rightImg{
+        position: relative;
+        /* max-width: 1145px;
+        height: 661px; */
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .about_photoWall_rightBoxImg{
+        width: 76.8%;
+        position: relative;
+        padding-top: 3.7%;
+        margin: 0 auto;
+     
+    }
+    .about_photoWall_rightBoxPosition{
+        width: 76.8%;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding-bottom: 6.6%;
+    }
+    .about_photoWall_rightBoxImg img{
+        width: 100%;
+    }
+}

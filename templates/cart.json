@@ -1,0 +1,103 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "blocks": {
+        "totals": {
+          "type": "totals",
+          "settings": {
+          }
+        },
+        "order_note": {
+          "type": "order_note",
+          "settings": {
+            "open_by_default": true
+          }
+        }
+      },
+      "block_order": [
+        "totals",
+        "order_note"
+      ],
+      "settings": {
+        "put_a_product": "",
+        "activity_text": "<p>Buy Any BeeCool Model Get One Free Trailer! Don't forgrt to add the trailer to your cart!<\/p>",
+        "activity_text_icon": "<svg t=\"1672632294889\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"2729\" width=\"200\" height=\"200\"><path d=\"M830.836364 69.818182h-256c-32.581818 0-62.836364 11.636364-86.109091 34.909091L107.054545 491.054545c-46.545455 46.545455-46.545455 123.345455 0 172.218182l256 256c23.272727 23.272727 55.854545 34.909091 86.109091 34.909091 30.254545 0 62.836364-11.636364 86.109091-34.909091l307.2-307.2c9.309091-9.309091 9.309091-23.272727 0-32.581818s-23.272727-9.309091-32.581818 0L500.363636 884.363636c-30.254545 30.254545-76.8 30.254545-104.727272 0L139.636364 628.363636c-30.254545-30.254545-30.254545-76.8 0-104.727272L523.636364 139.636364c13.963636-13.963636 32.581818-23.272727 53.527272-23.272728h256C872.727273 116.363636 907.636364 151.272727 907.636364 193.163636v256c0 13.963636 9.309091 23.272727 23.272727 23.272728s23.272727-9.309091 23.272727-23.272728v-256C954.181818 125.672727 898.327273 69.818182 830.836364 69.818182z\" fill=\"#d81e06\" p-id=\"2730\"><\/path><path d=\"M500.363636 384c0 76.8 62.836364 139.636364 139.636364 139.636364s139.636364-62.836364 139.636364-139.636364-62.836364-139.636364-139.636364-139.636364-139.636364 62.836364-139.636364 139.636364z m232.727273 0c0 51.2-41.890909 93.090909-93.090909 93.090909s-93.090909-41.890909-93.090909-93.090909 41.890909-93.090909 93.090909-93.090909 93.090909 41.890909 93.090909 93.090909z\" fill=\"#d81e06\" p-id=\"2731\"><\/path><\/svg>",
+        "activity_background": "red",
+        "show_payment_methods": false,
+        "show_shipping_estimator": false,
+        "shipping_estimator_default_country": "United States",
+        "empty_button_link": "shopify:\/\/collections\/all",
+        "link": "shopify:\/\/collections\/ebike",
+        "tax_note": "<p>Taxes and <a href=\"\/pages\/shipping_1\" target=\"_blank\" title=\"Shipping_1\">shipping<\/a> calculated at checkout<\/p>",
+        "svg": "<?xml version=\"1.0\" standalone=\"no\"?><svg t=\"1663813166185\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"23944\" width=\"128\" height=\"128\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><path d=\"M512 58.395l-391.469 227.425v453.605l391.469 226.182 391.469-227.425v-452.364l-391.469-227.425zM847.545 295.761l-335.545 195.113-335.545-195.113 335.545-193.871 335.545 193.871zM157.814 328.073l334.302 193.871-1.243 387.74-333.058-192.627v-388.982zM528.156 913.41l1.243-388.982 336.787-196.355v388.982l-338.030 196.355z\" p-id=\"23945\"><\/path><\/svg>",
+        "label": "<p>Free Shipping To United States More Info<\/p>",
+        "svg2": "<?xml version=\"1.0\" standalone=\"no\"?><svg t=\"1663831934594\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"77518\" width=\"128\" height=\"128\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><path d=\"M507.867 960.97c-60.574 0-152.353-48.525-228.38-120.749-85.992-81.687-135.31-175.2-135.31-256.56V218.653l18.444-0.299-0.298 0.003c1.974-0.023 90.101-1.905 181.34-38.745 92.099-37.219 152.572-80.642 153.157-81.07l10.997-7.966 11.22 8.066-0.12-0.086c1.568 1.132 61.677 44.094 153.136 81.054 91.257 36.844 179.472 38.724 181.437 38.747l-0.3-0.003 18.275 0.298 0.17 365.016c0 81.356-49.321 174.869-135.318 256.552-76.038 72.223-167.845 120.75-228.45 120.75z m-10.751-818.018c-23.559 14.97-72.981 44.091-139.273 70.93-60.987 24.605-119.782 34.732-158.362 38.895l-17.887 1.93V583.66c0 71.441 45.966 155.539 126.112 230.73 69.853 65.533 150.291 109.564 200.16 109.564 49.867 0 130.302-44.03 200.155-109.564 80.147-75.191 126.114-159.289 126.114-230.73V254.707l-17.889-1.93c-38.583-4.163-97.367-14.29-158.302-38.9-65.873-26.637-115.588-55.88-139.359-70.94l-10.74-6.804-10.729 6.819zM352.703 587.846l24.068-28.181 104.367 88.384 198.255-227.22 28.243 24.374L485.223 700.15l-132.52-112.305z\" p-id=\"77519\"><\/path><\/svg>",
+        "labe2": "<p>Secure Checkout<\/p>"
+      }
+    },
+    "1663828041c4ec5731": {
+      "type": "cart-recommendations",
+      "settings": {
+        "subheading": "",
+        "title": "Featured collection",
+        "recommendations_count": 5,
+        "products": [
+
+        ]
+      }
+    },
+    "c5dadc3e-f952-4422-a92a-f13ff47269c5": {
+      "type": "jd-afterSales",
+      "blocks": {
+        "d9fdc1cc-3867-4a97-b38f-32730ff8bab4": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
+            "title": "Free Shipping",
+            "subtitle": "<p>To the lower 48 states<\/p>"
+          }
+        },
+        "a3646981-28ae-4d5b-abfd-aab2d53d001a": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
+            "title": "2-Year Warranty",
+            "subtitle": "<p>Buy with confidence<\/p>"
+          }
+        },
+        "94d33436-9f9e-4c54-95a6-d45845c06938": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
+            "title": "Secure Payment",
+            "subtitle": "<p>Secure payment with Shopify<\/p>"
+          }
+        },
+        "ba2fd70d-fdf0-44ce-8747-9bdda3daeb44": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
+            "title": "Cost-effective",
+            "subtitle": "<p>Direct to consumer pricing<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d9fdc1cc-3867-4a97-b38f-32730ff8bab4",
+        "a3646981-28ae-4d5b-abfd-aab2d53d001a",
+        "94d33436-9f9e-4c54-95a6-d45845c06938",
+        "ba2fd70d-fdf0-44ce-8747-9bdda3daeb44"
+      ],
+      "settings": {
+        "policy_color": "#f3f5f5",
+        "policy_scolor_mobile": "#f3f5f5"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1663828041c4ec5731",
+    "c5dadc3e-f952-4422-a92a-f13ff47269c5"
+  ]
+}

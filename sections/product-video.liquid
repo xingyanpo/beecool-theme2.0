@@ -1,0 +1,69 @@
+<style>
+   .product-fullscreen-video, .product-fullscreen-video > video {width:100%;}
+</style>
+
+<section class='product-fullscreen-video'>
+  <video
+    id="videos"
+    class="bg-img object-cover w-full video-lazyload"
+    muted="muted"
+    data-src="{{ section.settings.product_fullscreen_video }}"
+    autoplay="autoplay"
+    loop
+    preload="auto"
+    webkit-playsinline="true"
+    playsinline="true"
+    x5-video-player-type="h5"
+    x5-video-player-fullscreen="true"
+    x-webkit-airplay="allow"
+    x5-video-orientation="portraint"
+  ></video>
+</section>
+
+<script>
+(
+  function () {
+      // lazyload
+      function lazyLoad(imgs = '.lazyload') {
+          const images = document.querySelectorAll(imgs)
+
+          const callback = (entries) => {
+              entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                      const image = entry.target
+                      const data_src = image.getAttribute('data-src')
+                      image.setAttribute('src', data_src);
+                      observer.unobserve(image)
+                  }
+              })
+          }
+
+          const observer = new IntersectionObserver(callback)
+
+          images.forEach(img => {
+              observer.observe(img)
+          })
+      }
+
+      lazyLoad('.video-lazyload')
+  }
+)()
+</script>
+
+{% schema %}
+{
+  "name": "Product Fullscreen Video",
+  "settings": [
+    {
+      "type": "url",
+      "id": "product_fullscreen_video",
+      "label": "Video Url"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Fullscreen Video"
+    }
+  ]
+}
+{% endschema %}

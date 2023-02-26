@@ -1,0 +1,131 @@
+{{ 'jd-general_text.css' | asset_url | stylesheet_tag }}
+<div class="general_text-all" style="background-color: {{section.settings.background_color}};">
+   <div class="container">
+      
+        <div class="general_text-text pc" style="font-size: {{section.settings.pc_font}}px;">
+            <span class="general_text_svg"> {% if section.settings.text_svg != blank %} {{section.settings.text_svg }} {% endif %}</span>
+             {{section.settings.text }} 
+            <span class="general_text_svg2"> {% if section.settings.text_svg != blank %} {{section.settings.text_svg2 }} {% endif %} </span>
+            {% if section.settings.text2 != blank %}
+                <div>{{section.settings.text2 }}</div>
+            {% endif %}
+        </div>
+        <div class="general_text-text mobile" style="font-size: {{section.settings.mobile_font}}px; text-align:{{section.settings.position}}; font-weight:{{section.settings.font_weight}}">
+         
+            {{section.settings.text_mobile }}
+          
+        </div>
+        
+   </div>
+</div>
+
+{% schema %}
+{
+    "name": "General Text",
+    "settings": [
+    {
+        "type": "textarea",
+        "id": "text_svg",
+        "label": "text svg"
+    },
+    {
+        "type": "textarea",
+        "id": "text_svg2",
+        "label": "text svg2"
+    },
+    {
+        "type": "richtext",
+        "id": "text",
+        "label": "text"
+    },
+    {
+        "type": "richtext",
+        "id": "text2",
+        "label": "text2"
+    },
+    {
+        "type": "range",
+        "id": "pc_font",
+        "label": "font size",
+        "unit": "px",
+        "min": 12,
+        "max": 32,
+        "step": 1,
+        "default": 12
+    },
+    {
+        "type": "richtext",
+        "id": "text_mobile",
+        "label": "text mobile"
+    },
+    
+    {
+        "type": "select",
+        "id": "position",
+        "label": "position",
+        "options": [
+            {
+                "value": "left",
+                "label": "left"
+               
+            },
+            {
+                "value": "center",
+                "label": "center"
+            
+            },
+            {
+                "value": "right",
+                "label": "right"
+            
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "id": "font_weight",
+        "label": "font weight",
+        "options": [
+            {
+                "value": "400",
+                "label": "400"
+               
+            },
+            {
+                "value": "500",
+                "label": "500"
+            
+            },
+            {
+                "value": "600",
+                "label": "bold"
+            
+            }
+         
+        ]
+    },
+    {
+        "type": "range",
+        "id": "mobile_font",
+        "label": "font size mobile",
+        "unit": "px",
+        "min": 12,
+        "max": 32,
+        "step": 1,
+        "default": 12
+    },
+    {
+        "type": "color",
+        "id": "background_color",
+        "label": "background color"
+    }
+    ],
+    "blocks": [
+  
+    ],
+    "presets": [{
+    "name": "General Text"
+    
+    }]
+}
+{% endschema %}

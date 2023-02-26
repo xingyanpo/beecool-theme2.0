@@ -1,0 +1,177 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "bb95888f-c969-40fe-9279-cc02d5b27ae6": {
+      "type": "product-video",
+      "disabled": true,
+      "settings": {
+        "product_fullscreen_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/b1386887686f4adfa4c6b820afcac3ea.mp4"
+      }
+    },
+    "ee5ae61c-e5ac-4886-bd87-bddd9dcc2a2b": {
+      "type": "product-youtube",
+      "disabled": true,
+      "blocks": {
+        "f4e04d54-ff7b-41fb-9872-516cb3279ed7": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-1.jpg",
+            "youtube_text": "Bee Cool Bikes",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=rFTgW-TgSNU&t=6s"
+          }
+        },
+        "8f7658e8-91c7-4097-821e-77b039d07484": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-2.jpg",
+            "youtube_text": "Bee Cool Bikes",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=NJ_c_TEWaPA&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=12"
+          }
+        },
+        "4af74553-83c5-4193-b2de-65227b0dbcff": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-5.jpg",
+            "youtube_text": "Bee Cool Bikes",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=d0BXhAeK2ow&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=8"
+          }
+        },
+        "a6ca3941-9d23-4433-a863-4b46a04ff6f2": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-4.jpg",
+            "youtube_text": "Bee Cool Bikes",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=IGS2UmPfSWY&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=9"
+          }
+        },
+        "572fc3c4-89c3-4452-bc1e-aad21d18533d": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-6.jpg",
+            "youtube_text": "Bee Cool Bikes",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=00W7rkkfons&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=11"
+          }
+        },
+        "16824a5a-27bb-4a78-b9c5-6c567561486d": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-3.jpg",
+            "youtube_text": "Bee Cool Bikes",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=QHsKpC0USGk&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=6"
+          }
+        },
+        "923a23e8-1520-460b-a812-2ec6bcaec53a": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-7.jpg",
+            "youtube_text": "Bee Cool Bikes",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=pHzIOF17-fI&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=3&t=278s"
+          }
+        },
+        "dc589ab1-6527-4206-af09-0a8dac72deeb": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-8.jpg",
+            "youtube_text": "Bee Cool Bikes",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=OXDATVpUS7Y&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=2"
+          }
+        },
+        "3e4920e1-dc29-498a-bcbb-123bf16b4d02": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-9.jpg",
+            "youtube_text": "Bee Cool Bikes",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=U7Lulxf_j8Y&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=4"
+          }
+        },
+        "05455b1e-80c6-455c-8062-aa98f874cfdf": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-10.jpg",
+            "youtube_text": "Bee Cool Bikes",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=HWMxZVU4EdE&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=15"
+          }
+        }
+      },
+      "block_order": [
+        "f4e04d54-ff7b-41fb-9872-516cb3279ed7",
+        "8f7658e8-91c7-4097-821e-77b039d07484",
+        "4af74553-83c5-4193-b2de-65227b0dbcff",
+        "a6ca3941-9d23-4433-a863-4b46a04ff6f2",
+        "572fc3c4-89c3-4452-bc1e-aad21d18533d",
+        "16824a5a-27bb-4a78-b9c5-6c567561486d",
+        "923a23e8-1520-460b-a812-2ec6bcaec53a",
+        "dc589ab1-6527-4206-af09-0a8dac72deeb",
+        "3e4920e1-dc29-498a-bcbb-123bf16b4d02",
+        "05455b1e-80c6-455c-8062-aa98f874cfdf"
+      ],
+      "settings": {
+      }
+    },
+    "cf36e666-8785-4c4a-8261-769ee088973c": {
+      "type": "jd-afterSales",
+      "blocks": {
+        "2fcabf54-bb22-4d7e-9353-a1c07c7dbe52": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
+            "title": "Free Shipping",
+            "subtitle": "<p>To the lower 48 states<\/p>"
+          }
+        },
+        "e5aa6de0-dc33-4dbf-a970-64a4024d14a8": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
+            "title": "2-Year Warranty",
+            "subtitle": "<p>Buy with confidence<\/p>"
+          }
+        },
+        "43e44013-b677-4736-abca-310e06976316": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
+            "title": "Secure Payment",
+            "subtitle": "<p>Secure payment with Shopify<\/p>"
+          }
+        },
+        "9bd114d6-0720-4458-a375-99dbe092cf9f": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
+            "title": "Cost-effective",
+            "subtitle": "<p>Direct to consumer pricing<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "2fcabf54-bb22-4d7e-9353-a1c07c7dbe52",
+        "e5aa6de0-dc33-4dbf-a970-64a4024d14a8",
+        "43e44013-b677-4736-abca-310e06976316",
+        "9bd114d6-0720-4458-a375-99dbe092cf9f"
+      ],
+      "settings": {
+        "policy_color": "#f3f5f5",
+        "policy_scolor_mobile": "#ffffff"
+      }
+    },
+    "8f68b820-0969-4e99-a621-27275fab4953": {
+      "type": "cart-test",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bb95888f-c969-40fe-9279-cc02d5b27ae6",
+    "ee5ae61c-e5ac-4886-bd87-bddd9dcc2a2b",
+    "cf36e666-8785-4c4a-8261-769ee088973c",
+    "8f68b820-0969-4e99-a621-27275fab4953"
+  ]
+}

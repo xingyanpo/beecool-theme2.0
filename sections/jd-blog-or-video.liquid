@@ -1,0 +1,182 @@
+{{ 'jd-blog-video.css' | asset_url | stylesheet_tag }}
+<div class="Blog_setion_all">
+  <nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="blog_nav">
+    <div class="container">
+     <ol class="breadcrumb__list" role="list">
+         <li class="breadcrumb__item">
+           <a class="breadcrumb__link" href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a>
+         </li>
+
+         <li class="breadcrumb__item">
+           {%- if current_tags -%}
+             <a class="breadcrumb__link" href="{{ blog.url }}">{{ blog.title }}</a>
+           {%- else -%}
+             <span class="breadcrumb__link" aria-current="page">{{ blog.title }}</span>
+           {%- endif -%}
+         </li>
+
+         {%- if current_tags -%}
+           <li class="breadcrumb__item">
+             <span class="breadcrumb__link" aria-current="page">{{ current_tags.first | split: '_' | last }}</span>
+           </li>
+         {%- endif -%}
+       </ol>
+    </div>
+ </nav>
+    <div class="Blog_setion_top">
+        <section class="exhibition-page container">
+            {% for block in section.blocks %}
+            {% if block.settings.link !=blank %}
+                <div class="exhibition-page__item" style="background-image: url({{block.settings.img | img_url: '1920x'}});">
+                  <div class="blogs_video" style="display: none;">
+                    {{ block.settings.link | strip}}
+                  </div>
+                  <div class="blogs_Box_position">
+                      <a href="{{block.settings.article.url}}">
+                        {% if block.settings.article.tags.first !=blank %}
+                          <div class="blogs_Box_text">
+                            <div>{{block.settings.article.tags.first}}</div>
+                          </div>
+                        {% endif %}
+                          <div class="blogs_Box_title">{{block.settings.article.title}}</div>
+                          <div class="blogs_Box_content">{{block.settings.article.published_at | time_tag: format: 'month_day_year'}}</div>
+                      </a>
+          
+                    
+                      <div class="blogs_video_button">
+                          <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1661321712841" class="icon" viewBox="0 0 1610 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7814" xmlns:xlink="http://www.w3.org/1999/xlink" width="201.25" height="128"><defs><style type="text/css">@font-face { font-family: feedback-iconfont; src: url("//at.alicdn.com/t/font_1031158_u69w8yhxdu.woff2?t=1630033759944") format("woff2"), url("//at.alicdn.com/t/font_1031158_u69w8yhxdu.woff?t=1630033759944") format("woff"), url("//at.alicdn.com/t/font_1031158_u69w8yhxdu.ttf?t=1630033759944") format("truetype"); }
+                          </style></defs><path d="M1017.856 1024c0 0 146.285714 0 146.285714-146.285714L1164.141714 146.285714c0-146.285714-146.285714-146.285714-146.285714-146.285714L146.285714 0c0 0-146.285714 0-146.285714 146.285714l0 731.428571c0 146.285714 146.285714 146.285714 146.285714 146.285714L1017.856 1024zM73.142857 876.324571 73.142857 147.602286C73.142857 73.142857 147.090286 73.142857 147.090286 73.142857L1025.462857 73.142857c0 0 73.947429 0 73.947429 74.459429l0 728.722286C1099.410286 950.857143 1025.462857 950.857143 1025.462857 950.857143L147.090286 950.857143C147.090286 950.857143 73.142857 950.857143 73.142857 876.324571z" p-id="7815"></path><path d="M1249.353143 651.264 1249.353143 740.864 1609.142857 1024 1609.142857 0 1249.353143 285.769143 1249.353143 377.417143 1536 162.377143 1536 866.230857Z" p-id="7816"></path></svg>
+                      </div>
+                     
+                    </div>
+                </div>
+                {% else %}
+                <div class="exhibition-page__item" style="background-image: url({{block.settings.img | img_url: '1920x'}});">
+                  <div class="blogs_video" style="display: none;">
+                    {{ block.settings.link}}
+                  </div>
+                  <a href="{{block.settings.article.url}}" class="blogs_Box_position">
+                    <div>
+                      <div class="blogs_Box_text">
+                          <div>{{block.settings.article.tags.first}}</div>
+                      </div>
+                      <div class="blogs_Box_title">{{block.settings.article.title}}</div>
+                      <div class="blogs_Box_content">{{block.settings.article.published_at | time_tag: format: 'month_day_year'}}</div>
+                    </div>
+                  </a>
+                </div>
+            {% endif %} 
+            {% endfor %}
+            
+        </section>  
+    </div>
+   
+</div>
+<div class="swi_video_fixed">
+    <div class="video_mid_cha">x</div>
+    <video data-component="responsive-video"
+    class="responsive-videos" preload="auto" webkit-playsinline playsinline
+    controls
+    src=""
+    >
+  </video>
+</div>
+<div class="bg-color"></div>
+
+<script>
+	(()=>{
+    let widthSize = document.documentElement.clientWidth;
+      if(widthSize>999){
+      // 图片大小
+      $(".exhibition-page__item:eq(0)").css("width","85%");
+
+      $(".exhibition-page .exhibition-page__item").mouseover(function(){
+
+          $(this).css("width","85%");
+          $(this).siblings().css("width","50%");
+
+      })	
+    }
+     
+        // 弹窗视频
+        $(".blogs_video_button").click(function () {
+            $(".swi_video_fixed").show();
+            // 获取当前点击的src
+            $(this).parent().parent().find(".blogs_video").html();
+            var viveoPC = $(this).parent().parent().find(".blogs_video").html();
+          
+          
+            $(".swi_video_fixed").children(".responsive-videos").attr("src",viveoPC.trim())
+            $(".swi_video_fixed").children(".responsive-videos")[0].play();
+           
+           
+            $(".no-focus-outline").addClass("adlink-html");
+            $(".bg-color").addClass("bg-colors");
+
+          
+           
+        })
+        $(".video_mid_cha").click(function(){
+            $(".swi_video_fixed").hide();
+            $(".no-focus-outline").removeClass("adlink-html");
+            $(".swi_video_fixed").children(".responsive-videos")[0].load();
+            $(".bg-color").removeClass("bg-colors")
+        })
+   
+       
+    })()
+
+
+
+
+</script>
+
+{% schema %}
+{
+"name": "blog exhibition",
+"class": "blog-exhibition",
+"blocks": [
+    {
+        "type": "exhibition",
+        "name": "exhibition",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "img",
+                "label": "Img"
+            },
+         
+			    {
+                "type": "image_picker",
+                "id": "img_mobile",
+                "label": "Img Mobile"
+            },
+          {
+            "type": "article",
+            "id": "article",
+            "label": "article"
+        
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "video link"
+        }
+          
+  ]
+}
+
+  
+],
+"settings": [
+   
+   
+],
+"presets": [
+  {
+  "name": "blog Exhibition",
+  "category": "Image"
+  }
+]
+}
+{% endschema %}

@@ -1,0 +1,311 @@
+{{ 'main-article.css' | asset_url | stylesheet_tag }}
+<style>
+  .product-item__label-list .label{
+    background: red;
+    color: #fff;
+    text-transform: capitalize;
+  }
+</style>
+<section>
+  <div class="article">
+    <div class="article__main-part">
+      {%- if section.settings.show_on_scroll_navigation -%}
+      <!-- 弹窗 -->
+        <blog-post-navigation class="article__nav" {% if blog.next_article %}has-next-article{% endif %} style="--transform: 0.01">
+          <div class="container">
+            <div class="article__nav-wrapper">
+              {%- if blog.previous_article -%}
+                <a href="{{ blog.previous_article.url }}" class="article__nav-item article__nav-item--prev hidden-phone">
+                  <span class="article__nav-arrow">{%- render 'icon' with 'nav-arrow-left', direction_aware: true -%}</span>
+                  <span class="article__nav-item-title hidden-tablet">{{ blog.previous_article.title }}</span>
+                </a>
+              {%- endif -%}
+
+              <span class="article__nav-item article__nav-item--current">
+                {% comment %}We provide an estimate of the reading time, based on the fact that average people read 180 words per minute{% endcomment %}
+                {%- assign minutes_to_read = article.content | strip_html | split: ' ' | size | divided_by: 180 | plus: 1 -%}
+
+                <span class="article__nav-item-label text--strong hidden-pocket hidden-lap">{{ 'article.general.reading' | t }}</span>
+                <span class="article__nav-item-title">{{ article.title }}</span>
+                <span class="square-separator square-separator--block"></span>
+                <span class="article__reading-time">{{ 'article.general.reading_time' | t: count: minutes_to_read }}</span>
+              </span>
+
+              {%- if blog.next_article -%}
+                <a href="{{ blog.next_article.url }}" class="article__nav-item article__nav-item--next">
+                  <span class="article__nav-item-label text--strong hidden-tablet-and-up">{{ 'article.general.next' | t }}</span>
+                  <span class="article__nav-item-title hidden-tablet">{{ blog.next_article.title }}</span>
+                  <span class="article__nav-arrow tap-area">{%- render 'icon' with 'nav-arrow-right', direction_aware: true -%}</span>
+                </a>
+              {%- endif -%}
+            </div>
+          </div>
+        </blog-post-navigation>
+      {%- endif -%}
+   
+      <div class="container">
+        <div class="articleBox">
+          <div class="article__main_left">
+           <div class="article__main_leftSticky">
+            <div class="article__inners">
+              
+              {%- capture blog_post_info -%}
+               <div class="article__metas_tag">
+                <div class="article__metas">
+                  {%- if article.tags.size > 0 -%}
+                    <a href="{{ blog.url }}/tagged/{{ article.tags.first | handle }}" class="article__category heading heading--small">{{ article.tags.first }}</a>
+                  {%- endif -%}
+
+                  {%- if section.settings.show_author -%}
+                    <span class="article__meta-item article__author">{{ 'article.general.written_by' | t: author: article.author }}</span>
+                  {%- endif -%}
+    
+                  {%- if section.settings.show_date -%}
+                    <time class="article__meta-item article__date">{{ article.published_at | date: format: 'abbreviated_date' }}</time>
+                  {%- endif -%}
+    
+                  {%- if article.comments_enabled? -%}
+                    <a href="#blog-post-{{ article.id }}-comments" data-smooth-scroll class="article__meta-item article__comments-count text--subdued link icon-text">
+                      {%- render 'icon' with 'comment' -%}
+                      {{- 'article.comments.comments_count' | t: count: article.comments_count -}}
+                    </a>
+                  {%- endif -%}
+                </div>
+                <div class="article__share">
+                  <div class="article__share_pc">
+                    <span class="article__share-label">{{ 'article.general.share' | t }}:</span>
+  
+                    <div class="article__share-button-list" role="list">
+                      <a class="article__share-button-item article__share-button-item--facebook tap-area" href="https://www.facebook.com/sharer.php?u={{ share_url }}" target="_blank" rel="noopener" role="listitem" aria-label="{{ 'general.social.facebook_share' | t }}">
+                        {%- render 'icon' with 'facebook' -%}
+                      </a>
+    
+                      <a class="article__share-button-item article__share-button-item--twitter tap-area" href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener" role="listitem" aria-label="{{ 'general.social.twitter_tweet' | t }}">
+                        {%- render 'icon' with 'twitter' -%}
+                      </a>
+
+                      <a class="article__share-button-item article__share-button-item--pinterest tap-area" href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}" target="_blank" rel="noopener" role="listitem" aria-label="{{ 'general.social.pinterest_pin' | t }}">
+                        {%- render 'icon' with 'pinterest' -%}
+                      </a>
+    
+                      <a class="article__share-button-item article__share-button-item--mail tap-area" href="mailto:?&subject={{ article.title | escape }}&body={{ share_url }}" role="listitem" aria-label="{{ 'general.social.email_share' | t }}">
+                        {%- render 'icon' with 'share' -%}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               
+    
+                <!-- {%- if section.settings.show_share_buttons -%}
+                  {%- assign share_url = shop.url | append: article.url -%}
+                  {%- assign twitter_text = article.title | url_param_escape -%}
+                  {%- assign pinterest_description = article.excerpt_or_content | strip_html | truncatewords: 15 | url_param_escape -%}
+                  {%- assign pinterest_image = article.image | img_url: '800x' | prepend: 'https:' -%}
+    
+                  <button type="button" is="share-toggle-button" share-url="{{ share_url | escape }}" share-title="{{ article.title | escape }}" class="article__share text--subdued link hidden-tablet-and-up" aria-controls="mobile-share-buttons-{{ section.id }}" aria-expanded="false">{{ 'article.general.share' | t }}</button>
+    
+                  <popover-content id="mobile-share-buttons-{{ section.id }}" class="popover hidden-tablet-and-up">
+                    <span class="popover__overlay"></span>
+    
+                    <header class="popover__header">
+                      <span class="popover__title heading h6">{{- 'article.general.share' | t -}}</span>
+    
+                      <button type="button" class="popover__close-button tap-area tap-area--large" data-action="close" title="{{ 'general.accessibility.close' | t | escape }}">
+                        {%- render 'icon' with 'close' -%}
+                      </button>
+                    </header>
+    
+                    <div class="mobile-share-buttons">
+                      <a class="mobile-share-buttons__item mobile-share-buttons__item--facebook" href="https://www.facebook.com/sharer.php?u={{ share_url }}" target="_blank" rel="noopener" aria-label="{{ 'general.social.facebook_share' | t }}">
+                        {%- render 'icon' with 'facebook-share-mobile' -%} Facebook
+                      </a>
+    
+                      <a class="mobile-share-buttons__item mobile-share-buttons__item--pinterest" href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}" target="_blank" rel="noopener" aria-label="{{ 'general.social.pinterest_pin' | t }}">
+                        {%- render 'icon' with 'pinterest-share-mobile' -%} Pinterest
+                      </a>
+    
+                      <a class="mobile-share-buttons__item mobile-share-buttons__item--twitter" href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener" aria-label="{{ 'general.social.twitter_tweet' | t }}">
+                        {%- render 'icon' with 'twitter-share-mobile' -%} Twitter
+                      </a>
+    
+                      <a class="mobile-share-buttons__item mobile-share-buttons__item--mail" href="mailto:?&subject={{ article.title | escape }}&body={{ share_url }}" aria-label="{{ 'general.social.email_share' | t }}">
+                        {%- render 'icon' with 'email-share-mobile' -%} {{ 'general.social.email_label' | t }}
+                      </a>
+                    </div>
+                  </popover-content>
+    
+               
+                {%- endif -%} -->
+              {%- endcapture -%}
+    
+              {%- if blog_post_info != blank -%}
+                  <div class="blog_post_infos">
+                    {%- if article.tags.size > 0 -%}
+                    <a href="{{ blog.url }}/tagged/{{ article.tags.first | handle }}" class="article__category  article__category_top heading heading--small">{{ article.tags.first }}</a>
+                  {%- endif -%}
+               
+                  <h1 class="article__title ebike_h1">{{ article.title }}</h1>
+                    {{- blog_post_info -}}
+                  </div>
+                {%- endif -%}
+    
+                <div class="article__contents">
+                  <div class="rte" {{ block.shopify_attributes }}>
+                    <img src="{{article.image | img_url: '1920x'}}" alt="">
+                    {{- article.content -}}
+                  </div>
+                </div>
+            </div>
+            {%- if article.tags.size > 0 -%}
+            <div class="article__tags">
+                <div class="article__tagsBox">
+                  <span>{{ 'article.general.tags' | t }}: </span>
+
+                  <ul class="article__tags-list list--unstyled" role="list">
+                    {%- for tag in article.tags -%}
+                      <li class="article__tags-item" role="listitem">
+                        <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="link">{{ tag }}</a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+            </div>
+          {%- endif -%}
+          <!-- prev and next -->
+            <div class="prev_next_box">
+                 <!-- 上一篇 -->
+              <a href="{{ blog.previous_article.url }}" class="article__nav-item article__nav-item--prev">
+                <span class="article__nav-arrow"><svg t="1663639491563" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4458" width="32" height="32"><path d="M677.391515 873.916768c-7.86101 0-15.618586-2.999596-21.617778-8.895354L324.473535 533.721212c-11.998384-11.894949-11.998384-31.340606 0-43.235555L655.670303 159.288889c5.999192-5.999192 13.756768-8.895354 21.617778-8.895354 7.757576 0 15.618586 2.999596 21.617778 8.895354 11.894949 11.894949 11.894949 31.237172 0 43.235555L389.223434 512.103434 698.905859 821.785859c11.894949 11.998384 11.894949 31.340606 0 43.235555-5.895758 5.895758-13.756768 8.895354-21.514344 8.895354z m0 0" p-id="4459"></path></svg> Previous Article</span>
+              </a>
+              <!-- 下一篇 -->
+              <a href="{{ blog.next_article.url }}" class="article__nav-item article__nav-item--next">
+                <span class="article__nav-arrow tap-area">Next Article <svg t="1663639665213" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5695" width="32" height="32"><path d="M326.4 838.4l352-352c12.8-12.8 32-12.8 44.8 0l0 0c12.8 12.8 12.8 32 0 44.8l-352 352c-12.8 12.8-32 12.8-44.8 0l0 0C313.6 876.8 313.6 851.2 326.4 838.4z" p-id="5696"></path><path d="M678.4 531.2 326.4 185.6c-12.8-12.8-12.8-32 0-44.8l0 0C339.2 128 358.4 128 371.2 134.4l352 352c12.8 12.8 12.8 32 0 44.8l0 0C710.4 544 684.8 544 678.4 531.2z" p-id="5697"></path></svg></span>
+                <span class="article__nav-item-label text--strong hidden-tablet-and-up"></span>
+                <!-- <span class="article__nav-item-title hidden-tablet">{{ blog.next_article.title }}</span> -->
+              </a>  
+            </div>
+           </div>
+          </div>
+          <div class="article__main_right">
+            <div class="article__main_rightTop">
+              <div class="article__main_rightTop_Search">Search</div>
+              <div class="jd-article__search-bar ">
+                <form class="jd-predictive-search__form predictive-search__form search_form_article" action="{{ routes.search_url }}" method="get" role="search">
+                  <input type="hidden" name="type" value="product">
+                  <input type="hidden" name="options[prefix]" value="last">
+                  <input type="hidden" name="options[unavailable_products]" value="{{ settings.search_unavailable_products }}">
+                  <input type="text" name="search_index" class="predictive-search__input" id="search_index" onkeydown="entersearch1(event)"  onblur="if(this.value==''){this.value='Search article'}" onfocus="if(this.value=='Search article'){this.value=''}" value="Search article"  />
+                  <input class="predictive-search__input" is="predictive-search-input" type="text" name="q" autocomplete="off" autocorrect="off" aria-label="{{ 'search.general.title' | t }}" placeholder="Search article" style="display: none;">
+              
+                  <div class="article_svg" onclick="jump()">
+                    <svg t="1660285235332" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23179" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"><defs><style type="text/css">@font-face { font-family: feedback-iconfont; src: url("//at.alicdn.com/t/font_1031158_u69w8yhxdu.woff2?t=1630033759944") format("woff2"), url("//at.alicdn.com/t/font_1031158_u69w8yhxdu.woff?t=1630033759944") format("woff"), url("//at.alicdn.com/t/font_1031158_u69w8yhxdu.ttf?t=1630033759944") format("truetype"); }
+                    </style></defs><path d="M478.799854 897.161197c-226.701209 0-411.154197-184.440709-411.154197-411.141918S252.098645 74.877361 478.799854 74.877361s411.128615 184.440709 411.128615 411.141918S705.501062 897.161197 478.799854 897.161197zM478.799854 114.134457c-205.053166 0-371.897102 166.830633-371.897102 371.883799s166.843936 371.883799 371.897102 371.883799S850.671373 691.072445 850.671373 486.019279 683.85302 114.134457 478.799854 114.134457z" p-id="23180"></path><path d="M946.616562 940.737668c-5.034666 0-10.044774-1.916653-13.878079-5.750981L775.070534 777.318738c-7.667633-7.667633-7.667633-20.088524 0-27.756157 7.667633-7.667633 20.088524-7.667633 27.756157 0l157.667949 157.667949c7.667633 7.667633 7.667633 20.088524 0 27.756157C956.661336 938.821015 951.652252 940.737668 946.616562 940.737668z" p-id="23181"></path></svg>
+                
+                  </div>
+                  
+                </form>
+               
+               
+              </div>
+            </div>
+            <div class="article__main_rightBanner">
+              <div class="article__main_rightBanner_title">Featured Products</div>
+              {%- for product in section.settings.products -%}
+                  <div class="article__main_rightBannerBox">
+                  {%- render 'product-item', product: product -%}
+                  </div>
+              {%- endfor -%}
+            </div>
+            <div class="article__main_rightBottom">
+              <div class="article__main_rightBottom_title">Popular Posts</div>
+                {% for block in section.blocks %}
+                    <a href="{{block.settings.article.url}}" class="article__main_rightBottomBox">
+                      <img class="article-item__image" loading="lazy" {% render 'image-attributes', image: block.settings.img%}>
+                      <div class="article__main_rightBottomBox_index">{{forloop.index}}</div>
+                      <div class="article__main_rightBottomBoxRight">
+                          <div class="article__main_rightBottomBox_title">{{block.settings.article.title}}</div>
+                          <div class="article__main_rightBottomBoxRight_bottom">
+                              <div class="article__main_rightBottomBox_tag"><div class="article__category heading heading--small">{{ block.settings.article.tags.first }}</div></div>
+                              <div class="article__main_rightBottomBox_time"> <time class="article__meta-item article__date">{{ block.settings.article.published_at | date: format: 'abbreviated_date' }}</time></div>
+                          </div>
+                      </div>
+                    </a>  
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+    function jump(){
+      var searchval = $("#search_index").val();
+      window.location.href="/search?type=article&view=help&q="+ searchval
+    }
+    function entersearch1(event){  
+          if (event.keyCode == 13)  
+            {  
+            jump();  
+            }  
+    }   
+
+   $(".product-item__label-list .label").html("Hot") 
+</script>
+{% schema %}
+{
+  "name": "Blog post",
+  "class": "shopify-section--main-article",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_on_scroll_navigation",
+      "label": "Show on scroll navigation",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "label": "Show author",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "label": "Show date",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_share_buttons",
+      "label": "Show share buttons",
+      "default": true
+    },
+    {
+      "type": "product_list",
+      "id": "products",
+      "label": "products"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "article",
+      "name": "article",
+      "settings": [
+      {
+        "type": "article",
+        "id": "article",
+        "label": "article"
+      },
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "img"
+      }
+    ]
+  }
+]
+}
+{% endschema %}

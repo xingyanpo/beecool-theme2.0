@@ -1,0 +1,92 @@
+{{ 'jotform_form_all.css' | asset_url | stylesheet_tag }}
+  
+  <div class="jotform_form_all">
+      <div class="banners_position">
+        <img loading="lazy" class="pc" {% render 'image-attributes' , image: section.settings.img_banner%}>
+        <img loading="lazy" class="mobile" {% render 'image-attributes' , image: section.settings.img_bannerMobile%}>
+            <div class="banners_positionBox">
+              <div class="banners_positionBox_box container">
+                <h1 class="banners_positionBox_head pc">{{section.settings.header }}</h1>
+                <h1 class="banners_positionBox_head mobile">{{section.settings.header_mobile }}</h1>
+                {% if section.settings.text !=blank %}
+                    <div class="banner_text pc">{{section.settings.text}}</div>
+                {% endif %}
+                {% if section.settings.text !=blank %}
+                    <div class="banner_text mobile">{{section.settings.text_mobile}}</div>
+                {% endif %}
+              </div>
+            </div>
+      </div>
+      <div class="jotform_form_describe pc">
+        <div class="jotform_form_describeTitle">
+          {{section.settings.describe_title}}
+        </div>
+        <div class="jotform_form_describeText">
+          {{section.settings.describe_text}}
+        </div>
+      </div>
+      <div class="page__content rte"> 
+        <iframe height="2500" width="100%" style = "display:block;"src='https://form.jotform.com/212241544023037'></iframe>
+        <!-- <script type="text/javascript" src="https://form.jotform.com/212241544023037"></script> -->
+      </div>
+  </div>
+    {% schema %}
+    {
+        "name": "dealers join",
+        "class": "shopify-section--dealers-join",
+        "settings": [
+        {
+          "type": "richtext",
+          "id": "header",
+          "label": "Header"
+        },
+        {
+          "type": "richtext",
+          "id": "header_mobile",
+          "label": "Header Mobile"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "text"
+        },
+        {
+          "type": "richtext",
+          "id": "text_mobile",
+          "label": "text mobile"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_banner",
+          "label": "banner Img"
+        },
+        {
+            "type": "image_picker",
+            "id": "img_bannerMobile",
+            "label": "banner Img Mobile"
+        },
+        {
+          "type": "header",
+          "content": "describe"
+        },
+        {
+          "type": "richtext",
+          "id": "describe_title",
+          "label": "describe title"
+        },
+        {
+          "type": "richtext",
+          "id": "describe_text",
+          "label": "describe text"
+        }
+      ],
+    "blocks": [
+    
+    ],
+    "presets": [
+    {
+    "name": "dealers join"
+    }
+    ]
+    }
+    {% endschema %}

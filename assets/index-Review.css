@@ -1,0 +1,280 @@
+@media (max-width:999px) {
+    .indexReview-all{
+        padding: 50px 0;
+        background: #F4F7FE;
+     }
+     .indexReview_top{
+         text-align: center;
+         position: relative;
+  
+     }
+     .bg_img{
+         width: 124px;
+         height: 118px;
+         position: absolute;
+         left: 50%;
+         z-index: -1;
+         transform: translate(-50%);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     .indexReview-all .swiper-autoheight, .indexReview-all .swiper-autoheight  .indexReview-all.swiper-slide{
+        padding-bottom: 8px;
+     }
+     .indexReview_title{
+        display: block;
+        padding-top: 8px;
+        color: #2a3f8e;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 1.5;
+     }
+     .indexReview_text{
+        font-size: 14px;
+         font-weight: 400;
+         color: #151515;
+         line-height: 20px;
+         margin-top: 10px;
+     }
+     .indexReview_review {
+        margin-top: 22px;
+        display: flex;
+        line-height: 1;
+        align-items: stretch;
+        justify-content: center;
+     }
+     .indexReview_review div:nth-child(1){
+        width: 33%;
+     }
+     .indexReview_review div:nth-child(2){
+         color: #151515;
+         font-size: 18px;
+         margin-left: 8px;
+         font-weight: 400;
+     }
+     /* swiper */
+     .indexReview{
+         cursor: pointer;
+     }
+     .indexReview2{
+         margin-top: 10px;
+     }
+     .indexReview .swiper-slide, .indexReview2 .swiper-slide{
+       
+        border-radius: 11px;
+        overflow: hidden;
+     }
+     .indexReview .swiper-slide img, .indexReview2 .swiper-slide img{
+        width: 100%;
+     }
+     .indexReview .swiper-wrapper{
+         -webkit-transition-timing-function: linear; /*之前是ease-out*/ 
+         -moz-transition-timing-function: linear; 
+         -ms-transition-timing-function: linear; 
+         -o-transition-timing-function: linear; 
+         transition-timing-function: linear; 
+         margin: 0 auto; 
+     }
+     .indexReview2 .swiper-wrapper{
+         -webkit-transition-timing-function: linear; /*之前是ease-out*/ 
+     -moz-transition-timing-function: linear; 
+     -ms-transition-timing-function: linear; 
+     -o-transition-timing-function: linear; 
+     transition-timing-function: linear; 
+     margin: 0 auto; 
+     }
+     /* 播放暂停 */
+     .indexReview_paly{
+        margin: 28px 0 20px;
+        padding-right: 15px;
+        justify-content: flex-end;
+        display: flex;
+     }
+     .paly_swiper svg{
+        width: 36px;
+        height: 36px;
+     }
+     .paly_swiper2{
+         display: none;
+     }
+     .indexReview-all .swiper-button-next {
+        position: absolute;
+        top: 77%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        margin-top: 5px;
+        justify-content: flex-end;
+    }
+  
+    .indexReview-all .swiper-button-next svg path{
+        fill: #2A408E;
+    }
+    .indexReview-all .swiper-button-prev , .indexReview-all .swiper-button-next{
+        color: #2A408E;
+    }
+     .indexReview-all .swiper-button-prev{
+        left: -14px;
+        top: 52%;
+        display: none;
+    }
+    .indexReview-all .swiper-button-next:after, .indexReview-all .swiper-button-prev:after{
+        display: none;
+        font-size: 30px;
+    }
+    .indexReview-all .swiper-button-next.swiper-button-disabled{
+        opacity: 1 !important;
+        pointer-events: unset !important;
+    }
+    .indexReview_reviewSvg svg{
+        width: 16px;
+        height: auto;
+        margin-left: 10px;
+    }
+    .Hideimg8_s{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 59%;
+        overflow: hidden;
+      }
+      .Hideimg8_s img{
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+      }
+}
+.indexReview_reviewSvg svg path{
+    fill: #2A408E;
+}
+@media (min-width:1000px) {
+    .Hideimg8_s{
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 70%;
+        overflow: hidden;
+      }
+      .Hideimg8_s img{
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+      }
+    .indexReview-all{
+       margin: 110px 0 130px 0;
+    }
+    .indexReview_top{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+ 
+    }
+    .indexReview-all .swiper-button-next {
+        right: 0px;
+       
+        top: 62%;
+    }
+    .indexReview-all .swiper-button-prev svg,.indexReview-all .swiper-button-next svg{
+        display: none;
+    }
+    .indexReview-all .swiper-button-prev ,.indexReview-all .swiper-button-next{
+        color: #2A408E;
+    }
+     .indexReview-all .swiper-button-prev{
+        left: 0px;
+       
+        top: 62%;
+    }
+    .bg_img{
+        width: 249px;
+        height: 234px;
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        transform: translate(-50%);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .indexReview_title{
+        padding-top: 60px;
+        color: #2A408E;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 160px;
+    }
+    .indexReview_text{
+        font-size: 20px;
+        font-weight: 400;
+        padding: 0 14%;
+        cursor: pointer;
+        color: #151515;
+        line-height: 42px;
+    }
+    .indexReview_review {
+        margin-top: 24px;
+        display: flex;
+        line-height: 1;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    .indexReview_review div:nth-child(2){
+        color: #151515;
+        font-size: 38px;
+        margin-left: 14px;
+        font-weight: 400;
+    }
+    .indexReview_reviewSvg svg{
+        width: 26px;
+        margin-left: 16px;
+        height: auto;
+    }
+    /* swiper */
+    .indexReview{
+        cursor: pointer;
+    }
+    .indexReview2{
+        margin-top: 16px;
+    }
+    .indexReview .swiper-slide, .indexReview2 .swiper-slide{
+        border-radius: 22px;
+        overflow: hidden;
+    }
+  
+    .indexReview .swiper-slide img, .indexReview2 .swiper-slide img{
+        width: 100%;
+    }
+    .indexReview .swiper-wrapper{
+        -webkit-transition-timing-function: linear; /*之前是ease-out*/ 
+        -moz-transition-timing-function: linear; 
+        -ms-transition-timing-function: linear; 
+        -o-transition-timing-function: linear; 
+        transition-timing-function: linear; 
+        margin: 0 auto; 
+    }
+    .indexReview2 .swiper-wrapper{
+        -webkit-transition-timing-function: linear; /*之前是ease-out*/ 
+    -moz-transition-timing-function: linear; 
+    -ms-transition-timing-function: linear; 
+    -o-transition-timing-function: linear; 
+    transition-timing-function: linear; 
+    margin: 0 auto; 
+    }
+    /* 播放暂停 */
+    .indexReview_paly{
+        margin: 62px 0 30px 0;
+        padding-right: 30px;
+        justify-content: flex-end;
+        display: flex;
+    }
+    .paly_swiper2{
+        display: none;
+    }
+}

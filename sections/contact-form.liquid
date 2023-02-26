@@ -1,0 +1,236 @@
+{{ 'contact-form.css' | asset_url | stylesheet_tag }}
+{%- if section.settings.background != settings.background and section.settings.background != 'rgba(0,0,0,0)' -%}
+  {%- assign blends_with_background = false -%}
+{%- else -%}
+  {%- assign blends_with_background = true -%}
+{%- endif -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    {%- if section.settings.background == 'rgba(0,0,0,0)' -%}
+      {%- assign section_background = settings.background -%}
+    {%- else -%}
+      {%- assign section_background = section.settings.background -%}
+    {%- endif -%}
+
+    {%- if section.settings.text_color == 'rgba(0,0,0,0)' -%}
+      {%- assign heading_color = settings.heading_color -%}
+      {%- assign text_color = settings.text_color -%}
+    {%- else -%}
+      {%- assign heading_color = section.settings.text_color -%}
+      {%- assign text_color = section.settings.text_color -%}
+    {%- endif -%}
+
+    {%- if section.settings.button_background == 'rgba(0,0,0,0)' -%}
+      {%- assign button_background = settings.primary_button_background -%}
+    {%- else -%}
+      {%- assign button_background = section.settings.button_background -%}
+    {%- endif -%}
+
+    {%- if section.settings.button_text_color == 'rgba(0,0,0,0)' -%}
+      {%- assign button_text_color = settings.primary_button_text_color -%}
+    {%- else -%}
+      {%- assign button_text_color = section.settings.button_text_color -%}
+    {%- endif -%}
+
+    --heading-color: {{ heading_color.red }}, {{ heading_color.green }}, {{ heading_color.blue }};
+    --text-color: {{ text_color.red }}, {{ text_color.green }}, {{ text_color.blue }};
+    --primary-button-background: {{ button_background.red }}, {{ button_background.green }}, {{ button_background.blue }};
+    --primary-button-text-color: {{ button_text_color.red }}, {{ button_text_color.green }}, {{ button_text_color.blue }};
+
+    --section-background: {{ section_background.red }}, {{ section_background.green }}, {{ section_background.blue }};
+  }
+</style>
+
+<section class="contact_all">
+  <div class="banner_Contact">
+    <div class="banner_or_video-boxsContact">
+        <div class="banner_positionsContactBox">
+            <img loading="lazy" class="pc" {% render 'image-attributes' , image: section.settings.image%}>
+            <img loading="lazy" class="mobile" {% render 'image-attributes' , image: section.settings.image_mobile%}>
+            <div class="banner_positionBoxsContact">
+                <div class="banner_positionBox_boxsContact container">
+                    <h1 class="banner_Contact_title">{{section.settings.title}}</h1>
+                    <div class="banner_Contact_text">{{section.settings.content}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="section__color-wrapper">
+    <div class="container">
+      <div class="contact {% unless blends_with_background %}vertical-breather{% endunless %}">
+        <!-- from表单 -->
+        <div class="contact__main">
+          <div class="contact__main_left">
+              {% for block in section.blocks %}
+                  <div class="contact__main_leftBox">
+                      <div class="contact__main_leftSvg">{{block.settings.svg}}</div>
+                      <div class="contact__main_leftText pc">{{block.settings.text}}</div>
+                      <div class="contact__main_leftText mobile">{{block.settings.text_mobile}}</div>
+                  </div>
+              {% endfor %}
+          </div>
+          <!-- from -->
+            <div class="contact__main_right">
+              {%- form 'contact', class: 'contact__form form' -%}
+                {%- if form.posted_successfully? -%}
+                  <div class="banner banner--success form__banner">
+                    <span class="banner__ribbon">{% render 'icon' with 'form-success' %}</span>
+                    <p class="banner__content">{{ 'contact.form.successfully_sent' | t }}</p>
+                  </div>
+                {%- endif -%}
+    
+                {%- if form.errors -%}
+                  <div class="form__banner banner banner--error">
+                    <span class="banner__ribbon">{% render 'icon' with 'form-error' %}</span>
+    
+                    <div class="banner__content">
+                      {{- form.errors | default_errors -}}
+                    </div>
+                  </div>
+                {%- endif -%}
+                <div class="contact__main_rightTitle ebike_title2">Let’s get in touch</div>
+                <div class="contact__main_rightText">We would love to hear from you before your purchase. Drop us a message and we will respond within 1 working business day.</div>
+                <div class="contact_from_name">
+                    <div class="input ">
+                      <input id="contact-form-name" type="text" class="input__field {% if customer.name != blank %}is-filled{% endif %}" name="contact[name]" aria-label="{{ 'contact.form.name' | t }}" required {% if customer %}value="{{ customer.name }}"{% endif %}>
+                      <label for="contact-form-name" class="input__label"><span>*</span>{{ 'contact.form.name' | t }}</label>
+                    </div>
+        
+                    <div class="input contact_from_email">
+                      <input id="contact-form-email" type="email" class="input__field {% if customer.email != blank %}is-filled{% endif %}" name="contact[email]" aria-label="{{ 'contact.form.email' | t }}" required {% if customer %}value="{{ customer.email }}"{% endif %}>
+                      <label for="contact-form-email" class="input__label"><span>*</span>{{ 'contact.form.email' | t }}</label>
+                    </div>
+                </div>
+        
+    
+                <div class="input contact-form-message">
+                  <textarea id="contact-form-message" name="contact[body]" rows="4" class="input__field input__field--textarea" aria-label="{{ 'contact.form.message' | t }}" required></textarea>
+                  <label for="contact-form-message" class="input__label"><span>*</span>{{ 'contact.form.message' | t }}</label>
+                </div>
+    
+                <button is="loader-button" type="submit" class="form__submit button button--primary button--full">{{ 'contact.form.submit' | t }}</button>
+              {%- endform -%}
+
+              {% if section.settings.temporary_info_switch %}
+                <style>
+                  .contact__main_right {position:relative;}
+                  .temporary-info {position: absolute;bottom: -60px;left:30px;}
+                  .temporary-info > p{font-size:12px;color:#999;line-height:16px;margin:0;}
+                  @media screen and (max-width: 768px) {
+                    .temporary-info {bottom:-70px;}
+                  }
+                </style>
+              <div class='temporary-info'>
+                {{ section.settings.temporary_info_text }}
+              </div>
+              {% endif %}
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Contact",
+  "class": "shopify-section--contact-form",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "temporary_info_switch",
+      "label": "Is Show Temporary Info",
+      "default": false
+    },
+    {
+      "type": "richtext",
+      "id": "temporary_info_text",
+      "label": "Temporary Text",
+      "default": "<p>Company Name: HETECHI LTD Registration Number: 11871191 Company Address: 53 Durham Road, Bromley, England, BR2 0SN</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "image mobile"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Contact Us"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text",
+      "default": "rgba(0,0,0,0)"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text field",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "svg",
+          "label": "svg"
+        
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "text"
+        
+        },
+        {
+          "type": "richtext",
+          "id": "text_mobile",
+          "label": "text Mobile"
+        
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact form",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

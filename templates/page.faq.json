@@ -1,0 +1,290 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "1661741831d0d3d0c7": {
+      "type": "jd-pagePolicy",
+      "blocks": {
+        "77e61b8e-8d2d-411c-b8d9-e924d301c932": {
+          "type": "pagePolicy_nav",
+          "settings": {
+            "svg": "<?xml version=\"1.0\" standalone=\"no\"?><svg t=\"1661305857920\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"15156\" width=\"30\" height=\"30\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><defs><style type=\"text\/css\">@font-face { font-family: feedback-iconfont; src: url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.woff2?t=1630033759944\") format(\"woff2\"), url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.woff?t=1630033759944\") format(\"woff\"), url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.ttf?t=1630033759944\") format(\"truetype\"); }\n<\/style><\/defs><path d=\"M510.686075 63.10934c-247.473301 0-448.840518 201.039759-448.840518 448.176392s201.3621 448.181509 448.840518 448.181509c247.472278 0 448.839495-201.044876 448.839495-448.181509S758.162446 63.10934 510.686075 63.10934L510.686075 63.10934 510.686075 63.10934 510.686075 63.10934 510.686075 63.10934 510.686075 63.10934zM510.686075 911.385153c-220.932832 0-400.662239-179.492-400.662239-400.099421 0-220.612537 179.729407-400.078954 400.662239-400.078954 220.931808 0 400.661216 179.466418 400.661216 400.078954S731.617883 911.385153 510.686075 911.385153L510.686075 911.385153 510.686075 911.385153 510.686075 911.385153 510.686075 911.385153 510.686075 911.385153zM619.266026 276.854469l-71.278393 131.145899c-19.022239 35.533284-30.617321 59.173704-34.874275 70.867024l-1.238201 0c-12.524245-28.465309-47.892777-95.782483-106.132202-202.012923l-67.041906 0 124.665301 213.826993-102.217033 0 0 47.27163 119.816876 0 0 65.107857L361.15341 603.060949l0 47.828308 119.816876 0 0 94.828762 59.438741 0 0-94.833879 115.585505 0 0-47.823192L540.41005 603.060949l0-65.107857 115.585505 0 0-47.27163L556.805462 490.681462l125.864616-213.826993L619.266026 276.854469 619.266026 276.854469 619.266026 276.854469 619.266026 276.854469 619.266026 276.854469 619.266026 276.854469zM619.266026 276.854469\" p-id=\"15157\"><\/path><\/svg>",
+            "title": "Payment",
+            "link": "shopify:\/\/pages\/payment"
+          }
+        },
+        "8ad7c541-90d5-4318-b6d6-dd1a7bbb9fa1": {
+          "type": "pagePolicy_nav",
+          "settings": {
+            "svg": "<?xml version=\"1.0\" standalone=\"no\"?><svg t=\"1661237265180\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"8192\" width=\"30\" height=\"30\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><defs><style type=\"text\/css\">@font-face { font-family: feedback-iconfont; src: url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.woff2?t=1630033759944\") format(\"woff2\"), url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.woff?t=1630033759944\") format(\"woff\"), url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.ttf?t=1630033759944\") format(\"truetype\"); }\n<\/style><\/defs><path d=\"M901.12 128l-381.44-76.8h-12.8-2.56l-381.44 76.8c-12.8 2.56-20.48 12.8-20.48 25.6v332.8c0 253.44 202.24 435.2 404.48 486.4h10.24c199.68-51.2 404.48-232.96 404.48-486.4v-332.8c0-12.8-7.68-23.04-20.48-25.6z m-30.72 358.4c0 222.72-179.2 386.56-358.4 435.2-179.2-48.64-358.4-209.92-358.4-435.2v-312.32l358.4-71.68 358.4 71.68V486.4z\" p-id=\"8193\"><\/path><path d=\"M409.6 230.4c-28.16 0-56.32 7.68-81.92 20.48-15.36 7.68-17.92 28.16-5.12 40.96l87.04 87.04-30.72 30.72-87.04-87.04c-5.12-5.12-10.24-7.68-17.92-7.68-10.24 0-17.92 5.12-23.04 15.36-33.28 66.56-23.04 151.04 33.28 207.36 35.84 35.84 79.36 51.2 125.44 51.2 20.48 0 40.96-2.56 58.88-10.24l145.92 140.8 17.92 17.92c10.24 10.24 25.6 10.24 35.84 0l17.92-17.92 35.84-35.84 17.92-17.92c10.24-10.24 10.24-25.6 0-35.84l-17.92-17.92-145.92-140.8c23.04-64 7.68-135.68-40.96-186.88-33.28-35.84-79.36-53.76-125.44-53.76z m120.32 222.72c-7.68 17.92-2.56 38.4 12.8 53.76l145.92 140.8-35.84 35.84-145.92-140.8c-10.24-10.24-23.04-15.36-35.84-15.36-5.12 0-10.24 0-17.92 2.56-12.8 5.12-28.16 7.68-43.52 7.68-33.28 0-66.56-12.8-89.6-38.4-30.72-30.72-43.52-71.68-35.84-112.64l58.88 58.88c10.24 10.24 23.04 15.36 35.84 15.36 12.8 0 25.6-5.12 35.84-15.36l30.72-30.72c20.48-20.48 20.48-53.76 0-71.68l-58.88-58.88c7.68-2.56 15.36-2.56 23.04-2.56 33.28 0 66.56 12.8 89.6 38.4 35.84 33.28 46.08 87.04 30.72 133.12z\" p-id=\"8194\"><\/path><\/svg>",
+            "title": "Warranty",
+            "link": "shopify:\/\/pages\/warranty"
+          }
+        },
+        "b99e5582-15ae-4a7e-992c-34514f4dd20c": {
+          "type": "pagePolicy_nav",
+          "settings": {
+            "svg": "<svg t=\"1668156702780\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"2810\" width=\"200\" height=\"200\"><path d=\"M1004 767.2h-72c-8.8 0-16-7.2-16-15.2-1.6-46.4-39.2-83.2-85.6-83.2-46.4 0-84 36.8-85.6 83.2 0 8.8-7.2 15.2-16 15.2h-72c-8.8 0-16-7.2-16-16v-464c0-8.8 7.2-16 16-16h176c102.4 0 186.4 84 186.4 186.4v293.6c0.8 8.8-6.4 16-15.2 16z m-57.6-32h41.6V457.6c0-84.8-69.6-154.4-154.4-154.4h-160v432h41.6c8.8-56 57.6-98.4 116-98.4s106.4 41.6 115.2 98.4z\" p-id=\"2811\" fill=\"#666666\"><\/path><path d=\"M936 544.8H725.6c-4.8 0-8-3.2-8-8V358.4c0-4.8 3.2-8 8-8h108.8c60.8 0 109.6 48.8 109.6 109.6v76.8c0 4.8-4 8-8 8z m-202.4-16H928v-68.8c0-52-41.6-93.6-93.6-93.6H733.6v162.4zM830.4 871.2c-64.8 0-117.6-52.8-117.6-117.6s52.8-117.6 117.6-117.6 117.6 52.8 117.6 117.6-52.8 117.6-117.6 117.6z m0-202.4c-47.2 0-85.6 38.4-85.6 85.6s38.4 85.6 85.6 85.6c47.2 0 85.6-38.4 85.6-85.6s-38.4-85.6-85.6-85.6z\" p-id=\"2812\" fill=\"#666666\"><\/path><path d=\"M830.4 799.2c-24.8 0-45.6-20.8-45.6-45.6s20.8-45.6 45.6-45.6 45.6 20.8 45.6 45.6c0 25.6-20 45.6-45.6 45.6z m0-74.4c-16 0-29.6 13.6-29.6 29.6s13.6 29.6 29.6 29.6 29.6-13.6 29.6-29.6c0-16.8-12.8-29.6-29.6-29.6zM178.4 871.2c-64.8 0-117.6-52.8-117.6-117.6s52.8-117.6 117.6-117.6S296 688.8 296 753.6s-52.8 117.6-117.6 117.6z m0-202.4c-47.2 0-85.6 38.4-85.6 85.6S131.2 840 178.4 840c47.2 0 85.6-38.4 85.6-85.6s-38.4-85.6-85.6-85.6z\" p-id=\"2813\" fill=\"#666666\"><\/path><path d=\"M178.4 799.2c-24.8 0-45.6-20.8-45.6-45.6s20.8-45.6 45.6-45.6 45.6 20.8 45.6 45.6c0 25.6-20 45.6-45.6 45.6z m0-74.4c-16 0-29.6 13.6-29.6 29.6s13.6 29.6 29.6 29.6 29.6-13.6 29.6-29.6c0-16.8-12.8-29.6-29.6-29.6zM481.6 871.2c-64.8 0-117.6-52.8-117.6-117.6s52.8-117.6 117.6-117.6 117.6 52.8 117.6 117.6-52.8 117.6-117.6 117.6z m0-202.4c-47.2 0-85.6 38.4-85.6 85.6S434.4 840 481.6 840c47.2 0 85.6-38.4 85.6-85.6s-38.4-85.6-85.6-85.6z\" p-id=\"2814\" fill=\"#666666\"><\/path><path d=\"M481.6 799.2c-24.8 0-45.6-20.8-45.6-45.6s20.8-45.6 45.6-45.6 45.6 20.8 45.6 45.6c0 25.6-20 45.6-45.6 45.6z m0-74.4c-16 0-29.6 13.6-29.6 29.6s13.6 29.6 29.6 29.6 29.6-13.6 29.6-29.6c0-16.8-12.8-29.6-29.6-29.6zM178.4 871.2c-64.8 0-117.6-52.8-117.6-117.6s52.8-117.6 117.6-117.6S296 688.8 296 753.6s-52.8 117.6-117.6 117.6z m0-202.4c-47.2 0-85.6 38.4-85.6 85.6S131.2 840 178.4 840c47.2 0 85.6-38.4 85.6-85.6s-38.4-85.6-85.6-85.6z\" p-id=\"2815\" fill=\"#666666\"><\/path><path d=\"M178.4 799.2c-24.8 0-45.6-20.8-45.6-45.6s20.8-45.6 45.6-45.6 45.6 20.8 45.6 45.6c0 25.6-20 45.6-45.6 45.6z m0-74.4c-16 0-29.6 13.6-29.6 29.6s13.6 29.6 29.6 29.6 29.6-13.6 29.6-29.6c0-16.8-12.8-29.6-29.6-29.6zM481.6 871.2c-64.8 0-117.6-52.8-117.6-117.6s52.8-117.6 117.6-117.6 117.6 52.8 117.6 117.6-52.8 117.6-117.6 117.6z m0-202.4c-47.2 0-85.6 38.4-85.6 85.6S434.4 840 481.6 840c47.2 0 85.6-38.4 85.6-85.6s-38.4-85.6-85.6-85.6z\" p-id=\"2816\" fill=\"#666666\"><\/path><path d=\"M481.6 799.2c-24.8 0-45.6-20.8-45.6-45.6s20.8-45.6 45.6-45.6 45.6 20.8 45.6 45.6c0 25.6-20 45.6-45.6 45.6z m0-74.4c-16 0-29.6 13.6-29.6 29.6s13.6 29.6 29.6 29.6 29.6-13.6 29.6-29.6c0-16.8-12.8-29.6-29.6-29.6z\" p-id=\"2817\" fill=\"#666666\"><\/path><path d=\"M656.8 767.2h-73.6c-8.8 0-16-7.2-16-15.2-1.6-46.4-39.2-83.2-85.6-83.2-46.4 0-84 36.8-85.6 83.2 0 8.8-7.2 15.2-16 15.2H280c-8.8 0-16-7.2-16-15.2-1.6-46.4-39.2-83.2-85.6-83.2-46.4 0-84 36.8-85.6 83.2 0 8.8-7.2 15.2-16 15.2H20c-8.8 0-16-7.2-16-16V168.8c0-8.8 7.2-16 16-16h636.8c8.8 0 16 7.2 16 16v582.4c0 8.8-6.4 16-16 16z m-59.2-32h43.2V184.8H36v550.4h26.4c8.8-56 57.6-98.4 116-98.4s107.2 42.4 116 98.4h72c8.8-56 57.6-98.4 116-98.4s106.4 41.6 115.2 98.4z\" p-id=\"2818\" fill=\"#666666\"><\/path><\/svg>",
+            "title": "Shipping",
+            "link": "shopify:\/\/pages\/shipping"
+          }
+        },
+        "e79f99bc-71c9-48ac-ba5c-1d94022c187e": {
+          "type": "pagePolicy_nav",
+          "disabled": true,
+          "settings": {
+            "svg": "<?xml version=\"1.0\" standalone=\"no\"?><svg t=\"1661305988578\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"17270\" width=\"40\" height=\"40\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><defs><style type=\"text\/css\">@font-face { font-family: feedback-iconfont; src: url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.woff2?t=1630033759944\") format(\"woff2\"), url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.woff?t=1630033759944\") format(\"woff\"), url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.ttf?t=1630033759944\") format(\"truetype\"); }\n<\/style><\/defs><path d=\"M306.820741 191.525926c-51.579259 11.188148-103.632593 63.241481-114.820741 114.820741-21.428148 99.176296 53.475556 186.785185 148.954074 186.785185l152.651852 0 0-6.447407 0-31.478519L493.605926 333.937778l-0.18963 0C489.623704 241.682963 403.816296 170.571852 306.820741 191.525926zM455.68 455.205926l-114.725926 0c-63.905185 0-115.579259-52.242963-114.725926-116.337778 0.853333-61.819259 51.294815-112.260741 113.114074-113.114074 64.094815-0.853333 116.337778 50.820741 116.337778 114.725926L455.68 455.205926z\" p-id=\"17271\"><\/path><path d=\"M832.663704 306.346667c-11.188148-51.579259-63.241481-103.632593-114.820741-114.820741-96.900741-20.954074-182.802963 50.157037-186.595556 142.506667l-0.18963 0 0 121.173333 0 31.478519 0 6.447407 152.651852 0C779.093333 493.131852 854.091852 405.522963 832.663704 306.346667zM568.983704 340.48c0-63.905185 52.242963-115.579259 116.337778-114.725926 61.819259 0.853333 112.260741 51.294815 113.114074 113.114074 0.853333 64.094815-50.820741 116.337778-114.725926 116.337778l-114.725926 0L568.983704 340.48z\" p-id=\"17272\"><\/path><path d=\"M192 717.842963c11.188148 51.579259 63.241481 103.632593 114.820741 114.820741 96.900741 20.954074 182.802963-50.157037 186.595556-142.506667l0.18963 0L493.605926 568.983704l0-31.478519 0-6.447407-152.651852 0C245.475556 531.057778 170.571852 618.666667 192 717.842963zM455.68 683.70963c0 63.905185-52.242963 115.579259-116.337778 114.725926-61.819259-0.853333-112.260741-51.294815-113.114074-113.114074-0.853333-64.094815 50.820741-116.337778 114.725926-116.337778l114.725926 0L455.68 683.70963z\" p-id=\"17273\"><\/path><path d=\"M683.70963 531.057778l-152.651852 0 0 6.447407 0 31.478519 0 121.173333 0.18963 0c3.887407 92.34963 89.694815 163.460741 186.595556 142.506667 51.579259-11.188148 103.632593-63.241481 114.820741-114.820741C854.091852 618.666667 779.093333 531.057778 683.70963 531.057778zM798.435556 685.321481C797.582222 747.140741 747.140741 797.582222 685.321481 798.435556c-64.094815 0.853333-116.337778-50.820741-116.337778-114.725926l0-114.725926 114.725926 0C747.614815 568.983704 799.288889 621.226667 798.435556 685.321481z\" p-id=\"17274\"><\/path><\/svg>",
+            "title": "Terms Of Service",
+            "link": "shopify:\/\/pages\/terms-of-service"
+          }
+        },
+        "c1bd9b1d-24f6-4ab0-b5de-6c1ddc00daa5": {
+          "type": "pagePolicy_nav",
+          "settings": {
+            "svg": "<?xml version=\"1.0\" standalone=\"no\"?><svg t=\"1661306150881\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"17634\" width=\"30\" height=\"30\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><defs><style type=\"text\/css\">@font-face { font-family: feedback-iconfont; src: url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.woff2?t=1630033759944\") format(\"woff2\"), url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.woff?t=1630033759944\") format(\"woff\"), url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.ttf?t=1630033759944\") format(\"truetype\"); }\n<\/style><\/defs><path d=\"M552.96 92.16C321.536 92.16 133.12 280.576 133.12 512c0 16.384 2.048 32.768 2.048 49.152L86.016 512c-8.192-8.192-20.48-8.192-28.672 0-8.192 8.192-8.192 20.48 0 28.672L151.552 634.88c4.096 4.096 8.192 4.096 12.288 6.144h10.24c4.096-2.048 10.24-6.144 12.288-12.288l90.112-88.064c8.192-8.192 8.192-20.48 0-28.672s-20.48-8.192-28.672 0l-67.584 65.536c-4.096-22.528-6.144-43.008-6.144-65.536C174.08 303.104 344.064 133.12 552.96 133.12S931.84 303.104 931.84 512 761.856 890.88 552.96 890.88c-40.96 0-81.92-6.144-120.832-18.432-10.24-4.096-22.528 2.048-26.624 12.288-4.096 10.24 2.048 22.528 12.288 26.624 43.008 14.336 88.064 20.48 133.12 20.48 231.424 0 419.84-188.416 419.84-419.84S784.384 92.16 552.96 92.16z\" p-id=\"17635\"><\/path><path d=\"M524.288 772.096c0 12.288 8.192 20.48 20.48 20.48s20.48-8.192 20.48-20.48v-126.976h126.976c12.288 0 20.48-8.192 20.48-20.48s-8.192-20.48-20.48-20.48h-126.976v-90.112h126.976c12.288 0 20.48-8.192 20.48-20.48s-8.192-20.48-20.48-20.48H593.92l104.448-104.448c8.192-8.192 8.192-20.48 0-28.672-8.192-8.192-20.48-8.192-28.672 0l-124.928 124.928-124.928-124.928c-8.192-8.192-20.48-8.192-28.672 0-8.192 8.192-8.192 20.48 0 28.672l104.448 104.448h-98.304c-12.288 0-20.48 8.192-20.48 20.48s8.192 20.48 20.48 20.48h126.976v90.112h-126.976c-12.288 0-20.48 8.192-20.48 20.48s8.192 20.48 20.48 20.48h126.976v126.976z\" p-id=\"17636\"><\/path><\/svg>",
+            "title": "Return&refund",
+            "link": "shopify:\/\/pages\/return-refund"
+          }
+        },
+        "6b1e6898-8a05-4633-8fea-7a727280d341": {
+          "type": "pagePolicy_nav",
+          "settings": {
+            "svg": "<?xml version=\"1.0\" standalone=\"no\"?><svg t=\"1661306355707\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"21855\" width=\"20\" height=\"20\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><defs><style type=\"text\/css\">@font-face { font-family: feedback-iconfont; src: url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.woff2?t=1630033759944\") format(\"woff2\"), url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.woff?t=1630033759944\") format(\"woff\"), url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.ttf?t=1630033759944\") format(\"truetype\"); }\n<\/style><\/defs><path d=\"M480.407 960.198c-168.165-67.786-315.734-66.586-438.308 3.6A17.196 17.196 0 0 1 16.304 948.8V236.55a17.196 17.196 0 0 1 8.599-14.997 539.486 539.486 0 0 1 96.38-41.59c21.795-6.8 31.992 26.194 10.397 32.992a514.492 514.492 0 0 0-80.783 33.793v673.458c126.773-61.987 275.342-59.387 442.507 7.999 199.958 80.383 356.925 81.583 479.899 3.599V259.745c-129.773 72.985-291.339 68.986-492.696-11.797a812.629 812.629 0 0 0-112.977-36.193c-22.395-5.198-14.197-38.791 7.999-33.592a847.622 847.622 0 0 1 117.975 37.792c203.957 81.982 363.523 81.582 487.497-1.4a17.196 17.196 0 0 1 26.795 14.397v712.25a17.196 17.196 0 0 1-7.599 14.397c-157.367 104.978-344.527 74.984-519.89 4.599zM236.458 278.14c-80.983-133.371-89.981-139.77-89.981-176.562a101.579 101.579 0 0 1 203.157 0c0 33.193-6.398 37.192-83.182 175.963a17.196 17.196 0 0 1-29.994 0.4z m11.398-243.348a66.786 66.786 0 0 0-66.786 66.586c0 24.395 4.399 25.994 69.585 133.372 60.787-109.977 64.586-111.577 64.586-133.372a66.986 66.986 0 0 0-67.385-66.586z m442.506 824.426c-19.995-11.397-2.599-41.191 17.197-29.993s43.79 16.796 67.186 12.197 28.994 29.394 6.598 33.793c-31.993 6.199-63.786-0.4-90.98-15.997z m146.97-52.389a258.346 258.346 0 0 0 47.19-59.787c10.797-19.996 41.19-3.8 30.393 16.196a289.14 289.14 0 0 1-54.188 68.986c-16.797 15.197-40.192-9.998-23.395-25.595z m-207.957-14.597c-13.797-26.994-21.995-57.588-27.794-81.383s28.194-30.193 33.593-8.198 12.997 49.99 25.195 73.785c10.198 20.795-20.796 35.792-30.994 15.796z m-46.99-160.566c-9.198-31.993-19.396-51.19-32.993-61.987-17.796-14.197 3.6-41.191 21.396-26.994 25.194 19.996 37.192 52.989 44.79 79.383 6.399 21.995-26.794 31.593-33.193 9.598z m-181.762-76.984c26.995-5.799 40.792-17.396 77.384-25.994 22.195-5.2 30.194 28.394 7.998 33.593-33.193 7.998-46.99 19.596-78.183 26.194-22.395 4.8-29.194-28.994-7.199-33.793z m-84.582 17.996c-22.595-15.196-40.991-39.591-54.988-71.984-8.998-20.996 22.795-34.593 31.593-13.597 11.398 26.394 25.795 45.59 42.791 57.187s-0.4 41.192-19.396 28.394z m-77.783-155.567c-2.2-15.996-4.2-61.587-4.2-74.984 0-22.795 34.593-22.795 34.593 0 0 11.798 1.8 55.788 3.8 70.185 3.199 22.396-30.794 27.794-34.193 4.8z\" p-id=\"21856\"><\/path><\/svg>",
+            "title": "Track Your Order",
+            "link": "shopify:\/\/pages\/track-your-order"
+          }
+        },
+        "74d53d73-3826-4d67-b2a7-7bee45f9c876": {
+          "type": "pagePolicy_nav",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 626.75 833.37\"><defs><style>.cls-1,.cls-2{fill:#fff;}.cls-2{font-size:391.58px;font-family:SourceHanSansCN-Medium-GBpc-EUC-H, Source Han Sans CN;letter-spacing:-0.5em;}<\/style><\/defs><path class=\"cls-1\" d=\"M-725.62,562a316.7,316.7,0,0,1-66.21-7.19L-884,610.2l1.24-90.86c-70.69-42.5-117-112.78-117-192.41,0-129.8,122.77-235,274.21-235s274.2,105.23,274.2,235-122.76,235-274.2,235Zm0-509.24C-898.69,52.72-1039,175.51-1039,326.93c0,86.55,45.93,163.62,117.52,213.86V679.48l137.28-83.3a359.76,359.76,0,0,0,58.58,5c173.06,0,313.37-122.76,313.37-274.2S-552.56,52.72-725.62,52.72Z\" transform=\"translate(1039 -52.72)\"><\/path><text class=\"cls-2\" transform=\"translate(215.48 423.39)\">？<\/text><\/svg>",
+            "title": "FAQ",
+            "link": "shopify:\/\/pages\/faqs"
+          }
+        },
+        "55c1e10c-837f-42af-a746-3d04092f2269": {
+          "type": "pagePolicy_nav",
+          "disabled": true,
+          "settings": {
+            "svg": "<?xml version=\"1.0\" standalone=\"no\"?><svg t=\"1664353537114\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"5971\" width=\"128\" height=\"128\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><path d=\"M794.1 1018.8H211.9c-93 0-168.6-75.7-168.6-168.6V268c0-93 75.6-168.6 168.6-168.6h266.3c12.8 0 23.1 10.3 23.1 23.1s-10.3 23.1-23.1 23.1H211.9c-67.5 0-122.4 54.9-122.4 122.4v582.2c0 67.5 54.9 122.4 122.4 122.4h582.2c67.5 0 122.4-54.9 122.4-122.4V482.5c0-12.8 10.3-23.1 23.1-23.1s23.1 10.3 23.1 23.1v367.7c0 92.9-75.6 168.6-168.6 168.6zM378.7 707.2c11.8-27.9 23.3-54.7 34.6-80.4 5.3 5.3 13.1 7.8 21 6.2 278.2-58.6 407.3-186.3 384.2-379.7 91.5-1.1 142.1-19.9 158.3-58.5 17.1-40.7-8.1-92.1-81.1-163.2C862.9 5.3 826.5-3.1 787.5 6.8 664.4 37.9 516.7 261.2 336.2 689.2c-5 11.7 0.6 25.3 12.3 30.2 2.9 1.2 6 1.8 9 1.8 9 0.1 17.5-5.2 21.2-14z m486.5-641c76.1 74.3 72.1 103.5 69.1 110.7-3.3 7.7-23.1 32.7-142.2 30.1-6.8-0.5-13.6 2.8-18.1 8.1-4.5 5.3-6.4 12.4-5.1 19.2 33.8 180.5-76.7 295.7-337.7 352.1 183.8-408.6 300.4-518 367.6-535 6.7-1.7 13.3-2.5 19.6-2.5 17 0.1 32.6 6 46.8 17.3z\" p-id=\"5972\"><\/path><\/svg>",
+            "title": "Privacy Policy",
+            "link": "shopify:\/\/pages\/privacy-policy"
+          }
+        },
+        "074c2ca8-9eeb-426b-b545-9ab7933f3ce7": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "<?xml version=\"1.0\" standalone=\"no\"?><svg t=\"1661305724954\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"12635\" width=\"128\" height=\"128\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><defs><style type=\"text\/css\">@font-face { font-family: feedback-iconfont; src: url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.woff2?t=1630033759944\") format(\"woff2\"), url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.woff?t=1630033759944\") format(\"woff\"), url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.ttf?t=1630033759944\") format(\"truetype\"); }\n<\/style><\/defs><path d=\"M746.2 841.4H14.6a14.6 14.6 0 0 1-14.6-14.6V600a14.6 14.6 0 0 1 14.6-14.6h50.8v-122a14.6 14.6 0 0 1 14.6-14.6h90v-121.6a14.6 14.6 0 0 1 14.6-14.6h418.8a14.6 14.6 0 0 1 14.6 14.6v121.6h90a14.6 14.6 0 0 1 14.6 14.6v122h77.8l-28.8-373.6h-40.4l-14.8 194.2c-1.4 19.4-30.6 17-29.2-2.2L703 196a14.6 14.6 0 0 1 14.6-13.4h67.6a14.6 14.6 0 0 1 14.6 13.4l30 389.4h179.6a14.6 14.6 0 0 1 9.6 25.6L755.8 838a14.6 14.6 0 0 1-9.6 3.4zM29.2 812.2h711.6L970 614.6H29.2z m484.2-226.8h180.2v-107.6h-180.2z m-209.4 0h180.2v-107.6H304z m-209.4 0h180.2v-107.6H94.6z m494.2-136.6v-107h-180.2v107z m-209.4 0v-107H199.2v107z\" fill=\"#3A3E49\" p-id=\"12636\"><\/path><\/svg>",
+            "head": "1、Shipping",
+            "head_mobile": "Shipping",
+            "title": "Where do we ship for free?",
+            "text": "<p>We are currently able to ship the items to the 50 States and Washington D.C. in the U.S.We DO NOT ship to Puerto Rico, US Virgin Islands, Guam or other U.S. territories.We DO NOT ship to PO BOXES or APO.<\/p>"
+          }
+        },
+        "8009ef45-5bb0-4652-92a9-539285bd3231": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "",
+            "head": "",
+            "head_mobile": "",
+            "title": "How long will it take to receive my ebike?",
+            "text": "<p>Please refer to the shipping date on the product page. A shipping confirmation email will be sent to your email once the order has shipped. We will use FedEx Ground or UPS Ground to ship your bike orders. <br\/>Accessories will be shipped by USPS or DHL.<br\/>Shipping within the 48 contiguous States in the U.S. is FREE.<br\/>Shipping to the State of Alaska and Hawaii will be charged $100 shipping fee.<br\/>Accessories shipments are Free. Once the items arrived in our warehouse, please allow 2-7 business days of delivery. For any third-party shipping, we are unable to provide any additional shipping information or documentation. In addition, the delivery dates provided by BeeCool Bikes are estimated which may change as sometimes act of God may occur.<\/p>"
+          }
+        },
+        "4615085a-02a0-4f02-8cda-c694438e685c": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "",
+            "head": "",
+            "head_mobile": "",
+            "title": "Will my ebike arrive assembled?",
+            "text": "<p>Your bike will arrive 90% assembled. We will provide the tools and a comprehensive assembly video. You can assemble your ebike within 30 minutes. If you are unable to do the assembling work, you can also add a assembling services when you purchase the bike or book a mobile service at our service page. Our processional mechanics will goes to your door directly to do the assembling work.<\/p>"
+          }
+        },
+        "b764004d-46fa-4407-b7c9-984029361a6c": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "<?xml version=\"1.0\" standalone=\"no\"?><svg t=\"1666852163846\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"32133\" width=\"128\" height=\"128\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><path d=\"M483.882616 483.757772 184.580902 483.757772c-60.681034 0-110.049418-49.367361-110.049418-110.049418L74.531484 184.456059c0-60.681034 49.367361-110.049418 110.049418-110.049418l189.252295 0c60.681034 0 110.049418 49.367361 110.049418 110.049418L483.882616 483.757772zM184.580902 114.424052c-38.614459 0-70.030983 31.416524-70.030983 70.030983l0 189.253318c0 38.614459 31.416524 70.030983 70.030983 70.030983l259.283278 0L443.86418 184.456059c0-38.614459-31.416524-70.030983-70.030983-70.030983L184.580902 114.425076z\" p-id=\"32134\"><\/path><path d=\"M840.875263 483.757772 539.619034 483.757772 539.619034 184.456059c0-60.681034 49.367361-110.049418 110.049418-110.049418L840.875263 74.40664c60.681034 0 110.049418 49.367361 110.049418 110.049418l0 189.253318C950.924681 434.390411 901.556297 483.757772 840.875263 483.757772zM579.636446 443.74036 840.875263 443.74036c38.614459 0 70.030983-31.416524 70.030983-70.030983L910.906246 184.456059c0-38.614459-31.416524-70.030983-70.030983-70.030983L649.667429 114.425076c-38.615483 0-70.030983 31.416524-70.030983 70.030983L579.636446 443.74036z\" p-id=\"32135\"><\/path><path d=\"M373.83422 950.798814 184.580902 950.798814c-60.681034 0-110.049418-49.367361-110.049418-110.049418L74.531484 649.541563c0-60.681034 49.367361-110.049418 110.049418-110.049418l299.301713 0 0 301.257252C483.882616 901.43043 434.515255 950.798814 373.83422 950.798814zM184.580902 579.509557c-38.614459 0-70.030983 31.416524-70.030983 70.030983l0 191.208856c0 38.614459 31.416524 70.030983 70.030983 70.030983l189.252295 0c38.614459 0 70.030983-31.416524 70.030983-70.030983l0-261.239839L184.580902 579.509557z\" p-id=\"32136\"><\/path><path d=\"M840.875263 950.798814 649.667429 950.798814c-60.681034 0-110.049418-49.367361-110.049418-110.049418L539.618011 539.492144 840.875263 539.492144c60.681034 0 110.049418 49.367361 110.049418 110.049418l0 191.208856C950.924681 901.43043 901.556297 950.798814 840.875263 950.798814zM579.636446 579.509557l0 261.239839c0 38.614459 31.4155 70.030983 70.030983 70.030983L840.875263 910.780379c38.614459 0 70.030983-31.416524 70.030983-70.030983L910.906246 649.541563c0-38.614459-31.416524-70.030983-70.030983-70.030983L579.636446 579.51058z\" p-id=\"32137\"><\/path><\/svg>",
+            "head": "2、Support",
+            "head_mobile": "Support",
+            "title": "Why was my credit card payment fail?",
+            "text": "<p>If you pay with credit card, your payment could be  somehow denied at the checkout by our system in defense against possible credit card fraud. It's a good idea to call your credit card company or bank ahead of time to let them know about the purchase so that it doesn't get declined. Under such circumstance, here are 3 solutions for you:1. Please switch to your other credit or debit card.2. If you have a Paypal account, please try to pay by PayPal.3. If you do not have a Paypal account, please select PayPal still at the checkout page & click the complete order button. Then you'll be directed to a page with access to both PayPal and Debit\/Credit card payment (for the latter option, you don't have to register for PayPal).Then you can complete your order with your credit card.<\/p>"
+          }
+        },
+        "453c9a18-0c72-4784-b01e-a94433b6a7c2": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "",
+            "head": "",
+            "head_mobile": "",
+            "title": "If something goes wrong on my ebike during the warranty period, what should I do?",
+            "text": "<p>We believe that communication is the best way to solve the problems. Please contact us in time. To help you solve the problem as quickly as possible, please describe the problem in details and provide photos and videos to us by sending E-mails, so that we could find the problems. All our ebikes come with a 2-year manufacture’s warranty. To learn more about the warranty, please read our warranty page.<\/p>"
+          }
+        },
+        "e9254350-313c-4ef5-81e1-262d47c3ce26": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "",
+            "head": "",
+            "head_mobile": "",
+            "title": "What should I do if I need a repair of my ebike?",
+            "text": "<p>We have professional technician teams to solve your issue and if you have any issues after receiving the bike, please contact us and we will arrange our teams to solve your issues in time. We also provide a mobile service for our customers but you have to pay for the mobile service by yourself. You can book a service at our mobile service page. Our processional mechanics will goes to your door directly to do the assembling or repairing work.<\/p>"
+          }
+        },
+        "428ec6d1-0ac6-4c2a-bf4f-22e5fba6d113": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "",
+            "head": "",
+            "head_mobile": "",
+            "title": "How to change my order?",
+            "text": "<p>If you need to change the color of your bike, or switch the accessories on your order, or if you ordered the wrong product, we are here to help. It is our goal to make sure any mistakes or changes to your order are corrected before the shipment occurs. Check out the options below to learn how to make a change to an order.<\/p><p><strong>Changing an order that has not shipped<\/strong><\/p><p>We cannot modify an existing order for a product swap. To change a bike or accessories on the order to a different color or products, we need to remove it from the order or cancel the entire order, and refund the payment back. From there, you can place a new order for the correct item through our website.<\/p><p><strong>Changing an order that has shipped<\/strong><\/p><p>If the items in your order have already shipped, we cannot cancel your order. However, you are welcomed to work with our Returns team to return the order after you've received it. To learn more about the returns process, please check our Return & Refund Policy.<\/p>"
+          }
+        },
+        "4625fafc-4ed0-4f4b-a196-4c79278942c6": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 626.75 833.37\"><defs><style>.cls-1,.cls-2{fill:#fff;}.cls-2{font-size:391.58px;font-family:SourceHanSansCN-Medium-GBpc-EUC-H, Source Han Sans CN;letter-spacing:-0.5em;}<\/style><\/defs><path class=\"cls-1\" d=\"M-725.62,562a316.7,316.7,0,0,1-66.21-7.19L-884,610.2l1.24-90.86c-70.69-42.5-117-112.78-117-192.41,0-129.8,122.77-235,274.21-235s274.2,105.23,274.2,235-122.76,235-274.2,235Zm0-509.24C-898.69,52.72-1039,175.51-1039,326.93c0,86.55,45.93,163.62,117.52,213.86V679.48l137.28-83.3a359.76,359.76,0,0,0,58.58,5c173.06,0,313.37-122.76,313.37-274.2S-552.56,52.72-725.62,52.72Z\" transform=\"translate(1039 -52.72)\"><\/path><text class=\"cls-2\" transform=\"translate(215.48 423.39)\">？<\/text><\/svg>",
+            "head": "3、Legality",
+            "head_mobile": "Legality",
+            "title": "Do I need a license to ride an ebike on road?",
+            "text": "<p>No. All the models of BeeCool ebikes comply with the specifications of the US law and you do not need a license to ride it.<\/p>"
+          }
+        },
+        "b53e1bdc-29ea-4edd-abfe-14afc7200d86": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "",
+            "head": "",
+            "head_mobile": "",
+            "title": "Where can I ride my ebike?",
+            "text": "<p>An electric bike is legally treated the same as a regular bike. You can ride an electric bike at any location where you can ride your regular bike.<\/p>"
+          }
+        },
+        "a81784a0-0c89-43d5-8a5d-341e04ed2311": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "<?xml version=\"1.0\" standalone=\"no\"?><svg t=\"1666850530617\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"30991\" width=\"128\" height=\"128\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><path d=\"M526.848 886.784c202.666667-81.066667 371.221333-327.530667 373.397333-545.92l0.853334-85.333333c0-1.408-2.090667-3.733333-3.52-3.861334l-6.656-0.64c-100.074667-9.770667-247.658667-58.517333-333.952-110.293333l-30.250667-18.133333c-5.418667-3.264-18.282667-2.602667-23.253333 1.130666-81.792 61.354667-226.581333 116.586667-328.362667 125.226667l-38.144 3.264c-1.664 0.149333-3.861333 2.517333-3.882667 4.138667l-0.853333 85.333333c-2.154667 218.197333 162.538667 464.128 364.928 545.066667l14.848 5.952 14.848-5.930667zM90.410667 255.936c0.234667-23.530667 19.264-44.202667 42.922666-46.229333l38.144-3.242667C265.28 198.485333 402.474667 146.154667 477.866667 89.6c18.858667-14.144 50.517333-15.786667 70.826666-3.605333l30.229334 18.154666c80.853333 48.512 222.336 95.253333 316.138666 104.405334l6.656 0.64c23.466667 2.282667 42.261333 23.232 42.026667 46.741333l-0.853333 85.333333c-2.346667 235.690667-181.461333 497.621333-400.213334 585.130667L512 938.666667l-30.677333-12.266667C262.613333 838.933333 87.232 577.109333 89.578667 341.290667l0.853333-85.354667z\" fill=\"#3D3D3D\" p-id=\"30992\"><\/path><path d=\"M356.416 496.917333a21.333333 21.333333 0 0 0-30.165333 30.165334l149.333333 149.333333a21.333333 21.333333 0 0 0 31.850667-1.92l234.666666-298.666667a21.333333 21.333333 0 1 0-33.536-26.346666L488.746667 629.248l-132.330667-132.330667z\" fill=\"#3D3D3D\" p-id=\"30993\"><\/path><\/svg>",
+            "head": "4、Product",
+            "head_mobile": "Product",
+            "title": "How long does it take to charge the battery?",
+            "text": "<p>Under normal circumstances, charging the battery from empty to full typically takes 6-9 hours. In rare cases, it may take longer to allow the battery management system to balance the battery, particularly when the bike is new or after long periods of storage.<\/p>"
+          }
+        },
+        "757234d6-8ea4-48bf-a7b0-883934ac8236": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "",
+            "head": "",
+            "head_mobile": "",
+            "title": "Should l completely drain the battery before charging?",
+            "text": "<p>It’s not necessary to completely drain the battery before charging. Of course on many batteries this is preferred, however our batteries are all high-tech batteries from Lishen and have built-in mechanisms that protect the battery from overcharging.<\/p>"
+          }
+        },
+        "82f14b2a-318b-411a-94a5-cbfa3e1dafba": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "",
+            "head": "",
+            "head_mobile": "",
+            "title": "How to clean my BeeCool ebike ?",
+            "text": "<p>Just cleaning your BeeCool ebike like cleaning a regular bike. The battery can handle water, but it is recommended to remove the battery before hosing down your ebike.<\/p>"
+          }
+        },
+        "84ec1726-4db1-4839-a004-f44ade1cd9aa": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "",
+            "head": "",
+            "head_mobile": "",
+            "title": "Are BeeCool ebikes able to be ridden in the rain?",
+            "text": "<p>BeeCool ebikes are able to be ridden in light rain, the battery is water resistant but not waterproof. Other components can be damaged by water or exposure to heavy rain. It’s never a good idea to leave any e-bike outside in the rain.<\/p>"
+          }
+        },
+        "4066f5a2-27ae-4af9-a2d7-c81bf8068c93": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "",
+            "head": "",
+            "head_mobile": "",
+            "title": "Are BeeCool ebikes able to be ridden on wet, icy and sandy roads?",
+            "text": "<p>BeeCool ebikes perform well in wet conditions.The electrical components are all designed to operate well while riding in all terrains, including rainy conditions, icy and sandy roads. But ebikes are not meant for use in large puddles, streams, or very heavy rain. So if you riding in rainy or icy conditions, please take care.  Especially park the bike in a dry location after riding to allow the components to dry. And ebike performance on hills depends on factors including the weight of rider, steepness of the hill, cargo load on the bike, and more.<\/p>"
+          }
+        },
+        "8b64c9e7-7d5a-4a23-a6a4-00e5129d9041": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "",
+            "head": "",
+            "head_mobile": "",
+            "title": "Do BeeCool ebikes require maintenance?",
+            "text": "<p>All bikes (including ebikes) require maintenance over time to keep the bike safe and fun to ride.Below is a list of regular maintenance activities you can expect to perform while owning a bike:1.Inspect the bike. Periodically and before each ride, check the bike components for signs of improper alignment, security and function. 2.Clean the bike.<\/p><p>As needed, the bike should only be cleaned with a moist rag and non-corrosive biodegradable cleaners. Do not use a pressure washers or hose to clean the bike. This can cause water damage to electrical components and will likely void the warranty.3.Perform maintenance checks. We advice that once a year you can Perform the checks .Consult a local, certified, and reputable bike mechanic (or you can consult the customer service of our website for maintenance help).<\/p><p>Take note of any component wear such as cracks, scratches, or changes in color or operation. These changes may indicate that a part needs to be serviced or replaced. If the useful life of a component is surpassed it can cause unexpected loss of function, which can result in damage, serious injury, or even death.<\/p>"
+          }
+        },
+        "73178692-d3b4-428d-b23b-dea3069e874a": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "",
+            "head": "",
+            "head_mobile": "",
+            "title": "Do BeeCool ebikes works in cold\/hot weather?",
+            "text": "<p>The theoretical working temperature of the battery is -4℉ to 131℉. But we suggest you keep your ebike works in the environment from 23℉ to 113℉. <\/p><p>In addition, please make sure to charge the battery in the environment from 32℉ to 113℉.<\/p><p>Using the battery in a low-temperature environment will shorten the total travel range of the ebike (lower than 32℉, 80% of max range; lower than 14℉, 70% of max range).<\/p><p>Always using the battery in a high-temperature environment (over 95℉) may shorten the battery life. DO NOT use the battery in an environment over 140℉, which may cause safety issues.<\/p>"
+          }
+        },
+        "80d0c007-12b9-4aa3-93be-f6988b7494e7": {
+          "type": "faq",
+          "settings": {
+            "headSvg": "",
+            "head": "",
+            "head_mobile": "",
+            "title": "How to set the password for the color diplay?",
+            "text": "<p>At present, only displays for Bee Challenger and Bee Pathfinder series have password setting. By setting the password, you can secure your bike better. To set the password, you need to pay attention to two things. First, if the password is not entered or entered incorrectly within 30s of the countdown, the meter will automatically shout down. Second, if you forget the password, you can't reset it by yourself and the only way to solve the issue is to contact us to replace the display (To replace the display for forgetting the password is not covered in the warranty, so customer needs to pay for the cost for the new display by themself). <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "77e61b8e-8d2d-411c-b8d9-e924d301c932",
+        "8ad7c541-90d5-4318-b6d6-dd1a7bbb9fa1",
+        "b99e5582-15ae-4a7e-992c-34514f4dd20c",
+        "e79f99bc-71c9-48ac-ba5c-1d94022c187e",
+        "c1bd9b1d-24f6-4ab0-b5de-6c1ddc00daa5",
+        "6b1e6898-8a05-4633-8fea-7a727280d341",
+        "74d53d73-3826-4d67-b2a7-7bee45f9c876",
+        "55c1e10c-837f-42af-a746-3d04092f2269",
+        "074c2ca8-9eeb-426b-b545-9ab7933f3ce7",
+        "8009ef45-5bb0-4652-92a9-539285bd3231",
+        "4615085a-02a0-4f02-8cda-c694438e685c",
+        "b764004d-46fa-4407-b7c9-984029361a6c",
+        "453c9a18-0c72-4784-b01e-a94433b6a7c2",
+        "e9254350-313c-4ef5-81e1-262d47c3ce26",
+        "428ec6d1-0ac6-4c2a-bf4f-22e5fba6d113",
+        "4625fafc-4ed0-4f4b-a196-4c79278942c6",
+        "b53e1bdc-29ea-4edd-abfe-14afc7200d86",
+        "a81784a0-0c89-43d5-8a5d-341e04ed2311",
+        "757234d6-8ea4-48bf-a7b0-883934ac8236",
+        "82f14b2a-318b-411a-94a5-cbfa3e1dafba",
+        "84ec1726-4db1-4839-a004-f44ade1cd9aa",
+        "4066f5a2-27ae-4af9-a2d7-c81bf8068c93",
+        "8b64c9e7-7d5a-4a23-a6a4-00e5129d9041",
+        "73178692-d3b4-428d-b23b-dea3069e874a",
+        "80d0c007-12b9-4aa3-93be-f6988b7494e7"
+      ],
+      "settings": {
+        "font": 48,
+        "font_mobile": 35,
+        "img_banner": "shopify:\/\/shop_images\/1_5added55-d6ba-4294-b4db-2ca4294be173.png",
+        "img_bannerMobile": "shopify:\/\/shop_images\/2_33dcb73b-a4fa-4f96-bed6-5f9430c04976.png"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1661741831d0d3d0c7"
+  ]
+}

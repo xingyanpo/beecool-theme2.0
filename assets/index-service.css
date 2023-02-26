@@ -1,0 +1,780 @@
+
+@media screen and (max-width: 1199px) {
+  .index-service-container .pc{
+    display: none;
+  }
+  .index-service-container .mobile{
+    display: block;
+  }
+  .index-service-container {
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .index-service-container .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .index-service-container .background-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  .index-service-container .background-box img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(1, -0.01, 0.97, 0.66) 0.2s;
+  }
+  .index-service-container .background-box .active {
+    opacity: 1;
+    transition: opacity 0.3s cubic-bezier(0, 1.02, 0.36, 0.9) 0.2s;
+  }
+  .index-service-container .marsk {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #151515;
+  }
+  .index-service-container .container {
+    position: relative;
+  }
+  .index-service-container .container .video-back-box {
+    top: 158px;
+    width: 298px;
+    height: 298px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    border-radius: 50%;
+    /*!sc*/
+  }
+  .video-parentMobile_box{
+    position: relative;
+    padding: 0 10px;
+  }
+  .index-service-container .container .video-back-box svg {
+    fill: rgba(255, 255, 255, 1);
+    animation: rotate 60s linear infinite;
+  }
+  .index-service-container .container .video-back-box .video-box {
+    position: absolute;
+    width: 274px;
+    height: 274px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .index-service-container .container .video-back-box .video-box .active-video {
+    opacity: 1;
+    animation: gidyfd 1s;
+  }
+  .index-service-container .container .video-back-box .video-box .remove-video {
+    animation: gidyfd2 1s;
+  }
+  .index-service-container .container .video-back-box .border-box {
+    position: absolute;
+    width: 274px;
+    height: 274px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #2C418C;
+    clip-path: polygon(0% 0, 100% 0, 0% 100%, 100% 100%);
+    animation: rotate2 10s linear infinite;
+    transform-origin: center center;
+  }
+  .video-parentMobile_box .button-box{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+  }
+  /* top css */
+  .video-parentMobile_box .subtitle{
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+  }
+  .video-parentMobile_box .title{
+    text-align: center;
+  }
+  .video-parentMobile_box .title svg{
+    height: 40px;
+    margin-top: 12px;
+  }
+  @keyframes rotate2 {
+    from {
+      transform: translate(-50%, -50%) rotate(0);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  .index-service-container .container .dist {
+    width: 100%;
+    height: 390px;
+    margin-top: 180px;
+    position: relative;
+    border: 1px solid #dfdfdf8c;
+  }
+  .index-service-container .container .dist div::after{
+    content: "";
+    position: absolute;
+    width: 36px;
+    right: -6px;
+    overflow: hidden;
+    top: 11px;
+    transform: rotate(224deg);
+    height: 1px;
+    background: #dfdfdf8c;
+  }
+  .index-service-container .container .dist div:before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    right: -24px;
+    overflow: hidden;
+    top: -20px;
+    transform: rotate(224deg);
+    height: 40px;
+    background: #151515;
+  }
+  .index-service-container .container .info-box {
+    position: absolute;
+    bottom: 50px;
+    padding: 0 10px;
+  }
+  .index-service-container .container .info-box .canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .index-service-container .video-parentMobile_box .button-box .befor {
+    width: 16px;
+    margin-right: -1px;
+    background-color: #2A408E;
+    clip-path: polygon(16px -8px, 16px 42px, -34px 42px);
+    transition: all 0.2s;
+  }
+  .index-service-container .video-parentMobile_box .button-box .button {
+    background-color: #2A408E;
+    color: #FFFFFF;
+    line-height: 30px;
+    padding: 0 32px;
+    font-weight: 400;
+    height: 30px;
+    border-radius: unset;
+    text-transform: unset;
+    font-size: 14px;
+  }
+  .index-service-container .video-parentMobile_box .button-box .after {
+    width: 16px;
+    background-color: #2A408E;
+    clip-path: polygon(0 0, 38px 0px, 0px 38px);
+    margin-left: -1px;
+    transition: all 0.2s;
+  }
+  .index-service-container .video-parentMobile_box .left .button-box:hover .befor {
+    clip-path: polygon(16px -16px, 16px 42px, -42px 42px);
+  }
+  .index-service-container .video-parentMobile_box .button-box:hover .after {
+    clip-path: polygon(0 0, 50px 0px, 0px 50px);
+  }
+  .index-service-container .container .info-box .center {
+    width: 100%;
+  }
+  .index-service-container .container .info-box .center .box {
+    width: 100%;
+    bottom: 50px;
+  }
+  .index-service-container .container .info-box .center .box .title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 20px;
+    padding-top: 50px;
+  }
+  .index-service-container .container .info-box .center .box .description {
+    font-size: 14px;
+    text-align: center;
+    width: 86%;
+    margin: 22px auto 0;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .index-service-container .container .info-box .center .box .description div{
+    text-align: center !important;
+  }
+  .index-service-container .container .info-box .center .active .title {
+    opacity: 1;
+    animation: fadeInUp 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+  }
+  .index-service-container .container .info-box .center .active .description {
+    opacity: 1;
+    animation: fadeInDown 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+  }
+  .index-service-container .container .info-box .center .remove .title {
+    opacity: 0;
+    animation: fadeOutUp 0.5s;
+  }
+  .index-service-container .container .info-box .center .remove .description {
+    opacity: 0;
+    animation: fadeOutDown 0.5s;
+  }
+  @keyframes fadeOutDown {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      transform: translate3d(0, 10px, 0);
+    }
+  }
+  @keyframes fadeOutUp {
+    from {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      opacity: 0;
+      transform: translate3d(0, -10px, 0);
+    }
+  }
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 10px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -10px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0px, 0);
+    }
+  }
+  .index-service-container .container .info-box .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  .index-service-container .container .info-box .right .box {
+    top: 190px;
+    transition: all 0.5s;
+    position: absolute;
+  }
+  .index-service-container .container .info-box .right .box .item {
+    position: relative;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .index-service-container .container .info-box .right .box .item .tips {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 125px;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px 0;
+    padding-right: 170px;
+    padding-left: 30px;
+    box-sizing: content-box !important;
+    transform: translate(0, -50%);
+    background: #2A408E;
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+    color: rgba(0, 0, 0, 0);
+  }
+  .index-service-container .container .info-box .right .box .item .tips-content {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 125px;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px 0;
+    padding-right: 170px;
+    padding-left: 30px;
+    box-sizing: content-box !important;
+    transform: translate(0, -50%);
+  }
+  .index-service-container .container .info-box .right .box .item .img-box {
+    width: 77px;
+    height: 77px;
+    position: relative;
+    border: 3px solid #2A408E;
+    margin-right: 93px;
+    transition: all 0.5s;
+  }
+  .index-service-container .container .info-box .right .box .active {
+    margin: 0;
+  }
+  .index-service-container .container .info-box .right .box .active .tips {
+    clip-path: polygon(100% 100%, 100% -100%, -100% 100%);
+    animation: button-active 0.5s;
+  }
+  .index-service-container .container .info-box .right .box .active .img-box {
+    width: 110px;
+    height: 110px;
+    margin-right: 60px;
+  }
+  @keyframes button-active {
+    from {
+      clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+    }
+    to {
+      clip-path: polygon(100% 100%, 100% -100%, -100% 100%);
+    }
+  }
+  .index-service-container .container .info-box .right .box .remove .tips {
+    animation: button-remove 0.5s;
+  }
+  @keyframes button-remove {
+    from {
+      clip-path: polygon(100% 0, -100% 0%, 100% 200%);
+    }
+    to {
+      clip-path: polygon(100% 0%, 100% 0%, 100% 0%);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .index-service-container {
+    position: relative;
+    padding-bottom: 100px;
+  }
+  .video-box a{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .index-service-container .container {
+    max-width: 1760px;
+    margin: 0 auto;
+  }
+  .index-service-container .background-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  .index-service-container .background-box img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(1, -0.01, 0.97, 0.66) 0.2s;
+  }
+  .index-service-container .background-box .active {
+    opacity: 1;
+    transition: opacity 0.3s cubic-bezier(0, 1.02, 0.36, 0.9) 0.2s;
+  }
+  .index-service-container .marsk {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(#151515, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 66%, #151515);
+  }
+  .index-service-container .container {
+    position: relative;
+    /* min-height: 100vh; */
+  }
+  .index-service-container .container .video-back-box {
+    top: 155px;
+    width: 572px;
+    height: 572px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    /*!sc*/
+  }
+  .index-service-container .container .video-back-box svg {
+    fill: rgba(255, 255, 255, 0.6);
+    animation: rotate 60s linear infinite;
+  }
+  .index-service-container .container .video-back-box .video-box {
+    position: absolute;
+    width: 518px;
+    height: 518px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .video-box a{
+    display: none;
+  }
+  .video-box .active-video{
+    display: block !important;
+  }
+  .index-service-container .container .video-back-box .video-box a{
+   opacity: 0;
+  }
+  .index-service-container .container .video-back-box .video-box img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+    opacity: 1;
+    width: 100%;
+  }
+  .index-service-container .container .video-back-box .video-box .active-video {
+    opacity: 1;
+    animation: gidyfd 1s;
+  }
+  .index-service-container .container .video-back-box .video-box .remove-video {
+    animation: gidyfd2 1s;
+  }
+  .index-service-container .container .video-back-box .border-box {
+    position: absolute;
+    width: 518px;
+    height: 518px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #2C418C;
+    clip-path: polygon(0% 0, 100% 0, 0% 100%, 100% 100%);
+    animation: rotate2 10s linear infinite;
+    transform-origin: center center;
+  }
+  @keyframes rotate2 {
+    from {
+      transform: translate(-50%, -50%) rotate(0);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  .index-service-container .container .dist {
+    width: 100%;
+    height: 455px;
+  }
+  .index-service-container .container .info-box {
+    display: flex;
+    margin: 0 20px;
+    position: relative;
+  }
+  .index-service-container .container .info-box .canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .index-service-container .container .info-box .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 110px 0 120px;
+  }
+  .index-service-container .container .info-box .left .subtitle {
+    text-transform: uppercase;
+    line-height: 1;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+  }
+  .index-service-container .container .info-box .left .title {
+    color: #FFFFFF;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1;
+    text-align: center;
+    margin-top: 14px;
+  }
+  .index-service-container .container .info-box .left .title svg {
+    height: 90px;
+  }
+  .index-service-container .container .info-box .left .button-box {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 26px;
+  }
+  .index-service-container .container .info-box .left .button-box .befor {
+    width: 16px;
+    margin-right: -1px;
+    background-color: #2A408E;
+    clip-path: polygon(16px -8px, 16px 42px, -34px 42px);
+    transition: all 0.2s;
+  }
+  .index-service-container .container .info-box .left .button-box .button {
+    background-color: #2A408E;
+    color: #FFFFFF;
+    line-height: 34px;
+    padding: 0 40px;
+    height: 34px;
+    border-radius: unset;
+    text-transform: unset;
+    font-size: 14px;
+  }
+  .index-service-container .container .info-box .left .button-box .after {
+    width: 16px;
+    background-color: #2A408E;
+    clip-path: polygon(0 0, 40px 0px, 0px 40px);
+    margin-left: -1px;
+    transition: all 0.2s;
+  }
+  .index-service-container .container .info-box .left .button-box:hover .befor {
+    clip-path: polygon(16px -16px, 16px 42px, -42px 42px);
+  }
+  .index-service-container .container .info-box .left .button-box:hover .after {
+    clip-path: polygon(0 0, 50px 0px, 0px 50px);
+  }
+  .index-service-container .container .info-box .center {
+    width: 600px;
+    position: relative;
+  }
+  .index-service-container .container .info-box .center .box {
+    position: absolute;
+    width: 600px;
+    bottom: 50px;
+  }
+  .index-service-container .container .info-box .center .box .title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 1;
+    opacity: 0;
+  }
+  .index-service-container .container .info-box .center .box .description {
+    margin-top: 18px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 2;
+    opacity: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .index-service-container .container .info-box .center .box .description div{
+    text-align: center !important;
+  }
+  .index-service-container .container .info-box .center .active .title {
+    opacity: 1;
+    animation: fadeInUp 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+  }
+  .index-service-container .container .info-box .center .active .description {
+    opacity: 1;
+    animation: fadeInDown 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+  }
+  .index-service-container .container .info-box .center .remove .title {
+    opacity: 0;
+    animation: fadeOutUp 0.5s;
+  }
+  .index-service-container .container .info-box .center .remove .description {
+    opacity: 0;
+    animation: fadeOutDown 0.5s;
+  }
+  @keyframes fadeOutDown {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      transform: translate3d(0, 10px, 0);
+    }
+  }
+  @keyframes fadeOutUp {
+    from {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      opacity: 0;
+      transform: translate3d(0, -10px, 0);
+    }
+  }
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 10px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -10px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0px, 0);
+    }
+  }
+  .index-service-container .container .info-box .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  .index-service-container .container .info-box .right .box {
+    top: 190px;
+    transition: all 0.5s;
+    position: absolute;
+  }
+  .index-service-container .container .info-box .right .box .item {
+    position: relative;
+    margin: 15px 0;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .index-service-container .container .info-box .right .box .item .tips {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 125px;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px 0;
+    padding-right: 170px;
+    padding-left: 30px;
+    box-sizing: content-box !important;
+    transform: translate(0, -50%);
+    background: #2A408E;
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+    color: rgba(0, 0, 0, 0);
+  }
+  .index-service-container .container .info-box .right .box .item .tips-content {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 125px;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px 0;
+    padding-right: 170px;
+    padding-left: 30px;
+    box-sizing: content-box !important;
+    transform: translate(0, -50%);
+  }
+  .index-service-container .container .info-box .right .box .item .img-box {
+    width: 77px;
+    height: 77px;
+    position: relative;
+    border: 3px solid #2A408E;
+    margin-right: 93px;
+    transition: all 0.5s;
+  }
+  .index-service-container .container .info-box .right .box .active {
+    margin: 0;
+  }
+  .index-service-container .container .info-box .right .box .active .tips {
+    clip-path: polygon(100% 100%, 100% -100%, -100% 100%);
+    animation: button-active 0.5s;
+  }
+  .index-service-container .container .info-box .right .box .active .img-box {
+    width: 110px;
+    height: 110px;
+    margin-right: 60px;
+  }
+  @keyframes button-active {
+    from {
+      clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+    }
+    to {
+      clip-path: polygon(100% 100%, 100% -100%, -100% 100%);
+    }
+  }
+  .index-service-container .container .info-box .right .box .remove .tips {
+    animation: button-remove 0.5s;
+  }
+  @keyframes button-remove {
+    from {
+      clip-path: polygon(100% 0, -100% 0%, 100% 200%);
+    }
+    to {
+      clip-path: polygon(100% 0%, 100% 0%, 100% 0%);
+    }
+  }
+}
+/*# sourceMappingURL=index-service.css.map */
+.button_a{
+  display: none;
+}
+.button_a.active{
+  display: block;
+}
+.index-service-container .container .info-box .center .description img{
+  display: none !important;
+}
+.index-service-container .right .Hideimg{
+  padding-top: 0%;
+}

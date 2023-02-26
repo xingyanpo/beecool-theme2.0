@@ -1,0 +1,537 @@
+<style>
+  .count-down-num {color: {{section.settings.show_count_down_number_color}};font-size: 17px;font-weight: 450;}
+  .count-down-num-sen {font-size: 22px;font-weight: 500;}
+  .jd_announcement_all a{
+    text-decoration: none !important;
+  }
+  .jd_announcement_all{
+    z-index: 10;
+  }
+  @media screen and (min-width: 1000px) {
+    .jd_announcement_all{
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      z-index: 10;
+    }
+    .announcementSwipers{
+      width: 40%;
+    }
+    .announcementSwiper{
+        cursor: pointer;
+        width: 100%;
+        cursor: pointer;
+        height: 45px;
+        line-height: 45px;
+    }
+    .announcementSwipers .swiper-slide {
+      width: 100% !important;
+      display: flex;
+      flex-shrink: 0;
+      line-height: 1.2;
+      height: 45px !important;
+      position: relative;
+      transition-property: transform;
+      align-items: center;
+      justify-content: center;
+    }
+    .announcementX{
+        color: #fff;
+        position: absolute;
+        right: 1.5%;
+        top: 14px;
+        cursor: pointer;
+        z-index: 2;
+    }
+   .jd_announcement_all .swiper-slide{
+        transition-duration: 1000ms !important;
+    }
+
+    .monaka-header-not-on-top .monaka-headers {
+        height: 47px;
+        position: fixed;
+        top: -70px;
+        left: 0;
+        background: #000;
+        border-top: 1px solid #eaeaea;
+        border-bottom: 1px solid #eaeaea;
+        color: #151515;
+        width: 100%;
+        -webkit-transform: translateY(70px);
+                transform: translateY(70px);
+        -webkit-transition: -webkit-transform .25s ease;
+        transition: -webkit-transform .25s ease;
+        transition: transform .3s ease;
+        transition: transform .3s ease, -webkit-transform .3s ease;
+    }
+  
+  }
+  @media (min-width: 1000px) and (max-width: 1500px){
+    .announcement_icon{
+      font-size: 12px;
+    }
+    .announcementSwipers p{
+      font-size: 12px;
+    }
+  }
+  @media (min-width: 1501px){
+    .announcement_icon{
+      font-size: 14px;
+    }
+    .announcementSwipers p{
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 999px) {
+    .jd_announcement_all{
+      height: 45px;
+      line-height: 45px;
+      z-index: 9;
+      padding: 0 15px;
+      text-align: center;
+    }
+    .announcementSwipers .swiper-slide {
+      width: 100% !important;
+      display: flex;
+      flex-shrink: 0;
+      line-height: 1.2;
+      height: 45px !important;
+      position: relative;
+      transition-property: transform;
+      align-items: center;
+      justify-content: center;
+    }
+    .jd_announcement_all p {
+      font-size: 14px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.2;
+      margin: 0;
+      align-items: center;
+    }
+    .announcement-bar__message{
+      display: flex;
+      justify-content: center;
+    }
+    .announcementSwiper{
+        cursor: pointer;
+        width: 100%;
+        cursor: pointer;
+        height: 45px;
+        line-height: 45px;
+    }
+    .announcementX{
+        color: #fff;
+        position: absolute;
+        right: 1.5%;
+        top: 14px;
+        cursor: pointer;
+        z-index: 2;
+    }
+    .jd_announcement_all .swiper-slide{
+        transition-duration: 1000ms !important;
+    }
+
+    .monaka-header-not-on-top .monaka-headers {
+        height: 47px;
+        position: fixed;
+        top: -70px;
+        left: 0;
+        background: #000;
+        border-bottom: 1px solid #eaeaea;
+        border-top: 1px solid #eaeaea;
+        color: #151515;
+        width: 100%;
+        -webkit-transform: translateY(70px);
+                transform: translateY(70px);
+        -webkit-transition: -webkit-transform .25s ease;
+        transition: -webkit-transform .25s ease;
+        transition: transform .3s ease;
+        transition: transform .3s ease, -webkit-transform .3s ease;
+    }
+    .announcementBar__message_left,.announcementBar__message_right{
+      display: none;
+    }
+  }
+</style>
+
+{% if section.settings.show_count_down %}
+  <style>
+    @media screen and (max-width: 768px) {
+      .down-number-wrapper {font-size: 14px;}
+      .count-down-add {padding:0;}
+      .count-down-num {font-size: 14px;}
+      .count-down-num-sen {font-size: 16px;}
+    }
+  </style>
+{% endif %}
+
+<div class="jd_announcement_all monaka-headers count-down-add" style="background: {{section.settings.background}};">
+  <div class="announcementSwiper container count-down-add">
+
+  {% if section.settings.show_count_down %}
+  <div style="width: 100%;">
+          <div style="color:{{section.settings.text_color}}; ">
+                <div class="announcement-bar__message">
+                  <div class="announcementBar__message_left">
+                    <div class="announcement_icon">
+                      <div>{{section.settings.icon}}</div>
+                      <div>{{section.settings.icon_text}}</div>
+                    </div>
+                    <div class="announcement_icon">
+                      <div>{{section.settings.icon2}}</div>
+                      <div>{{section.settings.icon_text2}}</div>
+                    </div>
+                  </div>
+                  {%- if section.settings.show_count_down_url != blank -%} <a href="{{ section.settings.show_count_down_url }}"> {%- endif -%}
+                    <div class='down-number-wrapper'>{%- if section.settings.banner_prefix != blank -%}<span>{{ section.settings.banner_prefix }}</span>{%- endif -%}<span>{{ section.settings.show_count_down_text }}&ensp;</span><span class='down-number'></span>{%- if section.settings.banner_suffix != blank -%}<span>{{ section.settings.banner_suffix }}</span>{%- endif -%}</div>
+                  {%- if section.settings.show_count_down_url != blank -%} </a> {%- endif -%}
+                  <div class="announcementBar__message_right">
+                    <div class="announcement_icon">
+                      <div>{{section.settings.icon3}}</div>
+                      <div>{{section.settings.icon_text3}}</div>
+                    </div>
+                    <div class="announcement_icon">
+                      <div>{{section.settings.icon4}}</div>
+                      <div>{{section.settings.icon_text4}}</div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+  {% else %}
+    
+      {% if section.blocks.size<2 %}
+        <div style="width: 100%;">
+          <div style="color:{{section.settings.text_color}}; ">
+                <div class="announcement-bar__message">
+                  <div class="announcementBar__message_left">
+                    <div class="announcement_icon">
+                      <div>{{section.settings.icon}}</div>
+                      <div>{{section.settings.icon_text}}</div>
+                    </div>
+                    <div class="announcement_icon">
+                      <div>{{section.settings.icon2}}</div>
+                      <div>{{section.settings.icon_text2}}</div>
+                    </div>
+                  </div>
+                  {%- for block in section.blocks -%}
+                    <p>{{ block.settings.text }}</p>
+                  {% endfor %}
+                  <div class="announcementBar__message_right">
+                    <div class="announcement_icon">
+                      <div>{{section.settings.icon3}}</div>
+                      <div>{{section.settings.icon_text3}}</div>
+                    </div>
+                    <div class="announcement_icon">
+                      <div>{{section.settings.icon4}}</div>
+                      <div>{{section.settings.icon_text4}}</div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+        {% else %}
+        <div style="color:{{section.settings.text_color}}; ">
+            <div class="announcement-bar__message">
+              <div class="announcementBar__message_left">
+                <div class="announcement_icon">
+                  <div>{{section.settings.icon}}</div>
+                  <div>{{section.settings.icon_text}}</div>
+                </div>
+                <div class="announcement_icon">
+                  <div>{{section.settings.icon2}}</div>
+                  <div>{{section.settings.icon_text2}}</div>
+                </div>
+              </div>
+              <div class="swiper announcementSwipers">
+                <div class="swiper-wrapper">
+                  {%- for block in section.blocks -%}
+                  <div class="swiper-slide" data-swiper-parallax="-300">
+                   {{ block.settings.text }}
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="announcementBar__message_right">
+                <div class="announcement_icon">
+                  <div>{{section.settings.icon3}}</div>
+                  <div>{{section.settings.icon_text3}}</div>
+                </div>
+                <div class="announcement_icon">
+                  <div>{{section.settings.icon4}}</div>
+                  <div>{{section.settings.icon_text4}}</div>
+                </div>
+              </div>
+            </div>
+        </div>
+      {% endif %}
+               
+  {% endif %}
+    
+  </div>
+</div>
+<script>
+var swiper = new Swiper(".announcementSwipers", {
+  parallax: true,
+  speed:800,
+  loop:true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 4000,
+    pauseOnMouseEnter: true,
+    disableOnInteraction: false,
+  }
+  
+});
+
+</script>
+
+
+<script>
+  (() => {
+    const headerElement = document.getElementById('shopify-section-{{ section.id }}')
+    headerHeight = headerElement.clientHeight,
+    // headerHeightWithoutBottomNav = headerElement.querySelector('.header__wrapper').clientHeight;
+
+    document.documentElement.style.setProperty('--header-height', headerHeight + 'px');
+    // document.documentElement.style.setProperty('--header-height-without-bottom-nav', headerHeightWithoutBottomNav + 'px');
+    // var Top = $(".index-video-list").offset().top;
+    console.log($(".index-video-list"))
+    //  吸顶
+    var window_last_position = -1;
+        var body = document.body;
+       
+        var node_monitors = document.querySelector(".monaka-headers");
+
+       
+        if (node_monitors) {
+            var stop = node_monitors.offsetTop + 100;
+            var scroll = window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.msRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            // IE Fallback, you can even fallback to onscroll
+            function(callback){ window.setTimeout(callback, 1000/60) };
+
+            function loop() {
+            // avoid calculations if not needed
+            if (window_last_position === window.pageYOffset) {
+                scroll(loop);
+                return false;
+            } else {
+                window_last_position = window.pageYOffset;
+            }
+
+            //... calculations
+            if (window_last_position > stop) {
+                $(".sticky_img").show();
+                $(".not_img").hide();
+                // stick the header
+                if (!body.classList.contains("monaka-header-not-on-top")) {
+                  body.classList.add("monaka-header-not-on-top");
+                }
+            } else {
+              $(".sticky_img").hide();
+              $(".not_img").show();
+                // release the header
+                if (body.classList.contains("monaka-header-not-on-top")) {
+                body.classList.remove("monaka-header-not-on-top");
+                }
+            }
+
+            scroll(loop);
+            }
+
+            // call the loop for the first time
+            loop();
+        }
+    // 搜索
+    $(".predictive_search_cha").click(function(){
+      $(".predictiveBox").hide();
+      $("html").removeClass("ovhtml")
+    })
+    $(".headIcon_jing,.tap_area_fang").click(function(){
+      $(".predictiveBox").show();
+      $("html").addClass("ovhtml")
+    })
+    $(".headIcon_jing2,.tap_area_fang2").click(function(){
+      $(".predictiveBox").show();
+      $("html").addClass("ovhtml")
+      
+    })
+ 
+      $(".headIcon_jing,.tap_area_fang,.headIcon_jing2,.tap_area_fang2").click(function(event){
+        var e=window.event || event;
+        if(e.stopPropagation){
+          e.stopPropagation();
+        }else{
+          e.cancelBubble = true;
+        }   
+        $(".predictiveBox").show();
+      });
+      $(".predictiveBox").click(function(event){
+        var e=window.event || event;
+        if(e.stopPropagation){
+          e.stopPropagation();
+        }else{
+          e.cancelBubble = true;
+        }
+      });
+      document.onclick = function(){
+        $(".predictiveBox").hide();
+        $("html").removeClass("ovhtml");
+      };
+    
+     
+      
+  })();
+</script>
+
+{% if section.settings.show_count_down %}
+<script>
+  function showTime() {
+      var endTime = new Date('{{ section.settings.show_count_down_number }}'.replace(/-/g,'/')).getTime();
+      var newTime = new Date().getTime();
+      var diffTime = (endTime - newTime) / 1000;
+      var day = parseInt(diffTime / 60 / 60 / 24);
+      var hour = parseInt(diffTime / 60 / 60 % 24);
+      var min = parseInt(diffTime / 60 % 60);
+      var sen = parseInt(diffTime % 60);
+
+      var new_day = day < 10 ? '0'+day : day 
+      var new_hour = hour < 10 ? '0'+hour : hour
+      var new_min = min < 10 ? '0'+min : min
+      var new_sen = sen < 10 ? '0'+sen : sen
+  
+      var countDown = document.querySelector('.down-number');
+      countDown.innerHTML = `<span class='count-down-num'>${new_day}:</span><span class='count-down-num'>${new_hour}:</span><span class='count-down-num'>${new_min}:</span><span class='count-down-num count-down-num-sen'>${new_sen}</span>`
+    }
+    showTime()
+    setInterval(showTime, 1000)
+</script>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Announcement bar",
+  "class": "shopify-section--announcement-bar",
+  "max_blocks": 5,
+  "blocks": [
+    {
+      "type": "message",
+      "name": "Message",
+      "settings": [
+       
+        {
+          "type": "html",
+          "id": "text",
+          "label": "Text"
+        }
+       
+       
+      ]
+    }
+  ],
+  "settings": [{
+    "type": "checkbox",
+    "id": "show_count_down",
+    "label": "Is Show Count Down",
+    "default": false
+  },{
+    "type": "url",
+    "id": "show_count_down_url",
+    "label": "Url"
+  },{
+    "type": "html",
+    "id": "banner_prefix",
+    "label": "Banner Prefix"
+  },{
+    "type": "text",
+    "id": "show_count_down_text",
+    "label": "Count Down Text",
+    "default": "Black Friday Sale Ends In "
+  },{
+    "type": "text",
+    "id": "show_count_down_number",
+    "label": "Count Down",
+    "default": "2022-11-26 15:00:00"
+  },{
+    "type": "color",
+    "id": "show_count_down_number_color",
+    "label": "Number Color",
+    "default": "#2a408e"
+  },{
+    "type": "html",
+    "id": "banner_suffix",
+    "label": "Banner Suffix"
+  },
+    {
+      "type": "textarea",
+      "id": "icon",
+      "label": "icon"
+    },
+    {
+      "type": "textarea",
+      "id": "icon_text",
+      "label": "icon_text"
+    },
+    {
+      "type": "textarea",
+      "id": "icon2",
+      "label": "icon2"
+    },
+    {
+      "type": "textarea",
+      "id": "icon_text2",
+      "label": "icon_text2"
+    },
+    {
+      "type": "textarea",
+      "id": "icon3",
+      "label": "icon3"
+    },
+    {
+      "type": "textarea",
+      "id": "icon_text3",
+      "label": "icon_text3"
+    },
+    {
+      "type": "textarea",
+      "id": "icon4",
+      "label": "icon4"
+    },
+    {
+      "type": "textarea",
+      "id": "icon_text4",
+      "label": "icon_text4"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#1e2d7d"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "message"
+      }
+    ]
+  }
+}
+{% endschema %}

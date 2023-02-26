@@ -1,0 +1,845 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "7ea91e32-d9e2-4e1a-b669-664f89a5eb6d": {
+          "type": "saveText",
+          "settings": {
+          }
+        },
+        "4533c794-279c-409e-b319-aebd7de7f517": {
+          "type": "off",
+          "settings": {
+            "is_can_copy": false,
+            "copy_img": "shopify:\/\/shop_images\/1_3e735aa4-c540-4fd5-a4eb-f72164d1287d.png",
+            "title": "Limited Gift",
+            "copy_text": "",
+            "text": "<p><strong>Buy Any Ebike Product Get 1 Free Cargo Trailer (Limited Amount)<\/strong><\/p>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "atc_button_background": "#2a408e",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "#1f2633",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "23706e46-ca37-48dc-9b0a-bfa083019970": {
+          "type": "free_gifts",
+          "settings": {
+            "free_gifts_icon": "<svg t=\"1675763361201\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"2852\" width=\"200\" height=\"200\"><path d=\"M847.57 475.078c0 24.279-19.68 43.967-43.967 43.967H221.015c-24.287 0-43.967-19.688-43.967-43.967V352.08c0-24.288 19.68-43.969 43.967-43.969h582.589c24.287 0 43.967 19.681 43.967 43.969v122.998z\" fill=\"#8AC78A\" p-id=\"2853\"><\/path><path d=\"M803.604 543.061H221.015c-37.487 0-67.982-30.496-67.982-67.982V352.08c0-37.487 30.495-67.983 67.982-67.983h582.589c37.487 0 67.982 30.496 67.982 67.983v122.998c0 37.486-30.495 67.983-67.982 67.983zM221.015 332.128c-10.999 0-19.942 8.945-19.942 19.952v122.998c0 10.998 8.943 19.951 19.942 19.951h582.589c10.998 0 19.943-8.953 19.943-19.951V352.08c0-11.007-8.945-19.952-19.943-19.952H221.015z\" fill=\"#363634\" p-id=\"2854\"><\/path><path d=\"M804.567 791.678c0 24.288-19.687 43.975-43.976 43.975H264.025c-24.287 0-43.965-19.687-43.965-43.975v-268.23c51.047-2.085 543.492-0.256 584.507 0v268.23z\" fill=\"#F1CA4E\" p-id=\"2855\"><\/path><path d=\"M760.592 859.67H264.025c-37.486 0-67.991-30.506-67.991-67.992V500.389l23.042-0.942c16.357-0.666 77.563-1.005 181.929-1.005 163.833 0 377.19 0.824 403.72 0.989l23.859 0.148v292.099c0 37.486-30.504 67.992-67.992 67.992zM244.074 546.994v244.684c0 10.998 8.946 19.951 19.951 19.951h496.566c11.008 0 19.96-8.953 19.96-19.951V547.349c-65.716-0.281-240.472-0.866-379.547-0.866-85.789-0.001-132.236 0.222-156.93 0.511z\" fill=\"#3E3A39\" p-id=\"2856\"><\/path><path d=\"M488.288 230.92h48.032v604.732h-48.032z\" fill=\"#363634\" p-id=\"2857\"><\/path><path d=\"M665.271 328.616H512.305c-13.266 0-24.017-10.751-24.017-24.017V187.982c0-3.379 0.719-6.726 2.095-9.811 31.031-69.325 80.506-79.673 107.234-79.673 50.208 0 99.164 34.94 119.041 84.975 19.408 48.84 6.686 99.354-34.897 138.597a24.041 24.041 0 0 1-16.49 6.546z m-128.951-48.04h118.908c29.07-32.005 23.259-63.085 16.785-79.359-12.381-31.173-44.37-54.686-74.396-54.686-25.252 0-46.365 16.15-61.297 46.778v87.267z\" fill=\"#363634\" p-id=\"2858\"><\/path><path d=\"M512.305 328.616H359.348a24.032 24.032 0 0 1-16.489-6.546c-41.584-39.243-54.306-89.757-34.899-138.597 19.877-50.034 68.832-84.975 119.043-84.975 26.719 0 76.193 10.348 107.227 79.673a23.957 23.957 0 0 1 2.092 9.811V304.6c-0.002 13.265-10.751 24.016-24.017 24.016z m-142.916-48.04h118.899V193.31c-14.929-30.628-36.044-46.778-61.286-46.778-30.027 0-62.018 23.513-74.398 54.686-6.473 16.273-12.284 47.353 16.785 79.358z\" fill=\"#363634\" p-id=\"2859\"><\/path><\/svg>",
+            "free_gifts_title": "Don't Forget To Add It to Your Cart!",
+            "free_gifts_img_one": "shopify:\/\/shop_images\/1_c473a694-56b1-479f-af35-7e4691919e22.jpg",
+            "free_gifts_text_one": "Foldable Ebike Cargo Trailer",
+            "free_gifts_url_one": "https:\/\/beecoolbikes.com\/products\/foldable-ebike-cargo-trailer",
+            "free_gifts_price_one": "$299",
+            "free_gifts_quantity_one": "",
+            "free_gifts_img_two": "shopify:\/\/shop_images\/gift-2.jpg",
+            "free_gifts_text_two": "",
+            "free_gifts_price_two": "$15.00",
+            "free_gifts_quantity_two": "",
+            "free_gifts_img_three": "shopify:\/\/shop_images\/product.jpg",
+            "free_gifts_text_three": "",
+            "free_gifts_price_three": "$5.00",
+            "free_gifts_quantity_three": ""
+          }
+        },
+        "1878aa0d-5dcc-408f-b726-7d083314177d": {
+          "type": "image",
+          "settings": {
+            "image_alignment": "center",
+            "image_width": 360,
+            "text": "<div style=\"text-align:left;\">\n        <h4 style=\"font-size: 18px;margin: 10px 0 10px 0;\">Scheduled to ship:<\/h4>\n        <div style=\"text-indent:1em;font-size: 16px;margin: 5px 0 0 0;\">\n            <svg style=\"position:relative;top:-2px;display:inline;\" t=\"1669278898519\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"3944\" width=\"20\" height=\"20\"><path d=\"M512 512m-442.7 0a442.7 442.7 0 1 0 885.4 0 442.7 442.7 0 1 0-885.4 0Z\" fill=\"#9BBFFD\" p-id=\"3945\"><\/path><path d=\"M512 512m-263 0a263 263 0 1 0 526 0 263 263 0 1 0-526 0Z\" fill=\"#377FFC\" p-id=\"3946\"><\/path><\/svg>\n            <span style=\"background-color: green;padding:2px 5px;border-radius:3px;color:#FFF;\">Green:<\/span> <b style=\"color: #666;\">Within 2 business Days<\/b>\n<\/div>\n        <div style=\"text-indent:1em;font-size: 16px;margin: 5px 0 0 0;\">\n            <svg style=\"position:relative;top:-2px;display:inline;\" t=\"1669278898519\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"3944\" width=\"20\" height=\"20\"><path d=\"M512 512m-442.7 0a442.7 442.7 0 1 0 885.4 0 442.7 442.7 0 1 0-885.4 0Z\" fill=\"#9BBFFD\" p-id=\"3945\"><\/path><path d=\"M512 512m-263 0a263 263 0 1 0 526 0 263 263 0 1 0-526 0Z\" fill=\"#377FFC\" p-id=\"3946\"><\/path><\/svg>\n            <span style=\"background-color: #333;padding:2px 5px;border-radius:3px;color:#FFF;\">Black:<\/span> <b style=\"color: #666;\">Within 2 business Days<\/b>\n<\/div>\n    <\/div>",
+            "ship": ""
+          }
+        },
+        "94ff6497-bcb7-487c-95de-ea653891a1d0": {
+          "type": "fedex",
+          "settings": {
+            "fedex_title": "Shipping:",
+            "img": "shopify:\/\/shop_images\/1_3d93ff84-9b20-428e-88e3-528a02568e29.png",
+            "fedex_text1": "UPS Ground Free",
+            "fedex_svg": "<svg t=\"1668148261596\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"1482\" width=\"32\" height=\"32\"><path d=\"M511.514 63.894c-114.532 0-229.062 43.51-316.72 131.168-174.677 174.676-174.677 458.764 0 633.44 87.658 87.659 202.188 131.168 316.72 131.168s229.063-43.51 316.72-131.168c174.677-174.676 174.677-458.764 0-633.44-87.657-87.659-202.189-131.168-316.72-131.168z m0 44.79c52.467 0 103.654 10.236 151.642 29.432 49.907 20.475 94.695 49.907 133.086 88.937 39.03 38.39 68.463 83.18 88.937 133.086 19.195 47.988 29.433 99.175 29.433 151.642s-10.238 103.654-29.433 151.642c-20.474 49.907-49.907 94.695-88.937 133.086-38.39 39.03-83.18 68.463-133.086 88.937-47.988 19.196-99.175 29.433-151.642 29.433s-103.654-10.237-151.642-29.433c-49.907-20.475-94.696-49.907-133.086-88.937-39.03-38.39-68.463-83.18-88.937-133.086-19.196-47.988-29.433-99.175-29.433-151.642s10.237-103.654 29.433-151.642c20.475-49.907 49.907-94.695 88.937-133.086 38.39-39.03 83.18-68.463 133.086-88.937 47.988-19.196 99.175-29.433 151.642-29.433z\" p-id=\"1483\" fill=\"#151515\"><\/path><path d=\"M511.514 674.3c-18.556 0-34.551 15.356-34.551 34.551 0 18.556 15.996 33.912 34.55 33.912 19.196 0 34.552-15.356 34.552-33.912 0-19.194-15.356-34.55-34.551-34.55z m0.64-393.5c-42.23 0-76.14 10.877-101.734 33.91-25.593 22.395-41.589 55.027-46.707 97.896l58.225 7.039c4.479-31.992 15.356-55.666 31.352-70.382 15.996-15.356 35.83-22.394 59.505-22.394 24.953 0 46.068 8.317 63.344 24.953 16.636 15.996 24.953 35.191 24.953 57.585 0 11.518-2.56 23.035-8.317 33.272-5.758 10.237-18.556 23.674-37.751 40.95-19.835 17.275-33.272 30.073-40.95 39.03-9.597 12.157-17.275 24.314-21.754 36.47-6.399 15.997-9.598 35.192-9.598 56.946l0.64 17.276h53.746c0.64-22.394 1.92-39.03 4.479-48.628 3.199-10.237 7.038-19.195 12.796-26.873 5.758-7.678 17.276-19.834 35.831-35.83 26.873-24.315 45.429-44.79 55.027-61.426 8.958-16.636 14.076-35.191 14.076-55.026 0-34.55-13.437-63.984-40.31-88.298-26.233-24.314-62.064-36.47-106.852-36.47z\" p-id=\"1484\" fill=\"#151515\"><\/path><\/svg>",
+            "fedex_text3": "Why UPS",
+            "text": "Important: Please double check your address is correct when checking out. The shipping address can't be adjusted \nafter shipped out.",
+            "hide_text": "To ensure the safe delivery of our e-bikes, all of our e-bikes are delivered by UPS. Since it is a large package, the shipping address cannot be changed again once it is sent out, so please confirm the correct shipping address when placing an order. Tracking info update may get delayed sometimes even the tracking number is generated but this is normal when we have too many orders. Please be patient when that happens and if there is anything abnormal, we will contact you first."
+          }
+        },
+        "426f5053-a8a7-4bbc-883a-d4e9bc913225": {
+          "type": "text",
+          "settings": {
+            "title": "What's in the box?",
+            "text": "<h5>Default accessories<\/h5>\n  <p>\n    <small class=\"section-content__info\">1 x Bee Adventurer Ebike(Battery & rear rack & fenders included)<\/small>\n    <small class=\"section-content__info\">1 x Batter Charger<\/small>\n    <small class=\"section-content__info\">1 x Assembling Tools<\/small>\n    <small class=\"section-content__info\">1 x User Manual<\/small>\n    <small class=\"section-content__info\">2 x Pedals<\/small>\n  <\/p>\n  <span class=\"x-info-box-btn\">View photos<\/span>"
+          }
+        },
+        "fa8b9b71-44ce-4121-ac33-e92069f5e399": {
+          "type": "text",
+          "settings": {
+            "title": "Delivery & Returns",
+            "text": "<ul>\n  <li class=\"product-delivery\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/7098\/1274\/files\/d53dbccbfe92e9149a0d4c187e2306fb.png?v=1668161095\" style=\"width:30px; margin-right: 10px;height:30px;\" alt=\"Free Shipping\">\n    <div class=\"hero__product-wrap__item\">\n      <h5 class=\"rte--nomargin\">Free Shipping<\/h5>\n      <small style=\"color:var(--colorSecond)\">Free shipping to the lower 48 states in the US.<\/small>\n    <\/div>\n  <\/li>\n  <li class=\"product-delivery\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/7098\/1274\/files\/2-Year-Warranty.png?v=1668161095\" style=\"width:30px; margin-right: 10px;height:30px;\" alt=\"2-Year Warranty\">\n    <div class=\"hero__product-wrap__item\">\n      <h5 class=\"rte--nomargin\">2-Year Warranty<\/h5>\n      <small style=\"color:var(--colorSecond)\">All Bee Cool bikes cover a 2-Year Warranty from the date of receiving the item.<\/small>\n    <\/div>\n  <\/li>\n  <li class=\"product-delivery\">\n    <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/7098\/1274\/files\/14-Days-Returns.png?v=1668161095\" style=\"width:30px; margin-right: 10px;height:30px;\" alt=\"14 Days Returns\">\n    <div class=\"hero__product-wrap__item\">\n      <h5 class=\"rte--nomargin\">14 Days Returns<\/h5>\n      <small style=\"color:var(--colorSecond)\">Customers are responsible for return shipping costs.<\/small>\n    <\/div>\n  <\/li>  \n<\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "7ea91e32-d9e2-4e1a-b669-664f89a5eb6d",
+        "4533c794-279c-409e-b319-aebd7de7f517",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "23706e46-ca37-48dc-9b0a-bfa083019970",
+        "1878aa0d-5dcc-408f-b726-7d083314177d",
+        "94ff6497-bcb7-487c-95de-ea653891a1d0",
+        "426f5053-a8a7-4bbc-883a-d4e9bc913225",
+        "fa8b9b71-44ce-4121-ac33-e92069f5e399"
+      ],
+      "settings": {
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_share_buttons": true,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": true,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "16607057527debbb37": {
+      "type": "jd-product-icon",
+      "blocks": {
+        "da1c8eb4-2170-47f5-bb91-a1e40b0470d9": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 122.59 72.55\"><defs><style>.cls-1{fill:none;stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}<\/style><\/defs><path class=\"cls-1\" d=\"M194.94,245.71c-6.82-.63-6.08,7.87-2.83,9a6.53,6.53,0,0,0,2.08.46h2.49\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M215.46,230.66c-9.62.22-9.69,10-9.69,10l-10.71.09v6\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M229.92,221.27\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M271.24,227a8.65,8.65,0,0,0-8.36,4.85s-12.7-.29-24.3-.29a9.07,9.07,0,0,0-8.66-4.34\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M285.7,224.16\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M305.34,255.22c4.63.29,5-3,5-5.1-.09-4.05-5.81-3.67-5.81-3.67l-.13-5.66s-4.41-.07-9.4.15c-.43-10.5-9.66-9.44-9.34-9.47\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M284.59,270.59c9.84.11,10.47-10.64,10.47-10.64l10.46-.07-.07-5.66\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M230,273.07c4.67.52,8.7-3.28,8.7-3.28s18.13.22,24.74.22c1,2.94,4.74,4.63,7.78,4.62\" transform=\"translate(-188.71 -213.72)\"><\/path><line class=\"cls-1\" x1=\"25.77\" y1=\"57.43\" x2=\"26.99\" y2=\"57.46\"><\/line><path class=\"cls-1\" d=\"M215.7,271.19s-6.87,1.2-9.73-10.69l-10.28.11v-5.46\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M193.68,254.6\" transform=\"translate(-188.71 -213.72)\"><\/path><polyline class=\"cls-1\" points=\"59.4 29.21 66.44 29.21 62.26 35.38 65.89 35.38 57.31 44.63 58.96 38.02 55.21 37.91 60.31 28.69\"><\/polyline><line class=\"cls-1\" x1=\"17.06\" y1=\"27.15\" x2=\"17.06\" y2=\"46.04\"><\/line><rect class=\"cls-1\" x=\"81.71\" y=\"1\" width=\"15.12\" height=\"70.55\" rx=\"7.28\"><\/rect><rect class=\"cls-1\" x=\"26.38\" y=\"1\" width=\"15.12\" height=\"70.55\" rx=\"7.28\"><\/rect><line class=\"cls-1\" x1=\"106.24\" y1=\"27.22\" x2=\"106.35\" y2=\"45.86\"><\/line><\/svg>",
+            "text": "<p>Continuous 750W (peaking to 1100W) Geared Hub Motor<\/p>"
+          }
+        },
+        "ca6e447d-e39c-462b-91e8-88194e167b40": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 114 59.3\"><defs><style>.cls-1{fill:none;stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}<\/style><\/defs><path class=\"cls-1\" d=\"M293.41,278.65H199.29c-2.92,0-5.29-2.37-5.29-6.21V225.71c0-2,2.37-4.36,5.29-4.36h94.12c2.92,0,5.28,2.37,5.28,4.36v46.73C298.69,276.28,296.33,278.65,293.41,278.65Z\" transform=\"translate(-193 -220.35)\"><\/path><rect class=\"cls-1\" x=\"83.42\" y=\"1\" height=\"57.3\"><\/rect><rect class=\"cls-1\" x=\"106.53\" y=\"17.64\" width=\"6.47\" height=\"20.33\" rx=\"1.42\"><\/rect><polyline class=\"cls-1\" points=\"39.95 9.46 33.41 28.91 42.03 29.28 39.39 46.57 51.28 25.5 42.09 25.32 48.03 9.82 39.45 9.82\"><\/polyline><\/svg>",
+            "text": "<p>48V 21Ah Battery<\/p>"
+          }
+        },
+        "3be25d14-5ab2-4279-8e5f-402e4459b8ec": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 70.81 77.21\">\n\t<defs>\n\t\t<style>\n\t\t\t.clsProductProduct-1 {\n\t\t\t\tfill: #040000;\n\t\t\t}\n\n\t\t\t.clsProduct-2 {\n\t\t\t\tfill: none;\n\t\t\t\tstroke: #040000;\n\t\t\t\tstroke-miterlimit: 10;\n\t\t\t\tstroke-width: 2px;\n\t\t\t}\n\t\t<\/style>\n\t<\/defs>\n\t<rect class=\"clsProduct-1\" x=\"42.69\" y=\"38.23\" width=\"27.13\" height=\"1.73\" rx=\"0.86\"><\/rect>\n\t<path class=\"clsProduct-1\" d=\"M186.78,419.64v3.5a.91.91,0,0,1-.86.95h0a.91.91,0,0,1-.87-.95v-3.5a.92.92,0,0,1,.87-.95h0A.91.91,0,0,1,186.78,419.64Z\" transform=\"translate(-170.57 -388.38)\"><\/path>\n\t<rect class=\"clsProduct-2\" x=\"42.69\" y=\"46.82\" width=\"27.13\" height=\"9.31\"><\/rect>\n\t<rect class=\"clsProduct-2\" x=\"42.51\" y=\"20.88\" width=\"27.13\" height=\"9.31\"><\/rect>\n\t<circle class=\"clsProduct-2\" cx=\"56.08\" cy=\"68.05\" r=\"8.17\"><\/circle>\n\t<circle class=\"clsProduct-2\" cx=\"56.08\" cy=\"68.05\" r=\"3.48\"><\/circle>\n\t<circle class=\"clsProduct-2\" cx=\"55.15\" cy=\"9.17\" r=\"8.17\"><\/circle>\n\t<circle class=\"clsProduct-2\" cx=\"55.15\" cy=\"9.17\" r=\"3.48\"><\/circle>\n\t<rect class=\"clsProduct-2\" x=\"1\" y=\"46.82\" width=\"28.69\" height=\"9.31\"><\/rect>\n\t<circle class=\"clsProduct-2\" cx=\"15.35\" cy=\"68.05\" r=\"8.17\"><\/circle>\n\t<circle class=\"clsProduct-2\" cx=\"15.35\" cy=\"68.05\" r=\"3.48\"><\/circle>\n\t<circle class=\"clsProduct-2\" cx=\"15.35\" cy=\"9.17\" r=\"8.17\"><\/circle>\n\t<circle class=\"clsProduct-2\" cx=\"15.35\" cy=\"9.17\" r=\"3.48\"><\/circle>\n\t<path class=\"clsProduct-2\" d=\"M8,38H22.73a0,0,0,0,1,0,0v3.58a2,2,0,0,1-2,2H9.91a2,2,0,0,1-2-2V38A0,0,0,0,1,8,38Z\"><\/path>\n\t<path class=\"clsProduct-2\" d=\"M9.82,20.88h11a0,0,0,0,1,0,0v3.55a3.75,3.75,0,0,1-3.75,3.75H13.58a3.75,3.75,0,0,1-3.75-3.75V20.88A0,0,0,0,1,9.82,20.88Z\"><\/path>\n\t<rect class=\"clsProduct-1\" x=\"55.01\" y=\"33.48\" width=\"2.66\" height=\"2.66\"><\/rect>\n\t<rect class=\"clsProduct-1\" x=\"55.01\" y=\"41.63\" width=\"2.66\" height=\"2.66\"><\/rect>\n<\/svg>",
+            "text": "<p>Dual Suspension System<\/p>"
+          }
+        },
+        "c47d9bd9-5b2d-40cf-a1c9-2f9b757f3394": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 73.99 73.7\"><defs><style>.cls-1,.cls-2,.cls-4{fill:none;}.cls-1,.cls-2,.cls-3,.cls-4{stroke:#040000;}.cls-1,.cls-2,.cls-3,.cls-4,.cls-5{stroke-miterlimit:10;}.cls-1{stroke-width:2px;}.cls-3,.cls-5{fill:#040000;}.cls-3{stroke-width:0.25px;}.cls-4{stroke-width:0.75px;}.cls-5{stroke:#000;stroke-width:0.5px;}<\/style><\/defs><circle class=\"cls-1\" cx=\"34.03\" cy=\"39.66\" r=\"18.63\"><\/circle><path class=\"cls-1\" d=\"M271.34,247.22a24.59,24.59,0,0,1,.64,5.6A24.85,24.85,0,1,1,247.13,228a26.77,26.77,0,0,1,2.85.16\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-1\" d=\"M279.46,247.08c.09,1,.14,5,.14,6a32.79,32.79,0,1,1-32.75-32.75s-7.17,2.57-9.8,9.75\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M241.2,277.94\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M214.1,244.06\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M213.91,266.93\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M221.91,255\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M237.76,228\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M215.59,243.3c.77,3,5.28,12.06,7,13.56\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M225,277.68c3.07.51,13.16,0,15.23-1\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M264.35,280.77c2.25-2.27,4.38-13.28,4.26-15.45\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-1\" d=\"M249.78,214.17l.23,16s15.11.84,19.33,17.31c12.12-.43,16.75-1,16.75-1S286.82,213.32,249.78,214.17Z\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-1\" d=\"M256.7,214.44l-.37,8.25s20.42,3.09,19.63,18.87l10-.42\" transform=\"translate(-213.1 -213.15)\"><\/path><circle class=\"cls-2\" cx=\"34.03\" cy=\"41.16\" r=\"2\"><\/circle><circle class=\"cls-2\" cx=\"34.03\" cy=\"31.16\" r=\"2\"><\/circle><circle class=\"cls-2\" cx=\"43.03\" cy=\"37.16\" r=\"2\"><\/circle><circle class=\"cls-2\" cx=\"39.03\" cy=\"48.16\" r=\"2\"><\/circle><circle class=\"cls-2\" cx=\"28.03\" cy=\"48.16\" r=\"2\"><\/circle><circle class=\"cls-2\" cx=\"25.03\" cy=\"37.16\" r=\"2\"><\/circle><circle class=\"cls-3\" cx=\"7.73\" cy=\"27.95\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"9.73\" cy=\"23.95\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"12.73\" cy=\"19.95\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"15.73\" cy=\"16.95\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"19.73\" cy=\"14.95\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"14.24\" cy=\"61.06\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"10.98\" cy=\"58\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"8\" cy=\"53.98\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"5.99\" cy=\"50.24\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"5.22\" cy=\"45.84\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"46.52\" cy=\"65.47\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"42.39\" cy=\"67.18\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"37.5\" cy=\"68.24\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"33.27\" cy=\"68.53\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"28.94\" cy=\"67.42\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"62.84\" cy=\"37.86\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"63.02\" cy=\"42.33\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"62.33\" cy=\"47.28\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"61.15\" cy=\"51.35\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"58.62\" cy=\"55.04\" r=\"0.75\"><\/circle><path class=\"cls-4\" d=\"M267.72,226.38a3.35,3.35,0,1,1,5.08,4.27\" transform=\"translate(-213.1 -213.15)\"><\/path><circle class=\"cls-5\" cx=\"50.48\" cy=\"7.2\" r=\"0.5\"><\/circle><circle class=\"cls-5\" cx=\"66.48\" cy=\"22.2\" r=\"0.5\"><\/circle><\/svg>",
+            "text": "<p>Dual Hydraulic Disc Brakes<\/p>"
+          }
+        },
+        "ac2f66c4-931d-45e5-8481-608c61dc9d73": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 79.88 81.89\">\n\t<defs>\n\t\t<style>\n\t\t\t.clsProduct2-1 {\n\t\t\t\tfill: none;\n\t\t\t\tstroke: #040000;\n\t\t\t\tstroke-miterlimit: 10;\n\t\t\t\tstroke-width: 2px;\n\t\t\t}\n\t\t<\/style>\n\t<\/defs>\n\t<circle class=\"clsProduct2-1\" cx=\"39.53\" cy=\"40.73\" r=\"25\"><\/circle>\n\t<circle class=\"clsProduct2-1\" cx=\"40.44\" cy=\"40.73\" r=\"10.51\"><\/circle>\n\t<rect class=\"clsProduct2-1\" x=\"99.81\" y=\"407.16\" width=\"10.55\" height=\"3.69\" rx=\"1.58\" transform=\"translate(170.39 424.66) rotate(176.36)\"><\/rect>\n\t<rect class=\"clsProduct2-1\" x=\"83.3\" y=\"418.72\" width=\"10.55\" height=\"3.69\" rx=\"1.58\" transform=\"translate(451.51 68.18) rotate(106.36)\"><\/rect>\n\t<rect class=\"clsProduct2-1\" x=\"88.52\" y=\"438.19\" width=\"10.55\" height=\"3.69\" rx=\"1.58\" transform=\"translate(213.57 -355.79) rotate(36.36)\"><\/rect>\n\t<rect class=\"clsProduct2-1\" x=\"108.59\" y=\"439.95\" width=\"10.55\" height=\"3.69\" rx=\"1.58\" transform=\"translate(-291.23 -248.77) rotate(-33.64)\"><\/rect>\n\t<rect class=\"clsProduct2-1\" x=\"117.11\" y=\"421.68\" width=\"10.55\" height=\"3.69\" rx=\"1.58\" transform=\"translate(-325.87 256.5) rotate(-103.64)\"><\/rect>\n\t<path class=\"clsProduct2-1\" d=\"M79.4,399.58s12.69,9,12.26-7.75c3.23,4.3,10.76,8.82,13.55-2.8,2.37,5.6,7.32,11.41,14.2,2.8.65,7.1-2.58,13.34,11.83,8.61-2.15,4.51-6,13.12,8.18,11.83-4.09,2.58-9.25,12.69,2.15,14.41-3.87,1.51-12,4.74-3.23,13.77-5.37.43-12.47,1.51-7.1,12.05-4.94-2.15-12.47-3.23-12.26,7.74-5-4.08-10.54-7.1-13.77,3.88-1.5-5.38-5.38-12.48-14-3.45,0-6.67-.86-14-11.83-8,2.15-6,4.3-13.76-8.39-12.69,4.51-3.44,6.67-11.62-2.15-13.44,4.73-2.05,8.82-11.3,2.58-13.88C76.82,412.48,83.27,410.76,79.4,399.58Z\" transform=\"translate(-65.55 -385.85)\"><\/path>\n<\/svg>",
+            "text": "<p>7 Speed Gear Shift System<\/p>"
+          }
+        },
+        "8077908a-be6d-4772-9d87-0c0919c8230d": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 80.38 80.38\">\n\t<defs>\n\t\t<style>\n\t\t\t.c_ls2-1 {\n\t\t\t\tfill: none;\n\t\t\t}\n\n\t\t\t.c_ls2-1,\n\t\t\t.c_ls2-2 {\n\t\t\t\tstroke: #040000;\n\t\t\t\tstroke-miterlimit: 10;\n\t\t\t\tstroke-width: 2px;\n\t\t\t}\n\n\t\t\t.c_ls2-2 {\n\t\t\t\tfill: #fff;\n\t\t\t}\n\t\t<\/style>\n\t<\/defs>\n\t<line class=\"c_ls2-1\" x1=\"40.01\" y1=\"8.54\" x2=\"40.01\" y2=\"71.96\"><\/line>\n\t<line class=\"c_ls2-1\" x1=\"24.15\" y1=\"12.79\" x2=\"55.86\" y2=\"67.71\"><\/line>\n\t<line class=\"c_ls2-1\" x1=\"12.55\" y1=\"24.4\" x2=\"67.47\" y2=\"56.1\"><\/line>\n\t<line class=\"c_ls2-1\" x1=\"8.3\" y1=\"40.25\" x2=\"71.71\" y2=\"40.25\"><\/line>\n\t<line class=\"c_ls2-1\" x1=\"12.55\" y1=\"56.1\" x2=\"67.47\" y2=\"24.4\"><\/line>\n\t<line class=\"c_ls2-1\" x1=\"24.15\" y1=\"67.71\" x2=\"55.86\" y2=\"12.79\"><\/line>\n\t<circle class=\"c_ls2-1\" cx=\"40.19\" cy=\"40.19\" r=\"39.18\"><\/circle>\n\t<circle class=\"c_ls2-1\" cx=\"40.19\" cy=\"40.19\" r=\"31.98\"><\/circle>\n\t<circle class=\"c_ls2-2\" cx=\"40.01\" cy=\"41.44\" r=\"12.28\"><\/circle>\n\t<circle class=\"c_ls2-1\" cx=\"40.01\" cy=\"41.44\" r=\"6.6\"><\/circle>\n<\/svg>",
+            "text": "<p>26\" x 4\" All-Terrain Fat Tire<\/p>"
+          }
+        },
+        "42f844f9-a2c5-48e5-b590-d856c383c519": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 68.08 71.22\"><defs><style>.cls-1,.cls-2ss{fill:none;stroke-miterlimit:10;stroke-width:2px;}.cls-1{stroke:#040000;stroke-linecap:round;}.cls-2ss{stroke:#000;}.cls-3{fill:#040000;}<\/style><\/defs><path class=\"cls-1\" d=\"M253.75,262.28a11.39,11.39,0,0,1-11.35-11.35h0a11.39,11.39,0,0,1,11.35-11.35l6.94.18\" transform=\"translate(-215.96 -213.89)\"><\/path><path class=\"cls-1\" d=\"M253.48,262.28h18.9A10.7,10.7,0,0,1,283,272.94h0a10.69,10.69,0,0,1-10.66,10.66H233.05\" transform=\"translate(-215.96 -213.89)\"><\/path>\n        <path class=\"cls-2ss\" d=\"M268.25,238.06c-.21.22-.42.42-.6.6l-.6-.6a29.6,29.6,0,0,1-6-8,15.67,15.67,0,0,1-1.6-7,8.18,8.18,0,0,1,16.36,0,15.7,15.7,0,0,1-1.56,7.22,29.92,29.92,0,0,1-6,7.78Z\" transform=\"translate(-215.96 -213.89)\"><\/path>\n        <path d=\"M264.61,238.06\" transform=\"translate(-215.96 -213.89)\"><\/path><path d=\"M267.62,221.72a2.36,2.36,0,1,0,2.35,2.36,2.36,2.36,0,0,0-2.35-2.36Z\" transform=\"translate(-215.96 -213.89)\"><\/path>\n        <path d=\"M267.65,225.15\" transform=\"translate(-215.96 -213.89)\"><\/path><ellipse class=\"cls-3\" cx=\"51.97\" cy=\"28.28\" rx=\"3.75\" ry=\"1.82\"><\/ellipse><path class=\"cls-2ss\" d=\"M225.77,279.18l-.61.6-.59-.6a29.81,29.81,0,0,1-6-8,15.8,15.8,0,0,1-1.59-7,8.18,8.18,0,1,1,16.35,0,15.73,15.73,0,0,1-1.56,7.22,29.79,29.79,0,0,1-6,7.78Z\" transform=\"translate(-215.96 -213.89)\"><\/path><path d=\"M222.12,279.18\" transform=\"translate(-215.96 -213.89)\"><\/path><path d=\"M225.14,262.84a2.35,2.35,0,1,0,2.35,2.35,2.36,2.36,0,0,0-2.35-2.35Z\" transform=\"translate(-215.96 -213.89)\"><\/path><path d=\"M225.17,266.26\" transform=\"translate(-215.96 -213.89)\"><\/path><ellipse class=\"cls-3\" cx=\"9.49\" cy=\"69.4\" rx=\"3.75\" ry=\"1.82\"><\/ellipse><\/svg>",
+            "text": "<p>50-82 Miles Estimated Range<\/p>"
+          }
+        },
+        "af6b929a-ff40-4028-8fec-e86988df27c0": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 72.05 71.97\"><defs><style>.cls-1{fill:none;stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}.cls-2s{font-size:14.31px;fill:#231815;font-family:SourceHanSansCN-Bold-GBpc-EUC-H, Source Han Sans CN;}.cls-3{letter-spacing:-0.02em;}<\/style><\/defs><path class=\"cls-1\" d=\"M228.29,228.86,215.47,278.1s-3.08,7.53,6.15,6.84,60-.68,60-.68,4.62,0,3.08-7.7-12.82-47.7-12.82-47.7h-43.6Z\" transform=\"translate(-213.97 -214.01)\"><\/path><circle class=\"cls-1\" cx=\"36.03\" cy=\"7.92\" r=\"6.92\"><\/circle><text class=\"cls-2s\" transform=\"translate(22.7 48.93)\">L<tspan class=\"cls-3\" x=\"8.26\" y=\"0\">B<\/tspan><tspan x=\"17.73\" y=\"0\">S<\/tspan><\/text><\/svg>",
+            "text": "<p>350lbs Payload Capacity<\/p>"
+          }
+        },
+        "eb2e25e0-0dab-44bd-bb75-7d83fb93d1c3": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 89.01 82.57\"><defs><style>.cls-1,.cls-2{fill:none;}.cls-1{stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}.cls-3{fill:#040000;}<\/style><\/defs><path class=\"cls-1\" d=\"M1014.4,599.51v22.36s3.15,1.19,9.24-1.79c0,17.89.75,33.09.75,33.09h-2.92l.32,11,2.6,1.49h12.54v-1.14l9-.2v7.41l10.75,8h34.76l9.92-8.45-.25-20.77-10.31-8-34.5-.25-10.69,8.5.12,3.92-7.06.2-.06-1.69-1.66.1-.19-39.4s-.23-5-7.47-4.77C1028,605.07,1024.27,597.72,1014.4,599.51Z\" transform=\"translate(-1013.4 -598.23)\"><\/path><polygon class=\"cls-1\" points=\"40.34 55.37 40.34 70.97 45.44 75.35 73.57 75.35 80.32 70.38 80.32 55.37 74.33 50.5 45.95 50.5 40.34 55.37\"><\/polygon><path class=\"cls-2\" d=\"M1053.74,660.16\" transform=\"translate(-1013.4 -598.23)\"><\/path><rect class=\"cls-3\" x=\"40.34\" y=\"61.81\" width=\"39.34\" height=\"1.79\"><\/rect><\/svg>",
+            "text": "<p>Electric Pedal-Assist<\/p>"
+          }
+        },
+        "9cb38dbf-2f52-43d8-81c5-c46b71fb5d19": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 105.95 76.69\"><defs><style>.cls-1,.cls-2{fill:none;stroke:#040000;stroke-miterlimit:10;}.cls-1{stroke-width:2px;}.cls-2{stroke-width:1.5px;}<\/style><\/defs><path class=\"cls-1\" d=\"M1152,614.34v14.32s12.5-.4,13.71,11.7l19.77.2V614.34l-2.42-1.61H1152Z\" transform=\"translate(-1149.13 -600.59)\"><\/path><path class=\"cls-1\" d=\"M1190.16,615.73v18.56l9.48-5.65h3s6.25,2.42,12.3-.2,28.84-14.52,28.84-14.52a20.33,20.33,0,0,0,8.07-8.27c2.62-5.45-3.22-3.83-3.63-3.83s-7.26,7.06-12.3,9.28-16.94,9.68-20.17,10.69-4.24,3-11.09,1.21S1190.16,615.73,1190.16,615.73Z\" transform=\"translate(-1149.13 -600.59)\"><\/path><path class=\"cls-1\" d=\"M1150.13,648.83v23.6s1.61,2.22,7,1.81V647S1152.55,644.8,1150.13,648.83Z\" transform=\"translate(-1149.13 -600.59)\"><\/path><polygon class=\"cls-1\" points=\"15.93 45.81 15.93 71.59 18.14 74.42 33.47 74.42 36.3 72 36.3 45.81 15.93 45.81\"><\/polygon><rect class=\"cls-1\" x=\"41.16\" y=\"46.06\" width=\"59.15\" height=\"26.02\"><\/rect><rect class=\"cls-1\" x=\"100.31\" y=\"42.59\" width=\"4.64\" height=\"33.11\" rx=\"2.28\"><\/rect><polyline class=\"cls-2\" points=\"24.99 53.34 22.35 60.34 24.98 61.1 22.77 66.78 29.87 59.16 26.51 58.89 28.95 53.96 24.45 53.73\"><\/polyline><\/svg>",
+            "text": "<p>Half Twist Throttle<\/p>"
+          }
+        },
+        "bf7ee25c-b5e5-459c-b39e-9d9be261bf32": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 112.73 85.97\"><defs><style>.cls-1{fill:none;}.cls-1,.cls-2{stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#fff;}<\/style><\/defs><polygon class=\"cls-1\" points=\"92.88 14.02 89.34 1.23 83.85 2.75 87.24 15.02 92.88 14.02\"><\/polygon><polygon class=\"cls-1\" points=\"95.86 47.8 106 82.84 111.5 81.32 101.72 45.97 95.86 47.8\"><\/polygon><path class=\"cls-1\" d=\"M1385.6,639.81l.26.89,5.92-1.85-6.52-23.54-5.64,1,.42,1.51h-54.13l-2.4-8.26-5.48,1.59,7.13,24.61-31.62,33.66,3.69,7-4.88.22.25,5.7,49.38-2.18,1.55-1.46h0Zm-82.07,36.33-3-5.79L1327,642.12l9.44,32.57Zm38.22-3.61-14.19-49h54l2,7.21Z\" transform=\"translate(-1291.31 -597.41)\"><\/path><circle class=\"cls-2\" cx=\"47.77\" cy=\"75.32\" r=\"7.95\"><\/circle><\/svg>",
+            "text": "<p>6061 Aluminum Frame<\/p>"
+          }
+        },
+        "39c2f759-da00-47bb-9d8d-a4e610e4f1d6": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 77.26 76.63\"><defs><style>.clsProduct3-1{fill:#040000;}.clsProduct3-2{fill:none;stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}<\/style><\/defs><path class=\"clsProduct3-1\" d=\"M226.26,261.12a12.54,12.54,0,1,1-12.54,12.53,12.54,12.54,0,0,1,12.54-12.53m0-2a14.54,14.54,0,1,0,14.53,14.53,14.54,14.54,0,0,0-14.53-14.53Z\" transform=\"translate(-211.72 -211.56)\"><\/path><path class=\"clsProduct3-1\" d=\"M226.26,267.31a6.35,6.35,0,1,1-6.35,6.34,6.34,6.34,0,0,1,6.35-6.34m0-2a8.35,8.35,0,1,0,8.34,8.34,8.34,8.34,0,0,0-8.34-8.34Z\" transform=\"translate(-211.72 -211.56)\"><\/path><path class=\"clsProduct3-2\" d=\"M255.5,232.58,251,237.05l-.39-.39a2.66,2.66,0,1,0-3.77,3.76l.39.4-2.36,2.36-.39-.39a2.67,2.67,0,1,0-3.77,3.77l.39.39-2.36,2.36-.4-.39a2.69,2.69,0,0,0-3.81,0h0a2.7,2.7,0,0,0,0,3.82l.39.39-4.34,4.34s0,0,0,.07c0,.42,11-1.11,12.27,11.44,0,0,0,0,.07,0l4.21-3.63.68.68a2.7,2.7,0,0,0,3.82.05h0a2.7,2.7,0,0,0-.05-3.82l-.68-.68,2.36-2.36.68.68a2.67,2.67,0,1,0,3.77-3.77l-.68-.68,2.36-2.36.68.68a2.67,2.67,0,1,0,3.77-3.77l-.68-.68,3.71-3.84s.8-.85.79-.87l-12.19-12S255.52,232.55,255.5,232.58Z\" transform=\"translate(-211.72 -211.56)\"><\/path><path class=\"clsProduct3-2\" d=\"M262.05,218.85h11.19a4.56,4.56,0,0,1,4.56,4.56v14.4a4.56,4.56,0,0,1-4.56,4.56H262.05a0,0,0,0,1,0,0V218.85A0,0,0,0,1,262.05,218.85Z\" transform=\"translate(-295.73 46.85) rotate(-45)\"><\/path><path class=\"clsProduct3-2\" d=\"M276.28,211.91h5.16a4.56,4.56,0,0,1,4.56,4.56v5.87a4.56,4.56,0,0,1-4.56,4.56h-5.16a0,0,0,0,1,0,0v-15A0,0,0,0,1,276.28,211.91Z\" transform=\"translate(-284.52 51.5) rotate(-45)\"><\/path><\/svg>",
+            "text": "<p>Rear Suspension<\/p>"
+          }
+        },
+        "4b6d7790-cb09-4f76-ac16-53a8b0eb52a7": {
+          "type": "productIcon",
+          "disabled": true,
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 74 62\"><defs><style>.cls-1{fill:none;stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}<\/style><\/defs><rect class=\"cls-1\" x=\"1\" y=\"1\" width=\"72\" height=\"60\"><\/rect><rect class=\"cls-1\" x=\"18.91\" y=\"11.4\" width=\"10.56\" height=\"0.2\"><\/rect><rect class=\"cls-1\" x=\"18.91\" y=\"30.4\" width=\"10.56\" height=\"0.2\"><\/rect><rect class=\"cls-1\" x=\"244.91\" y=\"233\" width=\"0.19\" height=\"14.4\" transform=\"translate(277 261.4) rotate(180)\"><\/rect><rect class=\"cls-1\" x=\"228.91\" y=\"233\" width=\"0.19\" height=\"14.4\" transform=\"translate(245 261.4) rotate(180)\"><\/rect><rect class=\"cls-1\" x=\"18.91\" y=\"50.4\" width=\"10.56\" height=\"0.2\"><\/rect><rect class=\"cls-1\" x=\"244.91\" y=\"253\" width=\"0.19\" height=\"14.4\" transform=\"translate(277 301.4) rotate(180)\"><\/rect><rect class=\"cls-1\" x=\"228.91\" y=\"253\" width=\"0.19\" height=\"14.4\" transform=\"translate(245 301.4) rotate(180)\"><\/rect><rect class=\"cls-1\" x=\"44.91\" y=\"11.4\" width=\"10.56\" height=\"0.2\"><\/rect><rect class=\"cls-1\" x=\"44.91\" y=\"30.4\" width=\"10.56\" height=\"0.2\"><\/rect><rect class=\"cls-1\" x=\"270.91\" y=\"233\" width=\"0.19\" height=\"14.4\" transform=\"translate(329 261.4) rotate(180)\"><\/rect><rect class=\"cls-1\" x=\"254.91\" y=\"233\" width=\"0.19\" height=\"14.4\" transform=\"translate(297 261.4) rotate(180)\"><\/rect><rect class=\"cls-1\" x=\"44.91\" y=\"50.4\" width=\"10.56\" height=\"0.2\"><\/rect><rect class=\"cls-1\" x=\"270.91\" y=\"253\" width=\"0.19\" height=\"14.4\" transform=\"translate(329 301.4) rotate(180)\"><\/rect><rect class=\"cls-1\" x=\"254.91\" y=\"253\" width=\"0.19\" height=\"14.4\" transform=\"translate(297 301.4) rotate(180)\"><\/rect><\/svg>",
+            "text": "<p>See Riding<br\/> Data, Control Lights<\/p>"
+          }
+        },
+        "a2a2881d-4dee-4388-a356-b2b9b1a73fc7": {
+          "type": "productIcon",
+          "disabled": true,
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 84.32 84.36\">\n\t<defs>\n\t\t<style>\n\t\t\t.cls4-1 {\n\t\t\t\tfill: #060001;\n\t\t\t}\n\n\t\t\t.cls4-2,\n\t\t\t.cls4-3 {\n\t\t\t\tfill: none;\n\t\t\t\tstroke-miterlimit: 10;\n\t\t\t\tstroke-width: 2px;\n\t\t\t}\n\n\t\t\t.cls4-2 {\n\t\t\t\tstroke: #060001;\n\t\t\t}\n\n\t\t\t.cls4-3 {\n\t\t\t\tstroke: #040000;\n\t\t\t}\n\t\t<\/style>\n\t<\/defs>\n\t<path class=\"cls4-1\" d=\"M344.45,564.18a5.13,5.13,0,0,1,5.13,5.13v2.57H328.65v-2.57a5.13,5.13,0,0,1,5.12-5.13h10.68m0-2H333.77a7.13,7.13,0,0,0-7.12,7.13v3.2a1.37,1.37,0,0,0,1.37,1.37h22.19a1.37,1.37,0,0,0,1.37-1.37v-3.2a7.13,7.13,0,0,0-7.13-7.13Z\" transform=\"translate(-280.43 -562.18)\"><\/path>\n\t<path class=\"cls4-2\" d=\"M314.83,606.16H302.61c-2.57,0-4.66-1.62-4.66-3.62h0c0-2,2.09-3.62,4.66-3.62h12.22\" transform=\"translate(-280.43 -562.18)\"><\/path>\n\t<path class=\"cls4-2\" d=\"M315.33,632.39H303.11c-2.58,0-4.66-1.63-4.66-3.63h0c0-2,2.08-3.62,4.66-3.62h12.22\" transform=\"translate(-280.43 -562.18)\"><\/path>\n\t<path class=\"cls4-2\" d=\"M314.13,619.7h-28c-2.57,0-4.66-1.62-4.66-3.62h0c0-2,2.09-3.63,4.66-3.63h28\" transform=\"translate(-280.43 -562.18)\"><\/path>\n\t<rect class=\"cls4-2\" x=\"2.29\" y=\"62.96\" width=\"12\" height=\"7.24\" rx=\"3.62\"><\/rect>\n\t<path class=\"cls4-2\" d=\"M315.37,592.45H303.15c-2.57,0-4.66-1.62-4.66-3.62h0c0-2,2.09-3.62,4.66-3.62h12.22\" transform=\"translate(-280.43 -562.18)\"><\/path>\n\t<rect class=\"cls4-2\" x=\"2.33\" y=\"23.02\" width=\"12\" height=\"7.24\" rx=\"3.62\"><\/rect>\n\t<rect class=\"cls4-2\" x=\"34.52\" y=\"10.54\" width=\"48.8\" height=\"72.82\" rx=\"18.14\"><\/rect>\n\t<polygon class=\"cls4-3\" points=\"57.79 30.05 47.65 50.92 55.16 52.4 55.07 65.73 70.19 42.3 62.13 41.09 57.79 30.05\"><\/polygon>\n<\/svg>",
+            "text": "<p>3A Quick <br\/>Charger<\/p>"
+          }
+        },
+        "a7bbc340-d2eb-4365-bc8d-f96fb35a5219": {
+          "type": "productIcon",
+          "disabled": true,
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 70.28 103.7\">\n\t<defs>\n\t\t<style>\n\t\t\t.c_ls_3-1 {\n\t\t\t\tfill: none;\n\t\t\t\tstroke: #000;\n\t\t\t\tstroke-miterlimit: 10;\n\t\t\t\tstroke-width: 2px;\n\t\t\t}\n\t\t<\/style>\n\t<\/defs>\n\t<path class=\"c_ls_3-1\" d=\"M-163.77,616.79h-1.71V587h-8.42v29.75h-2.34c-2.58,0-4.67,1.2-4.67,2.67v8.22l1-.1a102.13,102.13,0,0,1,19.78,0l1,.1v-8.22C-159.09,618-161.18,616.79-163.77,616.79Z\" transform=\"translate(204.83 -586.04)\"><\/path>\n\t<path class=\"c_ls_3-1\" d=\"M-195.41,611v-3c0-.78-1.12-1.42-2.5-1.42h-3.43c-1.37,0-2.49.64-2.49,1.42v3Z\" transform=\"translate(204.83 -586.04)\"><\/path>\n\t<polygon class=\"c_ls_3-1\" points=\"1 29.3 1 45.91 9.42 44.24 9.42 29.3 1 29.3\"><\/polygon>\n\t<path class=\"c_ls_3-1\" d=\"M-144,610.37v-3c0-.78,1.12-1.42,2.49-1.42H-138c1.38,0,2.5.64,2.5,1.42v3Z\" transform=\"translate(204.83 -586.04)\"><\/path>\n\t<polygon class=\"c_ls_3-1\" points=\"69.28 28.7 69.28 45.91 60.86 44.24 60.86 28.7 69.28 28.7\"><\/polygon>\n\t<path class=\"c_ls_3-1\" d=\"M-137.31,641.8l-26.54-5.68a29.68,29.68,0,0,0-5.84-.65,29.68,29.68,0,0,0-5.84.65l-26.55,5.68c-1,.23-1.75.81-1.75,1.45v36.2l2.11,1.67v2.37c0,2.57,1.53,5.25,6,5.25h.29V647.06c0-.92,1.06-1.72,2.6-2l20.24-3.27a15.12,15.12,0,0,1,2.88-.33,15.12,15.12,0,0,1,2.88.33l20.24,3.27c1.54.25,2.6,1,2.6,2v41.68h.29c4.49,0,6-2.68,6-5.25v-2.37l2.11-1.67v-36.2C-135.55,642.61-136.25,642-137.31,641.8Z\" transform=\"translate(204.83 -586.04)\"><\/path>\n<\/svg>",
+            "text": "<p>Adjustable <br\/>Hydraulic Fork<\/p>"
+          }
+        },
+        "1f5f10d3-1d65-40c2-9039-4b5ff330fe1c": {
+          "type": "productIcon",
+          "disabled": true,
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 80.4 80.27\">\n\t<defs>\n\t\t<style>\n\t\t\t.cl_s-1,\n\t\t\t.cl_s-5,\n\t\t\t.cl_s-6 {\n\t\t\t\tfill: none;\n\t\t\t}\n\n\t\t\t.cl_s-1,\n\t\t\t.cl_s-2 {\n\t\t\t\tstroke: #040000;\n\t\t\t}\n\n\t\t\t.cl_s-1,\n\t\t\t.cl_s-2,\n\t\t\t.cl_s-3,\n\t\t\t.cl_s-4,\n\t\t\t.cl_s-5,\n\t\t\t.cl_s-6 {\n\t\t\t\tstroke-miterlimit: 10;\n\t\t\t}\n\n\t\t\t.cl_s-1,\n\t\t\t.cl_s-2,\n\t\t\t.cl_s-3,\n\t\t\t.cl_s-5 {\n\t\t\t\tstroke-width: 2px;\n\t\t\t}\n\n\t\t\t.cl_s-2,\n\t\t\t.cl_s-3,\n\t\t\t.cl_s-4 {\n\t\t\t\tfill: #fff;\n\t\t\t}\n\n\t\t\t.cl_s-3,\n\t\t\t.cl_s-4,\n\t\t\t.cl_s-5,\n\t\t\t.cl_s-6 {\n\t\t\t\tstroke: #000;\n\t\t\t}\n\t\t<\/style>\n\t<\/defs>\n\t<rect class=\"cl_s-1\" x=\"1\" y=\"1\" width=\"64.12\" height=\"78.27\"><\/rect>\n\t<circle class=\"cl_s-2\" cx=\"33.06\" cy=\"28.41\" r=\"20.62\"><\/circle>\n\t<line class=\"cl_s-1\" x1=\"32.63\" y1=\"7.33\" x2=\"33.49\" y2=\"49.49\"><\/line>\n\t<line class=\"cl_s-1\" x1=\"14.6\" y1=\"18.24\" x2=\"51.53\" y2=\"38.58\"><\/line>\n\t<line class=\"cl_s-1\" x1=\"15.02\" y1=\"39.32\" x2=\"51.1\" y2=\"17.5\"><\/line>\n\t<circle class=\"cl_s-2\" cx=\"33.06\" cy=\"28.41\" r=\"9.91\"><\/circle>\n\t<circle class=\"cl_s-1\" cx=\"19.72\" cy=\"65.48\" r=\"5.5\"><\/circle>\n\t<circle class=\"cl_s-1\" cx=\"35.78\" cy=\"65.48\" r=\"5.5\"><\/circle>\n\t<path class=\"cl_s-3\" d=\"M1517.9,665.74c-3.43,2.89-7.07,4.72-10.72,4.72s-7.28-1.72-10.71-4.72a32.63,32.63,0,0,1-3.33-3.32c-.21-.22-.32-.43-.53-.65.11-.21.32-.43.43-.64a22.49,22.49,0,0,1,3.11-3.43c3.32-3,7-4.82,11-4.82s7.72,1.82,11,4.82a30.21,30.21,0,0,1,3.11,3.43c.11.21.32.43.43.64a3,3,0,0,1-.53.65,32.62,32.62,0,0,1-3.33,3.32Z\" transform=\"translate(-1442.48 -598.51)\"><\/path>\n\t<path class=\"cl_s-4\" d=\"M1516,670.8\" transform=\"translate(-1442.48 -598.51)\"><\/path>\n\t<path class=\"cl_s-5\" d=\"M1507.62,657a5,5,0,1,0,5,5,5,5,0,0,0-5-5Z\" transform=\"translate(-1442.48 -598.51)\"><\/path>\n\t<path class=\"cl_s-6\" d=\"M1500.41,675.91\" transform=\"translate(-1442.48 -598.51)\"><\/path>\n<\/svg>",
+            "text": "<p>Color <br\/>Display<\/p>"
+          }
+        },
+        "4924655e-ca19-4127-8629-0a3d00aa72c5": {
+          "type": "productIcon",
+          "disabled": true,
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 109.2 79.55\"><defs><style>.cls-1{fill:none;stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}<\/style><\/defs><path class=\"cls-1\" d=\"M809.45,570.43s-6.08,4-2.56,8.54,12.17,17.39,21.13,17.69,11.21.92,25.94-4,46.1-9.46,58.91-7.32c-.33-3.06,1-10.38-9.29-11s-28.49,2.14-63.07-1.52S809.45,570.43,809.45,570.43Z\" transform=\"translate(-804.8 -569.23)\"><\/path><path class=\"cls-1\" d=\"M836.81,606.5s0,8.54,1.71,8.54h6.4l6.19,32.74h14.73l-6-36.6h2.78l.43-4.68s.85,2.24,7.47-1.42a61.05,61.05,0,0,0,11.31-8.14h-10l-4.91,3.87-15.37,1Z\" transform=\"translate(-804.8 -569.23)\"><\/path><\/svg>",
+            "text": "<p>Seat <br\/>Suspension<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "da1c8eb4-2170-47f5-bb91-a1e40b0470d9",
+        "ca6e447d-e39c-462b-91e8-88194e167b40",
+        "3be25d14-5ab2-4279-8e5f-402e4459b8ec",
+        "c47d9bd9-5b2d-40cf-a1c9-2f9b757f3394",
+        "ac2f66c4-931d-45e5-8481-608c61dc9d73",
+        "8077908a-be6d-4772-9d87-0c0919c8230d",
+        "42f844f9-a2c5-48e5-b590-d856c383c519",
+        "af6b929a-ff40-4028-8fec-e86988df27c0",
+        "eb2e25e0-0dab-44bd-bb75-7d83fb93d1c3",
+        "9cb38dbf-2f52-43d8-81c5-c46b71fb5d19",
+        "bf7ee25c-b5e5-459c-b39e-9d9be261bf32",
+        "39c2f759-da00-47bb-9d8d-a4e610e4f1d6",
+        "4b6d7790-cb09-4f76-ac16-53a8b0eb52a7",
+        "a2a2881d-4dee-4388-a356-b2b9b1a73fc7",
+        "a7bbc340-d2eb-4365-bc8d-f96fb35a5219",
+        "1f5f10d3-1d65-40c2-9039-4b5ff330fe1c",
+        "4924655e-ca19-4127-8629-0a3d00aa72c5"
+      ],
+      "settings": {
+      }
+    },
+    "60537ec1-ae90-4e61-a047-d7134aca15f0": {
+      "type": "describe-video",
+      "settings": {
+        "top_title": "<p>Introducing Bee Adventurer<\/p>",
+        "bottom_title": "",
+        "text2": "<p>1100W Peaking motor, <br\/>advanced lighting system,<br\/>SHIMANO 7-speed transmission<\/p>",
+        "text1": "<p>48V 21Ah large battery,<br\/>full suspension system, <br\/>hydraulic disc brakes and <br\/>more cool features.<\/p>",
+        "handbrake_p_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ae735e9d07884791bcb3ee30aa9d9bae.mp4",
+        "handbrake_m_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/3ac1e8a24f994c75ad4df7eb4a066af5.mp4"
+      }
+    },
+    "7c8d2aed-cbcf-460f-b470-b7379c8c98a4": {
+      "type": "jd-product-scroll",
+      "blocks": {
+        "db22a01f-d0c7-44f1-a05d-5a1c5a3c4b78": {
+          "type": "productImage_scroll",
+          "settings": {
+            "title": "<p>Motor<\/p>",
+            "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/5e0a6fc9c55f4bb89f32312a8cffca79.mp4",
+            "right_title": "<p>Intelligent Motor<\/p>",
+            "right_text": "<p>The high-speed continuous 750W (peaking to 1100W) brushless geared hub motor with 80 Nm of max torque, which gives you a maximum power and be unstoppable on bad terrains. We’d love to let you feel the passion and enjoy the pleasure of cycling!<\/p>"
+          }
+        },
+        "ded92ff6-54ce-4d68-98f0-7198c5d3441b": {
+          "type": "productImage_scroll",
+          "settings": {
+            "title": "<p>Battery<\/p>",
+            "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/90343ae7668c41488d82e02f5aaa50bf.mp4",
+            "right_title": "<p>Large Capacity Battery<\/p>",
+            "right_text": "<p>48V 21Ah Lithium-ion battery gives you longer battery life. You are able to travel over 80 miles on a charge using pedal-assist mode and 50 miles on pure electric power mode. We want to make everyone enjoy the ride longer!<\/p>"
+          }
+        },
+        "2dd79a11-91cf-498c-ba8d-031e1433ea72": {
+          "type": "productImage_scroll",
+          "settings": {
+            "title": "<p>Suspension<\/p>",
+            "img": "shopify:\/\/shop_images\/801658f5a9a28a00a2e649a0ceca1d3c_7c8ce2f0-42d9-4f0b-9575-d20e7389f92a.webp",
+            "link": "",
+            "right_title": "<p>Full Suspension System<\/p>",
+            "right_text": "<p>Our ebikes equipped with a 1,200 pound spring weight, 180 mm travel rear suspension, manufactured by KSpeed. Our dual suspension system on both the front side and rear side helps you overcome the bumpiness on bad terrains. Your comfort is very important to us!<\/p>"
+          }
+        },
+        "27c081f3-7c4a-41c3-9614-081100429e86": {
+          "type": "productImage_scroll",
+          "settings": {
+            "title": "<p>Brakes<\/p>",
+            "img": "shopify:\/\/shop_images\/Brakes.png",
+            "link": "",
+            "right_title": "<p>Reliable Brakes<\/p>",
+            "right_text": "<p>Our ebikes are equipped with dual hydraulic disc brakes, which give you maximum stopping power. With hydraulic disc brakes, the actuation moves both pads towards the rotor at the same time and with even pressure. The most important advantage of hydraulic disc brakes is that they automatically self-adjust as they wear down.<\/p>"
+          }
+        },
+        "7a9c7b5b-b7de-4205-8df6-ea2b98e4e7c5": {
+          "type": "productImage_scroll",
+          "settings": {
+            "title": "<p>Light<\/p>",
+            "img": "shopify:\/\/shop_images\/04_e787648e-1be4-4ab3-8e19-dd8381918820.png",
+            "link": "",
+            "right_title": "<p>Advanced Light System<\/p>",
+            "right_text": "<p>Front Light:The headlight is bright enough to let you see the road clearly in front of you when riding at nighttime. Integrated Tail Light:The integrated taillight combine with all these functions: Night Light (turned on with the front light at the same time),Brake Light,Turning Signal Light<\/p>"
+          }
+        },
+        "71602e27-1f3f-4055-8e18-3bd4770e8b8b": {
+          "type": "productImage_scroll",
+          "settings": {
+            "title": "<p>Shift System<\/p>",
+            "img": "shopify:\/\/shop_images\/Gear_Shift_System_70e1724a-725a-42da-9d69-d786bce04fe0.jpg",
+            "link": "",
+            "right_title": "<p>SHIMANO 7-Speed Gear Shift System<\/p>",
+            "right_text": "<p>The SHIMANO 7 speed freewheel lets you shift to a larger cog for uphill riding and downshift to a smaller cog for high-speed cycling. During the pedal-assist mode, you can control the speed better with the gear shift system.<\/p>"
+          }
+        },
+        "3767a37d-f624-4c26-a4fb-540ba0b5f285": {
+          "type": "productImage_scroll",
+          "settings": {
+            "title": "<p>Rack & Fenders<\/p>",
+            "img": "shopify:\/\/shop_images\/6_106e11fc-6b7b-4596-95a7-f7742f64788d.png",
+            "link": "",
+            "right_title": "<p>Rear Rack & Fenders<\/p>",
+            "right_text": "<p>With the rear rack installed, you'll be able to carry a bike bag or other gear on the back of your bike, making a bike-packing trip or just simple daily-use more convenient. The fenders are installed both front and rear and help keep your ebike and belongings clean during your ride.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "db22a01f-d0c7-44f1-a05d-5a1c5a3c4b78",
+        "ded92ff6-54ce-4d68-98f0-7198c5d3441b",
+        "2dd79a11-91cf-498c-ba8d-031e1433ea72",
+        "27c081f3-7c4a-41c3-9614-081100429e86",
+        "7a9c7b5b-b7de-4205-8df6-ea2b98e4e7c5",
+        "71602e27-1f3f-4055-8e18-3bd4770e8b8b",
+        "3767a37d-f624-4c26-a4fb-540ba0b5f285"
+      ],
+      "settings": {
+      }
+    },
+    "16607060699df11384": {
+      "type": "jd-product-video",
+      "disabled": true,
+      "settings": {
+        "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d7789580dcc84bdd82d8ea489c5d5389.mp4",
+        "img": "shopify:\/\/shop_images\/product-video-adv.jpg",
+        "img_mobile": "shopify:\/\/shop_images\/1_ed1da5ed-fcca-4995-beec-2a035a563d39.png"
+      }
+    },
+    "9894e239-73b7-4d1e-84ef-9cb8b692bf6b": {
+      "type": "product-video",
+      "settings": {
+        "product_fullscreen_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/91b9d5d590f24c02a38fd22f38a5e509.mp4"
+      }
+    },
+    "8cd1fc5a-1c2d-47b6-9abb-bc51bafc8db7": {
+      "type": "product-youtube",
+      "disabled": true,
+      "blocks": {
+        "f4e04d54-ff7b-41fb-9872-516cb3279ed7": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-1.jpg",
+            "youtube_text": "Bee Adventurer",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=rFTgW-TgSNU&t=6s"
+          }
+        },
+        "8f7658e8-91c7-4097-821e-77b039d07484": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-2.jpg",
+            "youtube_text": "Bee Pathfinder",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=NJ_c_TEWaPA&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=12"
+          }
+        },
+        "4af74553-83c5-4193-b2de-65227b0dbcff": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-5.jpg",
+            "youtube_text": "Bee Challenger",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=d0BXhAeK2ow&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=8"
+          }
+        },
+        "a6ca3941-9d23-4433-a863-4b46a04ff6f2": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-4.jpg",
+            "youtube_text": "Bee Explorer",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=IGS2UmPfSWY&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=9"
+          }
+        },
+        "572fc3c4-89c3-4452-bc1e-aad21d18533d": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-6.jpg",
+            "youtube_text": "Bee Adventurer",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=00W7rkkfons&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=11"
+          }
+        },
+        "16824a5a-27bb-4a78-b9c5-6c567561486d": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-3.jpg",
+            "youtube_text": "Bee Challenger",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=QHsKpC0USGk&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=6"
+          }
+        },
+        "923a23e8-1520-460b-a812-2ec6bcaec53a": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-7.jpg",
+            "youtube_text": "Bee Challenger",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=pHzIOF17-fI&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=3&t=278s"
+          }
+        },
+        "dc589ab1-6527-4206-af09-0a8dac72deeb": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-8.jpg",
+            "youtube_text": "Bee Challenger",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=OXDATVpUS7Y&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=2"
+          }
+        },
+        "3e4920e1-dc29-498a-bcbb-123bf16b4d02": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-9.jpg",
+            "youtube_text": "Bee Pathfinder",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=U7Lulxf_j8Y&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=4"
+          }
+        },
+        "05455b1e-80c6-455c-8062-aa98f874cfdf": {
+          "type": "image",
+          "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-10.jpg",
+            "youtube_text": "Bee Explorer",
+            "youtube_video": "https:\/\/www.youtube.com\/watch?v=HWMxZVU4EdE&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=15"
+          }
+        }
+      },
+      "block_order": [
+        "f4e04d54-ff7b-41fb-9872-516cb3279ed7",
+        "8f7658e8-91c7-4097-821e-77b039d07484",
+        "4af74553-83c5-4193-b2de-65227b0dbcff",
+        "a6ca3941-9d23-4433-a863-4b46a04ff6f2",
+        "572fc3c4-89c3-4452-bc1e-aad21d18533d",
+        "16824a5a-27bb-4a78-b9c5-6c567561486d",
+        "923a23e8-1520-460b-a812-2ec6bcaec53a",
+        "dc589ab1-6527-4206-af09-0a8dac72deeb",
+        "3e4920e1-dc29-498a-bcbb-123bf16b4d02",
+        "05455b1e-80c6-455c-8062-aa98f874cfdf"
+      ],
+      "settings": {
+      }
+    },
+    "16623649202cdc4dd6": {
+      "type": "jd-productImage_describe",
+      "blocks": {
+        "7c66f518-1e74-46cc-a931-04f74ba8d7a5": {
+          "type": "productImage_describe",
+          "settings": {
+            "title": "<p>Intelligent Motor<\/p>",
+            "text": "<p>The high-speed continuous 750W (peaking to 1100W) brushless geared hub motor with 80 Nm of max torque, which gives you a maximum power and be unstoppable on bad terrains. We’d love to let you feel the passion and enjoy the pleasure of cycling!<\/p>",
+            "text_mobile": "<p>The high-speed continuous 750W (peaking to 1100W) brushless geared hub motor with 80 Nm of max torque, which gives you a maximum power and be unstoppable on bad terrains. We’d love to let you feel the passion and enjoy the pleasure of cycling!<\/p>",
+            "number": "750",
+            "number_company": "W",
+            "number_text": "Motor Power",
+            "number2": "80",
+            "number_company2": "Nm",
+            "number_text2": "80Nm Max Motor Torque",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "7c66f518-1e74-46cc-a931-04f74ba8d7a5"
+      ],
+      "settings": {
+      }
+    },
+    "cb596b7c-2a8e-42be-897f-8d2dfa928ac2": {
+      "type": "jd-product-E-shifter",
+      "settings": {
+        "title": "<p>Hydraulic Brakes<\/p>",
+        "text": "<p>Our ebikes are equipped with dual hydraulic disc brakes, which give you maximum stopping power. With hydraulic disc brakes, the actuation moves both pads towards the 180mm rotor at the same time and with even pressure. The most important advantage of hydraulic disc brakes is that they automatically self-adjust as they wear down.<\/p>"
+      }
+    },
+    "4bf37567-ef5d-4088-b5d2-7cc3db295fbc": {
+      "type": "jd-product-E-shifter2",
+      "disabled": true,
+      "settings": {
+        "img_pc": "shopify:\/\/shop_images\/3_7a1030c6-ecd5-48ec-bd48-1f87a9863357.jpg",
+        "img_mobile": "shopify:\/\/shop_images\/4_34f2c2f0-43c3-49b5-b70b-901bf99628a6.jpg",
+        "title": "<p>Hydraulic Brakes<\/p>",
+        "text": "<p>Our ebikes are equipped with dual hydraulic disc brakes, which give you maximum stopping power. With hydraulic disc brakes, the actuation moves both pads towards the 180mm rotor at the same time and with even pressure. The most important advantage of hydraulic disc brakes is that they automatically self-adjust as they wear down.<\/p>"
+      }
+    },
+    "b458995f-6d9f-492d-9777-cc741881bb23": {
+      "type": "jd-shockAbsorption",
+      "disabled": true,
+      "settings": {
+        "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/4ee0be8f804d44f7a0c3df2a09aaea5f.mp4",
+        "title": "Four-Bar Linkage Suspension",
+        "text": "Bee Adventurer & Bee Explorer has a mature four-bar linkage suspension. BeeCool is the earliest all terrain e-bike four-bar linkage suspension maker in the US market and BeeCool has rich and advanced manufacturing technology in Four-Bar Linkage Suspension. The four-bar linkage stands for a four-sided polygonal frame structure: the chain stay, seat stay, rockers, and seat tube. This kind of structure can help the e-bike frame absorb both rear-upward force and vibrations."
+      }
+    },
+    "a34c1b85-8eb8-4ea3-bbec-a7b207dea0b2": {
+      "type": "jd-shockAbsorption",
+      "settings": {
+        "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/93a548219df24ad99c06d8467632d2f1.mp4",
+        "title": "Four-Bar Linkage Rear Suspension",
+        "text": "BeeCool has a mature four-bar linkage rear suspension. We are the earliest four-bar linkage suspension all terrain e-bike maker in the US market and we have rich and advanced manufacturing technology in Four-Bar Linkage Suspension. The four-bar linkage stands for a four-sided polygonal frame structure: the chain stay, seat stay, rockers, and seat tube. This kind of structure can help the e-bike frame absorb rear-upward force and vibrations. The mature manufacturing technology allows us to offer Bee Riders better Four-Bar Linkage Suspension system with lower cost."
+      }
+    },
+    "1660721689a004f443": {
+      "type": "jd-product-battery",
+      "settings": {
+        "bg_img": "shopify:\/\/shop_images\/7_9c9f1f8a-7ddb-4ba9-8815-42a746f035b9.png",
+        "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e0963c123c7f4aa3835851dc3600fa71.mp4",
+        "bg_imgMobile": "shopify:\/\/shop_images\/2_64811df6-c5e5-4952-bb00-815be6709c38.jpg",
+        "link_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e0963c123c7f4aa3835851dc3600fa71.mp4",
+        "title": "<p>Large Capacity Battery<\/p>",
+        "title_mobile": "<p>Large Capacity Battery<\/p>",
+        "text": "<p>48V 21Ah Lithium-ion battery gives you longer battery life. <br\/>You are able to travel over 80 miles on a charge using pedal-assist mode <br\/>and 50 miles on pure electric power mode. <br\/>We want to make everyone enjoy the ride longer!<\/p>",
+        "text_mobile": "<p>48V 21Ah Lithium-ion battery gives you longer battery life. <br\/>You are able to travel over 80 miles on a charge using pedal-assist mode and 50 miles on pure electric power mode. <br\/>We want to make everyone enjoy the ride longer!<\/p>",
+        "data_title": "<p><\/p>",
+        "data_text": "<p><\/p>",
+        "data_title2": "<p><\/p>",
+        "data_text2": "<p><\/p>",
+        "data_title3": "<p><\/p>",
+        "data_text3": "<p><\/p>",
+        "buttonSvg": "",
+        "button": ""
+      }
+    },
+    "166193136108e7c434": {
+      "type": "jd-product-Features",
+      "blocks": {
+        "2610141a-784a-4917-90c6-1d0cfbe38630": {
+          "type": "FeaturesBox",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/1_f8d5b5ae-0e65-42d7-a81e-b67b449f7e75.png",
+            "text": "<p>The K1188 26\" x 4\", 30 psi tires help the bike ride smoothly and safely even on bad terrains. The tires are made by Innova Tires, a reliable tire manufacturer from Taiwan.<\/p>"
+          }
+        },
+        "5325a5d6-d070-4269-a6ec-b2abc0fee863": {
+          "type": "FeaturesBox",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/2_77f2046d-163f-4463-8ec2-bd159324dca0.png",
+            "text": "<p>On the left side of the handlebar, you will find the switch of the turning signal light, the horn button, and the button pad(control the power on\/off, mode switch, pedal assist level, front light, etc.)<\/p>"
+          }
+        },
+        "2ac9a688-bb53-4a8f-8f82-e92a57c7ff87": {
+          "type": "FeaturesBox",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/3_16290ab7-a13d-48aa-9f27-8a55b1510586.png",
+            "text": "<p>On the right side of the handlebar, you will find the shifter of the SHIMANO 7-speed gear shift system, the throttle on\/off button (red), and the throttle.<\/p>"
+          }
+        },
+        "d106ac70-4edd-46d2-bc50-eca759aad226": {
+          "type": "FeaturesBox",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/4_b388af26-4804-4cb2-803e-9c216af8f4c9.png",
+            "text": "<p>The integrated taillight combine with all these functions: Night Light (turned on with the front light at the same time) , Brake Light , Turning Signal Light<\/p>"
+          }
+        },
+        "483a0fad-5d5c-4509-b910-2e944ca32842": {
+          "type": "FeaturesBox",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/5_160ea451-488c-4e03-baa2-e841b91f263d.png",
+            "text": "<p>Our ebikes equipped with a 1,200 pound spring weight, 180 mm travel rear suspension, manufactured by KSpeed. Our dual suspension system on both the front side and rear side helps you overcome the bumpiness on bad terrains. Your comfort is very important to us!<\/p>"
+          }
+        },
+        "19235fbd-0c60-471d-958f-45687ea19f4c": {
+          "type": "FeaturesBox",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/6_fe91773a-baea-4089-949c-fd1abad0d76d.png",
+            "text": "<p>Our ebikes are equipped with dual hydraulic disc brakes, which give you maximum stopping power. With hydraulic disc brakes, the actuation moves both pads towards the rotor at the same time and with even pressure. The most important advantage of hydraulic disc brakes is that they automatically self-adjust as they wear down.<\/p>"
+          }
+        },
+        "37e1a90d-5adc-4a86-9d6b-2d4858a1f42b": {
+          "type": "FeaturesBox",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/7_e047cc2e-6021-41a6-9fd1-9c4a04a3b7a3.png",
+            "text": "<p>The backlight LCD display shows you all the key information and status of the ebike, including operation modes, speed, pedal assist level, battery capacity, wattmeter,battery life, odometer, trip odometer, etc.<\/p>"
+          }
+        },
+        "cfc7af4c-07f0-4e60-8830-f0ea4b01d184": {
+          "type": "FeaturesBox",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/8_27ac2271-b5e4-423d-8da7-1a65d5098683.png",
+            "text": "<p>With the rear rack installed, you'll be able to carry a bike bag or other gear on the back of your bike, making a bike-packing trip or just simple daily-use more convenient. The fenders are installed both front and rear and help keep your ebike and belongings clean during your ride.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "2610141a-784a-4917-90c6-1d0cfbe38630",
+        "5325a5d6-d070-4269-a6ec-b2abc0fee863",
+        "2ac9a688-bb53-4a8f-8f82-e92a57c7ff87",
+        "d106ac70-4edd-46d2-bc50-eca759aad226",
+        "483a0fad-5d5c-4509-b910-2e944ca32842",
+        "19235fbd-0c60-471d-958f-45687ea19f4c",
+        "37e1a90d-5adc-4a86-9d6b-2d4858a1f42b",
+        "cfc7af4c-07f0-4e60-8830-f0ea4b01d184"
+      ],
+      "settings": {
+        "title": "<p>Other Cool Features You’ll Love<\/p>",
+        "title_mobile": "<p>Other Cool <br\/>Features You’ll Love<\/p>"
+      }
+    },
+    "1660713992681be75b": {
+      "type": "jd-details-bottomTab",
+      "blocks": {
+        "7b3527c6-e148-4775-93b5-bdeb6db38b38": {
+          "type": "categroy",
+          "settings": {
+            "cate_name": "Size And Fit",
+            "text": "<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Height<\/div>\n\t\t\t<div>41.5''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Reach<\/div>\n\t\t\t<div>22''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Frame Size<\/div>\n\t\t\t<div>19''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Stand-over Height<\/div>\n\t\t\t<div>31.5''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Length <\/div>\n\t\t\t<div>78''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Wheelbase <\/div>\n\t\t\t<div>49.5''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Tube Length<\/div>\n\t\t\t<div>19''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Top Tube Length<\/div>\n\t\t\t<div>22.8''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Crank Length<\/div>\n\t\t\t<div>170mm(66.9'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Head Tube<\/div>\n\t\t\t<div>6.89''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Chain-stay<\/div>\n\t\t\t<div>19.68''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Width<\/div>\n\t\t\t<div>25.6''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Post  Diameter<\/div>\n\t\t\t<div>31.8mm(10.7'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Height(Minimum - Maximum)<\/div>\n\t\t\t<div>35.5'' - 42.5''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Weight<\/div>\n\t\t\t<div>78 lb (with rear rack, fenders, battery installed)<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Bottom Bracket Height<\/div>\n\t\t\t<div>100mm(39.4'')<\/div>\n\t\t<\/div>\n\t<\/div>",
+            "img": "shopify:\/\/shop_images\/adv_bc7e4fb5-2c47-4e23-a73e-68f6adb8a432.png"
+          }
+        },
+        "4d8b83aa-ad70-4823-8d3a-0ac863ac563e": {
+          "type": "categroy",
+          "settings": {
+            "cate_name": "Core Specs",
+            "text": "<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Battery<\/div>\n\t\t\t<div>48V 21Ah Lithium-ion battery, rated for 900 charge cycles<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Charger<\/div>\n\t\t\t<div>48V, 2 A smart charger, operates on 100V-240V AC power outlets<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Controller<\/div>\n\t\t\t<div>48V, 22A<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Display<\/div>\n\t\t\t<div>Backlit LCD with charge indicator, speedometer, odometer, trip odometer, pedal assist level, watt-meter, and more<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Hub Motor <\/div>\n\t\t\t<div>750W (continuous) 1100W (peak) brushless geared hub motor with 80 Nm of torque, 5:1 planetary gear reduction<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Lights <\/div>\n\t\t\t<div>Front: Standard LED headlight Rear: Integrated signal taillight with brake light<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Pedal Assist<\/div>\n\t\t\t<div>Intelligent 5 level pedal assist with 12 cadence sensor<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Throttle<\/div>\n\t\t\t<div>Half twist throttle<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Wiring<\/div>\n\t\t\t<div>Water resistant connectors and wiring harness<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>USB Ports<\/div>\n\t\t\t<div>Display: 5V, 1 Amp<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Battery USB<\/div>\n\t\t\t<div>Nonfunctioning<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Brake Calipers<\/div>\n\t\t\t<div>25.6''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Post  Diameter<\/div>\n\t\t\t<div>YS Aries (700-E)<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Brake Levers<\/div>\n\t\t\t<div>Aluminum alloy comfort grip levers with motor cutoff switch and integrated bell<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Brake Pad Material<\/div>\n\t\t\t<div>Sintered metal<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Brake Rotors<\/div>\n\t\t\t<div>YS 180mm front and rear<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Chain<\/div>\n\t\t\t<div>Z7<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Crank Set<\/div>\n\t\t\t<div>48T, 170mm forged alloy, dual-sided aluminum bash-guard<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Derailleur<\/div>\n\t\t\t<div>7-Speed Shimano Tourney<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Fenders<\/div>\n\t\t\t<div>Half coverage front and rear<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Fork<\/div>\n\t\t\t<div>Spring fork, 120mm travel, with lockout and preload adjustment; 240mm steerer tube<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Frame<\/div>\n\t\t\t<div>6061 aluminum<\/div>\n\t\t<\/div>\n\t<\/div>"
+          }
+        },
+        "e4fb19ae-738a-4eda-898a-33a081613a10": {
+          "type": "categroy",
+          "settings": {
+            "cate_name": "Other Specs",
+            "text": "<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Freewheel<\/div>\n\t\t\t<div>Shimano Tourney MF-TZ500 7-Speed 14-28 Tooth<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Gearing<\/div>\n\t\t\t<div>1 x 7-speed<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Grips<\/div>\n\t\t\t<div>Durable imitation leather ergo<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar<\/div>\n\t\t\t<div>Custom formed aluminum, 700mm wide, 4\" rise<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Headset<\/div>\n\t\t\t<div>Semi-integrated, 1-1\/8\" straight steerer tube<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Kickstand <\/div>\n\t\t\t<div>Heavy-duty aluminum with wide plastic foot<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Pedals<\/div>\n\t\t\t<div>CrMo axle, forged aluminum platform with reflectors, standard 9\/16\" x 20 TPI threading<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Racks<\/div>\n\t\t\t<div>Included, 60LB Max Payload<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Rims<\/div>\n\t\t\t<div>Double wall, 36H<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Saddle<\/div>\n\t\t\t<div>Plush with lifting handle<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Post<\/div>\n\t\t\t<div>350mmX31.8mm<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Post Clamp<\/div>\n\t\t\t<div>Quick release<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Shifter<\/div>\n\t\t\t<div>Shimano SL-TX50-7R thumb shifter, 7-speed<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Spokes<\/div>\n\t\t\t<div>12-gauge stainless steel, black<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Stem<\/div>\n\t\t\t<div>50mm + 30º (15mm rise)<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Tires<\/div>\n\t\t\t<div>26\" x 4\", TPI:60<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t\n\t\t<\/div>\n\t<\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "7b3527c6-e148-4775-93b5-bdeb6db38b38",
+        "4d8b83aa-ad70-4823-8d3a-0ac863ac563e",
+        "e4fb19ae-738a-4eda-898a-33a081613a10"
+      ],
+      "settings": {
+        "header": "Specs",
+        "see_more": "See more"
+      }
+    },
+    "166070776357b9a25b": {
+      "type": "jd-details-tab",
+      "blocks": {
+        "d6317945-a0dd-4185-8a2d-dbac9e5178f8": {
+          "type": "categroy",
+          "settings": {
+            "cate_name": "Adventurer Story-1",
+            "cate_title": "<p><\/p>",
+            "cate_text": "<p>I purchased a Bee Adventure in June and liked it so much that I bought two more for work, and had them decaled up. Today, I just bought a Bee Explorer for my wife. There are a few bugs every once in a while with getting the throttle to kick in, but a click of the gears or a few revolutions of the pedals fix that. So far VERY happy with the purchases.——By Matthew<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/317370313_516121607234621_6546025171675867727_n.jpg",
+            "img_mobile": "shopify:\/\/shop_images\/317370313_516121607234621_6546025171675867727_n.jpg"
+          }
+        },
+        "60327005-5f70-4026-a9b4-633dd7c7b296": {
+          "type": "categroy",
+          "settings": {
+            "cate_name": "Adventurer Story-2",
+            "cate_title": "<p><\/p>",
+            "cate_text": "<p>Just passed 300 miles on my adventurer. A combination of paved roads, dirt roads and off road trails here in New Hampshire. Some I wasn’t sure I or the bike were able to handle. Well the bike has more capabilities than I have abilities. The more I ride the more confidence I have in my new toy. I love it. I am 75 years old, retired and enjoying life. ——By Ken<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/20221115102746.png",
+            "img_mobile": "shopify:\/\/shop_images\/20221115102746.png"
+          }
+        },
+        "7595bb5b-33f5-488f-b32e-9501b618ccc4": {
+          "type": "categroy",
+          "settings": {
+            "cate_name": "Adventurer Story-3",
+            "cate_title": "<p><\/p>",
+            "cate_text": "<p>Best decision I have ever made. So very pleased I did my homework on fat tire ebikes. World class battery, easy to move, comfortable, and worth every penny. The lights, horn, display work perfectly and the bike is very user friendly. Be careful though and wear PPE! Fell off the bike within minutes at a stop I was so excited and couldn't contain my joy over this purchase. HIGHLY RECOMMEND! Most likely will buy a second for the S\/O.——By Kevin<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/20221115102750.png",
+            "img_mobile": "shopify:\/\/shop_images\/20221115102750.png"
+          }
+        },
+        "c93838ad-87e2-4176-8644-7fd1a994f6c9": {
+          "type": "categroy",
+          "settings": {
+            "cate_name": "Adventurer Story-4",
+            "cate_title": "<p><\/p>",
+            "cate_text": "<p>I honestly can't remember how I got looking into an e-bike. But I started shopping around for one. I did a TON of research, reading, watching videos etc. Wanted the best bang for my buck and it defiantly paid off. I'm 5'10 and 290 lbs give or take how many beers I had over the weekend. But this thing HAULS ass. So much fun.——By Vector<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/20221115102753.png",
+            "img_mobile": "shopify:\/\/shop_images\/20221115102753.png"
+          }
+        },
+        "dae8343a-3b4d-4fd7-ba3f-302250c36fab": {
+          "type": "categroy",
+          "settings": {
+            "cate_name": "Adventurer Story-5",
+            "cate_title": "<p><\/p>",
+            "cate_text": "<p>I have ridden the bike 400 miles so far with absolutely no issues at all whatsoever. This thing is fantastic. My one complaint would be the rear fender needs to be longer to keep the mud from flying up. Other than that I can’t find anything wrong with it. The seat is super comfortable and has plenty of power to take me anywhere I want to go. I’m a 71 year old man——By Bruce<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/20221115102757.png",
+            "img_mobile": "shopify:\/\/shop_images\/20221115102757.png"
+          }
+        }
+      },
+      "block_order": [
+        "d6317945-a0dd-4185-8a2d-dbac9e5178f8",
+        "60327005-5f70-4026-a9b4-633dd7c7b296",
+        "7595bb5b-33f5-488f-b32e-9501b618ccc4",
+        "c93838ad-87e2-4176-8644-7fd1a994f6c9",
+        "dae8343a-3b4d-4fd7-ba3f-302250c36fab"
+      ],
+      "settings": {
+        "header": "Bee Adventurer",
+        "desc": "<p>Bee Adventurer is one of our best equipped all-terrain electric bikes. The Bike is equipped with a 48V 21Ah Lithium-ion Battery, which gives the bike a long travel distance over 80 miles per charge on pedal-assist mode and 50 miles on throttle power mode. The continuous 750W motor and 4’’ fat tires lets the bike have maximum power to overcome any kinds of terrible terrain: soft sands, thick grass, heavy rain, slippery snow surface, steep rocks face. Our dual suspension system will bring you the max comfort.<\/p>",
+        "bgcolor": "#f4f7fe"
+      }
+    },
+    "7bf06a01-ac06-4719-9cee-2f50522d8807": {
+      "type": "jd-product-faq",
+      "blocks": {
+        "b892dc9b-42e5-4ae3-ae43-a7973f0e3118": {
+          "type": "exhibition",
+          "settings": {
+            "title": "Where do we ship for free?",
+            "text": "<p>We are currently able to ship the items to the 50 States and Washington D.C. in the U.S.We DO NOT ship to Puerto Rico, US Virgin Islands, Guam or other U.S. territories.We DO NOT ship to PO BOXES or APO.<\/p>"
+          }
+        },
+        "3fe8a1d6-861a-4dc2-9c7d-289244b6c33c": {
+          "type": "exhibition",
+          "settings": {
+            "title": "How long will it take to receive my ebike?",
+            "text": "<p>Please refer to the shipping date on the product page. A shipping confirmation email will be sent to your email once the order has shipped. We will use FedEx Ground or UPS Ground to ship your bike orders. <br\/>Accessories will be shipped by USPS or DHL.<br\/>Shipping within the 48 contiguous States in the U.S. is FREE.<br\/>Shipping to the State of Alaska and Hawaii will be charged $100 shipping fee.<br\/>Accessories shipments are Free. Once the items arrived in our warehouse, please allow 2-7 business days of delivery. For any third-party shipping, we are unable to provide any additional shipping information or documentation. In addition, the delivery dates provided by BeeCool Bikes are estimated which may change as sometimes act of God may occur.<\/p>"
+          }
+        },
+        "02ff5791-552e-4180-bc30-184a7f722df7": {
+          "type": "exhibition",
+          "settings": {
+            "title": "Will my ebike arrive assembled?",
+            "text": "<p>Your bike will arrive 90% assembled. We will provide the tools and a comprehensive assembly video. You can assemble your ebike within 30 minutes. If you are unable to do the assembling work, you can also add a assembling services when you purchase the bike or book a mobile service at our service page. Our processional mechanics will goes to your door directly to do the assembling work.<\/p>"
+          }
+        },
+        "5789bf4f-b5cc-4d75-a101-7ec73fb58410": {
+          "type": "exhibition",
+          "settings": {
+            "title": "Do BeeCool ebikes works in cold\/hot weather?",
+            "text": "<p>The theoretical working temperature of the battery is -4℉ to 131℉. But we suggest you keep your ebike works in the environment from 23℉ to 113℉.<br\/>In addition, please make sure to charge the battery in the environment from 32℉ to 113℉.<br\/>Using the battery in a low-temperature environment will shorten the total travel range of the ebike (lower than 32℉, 80% of max range; lower than 14℉, 70% of max range).<br\/>Always using the battery in a high-temperature environment (over 95℉) may shorten the battery life. DO NOT use the battery in an environment over 140℉, which may cause safety issues.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b892dc9b-42e5-4ae3-ae43-a7973f0e3118",
+        "3fe8a1d6-861a-4dc2-9c7d-289244b6c33c",
+        "02ff5791-552e-4180-bc30-184a7f722df7",
+        "5789bf4f-b5cc-4d75-a101-7ec73fb58410"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "recommendations_count": 4,
+        "products": [
+
+        ]
+      }
+    },
+    "sma_reviews_section_auto": {
+      "type": "reviews-importer-product",
+      "settings": {
+        "lai_product": ""
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "disabled": true,
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "description"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16607057527debbb37",
+    "60537ec1-ae90-4e61-a047-d7134aca15f0",
+    "7c8d2aed-cbcf-460f-b470-b7379c8c98a4",
+    "16607060699df11384",
+    "9894e239-73b7-4d1e-84ef-9cb8b692bf6b",
+    "8cd1fc5a-1c2d-47b6-9abb-bc51bafc8db7",
+    "16623649202cdc4dd6",
+    "cb596b7c-2a8e-42be-897f-8d2dfa928ac2",
+    "4bf37567-ef5d-4088-b5d2-7cc3db295fbc",
+    "b458995f-6d9f-492d-9777-cc741881bb23",
+    "a34c1b85-8eb8-4ea3-bbec-a7b207dea0b2",
+    "1660721689a004f443",
+    "166193136108e7c434",
+    "1660713992681be75b",
+    "166070776357b9a25b",
+    "7bf06a01-ac06-4719-9cee-2f50522d8807",
+    "product-recommendations",
+    "sma_reviews_section_auto",
+    "product-content"
+  ]
+}

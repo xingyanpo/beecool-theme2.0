@@ -1,0 +1,88 @@
+@media (max-width:999px) {
+    .jd-product-icon-all{
+        width: 100%;
+        margin-top: 50px;
+        padding-left: 15px;
+    }
+    .jd-product-icon-all .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .productIcon_box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .productIcon_svg svg{
+        width: 55px;
+        height: 38px;
+    }
+   
+    .productIcon_text{
+        text-align: center;
+        font-weight: 400;
+        line-height: 17px;
+        margin-top: 14px;
+        font-size: 14px;
+    }
+    .jd-product-icon-all  .swiper-pagination-progressbar{
+        top: unset;
+        bottom: 0px;
+        border-radius: 2px;
+        overflow: hidden;
+        background: #E5E5E5;
+    }
+    .jd-product-icon-all .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+        background: #2A408E;
+    }
+    .jd-product-icon-all .productIcon{
+        padding-bottom: 25px;
+    }
+  
+}
+@media (min-width:1000px) {
+    .jd-product-icon-all{
+        -webkit-user-select: none;
+        width: 100%;
+    }
+    .jd-product-icon-all .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .productIcon_box{
+        display: flex;
+        padding: 0 10px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .productIcon_svg svg{
+        width: 74px;
+        height: 50px;
+    }
+    .productIcon_svg:nth-child(10) svg{
+        width: 74px;
+        height: 60px;
+    }
+    .productIcon_text{
+        text-align: center;
+        color: #151515;
+        font-weight: 400;
+        line-height: 30px;
+        margin-top: 24px;
+        font-size: 18px;
+    }
+    .productIcon .swiper-button-prev,.productIcon .swiper-button-next{
+        width: 34px;
+        height: 34px;
+        background: #E6E6E6;
+        border-radius: 50%;
+       
+
+    }
+    .productIcon .swiper-button-next:after, .productIcon .swiper-button-prev:after{
+        font-size: 15px;
+        color: #474747;
+    }
+}

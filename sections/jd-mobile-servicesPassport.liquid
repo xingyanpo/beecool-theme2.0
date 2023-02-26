@@ -1,0 +1,86 @@
+{{ 'jd-mobile-servicesPassport.css' | asset_url | stylesheet_tag }}
+<div class="jd-mobile-servicesPassport_all">
+    <div class="container">
+        <div class="mobile_servicesPassport_top">
+            <div class="ebike_title2">{{section.settings.title}}</div>
+            <img loading="lazy" {% render 'image-attributes' , image: section.settings.icon_img%}>
+        </div>
+        <div class="mobile_servicesPassport_banner">
+            <img loading="lazy" class="pc" {% render 'image-attributes' , image: section.settings.img%}>
+            <img loading="lazy" class="mobile" {% render 'image-attributes' , image: section.settings.img_mobile%}>
+            
+            <div class="mobile_servicesPassport_positon">
+                {% for block in section.blocks %}
+                    <div class="mobile_servicesPassport_box">
+                        <div class="mobile_servicesPassport_boxText">
+                            {{block.settings.text}}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+       
+        <a href=" {{section.settings.link}}" class="mobile_servicesPassport_bottom">{{section.settings.button}}</a>
+     </div>
+ </div>
+ 
+ <script>
+ 
+ </script>
+ 
+ {% schema %}
+ {
+     "name": "mobileServices Passport",
+     "class": "mobileServices-Passport",
+     "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "title"
+        },
+        {
+            "type": "image_picker",
+            "id": "icon_img",
+            "label": "icon img"
+        },
+        {
+             "type": "url",
+             "id": "link",
+             "label": "link"
+         },
+         {
+             "type": "text",
+             "id": "button",
+             "label": "button"
+         },
+         {
+            "type": "image_picker",
+            "id": "img",
+            "label": "img"
+        },
+        {
+            "type": "image_picker",
+            "id": "img_mobile",
+            "label": "img Mobile"
+        }
+     ],
+     "blocks":[
+         {
+            "type": "mobileServices_Passport",
+            "name": "mobile Services Passport",
+             "settings": [
+                {
+                    "type": "richtext",
+                    "id": "text",
+                    "label": "text"
+                }
+             ]
+         }
+     ],
+     "presets": [
+         {
+             "name": "mobile Services Passport"
+         }
+     ]
+ }
+ {% endschema %}

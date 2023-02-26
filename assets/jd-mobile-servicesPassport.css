@@ -1,0 +1,223 @@
+@media(max-width:1001px) {
+    .jd-mobile-servicesPassport_all{
+      margin: 50px 0;
+    }
+    .mobile_servicesPassport_top{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .mobile_servicesPassport_top img{
+        margin-top: 20px;
+        width: 53%;
+    }
+    .mobile_servicesPassport_box{
+        margin-top: 25px !important;
+        font-size: 14px;
+        color: #151515;
+        font-weight: 400;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 40px 0px rgba(0,0,0,0.06);
+        border-radius: 10px;
+        padding: 18px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile_servicesPassport_positon{
+        margin-top: 31px;
+    }
+    .mobile_servicesPassport_bottom{
+        width: 175px;
+        height: 43px;
+        background: #FFF200;
+        border-radius: 43px;
+        color: #151515;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0 auto;
+        margin-top: 26px;
+    }
+}
+@media(min-width:1000px) {
+    .jd-mobile-servicesPassport_all{
+       margin: 129px 0  ;
+    }
+    .mobile_servicesPassport_top{
+        text-align: center;
+    }
+    .mobile_servicesPassport_top img{
+        margin-top: 24px;
+    }
+
+    .mobile_servicesPassport_banner{
+        position: relative;
+        min-height: 700px;
+        margin-top: 102px;
+    }
+    .mobile_servicesPassport_banner img{
+        margin: 0 auto;
+    }
+   
+    .mobile_servicesPassport_box:nth-child(1){
+        
+       
+        font-size: 18px;
+        color: #151515;
+        font-weight: 600;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 40px 0px rgba(0,0,0,0.06);
+        border-radius: 21px;
+        height: 137px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 28px;
+    }
+    .mobile_servicesPassport_box:nth-child(3){
+      
+       
+        height: 227px;
+        font-size: 18px;
+        color: #151515;
+        font-weight: 600;
+        background: #FFFFFF;
+        padding: 0 36px;
+        box-shadow: 0px 3px 40px 0px rgba(0,0,0,0.06);
+        border-radius: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .mobile_servicesPassport_box:nth-child(2){
+      
+        height: 137px;
+        padding: 0 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: #151515;
+        font-weight: 600;
+        background: #FFFFFF;
+        box-shadow: 0px 3px 40px 0px rgba(0,0,0,0.06);
+        border-radius: 21px;
+       
+    }
+    .mobile_servicesPassport_bottom{
+        width: 351px;
+        height: 86px;
+        background: #FFF200;
+        border-radius: 43px;
+        color: #151515;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+}
+@media(max-width:1119px) {
+    .mobile_servicesPassport_box{
+        margin-top: 20px;
+    }
+}
+@media(min-width:1670px) {
+    .mobile_servicesPassport_positon{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+         margin: 0 auto;
+     }
+    
+    .mobile_servicesPassport_banner img{
+        width: 1219px;
+    }
+    .mobile_servicesPassport_box:nth-child(1){
+        max-width: 675px;
+        position: absolute;
+        top: 260px;
+        left: -45px;
+    }
+    .mobile_servicesPassport_box:nth-child(3){
+        max-width: 570px;  
+        position: absolute;
+        top: 458px;
+        right: -40px;
+    }
+    .mobile_servicesPassport_box:nth-child(2){
+        max-width: 675px;
+        position: absolute;
+        top: 544px;
+        left: 134px;
+    }
+}
+@media(min-width:1480px) and (max-width:1669px){
+    .mobile_servicesPassport_positon{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+         margin: 0 auto;
+     }
+    .mobile_servicesPassport_banner img{
+        width: 1219px;
+    }
+    .mobile_servicesPassport_box:nth-child(1){
+        max-width: 475px;
+        position: absolute;
+        top: 260px;
+        left: 34px;
+    }
+    .mobile_servicesPassport_box:nth-child(3){
+        max-width: 403px;  
+        position: absolute;
+        top: 458px;
+        right: 0px;
+    }
+    .mobile_servicesPassport_box:nth-child(2){
+        max-width: 475px;
+        position: absolute;
+        top: 544px;
+        left: 134px;
+    }
+}
+@media(min-width:1100px) and (max-width:1479px){
+    .mobile_servicesPassport_positon{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+         margin: 0 auto;
+     }
+    .mobile_servicesPassport_banner img{
+        width: 960px;
+    }
+    .mobile_servicesPassport_box:nth-child(1){
+        max-width: 475px;
+        position: absolute;
+        top: 194px;
+        left: 34px;
+    }
+    .mobile_servicesPassport_box:nth-child(3){
+        max-width: 403px;  
+        position: absolute;
+        top: 360px;
+        right: 0px;
+    }
+    .mobile_servicesPassport_box:nth-child(2){
+        max-width: 475px;
+        position: absolute;
+        top: 410px;
+        left: 30px;
+    }
+}

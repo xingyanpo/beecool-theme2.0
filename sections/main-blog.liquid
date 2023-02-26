@@ -1,0 +1,178 @@
+{{ 'main-blog.css' | asset_url | stylesheet_tag }}
+<style>
+  .text--underlined{
+    
+  }
+</style>
+<div id="aa"></div>
+<section class="blogsBox">
+  {%- if blog.articles_count == 0 -%}
+    <div class="empty-state text-container">
+      <h1 class="h1">{{ blog.title }}</h1>
+
+      <p class="text--large">{{ 'blog.general.empty' | t }}</p>
+
+      <div class="button-wrapper">
+        <a href="{{ routes.root_url }}" class="button button--primary">{{ 'blog.general.back_to_home' | t }}</a>
+      </div>
+    </div>
+  {%- else -%}
+    {%- if section.settings.show_blog_title -%}
+      <div class="blogs">
+        <div class="page-header">
+          
+
+          <div class="page-header__text-wrapper text-container">
+            <h1 class="h1">{{ blog.title }}</h1>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+    <div id="bb"></div>
+    <div class="vertical-breather vertical-breather--margin  blog_box">
+      {%- if section.settings.show_tags and blog.all_tags.size > 0 -%}
+      <link-bar class="link-bar container">
+        <div class="">
+          <div class="link-bar__wrapper">
+            <!-- <span class="link-bar__title heading heading--small text--subdued">{{ 'blog.general.view' | t }}</span> -->
+            <div class="link-bar__scroller hide-scrollbar">
+              
+                
+               
+              
+              <ul class="list--unstyled" role="list">
+                <div class=" swiper blogSwiper">
+                  <div class="swiper-wrapper">
+                
+                    <li class="link-bar__link-item pc link-bar__link-items link-bar__link-items swiper-slide {% if current_tags == blank %}link-bar__link-item--selected{% endif %}">
+                      <a href="{{ blog.url }}#aa" class="link-bar__link link--animated {% if current_tags == blank %}text--underlined{% endif %}">{{ 'blog.general.all_posts' | t }}</a>
+                    </li>
+                 
+                    <li class="link-bar__link-item mobile link-bar__link-items link-bar__link-items swiper-slide {% if current_tags == blank %}link-bar__link-item--selected{% endif %}">
+                      <a href="{{ blog.url }}#bb" class="link-bar__link link--animated {% if current_tags == blank %}text--underlined{% endif %}">{{ 'blog.general.all_posts' | t }}</a>
+                    </li>
+               
+                    {%- for tag in blog.all_tags -%}
+                    
+                      <li class="link-bar__link-item link-bar__link-items swiper-slide {% if current_tags contains tag %}link-bar__link-item--selected{% endif %}">
+                        {%- capture link_to_tag_replacement -%}class="link-bar__link link--animated {% if current_tags contains tag %}text--underlined{% endif %}" title={%- endcapture -%}
+  
+                        {%- if current_tags contains tag -%}
+                      
+                       
+                          <a href="{{blog.url}}/tagged/{{ tag  | downcase | replace:" ","-"}}#aa" class="link-bar__link link--animated text--underlined">{{tag}}</a>
+                        {%- else -%}
+                          <a href="{{blog.url}}/tagged/{{ tag  | downcase | replace:" ","-"}}" class="link-bar__link link--animated ">{{tag}}</a>
+                        {%- endif -%}
+                      </li>
+                    
+                    {%- endfor -%}
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </link-bar>
+    {%- endif -%}
+
+      <div class="blog_aritice container">
+        {%- paginate blog.articles by section.settings.articles_per_page -%}
+          <article-list {% if settings.stagger_blog_posts_apparition %}stagger-apparition{% endif %} class="article-list article-list--stacked">
+            {%- for article in blog.articles -%}
+              {%- render 'article-item', article: article, heading_size: 'h4' -%}
+            {%- endfor -%}
+          </article-list>
+
+          {%- render 'pagination', paginate: paginate -%}
+        {%- endpaginate -%}
+      </div>
+    </div>
+  {%- endif -%}
+</section>
+<script>
+ 
+     (()=>{
+      let widthSize = document.documentElement.clientWidth;
+      if(widthSize>=999){
+        var acUrl = `{{blog.url}}/tagged/{{ tag  | downcase | replace:" ","-"}}`;
+        if(window.location.href.indexOf(acUrl) !=-1){
+            $(document).scrollTop(600)
+        }
+      }else{
+        $("#aa").remove();
+        var acUrl = `{{blog.url}}/tagged/{{ tag  | downcase | replace:" ","-"}}`;
+        if(window.location.href.indexOf(acUrl) !=-1){
+            $(document).scrollTop(600)
+        }
+      }
+     
+    
+        var swiper = new Swiper(".blogSwiper", {
+         
+        breakpoints: {
+          1680: {  
+            slidesPerView: 5,
+            spaceBetween: 80,
+          },
+          1400: {  
+            slidesPerView: 4,
+            spaceBetween: 60,
+          },
+          1200:{
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          280: {  
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+          }
+        } 
+      });
+      
+   })()
+ 
+</script>
+{% schema %}
+{
+  "name": "Blog",
+  "class": "shopify-section--main-blog",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_blog_title",
+      "label": "Show blog title",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tags",
+      "label": "Show tags",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_category",
+      "label": "Show category",
+      "info": "The first article's tag will be shown as category.",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_excerpt",
+      "label": "Show excerpt",
+      "info": "Change excerpts by editing your blog posts. [Learn more](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "articles_per_page",
+      "label": "Blog posts per page",
+      "min": 3,
+      "max": 48,
+      "step": 3,
+      "default": 9
+    }
+  ]
+}
+{% endschema %}

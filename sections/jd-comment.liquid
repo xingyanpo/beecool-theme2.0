@@ -1,0 +1,152 @@
+{{ 'jd-comment.css' | asset_url | stylesheet_tag }}
+<div class="comment-all">
+   <div class="comment-box container">
+      <div class="comment-box-top">
+            <div class="comment-title ebike_h1">
+                {{section.settings.title }}
+            </div>
+            <div class="comment-text pc">
+                {{section.settings.text_pc }}
+            </div>
+            <div class="comment-text mobile">
+                {{section.settings.text_mobile }}
+            </div>
+      </div>
+      <div class="comment-box-bottom">
+        <div class="swiper commentSwiper">
+            <div class="swiper-wrapper">
+                {%- for block in section.blocks-%}
+                    <div class="swiper-slide comment_box_bottomList">
+                        <a href="{{block.settings.link}}" class="commentSwiperBox {% if page.url == block.settings.link %} commentSwiperBoxs{% endif %}">
+                            <!-- <img loading="lazy" {% render 'image-attributes' , image: block.settings.img%}> -->
+                            <div class="commentSwiper_after">
+                                <img src="{{block.settings.product.featured_image | img_url: '1920x'}}" alt="">
+                            </div>
+                            <div class="commentSwiper_Title">
+                            {{ block.settings.product.title}}
+                            </div>
+                        </a>
+                    </div>
+                {%- endfor-%}
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+   </div>
+</div>
+<script>
+    (()=>{
+        let policyConterList = document.querySelectorAll(".comment_box_bottomList")
+        let index = 0
+        policyConterList.forEach((arr,isss) => {
+            let url = arr.children[0].href.split('/');
+            url = url[url.length-1];
+            if (window.location.href.indexOf(url) > -1 ) {
+            
+            index = isss
+            }
+        })
+        
+
+          
+            
+
+        var swiper = new Swiper(".commentSwiper", {
+            spaceBetween: 20,
+            initialSlide: index,
+            navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: { 
+                320: {  //当屏幕宽度大于等于320
+                    direction: 'horizontal',
+                    loop: true,
+                    autoplay: 5000,
+                    slidesPerView: "auto",
+                    centeredSlides:true,
+                    spaceBetween: 30,
+                    
+                
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                },
+                768: {  //当屏幕宽度大于等于768 
+                    slidesPerView: 3,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                },
+                1200: {  //当屏幕宽度大于等于1280
+                    slidesPerView: 5,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                },
+                1400: {  //当屏幕宽度大于等于1280
+                    slidesPerView: 6,
+                }
+            }
+        });
+        $('.comment_box_bottomList').click(function(){
+            swiper.slideTo(index, 1000, false);
+            // swiper.slideTo(swiper.index, 1000, false);//切换到指定slide，速度为1秒
+        })   
+  
+    })()
+    
+</script>
+{% schema %}
+{
+    "name": "compare Describe",
+    "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+    },
+    {
+        "type": "richtext",
+        "id": "text_pc",
+        "label": "text pc"
+    },
+    {
+        "type": "richtext",
+        "id": "text_mobile",
+        "label": "text mobile"
+    }
+    ],
+    "blocks": [
+    {
+        "type": "review1",
+        "name": "Review1",
+        "settings": [
+           {
+            "type": "product",
+            "id": "product",
+            "label": "product"
+           },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "link"
+          }
+        ]
+    }
+  
+    ],
+    "presets": [{
+    "name": "comment"
+    
+    }]
+}
+{% endschema %}

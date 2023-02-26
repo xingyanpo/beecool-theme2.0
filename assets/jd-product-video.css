@@ -1,0 +1,104 @@
+@media (max-width:999px) {
+    .product-video-all{
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .pproduct-video-box{
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        
+    }
+    .product-video-all .responsive-video{
+        display: none;
+    }
+
+    /* svg */
+    .products_video{
+        position: relative;
+    }
+    .product-video-box img,.product-video-box video{
+        width: 100%;
+        margin-bottom: -1px;
+    }
+    .products_video_button{
+        position: absolute;
+    }
+ 
+
+    .products_video_button{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .products_video_button svg{
+        width: 38px;
+        height: 38px;
+        fill: currentColor;
+        
+    }
+    .products_video_button svg path{
+        stroke: #fff;
+        
+        
+    }
+
+}
+@media(min-width:1000px) {
+    .product-video-all{
+        position: relative;
+        width: 100%;
+    }
+    .pproduct-video-box{
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        
+    }
+    .product-video-all .responsive-video{
+        display: none;
+    }
+
+    /* svg */
+    .products_video{
+        position: relative;
+    }
+    .product-video-box img,.product-video-box video{
+        width: 100%;
+        margin-bottom: -1px;
+    }
+    .products_video_button{
+        position: absolute;
+    }
+ 
+
+    .products_video_button{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .products_video_button svg{
+        width: 80px;
+        height: 80px;
+        fill: currentColor;
+        
+    }
+    .products_video_button svg path{
+        stroke: #fff;
+        
+        
+    }
+
+
+}

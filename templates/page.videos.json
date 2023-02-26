@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "page_width": "medium"
+      }
+    },
+    "166314554021de4ba7": {
+      "type": "jd-videos",
+      "settings": {
+        "title": "<p>Videos<\/p>"
+      }
+    },
+    "ec49b9f9-118d-4280-a740-2da00438643f": {
+      "type": "jd-afterSales",
+      "blocks": {
+        "49911505-9f43-4835-8b2b-f2685a95a55e": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
+            "title": "Free Shipping",
+            "subtitle": "<p>To the lower 48 states<\/p>"
+          }
+        },
+        "362a7f97-f15d-4aa0-bfe3-a4132b5ec65f": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
+            "title": "2-Year Warranty",
+            "subtitle": "<p>Buy with confidence<\/p>"
+          }
+        },
+        "70292047-ae86-430c-a1fe-a9ce2d16ddc4": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
+            "title": "Secure Payment",
+            "subtitle": "<p>Secure payment with Shopify<\/p>"
+          }
+        },
+        "3946ccde-b326-420a-9f05-ff6c1298d0b8": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
+            "title": "Cost-effective",
+            "subtitle": "<p>Direct to consumer pricing<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "49911505-9f43-4835-8b2b-f2685a95a55e",
+        "362a7f97-f15d-4aa0-bfe3-a4132b5ec65f",
+        "70292047-ae86-430c-a1fe-a9ce2d16ddc4",
+        "3946ccde-b326-420a-9f05-ff6c1298d0b8"
+      ],
+      "settings": {
+        "policy_color": "#F3F5F5",
+        "policy_scolor_mobile": "#fff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "166314554021de4ba7",
+    "ec49b9f9-118d-4280-a740-2da00438643f"
+  ]
+}

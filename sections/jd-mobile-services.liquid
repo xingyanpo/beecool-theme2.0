@@ -1,0 +1,164 @@
+{{ 'jd-mobile-services.css' | asset_url | stylesheet_tag }}
+<div class="jd_mobileServices_all">
+   <div class="container">
+        <div class="pc">
+            <div class="affiliate_info">
+                <ul class="content_box">
+                    {% for block in section.blocks %}
+                        <li class="{% if forloop.first %}selected {%endif%} rightToRight">
+                            <div class="content_box_leftBox">
+                                <div>
+                                    <div class="content_box_title">
+                                        {{block.settings.title}}
+                                    </div>
+                                    <img loading="lazy" {% render 'image-attributes' , image: block.settings.img%} class="content_box_img">
+                                    <div class="content_box_text">
+                                        {{block.settings.content}}
+                                    </div>
+                               </div>
+                               <div>
+                                    <a href=" {{block.settings.link}}" class="content_box_button">{{block.settings.button}}</a>
+                               </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <ul class="tab_box">
+                    {% for block in section.blocks %}
+                        <li class="{% if forloop.first %}active{%endif%}">
+                            <div class="tab_icon">{{block.settings.svg}}</div>
+                            <div class="affiliate_desc">{{block.settings.tab_name}}</div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="mobile">
+            <div class="affiliate_title">{{section.settings.title}}</div>
+            <div class="content_box_img">
+                <img loading="lazy" {% render 'image-attributes' ,  image:section.settings.img%}>
+            </div>
+            <div class="affiliate_info">
+                {% for block in section.blocks %}
+                    <div class="content_box_mobileBox">
+                        <div class="content_box_mobileBox_top">
+                            <div>
+                                <div class="tab_icon">{{block.settings.svg}}</div>
+                                <div class="affiliate_desc">{{block.settings.tab_name}}</div>
+                            </div>
+                            <div class="tab_iconMobile">
+                                <svg t="1664164489017" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1472" width="32" height="32"><path d="M512 733.090909a35.141818 35.141818 0 0 1-24.669091-10.24l-372.363636-372.363636a34.909091 34.909091 0 1 1 49.338182-49.338182l372.363636 372.363636a34.676364 34.676364 0 0 1 0 49.338182 35.141818 35.141818 0 0 1-24.669091 10.24z" p-id="1473" fill="#000000"></path><path d="M512 733.090909a35.141818 35.141818 0 0 1-24.669091-10.24 34.676364 34.676364 0 0 1 0-49.338182l372.363636-372.363636a34.909091 34.909091 0 0 1 49.338182 49.338182l-372.363636 372.363636a35.141818 35.141818 0 0 1-24.669091 10.24z" p-id="1474" fill="#000000"></path></svg>
+                            </div>
+                        </div>
+                        <div class="content_box_mobileBox_bottom">
+                            <div class="content_box_leftBox">
+                                <div class="content_box_text">
+                                    {{block.settings.content2}}
+                                </div>
+                                <a href=" {{block.settings.link}}" class="content_box_button">{{block.settings.button}}</a>
+                            </div> 
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (()=>{
+        $(".tab_box>li").mouseenter(function(){
+            $(this).addClass("active").siblings("li").removeClass("active");
+            var index = $(this).index();
+            $(".content_box li:eq("+index+")").show().siblings("li").hide();
+        });
+        // mobile
+        $(".tab_iconMobile").click(function(){
+            if($(this).parent().parent().find(".content_box_mobileBox_bottom").css("display")=="none"){
+                $(this).parent().parent().find(".content_box_mobileBox_bottom").slideDown();
+                $(this).parent().parent().siblings().find(".content_box_mobileBox_bottom").slideUp();
+                $(this).parent().parent().siblings().find(".content_box_mobileBox_top").removeClass("activeColor");
+                $(this).parent().addClass("activeColor");
+            }else{
+                $(this).parent().parent().find(".content_box_mobileBox_bottom").slideUp();
+                $(this).parent().removeClass("activeColor");
+            }
+          
+        })
+    })()
+   
+</script>
+
+{% schema %}
+{
+    "name": "mobileServices",
+    "class": "mobileServices",
+    "settings": [
+      
+        {
+            "type": "text",
+            "id": "title",
+            "label": "title"
+        },
+        {
+            "type": "image_picker",
+            "id": "img",
+            "label": "img"
+        }
+    ],
+    "blocks":[
+        {
+           "type": "mobileServices",
+           "name": "mobile Services",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "left title"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "img",
+                    "label": "left img"
+                },
+                {
+                    "type": "richtext",
+                    "id": "content",
+                    "label": "left content"
+                },
+                {
+                    "type": "richtext",
+                    "id": "content2",
+                    "label": "content Mobile"
+                },
+                {
+                    "type": "textarea",
+                    "id": "svg",
+                    "label": "svg image"
+                },
+                {
+                    "type": "text",
+                    "id": "tab_name",
+                    "label": "right title"
+                },
+               
+                {
+                    "type": "url",
+                    "id": "link",
+                    "label": "link"
+                },
+                {
+                    "type": "text",
+                    "id": "button",
+                    "label": "button"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "mobile Services"
+        }
+    ]
+}
+{% endschema %}

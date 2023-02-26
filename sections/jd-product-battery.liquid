@@ -1,0 +1,225 @@
+{{ 'jd-product-battery.css' | asset_url | stylesheet_tag }}
+<style>
+    @media(max-width:999px) {
+        .jd_product_batteryAll{
+            background: #151515;
+        }
+    }
+    @media(min-width:1000px) {
+        .jd_product_batteryAll{
+           position: relative;
+        }
+     
+     
+    }
+    .jd_product_batteryAll_img img{
+            width: 100%;
+        }
+</style>
+<div class="jd_product_batteryAll">
+    <div class="mobile">
+        
+        {% if section.settings.link_mobile !=blank %}
+            <video x5-video-player-fullscreen="true" x5-playsinline playsinline webkit-playsinline id="pageAppVideo" loop="loop" autoplay muted src="{{section.settings.link_mobile}}"></video>
+            {% else %}
+            <img loading="lazy" {% render 'image-attributes' , image: section.settings.bg_imgMobile%}>
+        {% endif %}
+        
+    </div>
+    <div class="jd_product_batteryAll_img pc">
+        {% if section.settings.link !=blank %}
+            <video x5-video-player-fullscreen="true" x5-playsinline playsinline webkit-playsinline id="pageAppVideo" autoplay loop="loop" muted src="{{section.settings.link}}"></video>
+            {% else %}
+            <img loading="lazy" {% render 'image-attributes' , image: section.settings.bg_img%}>
+        {% endif %}
+       
+    </div>
+    <div class="jd_product_batteryBox container">
+        <div class="product_batteryBox_top">
+            <div class="ebike_h1 pc">
+                {{section.settings.title}}
+            </div>
+            <div class="ebike_h1 mobile">
+                {{section.settings.title_mobile}}
+            </div>
+            <div class="pc">
+                {{section.settings.text}}
+            </div> 
+            <div class="mobile">
+                {{section.settings.text_mobile}}
+            </div>
+        </div>
+        {% if section.settings.data_title !=blank %}
+            <div class="product_batteryBox_baner">
+                <div class="batteryBox_baner_data">
+                    <div>
+                        {{section.settings.data_title}}
+                    </div>
+                    <div>
+                        {{section.settings.data_text}}
+                    </div>
+                </div>
+                <div class="batteryBox_baner_data">
+                    <div>
+                        {{section.settings.data_title2}}
+                    </div>
+                    <div>
+                        {{section.settings.data_text2}}
+                    </div>
+                </div>
+                <div class="batteryBox_baner_data">
+                    <div>
+                        {{section.settings.data_title2}}
+                    </div>
+                    <div>
+                        {{section.settings.data_text3}}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+            
+        {% if section.settings.button != blank %}
+        <div class="product_batteryBox_bottom">
+            <div class="batteryBox_show">   
+                <div class="product_batteryBox_bottomSvg"> {{section.settings.buttonSvg}}</div>
+                <div> {{section.settings.button}}</div>
+            </div>
+            <!-- 隐藏部分 -->
+            <div class="batteryBox_hide">
+              <div class="batteryBox_hide_box">
+                {% for block in section.blocks %}
+                    <div class="batteryBox_hideBox">
+                        <div> {{block.settings.title}}</div>
+                        <div> {{block.settings.text}}</div>
+                    </div>
+                {% endfor %}
+              </div>
+            </div>
+        </div>
+        {% endif %}
+       
+    </div>
+</div>
+<script>
+    (()=>{
+        $(".product_batteryBox_bottomSvg").click(function(){
+            $(".batteryBox_hide").slideDown();
+        })
+    })()
+  
+  
+</script>
+{% schema %}
+{
+    "name": "product Battery",
+    "class": "product-battery",
+    
+    "settings":[
+        {
+            "type": "image_picker",
+            "id": "bg_img",
+            "label": "img"
+        },
+        {
+            "type": "url",
+            "id": "link",
+            "label": "link"
+        },
+        {
+            "type": "image_picker",
+            "id": "bg_imgMobile",
+            "label": "img Mobile"
+        },
+        {
+            "type": "url",
+            "id": "link_mobile",
+            "label": "link mobile"
+        },
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"  
+        },
+        {
+            "type": "richtext",
+            "id": "title_mobile",
+            "label": "Title mobile"  
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "text"  
+        },
+        {
+            "type": "richtext",
+            "id": "text_mobile",
+            "label": "text Mobile"  
+        },
+        {
+            "type": "richtext",
+            "id": "data_title",
+            "label": "data title"  
+        },
+        {
+            "type": "richtext",
+            "id": "data_text",
+            "label": "data text"  
+        },
+        {
+            "type": "richtext",
+            "id": "data_title2",
+            "label": "data title2"  
+        },
+        {
+            "type": "richtext",
+            "id": "data_text2",
+            "label": "data text2"  
+        },
+        {
+            "type": "richtext",
+            "id": "data_title3",
+            "label": "data title3"  
+        },
+        {
+            "type": "richtext",
+            "id": "data_text3",
+            "label": "data text3"  
+        },
+        {
+            "type": "textarea",
+            "id": "buttonSvg",
+            "label": "Battery Details svg"  
+        },
+        {
+            "type": "text",
+            "id": "button",
+            "label": "Battery Details"  
+        }
+    ],
+    "blocks":[
+        {
+            "type": "productBattery",
+            "name": "productBattery",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"  
+                },
+                {
+                    "type": "textarea",
+                    "id": "text",
+                    "label": "Text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "product Battery"
+        }
+    ]
+}
+
+
+{% endschema %}

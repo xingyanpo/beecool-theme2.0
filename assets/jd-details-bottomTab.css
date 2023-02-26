@@ -1,0 +1,266 @@
+.detailsTab-product_all li{
+    list-style: none;
+}
+.detailsTab_seeMore{
+    cursor: pointer;
+}
+@media (max-width:1100px) {
+    .detailsTab-product_box .pc{
+        display: none;
+    }
+    .detailsTab-product_box .mobile{
+        display: block;
+    }
+    .detailsTab-product_all {
+        width: 100%;
+        padding: 50px 15px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+  
+    /*  标题加描述css*/
+    .detailsTab_p_h{
+        font-size:35px;
+    } 
+    /* end */
+    .detailsTab-product_box{
+        margin: 0 auto;
+        margin-top: 23px;
+    }
+  
+    .detailsTab-product_all  .box-ul2 {
+        display: flex;
+    }
+    .detailsTab_p_h{
+        font-weight: 600;
+        color: #151515;
+        line-height: 1;
+  
+    }
+    .detailsTab-product_all ul{
+        padding: 0;
+        margin: 0;
+    }
+    .detailsTab_p_d{
+        font-size: 28px;
+        font-weight: 500;
+        color: #1d1d1d;
+        padding: 80px 20px 150px 0;
+    }
+    .detailsTab-product_all .box-ul2 li.active {
+        position: relative;
+        background-color: #2A408E;
+        color: #fff;
+    }
+   
+
+    .detailsTab-product_all .box-ul2 li {
+        display: flex;
+        list-style: none;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 4px 9px;
+        background: #F6F6F6;
+        border-radius: 5px 5px 0 0;
+        color: #00000080;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px;
+    }
+    .detailsTab-product_all .box-de2 li {
+         display: none;
+    }
+  
+    .detailsTab-product_all .box-de2 li.selected {
+        display: block;
+    }
+    /* tab切换显示区域 */
+    .detailsTab-product_all .box-de-box{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .detailsTab-product_all .box-de-left{
+        width: 100% !important;
+        padding-top: 50px;
+    }
+        /* 左侧内容 */
+    .detailsTab-product_all .box-de-leftBorder{
+        font-size: 14px;
+        color: #080808;
+        font-weight: 400;
+      
+    }
+    .box-de-leftBorder:not(:nth-child(-n+3)){
+        display: none;
+    }
+    .box-de-leftBorder:nth-child(-n+3){
+        display: block !important;
+    }
+    .detailsTab_seeMore{
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        margin-top: 25px;
+        justify-content: center;
+    }
+    .detailsTab_seeMore svg{
+        width: 20px;
+        height: auto;
+        margin-left: 15px;
+        transition: all 0.5s;
+    }
+    .detailsTab_seeMore_s{
+        transform: rotate(180deg);
+    }
+    .box-de-left{
+        height: 100% !important;
+        overflow:unset !important;
+    }
+    .box-de-leftBox{
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 15px 12px;
+        border-bottom: 1px solid #E8E8E894;
+        justify-content: space-between;
+    }
+    .box-de-leftBox div{
+        width: 50%;
+    }
+    .box-de-leftBox div:nth-child(2){
+        text-align: right;
+    }
+    .detailsTab-product_all .box-de-right{
+        margin-top: 50px;
+    }
+    .detailsTab-product_all .box-de-right img{
+        width: 100%;
+    }
+}
+
+@media(min-width:1101px) {
+
+    .detailsTab-product_all {
+        width: 100%;
+       
+       padding-top: 130px;
+       padding-bottom: 130px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+  
+    .detailsTab-product_head {
+      margin: 0 auto;
+  
+    }
+    /*  标题加描述css*/
+    .detailsTab_p_h{
+        font-size:70px;
+    } 
+    /* end */
+    .detailsTab-product_box{
+        margin: 0 auto;
+        margin-top: 76px;
+    }
+  
+    .detailsTab-product_all  .box-ul2 {
+       
+        width: 60%;
+        display: flex;
+    }
+    .detailsTab_p_h{
+        font-weight: 600;
+        color: #151515;
+        line-height: 1;
+  
+    }
+    .detailsTab-product_all ul{
+        padding: 0;
+        margin: 0;
+    }
+    .detailsTab_p_d{
+        font-size: 28px;
+        font-weight: 500;
+        color: #1d1d1d;
+        padding: 80px 20px 150px 0;
+    }
+    .detailsTab-product_all .box-ul2 li.active {
+        position: relative;
+        background-color: #2A408E;
+        color: #fff;
+    }
+   
+
+    .detailsTab-product_all .box-ul2 li {
+        display: flex;
+        list-style: none;
+        font-size: 18px;
+        cursor: pointer;
+        width: 255px;
+        height: 50px;
+        background: #F6F6F6;
+        border-radius: 5px 5px 0px 0px;
+        color: #00000080;
+        align-items: center;
+        justify-content: center;
+        margin-right: 4px;
+        transition: all 0.5s;
+  
+    }
+    .detailsTab-product_all .box-de2 {
+        overflow: hidden;
+        margin-top: 10px;
+    }
+    .detailsTab-product_all .box-de2 li {
+         display: none;
+    }
+  
+    .detailsTab-product_all .box-de2 li.selected {
+        display: block;
+    }
+    /* tab切换显示区域 */
+    .detailsTab-product_all .box-de-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .detailsTab-product_all .box-de-left{
+        
+        padding-top: 60px;
+    }
+        /* 左侧内容 */
+    
+    .detailsTab-product_all .box-de-leftBorder{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        font-size: 18px;
+        color: #080808;
+        font-weight: 400;
+        border-bottom: 1px solid #E8E8E894;
+    }
+    .detailsTab-product_all .box-de-leftBox div:nth-child(1){
+        width: 41%;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+    .detailsTab-product_all .box-de-leftBox div:nth-child(2){
+        width: 46%;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    .box-de-leftBox{
+        width: 46%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .detailsTab-product_all .box-de-right{
+         width: 50%;
+    }
+
+}

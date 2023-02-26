@@ -1,0 +1,283 @@
+@media(min-width:1000px) {
+    .login_nav .breadcrumb__list{
+        padding: 0;
+        font-size: 16px;
+        color: #222;
+    }
+    .login_nav .breadcrumb__link{
+        opacity: 1 !important;
+    }
+    .login_nav .breadcrumb__item+.breadcrumb__item:before{
+        opacity: 1;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .login_nav{
+        width: 100%;
+        line-height: 49px;
+        height: 49px;
+        background: #F5F5F7;
+    }
+    #login-form-container{
+        margin: 100px auto;
+    }
+    .login_form_title{
+        margin: 0;
+        line-height: 1;
+        font-weight:bold;
+        font-size:24px;
+    }
+    .login-content{
+        max-width: 578px;
+        width: 100%;
+        text-align: center;
+        margin: 50px auto;
+    }
+    .login_form_p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1;
+        margin-top: 29px;
+    }
+    .account__block-item .input input{
+        height: 67px;
+        border-radius: 33px;
+    }
+  
+    .account__block-item .input .input__label{
+        font-size: 18px;
+        left: 30px;
+        opacity: 0.6;
+        top: 23px;
+        color: #151515;
+    }
+    .account__block-item .input__field-link{
+        font-size: 18px;
+        opacity: 0.6;
+        right: 30px;
+        color: #151515;
+    }
+    .account__block-item .input__field{
+        padding: 0 30px;
+    }
+    .account__block-item .input+.input{
+        margin-top: 50px;
+    }
+
+    .account__block-item .form__submit {
+        width: 344px;
+        height: 60px;
+        background: #151515;
+        border-radius: 30px;
+        margin: 50px auto 0;
+        letter-spacing: 0;
+    }
+    .account__block-item .loader-button__text{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .login-content .form__secondary-action{
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 42px;
+    }
+    /* password */
+    .recover_title{
+        margin: 0;
+        line-height: 1;
+        font-weight:bold;
+        font-size:24px;
+    }
+    .recover_p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1;
+        margin-top: 29px;
+    }
+    #recover-form-container{
+        margin: 100px auto;
+    }
+    .recover-content{
+        max-width: 770px;
+        margin: 50px auto 0;
+        width: 100%;
+        text-align: center;
+    }
+    .recover-content .form__submit{
+        width: 344px;
+        height: 60px;
+        background: #151515;
+        border-radius: 30px;
+        margin: 50px auto 0;
+        letter-spacing: 0;
+    }
+    .recover-content .input input{
+        height: 67px;
+        border-radius: 33px;
+    }
+    .recover-content .input .input__label{
+        font-size: 18px;
+        left: 30px;
+        opacity: 0.6;
+        top: 23px;
+        color: #151515;
+    }
+    .recover-content .form__secondary-action{
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 30px;
+    }
+    .recover-content .loader-button__text{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .recover-content .link{
+        text-decoration: none;
+    }
+}
+@media(max-width:999px) {
+    .login_nav .breadcrumb__list{
+        padding: 0;
+        font-size: 14px;
+        color: #222;
+    }
+    .login_nav .breadcrumb__link{
+        opacity: 1 !important;
+    }
+    .login_nav .breadcrumb__item+.breadcrumb__item:before{
+        opacity: 1;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .login_nav{
+        width: 100%;
+        line-height: 24px;
+        height: 24px;
+        background: #F5F5F7;
+    }
+    #login-form-container{
+        margin: 50px auto;
+    }
+    .login_form_title{
+        margin: 0;
+        line-height: 1;
+        font-weight:bold;
+        font-size:16px;
+    }
+    .login-content{
+        width: 100%;
+        text-align: center;
+        margin: 26px auto 50px;
+    }
+    .login_form_p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1;
+        margin-top: 14px;
+    }
+    .account__block-item .input input{
+        height: 33px;
+        border-radius: 16px;
+    }
+    .account__block-item .input .input__label{
+        font-size: 14px;
+        left: 22px;
+        opacity: 0.6;
+        top: 11px;
+        color: #151515;
+    }
+    .account__block-item .input__field-link{
+        font-size: 14px;
+        opacity: 0.6;
+        right: 22px;
+        top: 7px;
+        color: #151515;
+    }
+    .account__block-item .input__field{
+        padding: 0 26px;
+    }
+    .account__block-item .input+.input{
+        margin-top: 14px;
+    }
+
+    .account__block-item .form__submit {
+        width: 172px;
+        height: 30px;
+        background: #151515;
+        border-radius: 15px;
+        margin: 25px auto 0;
+        letter-spacing: 0;
+    }
+    .account__block-item .loader-button__text{
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+    .form__secondary-action{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 25px;
+    }
+     /* password */
+     .recover_title{
+        margin: 0;
+        line-height: 1;
+        font-weight:bold;
+        font-size:16px;
+    }
+    .recover_p{
+        font-size: 14px;
+        width: 67%;
+        font-weight: 400;
+        margin: 0 auto;
+        line-height: 18px;
+        margin-top: 14px;
+    }
+    #recover-form-container{
+        margin: 50px auto;
+    }
+    .recover-content{
+       
+        margin: 25px auto 0;
+        width: 100%;
+        text-align: center;
+    }
+    .recover-content .form__submit{
+        width: 172px;
+        height: 30px;
+        background: #151515;
+        border-radius: 15px;
+        margin: 15px auto 0;
+        letter-spacing: 0;
+    }
+    .recover-content .input input{
+        height: 33px;
+        border-radius: 16px;
+    }
+    .recover-content .input .input__label{
+        font-size: 14px;
+        left: 20px;
+        opacity: 0.6;
+        top: 11px;
+        color: #151515;
+    }
+    .recover-content .form__secondary-action{
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 15px;
+    }
+    .recover-content .loader-button__text{
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+    .recover-content .link{
+        text-decoration: none;
+    }
+}
+/*自动填充  */
+.recover-content input:-internal-autofill-previewed,.login-content input:-internal-autofill-previewed,
+.recover-content input:-internal-autofill-selected,.login-content input:-internal-autofill-selected {
+  -webkit-text-fill-color: #222 !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}

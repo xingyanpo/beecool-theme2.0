@@ -1,0 +1,543 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            a{
+               text-decoration: none;
+           }
+            i{
+               font-style:italic;
+           }
+            ul{
+               padding-left: 0;
+               padding-right: 0;
+               list-style:none;
+           }
+           .app-advantages__point {
+               list-style: none;
+           }
+           .app-advantages__point p {
+               margin: 0;
+           }
+            .box{
+               margin: 0 auto;
+               width: 100%;
+               max-width: 1920px;
+           }
+           .finance{
+               background-size:454px;
+               /*padding-top: 234px;*/
+               background-position-x: 60%;
+               margin-bottom: -40px;
+               background-color: #fcfcfc;
+               background-repeat: no-repeat;
+               background-image: url(//cdn.shopify.com/s/files/1/0554/7098/1274/files/Finance.jpg?v=1628058797);
+                 background-position-y: 80px;
+           }
+           .finance__container{
+               width: 100%;
+           }
+           .finance__section{
+               left: 0;
+           }
+           ._show{
+               opacity: 1;
+           }
+           .finance__sub-title{
+               text-align:left;
+           }
+           .finance_title{
+               font-weight:500;
+               letter-spacing:-2px;
+               color:#000;
+               text-align:left;
+           }
+           .finance__button{
+               margin-left:0;
+               margin-right:auto;
+           }
+           .firm-btn{
+               display:flex;
+               -webkit-box-pack:justify;
+               justify-content:space-between;
+               -webkit-box-align: center;
+               align-items: center;
+               -webkit-box-orient:horizontal;
+               -webkit-box-direction:normal;
+               flex-flow:row nowrap;
+               margin:0 auto;
+               text-decoration:none;
+               text-transform:uppercase;
+               position:relative;
+               width:100%;
+               font-weight:700;
+               cursor:pointer;
+               padding:0 20px;
+               background-color:#2a408e;
+               border: 2px solid #2a408e;
+               border-radius:4px;
+               color:#fff;
+           }
+           .firm-btn:hover{
+               background-color:#fff;
+               color:#2a408e;
+           }
+           .firm-btn__text{
+               line-height:1.1;
+               font-weight:700;
+               display:block;
+               position:relative;
+               top:1px;
+           }
+           
+           .statistics{
+               width:100%;
+           }
+           .statistics__container{
+               display:flex;
+               -webkit-box-align:stretch;
+               align-items:stretch;
+               -webkit-box-orient:horizontal;
+               -webkit-box-direction:normal;
+               flex-flow:row wrap;
+               margin-bottom:30px;
+               position:relative;
+       
+           }
+           .box__container{
+               margin:0 auto;
+               width: 100%;
+           }
+           .statistics__item,.statistics__item1{
+               position:relative;
+               width:100%;
+               box-shadow:0px 1px 20px rgba(242, 240, 238, 0.5);
+               background-color:#fff;
+               border:1px solid #F0F0F0;
+               background-repeat:no-repeat;
+               background-position-x:center;
+               display:inline-block;
+               text-align:center;
+               transition:.35s all;
+           }
+           .statistics__item:hover{
+               transform: translateY(-3%);
+               box-shadow: 0 1px 25px 0 rgba(212, 212, 212, 0.80);
+           }
+             .statistics__item1:hover{
+               transform: translateY(-3%);
+               box-shadow: 0 1px 25px 0 rgba(212, 212, 212, 0.80);
+           }
+           .statistics__item_blue .statistics__item-digit{
+               color: #2a408e;
+           }
+           .statistics__item_orange .statistics__item-digit{
+               color:#2a408e;
+           }
+           .statistics__item_green .statistics__item-digit{
+               color:#2a408e;
+           }
+           .statistics__item-digit{
+               line-height:1.1;
+               font-weight:500;
+               margin-bottom:20px;
+               text-align:center;
+           }
+           .statistics__item-title{
+               font-weight:300;
+               color:rgba(0,0,0,0.6);
+               text-align:center;
+               width:100%;
+           }
+           .promos__container{
+               width: 100%;
+           }
+           .promka__img{
+               display:block;
+               margin:0 auto;
+           }
+           .fly-back-horizontal{
+               animation:flyBackHorizontal 0.4s cubic-bezier(0.04, 0.77, 1, 1.02) forwards;
+           }
+           .promka_app .promka__title{
+               margin-bottom:25px;
+           }
+           .promka__title{
+               line-height:1.3;
+               font-weight:500;
+               width:100%;
+               text-align: center;
+           }
+           .promka__description{
+               line-height:24px;
+               font-weight:300;
+               color:#5d5d5d;
+               margin-bottom:25px;
+           }
+           .promka_app .promka__description-line{
+               font-size:18px;
+               line-height:1.2;
+               font-weight:400;
+               position:relative;
+               padding:37px 35px;
+           }
+           .promka_app .promka__description-line::before{
+               content:'';
+               position:absolute;
+               left:0;
+               top:50%;
+               transform:translateY(-50%) rotate(-45deg);
+               transform-origin:30% 0;
+               width:10px;
+               height:7px;
+               border-bottom:3px solid #00C94C;
+               border-left:3px solid #00C94C;
+           }
+           @media(max-width:767px){
+               .statistics__item, .statistics__item1{
+                   margin-left: 0;
+                   margin-right: 0;
+               }
+                 .finance{
+                 background-position:right -100px bottom -6px;
+                 background-size:352px;
+                 padding-top:40px;
+                 padding-bottom:53px;
+                 }
+                 .box__container{
+                   max-width:960px;
+                 padding-left:22px;
+                 padding-right:20px;
+                   padding-bottom: 50px;
+                 }
+                 .finance__section{
+                 position:relative;
+               }
+                 .finance__logo{
+                 display:none;
+                 transition:.5s all;
+               }
+                 .finance_title{
+                 font-size:32px !important;
+                 line-height:1.1;
+                 max-width:280px;
+                 margin-bottom:20px;
+               }
+               .finance__sub-title{
+                 font-size:16px;
+                 line-height:150%;
+                 font-weight:400;
+                 margin-bottom:25px;
+                 max-width:280px;
+                 width:60%;
+               }
+                 .finance__button{
+                 margin-left:0;
+                 margin-right:auto;
+               }
+                 .firm-btn{
+                 max-width:218px;
+                 height:48px;
+               }
+               .promka_app .promka__description-line{
+                   font-size:14px;
+                   line-height:1.2;
+                   font-weight:400;
+                   position:relative;
+                   padding:37px 35px;
+               }
+                 
+                 .statistics{
+                 padding-bottom:20px;
+               }
+                 .statistics__container{
+                 justify-content: center;
+               }
+       
+                 .statistics__item{
+                 padding:32px 22px 40px;
+                 border-radius:4px;
+          
+       
+               }
+                 .statistics__item1{
+                 padding:32px 0 40px;
+                 }
+       /*           	.promka__text-section{
+                 max-height:800px !important;
+               } */
+                 .promka__img_3-m{
+                 margin:150px auto !important;
+               }
+                 .promka__description1{
+                 top:-510px;
+               }
+                 .promka__description2{
+                 top:-430px;
+               }
+                 .promka__description3{
+                 top:-350px;
+               }
+                 .promka__text-section{
+                 max-height:150px !important;
+               }
+           }
+             @media(device-width: 320px){
+               .promka__img_3-m{
+                 margin:200px auto !important;
+               }
+                 .promka__description1{
+                 top:-600px;
+               }
+                 .promka__description2{
+                 top:-520px;
+               }
+                 .promka__description3{
+                 top:-440px;
+               }
+           }
+         
+         
+         
+           @media(min-width: 768px) {
+               .finance{
+                   /*background-position: 350px 100%;*/
+               }
+               .finance__container{
+                   display: flex;
+                   flex-wrap: nowrap;
+               }
+               .finance__section{
+                   z-index: 4;
+               }
+               .finance__logo{
+                   transition:.5s all;
+               }
+               .statistics{
+                   padding-top:0;
+               }
+               .statistics__container{
+                   padding-top:0;
+               }
+               .statistics__item:first-child{
+                   margin-left:0;
+               }
+               .statistics__item,.statistics__item1{
+                   margin:0 10px;
+                   padding:37px 0 54px 0;
+                   min-height: 212px;
+               }
+               .promos{
+                   display:flex;
+                   justify-content:flex-start;
+                   align-items:flex-start;
+                   flex-flow:column nowrap;
+                   margin:0 auto;
+               }
+               .promka{
+                   display:flex;
+                   justify-content:space-between;
+                   align-items:center;
+                   flex-flow:row nowrap;
+                   padding-top:48px;
+                   padding-bottom:48px;
+               }
+               .promka__graphic-section{
+                   margin-bottom:0;
+               }
+           }
+           @media(min-width:1024px){
+               .statistics{
+                   position:relative;
+                   top:0;
+                   left:0;
+                   margin-top:0;
+               }
+           }
+           @media (min-width: 1366px) {
+               .finance{
+                   padding-bottom: 110px;
+               }
+               .finance__container{
+                   margin: auto;
+                   max-width: 960px;
+                   padding-left: 0;
+               }
+               .box__container{
+                   padding-right: 0;
+               }
+               .finance__section{
+                   position: relative;
+               }
+               .finance__logo{
+                   display: block;
+                   max-width:168px;
+                   margin-bottom:48px;
+               }
+               .finance_title{
+                   font-size:48px;
+                   max-width:350px;
+                   margin-bottom:18px;
+                   line-height:1.05;
+               }
+               .finance__sub-title{
+                   width:80%;
+                   margin-bottom:24px;
+               }
+               .statistics__container{
+                   padding-left:0;
+                   padding-right: 0;
+                   -webkit-box-pack:justify;
+                   justify-content:space-between;
+               }
+               .box__container{
+                   max-width:1216px;
+                   /*max-height: 352px;*/
+               }
+               .statistics__item,.statistics__item1{
+                   max-width:360px;
+                   padding-bottom:120px;
+       /*                 padding-left:50px;
+                   padding-right:50px; */
+                   background-size:100%;
+                   background-position-y:101%;
+                   border-radius:8px;
+               }
+               .statistics__item-digit{
+                   font-size:41px;
+               }
+               .statistics__item-title{
+                   font-size:17px;
+                   line-height:20px;
+                   max-width:360px;
+               }
+               .promos{
+                   max-width:1216px;
+                   padding-bottom:50px;
+               }
+               .promka_app{
+                   margin-bottom:25px;
+               }
+               .promka_app .promka__img{
+                   /*transform:translateX(-70%);*/
+                   /*opacity:0;*/
+               }
+               /*.promka__img{*/
+                   /*width:510px;*/
+               /*}*/
+               .promka__title{
+                   font-size:42px;
+                   letter-spacing:-2.62px;
+               }
+               .promka_app .promka__description{
+                   display:block;
+                   max-width:100%;
+               }
+               .promka__description{
+                   font-size:18px;
+               }
+           }
+           @media (min-width: 1440px){
+               .finance__sub-title{
+                   font-size:20px;
+                   line-height:1.3;
+                   font-weight:400;
+                   max-width:300px;
+               }
+           }
+       
+           @media (min-width: 1650px) {
+               .firm-btn{
+                   height:70px;
+                   max-width:285px;
+               }
+               .firm-btn__text{
+                   font-size:18px;
+               }
+               .statistics{
+                   padding-bottom:100px;
+               }
+           }
+       
+       </style>
+    </head>
+    <body>
+    <main class="main" style="display: block;">
+        <div class="mian-box">
+            <section class="finance box">
+                <div class="finance__container box__container" style="">
+                    <div class="finance__section">
+                        <a href="" class="finance__logo-box">
+                            <img src="https://cdn.shopify.com/s/files/1/0554/7098/1274/files/1_e11833a2-c7fe-4f64-bfcd-25e1a101dad9.png?v=1621403580" alt="logo" class="finance__logo js-finance-logo _show">
+                        </a>
+                        <h1 class="finance_title">Enjoy Quick Access to Convenient Credit</h1>
+                        <p class="finance__sub-title">Get 6-month financing with absolute 0% interest!</p>
+                        <a href="//www.paypal.com/ppcreditapply/da/us/lander?p=ppcdalpBAUNI&t=ppcdaltPPCMICR" class="finance__button firm-btn">
+                            <span class="firm-btn__text">Apply Now</span>
+                            <i class="firm-btn__arrow-icon"></i>
+                        </a>
+    
+                    </div>
+                </div>
+            </section>
+            <section class="statistics box" id="statistics">
+                <div class="statistics__container box__container">
+                    <figure class="statistics__item statistics__item_blue">
+                        <div class="statistics__item-digit">Get a Credit Decision In Seconds</div>
+                        <figcaption class="statistics__item-title">Just answer a few quick questions, and you’ ll know within seconds if you’re approved.</figcaption>
+                    </figure>
+                    <figure class="statistics__item1 statistics__item_orange">
+                        <div class="statistics__item-digit">No Annual<br>Fee</div>
+                        <figcaption class="statistics__item-title">Buy now and pay over time year round with no annual fee.</figcaption>
+                    </figure>
+                    <figure class="statistics__item statistics__item_green">
+                        <div class="statistics__item-digit">There When You Need It</div>
+                        <figcaption class="statistics__item-title">If approved, PayPal Credit is automatically added to your account with PayPal. Check out in just a few clicks with no card numbers or expiration dates.</figcaption>
+                    </figure>
+                    <!--<figure class="statistics__item statistics__item_yellow">-->
+                        <!--<div class="statistics__item-digit"></div>-->
+                        <!--<figcaption class="statistics__item-title"></figcaption>-->
+                    <!--</figure>-->
+                </div>
+    
+            </section>
+        </div>
+        <div class="promka__title">Instructions</div>
+        <section class="promos box">
+            <div class="promos__container">
+                <article class="promka promka_app" id="promka5">
+                    <div class="promka__graphic-section">
+                        <img class="promka__img promka__img_3  lazy flying-img fly-back-horizontal loaded" src="https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/Step_1.png?v=1626948079" alt="" style="max-width: 99px;max-height: 119px;">
+                        <img class="promka__img promka__img_3 promka__img_3-m lazy flying-img fly-back-horizontal loaded" src="https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/Step_2.png?v=1626948119" alt="" style="max-width: 99px;max-height: 119px;margin: 10px auto;">
+                        <img class="promka__img promka__img_3  lazy flying-img fly-back-horizontal loaded" src="https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/Step_3.png?v=1626948134" alt="" style="max-width: 99px;max-height: 119px;">
+                    </div>
+                    <div class="promka__text-section box__container" style="max-height: 352px;">
+                        <ul class="promka__description app-advantages">
+                            <li class="app-advantages__point promka__description1 promka__description-line"><b>Step 1&nbsp&nbsp&nbsp&nbsp
+                                Select PayPal as your payment method</b>
+                            <p>After going through and selecting PayPal as your payment method, you will be directed to PayPal website.</p>
+                            </li>
+                            <li class="app-advantages__point promka__description2 promka__description-line"><b>Step 2&nbsp&nbsp&nbsp&nbsp
+                                Log in to your PayPal and apply for PayPal Credit</b>
+                            <p>At PayPal confirmation page, look for PayPal Credit and click to apply. Get a credit decision in seconds!</p>
+                            </li>
+                            <li class="app-advantages__point promka__description3 promka__description-line"><b>Step 3&nbsp&nbsp&nbsp&nbsp
+                                Pay over 6 installments</b>
+                                <p>If approved, you are able to shop instantly with PayPal Credit right from your PayPal account.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+              <div class="notice box__container">
+              <b>Notice:</b>
+              <p>1.Minimum monthly payments are required.</p>
+              <p>2.Interest would be charged from your PayPal account if you failed to pay in full within 6 months.</p>
+              <p>3.See more details on PayPal Terms &amp; Conditions.</p>
+            </div>
+        </section>
+    </main>
+    </body>
+    </html>
+    

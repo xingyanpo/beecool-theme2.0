@@ -1,0 +1,79 @@
+{{ 'jd-help-icon.css' | asset_url | stylesheet_tag }}
+<div class="jd-business-cooperation">
+    <div class="help_search">
+            <div class="jd-header__search-bar header__search-bar">
+                <form class="jd-predictive-search__form predictive-search__form search_form_help" action="{{ routes.search_url }}" method="get" role="search">
+
+                  <input type="hidden" name="type" value="product">
+                  <input type="hidden" name="options[prefix]" value="last">
+                  <input type="hidden" name="options[unavailable_products]" value="{{ settings.search_unavailable_products }}">
+            
+                  <input type="text" name="search_index" class="predictive-search__input" id="search_index" onkeydown="entersearch1(event)"  onblur="if(this.value==''){this.value='Search keywords...'}" onfocus="if(this.value=='Search keywords...'){this.value=''}" value="Search keywords..."  />
+                  <input class="predictive-search__input" is="predictive-search-input" type="text" name="q" autocomplete="off" autocorrect="off" aria-label="{{ 'search.general.title' | t }}" placeholder="Search keywords..." style="display: none;">
+                  {%- render 'icon' with 'header-search' -%}
+                </form>
+               
+            </div>
+            <div class="help_search_text">What do you need help with?</div>
+    </div>
+    <div class="desc container">
+        {% for block in section.blocks %}
+            <a href="{{block.settings.link}}" class="img_text">
+                <div class="img_textBox">
+                    <div class="help_icon">{{block.settings.svg}}</div>
+                    <div class="icon_tit">{{block.settings.title}}</div>
+                    <div class="small_tit">{{block.settings.smalltitle}}</div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+</div>
+<script>
+   
+</script>
+{% schema %}
+{
+    "name": "help icon",
+    "class":"help-icon",
+    "settings": [
+       {
+        "type": "text",
+        "id": "title",
+        "label": "title"
+       }
+    ],
+    "blocks":[
+       {
+        "type": "media",
+        "name": "media",
+        "settings": [
+           {
+            "type": "textarea",
+            "id": "svg",
+            "label": "icon"
+           },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "link"
+          },
+         {
+            "type": "text",
+            "id": "title",
+            "label": "title"
+         },
+         {
+            "type": "text",
+            "id": "smalltitle",
+            "label": "title"
+         }
+        ]
+       }
+    ],
+    "presets": [
+        {
+            "name": "help icon"
+        }
+    ]
+}
+{% endschema %}

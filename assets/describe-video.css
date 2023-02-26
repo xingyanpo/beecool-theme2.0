@@ -1,0 +1,12 @@
+@media screen and (max-width: 1000px) {
+ 
+    .describe-video-all .video_title {
+      display: block;
+    }
+   
+  }
+  
+  @media screen and (min-width: 1000px) {
+    
+  }
+  

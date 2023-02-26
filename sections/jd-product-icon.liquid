@@ -1,0 +1,99 @@
+{{ 'jd-product-icon.css' | asset_url | stylesheet_tag }}
+<style>
+
+ .jd-product-icon-all .swiper-button-prev.swiper-button-disabled,.jd-product-icon-all .swiper-button-next.swiper-button-disabled{
+    opacity:1;
+      cursor: auto;
+      pointer-events: unset;
+  }
+</style>
+<div class="jd-product-icon-all">
+      <div class="container">
+        <div class="swiper productIcon">
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    <div class="swiper-slide productIcon_box">
+                        <div class="productIcon_svg">
+                            {{block.settings.svg}}
+                        </div>
+                        <div class="productIcon_text">
+                            {{block.settings.text}}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+           <div class="pc">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+           </div>
+          <div class="mobile">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+    
+      </div>
+    
+</div>
+<script>
+    (()=>{
+        var swiper = new Swiper(".productIcon", {
+        observer: true,
+        observeParents:true,
+        breakpoints: { 
+            350: {  //当屏幕宽度大于等于768 
+                slidesPerView: 2.62,
+                loop:true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "progressbar",
+                },
+            },
+            769: {  //当屏幕宽度大于等于768 
+               observer: true,
+                observeParents:true,
+                slidesPerView: 6,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            }
+            
+        },
+        // spaceBetween: 30,
+      
+      });
+    })()
+</script>
+{% schema %}
+{
+    "name": "product Icon",
+    "settings": [
+   
+    ],
+    "blocks": [
+    {
+        "type": "productIcon",
+        "name": "productIcon",
+        "settings": [
+          
+          {
+            "type": "textarea",
+            "id": "svg",
+            "label": "svg"
+          
+          },
+         {
+            "type": "richtext",
+            "id": "text",
+            "label": "label"
+          
+         }
+        ]
+    }
+    ],
+    "presets": [{
+    "name": "product Icon"
+    
+    }]
+}
+{% endschema %}

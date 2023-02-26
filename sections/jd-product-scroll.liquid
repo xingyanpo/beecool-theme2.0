@@ -1,0 +1,188 @@
+{{ 'jd-product-scroll.css' | asset_url | stylesheet_tag }}
+
+<div class="jd_product_scroll_all">
+    
+        <div class="jd_product_scroll_box">
+            <div class="jd_product_scroll_left">
+                <div thumbsSlider="" class="swiper productScroll">
+                    <div class="swiper-wrapper">
+                        {% for block in section.blocks %}
+                        <div class="swiper-slide ">
+                            <div class="jd_product_scroll_leftTitle">
+                                {{block.settings.title}}
+                            </div>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+                
+            </div>
+            <div class="jd_product_scroll_right">
+                <div class="swiper productScroll2">
+                    <div class="swiper-wrapper">
+                        {% for block in section.blocks %}
+                            <div class="swiper-slide swiper-no-swiping">
+                                {% if block.settings.link !=blank %}
+                                    <div class="productScroll2_imgBox">
+                                        <video x5-video-player-fullscreen="true" x5-playsinline playsinline webkit-playsinline id="pageAppVideo" autoplay loop="loop" muted src="{{block.settings.link}}"></video>
+                                        <div class="productScroll2_imgBox_position">
+                                        <div class="productScroll2_imgBox_positionBox">
+                                                <div> {{block.settings.right_title}}</div>
+                                                <div> {{block.settings.right_text}}</div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                {% else %}
+                                    <div class="productScroll2_imgBox Hideimg8">
+                                        <img {% render 'image-attributes', image: block.settings.img %}>
+                                        <div class="productScroll2_imgBox_position">
+                                            <div class="productScroll2_imgBox_positionBox">
+                                                <div> {{block.settings.right_title}}</div>
+                                                <div> {{block.settings.right_text}}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+    <div class="mobile">
+        <div class="swiper productMobileScroll">
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    <div class="swiper-slide">
+                        {% if block.settings.link !=blank %}
+                            <div class="productScroll2_imgBox">
+                                <video x5-video-player-fullscreen="true" x5-playsinline playsinline webkit-playsinline id="pageAppVideo" autoplay loop="loop" muted src="{{block.settings.link}}"></video>
+                                <div class="productScroll2_imgBox_position">
+                                    <div class="productScroll2_imgBox_positionBox">
+                                            <div> {{block.settings.right_title}}</div>
+                                            <div> {{block.settings.right_text}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% else %}
+                            <div class="productScroll2_imgBox Hideimg8">
+                                    
+                                <img {% render 'image-attributes', image: block.settings.img %}>
+                                <div class="productScroll2_imgBox_position">
+                                    <div class="productScroll2_imgBox_positionBox">
+                                        <div> {{block.settings.right_title}}</div>
+                                        <div> {{block.settings.right_text}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                        {% endif %}
+                      
+                        <div class="jd_product_scroll_leftTitle">
+                            {{block.settings.title}}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="productMobileScroll_pagination">
+                <div class="swiper-button-prev">
+                    <svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 313.58 313.58"><defs><style>.productSvg2-1,.productSvg2-3{fill:none;}.productSvg2-3{stroke:#000;stroke-miterlimit:10;stroke-width:6px;}</style><clipPath id="clip-path" transform="translate(507.39 -153.68)"><rect class="productSvg2-1" x="-396.65" y="221.58" width="92.1" height="177.78"></rect></clipPath></defs><g class="productSvg2-2"><path d="M-395.47,312.68l84.07,85.48a3.37,3.37,0,0,0,4.76,0,3.36,3.36,0,0,0,0-4.76l-81.72-83.1,82.79-82.79a3.37,3.37,0,0,0,0-4.76,3.36,3.36,0,0,0-2.38-1,3.36,3.36,0,0,0-2.39,1l-85.15,85.15a3.38,3.38,0,0,0,0,4.74Zm0,0" transform="translate(507.39 -153.68)"></path></g><circle class="productSvg2-3" cx="156.79" cy="156.79" r="153.79"></circle></svg>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next">
+                    <svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 313.58 313.58"><defs><style>.productSVG-1,.productSVG-3{fill:none;}.productSVG-3{stroke:#000;stroke-miterlimit:10;stroke-width:6px;}</style><clipPath id="clip-path" transform="translate(507.39 -153.68)"><rect class="productSVG-1" x="-396.65" y="221.58" width="92.1" height="177.78"></rect></clipPath></defs><g class="productSVG-2"><path d="M-305.73,308.26l-84.06-85.48a3.39,3.39,0,0,0-4.77,0,3.39,3.39,0,0,0,0,4.77l81.73,83.1-82.79,82.79a3.36,3.36,0,0,0,0,4.76,3.34,3.34,0,0,0,2.38,1,3.33,3.33,0,0,0,2.38-1L-305.75,313a3.37,3.37,0,0,0,0-4.75Zm0,0" transform="translate(507.39 -153.68)"></path></g><circle class="productSVG-3" cx="156.79" cy="156.79" r="153.79"></circle></svg>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+      var swiper = new Swiper(".productScroll", {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        freeMode: true,
+       
+        watchSlidesProgress: true,
+        allowSlideNext: false,
+        allowSlidePrev: false,
+      });
+      var swiper2 = new Swiper(".productScroll2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+      var swiper3 = new Swiper(".productMobileScroll", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        autoHeight: true,
+        observer: true, 
+        observeParents: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      
+</script>
+{% schema %}
+{
+    "name": "product scroll",
+    "class": "product-scroll",
+    
+    "settings":[
+      
+    ],
+    "blocks":[
+    {
+        "name": "productImage scroll",
+        "type": "productImage_scroll",
+        "settings": [
+         
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "left Title"  
+            },
+            {
+                "type": "image_picker",
+                "id": "img",
+                "label": "Img"
+            },
+           {
+            "type": "url",
+            "id": "link",
+            "label": "link"
+           
+           },
+            {
+                "type": "richtext",
+                "id": "right_title",
+                "label": "right title"
+            },
+            {
+                "type": "richtext",
+                "id": "right_text",
+                "label": "right Text"
+            }
+        ]
+    }
+    ],
+    "presets": [
+        {
+            "name": "product scroll"
+        }
+    ]
+}
+
+
+{% endschema %}

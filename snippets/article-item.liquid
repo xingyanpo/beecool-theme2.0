@@ -1,0 +1,92 @@
+<div {% if settings.stagger_blog_posts_apparition %}reveal{% endif %} class="article-item {% if use_featured_layout %}{% if is_first %}article-item--featured{% else %}article-item--horizontal{% endif %}{% endif %} image-zoom">
+  {%- if article.image -%}
+    <div  class="article-item__image-container">
+      <a href="{{ article.url }}">
+      <div style="overflow: hidden;" class="article_imgHidden Hideimg">
+        <img class="article-item__image" sizes="(max-width: 740px) 81vw, (max-width: 999px) 37vw, 425px" loading="lazy" {% render 'image-attributes', image: article.image, sizes: '600,700,800,1000,1200,1400,1600,1800,2000' %}>
+      </div>
+
+      <!-- {%- if use_featured_layout and is_first -%}
+        <span class="article-item__arrow prev-next-button prev-next-button--next">{% render 'icon' with 'nav-arrow-right', direction_aware: true %}</span>
+      {%- else -%}
+        <span class="article-item__arrow prev-next-button prev-next-button--small prev-next-button--next">{% render 'icon' with 'nav-arrow-right', direction_aware: true, width: 15, height: 12 %}</span>
+      {%- endif -%} -->
+      <!-- <div class="article-item__category">{{ article.tags.first }}</div> -->
+      {% if current_tags == blank %}
+          <div class="article-item__category">{{ article.tags.first }}</div>
+      {% endif %}
+       
+    
+      
+        <div class="article-item__content text-container">
+          {%- if section.settings.show_category and article.tags.size > 0 -%}
+            {%- assign blog_url_parts = article.url | split: '/' -%}
+            {%- assign blog_url = '' -%}
+      
+            {%- for blog_url_part in blog_url_parts -%}
+              {%- unless forloop.last -%}
+                {%- assign blog_url = blog_url | append: '/' | append: blog_url_part -%}
+              {%- endunless -%}
+            {%- endfor -%}
+      
+           
+          {%- endif -%}
+     
+          <h3 class="article-item__title  {{ heading_size }}">
+            <div >{{ article.title }}</div>
+          </h3>
+        
+          <div class="article__title_time">{{ article.published_at | time_tag: format: 'month_day_year' }}</div>
+
+          {%- if section.settings.show_excerpt and article.excerpt_or_content != blank -%}
+            <div class="article-item__excerpt text--small">
+              {{- article.excerpt_or_content | strip_html | truncate: 200 -}}
+            </div>
+          {%- endif -%}
+        </a>
+        <div class="read_more_last">
+          <a href="{{ article.url }}">
+            <div class="read_more">
+              
+              {{ 'blog.general.read_more' | t }}
+            </div>
+          </a>
+            
+            <div class="Social_Share">
+              
+              <div class="product-meta__share text--subdued">
+                {%- assign share_url = shop.url | append: product.url -%}
+                {%- assign twitter_text = product.title | url_param_escape -%}
+                {%- assign pinterest_description = product.description | strip_html | truncatewords: 15 | url_param_escape -%}
+                {%- assign pinterest_image = product.featured_image | img_url: '800x' | prepend: 'https:' -%}
+      
+             
+                <div class="product-meta__share-label">Social Share: </div>
+      
+      
+                <div class="Social_ShareSvg">
+                  <a class="article__share-button-item article__share-button-item--facebook tap-area" href="https://www.facebook.com/sharer.php?u={{ share_url }}" target="_blank" rel="noopener" role="listitem" aria-label="{{ 'general.social.facebook_share' | t }}">
+                    {%- render 'icon' with 'facebook' -%}
+                  </a>
+                  
+                  <a class="article__share-button-item article__share-button-item--twitter tap-area" href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener" role="listitem" aria-label="{{ 'general.social.twitter_tweet' | t }}">
+                    {%- render 'icon' with 'twitter' -%}
+                  </a>
+                  <a class="article__share-button-item article__share-button-item--pinterest tap-area" href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}" target="_blank" rel="noopener" role="listitem" aria-label="{{ 'general.social.pinterest_pin' | t }}">
+                    {%- render 'icon' with 'pinterest' -%}
+                  </a>
+                  <a class="article__share-button-item article__share-button-item--mail tap-area" href="mailto:?&subject={{ article.title | escape }}&body={{ share_url }}" role="listitem" aria-label="{{ 'general.social.email_share' | t }}">
+                    {%- render 'icon' with 'share' -%}
+                  </a>
+                </div>
+              </div>
+        
+            </div>
+        </div>
+        </div>
+     
+      </div>
+  {%- endif -%}
+
+  
+</div> 

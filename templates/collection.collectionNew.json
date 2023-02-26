@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_image": true,
+        "show_collection_description": true,
+        "section_height": "small",
+        "text_width": "medium",
+        "image_text_color": "#ffffff",
+        "image_overlay_color": "#000000",
+        "image_overlay_opacity": 30,
+        "quick_links": ""
+      }
+    },
+    "1662435344c493e7b9": {
+      "type": "jd-banner",
+      "settings": {
+        "header": "<p>Accessories<\/p>",
+        "font": 70,
+        "font_mobile": 32,
+        "text": "<p>Improve your ride – explore accessories for your BeeCool models.<\/p>",
+        "Subheading": "<p>Improve your ride – explore accessories for your BeeCool models.<\/p>",
+        "text_mobile": "",
+        "font_text": 32,
+        "font_text_mobile": 16,
+        "img_banner": "shopify:\/\/shop_images\/1_f2e561b3-daa4-4f5b-8264-4861a15ea242.png",
+        "img_bannerMobile": "shopify:\/\/shop_images\/2_33dcb73b-a4fa-4f96-bed6-5f9430c04976.png"
+      }
+    },
+    "main": {
+      "type": "main-collection-new",
+      "settings": {
+        "show_sort_by": true,
+        "products_per_page": 24,
+        "mobile_products_per_row": "2",
+        "desktop_products_per_row": 4,
+        "show_filters": true,
+        "show_filter_group_name": false,
+        "show_color_swatch": false,
+        "open_first_filter_group": true,
+        "filter_position": "always_visible",
+        "promotion_position": "top",
+        "promotion_height": "small"
+      }
+    },
+    "13c49e36-565f-406f-90a6-d94aa0a64ab9": {
+      "type": "jd-afterSales",
+      "blocks": {
+        "309b3121-e085-42d4-8c61-b293e7fdae69": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
+            "title": "Free Shipping ",
+            "subtitle": "<p>To the lower 48 states<\/p>"
+          }
+        },
+        "347c7510-b9ac-4ec0-a49a-58f59d6b02e5": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
+            "title": "2-Year Warranty",
+            "subtitle": "<p>Buy with confidence<\/p>"
+          }
+        },
+        "54630e6c-9026-40e6-86be-5ca2eee19e48": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
+            "title": "Secure Payment",
+            "subtitle": "<p>Secure payment with Shopify<\/p>"
+          }
+        },
+        "1aee3ace-31be-4363-b06c-5958ee31cbff": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
+            "title": "Cost-effective",
+            "subtitle": "<p>Direct to consumer pricing<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "309b3121-e085-42d4-8c61-b293e7fdae69",
+        "347c7510-b9ac-4ec0-a49a-58f59d6b02e5",
+        "54630e6c-9026-40e6-86be-5ca2eee19e48",
+        "1aee3ace-31be-4363-b06c-5958ee31cbff"
+      ],
+      "settings": {
+        "policy_color": "#f3f5f5",
+        "policy_scolor_mobile": "#f3f5f5"
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "1662435344c493e7b9",
+    "main",
+    "13c49e36-565f-406f-90a6-d94aa0a64ab9"
+  ]
+}

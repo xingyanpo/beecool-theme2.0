@@ -1,0 +1,224 @@
+@media (max-width: 999px) {
+    .jd-business-cooperation{
+        padding: 50px 0;
+        text-align: center;
+        background-color: #F4F7FE;
+    }
+    
+    .jd-business-cooperation .desc{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .jd-business-cooperation svg{
+        width: 40px;
+        height: 40px;
+    }
+    .jd-business-cooperation svg .a{
+        fill: #151515;
+    }
+    .jd-business-cooperation .img_text{
+        max-width: 48.5%;
+        padding: 37px 0 24px;
+        margin-top: 10px;
+        background: #fff;
+        width: 100%;
+        border-radius: 8px;
+        position: relative;
+    }
+  
+   
+    .img_textBox{
+        width: 75%;
+        margin: 0 auto;
+    }
+    .jd-business-cooperation .icon_tit{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-top: 16px;
+        color: #151515;
+    }
+    .jd-business-cooperation .small_tit{
+        font-size: 14px;
+        color: #151515;
+        font-weight: 400;
+        margin-top: 12px;
+        line-height: 1.5;
+    }
+    .help_icon{
+        display: flex;
+        justify-content: center;
+    }
+    .help_icon svg path{
+        fill:#2A408E;
+    }
+    /* 搜索 */
+    .help_search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .jd-header__search-bar{
+        position: relative;
+        width: 70%;
+        height: 40px;
+        border: 1px solid #A3A3A3;
+        opacity: 0.8;
+        border-radius: 39px;
+    }
+    .jd-header__search-bar .search_form_help{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .jd-header__search-bar .predictive-search__input{
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        width: 100%;
+        height: 100%;
+        padding-left: 30px;
+        opacity: 0.47;
+        text-align: left;
+    }
+    .jd-header__search-bar svg{
+        width: 16px;
+        position: absolute;
+        right: 27px;
+        height: auto;
+       
+    }
+    .jd-header__search-bar svg path{
+        fill: #A5A7AC;
+    }
+    .help_search_text{
+        text-align: center;
+        font-size: 14px;
+        color: #151515;
+        margin-top: 20px;
+        margin-bottom: 37px;
+        font-weight: 400;
+    }
+     /*自动填充  */
+     .jd-header__search-bar input:-internal-autofill-previewed,
+     .jd-header__search-bar input:-internal-autofill-selected {
+         transition: background-color 5000s ease-in-out 0s !important;
+     }
+}
+@media (min-width: 1000px) {
+    .jd-business-cooperation{
+        margin: 0 auto;
+        padding: 100px 0;
+        text-align: center;
+        background-color: #F4F7FE;
+    }
+    
+    .jd-business-cooperation .desc{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .jd-business-cooperation svg{
+        width: 56px;
+        height: 56px;
+    }
+    .jd-business-cooperation svg .a{
+        fill: #151515;
+    }
+    .jd-business-cooperation .img_text{
+        max-width: 23.5%;
+        padding: 70px 0;
+        margin-top: 2%;
+        background: #fff;
+        width: 100%;
+        border-radius: 15px;
+        transition: all 1s;
+        position: relative;
+    }
+    .jd-business-cooperation .img_text:hover .icon_tit, .jd-business-cooperation .img_text:hover .small_tit{
+        color: #2A408E;
+    }
+    .jd-business-cooperation .img_text:hover{
+        transform: translateY(-14px);
+        box-shadow: 0 15px 30px rgb(0 0 0 / 10%);
+    }
+    .img_textBox{
+        padding: 0 36px;
+    }
+    .jd-business-cooperation .icon_tit{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-top: 20px;
+        color: #151515;
+    }
+    .jd-business-cooperation .small_tit{
+        font-size: 18px;
+        color: #151515;
+        font-weight: 400;
+        margin-top: 12px;
+        line-height: 20px;
+    }
+    .help_icon{
+        display: flex;
+        justify-content: center;
+    }
+    .help_icon svg path{
+        fill:#2A408E;
+    }
+    /* 搜索 */
+    .help_search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .jd-header__search-bar{
+        position: relative;
+        width: 644px;
+        height: 70px;
+        border: 2px solid #A3A3A3;
+        opacity: 0.8;
+        border-radius: 39px;
+    }
+    .jd-header__search-bar .search_form_help{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .jd-header__search-bar .predictive-search__input{
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        width: 100%;
+        height: 100%;
+        padding-left: 36px;
+        opacity: 0.47;
+        text-align: left;
+    }
+    .jd-header__search-bar svg{
+        width: 28px;
+        position: absolute;
+        right: 36px;
+        height: auto;
+       
+    }
+    .help_search_text{
+        text-align: center;
+        font-size: 20px;
+        color: #151515;
+        margin-top: 24px;
+        margin-bottom: 60px;
+        font-weight: 200;
+    }
+     /*自动填充  */
+     .jd-header__search-bar input:-internal-autofill-previewed,
+     .jd-header__search-bar input:-internal-autofill-selected {
+         transition: background-color 5000s ease-in-out 0s !important;
+     }
+}

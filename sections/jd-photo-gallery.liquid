@@ -1,0 +1,177 @@
+{{ 'jd-photo-gallery.css' | asset_url | stylesheet_tag }}
+
+<div class="photo_gallery_all">
+ 
+        <div class="photo_gallery_title ebike_h1">
+            {{section.settings.title }}
+        </div>
+        <div class="photo_gallery_bottom pc">
+            {% for block in section.blocks %}
+               <div class="photo_galleryBox">
+                <div class="photo_gallery_bottomBox">
+                    {% if block.settings.img != blank and block.settings.img2 != blank and block.settings.img3 != blank%} 
+                      
+                            <div class="photo_gallery_bottomBoxImg" style="width: 28.895%; padding-right: 7px">
+                                <div class="photo_gallery_bottomBoxImgsmall Hideimg"><img loading="lazy" {% render 'image-attributes' , image: block.settings.img%}></div>
+                            </div>
+                        
+                            <div class="photo_gallery_bottomBoxImg" style="width: 34.5%; padding:0 7px;">
+                                <div class="photo_gallery_bottomBoxImgsmall Hideimg2"><img loading="lazy" {% render 'image-attributes' , image: block.settings.img2%}></div>
+                            </div>
+                     
+                            <div class="photo_gallery_bottomBoxImg" style="width:38%; padding-left: 7px;" >
+                                <div class="photo_gallery_bottomBoxImgsmall Hideimg3"><img loading="lazy" {% render 'image-attributes' , image: block.settings.img3%}></div>
+                            </div>
+                        
+                    {% elsif  block.settings.img != blank and block.settings.img2 != blank and block.settings.img3 == blank%}
+                       
+                            <div class="photo_gallery_bottomBoxImg" style="width: 50%; padding-right: 7px;">
+                                <div class="photo_gallery_bottomBoxImgsmall Hideimg"><img loading="lazy" {% render 'image-attributes' , image: block.settings.img%}></div>
+                            </div>
+                      
+                            <div class="photo_gallery_bottomBoxImg" style="width: 50%; padding-left: 7px;">
+                               <div class="photo_gallery_bottomBoxImgsmall Hideimg"> <img loading="lazy" {% render 'image-attributes' , image: block.settings.img2%}></div>
+                            </div>
+                       
+                    {% elsif  block.settings.img == blank and block.settings.img2 == blank and block.settings.img3 == blank and block.settings.img4 != blank and block.settings.img5 != blank%}
+
+                            <div class="photo_gallery_bottomBoxImg" style="width: 57.24%; padding-right: 7px;">
+                                <div class="photo_gallery_bottomBoxImgsmall Hideimg"><img loading="lazy" {% render 'image-attributes' , image: block.settings.img4%}></div>
+                            </div>
+                    
+                            <div class="photo_gallery_bottomBoxImg" style="width: 43%; padding-left: 7px;">
+                                <div class="photo_gallery_bottomBoxImgsmall Hideimg"> <img loading="lazy" {% render 'image-attributes' , image: block.settings.img5%}></div>
+                            </div>
+                        {% else %}
+                          
+                            <div class="photo_gallery_bottomBoxImg" style="width: 100%;">
+                                <div class="photo_gallery_bottomBoxImgsmall Hideimg"><img loading="lazy" {% render 'image-attributes' , image: block.settings.img%}></div>
+                            </div>
+                           
+                           
+                    {% endif %} 
+                 
+
+                    
+                </div>
+               </div>
+            {% endfor %}
+            <div class="view_more">
+               {{ section.settings.view_more}}
+            </div>
+        </div>
+        <div class="photo_gallery_bottom mobile">
+            {% for block in section.blocks %}
+               <div class="photo_galleryBox">
+                <div class="photo_gallery_bottomBox">
+                    {% if block.settings.img != blank and block.settings.img2 != blank and block.settings.img3 != blank%} 
+                            <div class="photo_gallery_bottomBoxImg" style="width: 28.895%; padding-right: 2px">
+                                <div class="photo_gallery_bottomBoxImgsmall Hideimg"><img loading="lazy" {% render 'image-attributes' , image: block.settings.img%}></div>
+                            </div>
+                            <div class="photo_gallery_bottomBoxImg" style="width: 34.5%; padding:0 2px;">
+                                <div class="photo_gallery_bottomBoxImgsmall Hideimg2"><img loading="lazy" {% render 'image-attributes' , image: block.settings.img2%}></div>
+                            </div>
+                            <div class="photo_gallery_bottomBoxImg" style="width:38%; padding-left: 2px;" >
+                                <div class="photo_gallery_bottomBoxImgsmall Hideimg3"><img loading="lazy" {% render 'image-attributes' , image: block.settings.img3%}></div>
+                            </div>
+                    {% elsif  block.settings.img != blank and block.settings.img2 != blank and block.settings.img3 == blank%}
+                            <div class="photo_gallery_bottomBoxImg" style="width: 50%; padding-right: 2px;">
+                                <div class="photo_gallery_bottomBoxImgsmall Hideimg"><img loading="lazy" {% render 'image-attributes' , image: block.settings.img%}></div>
+                            </div>
+                      
+                            <div class="photo_gallery_bottomBoxImg" style="width: 50%; padding-left: 2px;">
+                               <div class="photo_gallery_bottomBoxImgsmall Hideimg"> <img loading="lazy" {% render 'image-attributes' , image: block.settings.img2%}></div>
+                            </div>
+                    {% elsif  block.settings.img == blank and block.settings.img2 == blank and block.settings.img3 == blank and block.settings.img4 != blank and block.settings.img5 != blank%}
+
+                        <div class="photo_gallery_bottomBoxImg" style="width: 57%; padding-right: 2px;">
+                            <div class="photo_gallery_bottomBoxImgsmall Hideimg"><img loading="lazy" {% render 'image-attributes' , image: block.settings.img4%}></div>
+                        </div>
+                
+                        <div class="photo_gallery_bottomBoxImg" style="width: 43%; padding-left: 2px;">
+                            <div class="photo_gallery_bottomBoxImgsmall Hideimg"> <img loading="lazy" {% render 'image-attributes' , image: block.settings.img5%}></div>
+                        </div>
+                    {% else %}
+                            <div class="photo_gallery_bottomBoxImg" style="width: 100%;">
+                                <div class="photo_gallery_bottomBoxImgsmall Hideimg"><img loading="lazy" {% render 'image-attributes' , image: block.settings.img%}></div>
+                            </div>
+                            
+                           
+                    {% endif %} 
+                            
+
+                    
+                </div>
+               </div>
+            {% endfor %}
+            <div class="view_more">
+               {{ section.settings.view_more}}
+            </div>
+        </div>
+</div>
+<script>
+    $(".view_more").click(function(){
+        $(".photo_galleryBox").slideDown();
+        $(this).hide()
+    })
+</script>
+{% schema %}
+{
+    "name": "Photo Gallery",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "title"
+        },
+        {
+            "type": "richtext",
+            "id": "view_more",
+            "label": " View More"
+        }
+    ],
+    "blocks": [
+    {
+        "type": "Photo-Gallery",
+        "name": "Photo Gallery",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "img",
+                "label": "Img pc"
+            },
+            {
+                "type": "image_picker",
+                "id": "img2",
+                "label": "Img2 pc"
+            },
+            {
+                "type": "image_picker",
+                "id": "img3",
+                "label": "Img3 pc"
+            },
+           {
+            "type": "header",
+            "content": "Uneven two sheets",
+            "info": "Uneven two sheets"
+           },
+           {
+            "type": "image_picker",
+            "id": "img4",
+            "label": "Img4 mobile"
+            },
+            {
+                "type": "image_picker",
+                "id": "img5",
+                "label": "Img5 mobile"
+            }
+          
+  ]
+}
+    ],
+    "presets": [{
+    "name": "Photo Gallery"
+    
+    }]
+}
+{% endschema %}

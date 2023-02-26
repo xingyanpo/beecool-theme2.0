@@ -1,0 +1,76 @@
+{{ 'jd-banner_or_video.css' | asset_url | stylesheet_tag }}
+    
+    <div class="banner_and_video">
+      <div class="banner_and_video-box">
+          <div>
+              <div class="banner_and_video_position">
+                    {% if section.settings.link !=blank %}
+                        <video x5-video-player-fullscreen="true" x5-playsinline playsinline webkit-playsinline id="pageAppVideo" loop="loop" autoplay muted src="{{section.settings.link}}"></video>
+                    {% else %}
+                      <img loading="lazy" class="pc" {% render 'image-attributes' , image: section.settings.img_banner%}>
+                      <img loading="lazy" class="mobile" {% render 'image-attributes' , image: section.settings.img_bannerMobile%}>
+                  {% endif %}
+                  <div class="banner_and_video_positionBox">
+                      <div class="banner_and_video_positionBox_box">
+                        <h1 class="banner_and_video_positionBox_head ebike_h1">{{section.settings.header }}</h1>
+                        <div class="banner_text">
+                            {{section.settings.text }}
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </a>
+          </div>
+  
+        
+          
+      </div>
+    </div>
+
+    {% schema %}
+    {
+    "name": "Banner or Video",
+    "class": "shopify-section--banner_and_video",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "header",
+            "label": "Header"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "text"
+        },
+        {
+            "type": "url",
+            "id": "link",
+            "label": "video link"
+        },
+        {
+            "type": "url",
+            "id": "link2",
+            "label": "video Mobile"
+        },
+        {
+            "type": "image_picker",
+            "id": "img_banner",
+            "label": "banner Img"
+      },
+        {
+            "type": "image_picker",
+            "id": "img_bannerMobile",
+            "label": "banner Img Mobile"
+        }
+      
+    ],
+    "blocks": [
+      
+    ],
+    "presets": [
+    {
+    "name": "Banner or Video"
+    }
+    ]
+    }
+    {% endschema %}

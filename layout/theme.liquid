@@ -1,0 +1,416 @@
+<!doctype html>
+
+{%- assign direction = 'ltr' -%}
+{%- case request.locale.iso_code -%}
+  {%- when 'ar', 'arc', 'dv', 'fa', 'ha', 'he', 'kwh', 'ks', 'ku', 'ps', 'ur', 'yi' -%}
+    {%- assign direction = 'rtl' -%}
+{%- endcase -%}
+
+<html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ direction }}" style='scroll-behavior: smooth;'>
+  <head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0"
+    >
+    <meta name="theme-color" content="{{ settings.header_background }}">
+
+    <meta name="google-site-verification" content="LLiViziFBOMZHNCAFrYgNGzMxWnGAh85985fRc7_i1M" />
+    <title>
+      {% if page_title == blank -%}
+        {{- shop.name -}}
+      {%- else -%}
+        {{- page_title -}}
+        {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
+      {%- endif %}
+    </title>
+    
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {%- if settings.favicon -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '96x96' }}" type="image/png">
+    {%- endif -%}
+
+    {%- comment -%}Few prefech to increase performance on commonly used third-parties{%- endcomment -%}
+
+    {%- comment -%}Few prefech to increase performance on commonly used third-parties{%- endcomment -%}
+    <link rel="preconnect" href="https://cdn.shopify.com">
+    <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="stylesheet" href="https://cdn.shopify.com/s/files/1/0554/7098/1274/files/animate.min.css?v=1667544098">
+    {%- unless settings.heading_font.system? and settings.text_font.system? -%}
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    {%- endunless -%}
+
+    {%- comment -%}Preload important resources{%- endcomment -%}
+    <link rel="preload" as="style" href="{{ 'theme.css' | asset_url }}">
+    <link rel="preload" as="script" href="{{ 'vendor.js' | asset_url }}">
+    <link rel="preload" as="script" href="{{ 'theme.js' | asset_url }}">
+
+    {%- if request.page_type == 'product' -%}
+      {%- assign selected_media = product.selected_variant.featured_media | default: product.featured_media -%}
+
+      <link rel="preload" as="fetch" href="{{ product.url }}.js" crossorigin>
+      <link
+        rel="preload"
+        as="image"
+        imagesizes="(max-width: 999px) calc(100vw - 48px), 640px"
+        imagesrcset="{% render 'image-attributes', image: selected_media, sizes: '400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800', sizes_only: true %}"
+      >
+
+      {%- if product.media.size > 1 -%}
+        <link rel="preload" as="script" href="{{ 'flickity.js' | asset_url }}">
+      {%- endif -%}
+    {%- elsif request.page_type == 'collection' and collection.image -%}
+      <link
+        rel="preload"
+        as="image"
+        media="(max-width: 740px)"
+        imagesizes="100vw"
+        imagesrcset="{% render 'image-attributes', image: collection.image, sizes: '400,500,600,700,800,900,1000', height_constraint: 600, crop: 'center', sizes_only: true %}"
+      >
+      <link
+        rel="preload"
+        as="image"
+        media="(min-width: 741px)"
+        imagesizes="100vw"
+        imagesrcset="{% render 'image-attributes', image: collection.image, sizes: '600,700,800,1000,1200,1400,1600,1800,2000,2200,2400,2600', sizes_only: true %}"
+      >
+    {%- endif -%}
+
+    {% render 'social-meta-tags' %}
+    {% render 'microdata-schema' %}
+    {% render 'css-variables', direction: direction %}
+    {% render 'js-variables', direction: direction %}
+
+    <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+
+    <script src="{{ 'vendor.js' | asset_url }}" defer></script>
+    <script src="{{ 'theme.js' | asset_url }}" defer></script>
+
+    {% render 'optimize-jq-min-js' %}
+    <script src="https://cdn.shopify.com/s/files/1/0574/9194/7718/files/wow.js?v=1647413770"></script>
+    <script src="https://cdn.shopify.com/s/files/1/0554/7098/1274/files/countUp.js?v=1667544051"></script>
+    <script src="{{ 'snow.js' | asset_url }}" defer></script>
+
+    {{ content_for_header }}
+    {% comment %}
+      {{ content_for_header | replace : ' href=', ' data-href=' | replace : "addEventListener('load'", "addEventListener('wnw_load'" | replace : 'DOMContentLoaded', 'DOMContentLoaded2' | replace : 'defer="defer" src=', 'type="lazyload2" defer="defer" data-src=' }}
+      <script>var trekkie=[];trekkie.integrations=!0;</script>
+    {% endcomment %}
+
+    <link rel="stylesheet" href="https://cdn.shopify.com/s/files/1/0550/4424/3702/files/openlayers.css?v=1662714177">
+    <script src="https://cdn.shopify.com/s/files/1/0550/4424/3702/files/openlayers.js?v=1662714179"></script>
+    <!--
+      <script src="https://cdn.shopify.com/s/files/1/0554/7098/1274/files/swiper-bundle_fe3e6c87-9917-4432-a1f7-782ed3050c9c.css?v=1667544650"></script>
+    -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css"
+      integrity="sha512-ipO1yoQyZS3BeIuv2A8C5AwQChWt2Pi4KU3nUvXxc4TKr8QgG8dPexPAj2JGsJD6yelwKa4c7Y2he9TTkPM4Dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+
+    {% render 'optimize-swipe-js' %}
+
+    {% render 'reviews-importer-variable-js' %}
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4B75FMCZ56"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4B75FMCZ56');
+    </script>
+  </head>
+
+  {%- assign feature_classes = '' -%}
+
+  {%- if settings.show_image_zoom -%}
+    {% assign feature_classes = feature_classes | append: ' features--image-zoom' %}
+  {%- endif -%}
+
+  <body class="no-focus-outline {{ feature_classes }}" data-instant-allow-query-string>
+    {%- comment -%}Common SVG definitions that we are re-using in several places{%- endcomment -%}
+    <svg class="visually-hidden">
+      <linearGradient id="rating-star-gradient-half">
+        <stop offset="50%" stop-color="rgb(var(--product-star-rating))" />
+        <stop offset="50%" stop-color="rgb(var(--product-star-rating))" stop-opacity="0.4" />
+      </linearGradient>
+    </svg>
+
+    <a href="#main" class="visually-hidden skip-to-content">{{ 'general.accessibility.skip_to_content' | t }}</a>
+    <loading-bar class="loading-bar"></loading-bar>
+
+    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
+      {%- section 'announcement-bar' -%}
+      {%- section 'popup' -%}
+      {%- section 'header' -%}
+
+      {%- unless settings.cart_type == 'page' or request.page_type == 'cart' -%}
+        {%- section 'mini-cart' -%}
+      {%- endunless -%}
+    {%- endif -%}
+    
+    {%- section 'mini-popup-activity' -%}
+    {%- section 'valentine-day' -%}
+
+    <div id="main" role="main" class="anchor">
+      {%- comment -%}
+        IMPLEMENTATION NOTE: on collection and search page, the theme was designed to show on mobile the filter bar and/or sort
+          by at the very top of the page. However, due to the fact that sections are isolated, I had to move the code
+          here. Then, the collection section, based on the selected settings, will eventually hide those elements in CSS
+      {%- endcomment -%}
+      {%- if request.page_type == 'collection' or request.page_type == 'search' -%}
+        {%- assign active_filters_count = 0 -%}
+
+        {%- if request.page_type == 'collection' -%}
+          {%- assign filters = collection.filters -%}
+        {%- else -%}
+          {%- assign filters = search.filters -%}
+        {%- endif -%}
+
+        {%- for filter in filters -%}
+          {%- if filter.type == 'list' -%}
+            {%- assign active_filters_count = active_filters_count | plus: filter.active_values.size -%}
+          {%- elsif filter.type == 'price_range' and filter.min_value.value or filter.max_value.value -%}
+            {%- assign active_filters_count = active_filters_count | plus: 1 -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- assign is_toolbar_collapsed = false -%}
+
+        {%- if request.page_type == 'search'
+          and search.results.first.object_type != 'product'
+          and search.results_count > 0
+        -%}
+          {%- assign is_toolbar_collapsed = true -%}
+        {%- endif -%}
+
+        <!--
+          <div id="mobile-facet-toolbar" class="mobile-toolbar {% if is_toolbar_collapsed %}is-collapsed{% endif %} hidden-lap-and-up">
+            <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--filters {% if active_filters_count > 0 %}has-filters{% endif %}" aria-expanded="false" aria-controls="facet-filters" style="display: none">
+              {%- render 'icon' with 'filters' -%}
+              <span class="mobile-toolbar__item-label">{{- 'collection.general.filters' | t -}}</span>
+            </button>
+
+            <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--sort" aria-expanded="false" aria-controls="sort-by-popover" style="display: none">
+              <span class="mobile-toolbar__item-label">{{- 'collection.general.sort_by' | t -}}</span>
+              {%- render 'icon' with 'chevron' -%}
+            </button>
+          </div>
+        -->
+      {%- endif -%}
+
+      {{ content_for_layout }}
+
+      {%- unless request.page_type == 'index' or request.page_type == 'password' or request.page_type == 'gift_card' -%}
+        {%- section 'static-text-with-icons' -%}
+        {%- section 'static-newsletter' -%}
+      {%- endunless -%}
+    </div>
+
+    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
+      {%- section 'footer' -%}
+    {%- endif -%}
+  {% include 'appikon-discounts' %}
+{% render 'quantity-breaks-now', customer: customer, template: template, product: product, cart: cart %}
+        </body>
+  <script>
+    
+    
+    
+    
+    
+    
+    
+    
+    $(document).ready(function(){
+      new WOW().init();
+    })
+
+    let widthPOSize_co = document.documentElement.clientWidth;
+      if(widthPOSize_co>=999){
+        var acUrl = `#jd_pagePolicy`;
+        if(window.location.href.indexOf(acUrl) != -1){
+            $(document).scrollTop(200)
+           
+        }
+       
+      
+      }
+      else{
+        var acUrl = `#jd_pagePolicy`;
+        if(window.location.href.indexOf(acUrl) != -1){
+            $(document).scrollTop(200)
+        }
+      }
+        
+       
+
+
+
+
+
+
+
+
+  </script>
+</html>
+{% comment %}
+  <!-- Christmas snowflakes -->
+{% render 'reviews-importer-popup' %}
+
+<script src="https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/jquery-1.9.1.min.js?v=1620354271"></script>
+{%- if request.page_type == 'index' or request.path == '/pages/christmas-amazing-gifts' -%}
+  <script type="text/javascript">
+            document.writeln("<div class=\"snow\" style=\"height:1200px;position:fixed; left:0px; top:0px; right:0px; bottom:0px; pointer-events: none;z-index: 9999;\"><canvas width=\"1904\" height=\"913\" style=\"position: absolute;left: 0;top: 0;\"></canvas></div>");
+
+            $(function () {
+
+                if (/MSIE 6|MSIE 7|MSIE 8/.test(navigator.userAgent)) {
+                    return
+                }
+                var container = document.querySelector(".snow");
+                // IE9-10 pointer-events both suit
+                if (/MSIE 9|MSIE 10/.test(navigator.userAgent)) {
+                    $(container).bind('click mousemove', function (evt) {
+                        this.style.display = 'none';
+                        var x = evt.pageX, y = evt.pageY
+                        if ($(document).scrollTop() > 0 || $(document).scrollTop() > 0) {
+                            x = x - $(document).scrollLeft() + 1
+                            y = y - $(document).scrollTop() + 1
+                        }
+                        evt.preventDefault();
+                        evt.stopPropagation();
+                        var under = document.elementFromPoint(x, y);
+                        var evtType = evt.type === 'click' ? 'click' : 'mouseenter'
+                        if (evt.type === 'click') {
+                            $(under)[0].click();
+                        } else {
+                            $(under).trigger('mouseenter');
+                        }
+                        $('body').css('cursor', 'default')
+                        this.style.display = '';
+                        return false;
+                    });
+                }
+                var containerWidth = $(container).width();
+                var containerHeight = $(container).height();
+                var particle;
+                var camera;
+                var scene;
+                var renderer;
+                var mouseX = 0;
+                var mouseY = 0;
+                var windowHalfX = window.innerWidth / 2;
+                var windowHalfY = window.innerHeight / 2;
+                var particles = [];
+                var particleImages = [new Image(), new Image(), new Image(), new Image(), new Image()];
+                // particleImages[0].src = "./images/snow1.png";
+                // particleImages[1].src = "./images/snow2.png";
+                // particleImages[2].src = "./images/snow3.png";
+                // particleImages[3].src = "./images/snow4.png";
+                // particleImages[4].src = "./images/snow5.png";
+                particleImages[0].src = "https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/151375665240370100.png?v=1638430275";
+                particleImages[1].src = "https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/151375668550091372.png?v=1638430275";
+                particleImages[2].src = "https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/151375669416355455.png?v=1638430275";
+    //             particleImages[3].src = "https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/151375670204115466.png?v=1638430275";
+                particleImages[4].src = "https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/151375671039447316.png?v=1638430275";
+                var snowNum = 300;
+                function init() {
+                    camera = new THREE.PerspectiveCamera(75, containerWidth / containerHeight, 1, 10000);
+                    camera.position.z = 1000;
+                    scene = new THREE.Scene();
+                    scene.add(camera);
+                    renderer = new THREE.CanvasRenderer();
+                    renderer.setSize(containerWidth, containerHeight);
+                    for (var i = 0; i < snowNum; i++) {
+                        var material = new THREE.ParticleBasicMaterial({ map: new THREE.Texture(particleImages[i % 5]) });
+                        particle = new Particle3D(material);
+                        particle.position.x = Math.random() * 2000 - 1000;
+                        particle.position.y = Math.random() * 2000 - 1000;
+                        particle.position.z = Math.random() * 2000 - 1000;
+                        particle.scale.x = particle.scale.y = 1;
+                        scene.add(particle);
+                        particles.push(particle)
+                    }
+                    container.appendChild(renderer.domElement);
+                    document.addEventListener("mousemove", onDocumentMouseMove, false);
+                    document.addEventListener("touchstart", onDocumentTouchStart, false);
+                    document.addEventListener("touchmove", onDocumentTouchMove, false);
+                    setInterval(loop, 1000 / 50)
+                }
+                function onDocumentMouseMove(event) {
+                    mouseX = event.clientX - windowHalfX;
+                    mouseY = event.clientY - windowHalfY
+                }
+                function onDocumentTouchStart(event) {
+                    if (event.touches.length === 1) {
+                        event.preventDefault();
+                        mouseX = event.touches[0].pageX - windowHalfX;
+                        mouseY = event.touches[0].pageY - windowHalfY
+                    }
+                }
+                function onDocumentTouchMove(event) {
+                    if (event.touches.length === 1) {
+                        event.preventDefault();
+                        mouseX = event.touches[0].pageX - windowHalfX;
+                        mouseY = event.touches[0].pageY - windowHalfY
+                    }
+                }
+                function loop() {
+                    for (var i = 0; i < particles.length; i++) {
+                        var particle = particles[i];
+                      // scroll to floor model, min snow (customize by name:selo)
+                        if ($(window).scrollTop() < 1000) {
+                            particle.scale.x = particle.scale.y = 1;
+                        } else {
+                            if (i > particles.length / 5 * 3) {
+                                particle.scale.x = particle.scale.y = 0;
+                            } else {
+                                particle.scale.x = particle.scale.y = 0.8;
+                            }
+                        }
+                        particle.updatePhysics();
+                        with (particle.position) {
+                            if (y < -1000) {
+                                y += 2000
+                            }
+                            if (x > 1000) {
+                                x -= 2000
+                            } else {
+                                if (x < -1000) {
+                                    x += 2000
+                                }
+                            }
+                            if (z > 1000) {
+                                z -= 2000
+                            } else {
+                                if (z < -1000) {
+                                    z += 2000
+                                }
+                            }
+                        }
+                    }
+                    camera.position.x += (mouseX - camera.position.x) * 0.005;
+                    camera.position.y += (-mouseY - camera.position.y) * 0.005;
+                    camera.lookAt(scene.position);
+                    renderer.render(scene, camera)
+                }
+                init()
+              setTimeout(function () {
+                container.remove()
+                init = null
+              }, 30000)
+            });
+  </script>
+{% endif %}
+{% endcomment %}

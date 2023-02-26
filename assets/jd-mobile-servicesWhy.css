@@ -1,0 +1,110 @@
+@media(max-width:999px) {
+   
+    .mobile_servicesWhy_top{
+        padding-top: 50px;
+        text-align: center;
+    }
+    .mobile_servicesWhy_top div:first-child{
+        margin-right: 12px;
+        color: #151515;
+    }   
+    .mobile_servicesWhy_top div:nth-child(2){
+        margin-top: 20px;
+    }
+    .mobile_servicesWhy_top div:nth-child(2) img{
+        width: 64%;
+    }
+    .mobile_servicesWhy_box{
+        border-radius: 12px;
+        margin-bottom: 25px;
+        background-color: #fff;
+    }
+    .mobile_servicesWhy_banner{
+        margin-top: 25px;
+    }
+    .mobile_servicesWhy_boxTitle{
+        line-height: 30px;
+        font-size: 16px;
+        color: #151515;
+        font-weight: 600;
+        text-align: center;
+    }
+    .mobile_servicesWhy_boxText{
+        font-size: 14px;
+        color: #151515;
+        text-align: center;
+        margin-top: 12px;
+        padding: 0 20px 26px;
+    }
+    .mobile_servicesWhy_boxImg img{
+        width: 100%;
+    }
+    .mobile_servicesWhy_bottom{
+        width: 175px;
+        height: 43px;
+        background: #FFF200;
+        border-radius: 21px;
+        color: #151515;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0 auto;
+    }
+}
+@media(min-width:1000px) {
+   
+    .mobile_servicesWhy_top{
+        display: flex;
+        padding-top: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile_servicesWhy_top div:first-child{
+        margin-right: 12px;
+        color: #151515;
+    }   
+    .mobile_servicesWhy_banner{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 65px;
+    }
+    .mobile_servicesWhy_box{
+        width: 32%;
+        border-radius: 25px;
+        background-color: #fff;
+    }
+    .mobile_servicesWhy_boxTitle{
+        line-height: 30px;
+        font-size: 28px;
+        color: #151515;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .mobile_servicesWhy_boxText{
+        font-size: 18px;
+        color: #151515;
+        text-align: center;
+        padding: 0 11% 86px;
+        margin-top: 26px;
+    }
+    .mobile_servicesWhy_boxImg img{
+        width: 100%;
+    }
+    .mobile_servicesWhy_bottom{
+        width: 351px;
+        height: 86px;
+        background: #FFF200;
+        border-radius: 43px;
+        color: #151515;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0 auto;
+        margin-top: 68px;
+    }
+}

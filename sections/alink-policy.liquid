@@ -1,0 +1,57 @@
+{{ 'alink-policy.css' | asset_url | stylesheet_tag }}
+<div class="alink-policys" >
+    <div class="container">
+        
+  
+        {% for item in section.blocks %}
+          {% if item.type == 'policys' %}
+            <div class="item">
+              <div class="box">
+               {{item.settings.icon}}
+                <div class="info-box">
+                  <div class="title">{{item.settings.title}}</div>
+                  <div class="description">{{item.settings.subtitle}}</div>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+        
+    </div>
+  </div>
+  {% schema %}
+{
+    "name": "policys",
+    "class":"policys",
+    "settings": [
+    
+    ],
+    "blocks":[
+    {
+        "type": "policys",
+        "name": "policys",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "icon",
+            "label": "icon"
+          },{
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },{
+            "type": "richtext",
+            "id": "subtitle",
+            "label": "subtitle"
+          }
+        ]
+      }
+    ],
+    "presets": [
+        {
+            "name": "policys"
+        }
+    ]
+}
+{% endschema %}
+ 

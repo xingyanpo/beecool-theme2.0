@@ -1,0 +1,110 @@
+@media (max-width:999px) {
+    .page__content iframe{
+        height: 2950px !important;
+    }
+    .jotform_form_all .banners{
+        width: 100%;
+    }
+    
+    .jotform_form_all .banners_position{
+        position: relative;
+    }
+    .jotform_form_all .banners_position img, .jotform_form_all .banners_position video{
+        width: 100%;
+    }
+
+    .jotform_form_all .banners_positionBox_box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .jotform_form_all .banners_positionBox_head{
+        font-size: 35px;
+        color: #151515;
+        line-height: 40px;
+        text-align: left;
+        margin: 0;
+        margin-top: 50px;
+        font-weight: 600;
+    }
+    /* text */
+    .jotform_form_all .banner_text{
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+    color: #151515;  
+    margin-top: 15px; 
+    padding-bottom: 25px;
+    line-height: 18px; 
+    }
+    .page__content{
+        padding-bottom: 50px;
+        background: #ECEDF3;
+    }
+   
+}
+@media(min-width:1000px) {
+    .jotform_form_all .jotform_form_all.jotform_form_all.banners_position{
+        position: relative;
+    }
+    .jotform_form_all .banners_position img, .jotform_form_all .banners_position video{
+        width: 100%;
+    }
+    .jotform_form_all .banners_positionBox_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .jotform_form_all .banners_positionBox {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #251A1A1a;
+    }
+    .jotform_form_all .banners_positionBox_head{
+        font-size: 70px;
+        color: #fff;
+        line-height: 1;
+        text-align: center;
+        margin: 0;
+        font-weight: 600;
+    }
+    /* text */
+    .jotform_form_all .banner_text{
+    text-align: center;
+    font-weight: 400;
+    font-size: 28px;
+    color: #fff;   
+    margin-top: 54px;
+    line-height: 30px; 
+    }
+    .jotform_form_all .banners_position{
+        position: relative;
+    }
+    .jotform_form_describe{
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 128px 0 50px 0;
+    }
+    .jotform_form_describeTitle{
+        font-size: 70px;
+        font-weight: 600;
+        line-height: 1;
+    }
+    .jotform_form_describeText{
+        font-size: 18px;
+        line-height: 30px;
+        padding-top: 50px;
+    }
+    .page__content{
+        background: #ECEDF3;
+        padding-bottom: 72px;
+    }
+}

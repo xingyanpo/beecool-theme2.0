@@ -1,0 +1,210 @@
+@media(max-width:999px) {
+    .help-learnMore_top{
+        margin-top: 50px;
+    }
+    .help-learnMore_all{
+        padding-top: 50px;
+        padding-bottom:50px;
+    }
+    .help-learnMore_title{
+        line-height: 1;
+        color: #151515;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .help-learnMore_box{
+        position: relative;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #F4F7FE;
+    }
+    .help-learnMore_box:not(:nth-child(1)){
+        margin-top: 25px;
+    }
+    .help-learnMore_box_position{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+
+    }
+    .help-learnMore_box_img{
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 10px 10px  0 0;
+    }
+    .help-learnMore_box img{
+        width: 100%;
+    }
+    .help-learnMore_box:hover img{
+        transform: scale(1.05);
+    }
+    .help-learnMore_box_text div svg{
+        width: 30px;
+        height: auto;
+    }
+    .help_learnMore_box_svg{
+        margin-top: -40px;
+        display: flex;
+        z-index: 2;
+        width: 70px;
+        height: 70px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .help-learnMore_box:first-child svg{
+        width: 34px;
+        height: 24px;
+    }
+    .help-learnMore_box:nth-child(2) svg{
+        width: 30px;
+        height: 34px;
+    }
+    .help-learnMore_box:nth-child(2) svg path{
+        fill: #FFC842;
+    }
+    .help-learnMore_box:nth-child(3) svg{
+        width: 35px;
+        height: 35px;
+    }
+    .help-learnMore_box:nth-child(3) svg path{
+        fill: #2A408E;
+    }
+    .help-learnMore_box_title{
+        font-size: 16px;
+       color: #151515;
+       font-weight: 600;
+        padding-top: 15px;
+        line-height: 29px;
+    }
+    .help-learnMore_box_content{
+        color: #151515;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 4px;
+    }
+    .help-learnMore_box_link{
+        width: 147px;
+        color: #2A408E;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 400;
+        background: #FFFFFF;
+        border: 1px solid #2A408E;
+        border-radius: 20px;
+        margin: 20px 0 50px;
+    }
+}
+@media(min-width:1000px) {
+    .help-learnMore_top{
+        margin-top: 131px;
+        display: flex;
+        justify-content: space-between
+    }
+    .help-learnMore_all{
+        padding: 131px 0;
+    }
+    .help-learnMore_title{
+        line-height: 1;
+        color: #151515;
+        text-align: center;
+    }
+    .help-learnMore_box{
+        position: relative;
+        width: 32%;
+        border-radius: 19px;
+        background-color: #F4F7FE;
+    }
+    .help-learnMore_box_position{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+
+    }
+    .help-learnMore_box_img{
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 19px 19px  0 0;
+    }
+    .help-learnMore_box img{
+        width: 100%;
+       
+    }
+   
+    .help-learnMore_box_text div svg{
+        width: 30px;
+        height: auto;
+    }
+    .help_learnMore_box_svg{
+        margin-top: -66px;
+        display: flex;
+        z-index: 2;
+        width: 106px;
+        height: 106px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .help-learnMore_box:first-child svg{
+        width: 47px;
+        height: 32px;
+    }
+    .help-learnMore_box:nth-child(2) svg{
+        width: 47px;
+        height: 53px;
+    }
+    .help-learnMore_box:nth-child(2) svg path{
+        fill: #FFC842;
+    }
+    .help-learnMore_box:nth-child(3) svg{
+        width: 54px;
+        height: 54px;
+    }
+    .help-learnMore_box:nth-child(3) svg path{
+        fill: #2A408E;
+    }
+    .help-learnMore_box_title{
+        font-size: 20px;
+       color: #151515;
+       font-weight: 600;
+        padding-top: 15px;
+        line-height: 45px;
+    }
+    .help-learnMore_box_content{
+        color: #151515;
+        line-height: 30px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .help-learnMore_box_link{
+        width: 223px;
+        color: #2A408E;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        font-size: 18px;
+        font-weight: 400;
+        background: #FFFFFF;
+        border: 1px solid #2A408E;
+        border-radius: 35px;
+        margin: 30px 0 50px;
+        transition: all 0.5s;
+    }
+    .help-learnMore_box_link:hover{
+        background-color: #2A408E;
+        color: #fff;
+    }
+   
+  }

@@ -1,0 +1,1669 @@
+{{ 'jd-dealers-top.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="https://cdn.shopify.com/s/files/1/0550/4424/3702/files/ol.css?v=1653533592">
+    <div class="dealers_top_all">
+        <div class="dealers_top_Box">    
+            <div class="dealers_top_left">
+                <div class="dealers_top_leftTop">
+                    <div class="ebike_title2">{{section.settings.title}}</div>
+                    <div>{{section.settings.text}}</div>
+                </div>
+                <div class="dealers_top_leftBottom pc">
+                    {% for block in section.blocks %}
+                    <div class="dealers_topBox {% if forloop.first %}active{%endif%}">
+                        <div class="dealers_topTs">
+                            <div class="dealers_topPosition_title">
+                                {{block.settings.title}}
+                            </div>
+                            <div class="dealers_topPosition_text">
+                                {{block.settings.text}}
+                            </div>
+                            
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="dealers_top_right">
+                <div id="map" class="map"></div>
+            </div>
+        </div>
+        <div class="mobile">
+            <div class="swiper dealersTopSwiper">
+                <div class="swiper-wrapper">
+                    {% for block in section.blocks %}
+                        <div class="dealers_topBox swiper-slide">
+                            <div class="dealers_topTs">
+                                <div class="dealers_topPosition_title">
+                                    {{block.settings.title}}
+                                </div>
+                                <div class="dealers_topPosition_text">
+                                    {{block.settings.text}}
+                                </div>
+                                
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.shopify.com/s/files/1/0550/4424/3702/files/ol.js?v=1653533592"></script> 
+    <script>
+        
+(()=>{
+    var swiper = new Swiper(".dealersTopSwiper", {
+       
+        centeredSlides: true,
+        autoplay: {
+           
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        observer: true, //开启动态检查器，监测swiper和slide
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+            slideChangeTransitionEnd: function(swiper,event){
+            if($(".dealersTopSwiper .dealers_topBox:eq(0)").hasClass("swiper-slide-active")){
+             anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+                    anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                    anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                    opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                    opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                    opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+              image: new ol.style.Icon({
+              src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                  opacity:0.45,
+              anchor: [0.5, 1]    // 设置图标位置
+              }),
+          
+
+          }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                    opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+            image: new ol.style.Icon({
+            src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+            anchor: [0.5, 1]    // 设置图标位置
+            }),
+        
+
+        }));
+        }else if($(".dealersTopSwiper .dealers_topBox:eq(1)").hasClass("swiper-slide-active")){
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                    opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+            image: new ol.style.Icon({
+            src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+            anchor: [0.5, 1]    // 设置图标位置
+            }),
+        
+
+        }));
+        
+        }
+        else if($(".dealersTopSwiper .dealers_topBox:eq(1)").hasClass("swiper-slide-active")){
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                    opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+            image: new ol.style.Icon({
+            src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+            anchor: [0.5, 1]    // 设置图标位置
+            }),
+        
+
+        }));
+        
+        }else if($(".dealersTopSwiper .dealers_topBox:eq(2)").hasClass("swiper-slide-active")){
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                    opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+            image: new ol.style.Icon({
+            src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+            anchor: [0.5, 1]    // 设置图标位置
+            }),
+        
+
+        }));
+        
+        }else if($(".dealersTopSwiper .dealers_topBox:eq(3)").hasClass("swiper-slide-active")){
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                    opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+            image: new ol.style.Icon({
+            src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+            anchor: [0.5, 1]    // 设置图标位置
+            }),
+        
+
+        }));
+        
+        }else if($(".dealersTopSwiper .dealers_topBox:eq(4)").hasClass("swiper-slide-active")){
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                    opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+            image: new ol.style.Icon({
+            src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+            anchor: [0.5, 1]    // 设置图标位置
+            }),
+        
+
+        }));
+        
+            
+        }else if($(".dealersTopSwiper .dealers_topBox:eq(5)").hasClass("swiper-slide-active")){
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                    opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+            image: new ol.style.Icon({
+            src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+            anchor: [0.5, 1]    // 设置图标位置
+            }),
+        
+
+        }));
+        
+        }else if($(".dealersTopSwiper .dealers_topBox:eq(6)").hasClass("swiper-slide-active")){
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                    opacity:1,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+            image: new ol.style.Icon({
+            src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+            anchor: [0.5, 1]    // 设置图标位置
+            }),
+        
+
+        }));
+        
+        }else if($(".dealersTopSwiper .dealers_topBox:eq(7)").hasClass("swiper-slide-active")){
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                    opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+            image: new ol.style.Icon({
+            src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+            anchor: [0.5, 1]    // 设置图标位置
+            }),
+        
+
+        }));
+        
+        }
+            },
+        },
+        
+    });
+
+    // 我们需要一个vector的layer来放置图标
+    var layer = new ol.layer.Vector({
+        source: new ol.source.Vector()
+    })
+
+    // 当屏幕小于768px时
+    if (window.screen.width <= 768) {
+            var map = new ol.Map({
+                target: 'map',
+                layers: [
+                    new ol.layer.Tile({
+                    source: new ol.source.OSM()
+                    }),
+                    layer
+                ],
+                view: new ol.View({
+                    center: [-100.06717829999999, 30.9508943],  
+                    projection: 'EPSG:4326',
+                    zoom: 3.2,
+                    minZoom:3,
+                    maxZoom:  4
+                })
+
+                
+            });
+
+
+            // 监听地图层级变化
+            map.getView().on('change:resolution', function(){
+                var style1 = anchor1.getStyle();
+                // 重新设置图标的缩放率，基于层级5来做缩放
+                style1.getImage().setScale(this.getZoom() / 8);
+                anchor1.setStyle(style1);
+
+                var style2 = anchor1.getStyle();
+                // 重新设置图标的缩放率，基于层级5来做缩放
+                style2.getImage().setScale(this.getZoom() / 8);
+                anchor2.setStyle(style2);
+
+                var style3 = anchor3.getStyle();
+                // 重新设置图标的缩放率，基于层级5来做缩放
+                style3.getImage().setScale(this.getZoom() / 8);
+                anchor3.setStyle(style3);
+
+                var style4 = anchor4.getStyle();
+                // 重新设置图标的缩放率，基于层级5来做缩放
+                style4.getImage().setScale(this.getZoom() / 8);
+                anchor4.setStyle(style4);
+
+                var style5 = anchor5.getStyle();
+                // 重新设置图标的缩放率，基于层级5来做缩放
+                style5.getImage().setScale(this.getZoom() / 8);
+                anchor5.setStyle(style5);
+                var style6 = anchor6.getStyle();
+                // 重新设置图标的缩放率，基于层级5来做缩放
+                style6.getImage().setScale(this.getZoom() / 8);
+                anchor6.setStyle(style6);
+              var style7 = anchor7.getStyle();
+                // 重新设置图标的缩放率，基于层级5来做缩放
+                style6.getImage().setScale(this.getZoom() / 8);
+                anchor6.setStyle(style6);
+              var style8 = anchor8.getStyle();
+                // 重新设置图标的缩放率，基于层级5来做缩放
+                style6.getImage().setScale(this.getZoom() / 8);
+                anchor6.setStyle(style6);
+            })
+       
+    }else {
+        var map = new ol.Map({
+            target: 'map',
+            layers: [
+                new ol.layer.Tile({
+                source: new ol.source.OSM()
+                }),
+                layer
+            ],
+            // interactions: ol.interaction.defaults({
+            //     doubleClickZoom: false,// 取消双击放大功能交互
+            //     mouseWheelZoom: false, // 取消滚动鼠标中间的滑轮交互
+            //     shiftDragZoom: false, // 取消shift+wheel左键拖动交互
+            // }),
+
+            view: new ol.View({
+                center: [-96.06717829999999, 29.9508943], 
+                
+                projection: 'EPSG:4326',
+                zoom: 4.5,
+                minZoom:4,
+                maxZoom:  5,
+            
+            }),
+           
+        
+        });
+
+        // 监听地图层级变化
+        map.getView().on('change:resolution', function(){
+            var style1 = anchor1.getStyle();
+            // 重新设置图标的缩放率，基于层级5来做缩放
+            style1.getImage().setScale(this.getZoom() / 4);
+            anchor1.setStyle(style1);
+
+            var style2 = anchor2.getStyle();
+            // 重新设置图标的缩放率，基于层级5来做缩放
+            style2.getImage().setScale(this.getZoom() / 4);
+            anchor2.setStyle(style2);
+
+            var style3 = anchor3.getStyle();
+            // 重新设置图标的缩放率，基于层级5来做缩放
+            style3.getImage().setScale(this.getZoom() / 4);
+            anchor3.setStyle(style3);
+
+            
+            var style4 = anchor4.getStyle();
+            // 重新设置图标的缩放率，基于层级5来做缩放
+            style4.getImage().setScale(this.getZoom() / 4);
+            anchor4.setStyle(style4);
+
+            
+            var style5 = anchor5.getStyle();
+            // 重新设置图标的缩放率，基于层级5来做缩放
+            style5.getImage().setScale(this.getZoom() / 4);
+            anchor5.setStyle(style5);
+
+            var style6 = anchor6.getStyle();
+            // 重新设置图标的缩放率，基于层级5来做缩放
+            style6.getImage().setScale(this.getZoom() / 4);
+            anchor6.setStyle(style6);
+
+          var style7 = anchor7.getStyle();
+            // 重新设置图标的缩放率，基于层级5来做缩放
+            style6.getImage().setScale(this.getZoom() / 4);
+            anchor6.setStyle(style6);
+
+          var style8 = anchor8.getStyle();
+            // 重新设置图标的缩放率，基于层级5来做缩放
+            style6.getImage().setScale(this.getZoom() / 4);
+            anchor6.setStyle(style6);
+        })
+        
+
+    }
+
+    // 创建一个Feature，并设置好在地图上的位置
+    var anchor1 = new ol.Feature({
+        geometry: new ol.geom.Point([ -77.89995602682113,34.03993826267138])
+    });
+    // 设置样式，在样式中就可以设置图标
+    anchor1.setStyle(new ol.style.Style({
+        image: new ol.style.Icon({
+        src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+        opacity:1,
+        anchor: [0.5, 1]    // 设置图标位置
+        }),
+    
+
+    }));
+
+    // 创建一个Feature，并设置好在地图上的位置
+    var anchor2 = new ol.Feature({
+        geometry: new ol.geom.Point([-112.5282591,33.7763856])
+    });
+    // 设置样式，在样式中就可以设置图标
+    anchor2.setStyle(new ol.style.Style({
+        image: new ol.style.Icon({
+        src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+        opacity: 0.45,
+        anchor: [0.5, 1]    // 设置图标位置
+        }),
+        
+        
+
+    }));
+    // 创建一个Feature，并设置好在地图上的位置
+    var anchor3 = new ol.Feature({
+        geometry: new ol.geom.Point([-117.9930967, 33.80248220000001])
+    });
+
+    // 设置样式，在样式中就可以设置图标
+    anchor3.setStyle(new ol.style.Style({
+        image: new ol.style.Icon({
+            src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+            opacity: 0.45,
+            anchor: [0.5, 1]    // 设置图标位置
+        })
+    }));
+    
+    // 创建一个Feature，并设置好在地图上的位置
+    var anchor4 = new ol.Feature({
+        geometry: new ol.geom.Point([-75.70225669999999,39.7763016])
+    });
+
+
+    anchor4.setStyle(new ol.style.Style({
+        image: new ol.style.Icon({
+        src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+        opacity: 0.45,
+        anchor: [0.5, 1]    // 设置图标位置
+        }),
+    
+
+    }));
+
+    // 创建一个Feature，并设置好在地图上的位置
+    var anchor5 = new ol.Feature({
+        geometry: new ol.geom.Point([-113.21303465030527,37.212108490856494])
+    });
+    anchor5.setStyle(new ol.style.Style({
+        image: new ol.style.Icon({
+        src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+      opacity: 0.45,
+        anchor: [0.5, 1]    // 设置图标位置
+        }),
+    
+
+    }));
+
+    var anchor6 = new ol.Feature({
+        geometry: new ol.geom.Point([-116.49101754574511,43.697551637572076])
+    });
+    anchor6.setStyle(new ol.style.Style({
+        image: new ol.style.Icon({
+        src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+      opacity: 0.45,
+        anchor: [0.5, 1]    // 设置图标位置
+        }),
+    
+
+    }));
+
+   var anchor7 = new ol.Feature({
+        geometry: new ol.geom.Point([-118.226471,34.083137])
+    });
+    anchor7.setStyle(new ol.style.Style({
+        image: new ol.style.Icon({
+        src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+      opacity: 0.45,
+        anchor: [0.5, 1]    // 设置图标位置
+        }),
+    
+
+    }));
+
+   var anchor8 = new ol.Feature({
+        geometry: new ol.geom.Point([-78.737817,42.835167])
+    });
+    anchor8.setStyle(new ol.style.Style({
+        image: new ol.style.Icon({
+        src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+      opacity: 0.45,
+        anchor: [0.5, 1]    // 设置图标位置
+        }),
+    
+
+    }));
+    // 点击事件
+    $(".dealers_top_leftBottom>.dealers_topBox").click(function () {
+        $(this).addClass("active active::after").siblings(".dealers_topBox").removeClass("active");
+        
+        var index = $(this).index();
+
+        if($(".dealers_topBox:eq(0)").hasClass("active")){
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+        }else if($(".dealers_topBox:eq(1)").hasClass("active")){
+             
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+        }else if($(".dealers_topBox:eq(2)").hasClass("active")){
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+        }else if($(".dealers_topBox:eq(3)").hasClass("active")){
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+        }else if($(".dealers_topBox:eq(4)").hasClass("active")){
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+        }else if($(".dealers_topBox:eq(5)").hasClass("active")){
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+        }else if($(".dealers_topBox:eq(6)").hasClass("active")){
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+        }else if($(".dealers_topBox:eq(7)").hasClass("active")){
+            anchor1.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor2.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor3.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor4.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor5.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+            anchor6.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor7.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:0.45,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+          anchor8.setStyle(new ol.style.Style({
+                image: new ol.style.Icon({
+                src: 'https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4_1.png?v=1662717179',
+                opacity:1,
+                anchor: [0.5, 1]    // 设置图标位置
+                }),
+            
+
+            }));
+        }
+         
+         
+           
+    })
+
+   
+    // 添加到之前的创建的layer中去
+    layer.getSource().addFeature(anchor1);
+    layer.getSource().addFeature(anchor2);
+    layer.getSource().addFeature(anchor3);
+    layer.getSource().addFeature(anchor4);
+    layer.getSource().addFeature(anchor5);
+    layer.getSource().addFeature(anchor6);
+    layer.getSource().addFeature(anchor7);
+    layer.getSource().addFeature(anchor8);
+
+    // 鼠标变小手
+    map.on('pointermove', function (event) {
+        if (map.hasFeatureAtPixel(event.pixel)) {
+        map.getViewport().style.cursor = 'pointer';
+        } else {
+        map.getViewport().style.cursor = 'inherit';
+        }
+    });
+
+   
+    })()
+     
+      
+    </script>
+    {% schema %}
+    {
+        "name": "dealers top",
+        "class": "shopify-section--dealers_top",
+
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "title"
+            },
+            {
+                "type": "textarea",
+                "id": "text",
+                "label": "text"
+            }
+        ],
+    "blocks": [
+    {
+        "type": "dealers_top",
+        "name": "dealers_top",
+        "settings": [
+           
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "title"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "text"
+            }
+          
+  ]
+}
+    ],
+    "presets": [
+    {
+    "name": "dealers top"
+    }
+    ]
+    }
+    {% endschema %}

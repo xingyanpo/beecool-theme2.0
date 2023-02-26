@@ -1,0 +1,110 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": false,
+        "page_width": "medium"
+      }
+    },
+    "contact-form": {
+      "type": "contact-form",
+      "blocks": {
+        "8607896b-59de-4c4a-95f8-5c45f3639348": {
+          "type": "text",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 209.38 209.38\"><defs><style>.cls-151{fill:#2a408e;}.cls-152{fill:none;stroke:#253e87;stroke-miterlimit:10;stroke-width:7px;}<\/style><\/defs><path class=\"cls-151\" d=\"M277,302.87a49.33,49.33,0,0,1-13.77-2.16C250,296.81,236.06,288,224,276s-20.84-26-24.73-39.24a44.79,44.79,0,0,1-1.89-18.15,24.07,24.07,0,0,1,6.67-14.41l5-5a7.06,7.06,0,0,1,10,0L241,221.14a7.06,7.06,0,0,1,0,10l-5,5h0c-2.82,2.82,0,11.95,8,19.94s17.12,10.81,20,8l5-5a7.07,7.07,0,0,1,10,0L300.81,281a7.07,7.07,0,0,1,0,10l-5,5a24.08,24.08,0,0,1-14.41,6.68,35.68,35.68,0,0,1-4.39.27Zm-69-94.7c-5.63,5.63-6.82,15.21-3.36,27C208.34,247.52,216.61,260.6,228,272s24.47,19.67,36.84,23.31c11.77,3.46,21.35,2.27,27-3.36l5-5a1.41,1.41,0,0,0,.41-1,1.45,1.45,0,0,0-.41-1L274.88,263a1.4,1.4,0,0,0-2,0l-5,5a9.86,9.86,0,0,1-7.22,2.72,18.88,18.88,0,0,1-6-1.07,42.93,42.93,0,0,1-24.35-24.34c-1.87-5.59-1.28-10.29,1.65-13.21l5-5a1.41,1.41,0,0,0,.41-1,1.37,1.37,0,0,0-.41-1L215,203.18a1.41,1.41,0,0,0-2,0Zm0,0\" transform=\"translate(-145.31 -145.31)\"><\/path><circle class=\"cls-152\" cx=\"104.69\" cy=\"104.69\" r=\"101.19\"><\/circle><\/svg>",
+            "text": "<p>+1 (833) 309-2586<br\/>Mon-Sun 8 am - 5 pm PST<\/p>",
+            "text_mobile": "<p>+1 (833) 309-2586<br\/>Mon-Sun 8 am - 5 pm PST<\/p>"
+          }
+        },
+        "3a026cb2-cbf1-4ad9-a557-c5d9f81668dd": {
+          "type": "text",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 209.38 209.38\"><defs><style>.cls-161,.cls-162{fill:none;}.cls-161{stroke:#253e87;stroke-miterlimit:10;stroke-width:7px;}.cls-163{fill:#253e87;}<\/style><\/defs><circle class=\"cls-161\" cx=\"104.69\" cy=\"104.69\" r=\"101.19\"><\/circle><rect class=\"cls-162\" x=\"51.1\" y=\"66.81\" width=\"107.19\" height=\"75.77\"><\/rect><path class=\"cls-163\" d=\"M296.27,287.77H203.73a7.32,7.32,0,0,1-7.31-7.31V219.54a7.32,7.32,0,0,1,7.31-7.31h92.54a7.32,7.32,0,0,1,7.31,7.31v60.92a7.32,7.32,0,0,1-7.31,7.31ZM203.73,217.1a2.44,2.44,0,0,0-2.44,2.44v60.92a2.44,2.44,0,0,0,2.44,2.44h92.54a2.44,2.44,0,0,0,2.44-2.44V219.54a2.44,2.44,0,0,0-2.44-2.44Zm0,0\" transform=\"translate(-145.31 -145.31)\"><\/path><path class=\"cls-163\" d=\"M252.6,259.75a2.44,2.44,0,0,1-1.75-4.14L292.15,213a2.44,2.44,0,1,1,3.5,3.39L254.35,259a2.46,2.46,0,0,1-1.75.74Zm0,0\" transform=\"translate(-145.31 -145.31)\"><\/path><path class=\"cls-163\" d=\"M252.6,259.75a2.47,2.47,0,0,1-1.59-.59l-33-28.42a2.44,2.44,0,0,1,3.18-3.7l33,28.43a2.43,2.43,0,0,1-1.59,4.28Zm0,0\" transform=\"translate(-145.31 -145.31)\"><\/path><\/svg>",
+            "text": "<p>customer@beecoolbikes.com<br\/>Mon-Sun 8 am - 9 pm PST<\/p>",
+            "text_mobile": "<p>customer@beecoolbikes.com<br\/>Mon-Sun 8 am - 9 pm PST<\/p>"
+          }
+        },
+        "4b7bc880-40af-4e72-b184-a887d742b861": {
+          "type": "text",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 209.38 209.38\"><defs><style>.cls-1,.cls-3{fill:none;}.cls-1{stroke:#253e87;stroke-miterlimit:10;stroke-width:7px;}.cls-2{fill:#253e87;}<\/style><\/defs><circle class=\"cls-1\" cx=\"104.69\" cy=\"104.69\" r=\"101.19\"><\/circle><path class=\"cls-2\" d=\"M260.44,243.85c7-9.52,13.68-20.88,13.68-28.88a30.16,30.16,0,1,0-60.31,0c0,8,6.73,19.36,13.69,28.88-14.61,2-29.92,7.19-29.92,16.35,0,11.25,23.89,17.4,46.39,17.4s46.39-6.15,46.39-17.4c0-7.66-11.6-13.92-29.92-16.35ZM244,189.45A25.6,25.6,0,0,1,269.49,215c0,11.13-17.05,32.35-25.52,41.75-8.47-9.4-25.52-30.74-25.52-41.75A25.6,25.6,0,0,1,244,189.45ZM244,273c-23.89,0-41.75-6.73-41.75-12.76,0-4.52,10.67-10.21,28.53-12.06,5.8,7.54,11,13.1,11.48,13.68a2.33,2.33,0,0,0,1.74.7,2.36,2.36,0,0,0,1.74-.7c.46-.58,5.68-6.14,11.48-13.68,17.86,1.85,28.53,7.54,28.53,12.06,0,6-17.86,12.76-41.75,12.76Zm0,0\" transform=\"translate(-139.32 -126.54)\"><\/path><rect class=\"cls-3\" x=\"58.27\" y=\"58.21\" width=\"92.86\" height=\"92.96\"><\/rect><path class=\"cls-2\" d=\"M255.57,213.81A11.6,11.6,0,1,0,244,225.4a11.63,11.63,0,0,0,11.6-11.59Zm-18.56,0a7,7,0,1,1,7,6.95,7,7,0,0,1-7-6.95Zm0,0\" transform=\"translate(-139.32 -126.54)\"><\/path><\/svg>",
+            "text": "<p>Warehouse Address: 1001 Doubleday Ave, Ontario, <br\/>CA 91761<\/p>",
+            "text_mobile": "<p>Warehouse Address: 1001 Doubleday Ave,<br\/>Ontario, CA 91761<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8607896b-59de-4c4a-95f8-5c45f3639348",
+        "3a026cb2-cbf1-4ad9-a557-c5d9f81668dd",
+        "4b7bc880-40af-4e72-b184-a887d742b861"
+      ],
+      "settings": {
+        "temporary_info_switch": true,
+        "temporary_info_text": "<p>Company Name: HETECHI LTD<\/p><p>Registration Number: 1187119<\/p><p>Company Address: 53 Durham Road, Bromley, England, BR2 0SN<\/p>",
+        "image": "shopify:\/\/shop_images\/1_965a78f1-1b5a-43e4-a2e8-83167558af9c.png",
+        "image_mobile": "shopify:\/\/shop_images\/1_f1ff6cc8-af56-4b95-89a0-092e5916ef13.png",
+        "title": "Contact",
+        "content": "<p>Any info wanted? Feel free to ask<\/p>",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#2a3f8e",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "8d96305d-d262-41aa-9eed-7055758f1dcd": {
+      "type": "jd-afterSales",
+      "blocks": {
+        "0a93c288-1556-4c41-8ab0-619ad97e6b53": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
+            "title": "Free Shipping",
+            "subtitle": "<p>To the lower 48 states<\/p>"
+          }
+        },
+        "aa2fbfed-56d8-415c-9ca7-152e481075cb": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
+            "title": "2-Year Warranty",
+            "subtitle": "<p>Buy with confidence<\/p>"
+          }
+        },
+        "82dd266d-c591-4085-9113-6c2f972da266": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
+            "title": "Secure Payment",
+            "subtitle": "<p>Secure payment with Shopify<\/p>"
+          }
+        },
+        "65c493dc-f81c-4894-938d-1a921bbdac09": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
+            "title": "Cost-effective",
+            "subtitle": "<p>Direct to consumer pricing<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "0a93c288-1556-4c41-8ab0-619ad97e6b53",
+        "aa2fbfed-56d8-415c-9ca7-152e481075cb",
+        "82dd266d-c591-4085-9113-6c2f972da266",
+        "65c493dc-f81c-4894-938d-1a921bbdac09"
+      ],
+      "settings": {
+        "policy_color": "#f3f5f5",
+        "policy_scolor_mobile": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "contact-form",
+    "8d96305d-d262-41aa-9eed-7055758f1dcd"
+  ]
+}

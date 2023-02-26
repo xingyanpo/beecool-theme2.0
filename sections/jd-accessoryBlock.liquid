@@ -1,0 +1,201 @@
+<style>
+    @media(max-width:999px) {
+        .accessoryBlock_all{
+            padding: 0 0 25px;
+        }
+       
+        .accessoryBlock_left_title{
+            font-weight: 600;
+            line-height: 1;
+        }
+        .accessoryBlock_left_des{
+            font-size: 16px;
+            padding-top: 27px;
+            font-weight: 600;
+            line-height: 1.5;
+         
+        }
+        .accessoryBlock_left_text{
+            font-weight: 400;
+            font-size: 14px;
+            padding-top: 15px;
+            line-height: 1.5;
+        }
+        .accessoryBlock_right{
+            margin-top: 25px;
+        }
+        .accessoryBlock_rightBox:not(:nth-child(1)){
+            margin-top: 14px;
+        }
+        .accessoryBlock_rightBox .collapsible-toggle{
+            align-items: center;
+            height: 41px;
+            background: #FFFFFF;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #757575;
+            box-shadow: -4px 7px 64px 1px rgba(225,225,225,0.38);
+            border-radius: 5px;
+            padding:0 20px;
+        }
+        .accessoryBlock_rightBox .collapsible {
+            padding:0 20px;
+        }
+        .accessoryBlock_right_desBox{
+            font-size: 14px;
+            line-height: 1.5
+           
+        }
+        .accessoryBlock_right_desBox:first-child{
+            margin-top: 15px;
+        }
+        .accessoryBlockRight_desBox_title{
+            font-weight: 600;
+        }
+        .accessoryBlockRight_desBox_text{
+            font-weight: 400;
+        }
+        
+    }
+    @media(min-width:1000px) {
+        .accessoryBlock_all{
+            padding: 50px 0 100px;
+        }
+        .accessoryBlock_box{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .accessoryBlock_left{
+            width: 100%;
+            margin-right: 100px;
+           
+        }
+        .accessoryBlock_right{
+            width: 100%;
+        }
+        .accessoryBlock_left_title{
+            font-weight: 600;
+            line-height: 1;
+        }
+        .accessoryBlock_left_des{
+            font-size: 32px;
+            padding-top: 54px;
+            font-weight: 400;
+            line-height: 35px;
+         
+        }
+        .accessoryBlock_left_text{
+            width: 80%;
+            font-weight: 400;
+            font-size: 18px;
+            padding-top: 30px;
+            line-height: 35px;
+        }
+        
+        .accessoryBlock_rightBox:not(:nth-child(1)){
+            margin-top: 28px;
+        }
+        .accessoryBlock_rightBox .collapsible-toggle{
+            align-items: center;
+            height: 82px;
+            background: #FFFFFF;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 35px;
+            color: #757575;
+            box-shadow: -4px 7px 64px 1px rgba(225,225,225,0.38);
+            border-radius: 10px;
+            padding: 0 29px 0 40px;
+        }
+        .accessoryBlock_rightBox .collapsible {
+            padding: 0px 29px 0px 40px;
+        }
+        .accessoryBlock_right_desBox{
+            font-size: 18px;
+            line-height: 1.5;
+           
+        }
+        .accessoryBlock_right_desBox:not(:first-child){
+            margin-top: 10px;
+        }
+        .accessoryBlock_right_desBox:first-child{
+            margin-top: 20px;
+        }
+        .accessoryBlockRight_desBox_title{
+            font-weight: 600;
+        }
+        .accessoryBlockRight_desBox_text{
+            font-weight: 400;
+        }
+    }
+</style>
+
+   <div class="accessoryBlock_all">
+    <div class="accessoryBlock_box container">
+      
+           
+               
+        <div class="accessoryBlock_left">
+            <div class="accessoryBlock_left_title ebike_h1">
+                Description
+            </div>
+                <!-- <div class="accessoryBlock_left_des">
+                    {{item.des}}
+                </div> -->
+            <div class="accessoryBlock_left_text">
+                {{product.description}}
+            </div>
+        </div>
+        {% if product.metafields.custom.accessories_introduction.value  != blank%}
+            <div class="accessoryBlock_right">
+                {% for block in product.metafields.custom.accessories_introduction.value %}
+                <div class="accessoryBlock_rightBox">
+                        <button is="toggle-button" class="title collapsible-toggle text--strong" aria-controls="block-{{ section.id }}-{{ block.id }}-{{forloop.index}}" aria-expanded="false" itemprop="name">
+                            {{block.title}}
+                            <span class="animated-plus"></span>
+                        </button>
+                    
+                        <collapsible-content id="block-{{ section.id }}-{{ block.id }}-{{forloop.index}}" class="collapsible anchor" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" {{ block.shopify_attributes }}>
+                            {% for block2 in block.des %}
+                                <div class="accessoryBlock_right_desBox">
+                                    {% if block2.sontitle !=blank %}
+                                        <span class="accessoryBlockRight_desBox_title">
+                                            {{block2.sontitle}}
+                                        </span>
+                                    {% endif %}
+                                    <span class="accessoryBlockRight_desBox_text">{{block2.sontext}}</span>
+                                </div>
+                            {% endfor %}
+                        </collapsible-content>
+                </div>
+                    
+                {% endfor %}
+            
+            </div>
+        {% endif %}
+        
+    </div>
+    </div>
+
+{% schema %}
+{
+    "name": "accessoryBlock",
+    "class": "accessoryBlock",
+    
+    "settings":[
+       
+    ],
+    "blocks":[
+      
+    ],
+    "presets": [
+        {
+            "name": "accessoryBlock"
+        }
+    ]
+}
+
+
+{% endschema %}

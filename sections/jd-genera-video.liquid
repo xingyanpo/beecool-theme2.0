@@ -1,0 +1,104 @@
+{{ 'jd-genera-video.css' | asset_url | stylesheet_tag }}
+<div class="genera-video-all">
+  <div class="container">
+      {% if section.settings.title != blank %}
+        <div class="genera-video-title ebike_h1">{{section.settings.title}}</div>
+      {% endif %} 
+      <div class="genera-video-text">{{section.settings.text }}</div>
+  </div>
+  <div class="genera-video-box">
+          {% if section.settings.link !=blank %}
+              <div class="genera_video">
+              
+                  <video data-component="responsive-video" playsinline="" 
+                    class="responsive-video preview-video js-video-preview lazyloaded pc" preload="auto" 
+                    loop="" muted="muted"  
+                    src="{{section.settings.link}}"
+                    poster="{{section.settings.img | img_url: '1920x'}}">
+
+                  </video>
+                  <video data-component="responsive-video" playsinline="" 
+                    class="responsive-videos preview-video js-video-preview lazyloaded mobile" preload="auto" 
+                    loop="" muted="muted"  
+                    src="{{section.settings.link}}"
+                    poster="{{section.settings.img_mobile| img_url: '1920x'}}">
+
+                  </video>
+                  {% if section.settings.link !=blank %}
+                  <div class="genera_video_button pc">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.1 15.4"><path d="M12.1 8.6L2 14.8a1 1 0 0 1-1.4-.4 4.3 4.3 0 0 1-.1-.5V1.5a.9.9 0 0 1 1-1H2l10.1 6.4a.9.9 0 0 1 .3 1.3c0 .2-.2.3-.3.4z" fill="#fff" stroke="#000" stroke-miterlimit="10" fill-rule="evenodd"></path></svg>
+                  </div>
+                      <div class="genera_video_buttons mobile">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.1 15.4"><path d="M12.1 8.6L2 14.8a1 1 0 0 1-1.4-.4 4.3 4.3 0 0 1-.1-.5V1.5a.9.9 0 0 1 1-1H2l10.1 6.4a.9.9 0 0 1 .3 1.3c0 .2-.2.3-.3.4z" fill="#fff" stroke="#000" stroke-miterlimit="10" fill-rule="evenodd"></path></svg>
+                      </div>
+                  {% endif %}
+              </div>
+              
+          {% else %}
+              <img loading="lazy" class="" {% render 'image-attributes' , image: section.settings.img%}>
+              <img loading="lazy" class="" {% render 'image-attributes' , image: section.settings.img_mobile%}>
+          {% endif %}  
+  </div>
+</div>
+<script>
+  (()=>{
+    $(".genera_video_button").click(function(){
+      $(this).parent().find(".responsive-video").attr("controls","controls")
+      $(this).parent().find(".responsive-video")[0].play();
+      $(this).hide();
+
+    })
+    $(".genera_video_buttons").click(function(){
+      $(this).parent().find(".responsive-videos").attr("controls","controls")
+      $(this).parent().find(".responsive-videos")[0].play();
+      $(this).hide();
+
+    })
+  })()
+</script>
+{% schema %}
+{
+"name": "product video",
+"class": "shopify-section--genera-video",
+"settings": [
+ 
+  {
+    "type": "richtext",
+    "id": "text",
+    "label": "text"
+  },
+  {
+    "type": "richtext",
+    "id": "mobile_text",
+    "label": "mobile text"
+  },
+  {
+    "type": "url",
+    "id": "link",
+    "label": "link Pc"
+  },
+
+  {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Img Pc"
+  },
+  {
+    "type": "image_picker",
+    "id": "img_mobile",
+    "label": "Img Mobile"
+}
+
+
+ 
+],
+"blocks": [
+  
+],
+"presets": [
+{
+"name": "product video"
+}
+]
+}
+{% endschema %}

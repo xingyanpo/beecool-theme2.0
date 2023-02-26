@@ -1,0 +1,173 @@
+{{ 'jd-user-manualsBottom.css' | asset_url | stylesheet_tag }}
+    <div class="user_manualsBottom_all">
+        <div class="container">
+            <div class="user_manualsBottomTitle ebike_h1">
+                {{section.settings.title}}
+            </div>
+            <div class="user_manualsBottomFaq">
+                {% for block in section.blocks %}
+                    <div class="user_manualsBottomFaqBox">
+                            <button is="toggle-button" class="title collapsible-toggle text--strong user_manualsBottomFaq_faq" aria-controls="block-{{ section.id }}-{{ block.id }}" aria-expanded="false" itemprop="name">
+                                {{- block.settings.faq -}}
+                                <span class="animated-plus"></span>
+                            </button>
+
+                            <collapsible-content id="block-{{ section.id }}-{{ block.id }}" class="collapsible anchor" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" {{ block.shopify_attributes }}>
+                                <div class="collapsible__content" itemprop="text">
+                                    {% if block.settings.text != blank %}
+                                        <div class="user_manualsBottomFaqBox_title1">
+                                            {{ block.settings.text }}
+                                        </div>
+                                    {% endif %}
+                                    {% if block.settings.faq2_title != blank %}
+                                        <div class="user_manualsBottomFaqBoxfaq2_title">
+                                            {{ block.settings.faq2_title }}
+                                        </div>
+                                    {% endif %}
+                                    {% if block.settings.faq2_text != blank %}
+                                        <div class="user_manualsBottomFaqBoxfaq2_text">
+                                            {{ block.settings.faq2_text }}
+                                        </div>
+                                    {% endif %}
+                                    {% if block.settings.faq2_table != blank %}
+                                        <div class="user_manualsBottomFaqBoxfaq2_table">
+                                            {{ block.settings.faq2_table }}
+                                        </div>
+                                    {% endif %}
+                                    {% if block.settings.img != blank %}
+                                        <div class="user_manualsBottomFaqBox_img1">
+                                            <img src="{{block.settings.img | img_url: '1920x'}}" alt="">
+                                        </div>
+                                    {% endif %}
+                                    {% if block.settings.title != blank %}
+                                        <div class="user_manualsBottomFaqBox_title2">
+                                            {{ block.settings.title }}
+                                        </div>
+                                    {% endif %}
+                                    {% if block.settings.text2 != blank %}
+                                        <div class="user_manualsBottomFaqBox_text2">
+                                            {{ block.settings.text2 }}
+                                        </div>
+                                    {% endif %}
+                                    {% if block.settings.img2 != blank %}
+                                        <div class="user_manualsBottomFaqBox_img2">
+                                            <img src="{{block.settings.img2 | img_url: '1920x'}}" alt="">
+                                        </div>
+                                    {% endif %}
+                                    {% if block.settings.text3 != blank %}
+                                        <div class="user_manualsBottomFaqBox_text3">
+                                            {{ block.settings.text3 }}
+                                        </div>
+                                    {% endif %}
+                                    {% if block.settings.faq3_text != blank %}
+                                        <div class="user_manualsBottomFaqBox_faq3_text">
+                                            {{ block.settings.faq3_text}}
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </collapsible-content>
+                    </div>
+               {% endfor %}
+            </div>
+        </div>
+    </div>
+    <script>
+            (()=>{
+             
+            })()
+      </script>
+    {% schema %}
+    {
+        "name": "user manuals Bottom",
+        "class": "shopify-section--user_manuals_Bottom",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "title"
+            }
+           
+        ],
+    "blocks": [
+    {
+        "type": "user_manuals_Bottom",
+        "name": "user manuals Bottom",
+        "settings": [
+            {
+                "type": "text",
+                "id": "faq",
+                "label": "faq"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "text"
+            },
+            {
+                "type": "image_picker",
+                "id": "img",
+                "label": "img"
+            },
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "title"
+            },
+            {
+                "type": "richtext",
+                "id": "text2",
+                "label": "text2"
+            },
+            {
+                "type": "image_picker",
+                "id": "img2",
+                "label": "img2"
+            },
+            {
+                "type": "richtext",
+                "id": "text3",
+                "label": "text3"
+            },
+            {
+                "type": "header",
+                "content": "faq2"
+            
+            },
+            {
+                "type": "richtext",
+                "id": "faq2_title",
+                "label": "faq2 title"
+            },
+            {
+                "type": "richtext",
+                "id": "faq2_text",
+                "label": "faq2 text"
+            },
+            {
+                "type": "textarea",
+                "id": "faq2_table",
+                "label": "faq2 table"
+            },
+            {
+                "type": "header",
+                "content": "faq3"
+            
+            },
+            {
+                "type": "richtext",
+                "id": "faq3_text",
+                "label": "faq3 text"
+            }
+           
+            
+          
+  ]
+}
+    ],
+    "presets": [
+    {
+    "name": "user manuals Bottom"
+    }
+    ]
+    }
+    {% endschema %}

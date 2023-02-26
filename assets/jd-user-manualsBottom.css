@@ -1,0 +1,292 @@
+@media (max-width:999px) {
+    .user_manualsBottom_all{
+        padding: 50px 0 0;
+    }
+    .user_manualsBottom_all .container{
+       padding: 0 15px;
+    }
+    .user_manualsBottomTitle{
+        text-align: center;
+        margin-bottom: 26px;
+        line-height: 1;
+    }
+    .user_manualsBottomFaq_faq{
+        height: 52px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        line-height: 1.5;
+        color: #151515;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #f5f5f5;
+    }
+    .user_manualsBottomFaqBox{
+        margin-top: 15px;
+        border: 1px solid #D7D7D7;
+    }
+    .user_manualsBottomFaq_faq .animated-plus{
+        width: 14px;
+        height: 14px;
+    }
+    .user_manualsBottomFaq_faq .animated-plus:before{
+        width: 14px;
+        background: #2A408E;
+        height: 3px;
+    }
+    .user_manualsBottomFaq_faq .animated-plus:after{
+        height: 14px;
+        width: 3px;
+        background: #2A408E;
+    }
+    .user_manualsBottomFaqBox_title1{
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 14px;
+        color: #151515;
+        padding: 25px 10px 0 10px;
+    }
+    .user_manualsBottomFaqBox_img1{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        padding: 0 10px;
+    }
+    .user_manualsBottomFaqBox_img1 img{
+        width: 100%;
+    }
+    .user_manualsBottomFaqBox_title2{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.5;
+        padding: 25px 10px 0 10px;
+        color: #151515;
+    }
+    .user_manualsBottomFaqBox_text2{
+        padding: 14px 10px 0 10px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #151515;
+    }
+    .user_manualsBottomFaqBox_img2{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        padding: 0 15px;
+    }
+    .user_manualsBottomFaqBox_img2 img{
+        width: 100%;
+    }
+    .user_manualsBottomFaqBox_text3{
+        padding: 24px 10px 0 10px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #151515; 
+    }
+    .user_manualsBottomFaqBox_text3 strong{
+        font-size: 14px;
+    }
+    .user_manualsBottomFaqBox_faq3_text{
+        padding: 23px 10px 0 10px;
+    }
+    .user_manualsBottomFaqBox_faq3_text strong{
+        font-size: 14px;
+        color: #151515;
+    }
+    .user_manualsBottomFaqBox_faq3_text a strong{
+        color: #2B408F;
+    }
+    .user_manualsBottomFaqBoxfaq2_title{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.5;
+        color: #151515;
+        padding: 23px 10px 0 10px;
+    }
+    .user_manualsBottomFaqBoxfaq2_text{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #151515; 
+        padding: 9px 10px 0 10px;
+    }
+    .user_manualsBottom_all .collapsible__content{
+        padding-bottom: 25px;
+    }
+    .user_manualsBottomFaqBoxfaq2_table{
+       width: 100%;
+        margin: 25px 10px;
+        border: 1px solid #151515;
+    }
+    .user_manualsBottomFaqBoxfaq2_table .faq_table{
+        display: flex;
+        font-size: 18px;
+        color: #151515;
+        font-weight: 400;
+        height: 70px;
+        align-items: center;
+        border-bottom: 1px solid #151515;
+    }
+    .user_manualsBottomFaqBoxfaq2_table .faq_table:last-child{
+        border-bottom: unset;
+    }
+    .user_manualsBottomFaqBoxfaq2_table .faq_table div:first-child{
+        width: 50%;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid #151515;
+    }
+    .user_manualsBottomFaqBoxfaq2_table .faq_table div:last-child{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+     
+
+}
+@media(min-width:1000px) {
+    .user_manualsBottom_all{
+        padding: 130px 0;
+    }
+    .user_manualsBottom_all .container{
+        padding-left: unset;
+        padding-right: unset;
+    }
+    .user_manualsBottomTitle{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .user_manualsBottomFaq_faq{
+        height: 105px;
+        display: flex;
+        align-items: center;
+        padding: 0 45px;
+        color: #151515;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #f5f5f5;
+    }
+    .user_manualsBottomFaqBox{
+        margin-top: 20px;
+        border: 1px solid #D7D7D7;
+    }
+    .user_manualsBottomFaq_faq .animated-plus{
+        width: 32px;
+        height: 32px;
+    }
+    .user_manualsBottomFaq_faq .animated-plus:before{
+        width: 32px;
+        background: #2A408E;
+        height: 3px;
+    }
+    .user_manualsBottomFaq_faq .animated-plus:after{
+        height: 32px;
+        width: 3px;
+        background: #2A408E;
+    }
+    .user_manualsBottomFaqBox_title1{
+        font-weight: 400;
+        line-height: 30px;
+        font-size: 18px;
+        color: #151515;
+        padding: 60px 50px 0 50px;
+    }
+    .user_manualsBottomFaqBox_img1{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .user_manualsBottomFaqBox_img1 img{
+        width: 66%;
+    }
+    .user_manualsBottomFaqBox_title2{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        padding: 40px 50px 0 50px;
+        color: #151515;
+    }
+    .user_manualsBottomFaqBox_text2{
+        padding: 38px 38px 0 70px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #151515;
+    }
+    .user_manualsBottomFaqBox_img2{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .user_manualsBottomFaqBox_img2 img{
+        width: 66%;
+    }
+    .user_manualsBottomFaqBox_text3{
+        padding: 38px 50px 0 50px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #151515; 
+    }
+    .user_manualsBottomFaqBox_text3 strong{
+        font-size: 18px;
+    }
+    .user_manualsBottomFaqBox_faq3_text{
+        padding: 38px 50px 0 50px;
+    }
+    .user_manualsBottomFaqBox_faq3_text strong{
+        font-size: 20px;
+        color: #151515;
+    }
+    .user_manualsBottomFaqBox_faq3_text a strong{
+        color: #2B408F;
+    }
+    .user_manualsBottomFaqBoxfaq2_title{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        color: #151515;
+        padding: 38px 50px 0 50px;
+    }
+    .user_manualsBottomFaqBoxfaq2_text{
+        font-size: 18px;
+        font-weight: 400;
+        color: #151515; 
+        padding: 16px 50px 0 50px;
+    }
+    .user_manualsBottom_all .collapsible__content{
+        padding-bottom: 60px;
+    }
+    .user_manualsBottomFaqBoxfaq2_table{
+        width: 66%;
+        margin: 60px auto;
+        border: 1px solid #151515;
+    }
+    .user_manualsBottomFaqBoxfaq2_table .faq_table{
+        display: flex;
+        font-size: 18px;
+        color: #151515;
+        font-weight: 400;
+        height: 70px;
+        align-items: center;
+        border-bottom: 1px solid #151515;
+    }
+    .user_manualsBottomFaqBoxfaq2_table .faq_table:last-child{
+        border-bottom: unset;
+    }
+    .user_manualsBottomFaqBoxfaq2_table .faq_table div:first-child{
+        width: 50%;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid #151515;
+    }
+    .user_manualsBottomFaqBoxfaq2_table .faq_table div:last-child{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

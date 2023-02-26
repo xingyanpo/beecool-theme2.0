@@ -1,0 +1,595 @@
+{{ 'jd-page-compare.css' | asset_url | stylesheet_tag }}
+<div class="selectUser_all">
+    <div class="bg_selectUser_all"></div>
+    <div class="container">
+        <div class="pc">
+            <div class="selectUser_bottom">
+                <div class="selectUser_bottom_div video_in">
+                  <div class="div_selectUser">
+                    <div class="selectUser_bottom_div_img">
+                        <img src="{{section.settings.product.featured_image | img_url: '1920x'}}" alt="">
+                    </div>
+                    <div class="selectUserDiv">
+                        <select id="B1other1_1" name="B1other1_1" class="select">
+                            {% if section.settings.product.title !=blank %}
+                                <option value="0" selected>{{section.settings.product.title}}</option>
+                            {% endif %}
+                            {% if section.settings.product2.title !=blank %}
+                            <option value="1">{{section.settings.product2.title}}</option>
+                            {% endif %}
+                            {% if section.settings.product3.title !=blank %}
+                                <option value="2">{{section.settings.product3.title}}</option>
+                            {% endif %}
+                            {% if section.settings.product4.title !=blank %}
+                                <option value="3">{{section.settings.product4.title}}</option>
+                            {% endif %}
+                            {% if section.settings.product5.title !=blank %}
+                                <option value="4">{{section.settings.product5.title}}</option>
+                            {% endif %}
+                            {% if section.settings.product6.title !=blank %}
+                                <option value="5">{{section.settings.product6.title}}</option>
+                            {% endif %}
+                            {% if section.settings.product7.title !=blank %}
+                                <option value="6">{{section.settings.product7.title}}</option>
+                            {% endif %}
+                            
+                        </select>
+                        <svg t="1660557102297" class="icon" viewBox="0 0 1895 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2379" width="32" height="32"><path d="M1863.976455 27.172479a87.94827 87.94827 0 0 0-122.312672 0l-794.917052 786.767999L149.292709 27.172479A86.333835 86.333835 0 1 0 26.980037 149.023884l848.424041 837.584263c2.536969 2.536969 2.536969 7.687786 7.687786 12.684847a87.94827 87.94827 0 0 0 122.312672 0L1861.516364 151.560853a83.64311 83.64311 0 0 0 2.460091-124.388374z" p-id="2380" fill="#000000"></path></svg>
+                    </div>
+                  </div>
+                   <div class="box1">
+                            {% for item in section.settings.product.metafields.custom.geometry.value %}
+                                    <div class="box-border">
+                                        <div>{{item.title}}</div>
+                                        <div>{{item.dec}}</div>
+                                </div>
+                                
+                           
+                        {% endfor %}
+                   </div>
+                   <div class="selectUserDiv_price">
+                        <div class="selectUserDiv_priceDiv">
+                            <div class="selectUserDiv_priceDiv_left">
+                                <div class="selectUserDiv_priceDiv_from">From</div>
+                                <div class="selectUserDiv_priceDiv_pirce">
+                                    {{section.settings.product.price | money }}
+                                </div>
+                          </div>
+                          <div class="selectUserDiv_priceDiv_right">
+                            <a href="{{section.settings.product.url}}"> Shop Now</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="selectUser_bottom_div video_in">
+                    
+                    <div class="div_selectUser">
+                        <div class="selectUser_bottom_div_img">
+                            <img src="{{section.settings.product2.featured_image | img_url: '1920x'}}" alt="">
+                        </div>
+                        <div class="selectUserDiv">
+                            <select id="B1other2_1" name="B1other2_1" class="select">
+                                {% if section.settings.product.title !=blank %}
+                                    <option value="0">{{section.settings.product.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product2.title !=blank %}
+                                <option value="1" selected>{{section.settings.product2.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product3.title !=blank %}
+                                    <option value="2">{{section.settings.product3.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product4.title !=blank %}
+                                    <option value="3">{{section.settings.product4.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product5.title !=blank %}
+                                    <option value="4">{{section.settings.product5.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product6.title !=blank %}
+                                    <option value="5">{{section.settings.product6.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product7.title !=blank %}
+                                    <option value="6">{{section.settings.product7.title}}</option>
+                                {% endif %}
+                              
+                            </select>
+                            <svg t="1660557102297" class="icon" viewBox="0 0 1895 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2379" width="32" height="32"><path d="M1863.976455 27.172479a87.94827 87.94827 0 0 0-122.312672 0l-794.917052 786.767999L149.292709 27.172479A86.333835 86.333835 0 1 0 26.980037 149.023884l848.424041 837.584263c2.536969 2.536969 2.536969 7.687786 7.687786 12.684847a87.94827 87.94827 0 0 0 122.312672 0L1861.516364 151.560853a83.64311 83.64311 0 0 0 2.460091-124.388374z" p-id="2380" fill="#000000"></path></svg>
+        
+                        </div>
+                    </div>
+                    <div class="box1">
+                        {% for item in section.settings.product2.metafields.custom.geometry.value %}
+                        <div class="box-border">
+                            <div>{{item.title}}</div>
+                            <div>{{item.dec}}</div>
+                       </div>
+                        {% endfor %}
+                    </div>
+                    <div class="selectUserDiv_price">
+                        <div class="selectUserDiv_priceDiv">
+                            <div class="selectUserDiv_priceDiv_left">
+                                <div class="selectUserDiv_priceDiv_from">From</div>
+                                <div class="selectUserDiv_priceDiv_pirce">
+                                    {{section.settings.product2.price | money}}
+                                </div>
+                          </div>
+                          <div class="selectUserDiv_priceDiv_right">
+                            <a href="{{section.settings.product2.url}}"> Shop Now</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="selectUser_bottom_div video_in">
+                    <div class="div_selectUser">
+                        <div class="selectUser_bottom_div_img">
+                            <img src="{{section.settings.product3.featured_image | img_url: '1920x'}}" alt="">
+                        </div>
+                        <div class="selectUserDiv">
+                            <select id="B1other3_1" name="B1other3_1" class="select">
+                                {% if section.settings.product.title !=blank %}
+                                    <option value="0">{{section.settings.product.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product2.title !=blank %}
+                                    <option value="1">{{section.settings.product2.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product3.title !=blank %}
+                                    <option value="2" selected>{{section.settings.product3.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product4.title !=blank %}
+                                    <option value="3">{{section.settings.product4.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product5.title !=blank %}
+                                    <option value="4">{{section.settings.product5.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product6.title !=blank %}
+                                    <option value="5">{{section.settings.product6.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product7.title !=blank %}
+                                    <option value="6">{{section.settings.product7.title}}</option>
+                                {% endif %}
+                              
+                            </select>
+                            <svg t="1660557102297" class="icon" viewBox="0 0 1895 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2379" width="32" height="32"><path d="M1863.976455 27.172479a87.94827 87.94827 0 0 0-122.312672 0l-794.917052 786.767999L149.292709 27.172479A86.333835 86.333835 0 1 0 26.980037 149.023884l848.424041 837.584263c2.536969 2.536969 2.536969 7.687786 7.687786 12.684847a87.94827 87.94827 0 0 0 122.312672 0L1861.516364 151.560853a83.64311 83.64311 0 0 0 2.460091-124.388374z" p-id="2380" fill="#000000"></path></svg>
+        
+                        </div>
+                    </div>
+                    <div class="box1">
+                        {% for item in section.settings.product3.metafields.custom.geometry.value %}
+                           <div class="box-border">
+                                <div>{{item.title}}</div>
+                                <div>{{item.dec}}</div>
+                           </div>
+                        {% endfor %}
+                    </div>
+                    <div class="selectUserDiv_price">
+                        <div class="selectUserDiv_priceDiv">
+                            <div class="selectUserDiv_priceDiv_left">
+                                <div class="selectUserDiv_priceDiv_from">From</div>
+                                <div class="selectUserDiv_priceDiv_pirce">
+                                    {{section.settings.product3.price | money }}
+                                </div>
+                          </div>
+                          <div class="selectUserDiv_priceDiv_right">
+                            <a href="{{section.settings.product3.url}}"> Shop Now</a>
+                          </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="mobile">
+            <div class="selectUser_bottom">
+                <div class="selectUser_bottom_div video_in">
+                  <div class="div_selectUser">
+                    <div class="selectUser_bottom_div_img">
+                        <img src="{{section.settings.product.featured_image | img_url: '1920x'}}" alt="">
+                    </div>
+                    <div class="selectUserDiv">
+                        <select id="B1other1_1" name="B1other1_1" class="select">
+                           
+                            {% if section.settings.product.title !=blank %}
+                                <option value="0" selected>{{section.settings.product.title}}</option>
+                            {% endif %}
+                            {% if section.settings.product2.title !=blank %}
+                                <option value="1">{{section.settings.product2.title}}</option>
+                            {% endif %}
+                            {% if section.settings.product3.title !=blank %}
+                                <option value="2">{{section.settings.product3.title}}</option>
+                            {% endif %}
+                            {% if section.settings.product4.title !=blank %}
+                                <option value="3">{{section.settings.product4.title}}</option>
+                            {% endif %}
+                            {% if section.settings.product5.title !=blank %}
+                                <option value="4">{{section.settings.product5.title}}</option>
+                            {% endif %}
+                            {% if section.settings.product6.title !=blank %}
+                                <option value="5">{{section.settings.product6.title}}</option>
+                            {% endif %}
+                            {% if section.settings.product7.title !=blank %}
+                                <option value="6">{{section.settings.product7.title}}</option>
+                            {% endif %}
+                        </select>
+                        <svg t="1660557102297" class="icon" viewBox="0 0 1895 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2379" width="32" height="32"><path d="M1863.976455 27.172479a87.94827 87.94827 0 0 0-122.312672 0l-794.917052 786.767999L149.292709 27.172479A86.333835 86.333835 0 1 0 26.980037 149.023884l848.424041 837.584263c2.536969 2.536969 2.536969 7.687786 7.687786 12.684847a87.94827 87.94827 0 0 0 122.312672 0L1861.516364 151.560853a83.64311 83.64311 0 0 0 2.460091-124.388374z" p-id="2380" fill="#000000"></path></svg>
+                    </div>
+                  </div>
+                   <div class="box1">
+                            {% for item in section.settings.product.metafields.custom.geometry.value %}
+                                    <div class="box-border">
+                                        <div>{{item.title}}</div>
+                                        <div>{{item.dec}}</div>
+                                </div>
+                                
+                           
+                        {% endfor %}
+                   </div>
+                   <div class="selectUserDiv_price">
+                    <a href="{{section.settings.product.url}}" class="selectUserDiv_priceDiv">
+                            <div class="selectUserDiv_priceDiv_left">
+                                <div class="selectUserDiv_priceDiv_from">Shop Now</div>
+                                <div class="selectUserDiv_priceDiv_pirce">
+                                    {{section.settings.product.price | money}}
+                                </div>
+                        </div>
+                        <div class="selectUserDiv_priceDiv_right">
+                            <div> <svg t="1663924951723" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2247" width="20" height="20"><path d="M384.32 797.512a30.088 30.088 0 0 1-21.288-51.392L597.144 512 363.032 277.816a30.088 30.088 0 0 1 0-42.568 30.088 30.088 0 0 1 42.568 0l255.392 255.464a30.088 30.088 0 0 1 0 42.568L405.6 788.696a30.04 30.04 0 0 1-21.28 8.816z" fill="#2A408E" p-id="2248"></path></svg></div>
+                        </div>
+                        </a>
+                    </div>
+                </div>  
+                <div class="selectUser_bottom_div video_in">
+                    
+                    <div class="div_selectUser">
+                        <div class="selectUser_bottom_div_img">
+                            <img src="{{section.settings.product2.featured_image | img_url: '1920x'}}" alt="">
+                        </div>
+                        <div class="selectUserDiv">
+                            <select id="B1other2_1" name="B1other2_1" class="select">
+                                
+                                {% if section.settings.product.title !=blank %}
+                                    <option value="0">{{section.settings.product.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product2.title !=blank %}
+                                <option value="1" selected>{{section.settings.product2.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product3.title !=blank %}
+                                    <option value="2">{{section.settings.product3.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product4.title !=blank %}
+                                    <option value="3">{{section.settings.product4.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product5.title !=blank %}
+                                    <option value="4">{{section.settings.product5.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product6.title !=blank %}
+                                    <option value="5">{{section.settings.product6.title}}</option>
+                                {% endif %}
+                                {% if section.settings.product7.title !=blank %}
+                                    <option value="6">{{section.settings.product7.title}}</option>
+                                {% endif %}
+                            </select>
+                            <svg t="1660557102297" class="icon" viewBox="0 0 1895 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2379" width="20" height="20"><path d="M1863.976455 27.172479a87.94827 87.94827 0 0 0-122.312672 0l-794.917052 786.767999L149.292709 27.172479A86.333835 86.333835 0 1 0 26.980037 149.023884l848.424041 837.584263c2.536969 2.536969 2.536969 7.687786 7.687786 12.684847a87.94827 87.94827 0 0 0 122.312672 0L1861.516364 151.560853a83.64311 83.64311 0 0 0 2.460091-124.388374z" p-id="2380" fill="#000000"></path></svg>
+        
+                        </div>
+                    </div>
+                    <div class="box1">
+                        {% for item in section.settings.product2.metafields.custom.geometry.value %}
+                        <div class="box-border">
+                            <div>{{item.title}}</div>
+                            <div>{{item.dec}}</div>
+                       </div>
+                        {% endfor %}
+                    </div>
+                    <div class="selectUserDiv_price">
+                        <a href="{{section.settings.product2.url}}" class="selectUserDiv_priceDiv">
+                            <div class="selectUserDiv_priceDiv_left">
+                                <div class="selectUserDiv_priceDiv_from">Shop Now</div>
+                                <div class="selectUserDiv_priceDiv_pirce">
+                                    {{section.settings.product2.price | money}}
+                                </div>
+                          </div>
+                          <div class="selectUserDiv_priceDiv_right">
+                            <div> <svg t="1663924951723" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2247" width="20" height="20"><path d="M384.32 797.512a30.088 30.088 0 0 1-21.288-51.392L597.144 512 363.032 277.816a30.088 30.088 0 0 1 0-42.568 30.088 30.088 0 0 1 42.568 0l255.392 255.464a30.088 30.088 0 0 1 0 42.568L405.6 788.696a30.04 30.04 0 0 1-21.28 8.816z" fill="#2A408E" p-id="2248"></path></svg></div>
+                          </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  
+  $(document).scroll(function(){
+    let widthSize = document.documentElement.clientWidth;
+    var top =$(document).scrollTop()
+    if(widthSize>768){
+        if(top>773 && top<2760){
+            $(".bg_selectUser_all").addClass("bg_selectUser_alls")
+            $(".selectUserDiv").addClass("selectUserDivs")
+        }else{
+            $(".selectUserDiv").removeClass("selectUserDivs")
+            $(".bg_selectUser_all").removeClass("bg_selectUser_alls")
+        }
+
+    }else{
+        if(top>328 && top<1429){
+     
+            $(".selectUserDiv").addClass("selectUserDivs")
+        }else{
+            $(".selectUserDiv").removeClass("selectUserDivs")
+        }
+    }  
+  
+  })
+$(function(){
+    var oldVal="";
+        $('.video_in select').each(function() {
+            if ($(this).find("option:selected")) {
+                var _thisVal = $(this).find('option:selected').val();
+                    oldVal=$(this).attr("old",_thisVal)
+                $('.video_in select').parents(".selectUser_bottom_div").siblings(".selectUser_bottom_div").find("option[value="+_thisVal+"]").hide() //not("option[value=0]")除啦第一个
+            }
+        })
+    
+     
+    // 默认价格省略小数点
+    var price = $(".selectUser_bottom_div:eq(0) .selectUserDiv_priceDiv_pirce").html().split(".")[0];
+    var $price =$(".selectUser_bottom_div:eq(0) .selectUserDiv_priceDiv_pirce").html(price);
+    var price = $(".selectUser_bottom_div:eq(1) .selectUserDiv_priceDiv_pirce").html().split(".")[0];
+    var $price =$(".selectUser_bottom_div:eq(1) .selectUserDiv_priceDiv_pirce").html(price);
+    var price = $(".selectUser_bottom_div:eq(2) .selectUserDiv_priceDiv_pirce").html().split(".")[0];
+    var $price =$(".selectUser_bottom_div:eq(2) .selectUserDiv_priceDiv_pirce").html(price);
+    var hide_data = `
+        {% for item in section.settings.product.metafields.custom.geometry.value %}
+            <div class="box-border">
+                <div>{{item.title}}</div>
+                <div>{{item.dec}}</div>
+            </div>
+        {% endfor %}
+    
+    
+    
+    `
+    var hide_data2 = `
+        
+        {% for item in section.settings.product2.metafields.custom.geometry.value %}
+            <div class="box-border">
+                <div>{{item.title}}</div>
+                <div>{{item.dec}}</div>
+            </div>
+        {% endfor %}
+    
+    
+    
+    `
+    var hide_data3 = `
+        {% for item in section.settings.product3.metafields.custom.geometry.value %}
+            <div class="box-border">
+                <div>{{item.title}}</div>
+                <div>{{item.dec}}</div>
+                </div>
+        {% endfor %}
+    
+    
+    
+    `
+    var hide_data4 = `
+        {% for item in section.settings.product4.metafields.custom.geometry.value %}
+            <div class="box-border">
+                <div>{{item.title}}</div>
+                <div>{{item.dec}}</div>
+            </div>
+        {% endfor %}
+    
+    
+    
+        
+    `
+    var hide_data5 = `
+        {% for item in section.settings.product5.metafields.custom.geometry.value %}
+            <div class="box-border">
+                <div>{{item.title}}</div>
+                <div>{{item.dec}}</div>
+            </div>
+        {% endfor %}
+    
+    
+    
+    `
+    var hide_data6 = `
+        {% for item in section.settings.product6.metafields.custom.geometry.value %}
+        <div class="box-border">
+           
+                <div>{{item.title}}</div>
+                <div>{{item.dec}}</div>
+          </div>
+        {% endfor %}
+    
+    
+    
+    `
+    var hide_data7 = `
+        {% for item in section.settings.product7.metafields.custom.geometry.value %}
+            <div class="box-border">
+                <div>{{item.title}}</div>
+                <div>{{item.dec}}</div>
+            </div>
+        {% endfor %}
+    
+    
+    
+    `
+    // 存储到本地
+    localStorage.setItem('hide_data', hide_data);
+    localStorage.setItem('hide_data2', hide_data2);
+    localStorage.setItem('hide_data3', hide_data3);
+    localStorage.setItem('hide_data4', hide_data4);
+    localStorage.setItem('hide_data5', hide_data5);
+    localStorage.setItem('hide_data6', hide_data6);
+    localStorage.setItem('hide_data7', hide_data7);
+
+    // 提取数据
+    var hide_datas =localStorage.getItem('hide_data')
+    var hide_datas2 =localStorage.getItem('hide_data2')
+    var hide_datas3 =localStorage.getItem('hide_data3')
+    var hide_datas4 =localStorage.getItem('hide_data4')
+    var hide_datas5 =localStorage.getItem('hide_data5')
+    var hide_datas6 =localStorage.getItem('hide_data6')
+    var hide_datas7 =localStorage.getItem('hide_data7')
+    //  选择的下拉框数据
+    $(".video_in select").change(function(){
+        var a =$(this).val()
+       
+        oldVal=$(this).attr("old");
+        var _thisVal=$(this).find('option:selected').val();
+        var id=$(this).attr("id");
+        $(this).parents(".selectUser_bottom_div").siblings(".selectUser_bottom_div").find("option[value="+_thisVal+"]").hide();//not("option[value=0]")除啦第一个
+        $(this).parents(".selectUser_bottom_div").siblings(".selectUser_bottom_div").find("option[value="+oldVal+"]").show();
+        $(this).find("option[value="+oldVal+"]").show();
+        $(this).attr("old",_thisVal)
+        if(a==0){
+            
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product.price | money }}`)
+            var price =$price.html().split(".")[0];
+           
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(price)
+            $(this).parent().parent().parent().find(".selectUserDiv_priceDiv_right a").attr("href",`{{section.settings.product.url}}`)
+            $(this).parent().parent().find(".selectUser_bottom_div_img img").attr("src",`{{section.settings.product.featured_image | img_url: '1920x'}}`)
+            $(this).parent().parent().parent().find(".box1").html(hide_data)
+        
+        }else if(a==1){
+           
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product2.price | money }}`)
+            var price =$price.html().split(".")[0];
+           
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(price)
+            $(this).parent().parent().parent().find(".selectUserDiv_priceDiv_right a").attr("href",`{{section.settings.product2.url}}`)
+           
+            $(this).parent().parent().find(".selectUser_bottom_div_img img").attr("src",`{{section.settings.product2.featured_image | img_url: '1920x'}}`)
+            $(this).parent().parent().parent().find(".box1").html(hide_data2)
+           
+        }else if(a==2){
+         
+
+            $(this).parent().parent().parent().find(".selectUserDiv_priceDiv_right a").attr("href",`{{section.settings.product3.url}}`)
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product3.price | money }}`)
+            var price =$price.html().split(".")[0];
+           
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(price)
+            $(this).parent().parent().find(".selectUser_bottom_div_img img").attr("src",`{{section.settings.product3.featured_image | img_url: '1920x'}}`)
+            $(this).parent().parent().parent().find(".box1").html(hide_data3)
+            
+        }else if(a==3){
+           
+            $(this).parent().parent().parent().find(".selectUserDiv_priceDiv_right a").attr("href",`{{section.settings.product4.url}}`)
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product4.price | money }}`)
+            var price =$price.html().split(".")[0];
+           
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(price)
+            $(this).parent().parent().find(".selectUser_bottom_div_img img").attr("src",`{{section.settings.product4.featured_image | img_url: '1920x'}}`)
+            $(this).parent().parent().parent().find(".box1").html(hide_data4)
+            
+        }else if(a==4){
+            
+            $(this).parent().parent().parent().find(".selectUserDiv_priceDiv_right a").attr("href",`{{section.settings.product5.url}}`)
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product5.price | money }}`)
+            var price =$price.html().split(".")[0];
+           
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(price)
+            $(this).parent().parent().find(".selectUser_bottom_div_img img").attr("src",`{{section.settings.product5.featured_image | img_url: '1920x'}}`)
+            $(this).parent().parent().parent().find(".box1").html(hide_data5)
+           
+        }else if(a==5){
+        
+            $(this).parent().parent().parent().find(".selectUserDiv_priceDiv_right a").attr("href",`{{section.settings.product6.url}}`)
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product6.price | money }}`)
+            var price =$price.html().split(".")[0];
+           
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(price)
+            $(this).parent().parent().find(".selectUser_bottom_div_img img").attr("src",`{{section.settings.product6.featured_image | img_url: '1920x'}}`)
+            $(this).parent().parent().parent().find(".box1").html(hide_data6)
+            
+        }else if(a==6){
+            
+            $(this).parent().parent().parent().find(".selectUserDiv_priceDiv_right a").attr("href",`{{section.settings.product7.url}}`)
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product7.price | money }}`)
+            var price =$price.html().split(".")[0];
+           
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(price)
+            $(this).parent().parent().find(".selectUser_bottom_div_img img").attr("src",`{{section.settings.product7.featured_image | img_url: '1920x'}}`)
+            $(this).parent().parent().parent().find(".box1").html(hide_data7)
+            
+        }
+    })
+
+    
+  
+})
+        
+
+
+
+    
+</script> 
+    
+    
+{% schema %}
+
+{
+    "name": "Help compare",
+    "settings": [
+   
+  {
+    "type": "product",
+    "id": "product",
+    "label": "product"
+   
+  },
+  {
+    "type": "product",
+    "id": "product2",
+    "label": "product2"
+   
+  },
+  {
+    "type": "product",
+    "id": "product3",
+    "label": "product3"
+   
+  },
+  {
+    "type": "product",
+    "id": "product4",
+    "label": "product4"
+   
+  },
+  {
+    "type": "product",
+    "id": "product5",
+    "label": "product5"
+   
+  },
+  {
+    "type": "product",
+    "id": "product6",
+    "label": "product6"
+   
+  },
+  {
+    "type": "product",
+    "id": "product7",
+    "label": "product7"
+   
+  }
+
+    ],
+    "blocks": [
+    
+    ],
+    "presets": [{
+    "name": "Help compare",
+    "blocks": [
+        
+    ]
+    }]
+}
+{% endschema %}

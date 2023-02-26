@@ -1,0 +1,69 @@
+@media(min-width:1000px) {
+   
+    #brakebanner canvas{
+        width: 100%;
+    }
+    .brakebanner_text{
+        top: 15%;
+        z-index: 2;
+        left: 10%;
+        position: absolute;
+    }
+    .brakebanner_textBox{
+        max-width: 443px;
+    }
+    .brakebanner_textTitle{
+        font-weight: 600;
+        line-height: 1;
+    }
+    .brakebanner_textText{
+        font-size: 18px;
+        padding-top: 40px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+}
+@media(max-width:999px) {
+   
+   
+    .brakebanner_text{
+        z-index: 2;
+        padding: 50px 15px;
+    }
+    .brakebanner_textTitle{
+        font-weight: 600;
+        line-height: 1;
+    }
+    .brakebanner_textText{
+        font-size: 14px;
+        padding-top: 20px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+}
+@media (min-width: 1360px) and (max-width: 1700px) {
+    .brakebanner_textTitle {
+        font-size: 48px;
+    }
+   .brakebanner_textText {
+        font-size: 18px;
+     }
+}
+@media (min-width:1201px) and (max-width:1359px){
+    .brakebanner_textTitle {
+        font-size: 38px;
+    }
+   .brakebanner_textText {
+        font-size: 14px;
+     }
+   
+}
+@media (min-width:769px) and (max-width:1199px){
+    .brakebanner_textTitle {
+        font-size: 30px;
+     }
+    .brakebanner_textText {
+        font-size: 14px;
+     }
+   
+}

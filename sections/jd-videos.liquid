@@ -1,0 +1,339 @@
+{{ 'jd-videos.css' | asset_url | stylesheet_tag }}
+<nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="videos_nav">
+    <div class="container">
+     <ol class="breadcrumb__list" role="list">
+         <li class="breadcrumb__item">
+           <a class="breadcrumb__link" href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a>
+         </li>
+
+         <li class="breadcrumb__item">
+           {%- if current_tags -%}
+             <a class="breadcrumb__link" href="{{ page.url }}">{{ page.title }}</a>
+           {%- else -%}
+             <span class="breadcrumb__link" aria-current="page">{{ page.title }}</span>
+           {%- endif -%}
+         </li>
+
+         {%- if current_tags -%}
+           <li class="breadcrumb__item">
+             <span class="breadcrumb__link" aria-current="page">{{ current_tags.first | split: '_' | last }}</span>
+           </li>
+         {%- endif -%}
+       </ol>
+    </div>
+   </nav>
+  
+<div class="jd_videos_all">
+    <div class="container">
+            <div class="jd_videos_title ebike_h1">
+                {{section.settings.title}}
+            </div>
+            <div class="jd_videos_box">
+              <div class="videos_title">
+                {% for item in page.metafields.custom.viedes.value.list %}
+                    <div class="jd_videos_boxVideo_Title {% if forloop.first %}active{%endif%}">
+                        {{item.title}}
+                    </div>
+                {% endfor %}
+                </div>
+                <div class="videos_boxVideo_bottomBox pc">
+                    <div class="jd_videos_boxVideo_bottom selected">
+                        <div class="videos_boxVideo_bottomList">
+                            
+                            
+                        </div>
+                        <div class="pagination-container">
+                            <span class="page-change prev"><svg t="1661318351475" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4421" width="32" height="32"><path d="M677.391515 873.916768c-7.86101 0-15.618586-2.999596-21.617778-8.895354L324.473535 533.721212c-11.998384-11.894949-11.998384-31.340606 0-43.235555L655.670303 159.288889c5.999192-5.999192 13.756768-8.895354 21.617778-8.895354 7.757576 0 15.618586 2.999596 21.617778 8.895354 11.894949 11.894949 11.894949 31.237172 0 43.235555L389.223434 512.103434 698.905859 821.785859c11.894949 11.998384 11.894949 31.340606 0 43.235555-5.895758 5.895758-13.756768 8.895354-21.514344 8.895354z m0 0" p-id="4422" fill="#5c5c5c"></path></svg></span>
+                            <div class="paginationBox"></div>
+                            <span class="page-change next"><svg t="1661318233293" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2546" width="32" height="32"><path d="M372.679931 191.690834c8.782014 0 17.565051 3.235694 24.26873 9.708106l297.484322 287.175535c13.408381 12.932544 13.408381 33.9226 0 46.855144l-297.485345 287.172465c-13.408381 12.9438-35.130102 12.9438-48.53746 0-13.408381-12.932544-13.408381-33.9226 0-46.855144l273.215592-263.744893L348.411201 248.25306c-13.408381-12.932544-13.408381-33.9226 0-46.855144C355.11488 194.926528 363.897917 191.68981 372.679931 191.690834z" p-id="2547" fill="#5c5c5c"></path></svg></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="videos_boxVideo_bottomBoxs mobile">
+                    {% for itemMobile in page.metafields.custom.viedes.value.list %}
+                    <div class="jd_videos_boxVideo_bottoms {% if forloop.first %}selected{%endif%}">
+                        <div class="videos_boxVideo_bottomListMobiles">
+                            {% for itemMobile2 in itemMobile.models %}
+                                {% if itemMobile2.url != blank %}
+                                    <div class="boxVideo_bottomBox_videos">
+                                        <div class="boxVideo_bottomBox_videoImgs">
+                                            <img src="{{itemMobile2.img}}" alt="">
+                                            <div class="boxVideo_bottomBox_videoImg_positions">
+                                                <svg id="图层_1" class="boxVideo_svg" onclick="boxVideoPaly(this)" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.82 71.24"><defs><style>.videos-1{fill:#a0a0a0;opacity:0.8;}.videos-2{fill:#273b92;}</style></defs><path class="videos-1" d="M-368.82,19.87c-.51,6.64-4.85,51.09,10.16,54,7.51.89,76.13,1,76.13,1s13.62,1.58,15.31-18.4c1.43-16.94,1.42-30.58,1-34.75a20.62,20.62,0,0,0-.47-3.61c-1.2-4.25-5.26-13-18.37-13.91-17.37-1.21-64.75,0-64.75,0S-367.44,2.2-368.82,19.87Z" transform="translate(369.79 -3.72)"/><polygon class="videos-2" points="64.49 35.62 39.33 21.1 39.33 50.14 64.49 35.62"/></svg>
+                                            </div>
+                                        </div>
+                                        <div class="boxVideo_bottomBox_videoUrl" style="display: none;">{{itemMobile2.url}}</div>
+                                        <div class="boxVideo_bottomBox_videoTitles">
+                                            {{itemMobile2.title}}
+                                        </div>
+                                        <div class="boxVideo_bottomBox_videoTexts">
+                                            {{itemMobile2.text}}
+                                        </div>
+                                    </div>
+                                    {% else %}
+                                    <a href="{{itemMobile2.youtobeUrl}}" class="boxVideo_bottomBox_videos">
+                                        <div class="boxVideo_bottomBox_videoImgs">
+                                            <img src="{{itemMobile2.img}}" alt="">
+                                            <div class="boxVideo_bottomBox_videoImg_positions">
+                                                <svg id="图层_1" class="boxVideo_svg" onclick="boxVideoPaly(this)" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.82 71.24"><defs><style>.videos-1{fill:#a0a0a0;opacity:0.8;}.videos-2{fill:#273b92;}</style></defs><path class="videos-1" d="M-368.82,19.87c-.51,6.64-4.85,51.09,10.16,54,7.51.89,76.13,1,76.13,1s13.62,1.58,15.31-18.4c1.43-16.94,1.42-30.58,1-34.75a20.62,20.62,0,0,0-.47-3.61c-1.2-4.25-5.26-13-18.37-13.91-17.37-1.21-64.75,0-64.75,0S-367.44,2.2-368.82,19.87Z" transform="translate(369.79 -3.72)"/><polygon class="videos-2" points="64.49 35.62 39.33 21.1 39.33 50.14 64.49 35.62"/></svg>
+                                            </div>
+                                        </div>
+                                        <div class="boxVideo_bottomBox_videoUrl" style="display: none;">{{itemMobile2.url}}</div>
+                                        <div class="boxVideo_bottomBox_videoTitles">
+                                            {{itemMobile2.title}}
+                                        </div>
+                                        <div class="boxVideo_bottomBox_videoTexts">
+                                            {{itemMobile2.text}}
+                                        </div>
+                                    </a>
+                                {% endif %}
+                               
+                            {% endfor %}
+                            {% if itemMobile.models.size>8 %}
+                                <div class="videos_boxVideo_bottomBoxSvg">
+                                    <svg t="1663838914972" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2148" width="32" height="32"><path d="M512 657.28l377.6-377.6a40.32 40.32 0 0 1 58.24 0 41.6 41.6 0 0 1 0 58.24l-406.4 406.4a40.32 40.32 0 0 1-58.24 0L76.16 337.92A40.32 40.32 0 0 1 64 308.48a39.04 39.04 0 0 1 12.16-28.8 41.6 41.6 0 0 1 58.24 0z" fill="#151515" p-id="2149"></path></svg>
+                                </div>
+                            {% endif %}
+                        </div>
+                       
+                    </div>
+                    {% endfor %}
+                  
+                </div>
+            </div>
+    </div>
+</div>
+<div class="videos_video_fixed">
+    <div class="video_mid_cha">x</div>
+    <video data-component="responsive-video" playsinline="" class="responsive-videos" preload="auto" controls src=" "></video>
+</div>
+<div class="bg-color"></div>
+<script>
+    (()=>{
+      
+          // 分页 Json
+        var newsData = JSON.parse(`{{page.metafields.custom.viedes.value.list | replace: '=>' ,':'}}`);
+     
+
+        let newMain = document.querySelector('.videos_boxVideo_bottomList');//新闻容器
+        
+        
+        let paginationBox =  document.querySelector('.paginationBox');//分页容器
+        let pageNumber = 12;
+      
+
+        let newsDataRender = [];//每页要显示的数据
+        let p = 1;//根据p值显示每页的数据
+      
+        pagecter(p,pageNumber,Math.ceil(newsData[0].models.length/pageNumber),newsData[0].models)
+        function pagecter (p,pageNumber,pageCount,jsonbox){
+
+             //渲染页面函数
+            let render = ()=>{
+                newMain.innerHTML = ' ';
+                newsDataRender = jsonbox.slice((p-1)*pageNumber,pageNumber*p); //每页要显示的数据,一页显示多少个
+                newsDataRender.forEach((item,index)=>{
+              
+                newMain.innerHTML += ` 
+                   
+                    <div class="boxVideo_bottomBox_video" >
+                        <div class="boxVideo_bottomBox_videoImg">
+                            <img src="${item.img}" alt="">
+                            <div class="boxVideo_bottomBox_videoImg_position">
+                                <svg id="图层_1" class="boxVideo_svg" onclick="boxVideoPaly(this)" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.82 71.24"><defs><style>.videos-1{fill:#a0a0a0;opacity:0.8;}.videos-2{fill:#273b92;}</style></defs><path class="videos-1" d="M-368.82,19.87c-.51,6.64-4.85,51.09,10.16,54,7.51.89,76.13,1,76.13,1s13.62,1.58,15.31-18.4c1.43-16.94,1.42-30.58,1-34.75a20.62,20.62,0,0,0-.47-3.61c-1.2-4.25-5.26-13-18.37-13.91-17.37-1.21-64.75,0-64.75,0S-367.44,2.2-368.82,19.87Z" transform="translate(369.79 -3.72)"/><polygon class="videos-2" points="64.49 35.62 39.33 21.1 39.33 50.14 64.49 35.62"/></svg>
+                            </div>
+                        </div>
+                        
+                        <div class="boxVideo_bottomBox_videoUrl" style="display: none;">
+                            ${item.url}
+                        </div>
+                        <div class="boxVideo_bottomBox_youtubeUrl" style="display: none;">
+                            ${item.youtobeUrl}
+                        </div>
+                        <div class="boxVideo_bottomBox_videoTitle">
+                            ${item.title}
+                        </div>
+                        <div class="boxVideo_bottomBox_videoText">
+                            ${item.text}
+                        </div>
+                    </div>
+
+                `;
+                
+            });
+            };
+            //初始化页面
+            render();
+            //渲染分页
+            for(let i = 1;i<=pageCount;i++){
+                paginationBox.innerHTML +=`<span>${i}</span>`;
+            }
+            // pagination.innerHTML +=`<span class="skip">跳转至 <input type="text"> </span>页`;//获取页数
+            let asAll = paginationBox.querySelectorAll('span');
+            //页面刚进来时第一页高亮
+            asAll[p-1].classList.add('active');
+            
+            if($(".paginationBox span:first-child").hasClass("active")){
+                $(".prev").hide();
+            }else{
+                $(".prev").show();
+            }
+            if($(".paginationBox span:last-child").hasClass("active")){
+                $(".next").hide();
+            }else{
+                $(".next").show();
+            }
+            //遍历总页数
+            asAll.forEach((item,index)=>{  
+                //点击页数
+                item.onclick = function () {
+                    $(document).scrollTop(0)
+                        for(let j=0;j<asAll.length;j++){
+                            asAll[j].classList.remove('active');
+                        }
+                    this.classList.add('active');
+                        p=index+1; //点击页数，改变p的值，以改变这个页面要显示的数据，达到分页的效果
+                        render(); //重新渲染页面
+                    }
+                    if($(".paginationBox span:first-child").hasClass("active")){
+                        $(".prev").hide();
+                    }else{
+                        $(".prev").show();
+                    }
+                    if($(".paginationBox span:last-child").hasClass("active")){
+                        $(".next").hide();
+                    }else{
+                        $(".next").show();
+                    }
+            });
+            
+
+             //点击上一页下一页，改变高亮
+            let changePageClass = ()=>{
+                for(let j=0;j<asAll.length;j++){
+                    asAll[j].classList.remove('active');
+                }
+                asAll[p-1].classList.add('active');
+            };
+            //上一页
+            let prev = document.querySelector('.prev');
+            prev.onclick = function (e) {
+                $(document).scrollTop(0)
+                    if(p<=1){
+                        // console.log(p);
+                        return;
+                    }else{
+                        p=p-1;
+                        changePageClass();
+                        render();
+                    }
+                if($(".paginationBox span:first-child").hasClass("active")){
+                    $(".prev").hide();
+                }else{
+                    $(".prev").show();
+                }
+                if($(".paginationBox span:last-child").hasClass("active")){
+                    $(".next").hide();
+                }else{
+                    $(".next").show();
+                }
+            };
+            //下一页
+            let next = document.querySelector('.next');
+            next.onclick = function () {
+                $(document).scrollTop(0)
+                if(p>=asAll.length){
+                    return;
+                }
+                p=p+1;
+                changePageClass();
+                render();
+                if($(".paginationBox span:first-child").hasClass("active")){
+                $(".prev").hide();
+                }else{
+                    $(".prev").show();
+                }
+                if($(".paginationBox span:last-child").hasClass("active")){
+                    $(".next").hide();
+                }else{
+                    $(".next").show();
+                }
+            }
+           
+            
+        }
+           
+      
+         // tab切换
+         $(".videos_title>div").click(function () {
+           $(this).addClass("active").siblings("div").removeClass("active");
+           var index = $(this).index();
+           // 清空之前分页
+           paginationBox.innerHTML = ''
+           $(".videos_boxVideo_bottomBox .jd_videos_boxVideo_bottom:eq(" + index + ")").show().siblings(".jd_videos_boxVideo_bottom").hide()
+           $(".videos_boxVideo_bottomBoxs .jd_videos_boxVideo_bottoms:eq(" + index + ")").show().siblings(".jd_videos_boxVideo_bottoms").hide()
+           pagecter(p,pageNumber, Math.ceil(newsData[index].models.length/pageNumber),newsData[index].models)
+            if(newsData[index].models.length>12){
+                $(".pagination-container").show()
+            }else{
+                $(".pagination-container").hide()
+            }
+            
+        })
+       
+  
+       
+    })()
+
+  
+    function boxVideoPaly(e){
+             var viveoPC = $(e).parent().parent().parent().find(".boxVideo_bottomBox_videoUrl").html();
+             var viveoYoutune = $(e).parent().parent().parent().find(".boxVideo_bottomBox_youtubeUrl").html();
+             console.log(viveoPC )
+            if(viveoPC.indexOf("http") !=-1){
+                $(".videos_video_fixed").show();
+                $(".videos_video_fixed").children(".responsive-videos").attr("src",viveoPC.trim())
+                $(".videos_video_fixed").children(".responsive-videos")[0].play();
+            
+                $(".no-focus-outline").addClass("adlink-html");
+                $(".bg-color").addClass("bg-colors");
+
+            }else{
+                window.open(viveoYoutune,'_blank','');
+            }
+        }
+    
+        $(".video_mid_cha").click(function(){
+            $(".videos_video_fixed").hide();
+            $(".no-focus-outline").removeClass("adlink-html");
+            $(".videos_video_fixed").children(".responsive-videos")[0].load();
+            $(".bg-color").removeClass("bg-colors")
+        })
+        
+        $(".jd_videos_boxVideo_bottoms .videos_boxVideo_bottomBoxSvg").click(function(){
+            $(this).parent().find(".boxVideo_bottomBox_videos").show();
+            $(this).hide();
+        })
+</script>
+{% schema %}
+{
+    "name": "videos",
+    "class": "shopify-section--user_videos",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "title"
+        }
+       
+    ],
+"blocks": [
+
+],
+"presets": [
+{
+"name": "videos"
+}
+]
+}
+{% endschema %}

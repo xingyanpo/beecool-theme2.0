@@ -1,0 +1,65 @@
+
+  <div class="index-temp">
+    <div class="container">
+    </div>
+  </div>
+
+  <script>
+    (()=>{
+
+    })()
+  </script>
+
+  {% schema %}
+  {
+  "name": "index temp",
+  "class": "index-temp",
+  "presets": [{
+    "name": "index temp",
+    "settings": {
+  
+    }
+  }],
+  "blocks": [],
+  "settings": [
+
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "accessories",
+      "info": "1520 x 957px .png recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "mImage",
+      "label": "mobile accessories"
+    },{
+      "type": "select",
+      "id": "position",
+      "label": "position",
+      "options": [
+        {
+          "value": "top",
+          "label": "top"
+        },
+        {
+          "value": "center",
+          "label": "center"
+        },
+        {
+          "value": "bottom",
+          "label": "bottom"
+        }
+      ],
+      "default": "top"
+    }
+  ]
+  }
+  {% endschema %}
+
+
+  <style>
+
+  </style>
+
+  {{ 'index-temp.css' | asset_url | stylesheet_tag }}

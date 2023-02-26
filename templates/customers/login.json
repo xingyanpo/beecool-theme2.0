@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-customers-login",
+      "blocks": {
+        "login_form": {
+          "type": "login",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "login_form"
+      ],
+      "settings": {
+      }
+    },
+    "4a7d2918-f464-4d63-884e-f2e758255b78": {
+      "type": "jd-afterSales",
+      "blocks": {
+        "36147305-57e0-4f4f-bd3c-ae0580d32595": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
+            "title": "Free Shipping",
+            "subtitle": "<p>To the lower 48 states<\/p>"
+          }
+        },
+        "5a7b32a6-bac7-4f0d-99a5-7ec5233157de": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
+            "title": "2-Year Warranty",
+            "subtitle": "<p>Buy with confidence<\/p>"
+          }
+        },
+        "daec2fd8-e19a-4f9e-b9c5-3ae16ff455bd": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
+            "title": "Secure Payment",
+            "subtitle": "<p>Secure payment with Shopify<\/p>"
+          }
+        },
+        "3bcdc7a1-c637-4c5c-83e4-4cebfb9fce87": {
+          "type": "afterSales",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
+            "title": "Cost-effective",
+            "subtitle": "<p>Direct to consumer pricing<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "36147305-57e0-4f4f-bd3c-ae0580d32595",
+        "5a7b32a6-bac7-4f0d-99a5-7ec5233157de",
+        "daec2fd8-e19a-4f9e-b9c5-3ae16ff455bd",
+        "3bcdc7a1-c637-4c5c-83e4-4cebfb9fce87"
+      ],
+      "settings": {
+        "policy_color": "#f3f5f5",
+        "policy_scolor_mobile": "#f3f5f5"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "4a7d2918-f464-4d63-884e-f2e758255b78"
+  ]
+}

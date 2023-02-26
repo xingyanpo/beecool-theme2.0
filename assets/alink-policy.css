@@ -1,0 +1,48 @@
+.alink-policys {
+    padding: 66px 0;
+    background: #F4F7FE;
+    position: relative;
+  }
+  .alink-policys .container {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .alink-policys .container > :last-child {
+    border: none !important;
+  }
+  .alink-policys .container > :last-child .box {
+    border: none !important;
+  }
+  .alink-policys .container > :last-child .info-box {
+    border: none !important;
+  }
+  .alink-policys .container .item{
+    width: 23.8%;
+  }
+  .alink-policys .container .item .box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .alink-policys .container .item .box svg{
+    width: 58px;
+    height: 54px;
+  }
+  .alink-policys .container .item .box .info-box{
+    margin-left: 14px;
+  }
+  .alink-policys .container .item .info-box .title {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 600;
+    color: #151515;
+  }
+  .alink-policys .container .item .info-box .description {
+    font-size: 18px;
+    margin-top: 12px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #151515;
+  }
+

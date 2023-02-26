@@ -1,0 +1,196 @@
+@media screen and (max-width:999px) {
+    .dealers_top_all{
+        padding: 50px 15px 0;
+    }
+   .dealers_top_leftTop div:first-child{
+        color: #151515;
+        line-height: 1;
+        font-weight: 600;
+        font-size: 35px;
+    }
+    .dealers_top_leftTop div:last-child{
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        padding: 25px 0;
+        color: #151515;
+
+    }
+    .dealers_top_all .swiper-button-next::after{
+        font-size: 30px;
+        color: #2A408E;
+    }
+    .dealers_top_all .swiper-button-next{
+        right: -6px;
+    }
+    .dealers_top_all .swiper-button-prev {
+        display: none;
+    }
+    .dealers_topPosition_title{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .dealers_topPosition_text{
+        width: 90%;
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: 24px;
+        padding-top: 10px;
+        
+    }
+    .dealers_top_all #map{
+        width: 100%;
+        height: 50vh;
+        position: relative;
+    }
+    .dealersTopSwiper{
+        margin-top: 25px;
+    }
+    .dealers_top_all .swiper-horizontal > .swiper-scrollbar, .dealers_top_all  .swiper-scrollbar.swiper-scrollbar-horizontal{
+        height: 1px;
+        width: 100%;
+    }
+    .swiper-scrollbar-drag{
+        height: 2px;
+        top: -1px;
+        background: #2A408E;
+    }
+}
+@media screen and (min-width:1000px) {
+    .dealers_top_all{
+        display: flex;
+        justify-content: flex-start;
+        background-color: #F4F7FE;
+    }
+    .dealers_top_Box{
+        display: flex;
+        width: 92%;
+        flex-flow: row-reverse;
+    }
+    .dealers_top_left{
+        width: 35%;
+        padding: 74px 0px 20px 5%;
+    }
+    .dealers_top_leftBottom{
+        padding: 0 0 0 24px;
+        border-left: 4px solid #DCE2FB;
+        border-radius: 4px;
+    }
+    .dealers_top_right{
+        width: 65%;
+        height: 100vh;
+        position: sticky;
+        top: 70px;
+    }
+    .dealers_top_leftTop div:first-child{
+        color: #151515;
+        line-height: 1.5;
+    }
+    .dealers_top_leftTop div:last-child{
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+        padding: 56px 24px 72px 0;
+        color: #151515;
+
+    }
+  
+    .dealers_topBox{
+        position: relative;
+        height: 310px;
+        padding: 0 4%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.5s;
+        background-color: #fff;
+        border-radius: 16px;
+    }
+    .dealers_topBox:not(:last-child){
+        margin-bottom: 30px;
+    }
+    .dealers_topBox.active{
+        background-color: #2A408E;
+        color: #fff;
+    }
+    .dealers_top_leftBottom .dealers_topBox::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -28px;
+        width: 4px;
+        height: 0;
+        top: 0;
+        transition: height linear .3s;
+        border-radius: 4px;
+        background-color: #2A408E;
+    }
+    .dealers_top_leftBottom .dealers_topBox.active::after {
+        height: 100%;
+    }
+    
+    @keyframes ripple2 {
+        0% {
+          box-shadow: 0 0 0 0px #ffffff,0 0 0 2px #2A408E30,0 0 0 0 #2A408E30;
+        }
+        100% {
+          box-shadow:0 0 0 2px #ffffff,0 0 0 3px #2A408E30,0 0 0 7px #2A408E50;
+        }
+      }
+    .dealers_top_leftBottom .dealers_topBox.active::before {
+        
+        animation: ripple2 1.5s linear infinite;
+        content: "";
+        position: absolute;
+        height: 18px;
+        width: 18px;
+        left: -36px;
+        border-radius: 50%;
+        background-color: #2A408E;
+    }
+    .dealers_topBox.active .dealers_topPosition_title,.dealers_topBox.active .dealers_topPosition_text{
+        color: #fff;
+    }
+    .dealers_topPosition_title{
+        color: #807E7E;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+    .dealers_topPosition_text{
+        color: #807E7E;
+        font-weight: 400;
+        padding-top: 24px;
+        
+    }
+    .dealers_top_all #map{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+}
+@media screen and (min-width:1500px) and (max-width:1699px){
+    .dealers_topPosition_title{
+        font-size: 20px;
+    }
+    .dealers_topPosition_text{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:1200px) and (max-width:1499px){
+    .dealers_topPosition_title{
+        font-size: 20px;
+    }
+    .dealers_topPosition_text{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:1000px) and (max-width:1199){
+    .dealers_topPosition_title{
+        font-size: 18px;
+    }
+    .dealers_topPosition_text{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,696 @@
+<link rel="stylesheet" href="{{ 'header.css' | asset_url }}">
+<desktop-navigation>
+  <ul class="header__linklist list--unstyled {% unless bottom_navigation %}hidden-pocket hidden-lap{% endunless %}" role="list">
+    {%- for link in menu.links -%}
+      {%- assign link_title_downcase = link.title | strip | downcase -%}
+      {%- assign mega_menu_block = '' -%}
+      {%- assign mega_menu_block2 = '' -%}
+      {%- assign mega_menu_block3 = '' -%}
+      {%- assign mega_menu_block4 = '' -%}
+
+
+      {%- assign mega_menu_images = '' -%}
+
+      {%- for block in section.blocks -%}
+        {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
+        {%- assign menu_item_downcase2 = block.settings.menu_item_accessories | strip | downcase -%}
+        {%- assign menu_item_downcase3 = block.settings.menu_item_support | strip | downcase -%}
+        {%- assign menu_item_downcase4 = block.settings.menu_item_community | strip | downcase -%}
+
+        {%- case block.type-%}
+            {%- when 'mega_menu'-%}
+            {%- if menu_item_downcase == link_title_downcase -%}
+              {%- assign mega_menu_block = block -%}
+              {%- break -%}
+            {%- endif -%}
+            {%- when 'accessories'-%}
+            {%- if menu_item_downcase2 == link_title_downcase -%}
+              {%- assign mega_menu_block2 = block -%}
+              {%- break -%}
+            {%- endif -%}
+
+            {%- when 'Support'-%}
+            {%- if menu_item_downcase3 == link_title_downcase -%}
+              {%- assign mega_menu_block3 = block -%}
+              {%- break -%}
+            {%- endif -%}
+
+            {%- when 'Community'-%}
+            {%- if menu_item_downcase4 == link_title_downcase -%}
+              {%- assign mega_menu_block4 = block -%}
+              {%- break -%}
+            {%- endif -%}
+
+        {%- endcase-%}
+      {%- endfor -%}
+
+     
+      <li class="header__linklist-item {% if link.links.size > 0 or mega_menu_block != '' %}has-dropdown{% endif %}" data-item-title="{{ link.title | escape }}">
+        <a class="header__linklist-link link--animated" href="{{ link.url }}" {% if link.links.size > 0 or mega_menu_block != '' %}aria-controls="desktop-menu-{{ forloop.index }}" aria-expanded="false"{% endif %}>
+          {{- link.title -}}
+          {% if link.links.size > 0 %}
+            <span class="heads_icon">
+              <svg t="1660532356620" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2188" width="200" height="200"><path d="M481.056 714.656L138.096 371.68a44.096 44.096 0 0 1 62.352-62.368l311.808 311.84 311.808-311.84a44.128 44.128 0 0 1 62.352 1.088 44.128 44.128 0 0 1 0 61.28L543.456 714.656a44.096 44.096 0 0 1-62.368 0.048l-0.048-0.048z" fill="#ffffff" p-id="2189"></path></svg>            </span>
+          {% endif %}
+        </a>
+
+        {%- if mega_menu_block != '' -%}
+          {%- if link.links.size > 0 or mega_menu_images != blank -%}
+            <div hidden id="desktop-menu-{{ forloop.index }}" class="mega-menu" {{ mega_menu_block.shopify_attributes }}>
+              <div class="container">
+                <div class="desktop_header">
+                  <div class="desktop_headerLeft">
+                    <div class="desktop_headerLeftTitle">{{mega_menu_block.settings.title }}</div>
+                    <div class="desktop_headerLeftDescription">{{mega_menu_block.settings.description }}</div>
+                    <a href="{{mega_menu_block.settings.buttonLink}}" class="desktop_headerLeftButton">{{mega_menu_block.settings.buttonText}} <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1662451023759" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3840" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128"><path d="M885.113 489.373L628.338 232.599c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255l203.3 203.3H158.025c-17.036 0-30.846 13.811-30.846 30.846 0 17.036 13.811 30.846 30.846 30.846h628.36L583.084 746.147c-12.497 12.496-12.497 32.758 0 45.255 6.248 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372l256.775-256.775a31.999 31.999 0 0 0 0-45.254z" fill="#ffffff" p-id="3841"></path></svg></a>
+                    <div class="desktop_headerLeftSvg">
+                      <div class="desktop_headerLeftSvg_top">
+                        <div>{{mega_menu_block.settings.svg1 }}</div>
+                        <div>{{mega_menu_block.settings.svg_text }}</div>
+                      </div>
+                      <div class="desktop_headerLeftSvg_bottom">
+                        <div>{{mega_menu_block.settings.svg2 }}</div>
+                        <div>{{mega_menu_block.settings.svg_text2 }}</div>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="desktop_headerRight">
+                      <div class="desktop_headerTab">
+                        <div class="bikeSwiper">
+                          <div class="swiper-wrapper">
+                            {% if mega_menu_block.settings.collection !=blank %}
+                              <div class="swiper-slide active">
+                                <div class="desktoptab_li">{{mega_menu_block.settings.collection.title}}</div>
+                              </div>
+                              
+                            {% endif %}
+                            
+                              {% if mega_menu_block.settings.collection2 !=blank %}
+                              <div class="swiper-slide">
+                                <div class="desktoptab_li">{{mega_menu_block.settings.collection2.title}}</div>
+                              </div>
+                            {% endif %}
+                            
+                          
+                            {% if mega_menu_block.settings.collection3 !=blank %}
+                            <div class="swiper-slide">
+                              <div class="desktoptab_li">{{mega_menu_block.settings.collection3.title}}</div>
+                            </div>
+                              
+                            {% endif %}
+                            {% if mega_menu_block.settings.collection4 !=blank %}
+                            <div class="swiper-slide">
+                              <div class="desktoptab_li">{{mega_menu_block.settings.collection4.title}}</div>
+                            </div>
+                              
+                            {% endif %}
+                            {% if mega_menu_block.settings.collection5 !=blank %}
+                            <div class="swiper-slide">
+                              <div class="desktoptab_li">{{mega_menu_block.settings.collection5.title}}</div>
+                            </div>
+                              
+                            {% endif %}
+                          </div>
+                        </div>
+                      </div>
+                      <div class="desktop_headerBox">
+                        <div class="desktop_headerBox_list selected">
+                          <div class="swiper desktopSwiper">
+                            <div class="swiper-wrapper">
+                                {% for product in mega_menu_block.settings.collection.products %}
+                                  <div class="swiper-slide">
+                                    <a href="{{product.url}}" class="item">
+                                      <div class="img-box Hideimg7">
+                                        <img loading="lazy" src="{{product.featured_image | img_url: '500x'}}" alt="{{ product.featured_image.alt }}">
+                                      </div>
+                                      <div class="title">
+                                        {{product.title}}
+                                      </div>
+                                      <div class="price">
+                                        <div class="price--highlight">{{- product.price | money -}}</div>
+                                        {%- if product.price != product.compare_at_price -%}<s class="price--compare"> {{- product.compare_at_price | money -}}</s>{%- endif -%}
+                                      </div>
+                                    </a>
+                                  </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        </div>
+                        <div class="desktop_headerBox_list">
+                          <div class="swiper desktopSwiper">
+                            <div class="swiper-wrapper">
+                                {% for product in mega_menu_block.settings.collection2.products %}
+                                  <div class="swiper-slide">
+                                    <a href="{{product.url}}" class="item" >
+                                      <div class="img-box Hideimg7">
+                                        <img loading="lazy" src="{{product.featured_image | img_url: '500x'}}" alt="{{ product.featured_image.alt }}">
+                                      </div>
+                                      <div class="title">
+                                        {{product.title}}
+                                      </div>
+                                      <div class="price">
+                                        <div class="price--highlight">{{- product.price | money -}}</div>
+                                        {%- if product.price != product.compare_at_price -%}<s class="price--compare"> {{- product.compare_at_price | money -}}</s>{%- endif -%}
+                                      </div>
+                                    </a>
+                                  </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        </div>
+                        <div class="desktop_headerBox_list">
+                          <div class="swiper desktopSwiper">
+                            <div class="swiper-wrapper">
+                                {% for product in mega_menu_block.settings.collection3.products %}
+                                  <div class="swiper-slide">
+                                    <a href="{{product.url}}" class="item" >
+                                      <div class="img-box Hideimg7">
+                                        <img loading="lazy"  src="{{ product.featured_image | img_url: '500x'}}" alt="{{ product.featured_image.alt }}">
+                                      </div>
+                                      <div class="title">
+                                        {{product.title}}
+                                      </div>
+                                      <div class="price">
+                                        <div class="price--highlight">{{- product.price | money -}}</div>
+                                        {%- if product.price != product.compare_at_price -%}<s class="price--compare"> {{- product.compare_at_price | money -}}</s>{%- endif -%}
+                                      </div>
+                                    </a>
+                                  </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        </div>
+                        <div class="desktop_headerBox_list">
+                          <div class="swiper desktopSwiper">
+                            <div class="swiper-wrapper">
+                                {% for product in mega_menu_block.settings.collection4.products %}
+                                  <div class="swiper-slide">
+                                    <a href="{{product.url}}" class="item" >
+                                      <div class="img-box Hideimg7">
+                                        <img loading="lazy" src="{{ product.featured_image | img_url: '500x'}}" alt="{{ product.featured_image.alt }}">
+                                      </div>
+                                      <div class="title">
+                                        {{product.title}}
+                                      </div>
+                                      <div class="price">
+                                        <div class="price--highlight">{{- product.price | money -}}</div>
+                                        {%- if product.price != product.compare_at_price -%}<s class="price--compare"> {{- product.compare_at_price | money -}}</s>{%- endif -%}
+                                      </div>
+                                    </a>
+                                  </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        </div>
+                        <div class="desktop_headerBox_list">
+                          <div class="swiper desktopSwiper">
+                            <div class="swiper-wrapper">
+                                {% for product in mega_menu_block.settings.collection5.products %}
+                                  <div class="swiper-slide">
+                                    <a href="{{product.url}}" class="item" >
+                                      <div class="img-box Hideimg7">
+                                        <img loading="lazy" src="{{ product.featured_image | img_url: '500x'}}" alt="{{ product.featured_image.alt }}">
+                                      </div>
+                                      <div class="title">
+                                        {{product.title}}
+                                      </div>
+                                      <div class="price">
+                                        <div class="price--highlight">{{- product.price | money -}}</div>
+                                        {%- if product.price != product.compare_at_price -%}<s class="price--compare"> {{- product.compare_at_price | money -}}</s>{%- endif -%}
+                                      </div>
+                                    </a>
+                                  </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+                                 
+            </div>
+              </div>
+            </div>
+          {%- endif -%}
+        {% elsif mega_menu_block2 != ''  %}
+        
+        <div hidden id="desktop-menu-{{ forloop.index }}" class="mega-menu" {{ mega_menu_block.shopify_attributes }}>
+          <div class="container">
+            <div class="desktop_header">
+              <div class="pj_desktop_headerLeft">
+                <div class="pj_desktop_headerLeftTitle">{{mega_menu_block2.settings.title }}</div>
+                <div class="pj_desktop_headerLeftDescription">{{mega_menu_block2.settings.description }}</div>
+                <a href="{{mega_menu_block2.settings.buttonLink}}" class="pj_desktop_headerLeftButton">{{mega_menu_block2.settings.buttonText}} <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1662451023759" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3840" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128"><path d="M885.113 489.373L628.338 232.599c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255l203.3 203.3H158.025c-17.036 0-30.846 13.811-30.846 30.846 0 17.036 13.811 30.846 30.846 30.846h628.36L583.084 746.147c-12.497 12.496-12.497 32.758 0 45.255 6.248 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372l256.775-256.775a31.999 31.999 0 0 0 0-45.254z" fill="#ffffff" p-id="3841"></path></svg></a>
+            
+              </div> 
+              <div class="pj_desktop_headerRight">
+                 
+                  <div class="pj_desktoptab accessoriesSwiper">
+                    <div class="swiper-wrapper">
+                      {% if mega_menu_block2.settings.collection !=blank %}
+                        <div class="swiper-slide active">
+                          <div class="pj_desktoptab_li">{{mega_menu_block2.settings.collection.title}}</div>
+                        </div>
+                        
+                      {% endif %}
+                      
+                        {% if mega_menu_block2.settings.collection2 !=blank %}
+                        <div class="swiper-slide">
+                          <div class="pj_desktoptab_li">{{mega_menu_block2.settings.collection2.title}}</div>
+                        </div>
+                      {% endif %}
+                      
+                    
+                      {% if mega_menu_block2.settings.collection3 !=blank %}
+                      <div class="swiper-slide">
+                        <div class="pj_desktoptab_li">{{mega_menu_block2.settings.collection3.title}}</div>
+                      </div>
+                        
+                      {% endif %}
+                      {% if mega_menu_block2.settings.collection4 !=blank %}
+                      <div class="swiper-slide">
+                        <div class="pj_desktoptab_li">{{mega_menu_block2.settings.collection4.title}}</div>
+                      </div>
+                        
+                      {% endif %}
+                      {% if mega_menu_block2.settings.collection5 !=blank %}
+                      <div class="swiper-slide">
+                        <div class="pj_desktoptab_li">{{mega_menu_block2.settings.collection5.title}}</div>
+                      </div>
+                        
+                      {% endif %}
+                      {% if mega_menu_block2.settings.collection6 !=blank %}
+                      <div class="swiper-slide">
+                        <div class="pj_desktoptab_li">{{mega_menu_block2.settings.collection6.title}}</div>
+                      </div>
+                        
+                      {% endif %}
+                    </div>
+                  </div>
+              
+                  <div class="pj_desktopBottom">
+                    
+                    <div class="pj_desktoptab_box selected">
+                      <div class="swiper desktop2Swiper">
+                        <div class="swiper-wrapper">
+                          {% for product in mega_menu_block2.settings.collection.products %}
+                          <div class="swiper-slide">
+                            <a href="{{product.url}}">
+                              <div class="pj_desktoptab_box_img Hideimg" >
+                                <img loading="lazy" src="{{ product.featured_image | img_url: '500x'}}" alt="{{ product.featured_image.alt }}">
+                              </div>
+                              <div class="pj_desktoptab_box_title">
+                                {{product.title}}
+                              </div>
+                              <!-- <div class="pj_desktoptab_box_a">
+                                <a href="{{product.url}}">see more</a>
+                              </div> -->
+                            </div>
+                          </a>
+                          {% endfor %}
+                        </div>
+                      </div>
+                      <a class="pj_desktoptab_boxA" href="{{mega_menu_block2.settings.collection.url}}">View All <svg t="1664437809438" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2251" width="20" height="20"><path d="M885.113 489.373L628.338 232.599c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255l203.3 203.3H158.025c-17.036 0-30.846 13.811-30.846 30.846 0 17.036 13.811 30.846 30.846 30.846h628.36L583.084 746.147c-12.497 12.496-12.497 32.758 0 45.255 6.248 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372l256.775-256.775a31.999 31.999 0 0 0 0-45.254z" fill="#2A408E" p-id="2252"></path></svg></a>
+                    </div>
+                    <div class="pj_desktoptab_box">
+                      <div class="swiper desktop2Swiper">
+                        <div class="swiper-wrapper">
+                          {% for product in mega_menu_block2.settings.collection2.products %}
+                          <div class="swiper-slide">
+                            <a href="{{product.url}}">
+                              <div class="pj_desktoptab_box_img Hideimg">
+                                <img loading="lazy"  src="{{ product.featured_image | img_url: '500x'}}" alt="{{ product.featured_image.alt }}">
+                              </div>
+                              <div class="pj_desktoptab_box_title">
+                                {{product.title}}
+                              </div>
+                              <!-- <div class="pj_desktoptab_box_a">
+                                <a href="{{product.url}}">see more</a>
+                              </div> -->
+                            </div>
+                          </a>
+                          {% endfor %}
+                        </div>
+                      </div>
+                      <a class="pj_desktoptab_boxA" href="{{mega_menu_block2.settings.collection2.url}}">View All <svg t="1664437809438" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2251" width="20" height="20"><path d="M885.113 489.373L628.338 232.599c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255l203.3 203.3H158.025c-17.036 0-30.846 13.811-30.846 30.846 0 17.036 13.811 30.846 30.846 30.846h628.36L583.084 746.147c-12.497 12.496-12.497 32.758 0 45.255 6.248 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372l256.775-256.775a31.999 31.999 0 0 0 0-45.254z" fill="#2A408E" p-id="2252"></path></svg></a>
+                    </div>
+                    <div class="pj_desktoptab_box">
+                      <div class="swiper desktop2Swiper">
+                        <div class="swiper-wrapper">
+                          {% for product in mega_menu_block2.settings.collection3.products %}
+                            <div class="swiper-slide">
+                              <a href="{{product.url}}">
+                                <div class="pj_desktoptab_box_img Hideimg">
+                                  <img loading="lazy" src="{{product.featured_image | img_url: '500x'}}" alt="{{ product.featured_image.alt }}">
+                                </div>
+                                <div class="pj_desktoptab_box_title">
+                                  {{product.title}}
+                                </div>
+                                <!-- <div class="pj_desktoptab_box_a">
+                                  <a href="{{product.url}}">see more</a>
+                                </div> -->
+                              </div>
+                            </a>
+                          {% endfor %}
+                        </div>
+                      </div>
+                      <a class="pj_desktoptab_boxA" href="{{mega_menu_block2.settings.collection3.url}}">View All <svg t="1664437809438" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2251" width="20" height="20"><path d="M885.113 489.373L628.338 232.599c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255l203.3 203.3H158.025c-17.036 0-30.846 13.811-30.846 30.846 0 17.036 13.811 30.846 30.846 30.846h628.36L583.084 746.147c-12.497 12.496-12.497 32.758 0 45.255 6.248 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372l256.775-256.775a31.999 31.999 0 0 0 0-45.254z" fill="#2A408E" p-id="2252"></path></svg></a>
+                    </div>
+                    <div class="pj_desktoptab_box">
+                      <div class="swiper desktop2Swiper">
+                        <div class="swiper-wrapper">
+                          {% for product in mega_menu_block2.settings.collection4.products %}
+                            <div class="swiper-slide">
+                              <a href="{{product.url}}">
+                                <div class="pj_desktoptab_box_img Hideimg">
+                                  <img loading="lazy"  src="{{product.featured_image | img_url: '500x'}}" alt="{{ product.featured_image.alt }}">
+                                </div>
+                                <div class="pj_desktoptab_box_title">
+                                  {{product.title}}
+                                </div>
+                                <!-- <div class="pj_desktoptab_box_a">
+                                  <a href="{{product.url}}">see more</a>
+                                </div> -->
+                              </div>
+                            </a>
+                          {% endfor %}
+                        </div>
+                      </div>
+                      <a class="pj_desktoptab_boxA" href="{{mega_menu_block2.settings.collection4.url}}">View All <svg t="1664437809438" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2251" width="20" height="20"><path d="M885.113 489.373L628.338 232.599c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255l203.3 203.3H158.025c-17.036 0-30.846 13.811-30.846 30.846 0 17.036 13.811 30.846 30.846 30.846h628.36L583.084 746.147c-12.497 12.496-12.497 32.758 0 45.255 6.248 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372l256.775-256.775a31.999 31.999 0 0 0 0-45.254z" fill="#2A408E" p-id="2252"></path></svg></a>
+                    </div>
+                    <!-- 5 -->
+                    <div class="pj_desktoptab_box">
+                      <div class="swiper desktop2Swiper">
+                        <div class="swiper-wrapper">
+                          {% for product in mega_menu_block2.settings.collection5.products %}
+                            <div class="swiper-slide">
+                              <a href="{{product.url}}">
+                                <div class="pj_desktoptab_box_img Hideimg">
+                                  <img loading="lazy" src="{{product.featured_image | img_url: '500x'}}" alt="{{ product.featured_image.alt }}">
+                                </div>
+                                <div class="pj_desktoptab_box_title">
+                                  {{product.title}}
+                                </div>
+                                <!-- <div class="pj_desktoptab_box_a">
+                                  <a href="{{product.url}}">see more</a>
+                                </div> -->
+                              </div>
+                            </a>
+                          {% endfor %}
+                        </div>
+                      </div>
+                      <a class="pj_desktoptab_boxA" href="{{mega_menu_block2.settings.collection5.url}}">View All <svg t="1664437809438" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2251" width="20" height="20"><path d="M885.113 489.373L628.338 232.599c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255l203.3 203.3H158.025c-17.036 0-30.846 13.811-30.846 30.846 0 17.036 13.811 30.846 30.846 30.846h628.36L583.084 746.147c-12.497 12.496-12.497 32.758 0 45.255 6.248 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372l256.775-256.775a31.999 31.999 0 0 0 0-45.254z" fill="#2A408E" p-id="2252"></path></svg></a>
+                    </div>
+                    <!-- 6 -->
+                    <div class="pj_desktoptab_box">
+                      <div class="swiper desktop2Swiper">
+                        <div class="swiper-wrapper">
+                          {% for product in mega_menu_block2.settings.collection6.products %}
+                            <div class="swiper-slide">
+                              <a href="{{product.url}}">
+                                <div class="pj_desktoptab_box_img Hideimg">
+                                  <img loading="lazy" src="{{product.featured_image | img_url: '500x'}}" alt="{{ product.featured_image.alt }}">
+                                </div>
+                                <div class="pj_desktoptab_box_title">
+                                  {{product.title}}
+                                </div>
+                                <div class="pj_desktoptab_box_a">
+                                  <a href="{{product.url}}">see more</a>
+                                </div>
+                              </div>
+                            </a>
+                          {% endfor %}
+                        </div>
+                      </div>
+                      <a class="pj_desktoptab_boxA" href="{{mega_menu_block2.settings.collection6.url}}">View All <svg t="1664437809438" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2251" width="20" height="20"><path d="M885.113 489.373L628.338 232.599c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255l203.3 203.3H158.025c-17.036 0-30.846 13.811-30.846 30.846 0 17.036 13.811 30.846 30.846 30.846h628.36L583.084 746.147c-12.497 12.496-12.497 32.758 0 45.255 6.248 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372l256.775-256.775a31.999 31.999 0 0 0 0-45.254z" fill="#2A408E" p-id="2252"></path></svg></a>
+                    </div>
+                  </div>
+              </div>        
+            </div>
+          </div>
+        </div>
+        {% elsif mega_menu_block3 != ''  %}
+        <div hidden id="desktop-menu-{{ forloop.index }}" class="mega-menu" {{ mega_menu_block.shopify_attributes }}>
+          <div class="container">
+            <div class="desktop_header">
+              <div class="support_desktop_headerLeft">
+                <div class="support_desktop_headerLeftTitle">{{mega_menu_block3.settings.title }}</div>
+                <div class="support_desktop_headerLeftDescription">{{mega_menu_block3.settings.description }}</div>
+                <a href="{{mega_menu_block3.settings.buttonLink}}" class="support_desktop_headerLeftButton">{{mega_menu_block3.settings.buttonText}} <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1662451023759" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3840" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128"><path d="M885.113 489.373L628.338 232.599c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255l203.3 203.3H158.025c-17.036 0-30.846 13.811-30.846 30.846 0 17.036 13.811 30.846 30.846 30.846h628.36L583.084 746.147c-12.497 12.496-12.497 32.758 0 45.255 6.248 6.248 14.438 9.372 22.627 9.372s16.379-3.124 22.627-9.372l256.775-256.775a31.999 31.999 0 0 0 0-45.254z" fill="#ffffff" p-id="3841"></path></svg></a>
+              </div> 
+              <div class="support_desktop_headerRight">
+                  <div class="support_desktop_headerRightTop">
+                    <div class="grid page-width x-support-left">
+                      {% for childlink in link.links %}
+                        {% assign index = forloop.index %}
+                        <div class="grid__item one-fifth text-center index-{{ index }}  x-support-li">
+                            <a href='{{ childlink.url }}'>
+                              {% if index == 1 %}
+                              <div class='support-icon'>{{mega_menu_block3.settings.svg1}}</div>
+                              {% elsif index == 2 %}
+                              <div class='support-icon'>{{mega_menu_block3.settings.svg2}}</div>
+                              {% elsif index == 3 %}
+                              <div class='support-icon'>{{mega_menu_block3.settings.svg3}}</div>
+                              {% elsif index == 4 %}
+                              <div class='support-icon'>{{mega_menu_block3.settings.svg4}}</div>
+                              {% elsif index == 5 %}
+                              <div class='support-icon'>{{mega_menu_block3.settings.svg5}}</div>
+                              {% elsif index == 6 %}
+                              <div class='support-icon'>{{mega_menu_block3.settings.svg6}}</div>
+                              {% elsif index == 7 %}
+                              <div class='support-icon'>{{mega_menu_block3.settings.svg7}}</div>
+                              {% elsif index == 8 %}
+                              <div class='support-icon'>{{mega_menu_block3.settings.svg8}}</div>
+                              {% elsif index == 9 %}
+                              <div class='support-icon'>{{mega_menu_block3.settings.svg9}}</div>
+                              {% elsif index == 10 %}
+                              <div class='support-icon'>{{mega_menu_block3.settings.svg10}}</div>
+                              {% endif %}
+                              <p class='support-text'>{{ childlink.title }}</p>
+                            </a>
+                        </div>
+                      {% endfor %}
+                    </div>
+                    {%- assign support_img = mega_menu_block3.settings.support_img -%}
+                    <div class ='support-right'>
+                        <div class="support-right_img">
+                          <img loading="lazy" src="{{ support_img | image_url: width: 500 }}" alt="{{ support_img.alt }}">
+                          <a href="{{mega_menu_block3.settings.contact_us}}" class="support_right_position">
+                            {{mega_menu_block3.settings.supportImg_text}}
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="support_headerRightBottom_title">{{mega_menu_block3.settings.supportBottom_title}}</div>
+                  <div class="support_desktop_headerRightBottom">
+                      
+                      <div class="support_headerRightBottom_text">{{mega_menu_block3.settings.supportBottom_text}}</div>
+                      <div class="support_headerRightBottom_text">{{mega_menu_block3.settings.supportBottom_text2}}</div>
+                      <div class="support_headerRightBottom_text">{{mega_menu_block3.settings.supportBottom_text3}}</div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        {% elsif mega_menu_block4 != ''  %}
+        <div hidden id="desktop-menu-{{ forloop.index }}" class="mega-menu" {{ mega_menu_block.shopify_attributes }}>
+          <div class="container">
+            <div class="desktop_header">
+              <div class="community_desktop_headerLeft">
+                <div class="community_desktop_headerLeftTitle">{{mega_menu_block4.settings.title }}</div>
+                <div class="community_desktop_headerLeftDescription">{{mega_menu_block4.settings.description }}</div>
+              </div> 
+              <div class="community_desktop_headerRight">
+                  <div class="community_desktop_headerRightTop">
+                    <div class="grid page-width x-community-left">
+                      <div class="swiper desktop4Swiper">
+                        <div class="swiper-wrapper">
+                          {% for childlink in link.links %}
+                            {% assign index = forloop.index %}
+                            <div class="swiper-slide">
+                              <div class="grid__item one-fifth text-center index-{{ index }}  x-community-li">
+                                  <div class="x-community-li_box">
+                                    {% if index == 1 %}
+                                      <div class='community-icon'>{{mega_menu_block4.settings.svg1}}</div>
+                                      <div class='community-text'>{{ childlink.title }}</div>
+                                      <div class="community-text_dec">{{mega_menu_block4.settings.text1}}</div>
+                                    {% elsif index == 2 %}
+                                      <div class='community-icon'>{{mega_menu_block4.settings.svg2}}</div>
+                                      <div class='community-text'>{{ childlink.title }}</div>
+                                      <div class="community-text_dec">{{mega_menu_block4.settings.text2}}</div>
+                                    {% elsif index == 3 %}
+                                      <div class='community-icon'>{{mega_menu_block4.settings.svg3}}</div>
+                                      <div class='community-text'>{{ childlink.title }}</div>
+                                      <div class="community-text_dec">{{mega_menu_block4.settings.text3}}</div>
+                                    {% elsif index == 4 %}
+                                      <div class='community-icon'>{{mega_menu_block4.settings.svg4}}</div>
+                                      <div class='community-text'>{{ childlink.title }}</div>
+                                      <div class="community-text_dec">{{mega_menu_block4.settings.text4}}</div>
+                                    {% elsif index == 5 %}
+                                      <div class='community-icon'>{{mega_menu_block4.settings.svg5}}</div>
+                                      <div class='community-text'>{{ childlink.title }}</div>
+                                      <div class="community-text_dec">{{mega_menu_block4.settings.text5}}</div>
+                                    {% endif %}
+                                    
+                                    <a href="{{childlink.url}}" class="community-learn_more">Learn more</a>
+                                  </div>
+                              </div>
+                            </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  
+                  </div>
+                 
+              </div>
+            </div>
+        </div>
+        {%- elsif link.links.size > 0 -%}
+          <ul hidden id="desktop-menu-{{ forloop.index }}" class="nav-dropdown {% if link.levels == 1 %}nav-dropdown--restrict{% endif %} list--unstyled" role="list">
+            {%- for sub_link in link.links -%}
+              <li class="nav-dropdown__item {% if sub_link.links.size > 0 %}has-dropdown{% endif %}">
+                <a class="nav-dropdown__link link--faded" href="{{ sub_link.url }}" {% if sub_link.links.size > 0 %}aria-controls="desktop-menu-{{ forloop.parentloop.index }}-{{ forloop.index }}" aria-expanded="false"{% endif %}>
+                  {{- sub_link.title -}}
+
+                  {%- if sub_link.links.size > 0 -%}
+                    {% render 'icon' with 'dropdown-arrow-right', direction_aware: true %}
+                  {%- endif -%}
+                </a>
+
+                {%- if sub_link.links.size > 0 -%}
+                  <ul hidden id="desktop-menu-{{ forloop.parentloop.index }}-{{ forloop.index }}" class="nav-dropdown list--unstyled" role="list">
+                    {%- for sub_sub_link in sub_link.links -%}
+                      <li class="nav-dropdown__item">
+                        <a class="nav-dropdown__link link--faded" href="{{ sub_sub_link.url }}">{{ sub_sub_link.title }}</a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</desktop-navigation>
+<script>
+  
+
+  (()=>{
+      var swiper = new Swiper(".desktopSwiper", {
+       
+        spaceBetween: 34,
+        breakpoints: { 
+          280: {  //当屏幕宽度大于等于320
+            slidesPerView: 2,
+          
+          },
+          768: {  //当屏幕宽度大于等于768 
+            slidesPerView: 3,
+          
+          },
+          1280: {  //当屏幕宽度大于等于1280
+            slidesPerView: 4,
+          
+          },
+          1499:{
+            slidesPerView: 5,
+          },
+          1788:{
+            slidesPerView: 6,
+          }
+        }
+      });
+      var swiper = new Swiper(".bikeSwiper", {
+        slidesPerView: 'auto',
+       spaceBetween: 34,
+      
+     });
+      // 2
+      var swiper = new Swiper(".accessoriesSwiper", {
+        slidesPerView: 'auto',
+      //  spaceBetween: 34,
+      breakpoints: { 
+         
+         300: {  //当屏幕宽度大于等于768 
+          slidesPerView: 'auto',
+          spaceBetween: 34,
+         
+         },
+         700:{
+          slidesPerView: 'auto',
+         }
+       
+       }
+    
+     });
+      // 配件
+      var swiper = new Swiper(".desktop2Swiper", {
+       
+       breakpoints: { 
+        280: {  //当屏幕宽度大于等于320
+           slidesPerView: 2,
+           spaceBetween: 10,
+         },
+         768: {  //当屏幕宽度大于等于768 
+           slidesPerView: 3,
+           spaceBetween: 10,
+         },
+         1280: {  //当屏幕宽度大于等于1280
+           slidesPerView: 4,
+           spaceBetween: 10,
+
+         },
+         1600:{
+           slidesPerView: 5,
+           spaceBetween: 10,
+         }
+       }
+     });
+    //  4
+     var swiper = new Swiper(".desktop4Swiper", {
+       
+       spaceBetween: 34,
+       breakpoints: { 
+         
+         768: {  //当屏幕宽度大于等于768 
+           slidesPerView: 3,
+         
+         },
+         1280: {  //当屏幕宽度大于等于1280
+           slidesPerView: 4,
+         
+         },
+         1600:{
+           slidesPerView: 5,
+         }
+       }
+     });
+  
+
+       $(".bikeSwiper .swiper-slide").click(function () {
+            
+            $(this).addClass("active");
+            $(this).siblings().removeClass("active");
+            var index = $(this).index();
+         
+            $(".desktop_headerBox>div:eq(" + index + ")").show().siblings(".desktop_headerBox_list").hide()
+      })
+  
+      //  配件
+    
+      $(".accessoriesSwiper .swiper-slide").click(function () {
+            
+            $(this).addClass("active");
+            $(this).siblings().removeClass("active");
+            var index = $(this).index();
+            console.log(index)
+            $(".pj_desktopBottom .pj_desktoptab_box:eq(" + index + ")").show().siblings(".pj_desktoptab_box").hide()
+      })
+  
+   })()
+    // $(".pj_desktoptab_li").click(function(){
+    //   console.log(1)
+    // })
+ 
+</script>

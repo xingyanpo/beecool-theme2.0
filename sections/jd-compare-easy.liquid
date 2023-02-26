@@ -1,0 +1,134 @@
+{{ 'jd-compare-easy.css' | asset_url | stylesheet_tag }}
+<div class="compare-easy-all">
+    <div class="container">
+        <div class="compareEasy_top">
+            <div class="compareEasy_title ebike_h1">
+                {{section.settings.title}}
+            </div>
+            <div class="compareEasy_text">
+                {{section.settings.text}}
+            </div>
+        </div>
+        <div class="swiper compareEasy">
+            <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                    <div class="swiper-slide compareEasyBox">
+                       <div class="compareEasyBoxTop">
+                            <div class="compare_easy_img">
+                                <img src="{{block.settings.img | img_url: '1920x'}}" alt="{{block.settings.img.alt}}">
+                            </div>
+                            <div class="compare_easy_title">
+                                {{block.settings.product.title}}
+                            </div>
+                        
+                           <div>
+                            <div class="compare_easy_shopButton">
+                                <a href="{{block.settings.product.url}}" class="compare_easy_shop">
+                                    {{section.settings.shop_Now}}
+                                </a>
+                            </div>
+                           </div>
+                       </div>
+                            <div class="compareEasyBoxbottom">
+                            {% for item in block.settings.product.metafields.custom.compare_easy.value %}
+                                <div class="compareEasy-border">
+                                    <div>{{item.title}}</div>
+                                    <div>{{item.dec}}</div>
+                                </div>
+                            {% endfor %}
+                            </div>
+                        </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="compareEasy_bottom">
+            <div class="compareEasy_bottom_title ebike_title2">
+                {{section.settings.bottom_text}}
+            </div>
+            <a href="{{section.settings.link}}" class="compareEasy_bottom_svg">
+                {{section.settings.bottom_svg}}
+            </a>
+        </div>
+    </div>
+    
+</div>
+<script>
+     var swiper = new Swiper(".compareEasy", {
+        
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          750: {  
+            slidesPerView: 3,
+          },
+          375: {  
+            slidesPerView: 2,
+          },
+        }
+      });
+</script>
+{% schema %}
+{
+    "name": "compare easy",
+    "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+    },
+    {
+        "type": "textarea",
+        "id": "text",
+        "label": "text"
+    },
+   
+    {
+        "type": "text",
+        "id": "shop_Now",
+        "label": "Shop Now"
+    },
+    {
+        "type": "text",
+        "id": "bottom_text",
+        "label": "bottom text"
+    },
+    {
+        "type": "textarea",
+        "id": "bottom_svg",
+        "label": "bottom svg"
+    },
+    {
+        "type": "url",
+        "id": "link",
+        "label": "link"
+    }
+    ],
+    "blocks": [
+    {
+        "type": "compare",
+        "name": "compare",
+        "settings": [
+            {
+                "type": "product",
+                "id": "product",
+                "label": "product"
+            
+            },
+            {
+                "type": "image_picker",
+                "id": "img",
+                "label": "img"
+            }
+        ]
+    }
+    ],
+    "presets": [{
+    "name": "compare easy"
+    
+    }]
+}
+{% endschema %}
