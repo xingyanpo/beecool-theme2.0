@@ -1,1 +1,0 @@
-# Beecool Theme2.0
