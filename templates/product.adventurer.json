@@ -538,12 +538,12 @@
         "title_mobile": "<p>Large Capacity Battery<\/p>",
         "text": "<p>48V 21Ah Lithium-ion battery gives you longer battery life. <br\/>You are able to travel over 80 miles on a charge using pedal-assist mode <br\/>and 50 miles on pure electric power mode. <br\/>We want to make everyone enjoy the ride longer!<\/p>",
         "text_mobile": "<p>48V 21Ah Lithium-ion battery gives you longer battery life. <br\/>You are able to travel over 80 miles on a charge using pedal-assist mode and 50 miles on pure electric power mode. <br\/>We want to make everyone enjoy the ride longer!<\/p>",
-        "data_title": "<p><\/p>",
-        "data_text": "<p><\/p>",
-        "data_title2": "<p><\/p>",
-        "data_text2": "<p><\/p>",
-        "data_title3": "<p><\/p>",
-        "data_text3": "<p><\/p>",
+        "data_title": "",
+        "data_text": "",
+        "data_title2": "",
+        "data_text2": "",
+        "data_title3": "",
+        "data_text3": "",
         "buttonSvg": "",
         "button": ""
       }
@@ -554,48 +554,56 @@
         "2610141a-784a-4917-90c6-1d0cfbe38630": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/1_f8d5b5ae-0e65-42d7-a81e-b67b449f7e75.webp",
             "text": "<p>The K1188 26\" x 4\", 30 psi tires help the bike ride smoothly and safely even on bad terrains. The tires are made by Innova Tires, a reliable tire manufacturer from Taiwan.<\/p>"
           }
         },
         "5325a5d6-d070-4269-a6ec-b2abc0fee863": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/2_77f2046d-163f-4463-8ec2-bd159324dca0.webp",
             "text": "<p>On the left side of the handlebar, you will find the switch of the turning signal light, the horn button, and the button pad(control the power on\/off, mode switch, pedal assist level, front light, etc.)<\/p>"
           }
         },
         "2ac9a688-bb53-4a8f-8f82-e92a57c7ff87": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/3_16290ab7-a13d-48aa-9f27-8a55b1510586.webp",
             "text": "<p>On the right side of the handlebar, you will find the shifter of the SHIMANO 7-speed gear shift system, the throttle on\/off button (red), and the throttle.<\/p>"
           }
         },
         "d106ac70-4edd-46d2-bc50-eca759aad226": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/4_b388af26-4804-4cb2-803e-9c216af8f4c9.webp",
             "text": "<p>The integrated taillight combine with all these functions: Night Light (turned on with the front light at the same time) , Brake Light , Turning Signal Light<\/p>"
           }
         },
         "483a0fad-5d5c-4509-b910-2e944ca32842": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/5_160ea451-488c-4e03-baa2-e841b91f263d.webp",
             "text": "<p>Our ebikes equipped with a 1,200 pound spring weight, 180 mm travel rear suspension, manufactured by KSpeed. Our dual suspension system on both the front side and rear side helps you overcome the bumpiness on bad terrains. Your comfort is very important to us!<\/p>"
           }
         },
         "19235fbd-0c60-471d-958f-45687ea19f4c": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/6_fe91773a-baea-4089-949c-fd1abad0d76d.webp",
             "text": "<p>Our ebikes are equipped with dual hydraulic disc brakes, which give you maximum stopping power. With hydraulic disc brakes, the actuation moves both pads towards the rotor at the same time and with even pressure. The most important advantage of hydraulic disc brakes is that they automatically self-adjust as they wear down.<\/p>"
           }
         },
         "37e1a90d-5adc-4a86-9d6b-2d4858a1f42b": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/7_e047cc2e-6021-41a6-9fd1-9c4a04a3b7a3.webp",
             "text": "<p>The backlight LCD display shows you all the key information and status of the ebike, including operation modes, speed, pedal assist level, battery capacity, wattmeter,battery life, odometer, trip odometer, etc.<\/p>"
           }
         },
         "cfc7af4c-07f0-4e60-8830-f0ea4b01d184": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/8_27ac2271-b5e4-423d-8da7-1a65d5098683.webp",
             "text": "<p>With the rear rack installed, you'll be able to carry a bike bag or other gear on the back of your bike, making a bike-packing trip or just simple daily-use more convenient. The fenders are installed both front and rear and help keep your ebike and belongings clean during your ride.<\/p>"
           }
         }
@@ -622,7 +630,8 @@
           "type": "categroy",
           "settings": {
             "cate_name": "Size And Fit",
-            "text": "<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Height<\/div>\n\t\t\t<div>41.5''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Reach<\/div>\n\t\t\t<div>22''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Frame Size<\/div>\n\t\t\t<div>19''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Stand-over Height<\/div>\n\t\t\t<div>31.5''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Length <\/div>\n\t\t\t<div>78''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Wheelbase <\/div>\n\t\t\t<div>49.5''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Tube Length<\/div>\n\t\t\t<div>19''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Top Tube Length<\/div>\n\t\t\t<div>22.8''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Crank Length<\/div>\n\t\t\t<div>170mm(66.9'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Head Tube<\/div>\n\t\t\t<div>6.89''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Chain-stay<\/div>\n\t\t\t<div>19.68''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Width<\/div>\n\t\t\t<div>25.6''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Post  Diameter<\/div>\n\t\t\t<div>31.8mm(10.7'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Height(Minimum - Maximum)<\/div>\n\t\t\t<div>35.5'' - 42.5''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Weight<\/div>\n\t\t\t<div>78 lb (with rear rack, fenders, battery installed)<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Bottom Bracket Height<\/div>\n\t\t\t<div>100mm(39.4'')<\/div>\n\t\t<\/div>\n\t<\/div>"
+            "text": "<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Height<\/div>\n\t\t\t<div>41.5''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Reach<\/div>\n\t\t\t<div>22''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Frame Size<\/div>\n\t\t\t<div>19''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Stand-over Height<\/div>\n\t\t\t<div>31.5''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Length <\/div>\n\t\t\t<div>78''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Wheelbase <\/div>\n\t\t\t<div>49.5''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Tube Length<\/div>\n\t\t\t<div>19''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Top Tube Length<\/div>\n\t\t\t<div>22.8''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Crank Length<\/div>\n\t\t\t<div>170mm(66.9'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Head Tube<\/div>\n\t\t\t<div>6.89''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Chain-stay<\/div>\n\t\t\t<div>19.68''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Width<\/div>\n\t\t\t<div>25.6''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Post  Diameter<\/div>\n\t\t\t<div>31.8mm(10.7'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Height(Minimum - Maximum)<\/div>\n\t\t\t<div>35.5'' - 42.5''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Weight<\/div>\n\t\t\t<div>78 lb (with rear rack, fenders, battery installed)<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Bottom Bracket Height<\/div>\n\t\t\t<div>100mm(39.4'')<\/div>\n\t\t<\/div>\n\t<\/div>",
+            "img": "shopify:\/\/shop_images\/adv_bc7e4fb5-2c47-4e23-a73e-68f6adb8a432.webp"
           }
         },
         "4d8b83aa-ad70-4823-8d3a-0ac863ac563e": {
@@ -657,40 +666,50 @@
           "type": "categroy",
           "settings": {
             "cate_name": "Adventurer Story-1",
-            "cate_title": "<p><\/p>",
-            "cate_text": "<p>I purchased a Bee Adventure in June and liked it so much that I bought two more for work, and had them decaled up. Today, I just bought a Bee Explorer for my wife. There are a few bugs every once in a while with getting the throttle to kick in, but a click of the gears or a few revolutions of the pedals fix that. So far VERY happy with the purchases.——By Matthew<br\/><\/p>"
+            "cate_title": "",
+            "cate_text": "<p>I purchased a Bee Adventure in June and liked it so much that I bought two more for work, and had them decaled up. Today, I just bought a Bee Explorer for my wife. There are a few bugs every once in a while with getting the throttle to kick in, but a click of the gears or a few revolutions of the pedals fix that. So far VERY happy with the purchases.——By Matthew<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/317370313_516121607234621_6546025171675867727_n.webp",
+            "img_mobile": "shopify:\/\/shop_images\/317370313_516121607234621_6546025171675867727_n.webp"
           }
         },
         "60327005-5f70-4026-a9b4-633dd7c7b296": {
           "type": "categroy",
           "settings": {
             "cate_name": "Adventurer Story-2",
-            "cate_title": "<p><\/p>",
-            "cate_text": "<p>Just passed 300 miles on my adventurer. A combination of paved roads, dirt roads and off road trails here in New Hampshire. Some I wasn’t sure I or the bike were able to handle. Well the bike has more capabilities than I have abilities. The more I ride the more confidence I have in my new toy. I love it. I am 75 years old, retired and enjoying life. ——By Ken<br\/><\/p>"
+            "cate_title": "",
+            "cate_text": "<p>Just passed 300 miles on my adventurer. A combination of paved roads, dirt roads and off road trails here in New Hampshire. Some I wasn’t sure I or the bike were able to handle. Well the bike has more capabilities than I have abilities. The more I ride the more confidence I have in my new toy. I love it. I am 75 years old, retired and enjoying life. ——By Ken<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/20221115102746.webp",
+            "img_mobile": "shopify:\/\/shop_images\/20221115102746.webp"
           }
         },
         "7595bb5b-33f5-488f-b32e-9501b618ccc4": {
           "type": "categroy",
           "settings": {
             "cate_name": "Adventurer Story-3",
-            "cate_title": "<p><\/p>",
-            "cate_text": "<p>Best decision I have ever made. So very pleased I did my homework on fat tire ebikes. World class battery, easy to move, comfortable, and worth every penny. The lights, horn, display work perfectly and the bike is very user friendly. Be careful though and wear PPE! Fell off the bike within minutes at a stop I was so excited and couldn't contain my joy over this purchase. HIGHLY RECOMMEND! Most likely will buy a second for the S\/O.——By Kevin<br\/><\/p>"
+            "cate_title": "",
+            "cate_text": "<p>Best decision I have ever made. So very pleased I did my homework on fat tire ebikes. World class battery, easy to move, comfortable, and worth every penny. The lights, horn, display work perfectly and the bike is very user friendly. Be careful though and wear PPE! Fell off the bike within minutes at a stop I was so excited and couldn't contain my joy over this purchase. HIGHLY RECOMMEND! Most likely will buy a second for the S\/O.——By Kevin<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/20221115102750.webp",
+            "img_mobile": "shopify:\/\/shop_images\/20221115102750.webp"
           }
         },
         "c93838ad-87e2-4176-8644-7fd1a994f6c9": {
           "type": "categroy",
           "settings": {
             "cate_name": "Adventurer Story-4",
-            "cate_title": "<p><\/p>",
-            "cate_text": "<p>I honestly can't remember how I got looking into an e-bike. But I started shopping around for one. I did a TON of research, reading, watching videos etc. Wanted the best bang for my buck and it defiantly paid off. I'm 5'10 and 290 lbs give or take how many beers I had over the weekend. But this thing HAULS ass. So much fun.——By Vector<br\/><\/p>"
+            "cate_title": "",
+            "cate_text": "<p>I honestly can't remember how I got looking into an e-bike. But I started shopping around for one. I did a TON of research, reading, watching videos etc. Wanted the best bang for my buck and it defiantly paid off. I'm 5'10 and 290 lbs give or take how many beers I had over the weekend. But this thing HAULS ass. So much fun.——By Vector<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/20221115102753.webp",
+            "img_mobile": "shopify:\/\/shop_images\/20221115102753.webp"
           }
         },
         "dae8343a-3b4d-4fd7-ba3f-302250c36fab": {
           "type": "categroy",
           "settings": {
             "cate_name": "Adventurer Story-5",
-            "cate_title": "<p><\/p>",
-            "cate_text": "<p>I have ridden the bike 400 miles so far with absolutely no issues at all whatsoever. This thing is fantastic. My one complaint would be the rear fender needs to be longer to keep the mud from flying up. Other than that I can’t find anything wrong with it. The seat is super comfortable and has plenty of power to take me anywhere I want to go. I’m a 71 year old man——By Bruce<br\/><\/p>"
+            "cate_title": "",
+            "cate_text": "<p>I have ridden the bike 400 miles so far with absolutely no issues at all whatsoever. This thing is fantastic. My one complaint would be the rear fender needs to be longer to keep the mud from flying up. Other than that I can’t find anything wrong with it. The seat is super comfortable and has plenty of power to take me anywhere I want to go. I’m a 71 year old man——By Bruce<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/20221115102757.webp",
+            "img_mobile": "shopify:\/\/shop_images\/20221115102757.webp"
           }
         }
       },
