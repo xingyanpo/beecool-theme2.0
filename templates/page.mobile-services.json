@@ -125,7 +125,10 @@
         "4a45168e-c746-4fd1-bf07-6ed18e340cce"
       ],
       "settings": {
+        "bg_img_pc": "shopify:\/\/shop_images\/1_f5c63afa-0f4a-45de-8232-0a9024cc67b1.webp",
+        "bg_img_mobile": "shopify:\/\/shop_images\/2_1_915761bb-f744-41d5-b977-82f5ca4d6101.webp",
         "title": "<p>Why<\/p>",
+        "img": "shopify:\/\/shop_images\/6_4dc0f73c-2d47-4c50-9086-bd5aa3dcd9f9.webp",
         "link": "https:\/\/velotooler.com\/create-request",
         "button": "Book Now"
       }
@@ -161,7 +164,9 @@
         "title": "<p>BIKE PASSPORT POWERED BY<\/p>",
         "icon_img": "shopify:\/\/shop_images\/6_4dc0f73c-2d47-4c50-9086-bd5aa3dcd9f9.webp",
         "link": "https:\/\/velotooler.com\/create-request",
-        "button": "Book Now"
+        "button": "Book Now",
+        "img": "shopify:\/\/shop_images\/5_2185d1f7-e1b2-40a4-a425-31836a55ed1e.webp",
+        "img_mobile": "shopify:\/\/shop_images\/2737cda1-b1a8-4267-9dc6-63cb433fbdab.webp"
       }
     },
     "2ced5fb5-414a-4bff-8c7a-d23712fadaef": {
