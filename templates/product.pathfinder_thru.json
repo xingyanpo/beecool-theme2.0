@@ -545,7 +545,9 @@
         "fc10a433-9898-4d0a-b30e-04c1aa35fcb9"
       ],
       "settings": {
+        "bg_img": "shopify:\/\/shop_images\/product-path_thru-battory-pc3.webp",
         "link": "",
+        "bg_imgMobile": "shopify:\/\/shop_images\/product-path_thru-battory-mobile.webp",
         "link_mobile": "",
         "title": "<p>Large Capacity Battery<\/p>",
         "title_mobile": "<p>Large Capacity Battery<\/p>",
