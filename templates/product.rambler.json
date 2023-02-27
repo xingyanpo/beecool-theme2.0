@@ -12,7 +12,7 @@
           "type": "off",
           "settings": {
             "is_can_copy": false,
-            "copy_img": "shopify:\/\/shop_images\/1_3e735aa4-c540-4fd5-a4eb-f72164d1287d.png",
+            "copy_img": "shopify:\/\/shop_images\/1_e96d1659-df6a-41ca-92d6-5f37187826db.webp",
             "title": "Limited Gift",
             "copy_text": "",
             "text": "<p><strong>Buy Any Ebike Product Get 1 Free Cargo Trailer (Limited Amount)<\/strong><\/p>"
@@ -47,16 +47,14 @@
           "settings": {
             "free_gifts_icon": "<svg t=\"1675763361201\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"2852\" width=\"200\" height=\"200\"><path d=\"M847.57 475.078c0 24.279-19.68 43.967-43.967 43.967H221.015c-24.287 0-43.967-19.688-43.967-43.967V352.08c0-24.288 19.68-43.969 43.967-43.969h582.589c24.287 0 43.967 19.681 43.967 43.969v122.998z\" fill=\"#8AC78A\" p-id=\"2853\"><\/path><path d=\"M803.604 543.061H221.015c-37.487 0-67.982-30.496-67.982-67.982V352.08c0-37.487 30.495-67.983 67.982-67.983h582.589c37.487 0 67.982 30.496 67.982 67.983v122.998c0 37.486-30.495 67.983-67.982 67.983zM221.015 332.128c-10.999 0-19.942 8.945-19.942 19.952v122.998c0 10.998 8.943 19.951 19.942 19.951h582.589c10.998 0 19.943-8.953 19.943-19.951V352.08c0-11.007-8.945-19.952-19.943-19.952H221.015z\" fill=\"#363634\" p-id=\"2854\"><\/path><path d=\"M804.567 791.678c0 24.288-19.687 43.975-43.976 43.975H264.025c-24.287 0-43.965-19.687-43.965-43.975v-268.23c51.047-2.085 543.492-0.256 584.507 0v268.23z\" fill=\"#F1CA4E\" p-id=\"2855\"><\/path><path d=\"M760.592 859.67H264.025c-37.486 0-67.991-30.506-67.991-67.992V500.389l23.042-0.942c16.357-0.666 77.563-1.005 181.929-1.005 163.833 0 377.19 0.824 403.72 0.989l23.859 0.148v292.099c0 37.486-30.504 67.992-67.992 67.992zM244.074 546.994v244.684c0 10.998 8.946 19.951 19.951 19.951h496.566c11.008 0 19.96-8.953 19.96-19.951V547.349c-65.716-0.281-240.472-0.866-379.547-0.866-85.789-0.001-132.236 0.222-156.93 0.511z\" fill=\"#3E3A39\" p-id=\"2856\"><\/path><path d=\"M488.288 230.92h48.032v604.732h-48.032z\" fill=\"#363634\" p-id=\"2857\"><\/path><path d=\"M665.271 328.616H512.305c-13.266 0-24.017-10.751-24.017-24.017V187.982c0-3.379 0.719-6.726 2.095-9.811 31.031-69.325 80.506-79.673 107.234-79.673 50.208 0 99.164 34.94 119.041 84.975 19.408 48.84 6.686 99.354-34.897 138.597a24.041 24.041 0 0 1-16.49 6.546z m-128.951-48.04h118.908c29.07-32.005 23.259-63.085 16.785-79.359-12.381-31.173-44.37-54.686-74.396-54.686-25.252 0-46.365 16.15-61.297 46.778v87.267z\" fill=\"#363634\" p-id=\"2858\"><\/path><path d=\"M512.305 328.616H359.348a24.032 24.032 0 0 1-16.489-6.546c-41.584-39.243-54.306-89.757-34.899-138.597 19.877-50.034 68.832-84.975 119.043-84.975 26.719 0 76.193 10.348 107.227 79.673a23.957 23.957 0 0 1 2.092 9.811V304.6c-0.002 13.265-10.751 24.016-24.017 24.016z m-142.916-48.04h118.899V193.31c-14.929-30.628-36.044-46.778-61.286-46.778-30.027 0-62.018 23.513-74.398 54.686-6.473 16.273-12.284 47.353 16.785 79.358z\" fill=\"#363634\" p-id=\"2859\"><\/path><\/svg>",
             "free_gifts_title": "Don't Forget To Add It to Your Cart!",
-            "free_gifts_img_one": "shopify:\/\/shop_images\/1_c473a694-56b1-479f-af35-7e4691919e22.jpg",
+            "free_gifts_img_one": "shopify:\/\/shop_images\/1_b3fa5b96-3c04-4b40-a432-6648c675b9d6.webp",
             "free_gifts_text_one": "Foldable Ebike Cargo Trailer",
             "free_gifts_url_one": "",
             "free_gifts_price_one": "$299",
             "free_gifts_quantity_one": "",
-            "free_gifts_img_two": "shopify:\/\/shop_images\/gift-2.jpg",
             "free_gifts_text_two": "",
             "free_gifts_price_two": "$15.00",
             "free_gifts_quantity_two": "",
-            "free_gifts_img_three": "shopify:\/\/shop_images\/product.jpg",
             "free_gifts_text_three": "",
             "free_gifts_price_three": "$5.00",
             "free_gifts_quantity_three": ""
@@ -76,7 +74,7 @@
           "type": "fedex",
           "settings": {
             "fedex_title": "",
-            "img": "shopify:\/\/shop_images\/1_3d93ff84-9b20-428e-88e3-528a02568e29.png",
+            "img": "shopify:\/\/shop_images\/1_b436971e-90bc-4bb1-ab40-aeea85e665af.webp",
             "fedex_text1": "UPS Ground Free",
             "fedex_svg": "<svg t=\"1668148261596\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"1482\" width=\"32\" height=\"32\"><path d=\"M511.514 63.894c-114.532 0-229.062 43.51-316.72 131.168-174.677 174.676-174.677 458.764 0 633.44 87.658 87.659 202.188 131.168 316.72 131.168s229.063-43.51 316.72-131.168c174.677-174.676 174.677-458.764 0-633.44-87.657-87.659-202.189-131.168-316.72-131.168z m0 44.79c52.467 0 103.654 10.236 151.642 29.432 49.907 20.475 94.695 49.907 133.086 88.937 39.03 38.39 68.463 83.18 88.937 133.086 19.195 47.988 29.433 99.175 29.433 151.642s-10.238 103.654-29.433 151.642c-20.474 49.907-49.907 94.695-88.937 133.086-38.39 39.03-83.18 68.463-133.086 88.937-47.988 19.196-99.175 29.433-151.642 29.433s-103.654-10.237-151.642-29.433c-49.907-20.475-94.696-49.907-133.086-88.937-39.03-38.39-68.463-83.18-88.937-133.086-19.196-47.988-29.433-99.175-29.433-151.642s10.237-103.654 29.433-151.642c20.475-49.907 49.907-94.695 88.937-133.086 38.39-39.03 83.18-68.463 133.086-88.937 47.988-19.196 99.175-29.433 151.642-29.433z\" p-id=\"1483\" fill=\"#151515\"><\/path><path d=\"M511.514 674.3c-18.556 0-34.551 15.356-34.551 34.551 0 18.556 15.996 33.912 34.55 33.912 19.196 0 34.552-15.356 34.552-33.912 0-19.194-15.356-34.55-34.551-34.55z m0.64-393.5c-42.23 0-76.14 10.877-101.734 33.91-25.593 22.395-41.589 55.027-46.707 97.896l58.225 7.039c4.479-31.992 15.356-55.666 31.352-70.382 15.996-15.356 35.83-22.394 59.505-22.394 24.953 0 46.068 8.317 63.344 24.953 16.636 15.996 24.953 35.191 24.953 57.585 0 11.518-2.56 23.035-8.317 33.272-5.758 10.237-18.556 23.674-37.751 40.95-19.835 17.275-33.272 30.073-40.95 39.03-9.597 12.157-17.275 24.314-21.754 36.47-6.399 15.997-9.598 35.192-9.598 56.946l0.64 17.276h53.746c0.64-22.394 1.92-39.03 4.479-48.628 3.199-10.237 7.038-19.195 12.796-26.873 5.758-7.678 17.276-19.834 35.831-35.83 26.873-24.315 45.429-44.79 55.027-61.426 8.958-16.636 14.076-35.191 14.076-55.026 0-34.55-13.437-63.984-40.31-88.298-26.233-24.314-62.064-36.47-106.852-36.47z\" p-id=\"1484\" fill=\"#151515\"><\/path><\/svg>",
             "fedex_text3": "Why UPS",
@@ -243,8 +241,6 @@
     "3390ae76-0e13-40cb-bd28-4b95befdb65a": {
       "type": "describe-video-new",
       "settings": {
-        "img_pc": "shopify:\/\/shop_images\/20221110090859.jpg",
-        "img_mobile": "shopify:\/\/shop_images\/20221110091221.png",
         "top_title": "<p>Introducing Bee Rambler<\/p>",
         "bottom_title": "<p>Your Cute Loyal Servant <br\/>Carry Cargos For A Long Range<\/p>",
         "text2": ""
@@ -288,7 +284,6 @@
           "type": "productImage_scroll",
           "settings": {
             "title": "<p>Fork<\/p>",
-            "img": "shopify:\/\/shop_images\/rambler_fork_new_8e33a50e-fa27-4303-9b71-ab760e05fba5.webp",
             "link": "",
             "right_title": "<p>Fork<\/p>",
             "right_text": "<p>The adjustable hydraulic front fork helps you overcome bumpiness on any road conditions. You are also able to adjust different travel distances or lock the suspension depending on your riding preference.<\/p>"
@@ -298,7 +293,6 @@
           "type": "productImage_scroll",
           "settings": {
             "title": "<p>Rear Suspension<\/p>",
-            "img": "shopify:\/\/shop_images\/rambler4_0145f6a9-4faf-4c19-91af-90225aec0423.webp",
             "link": "",
             "right_title": "<p>Rear Suspension<\/p>",
             "right_text": "<p>The adjustable rear suspension system helps you overcome bumpiness on any terrain.<\/p>"
@@ -308,7 +302,6 @@
           "type": "productImage_scroll",
           "settings": {
             "title": "<p>Foldable Pedals<\/p>",
-            "img": "shopify:\/\/shop_images\/rambler3_79f636eb-a813-4293-8e0d-71919313c6a0.webp",
             "link": "",
             "right_title": "<p>Foldable Pedals<\/p>",
             "right_text": "<p>The pedals are able to fold up. When you are riding under the throttle mode, you are able to put your feet on the sub pedals, which help you ride in a comfortable position. Fold up the main pedals when you don't need them!<\/p>"
@@ -318,7 +311,6 @@
           "type": "productImage_scroll",
           "settings": {
             "title": "<p>Sub Pedals<\/p>",
-            "img": "shopify:\/\/shop_images\/rambler6_04e212b3-3862-49fc-ab0c-e48e97f56c1a.webp",
             "link": "",
             "right_title": "<p>Sub Pedals<\/p>",
             "right_text": "<p>When you are riding under the throttle mode, you are able to put your feet on the sub pedals, which just feels like riding a real motorcycle. The sub pedals help you ride in a comfortable position.<\/p>"
@@ -328,7 +320,6 @@
           "type": "productImage_scroll",
           "settings": {
             "title": "<p>Brakes<\/p>",
-            "img": "shopify:\/\/shop_images\/rambler1_0df0680c-906d-4543-9ea8-77e4209a02ac.webp",
             "link": "",
             "right_title": "<p>Brakes<\/p>",
             "right_text": "<p>Our ebikes are equipped with dual 180mm hydraulic disc brakes, which give you maximum stopping power. With hydraulic disc brakes, the actuation moves both pads towards the rotor at the same time and with even pressure. The most important advantage of hydraulic disc brakes is that they automatically self-adjust as they wear down.<\/p>"
@@ -338,7 +329,6 @@
           "type": "productImage_scroll",
           "settings": {
             "title": "<p>3A Charger<\/p>",
-            "img": "shopify:\/\/shop_images\/rambler_charger_new_36804e4a-6b2b-4551-b1e1-1a50f11d916d.webp",
             "link": "",
             "right_title": "<p>3A Quick Charger<\/p>",
             "right_text": "<p>We have upgraded our charger from 2A Charger to a 3A Quick Charger to save your time for charging and leave you more time on the road. The 3A version charger will help you charge the battery faster and release you from long waiting.<\/p>"
@@ -362,9 +352,7 @@
       "type": "jd-product-video",
       "disabled": true,
       "settings": {
-        "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/aef02f7be3454e4d92a2130c1a465054.mp4",
-        "img": "shopify:\/\/shop_images\/product-video-ram.jpg",
-        "img_mobile": "shopify:\/\/shop_images\/product-video-ram-mobile.jpg"
+        "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/aef02f7be3454e4d92a2130c1a465054.mp4"
       }
     },
     "22bc7331-a83d-46d8-9fa9-4a8fbafd3648": {
@@ -380,7 +368,6 @@
         "f4e04d54-ff7b-41fb-9872-516cb3279ed7": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-1.jpg",
             "youtube_text": "Bee Adventurer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=rFTgW-TgSNU&t=6s"
           }
@@ -388,7 +375,6 @@
         "8f7658e8-91c7-4097-821e-77b039d07484": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-2.jpg",
             "youtube_text": "Bee Pathfinder",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=NJ_c_TEWaPA&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=12"
           }
@@ -396,7 +382,6 @@
         "4af74553-83c5-4193-b2de-65227b0dbcff": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-5.jpg",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=d0BXhAeK2ow&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=8"
           }
@@ -404,7 +389,6 @@
         "a6ca3941-9d23-4433-a863-4b46a04ff6f2": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-4.jpg",
             "youtube_text": "Bee Explorer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=IGS2UmPfSWY&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=9"
           }
@@ -412,7 +396,6 @@
         "572fc3c4-89c3-4452-bc1e-aad21d18533d": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-6.jpg",
             "youtube_text": "Bee Adventurer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=00W7rkkfons&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=11"
           }
@@ -420,7 +403,6 @@
         "16824a5a-27bb-4a78-b9c5-6c567561486d": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-3.jpg",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=QHsKpC0USGk&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=6"
           }
@@ -428,7 +410,6 @@
         "923a23e8-1520-460b-a812-2ec6bcaec53a": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-7.jpg",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=pHzIOF17-fI&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=3&t=278s"
           }
@@ -436,7 +417,6 @@
         "dc589ab1-6527-4206-af09-0a8dac72deeb": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-8.jpg",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=OXDATVpUS7Y&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=2"
           }
@@ -444,7 +424,6 @@
         "3e4920e1-dc29-498a-bcbb-123bf16b4d02": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-9.jpg",
             "youtube_text": "Bee Pathfinder",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=U7Lulxf_j8Y&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=4"
           }
@@ -452,7 +431,6 @@
         "05455b1e-80c6-455c-8062-aa98f874cfdf": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-10.jpg",
             "youtube_text": "Bee Explorer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=HWMxZVU4EdE&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=15"
           }
@@ -502,8 +480,6 @@
       "type": "jd-product-E-shifter2",
       "disabled": true,
       "settings": {
-        "img_pc": "shopify:\/\/shop_images\/3_53469297-c1d1-45be-b455-c4cfe9bc784d.jpg",
-        "img_mobile": "shopify:\/\/shop_images\/4_0ea8b8e3-a9d9-44e1-9c03-62edda5ec1c4.jpg",
         "title": "<p>Hydraulic Disc Brakes<\/p>",
         "text": "<p>Our ebikes are equipped with dual 180mm hydraulic disc brakes, which give you maximum stopping power. With hydraulic disc brakes, the actuation moves both pads towards the rotor at the same time and with even pressure. The most important advantage of hydraulic disc brakes is that they automatically self-adjust as they wear down.<\/p>"
       }
@@ -549,9 +525,7 @@
         "fc10a433-9898-4d0a-b30e-04c1aa35fcb9"
       ],
       "settings": {
-        "bg_img": "shopify:\/\/shop_images\/product-battery-ram.jpg",
         "link": "",
-        "bg_imgMobile": "shopify:\/\/shop_images\/product-battery-ram-mobile.jpg",
         "link_mobile": "",
         "title": "<p>Large Capacity Battery<\/p>",
         "title_mobile": "<p>Large Capacity Battery<\/p>",
@@ -573,56 +547,48 @@
         "2610141a-784a-4917-90c6-1d0cfbe38630": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/rambler_show1_360x_f461628f-5913-4d88-955b-c0e4756a9028.webp",
             "text": "<p>The headlight is bright enough to let you see the road clearly in front of you when riding at nighttime.<\/p>"
           }
         },
         "5325a5d6-d070-4269-a6ec-b2abc0fee863": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/rambler_show2_360x_2c85db78-56bc-42c4-a0ad-f078635e85f8.webp",
             "text": "<p>On the left side of the handlebar, you will find the switch of the turning signal light, the horn button, and the button pad(control the power on\/off, mode switch, pedal assist level, front light, etc.)<\/p>"
           }
         },
         "2ac9a688-bb53-4a8f-8f82-e92a57c7ff87": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/rambler_show3_360x_fbf28663-fe31-4d8e-a0ed-bc07cb3384b8.webp",
             "text": "<p>On the right side of the handlebar, you will find the shifter of the SHIMANO 7-speed gear shift system.<\/p>"
           }
         },
         "d106ac70-4edd-46d2-bc50-eca759aad226": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/rambler_show4_360x_936d7330-1379-43fa-bee9-6a9d9955fd58.webp",
             "text": "<p>The wider bike seat helps a lot with easing the pressure on your body, making bike rides more comfortable.<\/p>"
           }
         },
         "19235fbd-0c60-471d-958f-45687ea19f4c": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/rambler_show5_360x_4ce67e5c-de14-4ab5-800d-8228af45b531.webp",
             "text": "<p>The SHIMANO 7 speed freewheel lets you shift to a larger cog for uphill riding and downshift to a smaller cog for high-speed cycling. During the pedal-assist mode, you can control the speed better with the gear shift system.<\/p>"
           }
         },
         "483a0fad-5d5c-4509-b910-2e944ca32842": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/rambler_show6_360x_f72a2539-acfd-4d88-bd27-f89a1e31975c.webp",
             "text": "<p>The cadence sensor pedal assist helps you ride easily. <br\/>On pedal assist mode, you can save more physical pedal on long-distance cycling.The all-steel chain sprocket provide reliable protection to your chains and better safety when you pedal.<\/p>"
           }
         },
         "37e1a90d-5adc-4a86-9d6b-2d4858a1f42b": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/rambler_show7_360x_efb2d8db-1a3b-4aa2-9462-c73853b8f4fb.webp",
             "text": "<p>The integrated taillight combine with all these functions: <br\/> Night Light (turned on with the front light at the same time),<br\/>Brake Light,<br\/>Water-flow turning Signal Light<\/p>"
           }
         },
         "cfc7af4c-07f0-4e60-8830-f0ea4b01d184": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/rambler_show8_360x_bca6e009-1b20-40e1-8d21-37026f3eadcc.webp",
             "text": "<p>The backlight LCD display shows you all the key information and status of the ebike, including operation modes, speed, pedal assist level, battery capacity, wattmeter,battery life, odometer, trip odometer, etc.<\/p>"
           }
         }
@@ -649,8 +615,7 @@
           "type": "categroy",
           "settings": {
             "cate_name": "Size And Fit",
-            "text": "<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Standover Height<\/div>\n\t\t\t<div>31.4''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Height<\/div>\n\t\t\t<div>34.6''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Width<\/div>\n\t\t\t<div>27.2''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Reach<\/div>\n\t\t\t<div>11.4''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Height<\/div>\n\t\t\t<div>43.3''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Wheelbase <\/div>\n\t\t\t<div>43.5''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Length<\/div>\n\t\t\t<div>65.4''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Length<\/div>\n\t\t\t<div>21.7''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Crank Length<\/div>\n\t\t\t<div>170mm''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Bottom Bracket Height<\/div>\n\t\t\t<div>11''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Chain-stay<\/div>\n\t\t\t<div>20.5''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Head Tube Lenght<\/div>\n\t\t\t<div>4.1<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Front-Center<\/div>\n\t\t\t<div>22.6''<\/div>\n\t\t<\/div>\n\t<\/div>",
-            "img": "shopify:\/\/shop_images\/ram_703aea2a-ef77-49e4-88fc-8010dbe64dfe.png"
+            "text": "<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Standover Height<\/div>\n\t\t\t<div>31.4''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Height<\/div>\n\t\t\t<div>34.6''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Width<\/div>\n\t\t\t<div>27.2''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Reach<\/div>\n\t\t\t<div>11.4''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Height<\/div>\n\t\t\t<div>43.3''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Wheelbase <\/div>\n\t\t\t<div>43.5''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Length<\/div>\n\t\t\t<div>65.4''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Length<\/div>\n\t\t\t<div>21.7''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Crank Length<\/div>\n\t\t\t<div>170mm''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Bottom Bracket Height<\/div>\n\t\t\t<div>11''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Chain-stay<\/div>\n\t\t\t<div>20.5''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Head Tube Lenght<\/div>\n\t\t\t<div>4.1<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Front-Center<\/div>\n\t\t\t<div>22.6''<\/div>\n\t\t<\/div>\n\t<\/div>"
           }
         },
         "4d8b83aa-ad70-4823-8d3a-0ac863ac563e": {
@@ -686,9 +651,7 @@
           "settings": {
             "cate_name": "Rambler Story-1",
             "cate_title": "",
-            "cate_text": "<p>I bought it just less than 2 weeks ago I have ridden 4 times Lots of hills here in the central Sierra of Ca I love the bike It’s capable of going anywhere I can ride And so far no issues I am looking at one for my wife——By David<br\/><\/p>",
-            "img": "shopify:\/\/shop_images\/ram5.jpg",
-            "img_mobile": "shopify:\/\/shop_images\/ram5.jpg"
+            "cate_text": "<p>I bought it just less than 2 weeks ago I have ridden 4 times Lots of hills here in the central Sierra of Ca I love the bike It’s capable of going anywhere I can ride And so far no issues I am looking at one for my wife——By David<br\/><\/p>"
           }
         },
         "f42b426d-eeb0-41fb-991b-a7a1645ff16e": {
@@ -696,9 +659,7 @@
           "settings": {
             "cate_name": "Rambler Story-2",
             "cate_title": "",
-            "cate_text": "<p>Amazingly quick delivery. Ordered on Monday, Fedex delivered it 4 days later. Will assemble it and test ride tomorrow, looks to be as good of quality fabrication and components as other bikes I've looked at in stores that were 3 and 4 times the price.——By Thomas<br\/><\/p>",
-            "img": "shopify:\/\/shop_images\/ram2.jpg",
-            "img_mobile": "shopify:\/\/shop_images\/ram2.jpg"
+            "cate_text": "<p>Amazingly quick delivery. Ordered on Monday, Fedex delivered it 4 days later. Will assemble it and test ride tomorrow, looks to be as good of quality fabrication and components as other bikes I've looked at in stores that were 3 and 4 times the price.——By Thomas<br\/><\/p>"
           }
         },
         "4c2daef3-f4fb-46b5-aaa4-933b043d66c8": {
@@ -706,9 +667,7 @@
           "settings": {
             "cate_name": "Rambler Story-3",
             "cate_title": "",
-            "cate_text": "<p>Well worth the wait, arrived Monday, well packaged, very easy to assemble, the 4\" tires really grip well in wet snowy conditions, all the mechanical, electronic components operate very smooth through transitions, many thanks to the folks at Beecool for offering such a great product at a reasonable price,...——By Jon<br\/><\/p>",
-            "img": "shopify:\/\/shop_images\/ram4.jpg",
-            "img_mobile": "shopify:\/\/shop_images\/ram4.jpg"
+            "cate_text": "<p>Well worth the wait, arrived Monday, well packaged, very easy to assemble, the 4\" tires really grip well in wet snowy conditions, all the mechanical, electronic components operate very smooth through transitions, many thanks to the folks at Beecool for offering such a great product at a reasonable price,...——By Jon<br\/><\/p>"
           }
         },
         "03a7e7b8-addd-45e3-834c-5a5ed4c1bd79": {
@@ -716,9 +675,7 @@
           "settings": {
             "cate_name": "Rambler Story-4",
             "cate_title": "",
-            "cate_text": "<p>Wow. Ordered 1\/2 and arrived 1\/16 in perfect condition. Took about an hour to put it together (no hurry). Fantastic bike. Very well built with all the bells and whistles. I researched a loooong time and kept coming back to this one. Best deal around——By Jeff<br\/><\/p>",
-            "img": "shopify:\/\/shop_images\/ram3.jpg",
-            "img_mobile": "shopify:\/\/shop_images\/ram3.jpg"
+            "cate_text": "<p>Wow. Ordered 1\/2 and arrived 1\/16 in perfect condition. Took about an hour to put it together (no hurry). Fantastic bike. Very well built with all the bells and whistles. I researched a loooong time and kept coming back to this one. Best deal around——By Jeff<br\/><\/p>"
           }
         },
         "7c4eac06-397c-4171-86d5-fe661d185134": {
@@ -726,9 +683,7 @@
           "settings": {
             "cate_name": "Rambler Story-5",
             "cate_title": "",
-            "cate_text": "<p>Me and my buddy’s riding our life’s away….from the city to the back country loving the BEE. Went for a ride with my buddy to test her out …. Aces 😎 put 30 miles on her and she was flawless on the steep hills …. Just drop her down in a low gear and cruise up them ….Big shout out to JAZZER in customer service Thank you now to test how well she holds up …. I’m pretty hard on my toys…——By Mike<br\/><\/p>",
-            "img": "shopify:\/\/shop_images\/ram1.jpg",
-            "img_mobile": "shopify:\/\/shop_images\/ram1.jpg"
+            "cate_text": "<p>Me and my buddy’s riding our life’s away….from the city to the back country loving the BEE. Went for a ride with my buddy to test her out …. Aces 😎 put 30 miles on her and she was flawless on the steep hills …. Just drop her down in a low gear and cruise up them ….Big shout out to JAZZER in customer service Thank you now to test how well she holds up …. I’m pretty hard on my toys…——By Mike<br\/><\/p>"
           }
         }
       },
@@ -802,7 +757,6 @@
         "c94e8583-35ea-4865-8cc4-a9ffc115ff35": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
             "title": "Free Shipping ",
             "subtitle": "<p>No need to worry about the shipping cost, we'll take care of it<\/p>"
           }
@@ -810,7 +764,6 @@
         "c26b415d-c625-44cb-9ed4-04e7c0bf398a": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
             "title": "2-Year Warranty",
             "subtitle": "<p>Get a 2-year manufacturer's warranty automatically after purchase<\/p>"
           }
@@ -818,7 +771,6 @@
         "cc0b0942-10cf-4bd9-a14f-5a6b610b381f": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
             "title": "Secure Payment",
             "subtitle": "<p>Secure payment with Shopify<\/p>"
           }
@@ -826,7 +778,6 @@
         "5cbddc1f-d74c-4f8c-9402-b9c644a1f677": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
             "title": "Cost-effective",
             "subtitle": "<p>Direct to consumer pricing<\/p>"
           }
