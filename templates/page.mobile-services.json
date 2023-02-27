@@ -97,6 +97,7 @@
         "74566540-75fb-4420-81a5-19044e41806c": {
           "type": "mobileServices_Why",
           "settings": {
+            "img": "shopify:\/\/shop_images\/2_6b4bb61d-752c-406d-bf3a-2b0b18219f2d.webp",
             "title": "<p>Widest Coverage Area<\/p>",
             "text": "<p>Velotooler has a network of over 170 service providers and we are adding two a week, on average. This network includes coverage in 32 states and allows us to serve 25% of all residential zip codes (over 8,000 zip codes).<\/p>"
           }
@@ -104,6 +105,7 @@
         "9e6fab09-4931-40e2-84fd-4a6b0684af66": {
           "type": "mobileServices_Why",
           "settings": {
+            "img": "shopify:\/\/shop_images\/3_36d593ad-e949-409f-9506-a7c333a76b68.webp",
             "title": "<p>Excellent Customer Service<\/p>",
             "text": "<p>Your success is our success. If the customer is not happy we will return and resolve the issue. Our work is guaranteed and we ask customer to rate our mechanics on five factors so we can ensure we continue to raise the bar on service.<\/p>"
           }
@@ -111,6 +113,7 @@
         "4a45168e-c746-4fd1-bf07-6ed18e340cce": {
           "type": "mobileServices_Why",
           "settings": {
+            "img": "shopify:\/\/shop_images\/4_48577b45-8866-4d1c-8e4f-9a606b923f91.webp",
             "title": "<p>Reasonable Price<\/p>",
             "text": "<p>Never need to worry about higher bill. Velotoolers always offer customers a reasonalble price. Moreever, you only pay if you are satisfied with the service. Our goal is to creat win-win opportunities between customers and mechanics.<\/p>"
           }
@@ -156,6 +159,7 @@
       ],
       "settings": {
         "title": "<p>BIKE PASSPORT POWERED BY<\/p>",
+        "icon_img": "shopify:\/\/shop_images\/6_4dc0f73c-2d47-4c50-9086-bd5aa3dcd9f9.webp",
         "link": "https:\/\/velotooler.com\/create-request",
         "button": "Book Now"
       }
