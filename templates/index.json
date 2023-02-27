@@ -93,6 +93,8 @@
         "87047e1f-ec91-45f8-8329-3ed9a14b0e78": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/banner-path-pc_5eeb74da-e9ac-44fe-848f-0b10d622c8c8.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/path-mobile_2b1d183c-cf84-4f12-9901-66abcec19abf.jpg",
             "text_position": "bottom_right",
             "subheading": "Your Well-Equipped Off-Road Mate",
             "title": "Bee Pathfinder",
