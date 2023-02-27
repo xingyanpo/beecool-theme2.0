@@ -265,6 +265,8 @@
     "689a85e5-2663-419a-a197-1559ee4636dd": {
       "type": "describe-video-new",
       "settings": {
+        "img_pc": "shopify:\/\/shop_images\/DSC9347.webp",
+        "img_mobile": "shopify:\/\/shop_images\/DSC9359.webp",
         "top_title": "<p>Introducing Bee Pathfinder Step-thru<\/p>",
         "bottom_title": "<p>Lower Step-thru Height Give More Chance For More Riders<\/p>",
         "text2": ""
