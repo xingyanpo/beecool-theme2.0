@@ -115,6 +115,8 @@
         "4bbf498b-4bd8-4cc6-9389-377c96789716": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/path-thru_9b1b7ef4-206a-45ba-ae0a-29dc396b6441.webp",
+            "mobile_image": "shopify:\/\/shop_images\/path-thru_-mobile.webp",
             "text_position": "bottom_right",
             "subheading": "Easy On, Easy Go",
             "title": "Bee Pathfinder Step-Thru",
