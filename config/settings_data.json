@@ -374,7 +374,7 @@
           "empty_button_link": "shopify:\/\/collections\/all",
           "show_recommendations": true,
           "recommendations_title": "Related Accessories",
-          "collection": "accessories"
+          "collection": "all-accessories"
         }
       },
       "static-text-with-icons": {
