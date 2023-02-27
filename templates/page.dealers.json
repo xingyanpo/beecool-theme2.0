@@ -89,7 +89,7 @@
         "55061643-3906-4272-b74c-b574cbb01f9c": {
           "type": "dealers_bottom",
           "settings": {
-            "img": "shopify:\/\/shop_images\/1_2918fd7d-577b-4cdf-b56e-8c6dc2e08f7b.png",
+            "img": "shopify:\/\/shop_images\/1_2918fd7d-577b-4cdf-b56e-8c6dc2e08f7b.webp",
             "text": "<p>Welcome to partner with us<br\/>Become our dealer!<\/p>",
             "button": "JOIN NOW",
             "link": "shopify:\/\/pages\/join-our-offline-network"
@@ -98,10 +98,10 @@
         "ac3d3320-10be-4fe1-84dc-795bb866f4fe": {
           "type": "dealers_bottom",
           "settings": {
-            "img": "shopify:\/\/shop_images\/2_4e35e6e5-1bff-4fa0-a9ec-1cec7cdd1eab.png",
+            "img": "shopify:\/\/shop_images\/2_4e35e6e5-1bff-4fa0-a9ec-1cec7cdd1eab.webp",
             "text": "<p>Want to get your dream BeeCool bike right now?<br\/>Shop online and it will be delivered to your door with no shipping fee!<\/p>",
             "button": "BUY NOW",
-            "link": "shopify:\/\/collections\/ebike"
+            "link": "shopify:\/\/collections\/all-e-bikes"
           }
         }
       },
