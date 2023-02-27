@@ -49,6 +49,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/banner-path-pc_5eeb74da-e9ac-44fe-848f-0b10d622c8c8.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/adv-1123-mobile_0a17f181-1dc1-4c99-b50e-16301921dae8.webp",
             "text_position": "bottom_right",
             "subheading": "Unlock Your Adventures Anywhere",
             "title": "Bee Adventurer",
