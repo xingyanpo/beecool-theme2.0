@@ -313,7 +313,15 @@
             "type": "pay_img_icon",
             "settings": {
               "copyright": "<p> © 2022 Beecool Bikes Disclaimer | Cookie Policy<\/p>",
-              "copyright_color": "#e9eaec"
+              "copyright_color": "#e9eaec",
+              "pay_img": "shopify:\/\/shop_images\/01_eb0a134c-33b6-4e41-a8a0-fa07443ffe16.webp",
+              "pay_img2": "shopify:\/\/shop_images\/02_209793a0-c4ce-4cd7-a352-acbd96513441.webp",
+              "pay_img3": "shopify:\/\/shop_images\/04_305c6d4b-2e20-4f9a-ac00-0aa780604cdb.webp",
+              "pay_img4": "shopify:\/\/shop_images\/03_bbdb56e1-46ed-49a2-8923-44e826084baf.webp",
+              "pay_img5": "shopify:\/\/shop_images\/05_0ee01766-eb56-41de-9832-8ed83ce5f57c.webp",
+              "pay_img6": "shopify:\/\/shop_images\/06_508f36cd-31f8-4765-a6a3-a5e1d696aab5.webp",
+              "pay_img7": "shopify:\/\/shop_images\/08_e7c667f2-53ec-4c52-9a98-e9a5572dbc3d.webp",
+              "pay_img8": "shopify:\/\/shop_images\/07_4687831d-a088-4841-ac2a-3642ca921b4d.webp"
             }
           }
         },
