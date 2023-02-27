@@ -304,6 +304,7 @@
           "type": "productImage_scroll",
           "settings": {
             "title": "<p>Rear Suspension<\/p>",
+            "img": "shopify:\/\/shop_images\/challenger_2_88b8c4cd-f6fb-4d48-b7da-c6e6eec90de1.webp",
             "link": "",
             "right_title": "<p>Dual Rear Suspension<\/p>",
             "right_text": "<p>This is our only bike equipped with double rear suspensions. The dual rear suspension system helps you overcome bumpiness on any terrain.<\/p>"
@@ -313,6 +314,7 @@
           "type": "productImage_scroll",
           "settings": {
             "title": "<p>Brake<\/p>",
+            "img": "shopify:\/\/shop_images\/challenger_3_b40f4b7d-a9fa-4b12-9f2c-1f09055d7657.webp",
             "link": "",
             "right_title": "<p>Disc brakes<\/p>",
             "right_text": "<p>Our ebikes are equipped with dual 180mm hydraulic disc brakes, which give you maximum stopping power. With hydraulic disc brakes, the actuation moves both pads towards the rotor at the same time and with even pressure. The most important advantage of hydraulic disc brakes is that they automatically self-adjust as they wear down.<\/p>"
@@ -322,6 +324,7 @@
           "type": "productImage_scroll",
           "settings": {
             "title": "<p>Fork<\/p>",
+            "img": "shopify:\/\/shop_images\/challeger_fork_new_fb6ebb63-c8d1-41e5-9615-5f5b6bc4febc.webp",
             "link": "",
             "right_title": "<p>Fork<\/p>",
             "right_text": "<p>Bee Challenger is equipped with an advanced double-shoulder hydraulic front fork, which helps you overcome bumpiness on any road conditions.<\/p>"
@@ -331,6 +334,7 @@
           "type": "productImage_scroll",
           "settings": {
             "title": "<p>3A Charger<\/p>",
+            "img": "shopify:\/\/shop_images\/challenger_charger_e8c3ab57-6b29-4d53-bc26-3c6cb667355e.webp",
             "link": "",
             "right_title": "<p>3A Quick Charger<\/p>",
             "right_text": "<p>We have upgraded our charger from 2A Charger to a 3A Quick Charger to save your time for charging and leave you more time on the road. The 3A version charger will help you charge the battery faster and release you from long waiting.<\/p>"
