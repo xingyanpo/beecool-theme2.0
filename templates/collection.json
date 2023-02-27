@@ -21,8 +21,8 @@
         "text": "",
         "link": "",
         "link2": "",
-        "img_banner": "shopify:\/\/shop_images\/1_4999c611-c368-46c6-8981-dc5daf93e162.png",
-        "img_bannerMobile": "shopify:\/\/shop_images\/1_4999c611-c368-46c6-8981-dc5daf93e162.png"
+        "img_banner": "shopify:\/\/shop_images\/1_4999c611-c368-46c6-8981-dc5daf93e162.webp",
+        "img_bannerMobile": "shopify:\/\/shop_images\/1_4999c611-c368-46c6-8981-dc5daf93e162_1.webp"
       }
     },
     "main": {
@@ -135,7 +135,6 @@
         "f232ac90-1c18-4bcf-ab2a-71d172d93d1b": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
             "title": "Free Shipping",
             "subtitle": "<p>No need to worry about the shipping cost, we'll take care of it<\/p>"
           }
@@ -143,7 +142,6 @@
         "82667139-54a5-4537-8240-ea001bbd3c94": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
             "title": "2-Year Warranty",
             "subtitle": "<p>Get a 2-year manufacturer's warranty automatically after purchase<br\/><\/p>"
           }
@@ -151,7 +149,6 @@
         "ebcfb7ef-588d-4638-a326-8b8d4439d40f": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
             "title": "14-Day Trial",
             "subtitle": "<p>Don't like the bikes? It's OK, we accept return within 14 days<\/p>"
           }
@@ -159,7 +156,6 @@
         "f55be608-6b09-4280-adae-1642b0ec9f03": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
             "title": "Cool Features",
             "subtitle": "<p>Powerful battery and motor + Dual suspension + Dual hydraulic, disc brake<\/p>"
           }
