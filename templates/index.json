@@ -137,6 +137,8 @@
         "8c56fdb2-0f31-4b14-b3d7-8c7e8414a9d3": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/cha-pc.webp",
+            "mobile_image": "shopify:\/\/shop_images\/cha-mobile.webp",
             "text_position": "bottom_right",
             "subheading": "Ultra Powerful and Durable Beast",
             "title": "Bee Challenger",
