@@ -159,6 +159,8 @@
         "ffc80f47-2377-45a9-a47b-079d40dc79e1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/1_2_22cf18e8-b54f-4e65-8c80-b3546a4cd0cd.webp",
+            "mobile_image": "shopify:\/\/shop_images\/rambler.webp",
             "text_position": "bottom_right",
             "subheading": "Pure Cruising Pleasure",
             "title": "Bee Rambler",
