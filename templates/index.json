@@ -203,6 +203,8 @@
         "e2ea166b-bcfc-4181-af46-b33b3d3bcdb2": {
           "type": "product",
           "settings": {
+            "img_bike": "shopify:\/\/shop_images\/adv-index-swiper.webp",
+            "img": "shopify:\/\/shop_images\/index1-adv.webp",
             "product": "bee-adventurer",
             "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/673b3343d9594d41857d3abf8d9701c9.mp4",
             "link": "shopify:\/\/products\/bee-adventurer"
