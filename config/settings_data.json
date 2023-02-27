@@ -54,7 +54,7 @@
     "social_reddit": "https:\/\/www.reddit.com\/user\/beecoolbikes",
     "social_line": "",
     "social_spotify": "",
-    "favicon": "shopify:\/\/shop_images\/20210511151734_256x256_d07b4f36-08c9-4bfa-a228-54363458b377.jpg",
+    "favicon": "shopify:\/\/shop_images\/20210511151734_256x256_256x256_5707cb83-12fe-41b1-8ab8-cf905444e429.webp",
     "checkout_header_image": "shopify:\/\/shop_images\/a84kw-h5jd0.jpg",
     "checkout_logo_image": "shopify:\/\/shop_images\/1_063282b4-6921-455a-9529-948edd7ab276.png",
     "checkout_logo_position": "left",
@@ -208,6 +208,8 @@
           "e3ad65c1-09ad-4fd0-9c91-6b85c8176f31"
         ],
         "settings": {
+          "logo": "shopify:\/\/shop_images\/LOGO_256x256_355a8d08-aa7c-4f3a-9df9-6627fdd5278c.webp",
+          "sticky_img": "shopify:\/\/shop_images\/LOGO-2_256x256_73ec2b1a-83ea-4b7e-8cf3-3d6412b989a7.webp",
           "logo_max_width": 275,
           "mobile_logo_max_width": 190,
           "navigation_menu": "main-menu",
