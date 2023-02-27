@@ -749,8 +749,10 @@
         "3bafd764-b442-4ada-9514-66a49050f2b8"
       ],
       "settings": {
+        "bg": "shopify:\/\/shop_images\/45e9946fa8d4cc7544ebc90c83cf9943.webp",
         "title": "Customer Review",
         "link": "shopify:\/\/pages\/comment",
+        "img": "shopify:\/\/shop_images\/1_83cb014e-75c1-461f-8d85-9eb78cc32d42.webp",
         "number": "4.9"
       }
     },
