@@ -617,7 +617,8 @@
           "type": "categroy",
           "settings": {
             "cate_name": "Size and Fit",
-            "text": "<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Height<\/div>\n\t\t\t<div>41.5''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Reach<\/div>\n\t\t\t<div>22''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Frame Size<\/div>\n\t\t\t<div>17''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Stand-over Height<\/div>\n\t\t\t<div>28''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Length <\/div>\n\t\t\t<div>78''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Wheelbase <\/div>\n\t\t\t<div>47.6''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Tube Length<\/div>\n\t\t\t<div>17.7''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Top Tube Length<\/div>\n\t\t\t<div>22.4''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Crank Length<\/div>\n\t\t\t<div>170mm(66.9'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Head Tube<\/div>\n\t\t\t<div>6.89''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Chain-stay<\/div>\n\t\t\t<div>19.68''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Width<\/div>\n\t\t\t<div>25.1''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Post  Diameter<\/div>\n\t\t\t<div>31.8mm(10.7'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Height(Minimum - Maximum)<\/div>\n\t\t\t<div>34''-41''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Weight<\/div>\n\t\t\t<div>78 lb (with rear rack, fenders, battery installed)<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Bottom Bracket Height<\/div>\n\t\t\t<div>100mm(39.4'')<\/div>\n\t\t<\/div>\n\t<\/div>"
+            "text": "<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Height<\/div>\n\t\t\t<div>41.5''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Reach<\/div>\n\t\t\t<div>22''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Frame Size<\/div>\n\t\t\t<div>17''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Stand-over Height<\/div>\n\t\t\t<div>28''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Length <\/div>\n\t\t\t<div>78''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Wheelbase <\/div>\n\t\t\t<div>47.6''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Tube Length<\/div>\n\t\t\t<div>17.7''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Top Tube Length<\/div>\n\t\t\t<div>22.4''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Crank Length<\/div>\n\t\t\t<div>170mm(66.9'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Head Tube<\/div>\n\t\t\t<div>6.89''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Chain-stay<\/div>\n\t\t\t<div>19.68''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Width<\/div>\n\t\t\t<div>25.1''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Post  Diameter<\/div>\n\t\t\t<div>31.8mm(10.7'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Height(Minimum - Maximum)<\/div>\n\t\t\t<div>34''-41''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Weight<\/div>\n\t\t\t<div>78 lb (with rear rack, fenders, battery installed)<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Bottom Bracket Height<\/div>\n\t\t\t<div>100mm(39.4'')<\/div>\n\t\t<\/div>\n\t<\/div>",
+            "img": "shopify:\/\/shop_images\/exp_36a53549-4003-4ff8-94b9-5cdaddfda769.webp"
           }
         },
         "4d8b83aa-ad70-4823-8d3a-0ac863ac563e": {
@@ -653,39 +654,49 @@
           "settings": {
             "cate_name": "Explorer Story-1",
             "cate_title": "",
-            "cate_text": "<p>I bought this Beecool Explorer in late July and was delivered in August 12th after I called and switch the color to Red instead of Orange because it's a stock item. I had a minor issue with the code 02 after installation. The customer service advised that I needed to adjust the screw on the break lever of the one that affected which I did and it worked. I am very happy with the Red color and the performance of the Beecool Explorer.  ——By Do V Nguyen<br\/><\/p>"
+            "cate_text": "<p>I bought this Beecool Explorer in late July and was delivered in August 12th after I called and switch the color to Red instead of Orange because it's a stock item. I had a minor issue with the code 02 after installation. The customer service advised that I needed to adjust the screw on the break lever of the one that affected which I did and it worked. I am very happy with the Red color and the performance of the Beecool Explorer.  ——By Do V Nguyen<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/20221115103429.webp",
+            "img_mobile": "shopify:\/\/shop_images\/20221115103429.webp"
           }
         },
         "05388846-0158-460e-aef3-eb9325b31648": {
           "type": "categroy",
           "settings": {
             "cate_name": "Explorer Story-2",
-            "cate_title": "<p><\/p>",
-            "cate_text": "<p>First time in the deep woods. Only game trails to follow we had to bump over a lot of logs I never would have on my MTB. We pedal the whole way but got stuck in a ravine I had to walk out and I just feathered the throttle a bit And you can walk anywhere since you don’t have to push the bike ever.——By Jim<br\/><br\/><br\/><\/p>"
+            "cate_title": "",
+            "cate_text": "<p>First time in the deep woods. Only game trails to follow we had to bump over a lot of logs I never would have on my MTB. We pedal the whole way but got stuck in a ravine I had to walk out and I just feathered the throttle a bit And you can walk anywhere since you don’t have to push the bike ever.——By Jim<br\/><br\/><br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/20221115103433.webp",
+            "img_mobile": "shopify:\/\/shop_images\/20221115103433.webp"
           }
         },
         "05b54a45-48da-4cf6-a9e3-1eb21d9811ee": {
           "type": "categroy",
           "settings": {
             "cate_name": "Explorer Story-3",
-            "cate_title": "<p><\/p>",
-            "cate_text": "<p>Received the bike on time in perfect condition. This ebike is a game changer for me. I live in the mountains and bicycling had become too difficult. Now I can continue to get the pain free exercise I need with help when I need it. The Explorer was the right choice for me with my 28” inseam. It does everything I’d hoped it would do for me. I am excited to bicycle again! ——By Tim Tokarsky<br\/><\/p>"
+            "cate_title": "",
+            "cate_text": "<p>Received the bike on time in perfect condition. This ebike is a game changer for me. I live in the mountains and bicycling had become too difficult. Now I can continue to get the pain free exercise I need with help when I need it. The Explorer was the right choice for me with my 28” inseam. It does everything I’d hoped it would do for me. I am excited to bicycle again! ——By Tim Tokarsky<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/9cee9744864d7991209b809102ab09a.webp",
+            "img_mobile": "shopify:\/\/shop_images\/9cee9744864d7991209b809102ab09a.webp"
           }
         },
         "89916b69-1849-4ade-a02a-22d9dbaf4dab": {
           "type": "categroy",
           "settings": {
             "cate_name": "Explorer Story-4",
-            "cate_title": "<p><\/p>",
-            "cate_text": "<p>Beautiful bikes I've ever had! The step-through height is just perfect for me. The fat tires and orange finish look very cool, and the bike is very steady and powerful. Wait about 1 month to get it, but it is worth it.——By Liz<br\/><\/p>"
+            "cate_title": "",
+            "cate_text": "<p>Beautiful bikes I've ever had! The step-through height is just perfect for me. The fat tires and orange finish look very cool, and the bike is very steady and powerful. Wait about 1 month to get it, but it is worth it.——By Liz<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/d220f8961c2c128163b257f4b16cdf9.webp",
+            "img_mobile": "shopify:\/\/shop_images\/d220f8961c2c128163b257f4b16cdf9.webp"
           }
         },
         "62c27adf-4366-4855-9065-6b0f31c42408": {
           "type": "categroy",
           "settings": {
             "cate_name": "Explorer Story-5",
-            "cate_title": "<p><\/p>",
-            "cate_text": "<p>Took a while to remove the rear rack. since I don't need it on the bike trail. Love the look without the rack and fenders. It's very beautiful! Thinking of buying a black one.——By Eli<br\/><\/p>"
+            "cate_title": "",
+            "cate_text": "<p>Took a while to remove the rear rack. since I don't need it on the bike trail. Love the look without the rack and fenders. It's very beautiful! Thinking of buying a black one.——By Eli<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/906da10ae2caffea8e74a6a004cdc4f.webp",
+            "img_mobile": "shopify:\/\/shop_images\/906da10ae2caffea8e74a6a004cdc4f.webp"
           }
         }
       },
