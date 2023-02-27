@@ -140,11 +140,11 @@
               "description": "<p>Ride with peace of mind - discover <br\/>the right accessories for your bike model.<\/p>",
               "buttonText": "Shop All Accessories",
               "buttonLink": "shopify:\/\/collections\/accessories",
-              "collection": "accessories",
+              "collection": "all-accessories",
               "collection2": "basic-equipment",
-              "collection3": "replacement-parts-1",
+              "collection3": "replacement-parts",
               "collection4": "upgrades",
-              "collection5": "special-tickets",
+              "collection5": "gift-cards-tickets",
               "collection6": ""
             }
           },
