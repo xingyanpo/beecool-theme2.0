@@ -800,6 +800,7 @@
         "f4e04d54-ff7b-41fb-9872-516cb3279ed7": {
           "type": "image",
           "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-1.webp",
             "youtube_text": "Bee Adventurer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=rFTgW-TgSNU&t=6s"
           }
@@ -807,6 +808,7 @@
         "8f7658e8-91c7-4097-821e-77b039d07484": {
           "type": "image",
           "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-2.webp",
             "youtube_text": "Bee Pathfinder",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=NJ_c_TEWaPA&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=12"
           }
@@ -814,6 +816,7 @@
         "4af74553-83c5-4193-b2de-65227b0dbcff": {
           "type": "image",
           "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-5.webp",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=d0BXhAeK2ow&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=8"
           }
@@ -821,6 +824,7 @@
         "a6ca3941-9d23-4433-a863-4b46a04ff6f2": {
           "type": "image",
           "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-4.webp",
             "youtube_text": "Bee Explorer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=IGS2UmPfSWY&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=9"
           }
@@ -828,6 +832,7 @@
         "572fc3c4-89c3-4452-bc1e-aad21d18533d": {
           "type": "image",
           "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-6.webp",
             "youtube_text": "Bee Adventurer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=00W7rkkfons&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=11"
           }
@@ -835,6 +840,7 @@
         "16824a5a-27bb-4a78-b9c5-6c567561486d": {
           "type": "image",
           "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-3.webp",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=QHsKpC0USGk&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=6"
           }
@@ -842,6 +848,7 @@
         "923a23e8-1520-460b-a812-2ec6bcaec53a": {
           "type": "image",
           "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-7.webp",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=pHzIOF17-fI&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=3&t=278s"
           }
@@ -849,6 +856,7 @@
         "dc589ab1-6527-4206-af09-0a8dac72deeb": {
           "type": "image",
           "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-8.webp",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=OXDATVpUS7Y&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=2"
           }
@@ -856,6 +864,7 @@
         "3e4920e1-dc29-498a-bcbb-123bf16b4d02": {
           "type": "image",
           "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-9.webp",
             "youtube_text": "Bee Pathfinder",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=U7Lulxf_j8Y&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=4"
           }
@@ -863,6 +872,7 @@
         "05455b1e-80c6-455c-8062-aa98f874cfdf": {
           "type": "image",
           "settings": {
+            "youtube_logo": "shopify:\/\/shop_images\/logo-10.webp",
             "youtube_text": "Bee Explorer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=HWMxZVU4EdE&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=15"
           }
