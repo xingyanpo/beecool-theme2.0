@@ -645,7 +645,8 @@
           "type": "categroy",
           "settings": {
             "cate_name": "Size and Fit",
-            "text": "<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Height<\/div>\n\t\t\t<div>47.2''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Reach<\/div>\n\t\t\t<div>20.1''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Frame Size<\/div>\n\t\t\t<div>17''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Stand-over Height<\/div>\n\t\t\t<div>21.1''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Length <\/div>\n\t\t\t<div>76''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Wheelbase <\/div>\n\t\t\t<div>48.1''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Tube Length<\/div>\n\t\t\t<div>17''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Top Tube Length<\/div>\n\t\t\t<div>22.8''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Crank Length<\/div>\n\t\t\t<div>170mm(66.9'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Head Tube<\/div>\n\t\t\t<div>5.9''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Chain-stay<\/div>\n\t\t\t<div>19.68''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Width<\/div>\n\t\t\t<div>25.2''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Post  Diameter<\/div>\n\t\t\t<div>31.6mm(12.5'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Height(Minimum - Maximum)<\/div>\n\t\t\t<div>35''-40.5''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Weight<\/div>\n\t\t\t<div>81.5 lb (with rear rack, fenders, battery installed)<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Bottom Bracket Height<\/div>\n\t\t\t<div>100mm(39.4'')<\/div>\n\t\t<\/div>\n\t<\/div>"
+            "text": "<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Height<\/div>\n\t\t\t<div>47.2''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Reach<\/div>\n\t\t\t<div>20.1''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Frame Size<\/div>\n\t\t\t<div>17''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Stand-over Height<\/div>\n\t\t\t<div>21.1''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Length <\/div>\n\t\t\t<div>76''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Wheelbase <\/div>\n\t\t\t<div>48.1''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Tube Length<\/div>\n\t\t\t<div>17''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Top Tube Length<\/div>\n\t\t\t<div>22.8''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Crank Length<\/div>\n\t\t\t<div>170mm(66.9'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Head Tube<\/div>\n\t\t\t<div>5.9''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Chain-stay<\/div>\n\t\t\t<div>19.68''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Width<\/div>\n\t\t\t<div>25.2''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Post  Diameter<\/div>\n\t\t\t<div>31.6mm(12.5'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Height(Minimum - Maximum)<\/div>\n\t\t\t<div>35''-40.5''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Weight<\/div>\n\t\t\t<div>81.5 lb (with rear rack, fenders, battery installed)<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Bottom Bracket Height<\/div>\n\t\t\t<div>100mm(39.4'')<\/div>\n\t\t<\/div>\n\t<\/div>",
+            "img": "shopify:\/\/shop_images\/path_thru.webp"
           }
         },
         "4d8b83aa-ad70-4823-8d3a-0ac863ac563e": {
@@ -680,32 +681,40 @@
           "type": "categroy",
           "settings": {
             "cate_name": "Pathfinder Step-Thru Story-1",
-            "cate_title": "<p><\/p>",
-            "cate_text": "<p>Absolutely the best, everything you could ask for. First 17 miles down and love them. The pedal assist is just amazing. If you are scouting thru 20 brands like I did, THIS THE ONE!!!——By Don<br\/><\/p>"
+            "cate_title": "",
+            "cate_text": "<p>Absolutely the best, everything you could ask for. First 17 miles down and love them. The pedal assist is just amazing. If you are scouting thru 20 brands like I did, THIS THE ONE!!!——By Don<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/pat_thru3.webp",
+            "img_mobile": "shopify:\/\/shop_images\/pat_thru3.webp"
           }
         },
         "f42b426d-eeb0-41fb-991b-a7a1645ff16e": {
           "type": "categroy",
           "settings": {
             "cate_name": "Pathfinder Step-Thru Story-2",
-            "cate_title": "<p><\/p>",
-            "cate_text": "<p>This is one of those very few times that I write a review on anything, but I felt I must. So if you do not like reading long reviews I urge to skip mine. My wife and I just hit our early 60s and we can not ride our mountain bikes as we like to anymore. I have been following the development of BeeCool bikes for more than a year and have read almost every bad review out there. Over all that time I have seen this company address and correct every one of the issues mentioned in the reviews.——By Liz<br\/><\/p>"
+            "cate_title": "",
+            "cate_text": "<p>This is one of those very few times that I write a review on anything, but I felt I must. So if you do not like reading long reviews I urge to skip mine. My wife and I just hit our early 60s and we can not ride our mountain bikes as we like to anymore. I have been following the development of BeeCool bikes for more than a year and have read almost every bad review out there. Over all that time I have seen this company address and correct every one of the issues mentioned in the reviews.——By Liz<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/pat_thru4.webp",
+            "img_mobile": "shopify:\/\/shop_images\/pat_thru4.webp"
           }
         },
         "4c2daef3-f4fb-46b5-aaa4-933b043d66c8": {
           "type": "categroy",
           "settings": {
             "cate_name": "Pathfinder Step-Thru Story-3",
-            "cate_title": "<p><\/p>",
-            "cate_text": "<p>I ❤️ my BeeCool bike!!! It's simply a game changer. I ride more often, further and have more fun then I have in years. I'm a 62 year old man who's ridden all his life. I used to regularly clock 100+ miles in a week... I own a carbonfiber, hand made, Italian racing road bike, a full suspension mountain bike, a fun \"slingray\" chopper bike and a small, folding ebike. But... since buying my BeeCool Adventurer,, my BeeCool is all I want to ride!!!——By Joe<br\/><\/p>"
+            "cate_title": "",
+            "cate_text": "<p>I ❤️ my BeeCool bike!!! It's simply a game changer. I ride more often, further and have more fun then I have in years. I'm a 62 year old man who's ridden all his life. I used to regularly clock 100+ miles in a week... I own a carbonfiber, hand made, Italian racing road bike, a full suspension mountain bike, a fun \"slingray\" chopper bike and a small, folding ebike. But... since buying my BeeCool Adventurer,, my BeeCool is all I want to ride!!!——By Joe<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/pat_thru1.webp",
+            "img_mobile": "shopify:\/\/shop_images\/pat_thru1.webp"
           }
         },
         "0cc3b01d-b88f-4854-899e-074bbb00dc11": {
           "type": "categroy",
           "settings": {
             "cate_name": "Pathfinder Step-Thru Story-4",
-            "cate_title": "<p><\/p>",
-            "cate_text": "<p>My buddy bought a different brand first. He paid much more then i did and his bike isnt made with the same quality components as mine... he named his bike Colonel Klink because it's big, clunky, and noisy... I named mine Sargent Volts because it's Powerful and gets the job done with fun!!! My doggie and I STRONGLY recommend buying a BeeCool bike and riding it everyday!!!——By Charles<br\/><\/p>"
+            "cate_title": "",
+            "cate_text": "<p>My buddy bought a different brand first. He paid much more then i did and his bike isnt made with the same quality components as mine... he named his bike Colonel Klink because it's big, clunky, and noisy... I named mine Sargent Volts because it's Powerful and gets the job done with fun!!! My doggie and I STRONGLY recommend buying a BeeCool bike and riding it everyday!!!——By Charles<br\/><\/p>",
+            "img": "shopify:\/\/shop_images\/pat_thru2.webp",
+            "img_mobile": "shopify:\/\/shop_images\/pat_thru2.webp"
           }
         }
       },
