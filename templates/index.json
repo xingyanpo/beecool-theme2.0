@@ -899,19 +899,22 @@
         "492c7a65-d5cd-4ef5-a521-ed32970502cf": {
           "type": "blog",
           "settings": {
-            "article": "latest-news\/front-suspension-spring-vs-hydraulic"
+            "article": "latest-news\/front-suspension-spring-vs-hydraulic",
+            "backgroundimage": "shopify:\/\/shop_images\/1_50918749-2340-4d8b-b658-0a24c01204fd.webp"
           }
         },
         "65930001-24dc-4629-94d0-93f0b1e31357": {
           "type": "blog",
           "settings": {
-            "article": "latest-news\/the-brief-introduction-to-electric-bikes"
+            "article": "latest-news\/the-brief-introduction-to-electric-bikes",
+            "backgroundimage": "shopify:\/\/shop_images\/1_50918749-2340-4d8b-b658-0a24c01204fd.webp"
           }
         },
         "9c0a3cc0-99e2-4e4d-9331-4c1c3363a11a": {
           "type": "blog",
           "settings": {
-            "article": "latest-news\/tips-on-electric-bicycles-maintenance"
+            "article": "latest-news\/tips-on-electric-bicycles-maintenance",
+            "backgroundimage": "shopify:\/\/shop_images\/1_50918749-2340-4d8b-b658-0a24c01204fd.webp"
           }
         }
       },
@@ -923,7 +926,8 @@
       "settings": {
         "buttonText": "View All",
         "link": "shopify:\/\/blogs\/latest-news",
-        "blog": "latest-news"
+        "blog": "latest-news",
+        "backgroundimage_mobile": "shopify:\/\/shop_images\/20221103151523.webp"
       }
     },
     "166571489735f56aad": {
