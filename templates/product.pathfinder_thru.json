@@ -551,12 +551,12 @@
         "title_mobile": "<p>Large Capacity Battery<\/p>",
         "text": "<p>48V 20Ah Lithium-ion battery gives you longer range. <br\/>You are able to travel over 80 miles on a charge <br\/>using pedal-assist mode and 50 miles on throttle power mode. <br\/>We want to make everyone enjoy the ride longer!<\/p>",
         "text_mobile": "<p>48V 20Ah Lithium-ion battery gives you longer range. <br\/>You are able to travel over 80 miles on a charge <br\/>using pedal-assist mode and 50 miles on throttle power mode. <br\/>We want to make everyone enjoy the ride longer!<\/p>",
-        "data_title": "<p><\/p>",
-        "data_text": "<p><\/p>",
-        "data_title2": "<p><\/p>",
-        "data_text2": "<p><\/p>",
-        "data_title3": "<p><\/p>",
-        "data_text3": "<p><\/p>",
+        "data_title": "",
+        "data_text": "",
+        "data_title2": "",
+        "data_text2": "",
+        "data_title3": "",
+        "data_text3": "",
         "buttonSvg": "",
         "button": ""
       }
@@ -567,48 +567,56 @@
         "2610141a-784a-4917-90c6-1d0cfbe38630": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/pathfinder_light_360x_83392a1e-6462-4bd4-9eda-1c82367f5a39.webp",
             "text": "<p>The headlight is bright enough to let you see the road clearly in front of you when riding at nighttime.<\/p>"
           }
         },
         "5325a5d6-d070-4269-a6ec-b2abc0fee863": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/pathfinder_seat_360x_ab4b4e56-014f-4122-a9e9-babcabca36dd.webp",
             "text": "<p>The wider bike seat helps a lot with easing the pressure on your body, making bike rides more comfortable.<\/p>"
           }
         },
         "2ac9a688-bb53-4a8f-8f82-e92a57c7ff87": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/pathfinder_light1_360x_9559d2d9-dd6f-45d2-a0c5-1d6935dcf58c.webp",
             "text": "<p>The integrated taillight combine with all these functions: <br\/> Night Light (turned on with the front light at the same time),<br\/>Brake Light,<br\/>Water-flow turning Signal Light.<\/p>"
           }
         },
         "d106ac70-4edd-46d2-bc50-eca759aad226": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/pathfinder_right_360x_e8fbf3eb-b980-4599-9ae2-035a265fb8f1.webp",
             "text": "<p>On the right side of the handlebar, you will find the shifter of the SHIMANO 7-speed gear shift system.<\/p>"
           }
         },
         "483a0fad-5d5c-4509-b910-2e944ca32842": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/pathfinder_left_360x_620f2654-40bc-43da-a489-7122bb1b47f6.webp",
             "text": "<p>On the left side of the handlebar, you will find the switch of the turning signal light, the horn button, and the button pad(control the power on\/off, mode switch, pedal assist level, front light, etc.)<\/p>"
           }
         },
         "19235fbd-0c60-471d-958f-45687ea19f4c": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/pathfinder_seat1_360x_b9281d33-e473-4983-89dd-f8a0c17ca050.webp",
             "text": "<p>The cadence sensor pedal assist helps you ride easily. <br\/>On pedal assist mode, you can save more physical pedal on long-distance cycling.The all-steel chain sprocket provide reliable protection to your chains and better safety when you pedal.<\/p>"
           }
         },
         "37e1a90d-5adc-4a86-9d6b-2d4858a1f42b": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/pathfinder_speed_360x_3fb6a3c2-59e5-4a8e-bb9f-3785af748673.webp",
             "text": "<p>The SHIMANO 7 speed freewheel lets you shift to a larger cog for uphill riding and downshift to a smaller cog for high-speed cycling. During the pedal-assist mode, you can control the speed better with the gear shift system.<\/p>"
           }
         },
         "cfc7af4c-07f0-4e60-8830-f0ea4b01d184": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/pathfinder_rear_360x_6891e877-2f40-472f-9fff-7c9c19124ed2.webp",
             "text": "<p>You'll be able to carry a bike bag or other gear on the rear rack, making a bike-packing trip or daily more convenient. The fenders are installed both front and rear and help keep your bike and belongings clean during your ride.<\/p>"
           }
         }
