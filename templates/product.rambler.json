@@ -241,6 +241,8 @@
     "3390ae76-0e13-40cb-bd28-4b95befdb65a": {
       "type": "describe-video-new",
       "settings": {
+        "img_pc": "shopify:\/\/shop_images\/20221110090859.webp",
+        "img_mobile": "shopify:\/\/shop_images\/20221110091221.webp",
         "top_title": "<p>Introducing Bee Rambler<\/p>",
         "bottom_title": "<p>Your Cute Loyal Servant <br\/>Carry Cargos For A Long Range<\/p>",
         "text2": ""
