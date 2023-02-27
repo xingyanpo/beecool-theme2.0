@@ -538,18 +538,20 @@
         "fc10a433-9898-4d0a-b30e-04c1aa35fcb9"
       ],
       "settings": {
+        "bg_img": "shopify:\/\/shop_images\/product-battery.webp",
         "link": "",
+        "bg_imgMobile": "shopify:\/\/shop_images\/product-battery-cha-mobile.webp",
         "link_mobile": "",
         "title": "<p>Large Capacity Battery<\/p>",
         "title_mobile": "<p>Large Capacity Battery<\/p>",
         "text": "<p>48V 30Ah Lithium-ion battery gives you super longer range. <br\/>You are able to travel over 110 miles on a charge using pedal-assist mode <br\/>and 80 miles on throttle power mode. <br\/>We want to make everyone enjoy the ride longer!<\/p>",
         "text_mobile": "<p>48V 30Ah Lithium-ion battery gives you super longer range. <br\/>You are able to travel over 110 miles on a charge using pedal-assist mode <br\/>and 80 miles on throttle power mode. <br\/>We want to make everyone enjoy the ride longer!<\/p>",
-        "data_title": "<p><\/p>",
-        "data_text": "<p><\/p>",
-        "data_title2": "<p><\/p>",
-        "data_text2": "<p><\/p>",
-        "data_title3": "<p><\/p>",
-        "data_text3": "<p><\/p>",
+        "data_title": "",
+        "data_text": "",
+        "data_title2": "",
+        "data_text2": "",
+        "data_title3": "",
+        "data_text3": "",
         "buttonSvg": "",
         "button": ""
       }
