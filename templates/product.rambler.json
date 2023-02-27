@@ -551,48 +551,56 @@
         "2610141a-784a-4917-90c6-1d0cfbe38630": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/rambler_show1_360x_f461628f-5913-4d88-955b-c0e4756a9028.webp",
             "text": "<p>The headlight is bright enough to let you see the road clearly in front of you when riding at nighttime.<\/p>"
           }
         },
         "5325a5d6-d070-4269-a6ec-b2abc0fee863": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/rambler_show2_360x_2c85db78-56bc-42c4-a0ad-f078635e85f8.webp",
             "text": "<p>On the left side of the handlebar, you will find the switch of the turning signal light, the horn button, and the button pad(control the power on\/off, mode switch, pedal assist level, front light, etc.)<\/p>"
           }
         },
         "2ac9a688-bb53-4a8f-8f82-e92a57c7ff87": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/rambler_show3_360x_fbf28663-fe31-4d8e-a0ed-bc07cb3384b8.webp",
             "text": "<p>On the right side of the handlebar, you will find the shifter of the SHIMANO 7-speed gear shift system.<\/p>"
           }
         },
         "d106ac70-4edd-46d2-bc50-eca759aad226": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/rambler_show4_360x_936d7330-1379-43fa-bee9-6a9d9955fd58.webp",
             "text": "<p>The wider bike seat helps a lot with easing the pressure on your body, making bike rides more comfortable.<\/p>"
           }
         },
         "19235fbd-0c60-471d-958f-45687ea19f4c": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/rambler_show5_360x_4ce67e5c-de14-4ab5-800d-8228af45b531.webp",
             "text": "<p>The SHIMANO 7 speed freewheel lets you shift to a larger cog for uphill riding and downshift to a smaller cog for high-speed cycling. During the pedal-assist mode, you can control the speed better with the gear shift system.<\/p>"
           }
         },
         "483a0fad-5d5c-4509-b910-2e944ca32842": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/rambler_show6_360x_f72a2539-acfd-4d88-bd27-f89a1e31975c.webp",
             "text": "<p>The cadence sensor pedal assist helps you ride easily. <br\/>On pedal assist mode, you can save more physical pedal on long-distance cycling.The all-steel chain sprocket provide reliable protection to your chains and better safety when you pedal.<\/p>"
           }
         },
         "37e1a90d-5adc-4a86-9d6b-2d4858a1f42b": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/rambler_show7_360x_efb2d8db-1a3b-4aa2-9462-c73853b8f4fb.webp",
             "text": "<p>The integrated taillight combine with all these functions: <br\/> Night Light (turned on with the front light at the same time),<br\/>Brake Light,<br\/>Water-flow turning Signal Light<\/p>"
           }
         },
         "cfc7af4c-07f0-4e60-8830-f0ea4b01d184": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/rambler_show8_360x_bca6e009-1b20-40e1-8d21-37026f3eadcc.webp",
             "text": "<p>The backlight LCD display shows you all the key information and status of the ebike, including operation modes, speed, pedal assist level, battery capacity, wattmeter,battery life, odometer, trip odometer, etc.<\/p>"
           }
         }
