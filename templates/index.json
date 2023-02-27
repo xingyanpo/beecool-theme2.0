@@ -223,6 +223,8 @@
         "2c7ebc06-57a6-4e48-adac-4e6fadc11312": {
           "type": "product",
           "settings": {
+            "img_bike": "shopify:\/\/shop_images\/path-index-swiper.webp",
+            "img": "shopify:\/\/shop_images\/index-_-path_thru.webp",
             "product": "bee-pathfinder",
             "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c5f461ea8109463d80591883edd78edb.mp4",
             "link": "shopify:\/\/products\/bee-pathfinder"
@@ -231,6 +233,8 @@
         "b9c91db1-4caf-4be5-8575-b2f0875e5300": {
           "type": "product",
           "settings": {
+            "img_bike": "shopify:\/\/shop_images\/path_thru-index-swiper.webp",
+            "img": "shopify:\/\/shop_images\/index-_-path_thru.webp",
             "product": "bee-pathfinder-step-thru",
             "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/b8dd84d18e794657836f838c7320051e.mp4",
             "link": "shopify:\/\/products\/bee-pathfinder-step-thru"
@@ -239,6 +243,8 @@
         "c68e21de-4e31-4251-89ec-284c6c318203": {
           "type": "product",
           "settings": {
+            "img_bike": "shopify:\/\/shop_images\/cha-index-swiper.webp",
+            "img": "shopify:\/\/shop_images\/index1-cha2.webp",
             "product": "bee-challenger",
             "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/fe0bd951382d4346a05c342492f7767d.mp4",
             "link": "shopify:\/\/products\/bee-challenger"
@@ -247,6 +253,8 @@
         "de8c1007-b35a-4576-9ec3-1b56e0eb5349": {
           "type": "product",
           "settings": {
+            "img_bike": "shopify:\/\/shop_images\/6_9e5ae7dc-a44d-4f76-adbe-51a52a032d98.webp",
+            "img": "shopify:\/\/shop_images\/index1-ram2.webp",
             "product": "bee-rambler",
             "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/4ba6b88629a44859bd43cced99e2164e.mp4",
             "link": "shopify:\/\/products\/bee-rambler"
