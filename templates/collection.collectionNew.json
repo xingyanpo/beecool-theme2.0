@@ -25,8 +25,8 @@
         "text_mobile": "",
         "font_text": 32,
         "font_text_mobile": 16,
-        "img_banner": "shopify:\/\/shop_images\/1_f2e561b3-daa4-4f5b-8264-4861a15ea242.png",
-        "img_bannerMobile": "shopify:\/\/shop_images\/2_33dcb73b-a4fa-4f96-bed6-5f9430c04976.png"
+        "img_banner": "shopify:\/\/shop_images\/1_f2e561b3-daa4-4f5b-8264-4861a15ea242.webp",
+        "img_bannerMobile": "shopify:\/\/shop_images\/2_33dcb73b-a4fa-4f96-bed6-5f9430c04976.webp"
       }
     },
     "main": {
@@ -51,7 +51,6 @@
         "309b3121-e085-42d4-8c61-b293e7fdae69": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
             "title": "Free Shipping ",
             "subtitle": "<p>To the lower 48 states<\/p>"
           }
@@ -59,7 +58,6 @@
         "347c7510-b9ac-4ec0-a49a-58f59d6b02e5": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
             "title": "2-Year Warranty",
             "subtitle": "<p>Buy with confidence<\/p>"
           }
@@ -67,7 +65,6 @@
         "54630e6c-9026-40e6-86be-5ca2eee19e48": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
             "title": "Secure Payment",
             "subtitle": "<p>Secure payment with Shopify<\/p>"
           }
@@ -75,7 +72,6 @@
         "1aee3ace-31be-4363-b06c-5958ee31cbff": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
             "title": "Cost-effective",
             "subtitle": "<p>Direct to consumer pricing<\/p>"
           }
