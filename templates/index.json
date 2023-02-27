@@ -7,7 +7,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/pc.webp",
-            "mobile_image": "shopify:\/\/shop_images\/li.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/li.webp",
             "text_position": "top_right",
             "subheading": "Buy Any 1 Ebike to Get 1 Free Trailer",
             "title": "FREE Cargo Trailer",
@@ -29,8 +29,6 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/new---_6.webp",
-            "mobile_image": "shopify:\/\/shop_images\/new-mobile---_8.webp",
             "text_position": "bottom_right",
             "subheading": "",
             "title": "",
@@ -51,8 +49,6 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pc-adv.webp",
-            "mobile_image": "shopify:\/\/shop_images\/adv-1123-mobile.webp",
             "text_position": "bottom_right",
             "subheading": "Unlock Your Adventures Anywhere",
             "title": "Bee Adventurer",
@@ -73,8 +69,6 @@
         "32e02aa0-90a5-4597-81ba-8df70fdd4a31": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pathfinder-thruBanner-orange-pc.webp",
-            "mobile_image": "shopify:\/\/shop_images\/pathfinder-thru-orange-mobile.webp",
             "text_position": "bottom_right",
             "subheading": "A Cozy Exploring on All Terrains",
             "title": "Bee Explorer",
@@ -95,8 +89,6 @@
         "87047e1f-ec91-45f8-8329-3ed9a14b0e78": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner-path-pc_5eeb74da-e9ac-44fe-848f-0b10d622c8c8.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/path-mobile_2b1d183c-cf84-4f12-9901-66abcec19abf.jpg",
             "text_position": "bottom_right",
             "subheading": "Your Well-Equipped Off-Road Mate",
             "title": "Bee Pathfinder",
@@ -117,8 +109,6 @@
         "4bbf498b-4bd8-4cc6-9389-377c96789716": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/path-thru_9b1b7ef4-206a-45ba-ae0a-29dc396b6441.webp",
-            "mobile_image": "shopify:\/\/shop_images\/path-thru_-mobile.webp",
             "text_position": "bottom_right",
             "subheading": "Easy On, Easy Go",
             "title": "Bee Pathfinder Step-Thru",
@@ -139,8 +129,6 @@
         "8c56fdb2-0f31-4b14-b3d7-8c7e8414a9d3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cha-pc.webp",
-            "mobile_image": "shopify:\/\/shop_images\/cha-mobile.webp",
             "text_position": "bottom_right",
             "subheading": "Ultra Powerful and Durable Beast",
             "title": "Bee Challenger",
@@ -161,8 +149,6 @@
         "ffc80f47-2377-45a9-a47b-079d40dc79e1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_2_22cf18e8-b54f-4e65-8c80-b3546a4cd0cd.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/rambler.png",
             "text_position": "bottom_right",
             "subheading": "Pure Cruising Pleasure",
             "title": "Bee Rambler",
@@ -205,8 +191,6 @@
         "e2ea166b-bcfc-4181-af46-b33b3d3bcdb2": {
           "type": "product",
           "settings": {
-            "img_bike": "shopify:\/\/shop_images\/adv-index-swiper.jpg",
-            "img": "shopify:\/\/shop_images\/index1-adv.png",
             "product": "bee-adventurer",
             "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/673b3343d9594d41857d3abf8d9701c9.mp4",
             "link": "shopify:\/\/products\/bee-adventurer"
@@ -215,8 +199,6 @@
         "576202ef-0203-4e30-9837-07a37b99f890": {
           "type": "product",
           "settings": {
-            "img_bike": "shopify:\/\/shop_images\/3_d5631d18-6a89-450a-a6da-7467e577b8db.jpg",
-            "img": "shopify:\/\/shop_images\/1_0083a897-839a-46ba-a4a5-b43e8a9291fb.png",
             "product": "bee-explorer",
             "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/b396be214fb0452fab789947a100d384.mp4",
             "link": "shopify:\/\/products\/bee-explorer"
@@ -225,8 +207,6 @@
         "2c7ebc06-57a6-4e48-adac-4e6fadc11312": {
           "type": "product",
           "settings": {
-            "img_bike": "shopify:\/\/shop_images\/path-index-swiper.jpg",
-            "img": "shopify:\/\/shop_images\/index-_-thru.png",
             "product": "bee-pathfinder",
             "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c5f461ea8109463d80591883edd78edb.mp4",
             "link": "shopify:\/\/products\/bee-pathfinder"
@@ -235,8 +215,6 @@
         "b9c91db1-4caf-4be5-8575-b2f0875e5300": {
           "type": "product",
           "settings": {
-            "img_bike": "shopify:\/\/shop_images\/path_thru-index-swiper.jpg",
-            "img": "shopify:\/\/shop_images\/index-_-path_thru.png",
             "product": "bee-pathfinder-step-thru",
             "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/b8dd84d18e794657836f838c7320051e.mp4",
             "link": "shopify:\/\/products\/bee-pathfinder-step-thru"
@@ -245,8 +223,6 @@
         "c68e21de-4e31-4251-89ec-284c6c318203": {
           "type": "product",
           "settings": {
-            "img_bike": "shopify:\/\/shop_images\/cha-index-swiper.jpg",
-            "img": "shopify:\/\/shop_images\/index1-cha2.png",
             "product": "bee-challenger",
             "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/fe0bd951382d4346a05c342492f7767d.mp4",
             "link": "shopify:\/\/products\/bee-challenger"
@@ -255,8 +231,6 @@
         "de8c1007-b35a-4576-9ec3-1b56e0eb5349": {
           "type": "product",
           "settings": {
-            "img_bike": "shopify:\/\/shop_images\/6_9e5ae7dc-a44d-4f76-adbe-51a52a032d98.jpg",
-            "img": "shopify:\/\/shop_images\/index1-ram2.png",
             "product": "bee-rambler",
             "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/4ba6b88629a44859bd43cced99e2164e.mp4",
             "link": "shopify:\/\/products\/bee-rambler"
@@ -286,8 +260,6 @@
         "8e53658f-a8bb-42d3-b04d-7935c32acfc6": {
           "type": "slide",
           "settings": {
-            "slideImage": "shopify:\/\/shop_images\/16703037563306_fd9cd0b3-3cac-4091-993b-8c04c61ec2bc.png",
-            "slideImage_mobile": "shopify:\/\/shop_images\/1670304259885.png",
             "slideTitle": "<p><strong>Accessories<\/strong><\/p>",
             "subtitle": "<p>Versatile accessories for you to pick up<\/p><p>Fit your BeeCool bike best<\/p>",
             "subtitle_mobile": "<p>Versatile accessories for you to pick up Fit your BeeCool bike best<\/p>",
@@ -297,8 +269,6 @@
         "3415e21a-13da-4278-be14-26bb57067961": {
           "type": "slide",
           "settings": {
-            "slideImage": "shopify:\/\/shop_images\/16703037683343_6dcf0d9c-e497-49b3-b9fc-b2d2459cbabc.png",
-            "slideImage_mobile": "shopify:\/\/shop_images\/16703042772342.png",
             "slideTitle": "<p><strong>Financing<\/strong><\/p>",
             "subtitle": "<p>Ride Now and Pay Later<br\/>Enjoy Quick Access to Convenient Credit<br\/>Get 6-month financing with absolute 0% interest!<\/p>",
             "subtitle_mobile": "<p>Ride Now and Pay Later<\/p><p>Enjoy Quick Access to Convenient Credit Get 6-month financing with absolute 0% interest!<\/p>",
@@ -308,8 +278,6 @@
         "f5f48f20-0604-43ba-9f9a-14b17b7a91fc": {
           "type": "slide",
           "settings": {
-            "slideImage": "shopify:\/\/shop_images\/16703037875639_06fbcb59-7940-45a3-a5af-674ffdf0a6ff.png",
-            "slideImage_mobile": "shopify:\/\/shop_images\/16703042879739.png",
             "slideTitle": "<p><strong>FAQS<\/strong><\/p>",
             "subtitle": "<p>Any questions or more details?<\/p><p>You may find more answers directly from here<\/p>",
             "subtitle_mobile": "<p>Any questions or more details? You may find more answers directly from here<\/p>",
@@ -319,8 +287,6 @@
         "9eeb9635-456f-4e2b-8e85-eea75f4b6bdd": {
           "type": "slide",
           "settings": {
-            "slideImage": "shopify:\/\/shop_images\/16703037434725_ec5cd4f4-13dc-48b9-8a3e-1e5ae535000f.png",
-            "slideImage_mobile": "shopify:\/\/shop_images\/16703042967537.png",
             "slideTitle": "<p><strong>Mobile Service<\/strong><\/p>",
             "subtitle": "<p>Door to door service<\/p><p>Make an arrangement here and our best mechanics will be right at your place to solve your issues<\/p>",
             "subtitle_mobile": "<p>Door to door service Make an arrangement here and our best mechanics will be right at your place to solve your issues<\/p>",
@@ -346,8 +312,6 @@
           "type": "slider",
           "settings": {
             "product": "bee-adventurer",
-            "backgroudImage": "shopify:\/\/shop_images\/adventer-black.png",
-            "backgroudImage_mobile": "shopify:\/\/shop_images\/sa.jpg",
             "title": "Bee Adventurer",
             "subtitle": "<p>Unlock Your Adventures Anywhere<\/p>",
             "description": "Bee Adventurer is one of our best equipped all-terrain electric bikes. The Bike is equipped with a 48V 21Ah Lithium-ion Battery, which gives the bike a long travel distance over 82 miles per charge on pedal-assist mode and 50 miles on throttle power mode. The continuous 750W motor and 4’’ fat tires lets the bike have maximum power to overcome any kinds of terrible terrain: soft sands, thick grass, heavy rain, slippery snow surface, steep rocks face. Our dual suspension system will bring you the max comfort."
@@ -357,8 +321,6 @@
           "type": "slider",
           "settings": {
             "product": "bee-explorer",
-            "backgroudImage": "shopify:\/\/shop_images\/explorer-black.png",
-            "backgroudImage_mobile": "shopify:\/\/shop_images\/Bee-Explorer-2.jpg",
             "title": "Bee Explorer",
             "subtitle": "<p>A Cozy Exploring on All Terrains<\/p>",
             "description": "Bee Explorer is a sporty, energetic and fashion all-terrain fat tire electric bikes. With the bright and beautiful colors, plus more streamlined design, Bee Explorer became more popular among fashion insiders. The Bike is equipped with a 48V 21Ah Lithium-ion Battery, which gives the bike a long travel distance over 82 miles per charge on pedal-assist mode and 50 miles on throttle power mode. The continuous 750W motor and 4’’ fat tires let the bike have maximum power to overcome any kinds of terrible terrains: soft sands, thick grass, heavy rain, slippery snow surface, steep rocks face. Our dual suspension system will bring you the max comfort."
@@ -368,8 +330,6 @@
           "type": "slider",
           "settings": {
             "product": "bee-pathfinder",
-            "backgroudImage": "shopify:\/\/shop_images\/pathfinder-black_6b12255c-2a4b-4e6e-afec-d45173bed661.png",
-            "backgroudImage_mobile": "shopify:\/\/shop_images\/Bee-Pathfinder.jpg",
             "title": "Bee Pathfinder",
             "subtitle": "<p>Your Well-Equipped Off-Road Mate<\/p>",
             "description": "From the outside in, Bee Pathfinder is well designed to boost the comfort with an adjustable hydraulic front fork and seat suspension and better aesthetic design with Crater-Free welding technology leaving no welding scars on the frames of the bike, making your bike eye-catching on the streets. Moreover, we’ve equipped it with 180mm hydraulic disc brakes and 26” X4” fat tires for greater stopping power and all terrains, an easily removable built-in battery, and an intuitive user interface with a colored LCD screen that makes operating your bike a breeze. Inside it, it has a strong heart, a 48V 20Ah Lithium-ion Battery, which gives the bike a long range from 50 miles to 82 miles."
@@ -379,8 +339,6 @@
           "type": "slider",
           "settings": {
             "product": "bee-pathfinder-step-thru",
-            "backgroudImage": "shopify:\/\/shop_images\/pathfinder-thur-black.png",
-            "backgroudImage_mobile": "shopify:\/\/shop_images\/Bee-Pathfinder-Step-Thru.jpg",
             "title": "Bee Pathfinder Step-thru",
             "subtitle": "<p>Easy On, Easy Go<\/p>",
             "description": "Bee Pathfinder Step-thru has a lower step-through height to fit more riders and it has the same design as Bee Pathfinder to boost the comfort with an adjustable hydraulic front fork and seat suspension and better aesthetic design with Crater-Free welding technology leaving no welding scars on the frames of the bike, making your bike eye-catching on the streets. Moreover, we’ve equipped it with 180mm hydraulic disc brakes and 26” X4” fat tires for greater stopping power and all terrains, an easily removable built-in battery, and an intuitive user interface with a colored LCD screen that makes operating your bike a breeze. Inside it, it has a strong heart, a 48V 20Ah Lithium-ion Battery, which gives the bike a long range from 50 miles to 82 miles."
@@ -390,8 +348,6 @@
           "type": "slider",
           "settings": {
             "product": "bee-challenger",
-            "backgroudImage": "shopify:\/\/shop_images\/challenger-black_6279246b-ce13-45ab-a6f2-09ca2c12ab70.png",
-            "backgroudImage_mobile": "shopify:\/\/shop_images\/Bee-Challenger.jpg",
             "title": "Bee Challenger",
             "subtitle": "<p>Ultra Powerful and Durable Beast<\/p>",
             "description": "Bee Challenger is the latest advancement of our fat tire models and will provide you with a next-level riding experience. Get an amazing range of 80 miles to 110 miles with a historic 48V 30Ah large capacity Lithium-ion Battery, better-showing interface with the color display which will please your eyes, better-stopping power with high-performance 180mm hydraulic disc brakes, and double shoulder adjustable hydraulic front fork and dual rear suspension, making your journey as comfortable and exciting as possible. Now ride on the beast to be a challenger and enjoy the thrill and comfort."
@@ -401,8 +357,6 @@
           "type": "slider",
           "settings": {
             "product": "bee-rambler",
-            "backgroudImage": "shopify:\/\/shop_images\/rambler-black.png",
-            "backgroudImage_mobile": "shopify:\/\/shop_images\/Bee-Rambler.jpg",
             "title": "Bee Rambler",
             "subtitle": "<p>Pure Cruising Pleasure<\/p>",
             "description": "As the first moped-style electric bike by BeeCool, we put a lot of effort into it. From design to details, Bee Rambler shows well our technicians’ minds. First, with an adjustable hydraulic front fork and rear suspension, we want to bring you much comfort on the road. Next, we’ve also equipped it with 180mm hydraulic disc brakes and 20” X4” fat tires for greater stopping power to help you conquer more terrains and make your journey safer. Moreover, we put a strong heart in it with the 750W geared hub motor and 48V 21Ah Lithium-ion Battery to guarantee you a long durable range from 50 miles to 82 miles together with a 3A charger to release you from long waiting and leave you more time on the road."
@@ -510,229 +464,191 @@
         "ae50461e-d987-4a57-9b7f-0ea6a0d53628": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/1_59d46d77-6c73-42c6-934e-ebae8b9bf990.png"
           }
         },
         "ac046ca7-0444-43ab-8a28-f38af88caf86": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/321096069_677221227233871_1154135672992588016_n.jpg"
           }
         },
         "eb2398ce-2b4e-4d7d-b209-13c140183dcb": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/IMG_0660.jpg"
           }
         },
         "e6cf983f-0318-4279-bf2a-a638ec88b214": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/IMG_9842.jpg"
           }
         },
         "60c16b33-f54f-4bb0-992e-46df2613aa9a": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/5_890e96a1-ff6b-43a7-bc79-88683d0f2d17.png"
           }
         },
         "d2c88c35-6526-4e39-ac81-de8ed920f6f6": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/6_cbd06842-c0d6-4d8c-b191-9fed16625afe.png"
           }
         },
         "ba373b4a-4c7c-47b3-b071-bb34450d064f": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/7_4e0b6a7e-555a-4825-aa9c-e2f8a544cf6b.png"
           }
         },
         "bc77e1f9-356b-4e91-b4a9-11c4f5499150": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/321376586_709105604043157_3608274065097612287_n.jpg"
           }
         },
         "5a68c029-55e2-47c5-904d-586e482c7700": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/IMG_0595_ea2554f3-ab4f-430e-9480-4655e68b4afe.jpg"
           }
         },
         "5039ebb2-458a-4491-b83e-702115d14bce": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/7eba4ae7b6a4333938f8e177bb3ec9a8.jpg"
           }
         },
         "7a4bee07-fe67-4728-9b1d-790c55d990b6": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/278456089_5402708669774131_6684227566223118513_n.jpg"
           }
         },
         "5080a2ec-e3e5-4a7c-a0d9-5642f610f34e": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/QQ_20221104134400.png"
           }
         },
         "fe8a03a3-7051-4366-b8ce-bc720051e818": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/312289351_10160356176547103_8087437513546296908_n_f35b094b-5aa2-4276-b872-ddc7ca82d60c.jpg"
           }
         },
         "12a6e966-a6c8-4642-bd44-2efbf28b3e82": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/20221114130127.png"
           }
         },
         "6796d55a-ef1d-4f69-991e-a5e774f6dc47": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/1_b0ddb26f-19f6-4f9c-a204-bed7e6c277a4.jpg"
           }
         },
         "1d1d8fca-90ed-4e1c-8d2e-cd0b141f7065": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/313905874_10222722653203560_7513469772450030507_n.jpg"
           }
         },
         "097a86d4-a181-4d2f-a61b-6dfb0c2e9a65": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/312401448_10160356176142103_7427728594787218170_n.jpg"
           }
         },
         "a17464f7-807f-4b42-be98-0ab398f73a47": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/Beecool-Challenger-1000-watt-motor-1024x581.jpg"
           }
         },
         "61fc5a3a-79a6-41b0-bfd5-51d2cd0c1ae7": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/313399311_655080232750578_1488439958748730507_n.jpg"
           }
         },
         "549209b5-0dfe-495e-a03a-a9a22cd32ec1": {
           "type": "review1",
           "settings": {
-            "img": "shopify:\/\/shop_images\/QQ_20221110112231.png"
           }
         },
         "5978c187-2857-4d1a-bde9-f08938977bbf": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/10_9ebae37e-5c48-408a-b5fd-4645831e7235.png"
           }
         },
         "3e66298b-cbe7-4a2a-af81-7cd77fef9018": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/11_2cc8ad29-5bfd-4bd4-8b4a-2b45a214c19b.png"
           }
         },
         "1e71bdff-393e-4f54-b259-a53edce18200": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/12_55022ed1-2717-4c4a-85c0-ae5b6dd0581a.png"
           }
         },
         "3f54bf07-6317-41b4-bc6f-abfab38666c5": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/IMG_9844.jpg"
           }
         },
         "70736851-63db-41ef-9487-19560c21ab40": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/14.png"
           }
         },
         "2c6791de-72e1-4296-8114-887f730ff4d6": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/15.png"
           }
         },
         "9afef392-ddc5-4ac2-8e9e-e173a3e566d8": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/16_df428547-7826-4e91-aa4f-54de6deb293e.png"
           }
         },
         "ece43031-8956-4936-911b-dea42306f535": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/17.png"
           }
         },
         "63a0c6dc-76ec-401b-8b9d-f3982c9aba8f": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/tumblr_2d65984d0450d870b42e2c07d751513f_c38c0cb9_2048.jpg"
           }
         },
         "0b4ca63a-7b38-415e-a935-20e6ca74e9ff": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/tumblr_6d2c8e7515574e0534e1d1ae648ecaf6_5d87b287_2048.jpg"
           }
         },
         "551db8be-0214-4176-91d5-9e20bd02b123": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/QQ_20221230141125.png"
           }
         },
         "47bf108f-fcdc-4747-8d13-e05cce2b3233": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/313024382_491341739712608_4041659719831006994_n.jpg"
           }
         },
         "3154d08f-a4cb-43e0-8e65-1ce1715677d8": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/pathfinder-thru-orange-mobile.jpg"
           }
         },
         "bad226a9-c22d-4e2c-9f36-ad0740f95552": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/challenger-_-mobile.png"
           }
         },
         "543e1ef2-0917-4e01-a58e-e40712e44a9c": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/lcizd144dhy91.webp"
           }
         },
         "cca36e51-6ac9-47a2-a087-ec567a560179": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/312480575_10160356178712103_4620824665195488997_n.jpg"
           }
         },
         "f7b55150-3e64-46d0-b525-f3fa8a1e9a15": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/314694551_5618769761493091_7974584770970651011_n.jpg"
           }
         },
         "3bafd764-b442-4ada-9514-66a49050f2b8": {
           "type": "review2",
           "settings": {
-            "img": "shopify:\/\/shop_images\/313416376_655080326083902_582215107770048439_n.jpg"
           }
         }
       },
@@ -789,10 +705,8 @@
         "3bafd764-b442-4ada-9514-66a49050f2b8"
       ],
       "settings": {
-        "bg": "shopify:\/\/shop_images\/45e9946fa8d4cc7544ebc90c83cf9943.png",
         "title": "Customer Review",
         "link": "shopify:\/\/pages\/comment",
-        "img": "shopify:\/\/shop_images\/1_83cb014e-75c1-461f-8d85-9eb78cc32d42.png",
         "number": "4.9"
       }
     },
@@ -802,7 +716,6 @@
         "f4e04d54-ff7b-41fb-9872-516cb3279ed7": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-1.jpg",
             "youtube_text": "Bee Adventurer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=rFTgW-TgSNU&t=6s"
           }
@@ -810,7 +723,6 @@
         "8f7658e8-91c7-4097-821e-77b039d07484": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-2.jpg",
             "youtube_text": "Bee Pathfinder",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=NJ_c_TEWaPA&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=12"
           }
@@ -818,7 +730,6 @@
         "4af74553-83c5-4193-b2de-65227b0dbcff": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-5.jpg",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=d0BXhAeK2ow&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=8"
           }
@@ -826,7 +737,6 @@
         "a6ca3941-9d23-4433-a863-4b46a04ff6f2": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-4.jpg",
             "youtube_text": "Bee Explorer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=IGS2UmPfSWY&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=9"
           }
@@ -834,7 +744,6 @@
         "572fc3c4-89c3-4452-bc1e-aad21d18533d": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-6.jpg",
             "youtube_text": "Bee Adventurer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=00W7rkkfons&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=11"
           }
@@ -842,7 +751,6 @@
         "16824a5a-27bb-4a78-b9c5-6c567561486d": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-3.jpg",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=QHsKpC0USGk&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=6"
           }
@@ -850,7 +758,6 @@
         "923a23e8-1520-460b-a812-2ec6bcaec53a": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-7.jpg",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=pHzIOF17-fI&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=3&t=278s"
           }
@@ -858,7 +765,6 @@
         "dc589ab1-6527-4206-af09-0a8dac72deeb": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-8.jpg",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=OXDATVpUS7Y&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=2"
           }
@@ -866,7 +772,6 @@
         "3e4920e1-dc29-498a-bcbb-123bf16b4d02": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-9.jpg",
             "youtube_text": "Bee Pathfinder",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=U7Lulxf_j8Y&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=4"
           }
@@ -874,7 +779,6 @@
         "05455b1e-80c6-455c-8062-aa98f874cfdf": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-10.jpg",
             "youtube_text": "Bee Explorer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=HWMxZVU4EdE&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=15"
           }
@@ -901,22 +805,19 @@
         "492c7a65-d5cd-4ef5-a521-ed32970502cf": {
           "type": "blog",
           "settings": {
-            "article": "latest-news\/front-suspension-spring-vs-hydraulic",
-            "backgroundimage": "shopify:\/\/shop_images\/1_50918749-2340-4d8b-b658-0a24c01204fd.png"
+            "article": "latest-news\/front-suspension-spring-vs-hydraulic"
           }
         },
         "65930001-24dc-4629-94d0-93f0b1e31357": {
           "type": "blog",
           "settings": {
-            "article": "latest-news\/the-brief-introduction-to-electric-bikes",
-            "backgroundimage": "shopify:\/\/shop_images\/1_50918749-2340-4d8b-b658-0a24c01204fd.png"
+            "article": "latest-news\/the-brief-introduction-to-electric-bikes"
           }
         },
         "9c0a3cc0-99e2-4e4d-9331-4c1c3363a11a": {
           "type": "blog",
           "settings": {
-            "article": "latest-news\/tips-on-electric-bicycles-maintenance",
-            "backgroundimage": "shopify:\/\/shop_images\/1_50918749-2340-4d8b-b658-0a24c01204fd.png"
+            "article": "latest-news\/tips-on-electric-bicycles-maintenance"
           }
         }
       },
@@ -928,26 +829,12 @@
       "settings": {
         "buttonText": "View All",
         "link": "shopify:\/\/blogs\/latest-news",
-        "blog": "latest-news",
-        "backgroundimage_mobile": "shopify:\/\/shop_images\/20221103151523.jpg"
+        "blog": "latest-news"
       }
     },
     "166571489735f56aad": {
       "type": "apps",
       "disabled": true,
-      "blocks": {
-        "ad5a646e-ed4e-40fa-b401-4987ccc4c4f9": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "heading_size": 30,
-            "feed_width": 100,
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "ad5a646e-ed4e-40fa-b401-4987ccc4c4f9"
-      ],
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
@@ -959,7 +846,6 @@
         "0abe4190-89b2-48f0-9c7c-3ff9691e35a5": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/285025987_1300822087114113_2939392790892138019_n.jpg",
             "image_icon": "Instagram",
             "link": "https:\/\/www.instagram.com\/p\/CeOxxA3rWtT\/?utm_source=ig_web_copy_link"
           }
@@ -967,7 +853,6 @@
         "6b787d71-aad8-46c6-a01a-12036df3dab2": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/IMG_0688.jpg",
             "image_icon": "Pinterest",
             "link": "https:\/\/pin.it\/39yPIO2"
           }
@@ -975,7 +860,6 @@
         "d460b408-6f5b-47ca-9771-46e9078a5019": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/20221114130127.png",
             "image_icon": "Pinterest",
             "link": "https:\/\/pin.it\/1KMO8pF"
           }
@@ -983,7 +867,6 @@
         "36252fb1-d053-45f7-a957-c74c0324753e": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/IMG_0660.jpg",
             "image_icon": "Facebook",
             "link": "https:\/\/www.facebook.com\/Beecoolbikes\/photos\/a.281228014057316\/543893591124089"
           }
@@ -991,7 +874,6 @@
         "69b70b75-7e87-43fc-bc53-8405809ed756": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/290358785_118177030787881_4362594293978750834_n.jpg",
             "image_icon": "Instagram",
             "link": "https:\/\/www.instagram.com\/p\/CfTi08zLdeZ\/?utm_source=ig_web_copy_link"
           }
@@ -999,7 +881,6 @@
         "5a0834f7-794e-4db9-bbfb-a6f41ac464ad": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/path-thru_-mobile.jpg",
             "image_icon": "tiktok",
             "link": "https:\/\/www.tiktok.com\/@beecoolbikes\/video\/7166490675679202603?is_from_webapp=1&sender_device=pc&web_id=7159009345527137834"
           }
@@ -1007,7 +888,6 @@
         "dc16239b-e5f8-48cf-b527-2060131b432f": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/211822387_2026294900852157_1227561952772933129_n.jpg",
             "image_icon": "Instagram",
             "link": "https:\/\/www.instagram.com\/p\/CREi-b9N8-4\/?utm_source=ig_web_copy_link"
           }
@@ -1015,7 +895,6 @@
         "65bc0c91-271e-4e90-8ca3-8560fd6b8bd3": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/lcizd144dhy91.webp",
             "image_icon": "Instagram",
             "link": "https:\/\/www.instagram.com\/p\/CkqfocwJXVv\/?utm_source=ig_web_copy_link"
           }
@@ -1023,7 +902,6 @@
         "fcc80a8b-00de-451d-9289-157e02e23e77": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/b84a979560dde34edc80de075a34270f.jpg",
             "image_icon": "Pinterest",
             "link": "https:\/\/pin.it\/1krOxqd"
           }
@@ -1031,7 +909,6 @@
         "efe11b2a-7ba5-465c-9231-ef072fdd1318": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/tumblr_6d2c8e7515574e0534e1d1ae648ecaf6_5d87b287_2048.jpg",
             "image_icon": "tumblr",
             "link": "https:\/\/at.tumblr.com\/beecoolbikes\/front-basket-for-bee-adventurerexplorer\/ycyaxcu5fktl"
           }
@@ -1039,7 +916,6 @@
         "a7938233-2291-4e15-ab0d-bb03b955b31a": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/mmexport1630918599853.jpg",
             "image_icon": "tiktok",
             "link": "https:\/\/www.tiktok.com\/@beecoolbikes\/video\/7166489312203214122?is_from_webapp=1&sender_device=pc&web_id=7159009345527137834"
           }
@@ -1047,7 +923,6 @@
         "22507851-dc61-4b13-97e1-3569eab92bd4": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/313024382_491341739712608_4041659719831006994_n.jpg",
             "image_icon": "Facebook",
             "link": "https:\/\/www.facebook.com\/Beecoolbikes\/photos\/pcb.491801236333325\/491801176333331\/"
           }
@@ -1055,7 +930,6 @@
         "f5855af6-afbb-4876-a74b-db3395d7d988": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/challenger-_-mobile.png",
             "image_icon": "twitter",
             "link": "https:\/\/twitter.com\/BeecoolBikes\/status\/1582244319125065728?s=20&t=qXkVoY4SpEfis6FtX8iUmA"
           }
@@ -1063,7 +937,6 @@
         "b29cbc27-f79a-4299-a449-e501c3b84bbd": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/ec9345a1c7df8ef25e58c43b069d05c1.jpg",
             "image_icon": "Pinterest",
             "link": "https:\/\/pin.it\/3LePB7A"
           }
@@ -1071,7 +944,6 @@
         "b0683089-bd06-4575-9a6b-4b8ab4835cfb": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/286461266_10221657623252008_3821084458139890210_n.jpg",
             "image_icon": "reddit",
             "link": "https:\/\/www.reddit.com\/r\/beecoolbikes\/comments\/yll2ty\/beecool_moments_episode16\/?utm_source=share&utm_medium=web2x&context=3"
           }
@@ -1079,7 +951,6 @@
         "c389b63e-9686-4ee3-8759-57a9956abd14": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/7eba4ae7b6a4333938f8e177bb3ec9a8.jpg",
             "image_icon": "Pinterest",
             "link": "https:\/\/pin.it\/2dRrEqH"
           }
@@ -1087,7 +958,6 @@
         "2fbe92c0-fdcf-4c26-9454-e2d282a231d1": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/tumblr_2d65984d0450d870b42e2c07d751513f_c38c0cb9_2048.jpg",
             "image_icon": "tumblr",
             "link": "https:\/\/at.tumblr.com\/beecoolbikes\/how-to-choose-the-right-e-bike\/kzn57b7gcqkb"
           }
@@ -1095,7 +965,6 @@
         "f3d21175-81af-44e5-9c19-6f4bfaf6493e": {
           "type": "Instagram-item",
           "settings": {
-            "img": "shopify:\/\/shop_images\/c42xgdy1p1x91.jpg",
             "image_icon": "reddit",
             "link": "https:\/\/www.reddit.com\/r\/beecoolbikes\/comments\/yhx70z\/beecool_moments_episode9\/?utm_source=share&utm_medium=web2x&context=3"
           }
@@ -1131,7 +1000,6 @@
         "93ac4a81-7949-45c1-ae71-6a535f2ecee3": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/d3225ab021040514f24fda6b9469ff51_7b524767-ad82-454f-a04f-d10c7c56e4cf.png",
             "title": "Free Shipping",
             "subtitle": "<p>No need to worry about the shipping cost, we'll take care of it<\/p>"
           }
@@ -1139,7 +1007,6 @@
         "2272f955-3e73-447d-b15b-d5658d0b4c2d": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
             "title": "2-Year Warranty",
             "subtitle": "<p>Get a 2-year manufacturer's warranty automatically after purchase<\/p>"
           }
@@ -1147,7 +1014,6 @@
         "16660654-d9c5-4230-96c0-1dc953242da7": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
             "title": "14-Day Trial",
             "subtitle": "<p>Don't like the bikes? It's OK, we accept return within 14 days<\/p>"
           }
@@ -1155,7 +1021,6 @@
         "34b1e530-ee81-497d-a29a-79b4661bbaec": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
             "title": "Cool Features",
             "subtitle": "<p>Powerful battery and motor + Dual suspension + Dual hydraulic, disc brake<\/p>"
           }
