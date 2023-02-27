@@ -71,6 +71,8 @@
         "32e02aa0-90a5-4597-81ba-8df70fdd4a31": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/pathfinder-thruBanner-orange-pc.webp",
+            "mobile_image": "shopify:\/\/shop_images\/pathfinder-thru-orange-mobile.webp",
             "text_position": "bottom_right",
             "subheading": "A Cozy Exploring on All Terrains",
             "title": "Bee Explorer",
