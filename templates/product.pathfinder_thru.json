@@ -12,7 +12,7 @@
           "type": "off",
           "settings": {
             "is_can_copy": false,
-            "copy_img": "shopify:\/\/shop_images\/1_3e735aa4-c540-4fd5-a4eb-f72164d1287d.png",
+            "copy_img": "shopify:\/\/shop_images\/1_e96d1659-df6a-41ca-92d6-5f37187826db.webp",
             "title": "Limited Gift",
             "copy_text": "",
             "text": "<p><strong>Buy Any Ebike Product Get 1 Free Cargo Trailer (Limited Amount)<\/strong><\/p>"
@@ -47,16 +47,14 @@
           "settings": {
             "free_gifts_icon": "<svg t=\"1675763361201\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"2852\" width=\"200\" height=\"200\"><path d=\"M847.57 475.078c0 24.279-19.68 43.967-43.967 43.967H221.015c-24.287 0-43.967-19.688-43.967-43.967V352.08c0-24.288 19.68-43.969 43.967-43.969h582.589c24.287 0 43.967 19.681 43.967 43.969v122.998z\" fill=\"#8AC78A\" p-id=\"2853\"><\/path><path d=\"M803.604 543.061H221.015c-37.487 0-67.982-30.496-67.982-67.982V352.08c0-37.487 30.495-67.983 67.982-67.983h582.589c37.487 0 67.982 30.496 67.982 67.983v122.998c0 37.486-30.495 67.983-67.982 67.983zM221.015 332.128c-10.999 0-19.942 8.945-19.942 19.952v122.998c0 10.998 8.943 19.951 19.942 19.951h582.589c10.998 0 19.943-8.953 19.943-19.951V352.08c0-11.007-8.945-19.952-19.943-19.952H221.015z\" fill=\"#363634\" p-id=\"2854\"><\/path><path d=\"M804.567 791.678c0 24.288-19.687 43.975-43.976 43.975H264.025c-24.287 0-43.965-19.687-43.965-43.975v-268.23c51.047-2.085 543.492-0.256 584.507 0v268.23z\" fill=\"#F1CA4E\" p-id=\"2855\"><\/path><path d=\"M760.592 859.67H264.025c-37.486 0-67.991-30.506-67.991-67.992V500.389l23.042-0.942c16.357-0.666 77.563-1.005 181.929-1.005 163.833 0 377.19 0.824 403.72 0.989l23.859 0.148v292.099c0 37.486-30.504 67.992-67.992 67.992zM244.074 546.994v244.684c0 10.998 8.946 19.951 19.951 19.951h496.566c11.008 0 19.96-8.953 19.96-19.951V547.349c-65.716-0.281-240.472-0.866-379.547-0.866-85.789-0.001-132.236 0.222-156.93 0.511z\" fill=\"#3E3A39\" p-id=\"2856\"><\/path><path d=\"M488.288 230.92h48.032v604.732h-48.032z\" fill=\"#363634\" p-id=\"2857\"><\/path><path d=\"M665.271 328.616H512.305c-13.266 0-24.017-10.751-24.017-24.017V187.982c0-3.379 0.719-6.726 2.095-9.811 31.031-69.325 80.506-79.673 107.234-79.673 50.208 0 99.164 34.94 119.041 84.975 19.408 48.84 6.686 99.354-34.897 138.597a24.041 24.041 0 0 1-16.49 6.546z m-128.951-48.04h118.908c29.07-32.005 23.259-63.085 16.785-79.359-12.381-31.173-44.37-54.686-74.396-54.686-25.252 0-46.365 16.15-61.297 46.778v87.267z\" fill=\"#363634\" p-id=\"2858\"><\/path><path d=\"M512.305 328.616H359.348a24.032 24.032 0 0 1-16.489-6.546c-41.584-39.243-54.306-89.757-34.899-138.597 19.877-50.034 68.832-84.975 119.043-84.975 26.719 0 76.193 10.348 107.227 79.673a23.957 23.957 0 0 1 2.092 9.811V304.6c-0.002 13.265-10.751 24.016-24.017 24.016z m-142.916-48.04h118.899V193.31c-14.929-30.628-36.044-46.778-61.286-46.778-30.027 0-62.018 23.513-74.398 54.686-6.473 16.273-12.284 47.353 16.785 79.358z\" fill=\"#363634\" p-id=\"2859\"><\/path><\/svg>",
             "free_gifts_title": "Don't Forget To Add It to Your Cart!",
-            "free_gifts_img_one": "shopify:\/\/shop_images\/1_c473a694-56b1-479f-af35-7e4691919e22.jpg",
+            "free_gifts_img_one": "shopify:\/\/shop_images\/1_b3fa5b96-3c04-4b40-a432-6648c675b9d6.webp",
             "free_gifts_text_one": "Foldable Ebike Cargo Trailer",
             "free_gifts_url_one": "https:\/\/beecoolbikes.com\/products\/foldable-ebike-cargo-trailer",
             "free_gifts_price_one": "$299",
             "free_gifts_quantity_one": "",
-            "free_gifts_img_two": "shopify:\/\/shop_images\/gift-2.jpg",
             "free_gifts_text_two": "",
             "free_gifts_price_two": "$15.00",
             "free_gifts_quantity_two": "",
-            "free_gifts_img_three": "shopify:\/\/shop_images\/product.jpg",
             "free_gifts_text_three": "",
             "free_gifts_price_three": "$5.00",
             "free_gifts_quantity_three": ""
@@ -75,7 +73,7 @@
           "type": "fedex",
           "settings": {
             "fedex_title": "",
-            "img": "shopify:\/\/shop_images\/1_3d93ff84-9b20-428e-88e3-528a02568e29.png",
+            "img": "shopify:\/\/shop_images\/1_b436971e-90bc-4bb1-ab40-aeea85e665af.webp",
             "fedex_text1": "UPS Ground Free",
             "fedex_svg": "<svg t=\"1668148261596\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"1482\" width=\"32\" height=\"32\"><path d=\"M511.514 63.894c-114.532 0-229.062 43.51-316.72 131.168-174.677 174.676-174.677 458.764 0 633.44 87.658 87.659 202.188 131.168 316.72 131.168s229.063-43.51 316.72-131.168c174.677-174.676 174.677-458.764 0-633.44-87.657-87.659-202.189-131.168-316.72-131.168z m0 44.79c52.467 0 103.654 10.236 151.642 29.432 49.907 20.475 94.695 49.907 133.086 88.937 39.03 38.39 68.463 83.18 88.937 133.086 19.195 47.988 29.433 99.175 29.433 151.642s-10.238 103.654-29.433 151.642c-20.474 49.907-49.907 94.695-88.937 133.086-38.39 39.03-83.18 68.463-133.086 88.937-47.988 19.196-99.175 29.433-151.642 29.433s-103.654-10.237-151.642-29.433c-49.907-20.475-94.696-49.907-133.086-88.937-39.03-38.39-68.463-83.18-88.937-133.086-19.196-47.988-29.433-99.175-29.433-151.642s10.237-103.654 29.433-151.642c20.475-49.907 49.907-94.695 88.937-133.086 38.39-39.03 83.18-68.463 133.086-88.937 47.988-19.196 99.175-29.433 151.642-29.433z\" p-id=\"1483\" fill=\"#151515\"><\/path><path d=\"M511.514 674.3c-18.556 0-34.551 15.356-34.551 34.551 0 18.556 15.996 33.912 34.55 33.912 19.196 0 34.552-15.356 34.552-33.912 0-19.194-15.356-34.55-34.551-34.55z m0.64-393.5c-42.23 0-76.14 10.877-101.734 33.91-25.593 22.395-41.589 55.027-46.707 97.896l58.225 7.039c4.479-31.992 15.356-55.666 31.352-70.382 15.996-15.356 35.83-22.394 59.505-22.394 24.953 0 46.068 8.317 63.344 24.953 16.636 15.996 24.953 35.191 24.953 57.585 0 11.518-2.56 23.035-8.317 33.272-5.758 10.237-18.556 23.674-37.751 40.95-19.835 17.275-33.272 30.073-40.95 39.03-9.597 12.157-17.275 24.314-21.754 36.47-6.399 15.997-9.598 35.192-9.598 56.946l0.64 17.276h53.746c0.64-22.394 1.92-39.03 4.479-48.628 3.199-10.237 7.038-19.195 12.796-26.873 5.758-7.678 17.276-19.834 35.831-35.83 26.873-24.315 45.429-44.79 55.027-61.426 8.958-16.636 14.076-35.191 14.076-55.026 0-34.55-13.437-63.984-40.31-88.298-26.233-24.314-62.064-36.47-106.852-36.47z\" p-id=\"1484\" fill=\"#151515\"><\/path><\/svg>",
             "fedex_text3": "Why UPS",
@@ -267,8 +265,6 @@
     "689a85e5-2663-419a-a197-1559ee4636dd": {
       "type": "describe-video-new",
       "settings": {
-        "img_pc": "shopify:\/\/shop_images\/DSC9347.jpg",
-        "img_mobile": "shopify:\/\/shop_images\/DSC9359.jpg",
         "top_title": "<p>Introducing Bee Pathfinder Step-thru<\/p>",
         "bottom_title": "<p>Lower Step-thru Height Give More Chance For More Riders<\/p>",
         "text2": ""
@@ -311,7 +307,6 @@
           "type": "productImage_scroll",
           "settings": {
             "title": "<p>Display<\/p>",
-            "img": "shopify:\/\/shop_images\/color_display4.webp",
             "link": "",
             "right_title": "<p>Color Display<\/p>",
             "right_text": "<p>The bigger and brighter color display screen shows you all the key information and the status of the bike more clear than the traditional LCD display screen. The information on the display includes current operation mode, speed, pedal assist level, battery capacity, watt-meter, etc.The color display also comes with a day-night theme shifting function.<\/p>"
@@ -321,7 +316,6 @@
           "type": "productImage_scroll",
           "settings": {
             "title": "<p>Fork<\/p>",
-            "img": "shopify:\/\/shop_images\/pathfinder_fork_1.webp",
             "link": "",
             "right_title": "<p>Fork<\/p>",
             "right_text": "<p>The adjustable hydraulic front fork helps you overcome bumpiness on any road conditions. You are also able to adjust different travel distances or lock the suspension depending on your riding preference.<\/p>"
@@ -331,7 +325,6 @@
           "type": "productImage_scroll",
           "settings": {
             "title": "<p>Seat Suspension<\/p>",
-            "img": "shopify:\/\/shop_images\/pathfinder_seat_tube_82af5cff-b780-4aaf-aa9b-c4d89b34312d.webp",
             "link": "",
             "right_title": "<p>Seat tube<\/p>",
             "right_text": "<p>The suspension seat tube brings you the max comfort when you ride on bumpy roads. The wider bike seat helps a lot with easing the pressure on your body.<\/p>"
@@ -341,7 +334,6 @@
           "type": "productImage_scroll",
           "settings": {
             "title": "<p>Disc brakes<\/p>",
-            "img": "shopify:\/\/shop_images\/pathfinder_dist_dbf30e65-10ba-4a1b-9eaa-d2d7085b013d.webp",
             "link": "",
             "right_title": "<p>Hydraulic Disc Brakes<\/p>",
             "right_text": "<p>Our ebikes are equipped with dual 180mm hydraulic disc brakes, which give you maximum stopping power. With hydraulic disc brakes, the actuation moves both pads towards the rotor at the same time and with even pressure. The most important advantage of hydraulic disc brakes is that they automatically self-adjust as they wear down.<\/p>"
@@ -351,7 +343,6 @@
           "type": "productImage_scroll",
           "settings": {
             "title": "<p>3A Charger<\/p>",
-            "img": "shopify:\/\/shop_images\/pathfinder_charger1_5eba0ced-6492-416e-9c90-16c220f40786.webp",
             "link": "",
             "right_title": "<p>3A Quick Charger<\/p>",
             "right_text": "<p>We have upgraded our charger from 2A Charger to a 3A Quick Charger to save your time for charging and leave you more time on the road. The 3A version charger will help you charge the battery faster and release you from long waiting.<\/p>"
@@ -374,9 +365,7 @@
       "type": "jd-product-video",
       "disabled": true,
       "settings": {
-        "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/669dc990676a413d8b2f12ee6b4f4bd8.mp4",
-        "img": "shopify:\/\/shop_images\/product-video-path-thru.jpg",
-        "img_mobile": "shopify:\/\/shop_images\/product-video-path-thru-mobile.jpg"
+        "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/669dc990676a413d8b2f12ee6b4f4bd8.mp4"
       }
     },
     "b9bf3d3e-2136-459b-81c8-fb9c8398ab81": {
@@ -392,7 +381,6 @@
         "f4e04d54-ff7b-41fb-9872-516cb3279ed7": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-1.jpg",
             "youtube_text": "Bee Adventurer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=rFTgW-TgSNU&t=6s"
           }
@@ -400,7 +388,6 @@
         "8f7658e8-91c7-4097-821e-77b039d07484": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-2.jpg",
             "youtube_text": "Bee Pathfinder",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=NJ_c_TEWaPA&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=12"
           }
@@ -408,7 +395,6 @@
         "4af74553-83c5-4193-b2de-65227b0dbcff": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-5.jpg",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=d0BXhAeK2ow&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=8"
           }
@@ -416,7 +402,6 @@
         "a6ca3941-9d23-4433-a863-4b46a04ff6f2": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-4.jpg",
             "youtube_text": "Bee Explorer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=IGS2UmPfSWY&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=9"
           }
@@ -424,7 +409,6 @@
         "572fc3c4-89c3-4452-bc1e-aad21d18533d": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-6.jpg",
             "youtube_text": "Bee Adventurer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=00W7rkkfons&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=11"
           }
@@ -432,7 +416,6 @@
         "16824a5a-27bb-4a78-b9c5-6c567561486d": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-3.jpg",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=QHsKpC0USGk&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=6"
           }
@@ -440,7 +423,6 @@
         "923a23e8-1520-460b-a812-2ec6bcaec53a": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-7.jpg",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=pHzIOF17-fI&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=3&t=278s"
           }
@@ -448,7 +430,6 @@
         "dc589ab1-6527-4206-af09-0a8dac72deeb": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-8.jpg",
             "youtube_text": "Bee Challenger",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=OXDATVpUS7Y&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=2"
           }
@@ -456,7 +437,6 @@
         "3e4920e1-dc29-498a-bcbb-123bf16b4d02": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-9.jpg",
             "youtube_text": "Bee Pathfinder",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=U7Lulxf_j8Y&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=4"
           }
@@ -464,7 +444,6 @@
         "05455b1e-80c6-455c-8062-aa98f874cfdf": {
           "type": "image",
           "settings": {
-            "youtube_logo": "shopify:\/\/shop_images\/logo-10.jpg",
             "youtube_text": "Bee Explorer",
             "youtube_video": "https:\/\/www.youtube.com\/watch?v=HWMxZVU4EdE&list=PLAuvgv40O7GYLoFxZEuNP34RAH9hDNV00&index=15"
           }
@@ -521,8 +500,6 @@
       "type": "jd-product-E-shifter2",
       "disabled": true,
       "settings": {
-        "img_pc": "shopify:\/\/shop_images\/3_53469297-c1d1-45be-b455-c4cfe9bc784d.jpg",
-        "img_mobile": "shopify:\/\/shop_images\/4_0ea8b8e3-a9d9-44e1-9c03-62edda5ec1c4.jpg",
         "title": "<p>Hydraulic Disc Brakes<\/p>",
         "text": "<p>Our ebikes are equipped with dual 180mm hydraulic disc brakes, which give you maximum stopping power. With hydraulic disc brakes, the actuation moves both pads towards the rotor at the same time and with even pressure. The most important advantage of hydraulic disc brakes is that they automatically self-adjust as they wear down.<\/p>"
       }
@@ -561,9 +538,7 @@
         "fc10a433-9898-4d0a-b30e-04c1aa35fcb9"
       ],
       "settings": {
-        "bg_img": "shopify:\/\/shop_images\/product-path_thru-battory-pc3.jpg",
         "link": "",
-        "bg_imgMobile": "shopify:\/\/shop_images\/product-path_thru-battory-mobile.jpg",
         "link_mobile": "",
         "title": "<p>Large Capacity Battery<\/p>",
         "title_mobile": "<p>Large Capacity Battery<\/p>",
@@ -585,56 +560,48 @@
         "2610141a-784a-4917-90c6-1d0cfbe38630": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/pathfinder_light_360x_83392a1e-6462-4bd4-9eda-1c82367f5a39.webp",
             "text": "<p>The headlight is bright enough to let you see the road clearly in front of you when riding at nighttime.<\/p>"
           }
         },
         "5325a5d6-d070-4269-a6ec-b2abc0fee863": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/pathfinder_seat_360x_ab4b4e56-014f-4122-a9e9-babcabca36dd.webp",
             "text": "<p>The wider bike seat helps a lot with easing the pressure on your body, making bike rides more comfortable.<\/p>"
           }
         },
         "2ac9a688-bb53-4a8f-8f82-e92a57c7ff87": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/pathfinder_light1_360x_9559d2d9-dd6f-45d2-a0c5-1d6935dcf58c.webp",
             "text": "<p>The integrated taillight combine with all these functions: <br\/> Night Light (turned on with the front light at the same time),<br\/>Brake Light,<br\/>Water-flow turning Signal Light.<\/p>"
           }
         },
         "d106ac70-4edd-46d2-bc50-eca759aad226": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/pathfinder_right_360x_e8fbf3eb-b980-4599-9ae2-035a265fb8f1.webp",
             "text": "<p>On the right side of the handlebar, you will find the shifter of the SHIMANO 7-speed gear shift system.<\/p>"
           }
         },
         "483a0fad-5d5c-4509-b910-2e944ca32842": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/pathfinder_left_360x_620f2654-40bc-43da-a489-7122bb1b47f6.webp",
             "text": "<p>On the left side of the handlebar, you will find the switch of the turning signal light, the horn button, and the button pad(control the power on\/off, mode switch, pedal assist level, front light, etc.)<\/p>"
           }
         },
         "19235fbd-0c60-471d-958f-45687ea19f4c": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/pathfinder_seat1_360x_b9281d33-e473-4983-89dd-f8a0c17ca050.webp",
             "text": "<p>The cadence sensor pedal assist helps you ride easily. <br\/>On pedal assist mode, you can save more physical pedal on long-distance cycling.The all-steel chain sprocket provide reliable protection to your chains and better safety when you pedal.<\/p>"
           }
         },
         "37e1a90d-5adc-4a86-9d6b-2d4858a1f42b": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/pathfinder_speed_360x_3fb6a3c2-59e5-4a8e-bb9f-3785af748673.webp",
             "text": "<p>The SHIMANO 7 speed freewheel lets you shift to a larger cog for uphill riding and downshift to a smaller cog for high-speed cycling. During the pedal-assist mode, you can control the speed better with the gear shift system.<\/p>"
           }
         },
         "cfc7af4c-07f0-4e60-8830-f0ea4b01d184": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/pathfinder_rear_360x_6891e877-2f40-472f-9fff-7c9c19124ed2.webp",
             "text": "<p>You'll be able to carry a bike bag or other gear on the rear rack, making a bike-packing trip or daily more convenient. The fenders are installed both front and rear and help keep your bike and belongings clean during your ride.<\/p>"
           }
         }
@@ -661,8 +628,7 @@
           "type": "categroy",
           "settings": {
             "cate_name": "Size and Fit",
-            "text": "<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Height<\/div>\n\t\t\t<div>47.2''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Reach<\/div>\n\t\t\t<div>20.1''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Frame Size<\/div>\n\t\t\t<div>17''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Stand-over Height<\/div>\n\t\t\t<div>21.1''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Length <\/div>\n\t\t\t<div>76''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Wheelbase <\/div>\n\t\t\t<div>48.1''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Tube Length<\/div>\n\t\t\t<div>17''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Top Tube Length<\/div>\n\t\t\t<div>22.8''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Crank Length<\/div>\n\t\t\t<div>170mm(66.9'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Head Tube<\/div>\n\t\t\t<div>5.9''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Chain-stay<\/div>\n\t\t\t<div>19.68''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Width<\/div>\n\t\t\t<div>25.2''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Post  Diameter<\/div>\n\t\t\t<div>31.6mm(12.5'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Height(Minimum - Maximum)<\/div>\n\t\t\t<div>35''-40.5''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Weight<\/div>\n\t\t\t<div>81.5 lb (with rear rack, fenders, battery installed)<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Bottom Bracket Height<\/div>\n\t\t\t<div>100mm(39.4'')<\/div>\n\t\t<\/div>\n\t<\/div>",
-            "img": "shopify:\/\/shop_images\/path_thru.png"
+            "text": "<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Height<\/div>\n\t\t\t<div>47.2''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Reach<\/div>\n\t\t\t<div>20.1''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Frame Size<\/div>\n\t\t\t<div>17''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Stand-over Height<\/div>\n\t\t\t<div>21.1''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Length <\/div>\n\t\t\t<div>76''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Wheelbase <\/div>\n\t\t\t<div>48.1''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Tube Length<\/div>\n\t\t\t<div>17''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Top Tube Length<\/div>\n\t\t\t<div>22.8''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Crank Length<\/div>\n\t\t\t<div>170mm(66.9'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Head Tube<\/div>\n\t\t\t<div>5.9''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Chain-stay<\/div>\n\t\t\t<div>19.68''<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Handlebar Width<\/div>\n\t\t\t<div>25.2''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Post  Diameter<\/div>\n\t\t\t<div>31.6mm(12.5'')<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Seat Height(Minimum - Maximum)<\/div>\n\t\t\t<div>35''-40.5''<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<div class=\"box-de-leftBorder\">\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Total Weight<\/div>\n\t\t\t<div>81.5 lb (with rear rack, fenders, battery installed)<\/div>\n\t\t<\/div>\n\t\t<div class=\"box-de-leftBox\">\n\t\t\t<div>Bottom Bracket Height<\/div>\n\t\t\t<div>100mm(39.4'')<\/div>\n\t\t<\/div>\n\t<\/div>"
           }
         },
         "4d8b83aa-ad70-4823-8d3a-0ac863ac563e": {
@@ -698,9 +664,7 @@
           "settings": {
             "cate_name": "Pathfinder Step-Thru Story-1",
             "cate_title": "<p><\/p>",
-            "cate_text": "<p>Absolutely the best, everything you could ask for. First 17 miles down and love them. The pedal assist is just amazing. If you are scouting thru 20 brands like I did, THIS THE ONE!!!——By Don<br\/><\/p>",
-            "img": "shopify:\/\/shop_images\/pat_thru3.jpg",
-            "img_mobile": "shopify:\/\/shop_images\/pat_thru3.jpg"
+            "cate_text": "<p>Absolutely the best, everything you could ask for. First 17 miles down and love them. The pedal assist is just amazing. If you are scouting thru 20 brands like I did, THIS THE ONE!!!——By Don<br\/><\/p>"
           }
         },
         "f42b426d-eeb0-41fb-991b-a7a1645ff16e": {
@@ -708,9 +672,7 @@
           "settings": {
             "cate_name": "Pathfinder Step-Thru Story-2",
             "cate_title": "<p><\/p>",
-            "cate_text": "<p>This is one of those very few times that I write a review on anything, but I felt I must. So if you do not like reading long reviews I urge to skip mine. My wife and I just hit our early 60s and we can not ride our mountain bikes as we like to anymore. I have been following the development of BeeCool bikes for more than a year and have read almost every bad review out there. Over all that time I have seen this company address and correct every one of the issues mentioned in the reviews.——By Liz<br\/><\/p>",
-            "img": "shopify:\/\/shop_images\/pat_thru4.jpg",
-            "img_mobile": "shopify:\/\/shop_images\/pat_thru4.jpg"
+            "cate_text": "<p>This is one of those very few times that I write a review on anything, but I felt I must. So if you do not like reading long reviews I urge to skip mine. My wife and I just hit our early 60s and we can not ride our mountain bikes as we like to anymore. I have been following the development of BeeCool bikes for more than a year and have read almost every bad review out there. Over all that time I have seen this company address and correct every one of the issues mentioned in the reviews.——By Liz<br\/><\/p>"
           }
         },
         "4c2daef3-f4fb-46b5-aaa4-933b043d66c8": {
@@ -718,9 +680,7 @@
           "settings": {
             "cate_name": "Pathfinder Step-Thru Story-3",
             "cate_title": "<p><\/p>",
-            "cate_text": "<p>I ❤️ my BeeCool bike!!! It's simply a game changer. I ride more often, further and have more fun then I have in years. I'm a 62 year old man who's ridden all his life. I used to regularly clock 100+ miles in a week... I own a carbonfiber, hand made, Italian racing road bike, a full suspension mountain bike, a fun \"slingray\" chopper bike and a small, folding ebike. But... since buying my BeeCool Adventurer,, my BeeCool is all I want to ride!!!——By Joe<br\/><\/p>",
-            "img": "shopify:\/\/shop_images\/pat_thru1.jpg",
-            "img_mobile": "shopify:\/\/shop_images\/pat_thru1.jpg"
+            "cate_text": "<p>I ❤️ my BeeCool bike!!! It's simply a game changer. I ride more often, further and have more fun then I have in years. I'm a 62 year old man who's ridden all his life. I used to regularly clock 100+ miles in a week... I own a carbonfiber, hand made, Italian racing road bike, a full suspension mountain bike, a fun \"slingray\" chopper bike and a small, folding ebike. But... since buying my BeeCool Adventurer,, my BeeCool is all I want to ride!!!——By Joe<br\/><\/p>"
           }
         },
         "0cc3b01d-b88f-4854-899e-074bbb00dc11": {
@@ -728,9 +688,7 @@
           "settings": {
             "cate_name": "Pathfinder Step-Thru Story-4",
             "cate_title": "<p><\/p>",
-            "cate_text": "<p>My buddy bought a different brand first. He paid much more then i did and his bike isnt made with the same quality components as mine... he named his bike Colonel Klink because it's big, clunky, and noisy... I named mine Sargent Volts because it's Powerful and gets the job done with fun!!! My doggie and I STRONGLY recommend buying a BeeCool bike and riding it everyday!!!——By Charles<br\/><\/p>",
-            "img": "shopify:\/\/shop_images\/pat_thru2.jpg",
-            "img_mobile": "shopify:\/\/shop_images\/pat_thru2.jpg"
+            "cate_text": "<p>My buddy bought a different brand first. He paid much more then i did and his bike isnt made with the same quality components as mine... he named his bike Colonel Klink because it's big, clunky, and noisy... I named mine Sargent Volts because it's Powerful and gets the job done with fun!!! My doggie and I STRONGLY recommend buying a BeeCool bike and riding it everyday!!!——By Charles<br\/><\/p>"
           }
         }
       },
@@ -811,7 +769,6 @@
         "c94e8583-35ea-4865-8cc4-a9ffc115ff35": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
             "title": "Free Shipping ",
             "subtitle": "<p>To the lower 48 states<\/p>"
           }
@@ -819,7 +776,6 @@
         "c26b415d-c625-44cb-9ed4-04e7c0bf398a": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
             "title": "2-Year Warranty",
             "subtitle": "<p>Buy with confidence<\/p>"
           }
@@ -827,7 +783,6 @@
         "cc0b0942-10cf-4bd9-a14f-5a6b610b381f": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
             "title": "Secure Payment",
             "subtitle": "<p>Secure payment with Shopify<\/p>"
           }
@@ -835,7 +790,6 @@
         "5cbddc1f-d74c-4f8c-9402-b9c644a1f677": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
             "title": "Cost-effective",
             "subtitle": "<p>Direct to consumer pricing<\/p>"
           }
