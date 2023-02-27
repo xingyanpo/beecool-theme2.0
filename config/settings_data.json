@@ -166,7 +166,6 @@
               "svg8": "<?xml version=\"1.0\" standalone=\"no\"?><svg t=\"1663839307933\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"125599\" width=\"128\" height=\"128\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><path d=\"M581.824 640a32 32 0 0 1 5.76 63.488l-5.76 0.512H224a160 160 0 0 0-159.68 149.504L64 864V960h416a32 32 0 0 1 31.488 26.24L512 992a32 32 0 0 1-26.24 31.488L480 1024H0v-160a224 224 0 0 1 211.712-223.68L224 640h357.824zM800 576a32 32 0 0 1 32 32V768h160a32 32 0 1 1 0 64H832v160a32 32 0 1 1-64 0V832H608a32 32 0 1 1 0-64H768V608a32 32 0 0 1 32-32z m-256-576a288 288 0 1 1 0 576 288 288 0 0 1 0-576z m0 64a224 224 0 1 0 0 448 224 224 0 0 0 0-448z\" p-id=\"125600\"><\/path><\/svg>",
               "svg9": "<?xml version=\"1.0\" standalone=\"no\"?><svg t=\"1661237087335\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"6979\" width=\"128\" height=\"128\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><defs><style type=\"text\/css\">@font-face { font-family: feedback-iconfont; src: url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.woff2?t=1630033759944\") format(\"woff2\"), url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.woff?t=1630033759944\") format(\"woff\"), url(\"\/\/at.alicdn.com\/t\/font_1031158_u69w8yhxdu.ttf?t=1630033759944\") format(\"truetype\"); }\n<\/style><\/defs><path d=\"M320 298.666667h-128a21.333333 21.333333 0 0 1 0-42.666667h128a21.333333 21.333333 0 0 1 0 42.666667zM106.666667 298.666667h-42.666667a21.333333 21.333333 0 0 1 0-42.666667h42.666667a21.333333 21.333333 0 0 1 0 42.666667zM309.930667 682.666667H234.666667a21.333333 21.333333 0 0 1 0-42.666667h75.264a21.333333 21.333333 0 1 1 0 42.666667zM234.666667 426.666667h-128a21.333333 21.333333 0 0 1 0-42.666667h128a21.333333 21.333333 0 0 1 0 42.666667z\" p-id=\"6980\"><\/path><path d=\"M362.666667 426.666667h-128a21.333333 21.333333 0 0 1 0-42.666667h128a21.333333 21.333333 0 0 1 0 42.666667zM405.333333 554.666667h-256a21.333333 21.333333 0 0 1 0-42.666667h256a21.333333 21.333333 0 0 1 0 42.666667zM704 597.333333a21.333333 21.333333 0 0 1-21.333333-21.333333v-384a21.333333 21.333333 0 0 0-21.333334-21.333333h-426.666666a21.333333 21.333333 0 0 1 0-42.666667h426.666666A64.085333 64.085333 0 0 1 725.333333 192v384a21.333333 21.333333 0 0 1-21.333333 21.333333zM693.930667 682.666667H576a21.333333 21.333333 0 0 1 0-42.666667h117.930667a21.333333 21.333333 0 0 1 0 42.666667z\" p-id=\"6981\"><\/path><path d=\"M960 682.666667a21.333333 21.333333 0 0 1-21.333333-21.333334v-128A234.922667 234.922667 0 0 0 704 298.666667a21.333333 21.333333 0 0 1 0-42.666667 277.674667 277.674667 0 0 1 277.333333 277.333333v128a21.333333 21.333333 0 0 1-21.333333 21.333334zM405.333333 896a149.333333 149.333333 0 1 1 149.333334-149.333333A149.504 149.504 0 0 1 405.333333 896z m0-256a106.666667 106.666667 0 1 0 106.666667 106.666667A106.794667 106.794667 0 0 0 405.333333 640zM789.333333 896a149.333333 149.333333 0 1 1 149.333334-149.333333 149.504 149.504 0 0 1-149.333334 149.333333z m0-256a106.666667 106.666667 0 1 0 106.666667 106.666667 106.794667 106.794667 0 0 0-106.666667-106.666667z\" p-id=\"6982\"><\/path><path d=\"M956.458667 512H789.333333a21.333333 21.333333 0 0 1 0-42.666667h167.125334a21.333333 21.333333 0 0 1 0 42.666667z\" p-id=\"6983\"><\/path><\/svg>",
               "svg10": "<svg t=\"1667556121198\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"779\" width=\"32\" height=\"32\"><path d=\"M727.04 750.30528l-0.28672 0.24576-21.504 18.88256 7.49568 36.33152-34.65216-18.80064-20.23424 6.7584h-0.16384l-0.73728 0.28672-3.11296 0.98304a1038.336 1038.336 0 0 1-51.97824 15.03232c-33.13664 8.64256-68.03456 15.68768-89.86624 15.68768a344.064 344.064 0 1 1 344.064-344.064 342.46656 342.46656 0 0 1-87.61344 229.376c-5.28384 5.89824-15.1552 15.40096-24.90368 24.3712a1076.6336 1076.6336 0 0 1-15.5648 14.09024l-0.94208 0.8192z m39.77216 140.73856a8.192 8.192 0 0 0 11.96032-8.84736l-19.61984-94.69952s31.82592-27.93472 45.95712-43.70432a391.5776 391.5776 0 0 0 100.10624-262.144 393.216 393.216 0 1 0-393.216 393.216c57.50784 0 161.3824-34.52928 161.3824-34.52928l93.42976 50.70848z m-249.6512-605.7984c-41.28768 0-73.40032 12.57472-96.33792 37.80608-22.36416 24.08448-33.83296 56.19712-34.4064 96.33792a22.9376 22.9376 0 1 0 45.8752-1.92512c0.28672-27.15648 6.59456-48.3328 18.92352-64.02048 13.76256-18.92352 34.97984-28.09856 63.65184-28.09856 24.08448 0 42.43456 6.30784 56.19712 20.0704 12.61568 12.61568 19.49696 30.39232 19.49696 53.32992 0 16.05632-5.7344 30.96576-16.62976 45.30176-5.7344 6.88128-17.77664 18.92352-37.2736 36.12672-17.77664 16.05632-30.39232 31.5392-38.42048 46.44864-8.6016 16.05632-12.61568 33.83296-12.61568 54.4768v13.18912h45.8752v-13.18912c0-15.48288 3.44064-29.81888 10.89536-42.43456 5.7344-10.32192 14.336-20.64384 26.95168-30.96576 25.23136-22.36416 40.71424-37.2736 47.02208-44.15488a111.4112 111.4112 0 0 0 21.21728-67.09248c0-34.4064-10.89536-61.35808-32.68608-80.85504-21.79072-20.64384-51.03616-30.39232-87.73632-30.39232z m-8.6016 349.184a32.84992 32.84992 0 0 0-24.65792 9.74848c-6.88128 6.30784-9.74848 14.336-9.74848 24.08448s2.8672 17.77664 9.74848 24.65792a35.14368 35.14368 0 0 0 24.65792 9.74848 36.53632 36.53632 0 0 0 25.23136-9.74848 33.25952 33.25952 0 0 0 9.74848-24.65792 32.84992 32.84992 0 0 0-9.74848-24.08448 34.11968 34.11968 0 0 0-25.23136-9.74848z\" p-id=\"780\" fill=\"#151515\"><\/path><\/svg>",
-              "support_img": "shopify:\/\/shop_images\/1_d5b0f68e-f846-46a5-a4ed-5683d39554f9.png",
               "supportImg_text": "<p>Contact Us<\/p>",
               "supportBottom_title": "<p>Ask Our Team<\/p>",
               "supportBottom_text": "<p>+1 (833) 309-2586<br\/>Mon-Sun 8 am - 5 pm PST<\/p>",
@@ -209,8 +208,6 @@
           "e3ad65c1-09ad-4fd0-9c91-6b85c8176f31"
         ],
         "settings": {
-          "logo": "shopify:\/\/shop_images\/LOGO_5ad33641-fc3b-43e8-b813-9cf1ab26a820.png",
-          "sticky_img": "shopify:\/\/shop_images\/LOGO-2.png",
           "logo_max_width": 275,
           "mobile_logo_max_width": 190,
           "navigation_menu": "main-menu",
@@ -242,25 +239,25 @@
           "links": {
             "type": "links",
             "settings": {
-              "menu": "e-bikes_1"
+              "menu": "e-bikes"
             }
           },
           "794da417-d27c-4c3e-929c-bbdc5f6dc43c": {
             "type": "links",
             "settings": {
-              "menu": "support-1"
+              "menu": "support"
             }
           },
           "6c83e512-082d-4da5-bd7c-cc6b71add0ef": {
             "type": "links",
             "settings": {
-              "menu": "get-help"
+              "menu": "footer"
             }
           },
           "720e8f56-e63c-4909-8a3e-97d557a87295": {
             "type": "links",
             "settings": {
-              "menu": "products_1"
+              "menu": "community"
             }
           },
           "social_media": {
@@ -281,7 +278,7 @@
           "b7cb0b3f-92a7-4bbd-842d-a3c852fb905c": {
             "type": "policy",
             "settings": {
-              "icon": "shopify:\/\/shop_images\/d3225ab021040514f24fda6b9469ff51_7b524767-ad82-454f-a04f-d10c7c56e4cf.png",
+              "icon": "shopify:\/\/shop_images\/d3225ab021040514f24fda6b9469ff51_7b524767-ad82-454f-a04f-d10c7c56e4cf.webp",
               "title": "Free Shipping",
               "subtitle": "No need to worry about the shipping cost, we'll take care of it"
             }
@@ -289,7 +286,7 @@
           "1b6b8b23-1c71-4482-b6d4-25b80f119d6c": {
             "type": "policy",
             "settings": {
-              "icon": "shopify:\/\/shop_images\/4bddfd799d2f8701386aa3f0db510a4c.png",
+              "icon": "shopify:\/\/shop_images\/4bddfd799d2f8701386aa3f0db510a4c.webp",
               "title": "2-Year Warranty",
               "subtitle": "Get a 2-year manufacturer's warranty automatically after purchase"
             }
@@ -297,7 +294,7 @@
           "be1d8464-0e16-4bef-878d-7e94890cf4cd": {
             "type": "policy",
             "settings": {
-              "icon": "shopify:\/\/shop_images\/6b474b6e9f3caf3d4ba1fd9bdd81d8db.png",
+              "icon": "shopify:\/\/shop_images\/6b474b6e9f3caf3d4ba1fd9bdd81d8db.webp",
               "title": "14-Day Trial",
               "subtitle": "Don't like the bikes? It's OK, we accept return within 14 days"
             }
@@ -305,7 +302,7 @@
           "c2f04f25-85a6-4e96-af9a-1f22b8d7fe44": {
             "type": "policy",
             "settings": {
-              "icon": "shopify:\/\/shop_images\/589119870a0e454d0bf8a3169d1424ca_aaf109ce-f49d-472d-929d-6dead966b6d1.png",
+              "icon": "shopify:\/\/shop_images\/589119870a0e454d0bf8a3169d1424ca_aaf109ce-f49d-472d-929d-6dead966b6d1.webp",
               "title": "Cool Features",
               "subtitle": "Powerful battery and motor + Dual suspension + Dual hydraulic, disc brake"
             }
@@ -314,15 +311,7 @@
             "type": "pay_img_icon",
             "settings": {
               "copyright": "<p> © 2022 Beecool Bikes Disclaimer | Cookie Policy<\/p>",
-              "copyright_color": "#e9eaec",
-              "pay_img": "shopify:\/\/shop_images\/01_eb0a134c-33b6-4e41-a8a0-fa07443ffe16.png",
-              "pay_img2": "shopify:\/\/shop_images\/02_209793a0-c4ce-4cd7-a352-acbd96513441.png",
-              "pay_img3": "shopify:\/\/shop_images\/04_305c6d4b-2e20-4f9a-ac00-0aa780604cdb.png",
-              "pay_img4": "shopify:\/\/shop_images\/03_bbdb56e1-46ed-49a2-8923-44e826084baf.png",
-              "pay_img5": "shopify:\/\/shop_images\/05_0ee01766-eb56-41de-9832-8ed83ce5f57c.png",
-              "pay_img6": "shopify:\/\/shop_images\/06_508f36cd-31f8-4765-a6a3-a5e1d696aab5.png",
-              "pay_img7": "shopify:\/\/shop_images\/08_e7c667f2-53ec-4c52-9a98-e9a5572dbc3d.png",
-              "pay_img8": "shopify:\/\/shop_images\/07_4687831d-a088-4841-ac2a-3642ca921b4d.png"
+              "copyright_color": "#e9eaec"
             }
           }
         },
@@ -489,9 +478,7 @@
             "type": "product_recommend",
             "settings": {
               "recomment_title": "Regular Recommendation",
-              "recomment_description": "Check out official bike and accessory recommending combination here when it is hard for you to make a decision!",
-              "recomment_img_one": "shopify:\/\/shop_images\/QQ_20230216093518.png",
-              "recomment_img_two": "shopify:\/\/shop_images\/QQ_20230216093532.png"
+              "recomment_description": "Check out official bike and accessory recommending combination here when it is hard for you to make a decision!"
             }
           },
           "ac3fdf09-cae9-406a-804f-3a70f699bd25": {
@@ -510,13 +497,9 @@
             "settings": {
               "media_title": "Listen to What the Community Says",
               "media_desc": "See what others think about us. Have more fun and share your moments!",
-              "facebook_img": "shopify:\/\/shop_images\/facebook2.png",
               "facebook_url": "https:\/\/www.facebook.com\/Beecoolbikes",
-              "instagram_img": "shopify:\/\/shop_images\/instagram.jpg",
               "instagram_url": "https:\/\/www.instagram.com\/beecoolbikes\/",
-              "twitter_img": "shopify:\/\/shop_images\/twitter.png",
               "twitter_url": "https:\/\/twitter.com\/BeecoolBikes",
-              "tiktok_img": "shopify:\/\/shop_images\/tiktok.png",
               "tiktok_url": "https:\/\/www.tiktok.com\/@beecoolbikes?is_from_webapp=1&sender_device=pc"
             }
           }
@@ -530,7 +513,6 @@
         "settings": {
           "title_line_one": "Welcome To",
           "title_line_two": "BeeCool",
-          "title_img": "shopify:\/\/shop_images\/Draft_-_1_Moment.jpg",
           "scroll_title": "Beecool Bikes"
         }
       },
@@ -558,27 +540,7 @@
     },
     "content_for_index": [
 
-    ],
-    "blocks": {
-      "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "6779579260278573237": {
-        "type": "shopify:\/\/apps\/facebook-pixels-by-orichi\/blocks\/orichi-pixel\/67bf7d46-e794-4117-adb7-273fd162e4d1",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "10821884108211614105": {
-        "type": "shopify:\/\/apps\/best-chat-live-chat\/blocks\/app-embed\/8f04fd48-10ad-4211-86e2-b3b3803a2848",
-        "disabled": true,
-        "settings": {
-        }
-      }
-    }
+    ]
   },
   "presets": {
     "Carbon": {
@@ -634,6 +596,7 @@
             "message-1"
           ],
           "settings": {
+            "show_count_down_number_color": "#2a408e",
             "background": "#f3ff34",
             "text_color": "#282828"
           }
@@ -737,6 +700,7 @@
             "message-1"
           ],
           "settings": {
+            "show_count_down_number_color": "#2a408e",
             "background": "#f7aea6",
             "text_color": "#56112a"
           }
@@ -845,6 +809,7 @@
             "message-1"
           ],
           "settings": {
+            "show_count_down_number_color": "#2a408e",
             "background": "#051e38",
             "text_color": "#ffffff"
           }
@@ -950,6 +915,7 @@
             "message-1"
           ],
           "settings": {
+            "show_count_down_number_color": "#2a408e",
             "background": "#ffe5db",
             "text_color": "#0c1b54"
           }
