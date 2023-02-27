@@ -541,48 +541,56 @@
         "2610141a-784a-4917-90c6-1d0cfbe38630": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/adventurer_tires_360x_2410c1ab-4f40-4a5d-a37c-fc88380d20fb.webp",
             "text": "<p>The K1188 26\" x 4\", 30 psi tires help the bike ride smoothly and safely even on bad terrains. The tires are made by Innova Tires, a reliable tire manufacturer from Taiwan.<\/p>"
           }
         },
         "5325a5d6-d070-4269-a6ec-b2abc0fee863": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/explorer_seat_360x_bcf248bf-c77a-4a5e-9fc3-15d965f4f079.webp",
             "text": "<p>The wider bike seat helps a lot with easing the pressure on your body, making bike rides more comfortable.<\/p>"
           }
         },
         "2ac9a688-bb53-4a8f-8f82-e92a57c7ff87": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/explorer_battery_360x_967692a3-10d6-4bb5-b1ad-429b5e8bb034.webp",
             "text": "<p>The battery lock keeps your battery safe. No one can remove your battery without the key. Most importantly, the lock keeps the battery locked up on the frame safely. The battery will never loose during the ride.<\/p>"
           }
         },
         "d106ac70-4edd-46d2-bc50-eca759aad226": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/adventurer_fork_360x_ba019064-6ef1-4df9-a0ae-8b1c25331fe2.webp",
             "text": "<p>Fork Suspension Lock: Lock the front suspension helps you get more power for moving forward on a flatter road. Unlock the front suspension and the active suspension helps you smoothly overcome bumpy roads.<\/p>"
           }
         },
         "483a0fad-5d5c-4509-b910-2e944ca32842": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/explorer_pedal_360x_6fbfba56-17a5-4beb-8e58-d8b9b6b25e30.webp",
             "text": "<p>The cadence sensor pedal assist helps you ride easily. <br\/>On pedal assist mode, you can save more physical pedal on long-distance cycling.<\/p>"
           }
         },
         "19235fbd-0c60-471d-958f-45687ea19f4c": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/adventurer_display_360x_5d732ccf-82fc-45da-9ba4-f1a69cd26549.webp",
             "text": "<p>The backlight LCD display shows you all the key information and status of the ebike, including operation modes, speed, pedal assist level, battery capacity, wattmeter,battery life, odometer, trip odometer, etc.<\/p>"
           }
         },
         "37e1a90d-5adc-4a86-9d6b-2d4858a1f42b": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/adventurer_left_360x_885468c5-2386-4bd7-838b-d47ab2a0c1cd.webp",
             "text": "<p>On the left side of the handlebar, you will find the switch of the turning signal light, the horn button, and the button pad (control the power on\/off, mode switch, pedal assist level, front light, etc.)<\/p>"
           }
         },
         "cfc7af4c-07f0-4e60-8830-f0ea4b01d184": {
           "type": "FeaturesBox",
           "settings": {
+            "img": "shopify:\/\/shop_images\/adventurer_right1_360x_1af7022e-7945-48af-ae18-880087551810.webp",
             "text": "<p>The SHIMANO 7-speed gear shifter and the throttle are on the right side of the handlebar.<\/p>"
           }
         }
@@ -644,7 +652,7 @@
           "type": "categroy",
           "settings": {
             "cate_name": "Explorer Story-1",
-            "cate_title": "<p><\/p>",
+            "cate_title": "",
             "cate_text": "<p>I bought this Beecool Explorer in late July and was delivered in August 12th after I called and switch the color to Red instead of Orange because it's a stock item. I had a minor issue with the code 02 after installation. The customer service advised that I needed to adjust the screw on the break lever of the one that affected which I did and it worked. I am very happy with the Red color and the performance of the Beecool Explorer.  ——By Do V Nguyen<br\/><\/p>"
           }
         },
