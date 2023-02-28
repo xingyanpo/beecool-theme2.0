@@ -28,9 +28,7 @@
         "Subheading": "",
         "text_mobile": "<p>Share your works in a much bigger world<\/p>",
         "font_text": 28,
-        "font_text_mobile": 16,
-        "img_banner": "shopify:\/\/shop_images\/1_e17c62a8-2a5d-408d-918e-2bb71cbd936c.png",
-        "img_bannerMobile": "shopify:\/\/shop_images\/2_f05c08a5-6c2c-49e1-badc-eb78e60b8105.png"
+        "font_text_mobile": 16
       }
     },
     "1664344119bee0c746": {
@@ -40,8 +38,8 @@
           "type": "collaboration",
           "settings": {
             "svg": "<svg t=\"1666597019272\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"13842\" width=\"32\" height=\"32\"><path d=\"M948.429 924.731c-2.46-8.109-4.002-16.502-6.582-24.567-48.391-151.257-148.057-251.827-298.776-301.767-13.726-4.548-27.874-7.663-42.694-10.852 116.843-42.834 185.898-168.401 157.277-292.451-25.574-110.841-122.337-191.856-237.502-194.88-118.3-3.107-220.4 73.21-250.717 186.853-14.685 55.046-11.042 109.374 11.298 161.853 28.16 66.151 76.767 111.652 144.08 138.664-4.912 1.034-8.846 1.739-12.718 2.696-131.402 32.463-229.755 108.08-294.957 226.599-18.699 33.989-31.715 70.273-40.614 108.044-0.846 3.591 0.017 4.229 3.352 4.136 7.161-0.199 14.342-0.304 21.492 0.037 3.833 0.183 5.379-0.903 6.352-4.762 17.117-67.826 48.557-128.318 96.605-179.128C308.262 635.295 436.09 591.203 585.098 615.75c113.252 18.657 202.833 78.216 269.556 171.561 29.623 41.443 50.259 87.253 62.539 136.729 0.996 4.011 2.541 5.29 6.634 5.064 6.978-0.386 13.996-0.238 20.991-0.05 3.392 0.092 4.827-0.314 3.611-4.323zM512.483 573C390.066 572.974 290.991 473.883 291 351.484c0.009-122.39 99.131-221.496 221.52-221.484 122.395 0.012 221.491 99.126 221.48 221.52-0.011 122.398-99.136 221.506-221.517 221.48z\" p-id=\"13843\" fill=\"#ffffff\"><\/path><\/svg>",
-            "text": "<p>If you are an individual creator, <br>you can send us your representative works<br>together with your channel’s info if you have any one.<\/p>",
-            "text_mobile": "<p>If you are an individual creator, <br>you can send us your representative works<br>together with your channel’s info if <br>you have any one.<\/p>"
+            "text": "<p>If you are an individual creator, <br\/>you can send us your representative works<br\/>together with your channel’s info if you have any one.<\/p>",
+            "text_mobile": "<p>If you are an individual creator, <br\/>you can send us your representative works<br\/>together with your channel’s info if <br\/>you have any one.<\/p>"
           }
         },
         "7aca3172-896b-4509-a2d3-0ce7ba7cc347": {
@@ -78,35 +76,35 @@
         "067c4bf1-03ec-4b75-a996-e8f024923a6c": {
           "type": "Video-library",
           "settings": {
-            "img": "shopify:\/\/shop_images\/mmexport1630918568386_cdc73888-aa2d-49ea-a43b-31e3184f48d8.jpg",
+            "img": "shopify:\/\/shop_images\/mmexport1630918568386_cdc73888-aa2d-49ea-a43b-31e3184f48d8.webp",
             "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/38c992cb04b44183ae22ece02657043c.mp4"
           }
         },
         "d9686947-3d90-43a6-98e3-d9f3eb83ee94": {
           "type": "Video-library",
           "settings": {
-            "img": "shopify:\/\/shop_images\/3_56be9cbe-5e11-4654-b137-8ddbc6045e01.png",
+            "img": "shopify:\/\/shop_images\/3_56be9cbe-5e11-4654-b137-8ddbc6045e01.webp",
             "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/b98a52fec8de4634a4f12450c72eafcb.mov"
           }
         },
         "7ec00045-5b93-4362-ae14-adefe7e8a9a4": {
           "type": "Video-library",
           "settings": {
-            "img": "shopify:\/\/shop_images\/DSC9337.jpg",
+            "img": "shopify:\/\/shop_images\/DSC9337.webp",
             "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/b4830b9306574a58affaa5994fff006c.mp4"
           }
         },
         "ae0b2a59-5e0d-46f8-bb00-8c1cfffaa56c": {
           "type": "Video-library",
           "settings": {
-            "img": "shopify:\/\/shop_images\/2_80945275-7332-4919-8a3d-0be07356fae4.jpg",
+            "img": "shopify:\/\/shop_images\/2_80945275-7332-4919-8a3d-0be07356fae4.webp",
             "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/fd36e4ad8e614df2b10b73ada4166618.mp4"
           }
         },
         "313c3743-e014-42f5-9e30-2506588699c8": {
           "type": "Video-library",
           "settings": {
-            "img": "shopify:\/\/shop_images\/QQ_20221110112231.png",
+            "img": "shopify:\/\/shop_images\/QQ_20221110112231_96dad31b-9670-4116-b194-67a9dd243bb9.webp",
             "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9ba576c4bda24aca9fdab04491b3f500.mp4"
           }
         }
@@ -128,53 +126,36 @@
         "1ad9f201-69dc-4735-af89-22f7c02c472e": {
           "type": "Photo-Gallery",
           "settings": {
-            "img": "shopify:\/\/shop_images\/6_41b5cacc-2fdc-455c-ab2c-f78f1bcf781b.png",
-            "img2": "shopify:\/\/shop_images\/mmexport1630918460653.jpg"
           }
         },
         "5d5633de-90d8-4a5a-9e67-53d67776e52d": {
           "type": "Photo-Gallery",
           "settings": {
-            "img": "shopify:\/\/shop_images\/mmexport1630918484678.jpg",
-            "img2": "shopify:\/\/shop_images\/mmexport1630918492694.jpg",
-            "img3": "shopify:\/\/shop_images\/mmexport1630918495670_ad6fe685-9328-4926-8dd8-0b9551af74ec.jpg"
           }
         },
         "4ceee330-ef52-4f1a-9246-36ad26123796": {
           "type": "Photo-Gallery",
           "settings": {
-            "img": "shopify:\/\/shop_images\/mmexport1630918505472.jpg",
-            "img2": "shopify:\/\/shop_images\/mmexport1630918508215_8188b1c3-2015-4d24-80f2-5b93f50fb527.jpg"
           }
         },
         "3c118bf8-aca8-48e0-9ab2-5c33373444f2": {
           "type": "Photo-Gallery",
           "settings": {
-            "img": "shopify:\/\/shop_images\/mmexport1630918532715.jpg",
-            "img2": "shopify:\/\/shop_images\/mmexport1630918568386_cdc73888-aa2d-49ea-a43b-31e3184f48d8.jpg",
-            "img3": "shopify:\/\/shop_images\/mmexport1630918571101.jpg"
           }
         },
         "1fadae35-84da-4981-820f-2be751e0a7db": {
           "type": "Photo-Gallery",
           "settings": {
-            "img": "shopify:\/\/shop_images\/mmexport1630918576025.jpg",
-            "img2": "shopify:\/\/shop_images\/mmexport1630918581161.jpg",
-            "img3": "shopify:\/\/shop_images\/mmexport1630918578842_991df8d6-9f33-4d79-8516-c26940e8f4a2.jpg",
-            "img4": "shopify:\/\/shop_images\/mmexport1630918583882_0b0b0e1e-6492-458f-91a3-eeafa7b1b411.jpg"
           }
         },
         "14cf27a2-da98-4e87-b0bf-3d4801ed8c68": {
           "type": "Photo-Gallery",
           "settings": {
-            "img": "shopify:\/\/shop_images\/mmexport1630918597088.jpg",
-            "img2": "shopify:\/\/shop_images\/mmexport1630918599853.jpg"
           }
         },
         "03cdb75b-e8c7-4f8e-b01e-09195744c78d": {
           "type": "Photo-Gallery",
           "settings": {
-            "img": "shopify:\/\/shop_images\/mmexport1630918605574.jpg"
           }
         }
       },
@@ -198,7 +179,6 @@
         "1744f478-c0b5-4b35-bc8b-09a3457a332d": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
             "title": "Free Shipping",
             "subtitle": "<p>To the lower 48 states<\/p>"
           }
@@ -206,7 +186,6 @@
         "bc70e500-66ff-4edd-89a4-51de91024a88": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
             "title": "2-Year Warranty",
             "subtitle": "<p>Buy with confidence<\/p>"
           }
@@ -214,7 +193,6 @@
         "06ba1ea9-6ae0-4767-98d9-308859acbbbf": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
             "title": "Secure Payment",
             "subtitle": "<p>Secure payment with Shopify<\/p>"
           }
@@ -222,7 +200,6 @@
         "22736259-5590-4e2d-a080-5d8614cda92c": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
             "title": "Cost-effective",
             "subtitle": "<p>Direct to consumer pricing<\/p>"
           }
