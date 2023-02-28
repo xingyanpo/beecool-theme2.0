@@ -44,8 +44,8 @@
       "settings": {
         "temporary_info_switch": true,
         "temporary_info_text": "<p>Company Name: HETECHI LTD<\/p><p>Registration Number: 1187119<\/p><p>Company Address: 53 Durham Road, Bromley, England, BR2 0SN<\/p>",
-        "image": "shopify:\/\/shop_images\/1_965a78f1-1b5a-43e4-a2e8-83167558af9c.png",
-        "image_mobile": "shopify:\/\/shop_images\/1_f1ff6cc8-af56-4b95-89a0-092e5916ef13.png",
+        "image": "shopify:\/\/shop_images\/1_965a78f1-1b5a-43e4-a2e8-83167558af9c.webp",
+        "image_mobile": "shopify:\/\/shop_images\/2_1fcf934d-a16b-4d56-af18-4d5e7be1d500.webp",
         "title": "Contact",
         "content": "<p>Any info wanted? Feel free to ask<\/p>",
         "background": "rgba(0,0,0,0)",
@@ -60,7 +60,6 @@
         "0a93c288-1556-4c41-8ab0-619ad97e6b53": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
             "title": "Free Shipping",
             "subtitle": "<p>To the lower 48 states<\/p>"
           }
@@ -68,7 +67,6 @@
         "aa2fbfed-56d8-415c-9ca7-152e481075cb": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
             "title": "2-Year Warranty",
             "subtitle": "<p>Buy with confidence<\/p>"
           }
@@ -76,7 +74,6 @@
         "82dd266d-c591-4085-9113-6c2f972da266": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
             "title": "Secure Payment",
             "subtitle": "<p>Secure payment with Shopify<\/p>"
           }
@@ -84,7 +81,6 @@
         "65c493dc-f81c-4894-938d-1a921bbdac09": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
             "title": "Cost-effective",
             "subtitle": "<p>Direct to consumer pricing<\/p>"
           }
