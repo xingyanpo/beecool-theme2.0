@@ -49,7 +49,7 @@
         {% if section.settings.is_skip %}
           <a class="header__linklist-link link--animated" href="{{ link.url }}" {% if link.links.size > 0 or mega_menu_block != '' %}aria-controls="desktop-menu-{{ forloop.index }}" aria-expanded="false"{% endif %}>
         {% else %}
-          <div class="header__linklist-link link--animated" aria-controls="desktop-menu-1" aria-expanded="false">
+          <div class="header__linklist-link link--animated" aria-controls="desktop-menu-1" aria-expanded="false" style='cursor:pointer'>
         {% endif %}
           {{- link.title -}}
           {% if link.links.size > 0 %}
