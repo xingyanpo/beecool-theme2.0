@@ -382,10 +382,13 @@
     </div>
 </section>
 <script>
+  {% if product.title == "Bee Adventurer" %}
+    {% assign describe_img = 6683160248474 %}
+  {% endif %}
     let whbi = document.documentElement.clientWidth/document.documentElement.clientHeight
     var imgList = [];
     // let productTitle = document.querySelector('.product-meta__title').innerText+''
-    let productTitle = `6683160248474`
+    let productTitle = `{{ describe_img }}`
     let tips = '-pcs'
 
 
