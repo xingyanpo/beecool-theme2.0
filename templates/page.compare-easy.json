@@ -15,42 +15,42 @@
           "type": "compare",
           "settings": {
             "product": "bee-adventurer",
-            "img": "shopify:\/\/shop_images\/1_de00087f-d038-4873-bb6c-67dd6b0fbc34.png"
+            "img": "shopify:\/\/shop_images\/1_de00087f-d038-4873-bb6c-67dd6b0fbc34.webp"
           }
         },
         "e1c26f7a-d14d-4ae9-bb60-6202d8d9a171": {
           "type": "compare",
           "settings": {
             "product": "bee-explorer",
-            "img": "shopify:\/\/shop_images\/2_c93e5d09-e192-4c88-82b9-f4c63007b4ca.png"
+            "img": "shopify:\/\/shop_images\/2_c93e5d09-e192-4c88-82b9-f4c63007b4ca.webp"
           }
         },
         "422c6744-84b7-45fd-a182-c72c924bc12d": {
           "type": "compare",
           "settings": {
             "product": "bee-pathfinder",
-            "img": "shopify:\/\/shop_images\/path.jpg"
+            "img": "shopify:\/\/shop_images\/path.webp"
           }
         },
         "e8c1f8a2-35e0-4656-ae5d-03869af0b704": {
           "type": "compare",
           "settings": {
             "product": "bee-pathfinder-step-thru",
-            "img": "shopify:\/\/shop_images\/3_9acb68c4-2c17-47ad-a410-a19c9a0671d4.png"
+            "img": "shopify:\/\/shop_images\/3_9acb68c4-2c17-47ad-a410-a19c9a0671d4.webp"
           }
         },
         "bacaa4d7-d06b-43ab-9132-72a362770eb2": {
           "type": "compare",
           "settings": {
             "product": "bee-challenger",
-            "img": "shopify:\/\/shop_images\/2_2d25722a-2382-477a-9e30-ac9a5dc3fca7.png"
+            "img": "shopify:\/\/shop_images\/2_2d25722a-2382-477a-9e30-ac9a5dc3fca7.webp"
           }
         },
         "3bac5e4a-4714-4ccd-ad21-94280389964a": {
           "type": "compare",
           "settings": {
             "product": "bee-rambler",
-            "img": "shopify:\/\/shop_images\/1_eb167cca-4412-4b1f-914b-33aa39d85e75.png"
+            "img": "shopify:\/\/shop_images\/1_eb167cca-4412-4b1f-914b-33aa39d85e75.webp"
           }
         }
       },
@@ -77,7 +77,6 @@
         "de8b4f54-33d5-4fb1-a6be-4040b35c1289": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
             "title": "Free Shipping",
             "subtitle": "<p>To the lower 48 states<\/p>"
           }
@@ -85,7 +84,6 @@
         "b8c218a7-bc6b-4ddd-8943-faa2459bb9e1": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
             "title": "2-Year Warranty",
             "subtitle": "<p>Buy with confidence<\/p>"
           }
@@ -93,7 +91,6 @@
         "097aeb6f-49bc-4037-bc68-7fcf98aa4afd": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
             "title": "Secure Payment",
             "subtitle": "<p>Secure payment with Shopify<\/p>"
           }
@@ -101,7 +98,6 @@
         "861e687d-e82f-460b-b148-5cbd012a9414": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
             "title": "Cost-effective",
             "subtitle": "<p>Direct to consumer pricing<\/p>"
           }
