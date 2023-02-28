@@ -15,8 +15,8 @@
         "text": "",
         "link": "",
         "link2": "",
-        "img_banner": "shopify:\/\/shop_images\/1_c396b8fb-47d2-45ef-ba64-8410665ed585.png",
-        "img_bannerMobile": "shopify:\/\/shop_images\/1_8f3ae2d0-5500-4786-805f-c4132771e459.png"
+        "img_banner": "shopify:\/\/shop_images\/1_c396b8fb-47d2-45ef-ba64-8410665ed585.webp",
+        "img_bannerMobile": "shopify:\/\/shop_images\/1_8f3ae2d0-5500-4786-805f-c4132771e459.webp"
       }
     },
     "1660116698e64dc055": {
@@ -41,9 +41,9 @@
           "type": "Image_describe",
           "settings": {
             "check": true,
-            "img": "shopify:\/\/shop_images\/1_cb7e6c53-f414-46a4-862f-18f5e8a63427.jpg",
+            "img": "shopify:\/\/shop_images\/2_2da6db86-e3de-4143-8a29-04577096f2f2.webp",
             "link": "",
-            "img_mobile": "shopify:\/\/shop_images\/1_35c06a70-8070-465b-897e-680eede94337.png",
+            "img_mobile": "shopify:\/\/shop_images\/1_35c06a70-8070-465b-897e-680eede94337.webp",
             "div_width": 92,
             "title": "<p>Kevin is a programmer <br\/>in San Francisco, <br\/>California.<\/p>",
             "title_mobile": "<p>Kevin is a programmer in San Francisco, California. <\/p>",
@@ -59,8 +59,9 @@
           "type": "Image_describe",
           "settings": {
             "check": false,
-            "img": "shopify:\/\/shop_images\/2_2da6db86-e3de-4143-8a29-04577096f2f2.png",
+            "img": "shopify:\/\/shop_images\/1_cb7e6c53-f414-46a4-862f-18f5e8a63427.webp",
             "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a66c6e48dcbf497aa2d62bb5b23fa185.mp4",
+            "img_mobile": "shopify:\/\/shop_images\/1_35c06a70-8070-465b-897e-680eede94337.webp",
             "div_width": 86,
             "title": "<p>Dylan is a marketer<br\/>in Grand Rapids,<br\/>Michigan. <\/p>",
             "title_mobile": "<p>Dylan is a marketer in GrandRapids, Michigan.<\/p>",
@@ -76,8 +77,9 @@
           "type": "Image_describe",
           "settings": {
             "check": true,
-            "img": "shopify:\/\/shop_images\/2_2cf1bf5f-6533-4bc5-ab7a-df76964144cf.png",
+            "img": "shopify:\/\/shop_images\/2_2cf1bf5f-6533-4bc5-ab7a-df76964144cf.webp",
             "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/0a8f4f84fabf40b3a8f7e766165599b9.mp4",
+            "img_mobile": "shopify:\/\/shop_images\/2_2cf1bf5f-6533-4bc5-ab7a-df76964144cf.webp",
             "div_width": 95,
             "title": "<p>Jason is a bike-packing<br\/>lover from Chicago,<br\/>Illinois. <\/p>",
             "title_mobile": "<p>Jason is a bike-packing lover from Chicago, Illinois. <\/p>",
@@ -105,8 +107,8 @@
         "text": "<p>There must be many others suffering the same as they did. We keep searching best parts with the highest <br\/>cost-performance from different trustworthy suppliers. Finally, our first two awesome e-bike models were born, Bee Adventurer and Bee Explorer.<\/p>",
         "mobile_text": "",
         "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dfc0a64bcd73425189a0796f78090f84.mp4",
-        "img": "shopify:\/\/shop_images\/10_14_-_1_3.png",
-        "img_mobile": "shopify:\/\/shop_images\/10_14_-_1_3.png"
+        "img": "shopify:\/\/shop_images\/10_14_-_1_3.webp",
+        "img_mobile": "shopify:\/\/shop_images\/10_14_-_1_3.webp"
       }
     },
     "1f26c3ef-c879-4349-9808-35536abf8160": {
@@ -145,109 +147,91 @@
         "fff356ad-4b39-4baa-b5f3-f10ea4d1973e": {
           "type": "photoWall",
           "settings": {
-            "img": "shopify:\/\/shop_images\/12_aca59268-fabe-41a8-b4cf-162f95c8f84b.png"
           }
         },
         "77a53463-30ce-49d0-8801-a6d1b47bc067": {
           "type": "photoWall",
           "settings": {
-            "img": "shopify:\/\/shop_images\/11_8dfb3d64-0574-42f0-b15a-e85e5e56583f.png"
           }
         },
         "40e9e4d4-62e4-460d-b450-2db3a4ac7cae": {
           "type": "photoWall",
           "settings": {
-            "img": "shopify:\/\/shop_images\/7_da0a7868-1879-4b24-b79f-1646963df61f.png"
           }
         },
         "295bcd7b-0bb3-413d-9a25-bf2d6696b4b2": {
           "type": "photoWall",
           "settings": {
-            "img": "shopify:\/\/shop_images\/6_0f22ae63-d6eb-4d9b-904d-0351bd6b945b.png"
           }
         },
         "3174eac7-d3d3-4e08-aac3-b4fb99b8af2f": {
           "type": "photoWall",
           "settings": {
-            "img": "shopify:\/\/shop_images\/QQ_20230111150651.png"
           }
         },
         "5604082c-009f-4a75-8800-b320c7853590": {
           "type": "photoWall",
           "settings": {
-            "img": "shopify:\/\/shop_images\/8_3065861b-d635-4e78-a801-dabe454e615a.png"
           }
         },
         "df841424-ed02-4c31-9026-86cc4fa56cb7": {
           "type": "photoWall",
           "settings": {
-            "img": "shopify:\/\/shop_images\/4_32b037d7-6b8b-477d-b0f0-de69cf758dee.png"
           }
         },
         "8bdbb705-bbba-494d-a7f0-469a41673f01": {
           "type": "photoWall",
           "settings": {
-            "img": "shopify:\/\/shop_images\/10_c8d70088-3fbd-452d-be3b-339d6ff3bc40.png"
           }
         },
         "c4e6befa-3674-4b37-9b0d-f88b088bd24c": {
           "type": "photoWall",
           "settings": {
-            "img": "shopify:\/\/shop_images\/3_35d286e9-8b52-4449-9382-215def2d8a39.png"
           }
         },
         "47c4e18b-b542-42de-9373-8de29a5c7d30": {
           "type": "photoWall",
           "settings": {
-            "img": "shopify:\/\/shop_images\/2_cd3f4a9d-be79-441c-a3cf-c35c9d7d75b5.png"
           }
         },
         "a6a61270-7902-4f6e-a727-e62034f5d174": {
           "type": "photoWall",
           "settings": {
-            "img": "shopify:\/\/shop_images\/1_7ed9cb12-8895-499f-a113-f025aeb1c971.png"
           }
         },
         "c9f333d7-1e0d-407a-a207-a8c0f1f51b52": {
           "type": "photoWall",
           "settings": {
-            "img": "shopify:\/\/shop_images\/9_53e5786b-d2a5-4f4a-9091-589768019dd0.png"
           }
         },
         "84432ead-17d3-4e7f-80eb-6799e9563e6c": {
           "type": "photoTop",
           "settings": {
-            "img": "shopify:\/\/shop_images\/product-video-path-thru.jpg"
           }
         },
         "ea3befa7-9472-4514-bb1c-4f52852a0986": {
           "type": "photoTop",
           "settings": {
-            "img": "shopify:\/\/shop_images\/20221026_132339.jpg"
           }
         },
         "de04148a-f3e9-4b15-bd0a-400402096af8": {
           "type": "photoTop",
           "settings": {
-            "img": "shopify:\/\/shop_images\/product-video-exp.jpg"
           }
         },
         "c96bfd4f-b9d2-455d-b6f2-7f3032f98cbc": {
           "type": "photoTop",
           "settings": {
-            "img": "shopify:\/\/shop_images\/20221111101800.png"
           }
         },
         "ac6c8fbf-4942-410f-9387-867b492b3b00": {
           "type": "photoTop",
           "settings": {
-            "img": "shopify:\/\/shop_images\/20221111101623.png"
           }
         },
         "189a0be6-8f0c-4826-a21d-f74182042768": {
           "type": "photoTop",
           "settings": {
-            "img": "shopify:\/\/shop_images\/20221111103800.png"
           }
         }
       },
@@ -275,8 +259,7 @@
         "title": "Test Ride",
         "text": "<p>BeeCool family will always be here for you. <br\/>Test our e-bikes and join Bee Riders to enjoy each of your ride.<\/p>",
         "button": "<p>Test Ride Now<\/p>",
-        "link": "shopify:\/\/pages\/dealers",
-        "img": "shopify:\/\/shop_images\/1_1d4b87f9-4a03-45d8-a2b5-166f068c1e53.png"
+        "link": "shopify:\/\/pages\/dealers"
       }
     },
     "b061a28c-bb3d-4908-a212-13369e22ee54": {
@@ -285,7 +268,6 @@
         "c5b06e15-e18d-4c93-b963-54f8f39b2384": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
             "title": "Free Shipping",
             "subtitle": "<p>To the lower 48 states<\/p>"
           }
@@ -293,7 +275,6 @@
         "d67a2903-0eb5-4dea-90c5-f2a0fcded8f0": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
             "title": "2-Year Warranty",
             "subtitle": "<p>Buy with confidence<\/p>"
           }
@@ -301,7 +282,6 @@
         "2b0d033b-6d22-49ae-90f6-bcefe6a6f773": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
             "title": "Secure Payment",
             "subtitle": "<p>Secure payment with Shopify<\/p>"
           }
@@ -309,7 +289,6 @@
         "6253e3e5-d7f0-499c-accc-bfb77c3efbc0": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
             "title": "Cost-effective",
             "subtitle": "<p>Direct to consumer pricing<\/p>"
           }
