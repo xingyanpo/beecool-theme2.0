@@ -185,6 +185,19 @@
       <div class="mobile">
         {%- render 'social-media' -%}
       </div>
+
+      <style>
+        .footer-country-select {width:100%;}
+        .footer-country-select-wrap > img {width: 25px}
+        .footer-country-select-wrap > span {padding-left: 10px;}
+      </style>
+      <div class="footer-country-select">
+        <div class="footer-country-select-wrap">
+          <img src="https://cdn.shopify.com/s/files/1/0730/5969/6953/files/ca.svg?v=1677572062">
+          <span>Canada</span>
+        </div>
+      </div>
+  
       <div class="footer__aside">
         {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
           {%- assign country_selector = true -%}
