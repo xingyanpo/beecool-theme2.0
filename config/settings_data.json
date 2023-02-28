@@ -489,7 +489,9 @@
             "type": "product_recommend",
             "settings": {
               "recomment_title": "Regular Recommendation",
-              "recomment_description": "Check out official bike and accessory recommending combination here when it is hard for you to make a decision!"
+              "recomment_description": "Check out official bike and accessory recommending combination here when it is hard for you to make a decision!",
+              "recomment_img_one": "shopify:\/\/shop_images\/QQ_20230216093518.webp",
+              "recomment_img_two": "shopify:\/\/shop_images\/QQ_20230216093532.webp"
             }
           },
           "ac3fdf09-cae9-406a-804f-3a70f699bd25": {
@@ -508,9 +510,13 @@
             "settings": {
               "media_title": "Listen to What the Community Says",
               "media_desc": "See what others think about us. Have more fun and share your moments!",
+              "facebook_img": "shopify:\/\/shop_images\/facebook2.webp",
               "facebook_url": "https:\/\/www.facebook.com\/Beecoolbikes",
+              "instagram_img": "shopify:\/\/shop_images\/instagram.webp",
               "instagram_url": "https:\/\/www.instagram.com\/beecoolbikes\/",
+              "twitter_img": "shopify:\/\/shop_images\/twitter.webp",
               "twitter_url": "https:\/\/twitter.com\/BeecoolBikes",
+              "tiktok_img": "shopify:\/\/shop_images\/tiktok.webp",
               "tiktok_url": "https:\/\/www.tiktok.com\/@beecoolbikes?is_from_webapp=1&sender_device=pc"
             }
           }
