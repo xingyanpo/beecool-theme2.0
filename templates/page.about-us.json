@@ -147,91 +147,109 @@
         "fff356ad-4b39-4baa-b5f3-f10ea4d1973e": {
           "type": "photoWall",
           "settings": {
+            "img": "shopify:\/\/shop_images\/12_aca59268-fabe-41a8-b4cf-162f95c8f84b.webp"
           }
         },
         "77a53463-30ce-49d0-8801-a6d1b47bc067": {
           "type": "photoWall",
           "settings": {
+            "img": "shopify:\/\/shop_images\/11_8dfb3d64-0574-42f0-b15a-e85e5e56583f.webp"
           }
         },
         "40e9e4d4-62e4-460d-b450-2db3a4ac7cae": {
           "type": "photoWall",
           "settings": {
+            "img": "shopify:\/\/shop_images\/7_da0a7868-1879-4b24-b79f-1646963df61f.webp"
           }
         },
         "295bcd7b-0bb3-413d-9a25-bf2d6696b4b2": {
           "type": "photoWall",
           "settings": {
+            "img": "shopify:\/\/shop_images\/6_0f22ae63-d6eb-4d9b-904d-0351bd6b945b.webp"
           }
         },
         "3174eac7-d3d3-4e08-aac3-b4fb99b8af2f": {
           "type": "photoWall",
           "settings": {
+            "img": "shopify:\/\/shop_images\/QQ_20230111150651.webp"
           }
         },
         "5604082c-009f-4a75-8800-b320c7853590": {
           "type": "photoWall",
           "settings": {
+            "img": "shopify:\/\/shop_images\/8_3065861b-d635-4e78-a801-dabe454e615a.webp"
           }
         },
         "df841424-ed02-4c31-9026-86cc4fa56cb7": {
           "type": "photoWall",
           "settings": {
+            "img": "shopify:\/\/shop_images\/4_32b037d7-6b8b-477d-b0f0-de69cf758dee.webp"
           }
         },
         "8bdbb705-bbba-494d-a7f0-469a41673f01": {
           "type": "photoWall",
           "settings": {
+            "img": "shopify:\/\/shop_images\/10_c8d70088-3fbd-452d-be3b-339d6ff3bc40.webp"
           }
         },
         "c4e6befa-3674-4b37-9b0d-f88b088bd24c": {
           "type": "photoWall",
           "settings": {
+            "img": "shopify:\/\/shop_images\/3_35d286e9-8b52-4449-9382-215def2d8a39.webp"
           }
         },
         "47c4e18b-b542-42de-9373-8de29a5c7d30": {
           "type": "photoWall",
           "settings": {
+            "img": "shopify:\/\/shop_images\/2_cd3f4a9d-be79-441c-a3cf-c35c9d7d75b5.webp"
           }
         },
         "a6a61270-7902-4f6e-a727-e62034f5d174": {
           "type": "photoWall",
           "settings": {
+            "img": "shopify:\/\/shop_images\/1_7ed9cb12-8895-499f-a113-f025aeb1c971.webp"
           }
         },
         "c9f333d7-1e0d-407a-a207-a8c0f1f51b52": {
           "type": "photoWall",
           "settings": {
+            "img": "shopify:\/\/shop_images\/9_53e5786b-d2a5-4f4a-9091-589768019dd0.webp"
           }
         },
         "84432ead-17d3-4e7f-80eb-6799e9563e6c": {
           "type": "photoTop",
           "settings": {
+            "img": "shopify:\/\/shop_images\/product-video-path-thru.webp"
           }
         },
         "ea3befa7-9472-4514-bb1c-4f52852a0986": {
           "type": "photoTop",
           "settings": {
+            "img": "shopify:\/\/shop_images\/20221026_132339_6c876437-a4dc-441d-adc7-7a8f8aaa9a31.webp"
           }
         },
         "de04148a-f3e9-4b15-bd0a-400402096af8": {
           "type": "photoTop",
           "settings": {
+            "img": "shopify:\/\/shop_images\/product-video-exp.webp"
           }
         },
         "c96bfd4f-b9d2-455d-b6f2-7f3032f98cbc": {
           "type": "photoTop",
           "settings": {
+            "img": "shopify:\/\/shop_images\/20221111101800.webp"
           }
         },
         "ac6c8fbf-4942-410f-9387-867b492b3b00": {
           "type": "photoTop",
           "settings": {
+            "img": "shopify:\/\/shop_images\/20221111101623.webp"
           }
         },
         "189a0be6-8f0c-4826-a21d-f74182042768": {
           "type": "photoTop",
           "settings": {
+            "img": "shopify:\/\/shop_images\/20221111103800.webp"
           }
         }
       },
@@ -259,7 +277,8 @@
         "title": "Test Ride",
         "text": "<p>BeeCool family will always be here for you. <br\/>Test our e-bikes and join Bee Riders to enjoy each of your ride.<\/p>",
         "button": "<p>Test Ride Now<\/p>",
-        "link": "shopify:\/\/pages\/dealers"
+        "link": "shopify:\/\/pages\/dealers",
+        "img": "shopify:\/\/shop_images\/1_1d4b87f9-4a03-45d8-a2b5-166f068c1e53.webp"
       }
     },
     "b061a28c-bb3d-4908-a212-13369e22ee54": {
