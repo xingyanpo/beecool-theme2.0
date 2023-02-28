@@ -49,18 +49,14 @@
         {% if section.settings.is_skip %}
           <a class="header__linklist-link link--animated" href="{{ link.url }}" {% if link.links.size > 0 or mega_menu_block != '' %}aria-controls="desktop-menu-{{ forloop.index }}" aria-expanded="false"{% endif %}>
         {% else %}
-          <div class="header__linklist-link link--animated" aria-controls="desktop-menu-1" aria-expanded="false" style='cursor:pointer'>
+          <a style="cursor:pointer;" class="header__linklist-link link--animated"  {% if link.links.size > 0 or mega_menu_block != '' %}aria-controls="desktop-menu-{{ forloop.index }}" aria-expanded="false"{% endif %}>
         {% endif %}
           {{- link.title -}}
           {% if link.links.size > 0 %}
             <span class="heads_icon">
               <svg t="1660532356620" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2188" width="200" height="200"><path d="M481.056 714.656L138.096 371.68a44.096 44.096 0 0 1 62.352-62.368l311.808 311.84 311.808-311.84a44.128 44.128 0 0 1 62.352 1.088 44.128 44.128 0 0 1 0 61.28L543.456 714.656a44.096 44.096 0 0 1-62.368 0.048l-0.048-0.048z" fill="#ffffff" p-id="2189"></path></svg>            </span>
           {% endif %}
-        {% if section.settings.is_skip %}
           </a>
-        {% else %}
-          </div>
-        {% endif %}
 
         {%- if mega_menu_block != '' -%}
           {%- if link.links.size > 0 or mega_menu_images != blank -%}
