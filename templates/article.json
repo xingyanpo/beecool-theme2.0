@@ -19,8 +19,8 @@
         "text_mobile": "",
         "font_text": 12,
         "font_text_mobile": 12,
-        "img_banner": "shopify:\/\/shop_images\/1_0138e06d-6016-4bc5-8005-c71f32d2dda1.png",
-        "img_bannerMobile": "shopify:\/\/shop_images\/1_7837d7f6-48be-483e-bc54-13c1c056d43d.png"
+        "img_banner": "shopify:\/\/shop_images\/1_0138e06d-6016-4bc5-8005-c71f32d2dda1.webp",
+        "img_bannerMobile": "shopify:\/\/shop_images\/1_7837d7f6-48be-483e-bc54-13c1c056d43d.webp"
       }
     },
     "main": {
@@ -30,21 +30,21 @@
           "type": "article",
           "settings": {
             "article": "latest-news\/enjoy-life-and-start-pedaling-ahead",
-            "img": "shopify:\/\/shop_images\/IMG_0908.jpg"
+            "img": "shopify:\/\/shop_images\/IMG_0908.webp"
           }
         },
         "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd": {
           "type": "article",
           "settings": {
             "article": "latest-news\/how-to-make-your-electric-bike-comfortable-and-durable",
-            "img": "shopify:\/\/shop_images\/QQ_20230213121424.png"
+            "img": "shopify:\/\/shop_images\/QQ_20230213121424.webp"
           }
         },
         "3e7c183c-26c2-45ec-a817-8b92d88c5fbc": {
           "type": "article",
           "settings": {
             "article": "latest-news\/how-to-maintain-your-electric-bike-derailleur",
-            "img": "shopify:\/\/shop_images\/IMG_0864.jpg"
+            "img": "shopify:\/\/shop_images\/IMG_0864.webp"
           }
         }
       },
@@ -71,7 +71,6 @@
         "dc34f38d-2c57-4f6c-9145-3251ff62c207": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/01_1920x_14575ec8-0731-4ea5-bb71-ff6566efe166.png",
             "title": "Free Shipping",
             "subtitle": "<p>To the lower 48 states<\/p>"
           }
@@ -79,7 +78,6 @@
         "bf7ef05b-1df5-42bb-9092-91811d90b0de": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/02_1920x_c2352c47-68d3-4fad-b74a-8241d6bf30a0.png",
             "title": "2-Year Warranty",
             "subtitle": "<p>Buy with confidence<\/p>"
           }
@@ -87,7 +85,6 @@
         "fd8c2cda-8f2e-4fe1-b032-d60a7c82b287": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/03_1920x_9e4d1045-108b-4b5d-b1af-33391e233b8c.png",
             "title": "Secure Payment",
             "subtitle": "<p>Secure payment with Shopify<\/p>"
           }
@@ -95,7 +92,6 @@
         "d547eb82-5b11-4db0-8c08-8236c5facd46": {
           "type": "afterSales",
           "settings": {
-            "img": "shopify:\/\/shop_images\/04_1920x_259de9f9-4ff7-427e-8f23-0e3eb391ecbb.png",
             "title": "Cost-effective",
             "subtitle": "<p>Direct to consumer pricing<\/p>"
           }
