@@ -161,7 +161,7 @@
                           {%- if line_item.unit_price_measurement -%}
                             <div class="price text--subdued">
                               <div class="unit-price-measurement">
-                                <span class="unit-price-measurement__price">{{ line_item.unit_price | money }}</span>
+                                <span class="unit-price-measurement__price">{{ line_item.unit_price | money_with_currency }}</span>
                                 <span class="unit-price-measurement__separator">/</span>
 
                                 {%- if line_item.unit_price_measurement.reference_value != 1 -%}
@@ -182,15 +182,15 @@
                             <span class="price price_left price--highlight {% if line_item.original_line_price > line_item.final_line_price or line_item.final_line_price == 0 or line_item.variant.compare_at_price > line_item.variant.price %}price--highlight{% endif %}">
                             <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
                             <!-- {%- if line_item.original_line_price > line_item.final_line_price -%}
-                              {{- line_item.original_line_price | money -}}
+                              {{- line_item.original_line_price | money_with_currency -}}
                             {%- else -%}
-                              {{- line_item.variant.compare_at_price | times: line_item.quantity | money -}}
+                              {{- line_item.variant.compare_at_price | times: line_item.quantity | money_with_currency -}}
                             {%- endif -%} -->
                           
                             {%- if line_item.final_line_price == 0 -%}
                               {{- 'cart.general.free' | t -}}
                             {%- else -%}
-                              {{- line_item.final_line_price | money -}}
+                              {{- line_item.final_line_price | money_with_currency -}}
                             {%- endif -%}
                           </span>
                         {%- endcapture -%}
