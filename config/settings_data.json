@@ -220,7 +220,7 @@
           "show_icons": true,
           "reduce_desktop_padding": false,
           "show_locale_selector": true,
-          "show_country_selector": false,
+          "show_country_selector": true,
           "enable_transparent_header": false,
           "transparent_header_text_color": "#ffffff",
           "search_menu": "",
