@@ -510,7 +510,7 @@
                       {%- if settings.currency_code_enabled -%}
                         {{- product.selected_or_first_available_variant.price | money_with_currency -}}
                       {%- else -%}
-                        {{- product.selected_or_first_available_variant.price | money -}}
+                        {{- product.selected_or_first_available_variant.price | money_with_currency -}}
                       {%- endif -%}
                     </span>
           
@@ -520,7 +520,7 @@
                       {%- if settings.currency_code_enabled -%}
                         {{- product.selected_or_first_available_variant.compare_at_price | money_with_currency -}}
                       {%- else -%}
-                        {{- product.selected_or_first_available_variant.compare_at_price | money -}}
+                        {{- product.selected_or_first_available_variant.compare_at_price | money_with_currency -}}
                       {%- endif -%}
                     </span>
                   {%- else -%}
@@ -529,7 +529,7 @@
                       {%- if settings.currency_code_enabled -%}
                         {{- product.selected_or_first_available_variant.price | money_with_currency -}}
                       {%- else -%}
-                        {{- product.selected_or_first_available_variant.price | money -}}
+                        {{- product.selected_or_first_available_variant.price | money_with_currency -}}
                       {%- endif -%}
                     </span>
                   {%- endif -%}
@@ -537,7 +537,7 @@
                   {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
                     <div class="price text--subdued">
                       <div class="unit-price-measurement">
-                        <span class="unit-price-measurement__price">{{ product.selected_or_first_available_variant.unit_price | money }}</span>
+                        <span class="unit-price-measurement__price">{{ product.selected_or_first_available_variant.unit_price | money_with_currency }}</span>
                         <span class="unit-price-measurement__separator">/</span>
           
                         {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
