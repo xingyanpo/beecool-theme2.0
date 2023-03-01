@@ -155,7 +155,7 @@
                   {%- if line_item.unit_price_measurement -%}
                     <div class="price text--subdued">
                       <div class="unit-price-measurement">
-                        <span class="unit-price-measurement__price">{{ line_item.unit_price | money }}</span>
+                        <span class="unit-price-measurement__price">{{ line_item.unit_price | money_with_currency }}</span>
                         <span class="unit-price-measurement__separator">/</span>
   
                         {%- if line_item.unit_price_measurement.reference_value != 1 -%}
