@@ -260,7 +260,7 @@
                             <ul class="line-item__discount-list list--unstyled" role="list">
                               {%- for discount_allocation in line_item.line_level_discount_allocations -%}
                                 <li class="line-item__discount-badge discount-badge">
-                                  {%- render 'icon' with 'discount-badge' -%}{{ discount_allocation.discount_application.title }} (-{{ discount_allocation.amount | money }})
+                                  {%- render 'icon' with 'discount-badge' -%}{{ discount_allocation.discount_application.title }} (-{{ discount_allocation.amount | money_with_currency }})
                                 </li>
                               {%- endfor -%}
                             </ul>
