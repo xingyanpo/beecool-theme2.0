@@ -321,7 +321,7 @@
           <div class="inner-bg-box"></div>
         </div>
 
-        <div class="product-price">
+        <div class="product-price" style="flex-wrap: wrap;">
           {{ item.settings.product.price | money_with_currency }}
           <s style="opacity: 0.6; margin-left:4px; text-decoration-color: red;">
             {{- item.settings.product.compare_at_price | money_with_currency -}}
