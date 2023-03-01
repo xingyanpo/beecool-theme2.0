@@ -130,9 +130,9 @@
                                       <div class="title">
                                         {{product.title}}
                                       </div>
-                                      <div class="price">
+                                      <div class="price" style="flex-wrap: wrap;">
                                         <div class="price--highlight">{{- product.price | money_with_currency -}}</div>
-                                        {%- if product.price != product.compare_at_price -%}<s class="price--compare"> {{- product.compare_at_price | money_with_currency -}}</s>{%- endif -%}
+                                        {%- if product.price != product.compare_at_price -%}<s class="price--compare" > {{- product.compare_at_price | money_with_currency -}}</s>{%- endif -%}
                                       </div>
                                     </a>
                                   </div>
