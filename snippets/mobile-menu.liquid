@@ -538,6 +538,16 @@
         </li>
       {%- endfor -%}
     </ul>
+
+        <style>
+          @media screen and (max-width: 1199px) {
+            .mobile_drawer_login {padding:15px 0;}
+          }
+        </style>
+        <div class="mobile-nav__item mobile_drawer_login" data-level="1">
+          <p>login</p>
+        </div>
+        
    <div class="mobile_drawer_bottomBox mobile-nav__item" data-level="1">
       <div class="mobileDrawer_bottomBox_top">
           <div class="mobileDrawer_bottomBox_topTitle">{{ section.settings.mobile_title }}</div>
