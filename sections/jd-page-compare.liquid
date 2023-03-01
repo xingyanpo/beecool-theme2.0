@@ -450,6 +450,7 @@ $(function(){
             
             var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product.price | money_with_currency }}`)
             var price =$price.html().split(".")[0];
+            console.log($price.html(), 'test price')
            
             var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(price)
             $(this).parent().parent().parent().find(".selectUserDiv_priceDiv_right a").attr("href",`{{section.settings.product.url}}`)
