@@ -398,7 +398,7 @@
                         <div class="cart__total-container">
                           <div class="cart__total_left">{{ 'cart.general.total' | t }}</div>
                           <div class="cart__total_right price--highlight">
-                            <div>{{ cart.total_price | money }}</div>
+                            <div>{{ cart.total_price | money_with_currency }}</div>
                         
                             {%- assign total_discount = 0 -%}
 
@@ -416,7 +416,7 @@
                             {%- endfor -%}
 
                             {%- if total_discount > 0 -%}
-                              {%- capture amount_saved -%}<span>{{ total_discount | money }}</span>{%- endcapture -%}
+                              {%- capture amount_saved -%}<span>{{ total_discount | money_with_currency }}</span>{%- endcapture -%}
                                 <div class="you_saved">
                                   You saved <span>{{amount_saved}}!</span>
                                 </div>
@@ -433,7 +433,7 @@
                             {%- for discount_application in cart.cart_level_discount_applications -%}
                               <li class="cart__discount">
                                 <span class="cart__discount-badge discount-badge">{%- render 'icon' with 'discount-badge' -%}{{ discount_application.title }}</span>
-                                <span class="cart__discount-price">-{{ discount_application.total_allocated_amount | money }}</span>
+                                <span class="cart__discount-price">-{{ discount_application.total_allocated_amount | money_with_currency }}</span>
                               </li>
                             {%- endfor -%}
                           </ul>
