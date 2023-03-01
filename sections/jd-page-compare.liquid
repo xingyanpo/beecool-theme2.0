@@ -448,7 +448,7 @@ $(function(){
         $(this).attr("old",_thisVal)
         if(a==0){
             
-            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product.price | money }}`)
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product.price | money_with_currency }}`)
             var price =$price.html().split(".")[0];
            
             var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(price)
@@ -458,7 +458,7 @@ $(function(){
         
         }else if(a==1){
            
-            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product2.price | money }}`)
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product2.price | money_with_currency }}`)
             var price =$price.html().split(".")[0];
            
             var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(price)
@@ -471,7 +471,7 @@ $(function(){
          
 
             $(this).parent().parent().parent().find(".selectUserDiv_priceDiv_right a").attr("href",`{{section.settings.product3.url}}`)
-            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product3.price | money }}`)
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product3.price | money_with_currency }}`)
             var price =$price.html().split(".")[0];
            
             var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(price)
@@ -481,7 +481,7 @@ $(function(){
         }else if(a==3){
            
             $(this).parent().parent().parent().find(".selectUserDiv_priceDiv_right a").attr("href",`{{section.settings.product4.url}}`)
-            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product4.price | money }}`)
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product4.price | money_with_currency }}`)
             var price =$price.html().split(".")[0];
            
             var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(price)
@@ -491,7 +491,7 @@ $(function(){
         }else if(a==4){
             
             $(this).parent().parent().parent().find(".selectUserDiv_priceDiv_right a").attr("href",`{{section.settings.product5.url}}`)
-            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product5.price | money }}`)
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product5.price | money_with_currency }}`)
             var price =$price.html().split(".")[0];
            
             var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(price)
@@ -501,7 +501,7 @@ $(function(){
         }else if(a==5){
         
             $(this).parent().parent().parent().find(".selectUserDiv_priceDiv_right a").attr("href",`{{section.settings.product6.url}}`)
-            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product6.price | money }}`)
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product6.price | money_with_currency }}`)
             var price =$price.html().split(".")[0];
            
             var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(price)
@@ -511,7 +511,7 @@ $(function(){
         }else if(a==6){
             
             $(this).parent().parent().parent().find(".selectUserDiv_priceDiv_right a").attr("href",`{{section.settings.product7.url}}`)
-            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product7.price | money }}`)
+            var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(`{{section.settings.product7.price | money_with_currency }}`)
             var price =$price.html().split(".")[0];
            
             var $price =$(this).parent().parent().parent().find(".selectUserDiv_priceDiv_pirce").html(price)
