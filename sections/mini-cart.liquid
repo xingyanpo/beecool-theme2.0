@@ -452,7 +452,7 @@
          
           <div class="subtotal_cart_save price--highlight">
             <!--  {{- cart.total_price | money_with_currency -}} -->
-            {{- cart.total_price | money -}}
+            {{- cart.total_price | money_with_currency -}}
 
             <div class="mobile">
               {%- assign total_discount = 0 -%}
@@ -471,7 +471,7 @@
               {%- endfor -%}
 
               {%- if total_discount > 0 -%}
-                {%- capture amount_saved -%}<span>{{ total_discount | money }}</span>{%- endcapture -%}
+                {%- capture amount_saved -%}<span>{{ total_discount | money_with_currency }}</span>{%- endcapture -%}
                   <div class="you_saved">
                     You saved <span>{{amount_saved}}!</span>
                   </div>
