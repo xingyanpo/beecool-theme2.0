@@ -4,6 +4,7 @@
     position: fixed;
     left: 40px;
     bottom: 40px;
+    display:none;
   }
   .mini-country-select-wrap {
     position:relative;
@@ -56,6 +57,11 @@
   }
   .show-country:hover {
     visibility: visible;
+  }
+  @media screen and (max-width: 768px) {
+    .mini-country-select {
+      display:block;
+    }
   }
 </style>
 
