@@ -287,7 +287,7 @@
             {%- render 'icon' with 'header-email' -%}
           </button>
           <!-- pc login -->
-          {%- if shop.customer_accounts_enabled -%}
+          {%- if true -%}
             <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="headIcon header__icon-wrapper tap-area hidden-phone {% unless section.settings.show_icons %}hidden-desk{% endunless %}" aria-label="{% if customer %}{{ 'header.general.account' | t | escape }}{% else %}{{ 'header.general.login' | t | escape }}{% endif %}">
               {%- render 'icon' with 'header-customer' -%}
             </a>
