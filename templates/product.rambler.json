@@ -731,6 +731,7 @@
     },
     "7bf06a01-ac06-4719-9cee-2f50522d8807": {
       "type": "jd-product-faq",
+      "disabled": true,
       "blocks": {
         "b892dc9b-42e5-4ae3-ae43-a7973f0e3118": {
           "type": "exhibition",
