@@ -31,7 +31,7 @@
       {%- if settings.discount_mode == 'percentage' -%}
         {%- assign savings = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round | append: '%' -%}
       {%- else -%}
-        {%- capture savings -%}{{ product.compare_at_price | minus: product.price | money }}{%- endcapture -%}
+        {%- capture savings -%}{{ product.compare_at_price | minus: product.price | money_with_currency }}{%- endcapture -%}
       {%- endif -%}
 
      <div class="pc">
