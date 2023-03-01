@@ -732,6 +732,7 @@
     },
     "39919423-6366-45f6-8aa8-2e7a8d26ca60": {
       "type": "jd-product-faq",
+      "disabled": true,
       "blocks": {
         "4bc7193b-85ac-4268-aadc-ce242e31594a": {
           "type": "exhibition",
