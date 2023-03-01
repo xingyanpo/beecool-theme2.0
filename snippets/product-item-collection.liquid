@@ -263,7 +263,7 @@
                 </span>
                 {%- else -%}
                 <span class="price price--highlight">
-                  {{- cheapest_variant.price | money -}}
+                  {{- cheapest_variant.price | money_with_currency -}}
                 </span>
                 {%- endif -%}
               {%- endcapture -%}
@@ -280,7 +280,7 @@
                   {%- if settings.currency_code_enabled -%}
                     {{- cheapest_variant.compare_at_price | money_with_currency -}}
                   {%- else -%}
-                    {{- cheapest_variant.compare_at_price | money -}}
+                    {{- cheapest_variant.compare_at_price | money_with_currency -}}
                   {%- endif -%}
                 </span>
               {%- else -%}
@@ -296,7 +296,7 @@
                 {%- if settings.currency_code_enabled -%}
                   {{- product.price | money_with_currency -}}
                 {%- else -%}
-                  {{- product.price | money -}}
+                  {{- product.price | money_with_currency -}}
                 {%- endif -%}
               </span>
 
@@ -305,7 +305,7 @@
                 {%- if settings.currency_code_enabled -%}
                   {{- product.compare_at_price | money_with_currency -}}
                 {%- else -%}
-                  {{- product.compare_at_price | money -}}
+                  {{- product.compare_at_price | money_with_currency -}}
                 {%- endif -%}
               </span>
             {%- elsif product.price_varies -%}
@@ -313,7 +313,7 @@
                 {%- if settings.currency_code_enabled -%}
                   {{ product.price_min | money_with_currency }}
                 {%- else -%}
-                  {{ product.price_min | money }}
+                  {{ product.price_min | money_with_currency }}
                 {%- endif -%}
               {%- endcapture -%}
 
@@ -321,7 +321,7 @@
                 {%- if settings.currency_code_enabled -%}
                   {{- product.price_max | money_with_currency -}}
                 {%- else -%}
-                  {{- product.price_max | money -}}
+                  {{- product.price_max | money_with_currency -}}
                 {%- endif -%}
               {%- endcapture -%}
 
@@ -336,7 +336,7 @@
                 {%- if settings.currency_code_enabled -%}
                   {{- product.price | money_with_currency -}}
                 {%- else -%}
-                  {{- product.price | money -}}
+                  {{- product.price | money_with_currency -}}
                 {%- endif -%}
               </span>
             {%- endif -%}
@@ -345,7 +345,7 @@
               <div class="price price--block text--xsmall text--subdued">
                 <div class="unit-price-measurement">
                   <span class="unit-price-measurement__price">
-                    {{- product.selected_or_first_available_variant.unit_price | money -}}
+                    {{- product.selected_or_first_available_variant.unit_price | money_with_currency -}}
                   </span>
                   <span class="unit-price-measurement__separator">/</span>
 
