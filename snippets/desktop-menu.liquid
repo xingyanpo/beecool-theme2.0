@@ -131,7 +131,7 @@
                                         {{product.title}}
                                       </div>
                                       <div class="price">
-                                        <div class="price--highlight">{{- product.price | money -}}</div>
+                                        <div class="price--highlight">{{- product.price | money_with_currency -}}</div>
                                         {%- if product.price != product.compare_at_price -%}<s class="price--compare"> {{- product.compare_at_price | money -}}</s>{%- endif -%}
                                       </div>
                                     </a>
