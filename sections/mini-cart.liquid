@@ -347,7 +347,7 @@
                   {% assign compare_price_cart = line_item.variant.compare_at_price | times: line_item.quantity %}
                   {% if line_item.final_line_price != compare_price_cart %}
                 <div class="you_saved">
-                  You saved <span>{{- line_item.variant.compare_at_price | times: line_item.quantity | minus: line_item.final_line_price | money-}}!</span>
+                  You saved <span>{{- line_item.variant.compare_at_price | times: line_item.quantity | minus: line_item.final_line_price | money_with_currency-}}!</span>
                 </div>
                     {% endif %}
                 {% else %}
