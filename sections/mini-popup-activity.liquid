@@ -463,7 +463,7 @@
                   </div>
                   <div class='recommentded-accessories-right'>
                     <p>{{ product.title }}</p>
-                    <p style='color: #2a408e;font-weight: 500;font-size: 14px;'><span>{{ product.price | money }}</span>{% if product.price != product.compare_at_price %}<span style="color:red;text-decoration: line-through;padding-left: 5px;">{{ product.compare_at_price | money }}</span>{% endif %}</p>
+                    <p style='color: #2a408e;font-weight: 500;font-size: 14px;'><span>{{ product.price | money_with_currency }}</span>{% if product.price != product.compare_at_price %}<span style="color:red;text-decoration: line-through;padding-left: 5px;">{{ product.compare_at_price | money_with_currency }}</span>{% endif %}</p>
                     <div class='recommentded-accessories-right-button'>
                       <button><a href='{{ product.url }}'>See More</a></button>
                       {%- form 'product', product, is: 'product-form' -%}
