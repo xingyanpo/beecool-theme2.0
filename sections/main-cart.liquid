@@ -39,7 +39,7 @@
                   <span class="shipping-bar__text">{{ 'cart.general.free_shipping' | t }}</span>
                   <span class="free_shipping2">{{'cart.general.free_shipping2' | t }}</span>
                 {%- else -%}
-                  {%- capture remaining_amount -%}{{ cart.total_price | minus: threshold_in_cents | abs | money }}{%- endcapture -%}
+                  {%- capture remaining_amount -%}{{ cart.total_price | minus: threshold_in_cents | abs | money_with_currency }}{%- endcapture -%}
                   <span class="shipping-bar__text">{{ 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount }}</span>
                 {%- endif -%}
 
