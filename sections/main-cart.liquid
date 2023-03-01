@@ -119,7 +119,7 @@
         </div>
         <div class="put-a-product-right">
           <p>{{ section.settings.put_a_product.title }}</p>
-          <p style='color: #2a408e;font-weight: 600;font-size: 18px;'><span>{{ section.settings.put_a_product.price | money }}</span>{% if section.settings.put_a_product.price != section.settings.put_a_product.compare_at_price %}<span style="color:red;text-decoration: line-through;padding-left: 5px;">{{ section.settings.put_a_product.compare_at_price | money }}</span>{% endif %}</p>
+          <p style='color: #2a408e;font-weight: 600;font-size: 18px;'><span>{{ section.settings.put_a_product.price | money_with_currency }}</span>{% if section.settings.put_a_product.price != section.settings.put_a_product.compare_at_price %}<span style="color:red;text-decoration: line-through;padding-left: 5px;">{{ section.settings.put_a_product.compare_at_price | money }}</span>{% endif %}</p>
           {%- form 'product', section.settings.put_a_product, is: 'product-form' -%}
             <input type="hidden" name="quantity" value="1">
             <input type="hidden" name="id" value="{{ section.settings.put_a_product.first_available_variant.id }}">
