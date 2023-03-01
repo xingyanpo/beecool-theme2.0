@@ -180,7 +180,7 @@
                     {%- if line_item.final_line_price == 0 -%}
                       {{- 'cart.general.free' | t -}}
                     {%- else -%}
-                      {{- line_item.final_line_price | money -}}
+                      {{- line_item.final_line_price | money_with_currency -}}
                     {%- endif -%}
                   </span>
   
