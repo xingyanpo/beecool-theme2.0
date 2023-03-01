@@ -38,9 +38,9 @@
         "94ff6497-bcb7-487c-95de-ea653891a1d0": {
           "type": "fedex",
           "settings": {
-            "img": "shopify:\/\/shop_images\/0a1678a4e8bcbd2f544982aaa983ad21.png",
+            "img": "shopify:\/\/shop_images\/0a1678a4e8bcbd2f544982aaa983ad21.webp",
             "fedex": "High-quality",
-            "img2": "shopify:\/\/shop_images\/185.png",
+            "img2": "shopify:\/\/shop_images\/185.webp",
             "ups": "Best-compatibility",
             "text": "UPS offers a fast and safe shipping service on huge packages. So we highly recommend you select UPS to ship your Ebikes."
           }
@@ -267,9 +267,7 @@
       "type": "jd-product-video",
       "disabled": true,
       "settings": {
-        "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dfc0a64bcd73425189a0796f78090f84.mp4",
-        "img": "shopify:\/\/shop_images\/10_14_-_1_3.png",
-        "img_mobile": "shopify:\/\/shop_images\/1_ed1da5ed-fcca-4995-beec-2a035a563d39.png"
+        "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dfc0a64bcd73425189a0796f78090f84.mp4"
       }
     },
     "16623649202cdc4dd6": {
@@ -338,8 +336,8 @@
         "fc10a433-9898-4d0a-b30e-04c1aa35fcb9"
       ],
       "settings": {
-        "bg_img": "shopify:\/\/shop_images\/1_2cae56b0-1d0e-4bc3-a631-cb67d9ad5790.png",
-        "bg_imgMobile": "shopify:\/\/shop_images\/2_64811df6-c5e5-4952-bb00-815be6709c38.jpg",
+        "link": "",
+        "link_mobile": "",
         "title": "<p>Powerful, removable battery<\/p>",
         "title_mobile": "<p>Powerful,<br\/>Removable Battery<\/p>",
         "text": "<p>Speed, distance, battery level, light activation, loud<br\/> horn. You control the ride!<\/p>",
@@ -361,56 +359,48 @@
         "2610141a-784a-4917-90c6-1d0cfbe38630": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/1_f8d5b5ae-0e65-42d7-a81e-b67b449f7e75.png",
             "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
           }
         },
         "5325a5d6-d070-4269-a6ec-b2abc0fee863": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/2_77f2046d-163f-4463-8ec2-bd159324dca0.png",
             "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
           }
         },
         "2ac9a688-bb53-4a8f-8f82-e92a57c7ff87": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/3_16290ab7-a13d-48aa-9f27-8a55b1510586.png",
             "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
           }
         },
         "d106ac70-4edd-46d2-bc50-eca759aad226": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/4_b388af26-4804-4cb2-803e-9c216af8f4c9.png",
             "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
           }
         },
         "483a0fad-5d5c-4509-b910-2e944ca32842": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/5_160ea451-488c-4e03-baa2-e841b91f263d.png",
             "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
           }
         },
         "19235fbd-0c60-471d-958f-45687ea19f4c": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/6_fe91773a-baea-4089-949c-fd1abad0d76d.png",
             "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
           }
         },
         "37e1a90d-5adc-4a86-9d6b-2d4858a1f42b": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/7_e047cc2e-6021-41a6-9fd1-9c4a04a3b7a3.png",
             "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
           }
         },
         "cfc7af4c-07f0-4e60-8830-f0ea4b01d184": {
           "type": "FeaturesBox",
           "settings": {
-            "img": "shopify:\/\/shop_images\/8_27ac2271-b5e4-423d-8da7-1a65d5098683.png",
             "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
           }
         }
@@ -438,8 +428,7 @@
           "type": "categroy",
           "settings": {
             "cate_name": "Overall",
-            "text": "<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>Max height(with antenna)<\/div>\n\t\t<div>550 in<\/div>\n\t<\/div>\n<\/div>\n<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>Length<\/div>\n\t\t<div>157 in<\/div>\n\t<\/div>\n<\/div>\n<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>Wheelbase <\/div>\n\t\t<div>630 in<\/div>\n\t<\/div>\n<\/div>\n<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>wheel length<\/div>\n\t\t<div>81.8 in<\/div>\n\t<\/div>\n<\/div>\n<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>high<\/div>\n\t\t<div>680 in<\/div>\n\t<\/div>\n<\/div>\n<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>handle to wheel<\/div>\n\t\t<div>157 in<\/div>\n\t<\/div>\n<\/div>",
-            "img": "shopify:\/\/shop_images\/9db3d1c235ac95c0711e564bde66c308.jpg"
+            "text": "<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>Max height(with antenna)<\/div>\n\t\t<div>550 in<\/div>\n\t<\/div>\n<\/div>\n<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>Length<\/div>\n\t\t<div>157 in<\/div>\n\t<\/div>\n<\/div>\n<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>Wheelbase <\/div>\n\t\t<div>630 in<\/div>\n\t<\/div>\n<\/div>\n<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>wheel length<\/div>\n\t\t<div>81.8 in<\/div>\n\t<\/div>\n<\/div>\n<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>high<\/div>\n\t\t<div>680 in<\/div>\n\t<\/div>\n<\/div>\n<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>handle to wheel<\/div>\n\t\t<div>157 in<\/div>\n\t<\/div>\n<\/div>"
           }
         },
         "4d8b83aa-ad70-4823-8d3a-0ac863ac563e": {
@@ -476,8 +465,7 @@
           "settings": {
             "cate_name": "Mountain Roads",
             "cate_title": "",
-            "cate_text": "<p>With dual suspension, you can be confident when riding on the bumpy roads or some rugged trails among the woods or in the mountains.<br\/><\/p>",
-            "img": "shopify:\/\/shop_images\/5_4ef0c17b-7bef-4881-b5ec-656d86771fb0.png"
+            "cate_text": "<p>With dual suspension, you can be confident when riding on the bumpy roads or some rugged trails among the woods or in the mountains.<br\/><\/p>"
           }
         },
         "f42b426d-eeb0-41fb-991b-a7a1645ff16e": {
@@ -485,8 +473,7 @@
           "settings": {
             "cate_name": "Fitness cycling",
             "cate_title": "<p>Outbound Travel Meets More Needs<\/p>",
-            "cate_text": "<p>48V 20Ah Lithium-ion Battery Gives You longer Range. You are able To Travelover 60 Miles on a Charge Using Pedal-Assist <br\/>Mode And 40 Miles On Throttlepower Mode. We Want To Make Everyone Enjoy The Ride longer!<\/p>",
-            "img": "shopify:\/\/shop_images\/7_9fb4a277-da3d-44ca-8d55-f0b71bb994d7.png"
+            "cate_text": "<p>48V 20Ah Lithium-ion Battery Gives You longer Range. You are able To Travelover 60 Miles on a Charge Using Pedal-Assist <br\/>Mode And 40 Miles On Throttlepower Mode. We Want To Make Everyone Enjoy The Ride longer!<\/p>"
           }
         },
         "4c2daef3-f4fb-46b5-aaa4-933b043d66c8": {
@@ -494,8 +481,7 @@
           "settings": {
             "cate_name": "Mountain",
             "cate_title": "<p>Outbound Travel Meets More Needs<\/p>",
-            "cate_text": "<p>48V 20Ah Lithium-ion Battery Gives You longer Range. You are able To Travelover 60 Miles on a Charge Using Pedal-Assist <br\/>Mode And 40 Miles On Throttlepower Mode. We Want To Make Everyone Enjoy The Ride longer!<\/p>",
-            "img": "shopify:\/\/shop_images\/6_2936d4fc-9336-4046-bc24-846662435d04.png"
+            "cate_text": "<p>48V 20Ah Lithium-ion Battery Gives You longer Range. You are able To Travelover 60 Miles on a Charge Using Pedal-Assist <br\/>Mode And 40 Miles On Throttlepower Mode. We Want To Make Everyone Enjoy The Ride longer!<\/p>"
           }
         }
       },
@@ -524,6 +510,7 @@
     "sma_reviews_section_auto": {
       "type": "reviews-importer-product",
       "settings": {
+        "lai_product": ""
       }
     }
   },
