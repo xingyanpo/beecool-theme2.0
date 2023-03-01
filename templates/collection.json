@@ -90,6 +90,7 @@
         },
         "dca57ba4-4b70-4bf3-ae3f-209e6d3389d1": {
           "type": "collectionProduct2",
+          "disabled": true,
           "settings": {
             "title": "Refurbished Ebikes",
             "text": "All Terrain E-bikes",
