@@ -332,11 +332,11 @@ $(function(){
     
      
     // 默认价格省略小数点
-    var price = $(".selectUser_bottom_div:eq(0) .selectUserDiv_priceDiv_pirce").html().split(".")[0];
+    var price = $(".selectUser_bottom_div:eq(0) .selectUserDiv_priceDiv_pirce").html();
     var $price =$(".selectUser_bottom_div:eq(0) .selectUserDiv_priceDiv_pirce").html(price);
-    var price = $(".selectUser_bottom_div:eq(1) .selectUserDiv_priceDiv_pirce").html().split(".")[0];
+    var price = $(".selectUser_bottom_div:eq(1) .selectUserDiv_priceDiv_pirce").html();
     var $price =$(".selectUser_bottom_div:eq(1) .selectUserDiv_priceDiv_pirce").html(price);
-    var price = $(".selectUser_bottom_div:eq(2) .selectUserDiv_priceDiv_pirce").html().split(".")[0];
+    var price = $(".selectUser_bottom_div:eq(2) .selectUserDiv_priceDiv_pirce").html()];
     var $price =$(".selectUser_bottom_div:eq(2) .selectUserDiv_priceDiv_pirce").html(price);
     var hide_data = `
         {% for item in section.settings.product.metafields.custom.geometry.value %}
