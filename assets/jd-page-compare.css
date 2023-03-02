@@ -239,10 +239,10 @@
         font-size: 16px;
    }
    .selectUserDiv_priceDiv_right{
-    padding-right: 26px;
     width: 50%;
     display: flex;
     justify-content: flex-end;
+     padding: 10px 26px 10px 0;
    }
    .selectUserDiv_priceDiv_right a{
         display: flex;
