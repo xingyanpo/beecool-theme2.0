@@ -454,7 +454,7 @@
          let priceDom = rootDom.querySelector('.menu-box .right .product-price');
          
          let menuButton = rootDom.querySelector('.menu-box .right .button-box .button')
-         priceDom.innerHTML = `<span class="price--highlight">$${(productInfoList[i].price/100).toFixed(2)}</span>`+`<s style="margin-left:10px; opacity:0.6;font-size:16px; text-decoration-color: red;" class="price--compare">$${(productInfoList[i].pricecom/100).toFixed(2)}<s>`;
+         priceDom.innerHTML = `<span class="price--highlight">$${(productInfoList[i].price/100)}</span>`+`<s style="margin-left:10px; opacity:0.6;font-size:16px; text-decoration-color: red;" class="price--compare">$${(productInfoList[i].pricecom/100)}<s>`;
          menuButton.setAttribute('href',productInfoList[i].url)
          rootDom.querySelector('.menu-box .left .video-box video').setAttribute('src',`${productInfoList[i].videoUrl}`)
          activeFlag = i
