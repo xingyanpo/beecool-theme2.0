@@ -1,6 +1,4 @@
-.fedex_all_boxBOttom_text:hover .fedex_all_boxBOttom_hide {
-  display: block !important;
-}
+
 @media (min-width: 769px) and (max-width: 1000px) {
   .product-sticky-form {
     top: 115px !important;
