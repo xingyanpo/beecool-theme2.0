@@ -409,7 +409,7 @@
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
     }
-    .selectUser_bottom_div:nth-child(2) .selectUserDiv_price {
+    .selectUser_bottom_div .selectUserDiv_price {
         display: flex;
         justify-content: center;
     }
