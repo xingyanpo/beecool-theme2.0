@@ -316,6 +316,7 @@
         },
         "9eeb9635-456f-4e2b-8e85-eea75f4b6bdd": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "slideImage": "shopify:\/\/shop_images\/16703037434725_ec5cd4f4-13dc-48b9-8a3e-1e5ae535000f.webp",
             "slideImage_mobile": "shopify:\/\/shop_images\/16703042967537.webp",
