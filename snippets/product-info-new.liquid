@@ -54,6 +54,8 @@
         <a href="{{ product.url }}">{{ product.title }}</a>
       </h2>
     {% endunless %}
+    <div class="scm-reviews-rate" data-rate-version2={{ product.metafields.scm_review_importer.reviewsData.reviewCountInfo | json }} data-product-id= {{ product.id }}></div>
+
 
 
     {%- if section.settings.show_taxes_included -%}

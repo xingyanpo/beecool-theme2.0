@@ -250,6 +250,8 @@
 
       <div class="title_box">
         <a href="{{ product.url }}" class="product-item-meta__title">{{ product.title }}</a>
+        <div class="scm-reviews-rate" data-rate-version2={{ product.metafields.scm_review_importer.reviewsData.reviewCountInfo | json }} data-product-id= {{ product.id }}></div>
+
 
         <div class="product-item-meta__price-list-container">
           <div class="price-list price-list--centered">
