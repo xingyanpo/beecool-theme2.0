@@ -128,11 +128,17 @@
       ],
       "settings": {
       }
+    },
+    "sma_reviews_section_auto": {
+      "type": "reviews-importer-product",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "52409229-6914-460c-8bbb-930766847f95",
-    "product-content"
+    "product-content",
+    "sma_reviews_section_auto"
   ]
 }

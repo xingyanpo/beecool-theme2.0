@@ -129,7 +129,9 @@
 
       gtag('config', 'G-4B75FMCZ56');
     </script>
-  </head>
+  
+ {% render "reviews-importer-variable-js" %}
+</head>
 
   {%- assign feature_classes = '' -%}
 
@@ -223,7 +225,9 @@
     {%- endif -%}
   {% include 'appikon-discounts' %}
 {% render 'quantity-breaks-now', customer: customer, template: template, product: product, cart: cart %}
-        </body>
+        
+ {% render "reviews-importer-popup" %}
+</body>
   <script>
     
     

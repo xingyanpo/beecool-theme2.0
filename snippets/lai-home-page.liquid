@@ -88,16 +88,16 @@
         var blockReviewFirst= "{{ shop.metafields.scm_review_importer.reviews_homePage }}";
         var language= `+ scmLanguage +` ;
         <\/script>
-    <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-10/assets/css/scm-bootstrap.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
-    <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-10/assets/css/scm-review-importer.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
-    <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-10/assets/css/photo-flags.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
+    <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-11/assets/css/scm-bootstrap.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
+    <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-11/assets/css/scm-review-importer.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
+    <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-11/assets/css/photo-flags.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&amp;display=swap" rel="stylesheet">
-        <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-10/assets/css/scm-review-importer-body-{{shop.metafields.scm_review_importer.shop_info_setting['homepage_type']}}.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
+        <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-11/assets/css/scm-review-importer-body-{{shop.metafields.scm_review_importer.shop_info_setting['homepage_type']}}.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
     <style>
              {% render 'reviews-importer-css-custom' %}
     </style>
   <\/`+ headTagSma +`>
-  <`+ bodyTagSma +` style="" data-productidshopify="{{ product.id }}">
+  <`+ bodyTagSma +` style="" data-productidshopify="{{ product.id }}" class="home-page ">
           <div id="scm-review-importer-value" data-url="https://reviews.smartifyapps.com/api/load-more-home-page" data-type= "homePage" data-shopname="{{ shop.permanent_domain}}" data-productidshopify="{{ product.id }}" data-pagecurrent="1" data-rate="null"
              data-reviewperpage="10"></div>
             <div class="header-container"></div>
@@ -113,13 +113,13 @@
     <div class="last-element"></div>
 </div>
 
-        <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-10/jQuery.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
+        <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-11/jQuery.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
     <\/script>
-    <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-10/helper.min.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
+    <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-11/helper.min.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
     <\/script>
-        <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-10/classjs.min.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
+        <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-11/classjs.min.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
     <\/script>
-    <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-10/reviewPage.min.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
+    <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-11/reviewPage.min.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
     <\/script>
   <\/`+ bodyTagSma +`>
   </html>`
@@ -145,24 +145,24 @@
                var language= `+ scmLanguage +` ;
                var scmAccount= `+ scmAccount +`;
             <\/script>
-        <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-10/assets/css/scm-bootstrap.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
-    <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-10/assets/css/scm-review-importer.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
-   <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-10/assets/css/scm-review-importer-header-{{shop.metafields.scm_review_importer.shop_info_setting['header_headerQuickLayout']}}.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
-    <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-10/assets/css/photo-flags.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
-     <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-10/assets/css/scm-review-importer-popup.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
+        <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-11/assets/css/scm-bootstrap.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
+    <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-11/assets/css/scm-review-importer.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
+   <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-11/assets/css/scm-review-importer-header-{{shop.metafields.scm_review_importer.shop_info_setting['header_headerQuickLayout']}}.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
+    <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-11/assets/css/photo-flags.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
+     <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-11/assets/css/scm-review-importer-popup.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
     <style>
                    {% render 'reviews-importer-css-custom' %}
             </style>
   <\/`+ headTagSma +`>
  <`+ bodyTagSma +` style="display: none;opacity: 0;" class=" popup-write-review body-{{ shop.metafields.scm_review_importer.shop_info_setting['body_bodyQuickLayout'] }} header-{{ shop.metafields.scm_review_importer.shop_info_setting['header_headerQuickLayout'] }}">
 `+ data.content + `
-          <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-10/jQuery.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
+          <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-11/jQuery.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
     <\/script>
-    <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-10/helper.min.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
+    <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-11/helper.min.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
     <\/script>
-    <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-10/reviewPagePopup.min.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
+    <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-11/reviewPagePopup.min.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
     <\/script>
-    <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-10/writeReview.min.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
+    <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-11/writeReview.min.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}">
     <\/script>
     <\/`+ bodyTagSma +`>
 </html>
@@ -196,8 +196,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Reviews Importer</title>
-        <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-10/assets/css/scm-review-importer-new-popup.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
-        <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-10/assets/css/photo-flags.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
+        <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-11/assets/css/scm-review-importer-new-popup.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
+        <link href="https://d1bu6z2uxfnay3.cloudfront.net/css-version-11/assets/css/photo-flags.css?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}" rel="stylesheet">
          <script>
                   var infoShop='{{ shop.metafields.scm_review_importer.shop_info_setting | json}}';
                    var dataApp= {
@@ -234,9 +234,9 @@ ${photoHtml}
             </div>
         </div>
         <img id="img1" style="display: none;" src="" />
-        <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-10/jQuery.js"><\/script>
-        <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-10/image-zoom.min.js"><\/script>
-        <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-10/reviewPagePopupV2.min.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}"><\/script>
+        <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-11/jQuery.js"><\/script>
+        <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-11/image-zoom.min.js"><\/script>
+        <script src="https://d1bu6z2uxfnay3.cloudfront.net/js/frontend/version-11/reviewPagePopupV2.min.js?version={{ shop.metafields.scm_review_importer.shop_info_setting['version'] }}"><\/script>
         <script>
             var slideIndex = 1;
             showSlides(slideIndex);
