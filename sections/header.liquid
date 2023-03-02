@@ -287,6 +287,7 @@
             {%- render 'icon' with 'header-email' -%}
           </button>
 
+          {% capture country_select %}
           <style>
             .header-country-select-button {
               display:flex;
@@ -346,6 +347,9 @@
               </div>
             </div>
           </div>
+          {% endcapture %}
+
+          {{ country_select }}
           
           <!-- pc login -->
           {%- if true -%}
