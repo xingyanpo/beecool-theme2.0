@@ -112,6 +112,68 @@
   {%- endif -%}
 </style>
 
+          {% capture country_select %}
+          <style>
+            .header-country-select-button {
+              display:flex;
+              align-items: center;
+            }
+            .header-country-select-button > img {width: 30px;}
+            .header-country-select-button > span {font-size: 16px;font-weight: 600;padding-left: 10px;}
+            .header-country-select {position:relative;cursor:pointer;}
+            .header-show-country {
+                width: 170px;
+                border-bottom: 2px solid #2a408e;
+                position: absolute;
+                top: 100%;left: 0;
+                background-color: #FFF;
+                padding:3px;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                transition: height 500ms cubic-bezier(0.2, 0.06, 0.05, 0.95);
+                overflow:hidden;
+                left: calc(50% - 85px);
+                height:0;
+                visibility: hidden;
+              }
+              .header-country-item > a {
+                display: flex;
+                align-items: center;
+                cursor:pointer;
+              }
+              .header-country-item > a > img {
+                width: 28px;
+              }
+              .header-country-item > a > .header-country-name {
+                padding-left: 10px;
+                font-size: 18px;
+                color:#000;
+                font-weight: 600;
+              }
+            .header-country-select:hover .header-show-country {
+               visibility: visible;
+               height: 140%;
+            }
+          </style>
+
+          <div class="header-country-select">
+            <div class="header-country-select-button">
+              <img src="https://cdn.shopifycdn.net/s/files/1/0730/5969/6953/files/ca.svg?v=1677572062" alt="">
+              <span>Canada</span>
+            </div>
+            <div class="header-show-country">
+               <div class="header-country-item">
+                 <a href="https://beecoolbikes.com">
+                   <img src="https://cdn.shopify.com/s/files/1/0730/5969/6953/files/us_1.svg?v=1677573763">
+                   <span class="header-country-name">United States</span>
+                 </a>
+              </div>
+            </div>
+          </div>
+          {% endcapture %}
+
 <store-header {% if request.page_type == 'index' and section.settings.enable_transparent_header %}transparent{% endif %} class="header monaka-header stickyTop{% if settings.background == settings.header_background %}header--bordered{% endif %} {% if request.page_type == 'index' and section.settings.enable_transparent_header %}header--transparent{% endif %}" role="banner">
   {%- assign menu = section.settings.navigation_menu -%}
 
@@ -288,68 +350,6 @@
             <span class="visually-hidden">{{ 'header.general.newsletter' | t }}</span>
             {%- render 'icon' with 'header-email' -%}
           </button>
-
-          {% capture country_select %}
-          <style>
-            .header-country-select-button {
-              display:flex;
-              align-items: center;
-            }
-            .header-country-select-button > img {width: 30px;}
-            .header-country-select-button > span {font-size: 16px;font-weight: 600;padding-left: 10px;}
-            .header-country-select {position:relative;cursor:pointer;}
-            .header-show-country {
-                width: 170px;
-                border-bottom: 2px solid #2a408e;
-                position: absolute;
-                top: 100%;left: 0;
-                background-color: #FFF;
-                padding:3px;
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-                justify-content: center;
-                transition: height 500ms cubic-bezier(0.2, 0.06, 0.05, 0.95);
-                overflow:hidden;
-                left: calc(50% - 85px);
-                height:0;
-                visibility: hidden;
-              }
-              .header-country-item > a {
-                display: flex;
-                align-items: center;
-                cursor:pointer;
-              }
-              .header-country-item > a > img {
-                width: 28px;
-              }
-              .header-country-item > a > .header-country-name {
-                padding-left: 10px;
-                font-size: 18px;
-                color:#000;
-                font-weight: 600;
-              }
-            .header-country-select:hover .header-show-country {
-               visibility: visible;
-               height: 140%;
-            }
-          </style>
-
-          <div class="header-country-select">
-            <div class="header-country-select-button">
-              <img src="https://cdn.shopifycdn.net/s/files/1/0730/5969/6953/files/ca.svg?v=1677572062" alt="">
-              <span>Canada</span>
-            </div>
-            <div class="header-show-country">
-               <div class="header-country-item">
-                 <a href="https://beecoolbikes.com">
-                   <img src="https://cdn.shopify.com/s/files/1/0730/5969/6953/files/us_1.svg?v=1677573763">
-                   <span class="header-country-name">United States</span>
-                 </a>
-              </div>
-            </div>
-          </div>
-          {% endcapture %}
 
           {{ country_select }}
           
