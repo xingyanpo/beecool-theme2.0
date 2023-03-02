@@ -450,29 +450,59 @@
     "month_day_year": "%b %d %Y"
   },
   "smart_aliexpress_review": {
-    "box_reviews": {
-      "title_info": "Customer reviews",
-      "before_number": "Based on",
-      "after_number": "reviews"
+    "sort_box": {
+      "date": "Sort by date",
+      "content": "Sort by content",
+      "reviews": "Sort reviews",
+      "pictures": "Sort by photo",
+      "rating": "Sort by rating"
     },
     "box_write": {
-      "title_write": "Write A Review",
-      "average_info": "Out of 5",
+      "input_name": "Your name",
       "before_star": "Your rating",
-      "input_name": "Your Name",
-      "input_email": "Your Email",
-      "input_text_area": "Enter your feedback here",
-      "input_photo": "Add photos",
+      "input_email": "Your email",
+      "input_photo": "ADD PHOTO",
+      "title_write": "Write A Review",
       "button_write": "Submit Review",
-      "message_error_character": "Please replace the '<,>' character with the equivalent character",
-      "message_error_file_upload": "Please upload a file smaller than 2m.",
+      "message_fail": "Submitted unsuccessfully!",
+      "write_cancel": "Cancel",
+      "input_text_area": "Enter your feedback here",
       "message_success": "Thank you!",
-      "message_fail": "Fail!"
+      "message_error_character": "Please replace the '<,>' character with the equivalent character",
+      "message_error_file_upload": "Please upload a file smaller than 2MB.",
+      "message_error_video_upload": "Please upload a video file smaller than 50MB",
+      "message_error_type_media_upload": "Not support this file."
+    },
+    "thank_you": {
+      "des": "This message will automatically close in 8 seconds.",
+      "title": "Your review has been submitted!"
+    },
+    "empty_page": {
+      "des": "This product has no review. Be the first one to review it",
+      "title": "Customer Reviews"
+    },
+    "box_reviews": {
+      "title_info": "Customer reviews",
+      "all_reviews": "All reviews",
+      "after_number": " reviews",
+      "average_info": "out of 5",
+      "before_number": "Based on ",
+      "highlight_tab": "Reviews for other products",
+      "reviews_tab": "Reviews"
     },
     "reviews_list": {
-      "view_product": "See product",
       "reply": "Shop owner replied: ",
-      "button_load_more": "Load more"
+      "read_more": "Read more",
+      "view_product": "See product",
+      "button_load_more": "Load more",
+      "purchased": "Purchased"
+    },
+    "discount": {
+      "action": "Continue",
+      "badge": "Get {{discount_value}} off",
+      "des": "We'll also send it by email",
+      "photo": "Upload photo reviews to get {{discount_value}} off discount instantly",
+      "title": "Use the following discount code for {{discount_value}} off your next purchase"
     }
   }
 }
