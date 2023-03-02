@@ -110,6 +110,10 @@
       --primary-button-text-color: {{ settings.header_background.red }}, {{ settings.header_background.green }}, {{ settings.header_background.blue }};
     }
   {%- endif -%}
+  .pad-country-show {display:none;}
+  @media screen and (min-width:768px) and (max-width:1000px) {
+    .pad-country-show {display: block;}
+  }
 </style>
 
           {% capture country_select %}
@@ -195,9 +199,9 @@
               
           </button>
           {%- endif -%}
-
+          <div class="pad-country-show">
           {{ country_select }}
-          
+          </div>
           <a href="{{ routes.search_url }}" is="toggle-link" class="header__icon-wrapper tap-area tap_area_fang  {% if section.settings.header_layout == 'logo_center_search_open' %}hidden-lap{% endif %} hidden-desk" aria-controls="search-drawer" aria-label="{{ 'search.general.title' | t | escape }}">
             {%- render 'icon' with 'header-search' -%}
           </a>
