@@ -490,4 +490,4 @@
     background: #fff;
 }
 }
-..selectUserDiv_priceDiv {height: unset;}
+.selectUserDiv_priceDiv {height: unset !important;}
