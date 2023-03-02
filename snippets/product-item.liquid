@@ -79,7 +79,7 @@
       <a href="{{ product.url }}" class="product-item-meta__title">{{ product.title }}</a>
 
       <div class="product-item-meta__price-list-container">
-        <div class="price-list price-list--centered">
+        <div class="price-list price-list--centered" style="flex-direction: column;">
           {%- if product.price_varies and product.compare_at_price -%}
             {%- assign cheapest_variant = product.variants | sort: 'price' | first -%}
 
