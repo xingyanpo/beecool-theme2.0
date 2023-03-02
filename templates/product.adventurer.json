@@ -597,7 +597,7 @@
           "type": "FeaturesBox",
           "settings": {
             "img": "shopify:\/\/shop_images\/7_e047cc2e-6021-41a6-9fd1-9c4a04a3b7a3.webp",
-            "text": "<p>The backlight LCD display shows you all the key information and status of the ebike, including operation modes, speed, pedal assist level, battery capacity, wattmeter,battery life, odometer, trip odometer, etc.<\/p>"
+            "text": "<p>The backlight LCD display shows you all the key information and status of the ebike, including operation modes, speed, pedal assist level, battery capacity,battery life, odometer, trip odometer, etc.<\/p>"
           }
         },
         "cfc7af4c-07f0-4e60-8830-f0ea4b01d184": {
@@ -783,6 +783,7 @@
     "sma_reviews_section_auto": {
       "type": "reviews-importer-product",
       "settings": {
+        "lai_product": ""
       }
     },
     "product-content": {
