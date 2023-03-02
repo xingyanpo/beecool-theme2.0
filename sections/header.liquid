@@ -286,6 +286,23 @@
             <span class="visually-hidden">{{ 'header.general.newsletter' | t }}</span>
             {%- render 'icon' with 'header-email' -%}
           </button>
+
+          <style>
+            .header-country-select-button {
+              display:flex;
+              align-items: center;
+            }
+            .header-country-select-button > img {width: 22px;}
+            .header-country-select-button > span {font-size: 18px;font-weight: 600;}
+          </style>
+
+          <div class="header-country-select">
+            <div class="header-country-select-button">
+              <img src="https://cdn.shopifycdn.net/s/files/1/0730/5969/6953/files/ca.svg?v=1677572062" alt="">
+              <span>US</span>
+            </div>
+          </div>
+          
           <!-- pc login -->
           {%- if true -%}
             <a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}" class="headIcon header__icon-wrapper tap-area hidden-phone {% unless section.settings.show_icons %}hidden-desk{% endunless %}" aria-label="{% if customer %}{{ 'header.general.account' | t | escape }}{% else %}{{ 'header.general.login' | t | escape }}{% endif %}">
