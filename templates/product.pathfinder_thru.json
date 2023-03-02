@@ -787,7 +787,6 @@
     "sma_reviews_section_auto": {
       "type": "reviews-importer-product",
       "settings": {
-        "lai_product": ""
       }
     },
     "bafe000d-0a8f-4caf-9e24-8550c178dc1b": {
