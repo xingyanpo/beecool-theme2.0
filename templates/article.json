@@ -26,6 +26,13 @@
     "main": {
       "type": "main-article",
       "blocks": {
+        "3e7c183c-26c2-45ec-a817-8b92d88c5fbc": {
+          "type": "article",
+          "settings": {
+            "article": "latest-news\/where-to-ride-in-canada-with-your-e-bikes",
+            "img": "shopify:\/\/shop_images\/QQ_20230303144214.png"
+          }
+        },
         "09f7d6e7-843a-4f89-8d94-c415332ba784": {
           "type": "article",
           "settings": {
@@ -39,19 +46,12 @@
             "article": "latest-news\/beecool-special-formula-for-comfortable-and-durable-electric-bikes",
             "img": "shopify:\/\/shop_images\/QQ_20230213121424.webp"
           }
-        },
-        "3e7c183c-26c2-45ec-a817-8b92d88c5fbc": {
-          "type": "article",
-          "settings": {
-            "article": "latest-news\/how-to-maintain-your-electric-bike-derailleur",
-            "img": "shopify:\/\/shop_images\/IMG_0864.webp"
-          }
         }
       },
       "block_order": [
+        "3e7c183c-26c2-45ec-a817-8b92d88c5fbc",
         "09f7d6e7-843a-4f89-8d94-c415332ba784",
-        "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd",
-        "3e7c183c-26c2-45ec-a817-8b92d88c5fbc"
+        "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd"
       ],
       "settings": {
         "show_on_scroll_navigation": false,
