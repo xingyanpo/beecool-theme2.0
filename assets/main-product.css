@@ -259,6 +259,7 @@
   .product .color-swatch-list {
     display: flex;
     margin-left: 3px;
+    flex-wrap:wrap;
   }
   .product .product-form__quantity {
     margin-top: 25px;
