@@ -6,8 +6,8 @@
         "slide-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pc.webp",
-            "mobile_image": "shopify:\/\/shop_images\/li.webp",
+            "image": "shopify:\/\/shop_images\/1.webp",
+            "mobile_image": "shopify:\/\/shop_images\/2.webp",
             "text_position": "top_right",
             "subheading": "Buy Any 1 Ebike to Get 1 Free Trailer",
             "title": "FREE Cargo Trailer",
