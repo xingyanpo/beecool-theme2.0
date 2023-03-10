@@ -1148,16 +1148,6 @@
     product_color_selected[2].querySelector("label").style.backgroundColor = "black"
   })()
   {% endif %}
-
-  {% if product.title == "Bee Pathfinder Step-Thru" %}
-  (function () {
-    let product_color_selected = document.querySelectorAll(".color-swatch-list .color-swatch")
-    let product_color_list = ["red", "orange", "green", "#017FA8", "#734D9D", "#FFF", "#000"]
-    product_color_list.forEach((item, index) => {
-       product_color_selected[index].querySelector("label").style.backgroundColor = item
-    })
-  })()
-  {% endif %}
     
  (function () {
   
@@ -1195,4 +1185,13 @@
     })
   
 })()
+
+
+  {% if product.title == "Bee Pathfinder Step-Thru" %}
+    let product_color_selected = document.querySelectorAll(".color-swatch-list .color-swatch")
+    let product_color_list = ["red", "orange", "green", "#017FA8", "#734D9D", "#FFF", "#000"]
+    product_color_list.forEach((item, index) => {
+       product_color_selected[index].querySelector("label").style.backgroundColor = item
+    })
+  {% endif %}
 </script>
