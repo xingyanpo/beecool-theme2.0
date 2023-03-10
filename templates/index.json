@@ -3,6 +3,28 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "7ccf04ac-c041-454f-8445-8ec1bc0e048e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6d36d6ee1ebc3f54627de0e370f7efa3.webp",
+            "mobile_image": "shopify:\/\/shop_images\/mobile.webp",
+            "text_position": "bottom_right",
+            "subheading": "Bee Pathfinder Step Thrus with Multi Colors",
+            "title": "Spring New Arrivals",
+            "button_1_text": "BUY NOW",
+            "button_1_link": "shopify:\/\/products\/bee-pathfinder-step-thru",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "swiper_item_button_color": "#ffffff",
+            "swiper_item_button_border_color": "#ffffff",
+            "swiper_item_button_background_color": "rgba(0,0,0,0)",
+            "swiper_item_button_color_hover": "#fb6d72",
+            "swiper_item_button_back_color_hover": "#ffffff",
+            "overlay_opacity": 0
+          }
+        },
         "slide-2": {
           "type": "image",
           "settings": {
@@ -23,27 +45,6 @@
             "swiper_item_button_color_hover": "#2a408e",
             "swiper_item_button_back_color_hover": "#ffffff",
             "overlay_opacity": 6
-          }
-        },
-        "7ccf04ac-c041-454f-8445-8ec1bc0e048e": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "text_position": "bottom_right",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "Shop Loves",
-            "button_1_link": "shopify:\/\/collections\/ebike",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "swiper_item_button_color": "#151515",
-            "swiper_item_button_border_color": "#ffffff",
-            "swiper_item_button_background_color": "#ffffff",
-            "swiper_item_button_color_hover": "#fb6d72",
-            "swiper_item_button_back_color_hover": "#ffffff",
-            "overlay_opacity": 0
           }
         },
         "slide-1": {
@@ -180,8 +181,8 @@
         }
       },
       "block_order": [
-        "slide-2",
         "7ccf04ac-c041-454f-8445-8ec1bc0e048e",
+        "slide-2",
         "slide-1",
         "32e02aa0-90a5-4597-81ba-8df70fdd4a31",
         "87047e1f-ec91-45f8-8329-3ed9a14b0e78",
