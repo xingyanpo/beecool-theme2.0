@@ -994,6 +994,7 @@
   .product .color-swatch-list {
     display: flex;
     margin-left: 23px;
+    flex-wrap:wrap;
   }
   .product-form__quantity {
     display: flex;
