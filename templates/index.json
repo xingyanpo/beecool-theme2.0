@@ -20,7 +20,7 @@
             "swiper_item_button_color": "#ffffff",
             "swiper_item_button_border_color": "#ffffff",
             "swiper_item_button_background_color": "rgba(0,0,0,0)",
-            "swiper_item_button_color_hover": "#fb6d72",
+            "swiper_item_button_color_hover": "#2a408e",
             "swiper_item_button_back_color_hover": "#ffffff",
             "overlay_opacity": 0
           }
