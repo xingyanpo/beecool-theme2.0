@@ -191,7 +191,7 @@
                   {{- 'collection.product.available_colors_count' | t: count: product_option.values.size -}}
                 </p>
               {%- when 'swatch' -%}
-                <div class="product-item-meta__swatch-list color-swatch-list color-swatch-list--mini">
+                <div class="product-item-meta__swatch-list color-swatch-list color-swatch-list--mini color-swatch-list-{{ product.id }}">
                   {%- assign variant_option = 'option' | append: product_option.position -%}
                   {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
 
@@ -487,3 +487,14 @@
     </div>
   </div>
 </product-item>
+
+
+<script>
+  {
+    let product_color_selected = document.querySelectorAll(".color-swatch-list-7450284851419 .color-swatch")
+    let product_color_list = ["red", "orange", "green", "#017FA8", "#734D9D", "#FFF", "#000"]
+    product_color_list.forEach((item, index) => {
+       product_color_selected[index].querySelector("label").style.backgroundColor = item
+    })
+  }
+</script>
