@@ -12,10 +12,11 @@
           "type": "off",
           "settings": {
             "is_can_copy": false,
-            "copy_img": "shopify:\/\/shop_images\/1_e96d1659-df6a-41ca-92d6-5f37187826db.webp",
-            "title": "Limited Gift",
+            "copy_img": "shopify:\/\/shop_images\/icon.png",
+            "copy_back_color": "#004A17",
+            "title": "St. Patrick's Day Offer",
             "copy_text": "",
-            "text": "<p><strong>Buy Any Ebike Product Get 1 Free Cargo Trailer (Limited Amount)<\/strong><\/p>"
+            "text": "<p><strong>Buy Any Ebike Get 1 Free Green Helmet + 1 Cargo Trailer<\/strong><\/p>"
           }
         },
         "variant_picker": {
