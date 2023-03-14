@@ -571,6 +571,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "6779579260278573237": {
+        "type": "shopify:\/\/apps\/facebook-pixels-by-orichi\/blocks\/orichi-pixel\/67bf7d46-e794-4117-adb7-273fd162e4d1",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
