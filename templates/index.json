@@ -3,6 +3,28 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "slide-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/st-patrick_s-day.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/st-patrick_s-day-mobile.jpg",
+            "text_position": "top_right",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/all-e-bikes",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "swiper_item_button_color": "#ffffff",
+            "swiper_item_button_border_color": "#ffffff",
+            "swiper_item_button_background_color": "rgba(0,0,0,0)",
+            "swiper_item_button_color_hover": "#2a408e",
+            "swiper_item_button_back_color_hover": "#ffffff",
+            "overlay_opacity": 6
+          }
+        },
         "7ccf04ac-c041-454f-8445-8ec1bc0e048e": {
           "type": "image",
           "settings": {
@@ -23,28 +45,6 @@
             "swiper_item_button_color_hover": "#2a408e",
             "swiper_item_button_back_color_hover": "#ffffff",
             "overlay_opacity": 0
-          }
-        },
-        "slide-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/st-patrick_s-day.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/st-patrick_s-day-mobile.jpg",
-            "text_position": "top_right",
-            "subheading": "Buy Any 1 Ebike to Get 1 Free Trailer",
-            "title": "FREE Cargo Trailer",
-            "button_1_text": "BUY AN EBIKE",
-            "button_1_link": "shopify:\/\/collections\/all-e-bikes",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "swiper_item_button_color": "#ffffff",
-            "swiper_item_button_border_color": "#ffffff",
-            "swiper_item_button_background_color": "rgba(0,0,0,0)",
-            "swiper_item_button_color_hover": "#2a408e",
-            "swiper_item_button_back_color_hover": "#ffffff",
-            "overlay_opacity": 6
           }
         },
         "slide-1": {
@@ -181,8 +181,8 @@
         }
       },
       "block_order": [
-        "7ccf04ac-c041-454f-8445-8ec1bc0e048e",
         "slide-2",
+        "7ccf04ac-c041-454f-8445-8ec1bc0e048e",
         "slide-1",
         "32e02aa0-90a5-4597-81ba-8df70fdd4a31",
         "87047e1f-ec91-45f8-8329-3ed9a14b0e78",
