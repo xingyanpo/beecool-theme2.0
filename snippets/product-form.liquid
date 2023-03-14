@@ -803,7 +803,7 @@
         {%- endcomment -%}
       {%- when 'off' -%}
         <div class="product_off" {{ block.shopify_attributes }}>
-          <div class="product_off_img copy_code_btn">
+          <div class="product_off_img copy_code_btn" style="background-color: {{ block.settings.copy_back_color }}">
             <img src="{{block.settings.copy_img | img_url: '200x'}}" width="50" height="50" alt="coupon">
             <div class="dis_code" style="display:none;">{{ block.settings.copy_text }}</div>
             {% if block.settings.is_can_copy %}
