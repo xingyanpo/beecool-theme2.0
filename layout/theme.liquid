@@ -248,6 +248,9 @@
 {% render 'quantity-breaks-now', customer: customer, template: template, product: product, cart: cart %}
         
  {% render "reviews-importer-popup" %}
+   <script>
+    fbq('track', 'Purchase', {currency: "USD", value: 30.00});
+  </script>
 </body>
   <script>
     
@@ -289,9 +292,7 @@
 
 
   </script>
-  <script>
-    fbq('track', 'Purchase', {currency: "USD", value: 30.00});
-  </script>
+
 </html>
 {% comment %}
   <!-- Christmas snowflakes -->
