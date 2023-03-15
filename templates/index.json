@@ -6,8 +6,8 @@
         "slide-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/st-patrick_s-day.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/st-patrick_s-day-mobile.jpg",
+            "image": "shopify:\/\/shop_images\/st-patrick_s-day-ca.webp",
+            "mobile_image": "shopify:\/\/shop_images\/st-patrick_s-day-mobile-ca.webp",
             "text_position": "top_right",
             "subheading": "",
             "title": "",
