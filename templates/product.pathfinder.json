@@ -140,7 +140,7 @@
           "type": "productIcon",
           "settings": {
             "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 114 59.3\"><defs><style>.cls-1{fill:none;stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}<\/style><\/defs><path class=\"cls-1\" d=\"M293.41,278.65H199.29c-2.92,0-5.29-2.37-5.29-6.21V225.71c0-2,2.37-4.36,5.29-4.36h94.12c2.92,0,5.28,2.37,5.28,4.36v46.73C298.69,276.28,296.33,278.65,293.41,278.65Z\" transform=\"translate(-193 -220.35)\"><\/path><rect class=\"cls-1\" x=\"83.42\" y=\"1\" height=\"57.3\"><\/rect><rect class=\"cls-1\" x=\"106.53\" y=\"17.64\" width=\"6.47\" height=\"20.33\" rx=\"1.42\"><\/rect><polyline class=\"cls-1\" points=\"39.95 9.46 33.41 28.91 42.03 29.28 39.39 46.57 51.28 25.5 42.09 25.32 48.03 9.82 39.45 9.82\"><\/polyline><\/svg>",
-            "text": "<p>Built-in 48V 20Ah Battery<\/p>"
+            "text": "<p>Built-in 48V 20Ah Battery (21700 Cells) <\/p>"
           }
         },
         "9061210b-148e-4030-871c-c9747cd52890": {
