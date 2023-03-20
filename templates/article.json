@@ -26,18 +26,18 @@
     "main": {
       "type": "main-article",
       "blocks": {
+        "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd": {
+          "type": "article",
+          "settings": {
+            "article": "latest-news\/what-can-we-do-with-an-e-bike",
+            "img": "shopify:\/\/shop_images\/IMG_1175.jpg"
+          }
+        },
         "09f7d6e7-843a-4f89-8d94-c415332ba784": {
           "type": "article",
           "settings": {
             "article": "latest-news\/beecool-bike-newly-released-bee-pathfinder-step-thru-colorful-series",
             "img": "shopify:\/\/shop_images\/c6d7105baeabd8449f5c4e9fed384371.png"
-          }
-        },
-        "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd": {
-          "type": "article",
-          "settings": {
-            "article": "latest-news\/one-day-with-beecool-bike-shared-by-our-bee-rider",
-            "img": "shopify:\/\/shop_images\/QQ_20230310120712.png"
           }
         },
         "3e7c183c-26c2-45ec-a817-8b92d88c5fbc": {
@@ -49,8 +49,8 @@
         }
       },
       "block_order": [
-        "09f7d6e7-843a-4f89-8d94-c415332ba784",
         "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd",
+        "09f7d6e7-843a-4f89-8d94-c415332ba784",
         "3e7c183c-26c2-45ec-a817-8b92d88c5fbc"
       ],
       "settings": {
