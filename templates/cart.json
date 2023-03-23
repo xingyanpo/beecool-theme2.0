@@ -28,7 +28,7 @@
         "show_shipping_estimator": false,
         "shipping_estimator_default_country": "United States",
         "empty_button_link": "shopify:\/\/collections\/all",
-        "link": "shopify:\/\/collections\/ebike",
+        "link": "shopify:\/\/collections\/all-e-bikes",
         "tax_note": "<p>Taxes and <a href=\"\/pages\/shipping_1\" target=\"_blank\" title=\"Shipping_1\">shipping<\/a> calculated at checkout<\/p>",
         "svg": "<?xml version=\"1.0\" standalone=\"no\"?><svg t=\"1663813166185\" class=\"icon\" viewbox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" p-id=\"23944\" width=\"128\" height=\"128\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\"><path d=\"M512 58.395l-391.469 227.425v453.605l391.469 226.182 391.469-227.425v-452.364l-391.469-227.425zM847.545 295.761l-335.545 195.113-335.545-195.113 335.545-193.871 335.545 193.871zM157.814 328.073l334.302 193.871-1.243 387.74-333.058-192.627v-388.982zM528.156 913.41l1.243-388.982 336.787-196.355v388.982l-338.030 196.355z\" p-id=\"23945\"><\/path><\/svg>",
         "label": "<p>Free Shipping To United States More Info<\/p>",
