@@ -42,7 +42,7 @@
       <div class='troubleshooting-left-wrap' v-for="item of data">
         <h2>[[item.title]]</h2>
         <div  class='troubleshooting-left-content'>
-          <div class='troubleshooting-left-subtitle' v-for="ite of content">
+          <div class='troubleshooting-left-subtitle' v-for="ite of item.content">
             <a :href="ite.link">[[ite.title]]</a>
           </div>
         </div>
