@@ -92,7 +92,7 @@
                 data: {{ page.metafields.custom.troubleshooting }}
             }
         },
-      computed: {
+      methods: {
         articleCount(value) {
           return value === 1 ? `All ${value} article` : `All ${value} articles`
         }
