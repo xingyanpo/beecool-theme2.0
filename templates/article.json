@@ -26,18 +26,18 @@
     "main": {
       "type": "main-article",
       "blocks": {
+        "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd": {
+          "type": "article",
+          "settings": {
+            "article": "latest-news\/with-ul-certification-beecool-bikes-make-your-ride-safe-and-further",
+            "img": "shopify:\/\/shop_images\/mmexport1630918456509.jpg"
+          }
+        },
         "3e7c183c-26c2-45ec-a817-8b92d88c5fbc": {
           "type": "article",
           "settings": {
             "article": "latest-news\/how-e-bikes-can-help-save-the-planet",
             "img": "shopify:\/\/shop_images\/pc_66a651d9-f6c9-44e4-b18a-34485a3711b7.jpg"
-          }
-        },
-        "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd": {
-          "type": "article",
-          "settings": {
-            "article": "latest-news\/what-can-we-do-with-an-e-bike",
-            "img": "shopify:\/\/shop_images\/IMG_1175.jpg"
           }
         },
         "09f7d6e7-843a-4f89-8d94-c415332ba784": {
@@ -49,8 +49,8 @@
         }
       },
       "block_order": [
-        "3e7c183c-26c2-45ec-a817-8b92d88c5fbc",
         "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd",
+        "3e7c183c-26c2-45ec-a817-8b92d88c5fbc",
         "09f7d6e7-843a-4f89-8d94-c415332ba784"
       ],
       "settings": {
