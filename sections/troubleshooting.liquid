@@ -104,21 +104,9 @@
         },
         handleLink (link) {
           return '/pages/' + link
-        },
-        drowDown () {
-          let lists = document.querySelectorAll('.drop-down')
-          lists.forEach((item, index) => {
-              let title = item.querySelector('.drop-down-title')
-              let content = item.querySelector('.drop-down-content')
-              title.onclick = () => {
-                console.log(content.style.height,typeof content.style.height, index) 
-              }
-            }
-          })
         }
       },
       mounted() {
-        this.drowDown()
       }
     }).mount('#troubleshooting')
 }
