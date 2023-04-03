@@ -11,9 +11,13 @@
         delimiters: ['[[', ']]'],
         data() {
             return {
-                message: 'Hello Vue!'
+                message: 'Hello Vue!',
+                data: {{ page.metafields.custom.troubleshooting }}
             }
-        }
+        },
+      mounted() {
+        console.log('data', data)
+      }
     }).mount('#troubleshooting')
 }
 </script>
