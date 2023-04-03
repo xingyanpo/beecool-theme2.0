@@ -14,16 +14,23 @@
     border-bottom: 1px solid #eee;
     padding: 0 0 10px 0;
   }
-  .troubleshooting-left-content > h2 {
+  .troubleshooting-left-wrap > h2 {
     font-size: 18px;
     color:#333;
     font-weight: 500;
     line-height: 4;
     border-bottom: 1px solid #eee;
   }
-  .troubleshooting-left-content > h2:hover {
+  .troubleshooting-left-wrap > h2:hover {
     color: #2a408e;
     cursor:pointer;
+  }
+  .troubleshooting-left-content {
+    display:flex;
+  }
+  .troubleshooting-left-subtitle {
+    width:50%;
+    padding-left: 10px;
   }
 </style>
 
@@ -32,8 +39,13 @@
   <div class='troubleshooting-warap'>
     <div class='troubleshooting-left'>
       <h1>{{ page.title }}</h1>
-      <div class='troubleshooting-left-content' v-for="item of data">
+      <div class='troubleshooting-left-wrap' v-for="item of data">
         <h2>[[item.title]]</h2>
+        <div  class='troubleshooting-left-content'>
+          <div class='troubleshooting-left-subtitle' v-for="ite of content">
+            <a :href="ite.link">[[ite.title]]</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class='troubleshooting-right'></div>
