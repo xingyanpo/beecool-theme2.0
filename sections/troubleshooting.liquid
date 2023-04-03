@@ -1,17 +1,22 @@
 <div id="troubleshooting">
-  hhhh
+  hhhh-[[test]]
 </div>
 
 
 <script src="https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/vue.global.prod.js?v=1680503412"></script>
 <script>
-  createApp({
+  {
+  let app = createApp({
   data() {
     return {
       test: 'test text'
     }
   }
-}).mount('#troubleshooting')
+})
+  app.mount('#troubleshooting')
+  app.delimiters:['[[',']]']
+    
+  }
 </script>
 {% schema %}
   {
