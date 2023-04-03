@@ -111,7 +111,18 @@
             let title = item.querySelector('.drop-down-title')
             let content = item.querySelector('.drop-down-content')
             title.onclick = () => {
-              console.log(content.offsetHeight, typeof content.offsetHeight, index);
+              if (content.offsetHeight === 0) {
+                content.style.transition = 'none'
+                content.style.height = 'auto'
+                const height = content.offsetHeight
+                content.style.height = 0
+                content.offsetHeight
+                content.style.transition = '0.3s';
+                content.style.height = height + 'px'
+              } else {
+                content.style.transition = '0.3s'
+                content.style.height = 0;
+              }
             }
           })
           }
