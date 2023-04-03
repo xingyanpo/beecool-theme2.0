@@ -5,18 +5,13 @@
 
 <script src="https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/vue.global.prod.js?v=1680503412"></script>
 <script>
-  {
-  let app = createApp({
+createApp({
   data() {
     return {
       test: 'test text'
     }
   }
-})
-  app.mount('#troubleshooting')
-  app.delimiters:['[[',']]']
-    
-  }
+}).mount('#troubleshooting').delimiters:['[[',']]']
 </script>
 {% schema %}
   {
