@@ -14,6 +14,7 @@
     },
     "cf36e666-8785-4c4a-8261-769ee088973c": {
       "type": "jd-afterSales",
+      "disabled": true,
       "blocks": {
         "2fcabf54-bb22-4d7e-9353-a1c07c7dbe52": {
           "type": "afterSales",
