@@ -26,6 +26,13 @@
     "main": {
       "type": "main-article",
       "blocks": {
+        "3e7c183c-26c2-45ec-a817-8b92d88c5fbc": {
+          "type": "article",
+          "settings": {
+            "article": "latest-news\/how-e-bikes-can-help-save-the-planet",
+            "img": "shopify:\/\/shop_images\/pc_66a651d9-f6c9-44e4-b18a-34485a3711b7.jpg"
+          }
+        },
         "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd": {
           "type": "article",
           "settings": {
@@ -39,19 +46,12 @@
             "article": "latest-news\/beecool-bike-newly-released-bee-pathfinder-step-thru-colorful-series",
             "img": "shopify:\/\/shop_images\/c6d7105baeabd8449f5c4e9fed384371.png"
           }
-        },
-        "3e7c183c-26c2-45ec-a817-8b92d88c5fbc": {
-          "type": "article",
-          "settings": {
-            "article": "latest-news\/where-to-ride-in-canada-with-your-e-bikes",
-            "img": "shopify:\/\/shop_images\/QQ_20230303144214.png"
-          }
         }
       },
       "block_order": [
+        "3e7c183c-26c2-45ec-a817-8b92d88c5fbc",
         "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd",
-        "09f7d6e7-843a-4f89-8d94-c415332ba784",
-        "3e7c183c-26c2-45ec-a817-8b92d88c5fbc"
+        "09f7d6e7-843a-4f89-8d94-c415332ba784"
       ],
       "settings": {
         "show_on_scroll_navigation": false,
