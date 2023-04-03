@@ -72,7 +72,7 @@
             <svg t="1680507468097" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3700" width="200" height="200"><path d="M512 832a320 320 0 1 1 320-320 320 320 0 0 1-320 320z m0-554.666667a234.666667 234.666667 0 1 0 234.666667 234.666667A235.093333 235.093333 0 0 0 512 277.333333z" p-id="3701"></path></svg>
             <a :href="ite.link">[[ite.title]]</a>
           </div>
-          <div class='article-count'>All [[item.content.length]] articles</div>
+          <div class='article-count'>[[articleCount(item.content.length)]]</div>
         </div>
       </div>
     </div>
@@ -92,6 +92,11 @@
                 data: {{ page.metafields.custom.troubleshooting }}
             }
         },
+      computed: {
+        articleCount(value) {
+          return value === 1 ? `All ${value} article` : `All ${value} articles`
+        }
+      },
       mounted() {
         console.log('data', this.data)
       }
