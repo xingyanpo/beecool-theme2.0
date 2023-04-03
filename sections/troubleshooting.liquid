@@ -14,6 +14,12 @@
     border-bottom: 1px solid #eee;
     padding: 0 0 10px 0;
   }
+  .troubleshooting-left-content > h2 {
+    font-size: 18px;
+    color:#666;
+    font-weight: 500;
+    line-height: 2;
+  }
 </style>
 
 
@@ -22,7 +28,7 @@
     <div class='troubleshooting-left'>
       <h1>{{ page.title }}</h1>
       <div class='troubleshooting-left-content' v-for="item of data">
-        <h3>[[item.title]]</h3>
+        <h2>[[item.title]]</h2>
       </div>
     </div>
     <div class='troubleshooting-right'></div>
