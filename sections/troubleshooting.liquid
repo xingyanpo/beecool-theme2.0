@@ -229,7 +229,7 @@
           this.newData = arr
         },
         handleInput () {
-          let result = this.newData.map(item => item.title)
+          let result = this.newData.map(item => item.title.toUpperCase())
           console.log(result)
         }
       },
