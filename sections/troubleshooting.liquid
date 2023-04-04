@@ -230,8 +230,7 @@
       },
       computed: {
         searchResult () {
-          let result
-          result = this.newData.filter(item => item.title.toUpperCase().includes(this.value.toUpperCase()) || item.description.toUpperCase().includes(this.value.toUpperCase()))
+          let result = this.newData.filter(item => item.title.toUpperCase().includes(this.value.toUpperCase()) || item.description.toUpperCase().includes(this.value.toUpperCase()))
           console.log(result)
           return result
         }
