@@ -229,13 +229,8 @@
           this.newData = arr
         },
         handleInput () {
-          let arr = []
-          this.newData.forEach(item => {
-            if (item.title.toUpperCase().includes(this.value.toUpperCase())) {
-              arr.push(item)
-            }
-          })
-          console.log(arr)
+          let result = Array.from(this.newData).filter(item => item.title.toUpperCase().includes(this.value.toUpperCase()) || item.description.toUpperCase().includes(this.value.toUpperCase()))
+          console.log(result, this.value.toUpperCase())
         }
       },
       mounted() {
