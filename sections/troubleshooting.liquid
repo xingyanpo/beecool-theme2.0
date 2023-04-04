@@ -187,7 +187,8 @@
         data() {
             return {
                 data: {{ page.metafields.custom.troubleshooting }},
-                value: ''
+                value: '',
+                search:[]
             }
         },
       methods: {
@@ -229,8 +230,7 @@
           this.newData = arr
         },
         handleInput () {
-          let result = Array.from(this.newData).filter(item => item.title.toUpperCase().includes(this.value.toUpperCase()) || item.description?.toUpperCase().includes(this.value.toUpperCase()))
-          console.log(result)
+          this.search = Array.from(this.newData).filter(item => item.title.toUpperCase().includes(this.value.toUpperCase()) || item.description?.toUpperCase().includes(this.value.toUpperCase()))
         }
       },
       mounted() {
