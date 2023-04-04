@@ -229,7 +229,7 @@
           this.newData = arr
         },
         handleInput () {
-          let result = this.newData.filter(item => item.title.includes(this.value) || item.description.includes(this.value))
+          let result = this.newData.map(item => item.title)
           console.log(result)
         }
       },
