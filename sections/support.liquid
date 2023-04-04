@@ -1,3 +1,268 @@
+<style>
+  .x-warp {
+      width: 92%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .troubleshooting-warap {
+    width: 100%;
+    padding: 50px 0;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .troubleshooting-left > h1 {
+    border-bottom: 1px solid #eee;
+    padding: 0 0 10px 0;
+  }
+  .troubleshooting-left-wrap h2 {
+    font-size: 18px;
+    color:#333;
+    font-weight: 500;
+    line-height: 4;
+    border-bottom: 1px solid #eee;
+  }
+  .troubleshooting-left-wrap > h2:hover {
+    color: #2a408e;
+    cursor:pointer;
+  }
+  .troubleshooting-left-content {
+    display:grid;
+  }
+  .troubleshooting-left-subtitle {
+    padding-left: 10px;
+    line-height: 2;
+    display:flex;
+    align-items: center;
+  }
+  .troubleshooting-left-subtitle > svg {
+    width: 16px;
+    height: 16px;
+  }
+  .troubleshooting-left-subtitle > a {
+    padding:10px 0 0 6px ;
+    line-height:1.2;
+  }
+  .troubleshooting-left-subtitle:hover {
+    color: #2a408e;
+  } 
+  .troubleshooting-left-subtitle:hover > svg {
+    fill: 2a408e;
+  }
+  .troubleshooting-left {
+    width: 50%
+  }
+  .troubleshooting-right {
+    width: 30%;
+  }
+  .article-count {
+    padding: 10px 0 0;
+    color: #000;
+    font-weight: 500;
+  }
+  .drop-down-title {
+    cursor: pointer;
+    user-select: none;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .drop-down-title > svg {
+    transform: rotate(0deg);
+    transition: all 0.3s ease 0s;
+  }
+  .drop-down-content {
+    height: 0;
+    overflow:hidden;
+  }
+  .troubleshooting-header {
+    height: 80px;
+    width:100%;
+    background-color: #F9F8FF;
+  }
+  .troubleshooting-header-warap {
+    padding:0;
+    width:92%;
+    height: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-itmes:center;
+  }
+  .troubleshooting-header-left {
+    height: 100%;
+    display: flex;
+    align-items:center;
+    padding:0;
+    margin:0;
+    flex:1;
+  }
+  .troubleshooting-header-right {
+    width:26%;
+    display:flex;
+    align-items:center;
+    position:relative;
+  }
+  .troubleshooting-header-input {
+    height:46px;
+    width:100%;
+    padding: 0 15px;
+    border:1px solid #8C8DB9;
+    border-radius: 30px;
+    background-color:#FFF;
+  }
+  .troubleshooting-header-input > input {
+    width:100%;
+    height: 100%;
+    border:none;
+    background:none;
+  }
+  .troubleshooting-header-input-result {
+    position:absolute;
+    right:15px;
+    top: 63px;
+    width: calc(100% - 30px);
+    background-color:#F1F1E6;
+    transition: all 0.3s ease 0s;
+    z-index:9;
+    max-height: 80vh;
+    overflow:auto;
+    padding: 10px 0 ;
+  }
+  .troubleshooting-header-input-result-list {
+    padding: 10px 5px 0;
+    
+  }
+  .troubleshooting-right > img {
+    width:100%;
+    object-fit:cover;
+  }
+
+  @media screen and (max-width: 768px) {
+   .troubleshooting-left {
+      width: 100%
+    }
+   .troubleshooting-header-right {
+    width:50%;
+   }
+  .troubleshooting-right {
+    width: 100%;
+  }
+    .troubleshooting-header-input-result {
+      width: 85vw;
+      max-height: 70vh;
+    }
+  }
+</style>
+
+<div id="troubleshooting">
+  <div class='troubleshooting-header'>
+    <div class='x-warp troubleshooting-header-warap'>
+      <div class='troubleshooting-header-left'>
+        <h1>SUPPORT</h1>
+      </div>
+      <div class="troubleshooting-header-right">
+        <div class='troubleshooting-header-input'>
+          <input @input="handleInput" v-model="value" placeholder='Please enter your search term'/>
+        </div>
+        <div class='troubleshooting-header-input-result' v-if='!!value'>
+          <ul class='troubleshooting-header-input-result-wrap'>
+            <li class='troubleshooting-header-input-result-list' v-for='item of search' v-if='search.length !== 0'><a :href="handleLink(item.link)">[[item.title]]</a></li>
+            <div v-else style='font-size:36px;text-align:center;padding: 50px 0;font-weight: 600;padding-right:40px;'>Not found</div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class='x-warp'>
+    <div class='troubleshooting-warap'>
+      <div class='troubleshooting-left'>
+        <h1>{{ page.title }}</h1>
+        <div class='troubleshooting-left-wrap drop-down' v-for="item of data">
+          <div class='drop-down-title'>
+            <h2 >[[item.title]]</h2>
+            <svg t="1680577844917" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4004" width="25" height="25"><path d="M736 480c-12.5-12.5-32.8-12.5-45.3 0L523.3 647.4c-6.2 6.2-16.4 6.2-22.6 0L333.3 480c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L466.7 704c25 25 65.5 25 90.5 0L736 525.3c12.5-12.5 12.5-32.8 0-45.3z" p-id="4005"></path></svg>
+          </div>
+          <div  class='troubleshooting-left-content drop-down-content'>
+            <div class='troubleshooting-left-subtitle' v-for="ite of item.content">
+              <svg t="1680507468097" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3700" width="200" height="200"><path d="M512 832a320 320 0 1 1 320-320 320 320 0 0 1-320 320z m0-554.666667a234.666667 234.666667 0 1 0 234.666667 234.666667A235.093333 235.093333 0 0 0 512 277.333333z" p-id="3701"></path></svg>
+              <a :href="handleLink(ite.link)">[[ite.title]]</a>
+            </div>
+            <div class='article-count'>[[articleCount(item.content.length)]]</div>
+          </div>
+        </div>
+      </div>
+      <div class='troubleshooting-right'>
+        {{ section.settings.image | image_url: width: 1080 | image_tag }}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/vue.global.prod.js?v=1680503412"></script>
+<script>
+ {
+    const { createApp } = Vue
+    createApp({
+        delimiters: ['[[', ']]'],
+        data() {
+            return {
+                data: {{ page.metafields.custom.troubleshooting }},
+                value: '',
+                search:[]
+            }
+        },
+      methods: {
+        articleCount(value) {
+          return value === 1 ? `All ${value} article` : `All ${value} articles`
+        },
+        handleLink (link) {
+          return '/pages/' + link
+        },
+         drowDown () {
+          let lists = document.querySelectorAll('.drop-down')
+          lists.forEach((item, index) => {
+            let title = item.querySelector('.drop-down-title')
+            let svg = item.querySelector('.drop-down-title > svg')
+            let content = item.querySelector('.drop-down-content')
+            title.onclick = () => {
+              if (content.offsetHeight === 0) {
+                content.style.transition = 'none'
+                content.style.height = 'auto'
+                const height = content.offsetHeight
+                content.style.height = 0
+                content.offsetHeight
+                svg.style.transform = 'rotate(180deg)'
+                content.style.transition = '0.3s';
+                content.style.height = height + 'px'
+              } else {
+                svg.style.transform = 'rotate(0deg)'
+                content.style.transition = '0.3s'
+                content.style.height = 0;
+              }
+            }
+          })
+          },
+        newData() {
+          let arr = []
+          this.data.forEach(item => {
+            arr.push(...item.content)
+          })
+          this.newData = arr
+        },
+        handleInput () {
+          this.search = Array.from(this.newData).filter(item => item.title.toUpperCase().includes(this.value.toUpperCase()) || item.description?.toUpperCase().includes(this.value.toUpperCase()))
+        }
+      },
+      mounted() {
+        this.drowDown()
+        this.newData()
+      }
+    }).mount('#troubleshooting')
+}
+</script>
+
 {% schema %}
   {
     "name": "Support",
