@@ -167,7 +167,7 @@
         <div class='troubleshooting-header-input-result' v-if='!!value'>
           <ul class='troubleshooting-header-input-result-wrap'>
             <li class='troubleshooting-header-input-result-list' v-for='item of search' v-if='search.length !== 0'><a :href="handleLink(item.link)">[[item.title]]</a></li>
-            <div v-else style='font-size:36px;text-align:center;padding: 50px 0;font-weight: 600;'>Not found</div>
+            <div v-else style='font-size:36px;text-align:center;padding: 50px 0;font-weight: 600;padding-right:40px;'>Not found</div>
           </ul>
         </div>
       </div>
