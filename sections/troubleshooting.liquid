@@ -149,7 +149,8 @@
         </div>
         <div class='troubleshooting-header-input-result' v-if='!!value'>
           <ul class='troubleshooting-header-input-result-wrap'>
-            <li class='troubleshooting-header-input-result-list' v-for='item of search'><a>[[item.title]]</a></li>
+            <li class='troubleshooting-header-input-result-list' v-for='item of search' v-if='search.length !== 0'><a>[[item.title]]</a></li>
+            <li v-else>Has no result</li>
           </ul>
         </div>
       </div>
