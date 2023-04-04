@@ -66,6 +66,10 @@
     justify-content:space-between;
     align-items:center;
   }
+  .drop-down-title > svg {
+    transform: rotate(0deg);
+    translate: all 0.3s;
+  }
   .drop-down-content {
     height: 0;
     overflow:hidden;
@@ -133,7 +137,6 @@
           lists.forEach((item, index) => {
             let title = item.querySelector('.drop-down-title')
             let svg = item.querySelector('.drop-down-title > svg')
-            console.log(svg)
             let content = item.querySelector('.drop-down-content')
             title.onclick = () => {
               if (content.offsetHeight === 0) {
@@ -142,6 +145,7 @@
                 const height = content.offsetHeight
                 content.style.height = 0
                 content.offsetHeight
+                svg.style.transform = 'rotate(180deg)'
                 content.style.transition = '0.3s';
                 content.style.height = height + 'px'
               } else {
