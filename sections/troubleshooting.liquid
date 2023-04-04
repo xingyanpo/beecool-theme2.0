@@ -209,10 +209,18 @@
               }
             }
           })
-          }
+          },
+        newData() {
+          let arr = []
+          this.data.forEach(item => {
+            arr.push(item.content)
+          })
+          console.log(arr)
+        }
       },
       mounted() {
         this.drowDown()
+        this.newData()
       }
     }).mount('#troubleshooting')
 }
