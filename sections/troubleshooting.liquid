@@ -229,14 +229,8 @@
           this.newData = arr
         },
         handleInput () {
-          console.log(this.value)
-        }
-      },
-      computed: {
-        searchResult () {
           let result = this.newData.filter(item => item.title.toUpperCase().includes(this.value.toUpperCase()) || item.description.toUpperCase().includes(this.value.toUpperCase()))
           console.log(result)
-          return result
         }
       },
       mounted() {
