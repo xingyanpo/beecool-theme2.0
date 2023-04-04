@@ -229,7 +229,7 @@
           this.newData = arr
         },
         handleInput () {
-          let result = this.newData.filter(item => item.title.toUpperCase().includes(this.value.toUpperCase()) || item.description.toUpperCase().includes(this.value.toUpperCase()))
+          let result = this.newData.filter(item => item.title.includes(this.value) || item.description.includes(this.value))
           console.log(result)
         }
       },
