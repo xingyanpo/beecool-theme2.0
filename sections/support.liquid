@@ -208,7 +208,7 @@
         delimiters: ['[[', ']]'],
         data() {
             return {
-                data: {{ page.metafields.custom.troubleshooting }},
+                data: [],
                 value: '',
                 search:[]
             }
@@ -256,6 +256,7 @@
         }
       },
       mounted() {
+        this.data = JSON.parse(localStorage.getItem('troubleshooting'))
         this.drowDown()
         this.newData()
       }
