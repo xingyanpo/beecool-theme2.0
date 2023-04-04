@@ -132,6 +132,8 @@
           let lists = document.querySelectorAll('.drop-down')
           lists.forEach((item, index) => {
             let title = item.querySelector('.drop-down-title')
+            let svg = item.querySelector('.drop-down-title > svg')
+            console.log(svg)
             let content = item.querySelector('.drop-down-content')
             title.onclick = () => {
               if (content.offsetHeight === 0) {
