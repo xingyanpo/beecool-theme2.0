@@ -137,7 +137,7 @@
     </div>
     <div class="troubleshooting-header-right">
       <div class='troubleshooting-header-input'>
-        <input placeholder='Please enter your search term'/>
+        <input v-model='value' placeholder='Please enter your search term'/>
       </div>
     </div>
   </div>
@@ -175,7 +175,8 @@
         delimiters: ['[[', ']]'],
         data() {
             return {
-                data: {{ page.metafields.custom.troubleshooting }}
+                data: {{ page.metafields.custom.troubleshooting }},
+                value: ''
             }
         },
       methods: {
