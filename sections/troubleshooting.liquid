@@ -256,7 +256,7 @@
         }
       },
       mounted() {
-        localStorage.setItem('troubleshooting', this.data)
+        localStorage.setItem('troubleshooting', JSON.stringify(this.data))
         this.drowDown()
         this.newData()
       }
