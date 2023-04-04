@@ -213,7 +213,7 @@
         newData() {
           let arr = []
           this.data.forEach(item => {
-            arr.push(item.content)
+            arr.push(...item.content)
           })
           console.log(arr)
         }
