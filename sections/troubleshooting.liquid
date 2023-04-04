@@ -146,7 +146,7 @@
     </div>
     <div class="troubleshooting-header-right">
       <div class='troubleshooting-header-input'>
-        <input v-model="value" placeholder='Please enter your search term'/>
+        <input @change="handleInput" v-model="value" placeholder='Please enter your search term'/>
       </div>
       <div class='troubleshooting-header-input-result'></div>
     </div>
@@ -226,6 +226,9 @@
             arr.push(...item.content)
           })
           this.newData = arr
+        },
+        handleInput () {
+          console.log(this.value)
         }
       },
       computed: {
