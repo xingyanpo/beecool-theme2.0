@@ -147,7 +147,7 @@
         <div class='troubleshooting-header-input'>
           <input @input="handleInput" v-model="value" placeholder='Please enter your search term'/>
         </div>
-        <div class='troubleshooting-header-input-result'>
+        <div class='troubleshooting-header-input-result' v-if='!!value'>
           <ul class='troubleshooting-header-input-result-wrap'>
             <li class='troubleshooting-header-input-result-list' v-for='item of search'><a>[[item.title]]</a></li>
           </ul>
