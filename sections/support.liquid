@@ -8,12 +8,15 @@
  {
     const { createApp } = Vue
     createApp({
-        delimiters: ['[[', ']]'],
-        data() {
-            return {
-                message: 'Hello'
-            }
-        }
+      delimiters: ['[[', ']]'],
+      data() {
+          return {
+              message: 'Hello'
+          }
+      },
+      mounted() {
+        console.log('test', {{ pages['maintenance-and-troubleshooting'].metafields.custom.troubleshooting }})
+      }
     }).mount('#support')
 }
 </script>
