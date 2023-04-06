@@ -943,20 +943,20 @@
     "51b6fb66-fbfc-4cb4-848e-40b0b339e41c": {
       "type": "jd-Instagrams",
       "blocks": {
-        "0abe4190-89b2-48f0-9c7c-3ff9691e35a5": {
-          "type": "Instagram-item",
-          "settings": {
-            "img": "shopify:\/\/shop_images\/285025987_1300822087114113_2939392790892138019_n.webp",
-            "image_icon": "Instagram",
-            "link": "https:\/\/www.instagram.com\/p\/CeOxxA3rWtT\/?utm_source=ig_web_copy_link"
-          }
-        },
         "6b787d71-aad8-46c6-a01a-12036df3dab2": {
           "type": "Instagram-item",
           "settings": {
             "img": "shopify:\/\/shop_images\/IMG_0688.webp",
             "image_icon": "Pinterest",
             "link": "https:\/\/pin.it\/39yPIO2"
+          }
+        },
+        "0abe4190-89b2-48f0-9c7c-3ff9691e35a5": {
+          "type": "Instagram-item",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/285025987_1300822087114113_2939392790892138019_n.webp",
+            "image_icon": "Instagram",
+            "link": "https:\/\/www.instagram.com\/p\/CeOxxA3rWtT\/?utm_source=ig_web_copy_link"
           }
         },
         "d460b408-6f5b-47ca-9771-46e9078a5019": {
@@ -1089,8 +1089,8 @@
         }
       },
       "block_order": [
-        "0abe4190-89b2-48f0-9c7c-3ff9691e35a5",
         "6b787d71-aad8-46c6-a01a-12036df3dab2",
+        "0abe4190-89b2-48f0-9c7c-3ff9691e35a5",
         "d460b408-6f5b-47ca-9771-46e9078a5019",
         "36252fb1-d053-45f7-a957-c74c0324753e",
         "69b70b75-7e87-43fc-bc53-8405809ed756",
