@@ -1,35 +1,141 @@
-<div id="support">
-  [[ message ]]
-</div>
+<style>
+   .troubleshooting-header {
+    height: 80px;
+    width:100%;
+    background-color: #F9F8FF;
+  }
+  .troubleshooting-header-warap {
+    padding:0;
+    width:92%;
+    height: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-itmes:center;
+  }
+  .troubleshooting-header-left {
+    height: 100%;
+    display: flex;
+    align-items:center;
+    padding:0;
+    margin:0;
+    flex:1;
+  }
+  .troubleshooting-header-right {
+    width:26%;
+    display:flex;
+    align-items:center;
+    position:relative;
+  }
+  .troubleshooting-header-input {
+    height:46px;
+    width:100%;
+    padding: 0 15px;
+    border:1px solid #8C8DB9;
+    border-radius: 30px;
+    background-color:#FFF;
+  }
+  .troubleshooting-header-input > input {
+    width:100%;
+    height: 100%;
+    border:none;
+    background:none;
+  }
+  .troubleshooting-header-input-result {
+    position:absolute;
+    right:15px;
+    top: 63px;
+    width: calc(100% - 30px);
+    background-color:#F1F1E6;
+    transition: all 0.3s ease 0s;
+    z-index:9;
+    max-height: 80vh;
+    overflow:auto;
+    padding: 10px 0 ;
+  }
+  .troubleshooting-header-input-result-list {
+    padding: 10px 5px 0;
 
+  }
+
+   @media screen and (max-width: 768px) {
+      .troubleshooting-header-right {
+        width:50%;
+       }
+     .troubleshooting-header-input-result {
+        width: 85vw;
+        max-height: 70vh;
+    }
+   }
+</style>
+
+<div id="support">
+  <div class="troubleshooting-header">
+    <div class="x-warp troubleshooting-header-warap">
+      <div class="troubleshooting-header-left">
+        <h1>SUPPORT</h1>
+      </div>
+      <div class="troubleshooting-header-right">
+        <div class="troubleshooting-header-input">
+          <input @input="handleInput" v-model="value" placeholder="Please enter your search term">
+        </div>
+        <div class="troubleshooting-header-input-result" v-if="!!value">
+          <ul class="troubleshooting-header-input-result-wrap">
+            <li class="troubleshooting-header-input-result-list" v-for="item of search" v-if="search.length !== 0">
+              <a :href="handleLink(item.link)">[[item.title]]</a>
+            </li>
+            <div v-else style="font-size:36px;text-align:center;padding: 50px 0;font-weight: 600;padding-right:40px;">
+              Not found
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/vue.global.prod.js?v=1680503412"></script>
 <script>
- {
-    const { createApp } = Vue
-    createApp({
-      delimiters: ['[[', ']]'],
-      data() {
-          return {
-            message: 'Hello',
-            data: {{ pages['maintenance-and-troubleshooting'].metafields.custom.troubleshooting }}
-          }
-      },
-      mounted() {
-        console.log('test', this.data)
-      }
-    }).mount('#support')
-}
+   {
+      const { createApp } = Vue
+      createApp({
+        delimiters: ['[[', ']]'],
+        data() {
+            return {
+              message: 'Hello',
+              data: {{ pages['maintenance-and-troubleshooting'].metafields.custom.troubleshooting }},
+              value: ''
+            }
+        },
+        methods: {
+           handleLink (link) {
+              return '/pages/' + link
+            },
+          newData() {
+              let arr = []
+              this.data.forEach(item => {
+                arr.push(...item.content)
+              })
+              this.newData = arr
+            },
+        handleInput () {
+              this.search = Array.from(this.newData).filter(item => item.title.toUpperCase().includes(this.value.toUpperCase()) || item.description?.toUpperCase().includes(this.value.toUpperCase()))
+            }
+        },
+        mounted() {
+          this.newData()
+        }
+      }).mount('#support')
+  }
 </script>
 
 {% schema %}
-  {
-    "name": "Support",
-    "settings": [],
-    "presets": [
-      {
-        "name":"Support"
-      }
-    ]
-  }
+{
+  "name": "Support",
+  "settings": [],
+  "presets": [
+    {
+      "name":"Support"
+    }
+  ]
+}
 {% endschema %}
