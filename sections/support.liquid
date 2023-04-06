@@ -124,19 +124,8 @@
         <div>{{ page.content }}</div>
       </div>
       <div class='support-right'>
-        <div class='support-right-wrap drop-down' v-for="item of data">
-          <div class='drop-down-title'>
-            <h2 >[[item.title]]</h2>
-            <svg t="1680577844917" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4004" width="25" height="25"><path d="M736 480c-12.5-12.5-32.8-12.5-45.3 0L523.3 647.4c-6.2 6.2-16.4 6.2-22.6 0L333.3 480c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L466.7 704c25 25 65.5 25 90.5 0L736 525.3c12.5-12.5 12.5-32.8 0-45.3z" p-id="4005"></path></svg>
-          </div>
-          <div  class='troubleshooting-left-content drop-down-content'>
-            <div class='troubleshooting-left-subtitle' v-for="ite of item.content">
-              <svg t="1680507468097" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3700" width="200" height="200"><path d="M512 832a320 320 0 1 1 320-320 320 320 0 0 1-320 320z m0-554.666667a234.666667 234.666667 0 1 0 234.666667 234.666667A235.093333 235.093333 0 0 0 512 277.333333z" p-id="3701"></path></svg>
-              <a :href="handleLink(ite.link)">[[ite.title]]</a>
-            </div>
-            <div class='article-count'>[[articleCount(item.content.length)]]</div>
-          </div>
-        </div>
+        <div class='support-right-wrap'></div>
+        
       </div>
     </div>
   </div>
@@ -157,30 +146,6 @@
             }
         },
         methods: {
-          drowDown () {
-          let lists = document.querySelectorAll('.drop-down')
-          lists.forEach((item, index) => {
-            let title = item.querySelector('.drop-down-title')
-            let svg = item.querySelector('.drop-down-title > svg')
-            let content = item.querySelector('.drop-down-content')
-            title.onclick = () => {
-              if (content.offsetHeight === 0) {
-                content.style.transition = 'none'
-                content.style.height = 'auto'
-                const height = content.offsetHeight
-                content.style.height = 0
-                content.offsetHeight
-                svg.style.transform = 'rotate(180deg)'
-                content.style.transition = '0.3s';
-                content.style.height = height + 'px'
-              } else {
-                svg.style.transform = 'rotate(0deg)'
-                content.style.transition = '0.3s'
-                content.style.height = 0;
-              }
-            }
-          })
-          },
            handleLink (link) {
               return '/pages/' + link
             },
@@ -196,7 +161,6 @@
             }
         },
         mounted() {
-          this.drowDown()
           this.newData()
         }
       }).mount('#support')
