@@ -11,18 +11,9 @@
         delimiters: ['[[', ']]'],
         data() {
             return {
-                data: {{ page['maintenance-and-troubleshooting'].metafields.custom.troubleshooting }},
                 message: 'Hello'
             }
-        },
-      methods: {
-        handleLink (link) {
-          return '/pages/' + link
         }
-      },
-      mounted() {
-        console.log(this.data)
-      }
     }).mount('#support')
 }
 </script>
