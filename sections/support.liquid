@@ -11,11 +11,12 @@
       delimiters: ['[[', ']]'],
       data() {
           return {
-              message: 'Hello'
+            message: 'Hello',
+            data: {{ pages['maintenance-and-troubleshooting'].metafields.custom.troubleshooting }}
           }
       },
       mounted() {
-        console.log('test', {{ pages['maintenance-and-troubleshooting'].metafields.custom.troubleshooting }})
+        console.log('test', this.data)
       }
     }).mount('#support')
 }
