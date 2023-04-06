@@ -198,9 +198,34 @@
             },
         handleInput () {
               this.search = Array.from(this.newData).filter(item => item.title.toUpperCase().includes(this.value.toUpperCase()) || item.description?.toUpperCase().includes(this.value.toUpperCase()))
+            },
+          drowDown () {
+          let lists = document.querySelectorAll('.drop-down')
+          lists.forEach((item, index) => {
+            let title = item.querySelector('.drop-down-title')
+            let svg = item.querySelector('.drop-down-title > svg')
+            let content = item.querySelector('.drop-down-content')
+            title.onclick = () => {
+              if (content.offsetHeight === 0) {
+                content.style.transition = 'none'
+                content.style.height = 'auto'
+                const height = content.offsetHeight
+                content.style.height = 0
+                content.offsetHeight
+                svg.style.transform = 'rotate(180deg)'
+                content.style.transition = '0.3s';
+                content.style.height = height + 'px'
+              } else {
+                svg.style.transform = 'rotate(0deg)'
+                content.style.transition = '0.3s'
+                content.style.height = 0;
+              }
             }
+          })
+          }
         },
         mounted() {
+          this.drowDown()
           this.newData()
         }
       }).mount('#support')
