@@ -231,6 +231,12 @@
         "text2": "<p>FulI suspension system, reliable brakes,<br\/>advanced lighting system<br\/>SHIMANO 7-speed transmission<\/p>"
       }
     },
+    "d060062a-860c-4036-8052-9c544fefa7ee": {
+      "type": "product-video",
+      "settings": {
+        "product_fullscreen_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dbf744a2f0c54670bf3f8b689e317518.mp4"
+      }
+    },
     "0644539a-07eb-4a1c-baf5-089ccd98e4eb": {
       "type": "describe-video",
       "settings": {
@@ -331,12 +337,6 @@
       "disabled": true,
       "settings": {
         "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d7789580dcc84bdd82d8ea489c5d5389.mp4"
-      }
-    },
-    "d060062a-860c-4036-8052-9c544fefa7ee": {
-      "type": "product-video",
-      "settings": {
-        "product_fullscreen_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dbf744a2f0c54670bf3f8b689e317518.mp4"
       }
     },
     "4bbd6d64-896a-4bc0-8dd1-9c1cd55b17c7": {
@@ -838,10 +838,10 @@
     "main",
     "16607057527debbb37",
     "3181c1be-7960-4764-a59e-e1c001f0857b",
+    "d060062a-860c-4036-8052-9c544fefa7ee",
     "0644539a-07eb-4a1c-baf5-089ccd98e4eb",
     "7c8d2aed-cbcf-460f-b470-b7379c8c98a4",
     "16607060699df11384",
-    "d060062a-860c-4036-8052-9c544fefa7ee",
     "4bbd6d64-896a-4bc0-8dd1-9c1cd55b17c7",
     "16623649202cdc4dd6",
     "cb596b7c-2a8e-42be-897f-8d2dfa928ac2",
