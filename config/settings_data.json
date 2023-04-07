@@ -553,7 +553,8 @@
           "tag_text": "",
           "tag_text_color": "#ffffff",
           "tag_background_color": "#2a408e",
-          "background_image": "https:\/\/cdn.shopifycdn.net\/s\/files\/1\/0554\/7098\/1274\/files\/2_8e83dd79-f81b-4016-8cc4-53ad73965117.webp?v=1674180856"
+          "back_color": "#151515",
+          "background_image": ""
         }
       },
       "mini-country-select": {
