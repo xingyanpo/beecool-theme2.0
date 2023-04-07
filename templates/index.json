@@ -20,6 +20,7 @@
     },
     "slideshow": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "slide-2": {
           "type": "image",
