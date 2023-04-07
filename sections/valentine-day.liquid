@@ -29,8 +29,9 @@
 .valentine-day-content {position: relative;;width: 668px;background-color: #fff;text-align: center;border-radius: 10px;display: flex;align-items: center;flex-wrap: wrap;justify-content: center;overflow: auto;max-height:100%;}
 .valentine-day-content::-webkit-scrollbar {display:none;}  
 .valentine-day-content-background-image {background-image:url({{section.settings.background_image}});background-repeat: no-repeat;background-position: center;background-size: cover;}
-.valentine-day-title {line-height: 1;margin: 0;padding: 80px 20px 0 20px;font-size: 32px;font-weight: 600;color: {{section.settings.title_color}};}
-.valentine-day-subtitle {line-height: 1;margin: 0;padding: 20px 20px 0 20px;font-size: 26px;font-weight: 600;color: {{section.settings.subtitle_color}};}
+.valentine-day-content-background-color {background-color: {{section.settings.back_color}};}
+.valentine-day-title {line-height: 1;margin: 0;padding: 80px 20px 0 20px;font-size: 32px;font-weight: 600;color: {{section.settings.title_color}};width:100%;}
+.valentine-day-subtitle {line-height: 1;margin: 0;padding: 20px 20px 0 20px;font-size: 26px;font-weight: 600;color: {{section.settings.subtitle_color}};width:100%;}
 .valentine-day-description {margin: 0;padding: 20px 20px 20px 20px ;font-size: 20px;color: {{section.settings.description_color}};font-weight: 500;}
 .valentine-day-button {width: 160px;height: 40px;background-color: {{section.settings.button_background_color}};color: {{section.settings.button_text_color}};display: block;line-height: 40px;border-radius: 4px;text-decoration: none;font-size: 18px;}
 .valentine-day-video {width: 100%;padding: 30px 0 0 0 ;transform: translate(0, 3px);}
@@ -50,9 +51,19 @@
 }
 </style>
 
+{% capture background %}
+
+{% if section.settings.background_image %}
+  valentine-day-content-background-image 
+{% else %} 
+  valentine-day-content-background-color 
+{% endif %}
+  
+{% endcapture %}
+  
 <section class="valentine-day valentine-day-close">
     <div class="valentine-day-wrap">
-        <div class="valentine-day-content valentine-day-content-open {% if section.settings.background_image %}valentine-day-content-background-image{% endif %}">
+        <div class="valentine-day-content valentine-day-content-open {{ background }}">
             <h2 class="valentine-day-title">{{ section.settings.title }}</h2>
             <h4 class="valentine-day-subtitle">{{ section.settings.subtitle }}</h4>
             <p class="valentine-day-description">{{ section.settings.description }}</p>
@@ -120,7 +131,7 @@ window.onload = function () {
       
         setTimeout(() => {
           closePopup()
-        }, 10000)
+        }, 60000)
       
     }
   })()
@@ -220,6 +231,12 @@ window.onload = function () {
         "type": "color",
         "id": "tag_background_color",
         "label": "Tag Background Color",
+        "default": "#2a408e"
+      },
+      {
+        "type": "color",
+        "id": "back_color",
+        "label": "Background Color",
         "default": "#2a408e"
       },
       {
