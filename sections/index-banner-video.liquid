@@ -195,23 +195,17 @@
         let mobile_poster = '{{ section.settings.mobile_poster | img_url:width:"768x" }}' || 'https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/mobile.webp?v=1678440240'
         let currentSize
 
-        function mobile_state() {
+        if (window.innerWidth <= division) {
             video.src = mobile_video
             video.poster = mobile_poster
             video.load()
-        }
-
-        function pc_state() {
+          
+            currentSize = window.innerWidth
+        } else {
             video.src = pc_video
             video.poster = pc_poster
             video.load()
-        }
-
-        if (window.innerWidth <= division) {
-            mobile_state()
-            currentSize = window.innerWidth
-        } else {
-            pc_state()
+          
             currentSize = window.innerWidth
         }
 
@@ -219,9 +213,15 @@
             for (const entry of entries) {
                 const width = entry.contentRect.width
                 if (width <= division && currentSize > division) {
-                    mobile_state()
+                    video.src = mobile_video
+                    video.poster = mobile_poster
+                    video.load()
+                  
                 } else if (width > division && currentSize <= division) {
-                    pc_state()
+                    video.src = pc_video
+                    video.poster = pc_poster
+                    video.load()
+                  
                 }
                 currentSize = width
             }
