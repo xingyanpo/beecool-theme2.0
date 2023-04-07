@@ -1,0 +1,395 @@
+<style>
+        .x-index-video-wrap {
+            width: 100%;
+            position: relative;
+        }
+
+        #x-index-video {
+            width: 100%;
+            filter: brightness({{ section.settings.video_brightness |times: 10 }}%);
+        }
+        .x-index-video-text-wrap {
+            box-sizing: border-box;
+        }
+        .x-index-video-text {
+            position: absolute;
+            padding: 5% 10%;
+            color: #FFF;
+        }
+        .x-index-video-text > h1 {
+            margin: 0;
+            line-height: 1.5;
+        }
+        .x-index-video-text > p {
+            margin: 0 0 20px 0;
+            line-height: 1.5;
+        }
+        .x-index-video-text > a {
+            background-color: {{section.settings.button_color}};
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            color: {{ section.settings.button_text_color }}
+        }
+        @media screen and (min-width: 1000px) {
+            .x-index-video-text-left-center {
+            top: 50%;
+            transform: translate(0,-50%)
+        }
+        .x-index-video-text-left-bottom {
+            bottom: 0;
+        }
+        .x-index-video-text-left-top {
+            top: 0;
+        }
+        .x-index-video-text-middle-center {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .x-index-video-text-middle-bottom {
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%,0);
+            text-align: center;
+        }
+        .x-index-video-text-middle-top {
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,0);
+            text-align: center;
+        }
+        .x-index-video-text-right-top {
+            top: 0;
+            right: 0;
+            text-align: right;
+        }
+        .x-index-video-text-right-center {
+            top: 50%;
+            right: 0;
+            transform: translate(0,-50%);
+            text-align: right;
+        }
+        .x-index-video-text-right-bottom {
+            bottom: 0;
+            right: 0;
+            text-align: right;
+        }
+        }
+
+        @media screen and (max-width: 1000px) {
+        .x-index-video-text-left-center-mobile {
+            top: 50%;
+            transform: translate(0,-50%)
+        }
+        .x-index-video-text-left-bottom-mobile {
+            bottom: 0;
+        }
+        .x-index-video-text-left-top-mobile {
+            top: 0;
+        }
+        .x-index-video-text-middle-center-mobile {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .x-index-video-text-middle-bottom-mobile {
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%,0);
+            text-align: center;
+        }
+        .x-index-video-text-middle-top-mobile {
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,0);
+            text-align: center;
+        }
+        .x-index-video-text-right-top-mobile {
+            top: 0;
+            right: 0;
+            text-align: right;
+        }
+        .x-index-video-text-right-center-mobile {
+            top: 50%;
+            right: 0;
+            transform: translate(0,-50%);
+            text-align: right;
+        }
+        .x-index-video-text-right-bottom-mobile {
+            bottom: 0;
+            right: 0;
+            text-align: right;
+        }
+        .x-index-video-text {
+            padding:10%;
+        }
+        }
+    </style>
+
+    {% assign pc_text_position = section.settings.pc_text_position %}
+    {%- case pc_text_position -%}
+      {%- when 'left_top' -%}
+        {%- assign pc_position = 'x-index-video-text-left-top' -%}
+      {%- when 'left_center' -%}
+        {%- assign pc_position = 'x-index-video-text-left-center' -%}
+      {%- when 'left_bottom' -%}
+        {%- assign pc_position = 'x-index-video-text-left-bottom' -%}
+      {%- when 'middle_top' -%}
+        {%- assign pc_position = 'x-index-video-text-middle-top' -%}
+      {%- when 'middle_center' -%}
+        {%- assign pc_position = 'x-index-video-text-middle-center' -%}
+      {%- when 'middle_bottom' -%}
+        {%- assign pc_position = 'x-index-video-text-middle-bottom' -%}
+      {%- when 'right_top' -%}
+        {%- assign pc_position = 'x-index-video-text-right-top' -%}
+      {%- when 'right_center' -%}
+        {%- assign pc_position = 'x-index-video-text-right-center' -%}
+      {%- when 'right_bottom' -%}
+        {%- assign pc_position = 'x-index-video-text-right-bottom' -%}
+    {%- endcase -%}
+
+    {% assign mobile_text_position = section.settings.mobile_text_position %}
+    {%- case mobile_text_position -%}
+      {%- when 'left_top' -%}
+        {%- assign mobile_position = 'x-index-video-text-left-top-mobile' -%}
+      {%- when 'left_center' -%}
+        {%- assign mobile_position = 'x-index-video-text-left-center-mobile' -%}
+      {%- when 'left_bottom' -%}
+        {%- assign mobile_position = 'x-index-video-text-left-bottom-mobile' -%}
+      {%- when 'middle_top' -%}
+        {%- assign mobile_position = 'x-index-video-text-middle-top-mobile' -%}
+      {%- when 'middle_center' -%}
+        {%- assign mobile_position = 'x-index-video-text-middle-center-mobile' -%}
+      {%- when 'middle_bottom' -%}
+        {%- assign mobile_position = 'x-index-video-text-middle-bottom-mobile' -%}
+      {%- when 'right_top' -%}
+        {%- assign mobile_position = 'x-index-video-text-right-top-mobile' -%}
+      {%- when 'right_center' -%}
+        {%- assign mobile_position = 'x-index-video-text-right-center-mobile' -%}
+      {%- when 'right_bottom' -%}
+        {%- assign mobile_position = 'x-index-video-text-right-bottom-mobile' -%}
+    {%- endcase -%}
+
+<div class="x-index-video-wrap">
+    <video id="x-index-video" src="https://cdn.shopify.com/videos/c/o/v/7234ec8640594cedbe9e800e4db36d4c.mp4" autoplay preload="auto" loop muted playsinline poster="{{ section.settings.pc_poster | img_url:width: "1920x" }}"></video>
+    <div class="x-index-video-text-wrap">
+        <div class="x-index-video-text {{pc_position}} {{mobile_position}}">
+            <h1>{{ section.settings.title }}</h1>
+            <p>{{ section.settings.subtitle }}</p>
+            <a href="{{ section.settings.button_url }}">{{ section.settings.button_text }}</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    {
+        let division = 1000
+        let videoWrap = document.querySelector(".x-index-video-wrap")
+        let video = document.querySelector("#x-index-video")
+        let pc_video = '{{ section.settings.pc_video }}' || 'https://cdn.shopify.com/videos/c/o/v/7234ec8640594cedbe9e800e4db36d4c.mp4'
+        let pc_poster = '{{ section.settings.pc_poster | img_url:width:"1920x" }}' || 'https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/6d36d6ee1ebc3f54627de0e370f7efa3.webp?v=1678440240'
+        let mobile_video = '{{ section.settings.mobile_video }}' || 'https://cdn.shopify.com/videos/c/o/v/386b390d9a0347ec8a17598689a97424.mp4'
+        let mobile_poster = '{{ section.settings.mobile_poster | img_url:width:"768x" }}' || 'https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/mobile.webp?v=1678440240'
+        let currentSize
+
+        function mobile_state() {
+            video.src = mobile_video
+            video.poster = mobile_poster
+            video.load()
+        }
+
+        function pc_state() {
+            video.src = pc_video
+            video.poster = pc_poster
+            video.load()
+        }
+
+        if (window.innerWidth <= division) {
+            mobile_state()
+            currentSize = window.innerWidth
+        } else {
+            pc_state()
+            currentSize = window.innerWidth
+        }
+
+        const resizeObserver = new ResizeObserver(entries => {
+            for (const entry of entries) {
+                const width = entry.contentRect.width
+                if (width <= division && currentSize > division) {
+                    mobile_state()
+                } else if (width > division && currentSize <= division) {
+                    pc_state()
+                }
+                currentSize = width
+            }
+        })
+        resizeObserver.observe(videoWrap)
+    }
+</script>
+
+{% schema %}
+  {
+    "name": "Index Banner Video",
+    "settings": [
+      {
+          "type": "select",
+          "id": "pc_text_position",
+          "label": "Pc Text position",
+          "options": [
+            {
+              "value": "left_top",
+              "label": "Left Top"
+            },
+            {
+              "value": "left_center",
+              "label": "Left Center"
+            },
+            {
+              "value": "left_bottom",
+              "label": "Left Bottom"
+            },
+            {
+              "value": "middle_top",
+              "label": "Middle Top"
+            },
+            {
+              "value": "middle_center",
+              "label": "Middle Center"
+            },
+            {
+              "value": "middle_bottom",
+              "label": "Middle Bottom"
+            },
+            {
+              "value": "right_top",
+              "label": "Right Top"
+            },
+            {
+              "value": "right_center",
+              "label": "Right Center"
+            },
+            {
+              "value": "right_bottom",
+              "label": "Right bottom"
+            }
+          ],
+          "default": "middle_center"
+        },{
+          "type": "select",
+          "id": "mobile_text_position",
+          "label": "Mobile Text position",
+          "options": [
+            {
+              "value": "left_top",
+              "label": "Left Top"
+            },
+            {
+              "value": "left_center",
+              "label": "Left Center"
+            },
+            {
+              "value": "left_bottom",
+              "label": "Left Bottom"
+            },
+            {
+              "value": "middle_top",
+              "label": "Middle Top"
+            },
+            {
+              "value": "middle_center",
+              "label": "Middle Center"
+            },
+            {
+              "value": "middle_bottom",
+              "label": "Middle Bottom"
+            },
+            {
+              "value": "right_top",
+              "label": "Right Top"
+            },
+            {
+              "value": "right_center",
+              "label": "Right Center"
+            },
+            {
+              "value": "right_bottom",
+              "label": "Right bottom"
+            }
+          ],
+          "default": "middle_center"
+        },
+      {
+        "type":"text",
+        "id": "title",
+        "label": "Title",
+        "default": "Spring New Arrivals"
+      },
+      {
+        "type":"text",
+        "id": "subtitle",
+        "label": "Subtitle",
+        "default": "Various Colors, Various Fun"
+      },
+      {
+        "type":"text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Explan More"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Url"
+      },
+      {
+        "type": "color",
+        "id": "button_text_color",
+        "label": "Button Text Color",
+        "default": "#FFF"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button Color",
+        "default": "#2a408e"
+      },
+      {
+        "type": "range",
+        "id": "video_brightness",
+        "label": "Video brightness",
+        "min": 1,
+        "max": 10,
+        "step": 1,
+        "default": 9
+      },
+      {
+        "type": "url",
+        "id": "pc_video",
+        "label": "Pc Video Url"
+      },
+      {
+        "type": "image_picker",
+        "id": "pc_poster",
+        "label": "Pc Poster"
+      },
+      {
+        "type": "url",
+        "id": "mobile_video",
+        "label": "Mobile Video Url"
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile_poster",
+        "label": "Mobile Poster"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Index Banner Video"
+      }
+    ]
+  }
+{% endschema %}
