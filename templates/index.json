@@ -1,5 +1,23 @@
 {
   "sections": {
+    "8ac63d6f-2830-4aad-ade3-e945ef9268e8": {
+      "type": "index-banner-video",
+      "settings": {
+        "pc_text_position": "middle_center",
+        "mobile_text_position": "right_bottom",
+        "title": "Spring New Arrivals",
+        "subtitle": "Various Colors, Various Fun",
+        "button_text": "Explan More",
+        "button_url": "shopify:\/\/products\/bee-explorer",
+        "button_text_color": "#FFF",
+        "button_color": "#2a408e",
+        "video_brightness": 9,
+        "pc_video": "",
+        "pc_poster": "shopify:\/\/shop_images\/6d36d6ee1ebc3f54627de0e370f7efa3.webp",
+        "mobile_video": "",
+        "mobile_poster": "shopify:\/\/shop_images\/mobile.webp"
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -1157,6 +1175,7 @@
     }
   },
   "order": [
+    "8ac63d6f-2830-4aad-ade3-e945ef9268e8",
     "slideshow",
     "165959401129cdd84a",
     "16599454645e2d43c0",
