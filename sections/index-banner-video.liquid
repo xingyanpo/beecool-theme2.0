@@ -19,10 +19,14 @@
         .x-index-video-text > h1 {
             margin: 0;
             line-height: 1.5;
+            color: {{ section.settings.title_color }};
+            font-size: {{ section.settings.title_font_size }}px;
         }
         .x-index-video-text > p {
             margin: 0 0 20px 0;
             line-height: 1.5;
+            color: {{ section.settings.subtitle_color }};
+            font-size:{{ section.settings.subtitle_font_size }}px;
         }
         .x-index-video-text > a {
             background-color: {{section.settings.button_color}};
@@ -328,10 +332,42 @@
         "default": "Spring New Arrivals"
       },
       {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title Color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "range",
+        "id": "title_font_size",
+        "label": "Title Font Size",
+        "min": 16,
+        "max": 50,
+        "step": 2,
+        "unit": "px",
+        "default": 30
+      },
+      {
         "type":"text",
         "id": "subtitle",
         "label": "Subtitle",
         "default": "Various Colors, Various Fun"
+      },
+      {
+        "type": "color",
+        "id": "subtitle_color",
+        "label": "Title And Subtitle color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "range",
+        "id": "subtitle_font_size",
+        "label": "Subtitle Font Size",
+        "min": 16,
+        "max": 50,
+        "step": 2,
+        "unit": "px",
+        "default": 20
       },
       {
         "type":"text",
