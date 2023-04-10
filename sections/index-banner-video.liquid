@@ -174,7 +174,7 @@
     {%- endcase -%}
 
 <div class="x-index-video-wrap">
-    <video id="x-index-video" src="https://cdn.shopify.com/videos/c/o/v/7234ec8640594cedbe9e800e4db36d4c.mp4" autoplay preload="auto" loop muted playsinline poster="{{ section.settings.pc_poster | img_url:width: "1920x" }}"></video>
+    <video id="x-index-video" src="https://cdn.shopify.com/videos/c/o/v/7234ec8640594cedbe9e800e4db36d4c.mp4" autoplay preload="auto" loop muted playsinline poster="{{ section.settings.pc_poster | image_url:width: "1920x" }}"></video>
     <div class="x-index-video-text-wrap">
         <div class="x-index-video-text {{pc_position}} {{mobile_position}}">
             <h1>{{ section.settings.title }}</h1>
@@ -190,9 +190,9 @@
         let videoWrap = document.querySelector(".x-index-video-wrap")
         let video = document.querySelector("#x-index-video")
         let pc_video = '{{ section.settings.pc_video }}' || 'https://cdn.shopify.com/videos/c/o/v/7234ec8640594cedbe9e800e4db36d4c.mp4'
-        let pc_poster = '{{ section.settings.pc_poster | img_url:width:"1920x" }}' || 'https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/6d36d6ee1ebc3f54627de0e370f7efa3.webp?v=1678440240'
+        let pc_poster = '{{ section.settings.pc_poster | image_url:width:"1920x" }}' || 'https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/6d36d6ee1ebc3f54627de0e370f7efa3.webp?v=1678440240'
         let mobile_video = '{{ section.settings.mobile_video }}' || 'https://cdn.shopify.com/videos/c/o/v/386b390d9a0347ec8a17598689a97424.mp4'
-        let mobile_poster = '{{ section.settings.mobile_poster | img_url:width:"768x" }}' || 'https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/mobile.webp?v=1678440240'
+        let mobile_poster = '{{ section.settings.mobile_poster | image_url:width:"768x" }}' || 'https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/mobile.webp?v=1678440240'
         let currentSize
 
         if (window.innerWidth <= division) {
