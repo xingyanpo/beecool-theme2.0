@@ -2,17 +2,17 @@
 <div class="jd-business-cooperation">
     <div class="help_search">
             <div class="jd-header__search-bar header__search-bar">
-                <form class="jd-predictive-search__form predictive-search__form search_form_help" action="{{ routes.search_url }}" method="get" role="search">
-
-                  <input type="hidden" name="type" value="product">
-                  <input type="hidden" name="options[prefix]" value="last">
-                  <input type="hidden" name="options[unavailable_products]" value="{{ settings.search_unavailable_products }}">
-            
-                  <input type="text" name="search_index" class="predictive-search__input" id="search_index" onkeydown="entersearch1(event)"  onblur="if(this.value==''){this.value='Search keywords...'}" onfocus="if(this.value=='Search keywords...'){this.value=''}" value="Search keywords..."  />
-                  <input class="predictive-search__input" is="predictive-search-input" type="text" name="q" autocomplete="off" autocorrect="off" aria-label="{{ 'search.general.title' | t }}" placeholder="Search keywords..." style="display: none;">
-                  {%- render 'icon' with 'header-search' -%}
-                </form>
                
+                 <form class="jd-predictive-search__form predictive-search__form search_form_help" action="{{ routes.search_url }}" method="get" role="search">
+                    <input type="hidden" name="type" value="product">
+                    <input type="hidden" name="options[prefix]" value="last">
+                    <input type="hidden" name="options[unavailable_products]" value="{{ settings.search_unavailable_products }}">
+          
+                    <button class="main-search__submit  tap-area" type="submit">{%- render 'icon' with 'header-search' -%}</button>
+                    <input class="main-search__input main_search__submits input__field" type="text" name="q" autocomplete="off" autocorrect="off" aria-label="{{ 'search.general.title' | t }}" placeholder="Search keywords.." value="{{ search.terms | escape }}">
+                  </form>
+
+           
             </div>
             <div class="help_search_text">What do you need help with?</div>
     </div>
