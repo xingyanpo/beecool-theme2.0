@@ -87,8 +87,7 @@
     }
     .jd-header__search-bar svg{
         width: 16px;
-        position: absolute;
-        right: 27px;
+       top:0;
         height: auto;
        
     }
@@ -203,8 +202,8 @@
     }
     .jd-header__search-bar svg{
         width: 28px;
-        position: absolute;
-        right: 36px;
+     
+        top:0;
         height: auto;
        
     }
@@ -221,4 +220,8 @@
      .jd-header__search-bar input:-internal-autofill-selected {
          transition: background-color 5000s ease-in-out 0s !important;
      }
+} 
+.main_search__submits{
+  height:100%;
+  border:unset;
 }
