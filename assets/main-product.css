@@ -25,12 +25,14 @@
 
   .fedex_all_boxBOttom_img {
     margin-right: 10px;
+    flex:1;
   }
   .fedex_all_boxBOttom_text {
     width: 80%;
     line-height: 1;
     display: flex;
     align-items: flex-end;
+    flex:1;
   }
   .fedex_all_boxBOttom_text svg {
     width: 20px;
