@@ -538,7 +538,7 @@
       "valentine-day": {
         "type": "valentine-day",
         "settings": {
-          "is_use_popup": true,
+          "is_use_popup": false,
           "title": "BeeCool Earth Month",
           "title_color": "#ffffff",
           "subtitle": "Go Green Go Spring",
