@@ -2014,5 +2014,6 @@
 .x-product-free-gifts-item-img {height:unset;width: 50%;}
 .x-product-free-gifts-item-text p:first-child {font-size:18px;line-height: 1.5;padding: 10px 10px 10px 0;}
 .x-product-free-gifts-item-text p:nth-child(2) {font-size: 16px;}
+.fedex_all_boxBOttom {flex-wrap:wrap;}
 .fedex_all_boxBOttom_img {width:100%;}
 .fedex_all_boxBOttom_text {width:100%;}
