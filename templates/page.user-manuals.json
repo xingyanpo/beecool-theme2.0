@@ -132,6 +132,21 @@
             "faq2_table": "",
             "faq3_text": ""
           }
+        },
+        "572d124d-1c98-416f-8b07-4d299c817352": {
+          "type": "user_manuals_Bottom",
+          "settings": {
+            "faq": "2-2-2023 Tail-light Connection",
+            "text": "<p>Some bikes may arrive with tail-light  wire connected but some may come with the wire unconnected. If the tail-light wire is unconnected, you need to find its plug and reconnect it. Here is a picture about where you can find this wire plug.<\/p>",
+            "img": "shopify:\/\/shop_images\/QQ_20230417145510.png",
+            "title": "",
+            "text2": "",
+            "text3": "",
+            "faq2_title": "",
+            "faq2_text": "",
+            "faq2_table": "",
+            "faq3_text": ""
+          }
         }
       },
       "block_order": [
@@ -139,7 +154,8 @@
         "8c0f1e3d-3ed9-4e67-bd1a-2d0bc019047e",
         "484201ae-7a1b-4e08-8dda-02b3cb10a8d5",
         "5fd602b8-9dc3-41c4-9d2c-a9b2f8591add",
-        "1bccf2a5-d33f-4d95-9e8d-58959ce08677"
+        "1bccf2a5-d33f-4d95-9e8d-58959ce08677",
+        "572d124d-1c98-416f-8b07-4d299c817352"
       ],
       "settings": {
         "title": "<p>Update<\/p>"
