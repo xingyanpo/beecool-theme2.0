@@ -1,0 +1,110 @@
+<style>
+  .header-country-select-button {
+    display:flex;
+    align-items: center;
+  }
+  .header-country-item {padding-bottom: 5px;}
+  .header-country-select-button > img {width: 30px;}
+  .header-country-select-button > span {font-size: 15px;font-weight: 600;padding-left: 10px;}
+  .header-country-select {position:relative;cursor:pointer;}
+  .header-show-country {
+    border-radius: 4px;
+    overflow: hidden;
+      width: 180px;
+      border-top: 2px solid #2a408e;
+      position: absolute;
+      background-color: #FFF;
+      padding:3px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      transition: height 500ms cubic-bezier(0.2, 0.06, 0.05, 0.95);
+      overflow:hidden;
+      visibility: hidden;
+      padding:10px;
+      box-shadow: 0 3px 3px #55555526;
+    }
+  .header-show-country--top {
+      top: 100%;
+      left: calc(50% - 85px);
+    }
+    .header-show-country--bottom {
+      bottom: 100%;
+      left: 0;
+    }
+    .header-country-item > a {
+      display: flex;
+      align-items: center;
+      cursor:pointer;
+    }
+    .header-country-item > a > img {
+      width: 28px;
+    }
+    .header-country-item > a > .header-country-name {
+      padding-left: 10px;
+      font-size: 15px;
+      color:#000;
+      font-weight: 600;
+    }
+  .header-country-select:hover .header-show-country {
+     visibility: visible;
+  }
+</style>
+
+    <div id="country-header-country-select--{{ position }}" class="header-country-select">
+        <div class="header-country-select-button" v-for="item of listFilter(list, true)">
+            <img :src="item.flag" alt="">
+            <span>[[ item.country ]]</span>
+        </div>
+        <div class="header-show-country--{{position}} header-show-country">
+            <div class="header-country-item" v-for="item of listFilter(list, false)" :key="item.country">
+                <a :href="item.href">
+                    <img :src="item.flag">
+                    <span class="header-country-name">[[ item.country ]]</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/vue.global.prod.js?v=1680503412"></script>
+    <script>
+        {
+            const { createApp } = Vue
+            createApp({
+                delimiters: ['[[', ']]'],
+                data() {
+                    return {
+                        list: [
+                            {
+                                country: "Canada",
+                                flag: "https://cdn.shopifycdn.net/s/files/1/0730/5969/6953/files/ca.svg?v=1677572062",
+                                href: "https://ca.beecoolbikes.com",
+                                isMain: false
+                            },
+                            {
+                                country: "United States",
+                                flag: "https://cdn.shopify.com/s/files/1/0730/5969/6953/files/us_1.svg?v=1677573763",
+                                href: "https://beecoolbikes.com",
+                                isMain: false
+                            }
+                        ]
+                    }
+                },
+                methods: {
+                    listFilter(list, isMain) {
+                        return list.filter(item => isMain ? item.isMain : !item.isMain)
+                    },
+                  getMain() {
+                    let url = location.origin
+                    this.list.forEach((item,index) => {
+                      if(item.href === url) {
+                        item.isMain = true
+                      } 
+                    })
+                  }
+                },
+                mounted() {
+                  this.getMain()
+                }
+            }).mount('#country-header-country-select--{{ position }}')
+        }
+    </script>
