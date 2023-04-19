@@ -199,9 +199,6 @@
           </button>
           {%- endif -%}
           
-          <div class="pad-country-show">
-          {{ country_select }}
-          </div>
           
           <a href="{{ routes.search_url }}" is="toggle-link" class="header__icon-wrapper tap-area tap_area_fang  {% if section.settings.header_layout == 'logo_center_search_open' %}hidden-lap{% endif %} hidden-desk" aria-controls="search-drawer" aria-label="{{ 'search.general.title' | t | escape }}">
             {%- render 'icon' with 'header-search' -%}
@@ -356,7 +353,7 @@
             {%- render 'icon' with 'header-email' -%}
           </button>
 
-          {{ country_select }}
+         {% render 'country-select' , position: 'top' %}
           
           <!-- pc login -->
           {%- if true -%}
