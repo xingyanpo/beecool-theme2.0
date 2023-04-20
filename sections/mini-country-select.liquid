@@ -22,62 +22,181 @@
     height: 100%;
     object-fit:cover;
   }
-  .show-country {
-    width: 170px;
-    border-bottom: 2px solid #2a408e;
-    position: absolute;
-    bottom: 100%;left: 0;
-    background-color: #FFF;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    transition: height 500ms cubic-bezier(0.2, 0.06, 0.05, 0.95);
-    visibility: hidden;
-    height: 0;
-    overflow:hidden;
+  .mini-country-list {
+    width: 100%;
+    height: 80vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index:998;
   }
-  .country-item > a {
-    display: flex;
-    align-items: center;
-    cursor:pointer;
-  }
-  .country-item > a > img {
-    width: 28px;
-  }
-  .country-item > a > .country-name {
-    padding-left: 10px;
-    font-size: 18px;
-  }
-  .mini-country-select-wrap:hover > .show-country {
-    visibility: visible;
+  .mini-country-list-wrap {
+    width: 95%;
     height: 100%;
+    background-color: #FFF;
+    margin: 0 auto;
+    border-radius: 6px 6px 0 0;
+    text-align:center;
+    position:relative;
+    box-shadow: 0 0 3px #55555526;
   }
-  .show-country:hover {
-    visibility: visible;
+  .mini-country-list-wrap > h1 {
+    font-size: 32px;
+    padding-top: 25px;
+    line-height: 1.2;
   }
+  .mini-country-list-wrap > button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .mini-country-lists {
+    width: 90%;
+    padding: 50px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: auto;
+  }
+  @keyframes show-animation {
+    0% {
+      opacity: 0;
+      transform: translateY(80vh);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY (0px)
+    }
+  } 
+  .mini-country-enter-active {
+    animation: show-animation 0.5s;
+  }
+  .mini-country-leave-active {
+    animation: show-animation 0.5s reverse;
+  }
+  .mini-country-lists > .mini-country-lists-wrap {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .mini-country-lists > .mini-country-lists-wrap > a {
+      display: flex;
+      align-items: center;
+      cursor:pointer;
+      justify-content: center;
+      width: 80%;
+      padding: 15px 0; 
+      background: #8C8DB9;
+      border-radius: 30px;
+    }
+    .mini-country-lists > .mini-country-lists-wrap > a > img {
+      width: 28px;
+      height: 28px;
+      object-fit:cover;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .mini-country-lists > .mini-country-lists-wrap > a > .header-country-name {
+      padding-left: 10px;
+      font-size: 15px;
+      color: #FFF;
+      font-weight: 600;
+    }
   @media screen and (max-width: 992px) {
     .mini-country-select {
       display:block;
     }
   }
+  @media screen and (max-width: 768px) {
+   .mini-country-lists > .mini-country-lists-wrap {
+      width: 80%;
+    }
+  }
 </style>
-
-<div class="mini-country-select">
-  <div class="mini-country-select-wrap">
-    <div class="cover-img">
-      <img src="https://cdn.shopifycdn.net/s/files/1/0730/5969/6953/files/ca.svg?v=1677572062" alt="">
-    </div>
-    <div class="show-country">
-       <div class="country-item">
-           <a href="https://beecoolbikes.com">
-            <img src="https://cdn.shopify.com/s/files/1/0730/5969/6953/files/us_1.svg?v=1677573763">
-            <span class="country-name">United States</span>
-           </a>
-          </div>
+<div id="main-mini-country-select">
+  <div class="mini-country-select">
+    <div class="mini-country-select-wrap" @click="isShowSelect">
+      <div class="cover-img" v-for="item of listFilter(list, true)">
+        <img :src="item.flag" alt="">
+      </div>
     </div>
   </div>
+  <transition enter-active-class="mini-country-enter-active" leave-active-class="mini-country-leave-active">
+    <div class="mini-country-list" v-show="isShow">
+      <div class="mini-country-list-wrap">
+        <h1 v-for="item of listFilter(list, true)">[[item.title]]</h1>
+        <button @click="isShow = false">
+          <svg t="1673341495567" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2698" width="25" height="25">
+            <path d="M97.1 91.2c11.3-11.3 29.8-11.3 41.1 0l782.2 782.2c11.3 11.3 11.3 29.8 0 41.1s-29.8 11.3-41.1 0L97.1 132.2c-11.3-11.3-11.3-29.7 0-41z" fill="#000" p-id="2699"></path>
+            <path d="M920.4 91.1c11.3 11.3 11.3 29.8 0 41.1L138.2 914.5c-11.3 11.3-29.8 11.3-41.1 0s-11.3-29.8 0-41.1L879.3 91.1c11.4-11.3 29.8-11.3 41.1 0z" fill="#000" p-id="2700"></path>
+          </svg>
+        </button>
+        <div class="mini-country-lists">
+          <div v-for="item of listFilter(list, false)" class="mini-country-lists-wrap">
+            <a :href="item.href">
+                <img :src="item.flag">
+                <span class="header-country-name">[[ item.country ]]</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </transition>
 </div>
+
+
+<script src="https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/vue.global.prod.js?v=1680503412"></script>
+<script>
+    {
+        const { createApp } = Vue
+        createApp({
+            delimiters: ['[[', ']]'],
+            data() {
+                return {
+                    list: [
+                        {
+                            country: "Canada",
+                            flag: "https://cdn.shopifycdn.net/s/files/1/0730/5969/6953/files/ca.svg?v=1677572062",
+                            href: "https://ca.beecoolbikes.com",
+                            isMain: false,
+                            title: 'Choose the Interface Language'
+                        },
+                        {
+                            country: "United States",
+                            flag: "https://cdn.shopify.com/s/files/1/0730/5969/6953/files/us_1.svg?v=1677573763",
+                            href: "https://beecoolbikes.com",
+                            isMain: false,
+                            title: 'Choose the Interface Language'
+                        }
+                    ],
+                  isShow: false
+                }
+            },
+            methods: {
+                listFilter(list, isMain) {
+                    return list.filter(item => isMain ? item.isMain : !item.isMain)
+                },
+              getMain() {
+                let url = location.origin
+                this.list.forEach((item,index) => {
+                  if(item.href === url) {
+                    item.isMain = true
+                  } 
+                })
+              },
+              isShowSelect() {
+                this.isShow = !this.isShow
+              }
+            },
+            mounted() {
+              this.getMain()
+            }
+        }).mount('#main-mini-country-select')
+    }
+</script>
 
 {% schema %}
 {
