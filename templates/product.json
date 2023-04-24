@@ -63,6 +63,7 @@
         },
         "f0aeb6d6-caa0-4a9c-b64e-d3afd3de91ac": {
           "type": "ScheduledToShip",
+          "disabled": true,
           "settings": {
           }
         }
@@ -510,6 +511,7 @@
     "sma_reviews_section_auto": {
       "type": "reviews-importer-product",
       "settings": {
+        "lai_product": ""
       }
     }
   },
