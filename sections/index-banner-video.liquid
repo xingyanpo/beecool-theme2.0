@@ -12,18 +12,19 @@
             box-sizing: border-box;
         }
         .x-index-video-text {
+            width: 100%;
             position: absolute;
             padding: 5% 10%;
             color: #FFF;
         }
         .x-index-video-text > h1 {
             margin: 0;
-            line-height: 1.5;
+            line-height: 1.2;
             color: {{ section.settings.title_color }};
             font-size: {{ section.settings.title_font_size }}px;
         }
         .x-index-video-text > p {
-            margin: 0 0 20px 0;
+            margin: 20px 0;
             line-height: 1.5;
             color: {{ section.settings.subtitle_color }};
             font-size:{{ section.settings.subtitle_font_size }}px;
@@ -35,7 +36,7 @@
             cursor: pointer;
             color: {{ section.settings.button_text_color }}
         }
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 768px) {
             .x-index-video-text-left-center {
             top: 50%;
             transform: translate(0,-50%)
@@ -82,7 +83,7 @@
         }
         }
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 768px) {
         .x-index-video-text-left-center-mobile {
             top: 50%;
             transform: translate(0,-50%)
@@ -190,7 +191,7 @@
 
 <script>
     {
-        let division = 1000
+        let division = 768
         let videoWrap = document.querySelector(".x-index-video-wrap")
         let video = document.querySelector("#x-index-video")
         let pc_video = '{{ section.settings.pc_video }}' || 'https://cdn.shopify.com/videos/c/o/v/7234ec8640594cedbe9e800e4db36d4c.mp4'
