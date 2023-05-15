@@ -26,6 +26,13 @@
     "main": {
       "type": "main-article",
       "blocks": {
+        "09f7d6e7-843a-4f89-8d94-c415332ba784": {
+          "type": "article",
+          "settings": {
+            "article": "latest-news\/bee-adventurer-new-color-edition-navy-blue",
+            "img": "shopify:\/\/shop_images\/7C397873-B773-46FF-885A-DFBBD93A87C7.jpg"
+          }
+        },
         "3e7c183c-26c2-45ec-a817-8b92d88c5fbc": {
           "type": "article",
           "settings": {
@@ -39,19 +46,12 @@
             "article": "latest-news\/with-ul-certification-beecool-bikes-make-your-ride-safe-and-further",
             "img": "shopify:\/\/shop_images\/mmexport1630918456509.jpg"
           }
-        },
-        "09f7d6e7-843a-4f89-8d94-c415332ba784": {
-          "type": "article",
-          "settings": {
-            "article": "latest-news\/beecool-bike-newly-released-bee-pathfinder-step-thru-colorful-series",
-            "img": "shopify:\/\/shop_images\/c6d7105baeabd8449f5c4e9fed384371.png"
-          }
         }
       },
       "block_order": [
+        "09f7d6e7-843a-4f89-8d94-c415332ba784",
         "3e7c183c-26c2-45ec-a817-8b92d88c5fbc",
-        "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd",
-        "09f7d6e7-843a-4f89-8d94-c415332ba784"
+        "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd"
       ],
       "settings": {
         "show_on_scroll_navigation": false,
