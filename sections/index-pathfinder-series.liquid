@@ -1,0 +1,275 @@
+<style>
+  #pathfinder-series {background: #EEE;}
+  .pathfinder-series-title {line-height: 1.5;text-align:center;transform: translateY(80px);font-size:30px;}
+  .pathfinder-series-content {display:flex;flex-wrap: wrap;align-items:center;}
+  .pathfinder-series-left {width: 30%;}
+  .pathfinder-series-subtitle {font-size: 18px;}
+  .pathfinder-series-left-content {padding: 10px 0 10px 15px;}
+  .pathfinder-series-left-content > h4 {margin: 0;color: #666;}
+  .pathfinder-series-color-select {padding:20px 0 40px;display:flex;flex-wrap:wrap;}
+  .pathfinder-series-color-select button {width: 30px;height: 30px;border-radius:50%;border:1px solid #999;}
+  .pathfinder-series-color-select-warp {width: 40px;height: 40px;border-radius:50%;display:flex;justify-content:center;align-items:center;margin:0 10px 0 0;}
+  .pathfinder-series-color-select-border {border:2px solid #2a408e;}
+  .pathfinder-series-color-select-trailer-warp {margin:0 10px 10px 0;width: 106px;height:40px;display: flex;align-items:center;justify-content:center;margin:0 10px 0 0;}
+  .pathfinder-series-color-select-trailer-warp button {width: 100px; text-align:center;height: 34px;border-radius:unset;border:1px solid #000;}
+  .pathfinder-series-color-select-trailer-border {border:1px solid #2a408e;}
+
+  .pathfinder-series-right {flex:1;}
+  .pathfinder-series-images {width: 100%;display: flex;}
+  .pathfinder-series-price {display:flex;justify-content: start;font-weight: 600;font-size: 18px;align-items: center;}
+  .pathfinder-series-pay-button {font-size: 18px;background-color: #2a408e;line-height: 1.5;padding: 5px 10px;color: #FFF;font-weight: 600;text-align:center;display:block;width: 150px;margin: 10px 0 20px;}
+  .pathfinder-series-image-trailer {flex: 1;display: flex;align-items: flex-end;}
+  .pathfinder-series-image-bikes {width: 50%;}
+  .img-bike-top {transform: translate(-20%,30%);}
+  .img-bike-bottom {transform: translate(0,-30%);}
+  .img-trailer {width: 100%;object-fit: contain;transform: translate(0,-20%);}
+
+  @media screen and (max-width: 992px) {
+    .pathfinder-series-content {flex-direction: column-reverse;}
+    .pathfinder-series-left {width: 100%;text-align: center;}
+    .pathfinder-series-color-select {justify-content: center;}
+    .pathfinder-series-title {transform: translateY(0);line-height: 1.2;font-size: 24px;padding-top: 10px;}
+    .pathfinder-series-color-select {padding: 10px 0  20px;}
+    .pathfinder-series-price {justify-content: center;}
+    .pathfinder-series-pay-button {margin: 10px auto 20px;}
+  }
+</style>
+
+
+<div id="pathfinder-series">
+  <div class="x-width">
+    <h1 class="pathfinder-series-title">{{ section.settings.title }}</h1>
+    <div class="pathfinder-series-content">
+      <div class="pathfinder-series-left">
+        <h2 class="pathfinder-series-subtitle">{{ section.settings.subtitle }}</h2>
+        <div class="pathfinder-series-left-content">
+          <h4>Bee Pathfinder</h4>
+          <div class="pathfinder-series-color-select">
+            <div v-for="(item,index) in pathfinder" :class="{'pathfinder-series-color-select-warp': true, 'pathfinder-series-color-select-border':item.isshow}" :key="item.color" @click=colorHandle(item,index,'pathfinder')>
+              <button :style="{ 'background-color': item.color }"></button>
+            </div>
+          </div>
+          <h4>Bee Pathfinder Step-Thru</h4>
+          <div class="pathfinder-series-color-select">
+            <div v-for="(item,index) in pathfinder_thru" :class="{'pathfinder-series-color-select-warp': true, 'pathfinder-series-color-select-border':item.isshow}" :key="item.color" @click=colorHandle(item,index,'pathfinder_thru')>
+              <button :style="{ 'background-color': item.color }"></button>
+            </div>
+          </div>
+          <h4>Cargo Trailer</h4>
+          <div class="pathfinder-series-color-select">
+            <div v-for="(item,index) in trailer" :class="{'pathfinder-series-color-select-trailer-warp': true, 'pathfinder-series-color-select-trailer-border':item.isshow}" :key="item.color" @click=colorHandle(item,index,'trailer')>
+              <button :style="{ 'background-color': item.color }">[[item.name]]</button>
+            </div>
+          </div>
+          <div class="pathfinder-series-price">
+            <div style="margin-right:10px; ">Bundle Price: <span style="font-size: 20px;color: #2a408e;">$[[totalPrice]]</span></div> <div style="margin-left:10px; text-decoration:line-through;color: #999;text-decoration-color: red;font-weight:400;font-size: 14px;">$[[comparePrice]]</div>
+          </div>
+          <a class="pathfinder-series-pay-button" href="{{ section.settings.buy_link }}">{{ section.settings.buy_button }}</a>
+        </div>
+      </div>
+      <div class="pathfinder-series-right">
+        <div class="pathfinder-series-images">
+          <div class="pathfinder-series-image-trailer">
+            <img class="img-trailer" :src="img_trailer" v-show="trailer_isshow" loading="lazy"/>
+          </div>
+          <div class="pathfinder-series-image-bikes">
+            <img class="img-bike-top" :src="img_bike_top" loading="lazy"/>
+            <img class="img-bike-bottom" :src="img_bike_bottom" loading="lazy"/>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    {
+        const { createApp } = Vue
+        createApp({
+            delimiters: ['[[', ']]'],
+            data() {
+                return {
+                   price:[],
+                   compare_price: [],
+                   img_bike_top: '',
+                   img_bike_bottom: '',
+                   img_trailer: '',
+                   trailer_isshow: true,
+                   pathfinder: [
+                     {
+                       color: "#5B9BD5",
+                       image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/10e5c340046fedce7d952110e7f010e6_560x.webp?v=1684138445",
+                       price: 1599,
+                       compare_price:1999,
+                       isshow: true
+                     },
+                      {
+                       color: "#000000",
+                       image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/c61aee4cc5f49a04212a9a2a164dc7cb_560x.webp?v=1684138443",
+                       price: 1599,
+                       compare_price:1999,
+                       isshow: false
+                     }
+                   ],
+                  pathfinder_thru: [
+                     {
+                       color: "#FF0000",
+                       image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/027e011675fdfade0ca538264d3540e1_560x.webp?v=1684138445",
+                       price: 1599,
+                       compare_price:1999,
+                       isshow: true
+                     },
+                      {
+                       color: "#ED7D31",
+                       image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/afd602fda06b99a9e4fc0185416f9359_560x.webp?v=1684138441",
+                       price: 1599,
+                       compare_price:1999,
+                       isshow: false
+                     },
+                      {
+                       color: "#70AD47",
+                       image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/8f73ec77df762ee3bcdecaa76c379351_560x.webp?v=1684138445",
+                       price: 1599,
+                       compare_price:1999,
+                       isshow: false
+                     },
+                      {
+                       color: "#5B9BD5",
+                       image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/thru_6831e807-20ab-490b-97f9-9cdd4ef473e3_560x.webp?v=1684138445",
+                       price: 1599,
+                       compare_price:1999,
+                       isshow: false
+                     },
+                      {
+                       color: "#56237E",
+                       image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4daf78bd1af84cb8446d49add5fc1037_560x.webp?v=1684138445",
+                       price: 1599,
+                       compare_price:1999,
+                       isshow: false
+                     },
+                      {
+                       color: "#F2F2F2",
+                       image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/1e0946d5d8edc5b89e23dfd488285de3_560x.webp?v=1684138441",
+                       price: 1599,
+                       compare_price:1999,
+                       isshow: false
+                     },
+                      {
+                       color: "#000000",
+                       image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/thru_560x.webp?v=1684138444",
+                       price: 1599,
+                       compare_price:1999,
+                       isshow: false
+                     }
+                   ],
+                  trailer: [
+                    {
+                      name: '2 Trailers',
+                      image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/2_4b0449ea-21fa-4f3c-a7c2-2c048842c498_560x.webp?v=1684139562",
+                      price: 200,
+                      compare_price:598,
+                      isshow: true
+                    },
+                    {
+                      name: '1 Trailers',
+                      image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/1_725b0911-7607-474e-a352-339acb4c2f9e_560x.webp?v=1684139562",
+                      price: 100,
+                      compare_price:299,
+                      isshow: false
+                    },
+                    {
+                      name: 'None',
+                      image: "",
+                      price: 0,
+                      compare_price:0,
+                      isshow: false
+                    }
+                  ]
+                }
+            },
+            methods: {
+              colorHandle(item, index, type) {
+                if (type === 'pathfinder') {
+                  this.pathfinder.forEach(item => item.isshow = false)
+                  this.pathfinder[index].isshow = true
+                  this.price[0] = item.price
+                  this.compare_price[0] = item.compare_price
+                  this.img_bike_top = item.image
+                } else if (type === 'pathfinder_thru') {
+                   this.pathfinder_thru.forEach(item => item.isshow = false)
+                   this.pathfinder_thru[index].isshow = true
+                   this.price[1] = item.price
+                   this.compare_price[1] = item.compare_price
+                   this.img_bike_bottom = item.image
+                } else {
+                  this.trailer.forEach(item => item.isshow = false)
+                  this.trailer[index].isshow = true
+                  this.price[2] = item.price
+                  this.compare_price[2] = item.compare_price
+                  this.img_trailer = item.image
+                  if(!item.image) {
+                    this.trailer_isshow = false
+                  } else {
+                    this.trailer_isshow = true
+                  }
+                }
+              },
+              init() {
+                  this.price = [this.pathfinder[0].price,this.pathfinder_thru[0].price,this.trailer[0].price]
+                  this.compare_price = [this.pathfinder[0].compare_price,this.pathfinder_thru[0].compare_price,this.trailer[0].compare_price]
+                  this.img_bike_top = this.pathfinder[0].image
+                  this.img_bike_bottom = this.pathfinder_thru[0].image
+                  this.img_trailer = this.trailer[0].image
+              }
+            },
+            mounted() {
+              this.init()
+            },
+          computed: {
+            totalPrice () {
+              return this.price.reduce((a, b) => a + b)
+            },
+            comparePrice () {
+              return this.compare_price.reduce((a, b) => a + b)
+            }
+          }
+        }).mount('#pathfinder-series')
+    }
+</script>
+
+{% schema %}
+  {
+    "name": "Pathfinder Series",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Pathfinder \"Free Mix\" Bundle"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtitle",
+        "default": "Make Your Color Combination"
+      },
+      {
+        "type": "text",
+        "id": "buy_button",
+        "label": "Button Text",
+        "default": "Buy Now"
+      },
+      {
+        "type": "url",
+        "id": "buy_link",
+        "label": "Button Link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Pathfinder Series"
+      }
+    ]
+  }
+{% endschema %}
