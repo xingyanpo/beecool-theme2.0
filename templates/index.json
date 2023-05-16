@@ -221,6 +221,15 @@
         "background": "rgba(0,0,0,0)"
       }
     },
+    "eebc75bb-acdb-49c1-8f64-2913231b0ebe": {
+      "type": "index-pathfinder-series",
+      "settings": {
+        "title": "Pathfinder \"Free Mix\" Bundle",
+        "subtitle": "Make Your Color Combination",
+        "buy_button": "Buy Now",
+        "buy_link": "shopify:\/\/products\/pathfinders-black-bundle"
+      }
+    },
     "165959401129cdd84a": {
       "type": "index-video-list",
       "blocks": {
@@ -1182,6 +1191,7 @@
   "order": [
     "8ac63d6f-2830-4aad-ade3-e945ef9268e8",
     "slideshow",
+    "eebc75bb-acdb-49c1-8f64-2913231b0ebe",
     "165959401129cdd84a",
     "16599454645e2d43c0",
     "165969470830e1f3ec",
