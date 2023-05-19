@@ -26,18 +26,18 @@
     "main": {
       "type": "main-article",
       "blocks": {
+        "3e7c183c-26c2-45ec-a817-8b92d88c5fbc": {
+          "type": "article",
+          "settings": {
+            "article": "latest-news\/a-trailer-makes-your-ebike-complete",
+            "img": "shopify:\/\/shop_images\/8EA4E6DA-0B3C-4F61-AC98-57BA1C8C142A.jpg"
+          }
+        },
         "09f7d6e7-843a-4f89-8d94-c415332ba784": {
           "type": "article",
           "settings": {
             "article": "latest-news\/bee-adventurer-new-color-edition-navy-blue",
             "img": "shopify:\/\/shop_images\/7C397873-B773-46FF-885A-DFBBD93A87C7.jpg"
-          }
-        },
-        "3e7c183c-26c2-45ec-a817-8b92d88c5fbc": {
-          "type": "article",
-          "settings": {
-            "article": "latest-news\/tips-for-riding-your-electric-bike-in-the-dark",
-            "img": "shopify:\/\/shop_images\/6932CCA7-668C-4882-9EE4-CF60727EEB6D.jpg"
           }
         },
         "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd": {
@@ -49,8 +49,8 @@
         }
       },
       "block_order": [
-        "09f7d6e7-843a-4f89-8d94-c415332ba784",
         "3e7c183c-26c2-45ec-a817-8b92d88c5fbc",
+        "09f7d6e7-843a-4f89-8d94-c415332ba784",
         "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd"
       ],
       "settings": {
