@@ -480,9 +480,9 @@
             "type": "activity",
             "settings": {
               "activity_title": "Event",
-              "activity_desc": "Bee Pathfinder Step-Thru Multi-color series is in stock. Come and get your favorite one!",
+              "activity_desc": "Now Buy any BeeCool model and get a free Foldable Cargo Trailer ($469.00 CAD). First come, first get!",
               "button_text": "Learn More",
-              "button_url": "shopify:\/\/products\/bee-pathfinder-step-thru",
+              "button_url": "https:\/\/ca.beecoolbikes.com\/collections\/all-e-bikes",
               "is_opon_in_new_tag": false
             }
           },
