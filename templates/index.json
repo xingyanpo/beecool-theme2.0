@@ -15,6 +15,8 @@
         "button_url": "shopify:\/\/products\/bee-pathfinder-step-thru",
         "button_text_color": "#ffffff",
         "button_color": "#2a408e",
+        "button_border_color": "#FFFFFF",
+        "button_border_weight": 0,
         "video_brightness": 9,
         "pc_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e37d2d19c6bc4381b9f3e6d667ae49ab.mp4",
         "pc_poster": "shopify:\/\/shop_images\/6d36d6ee1ebc3f54627de0e370f7efa3.webp",
