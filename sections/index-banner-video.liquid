@@ -34,7 +34,8 @@
             border-radius: 20px;
             padding: 10px 20px;
             cursor: pointer;
-            color: {{ section.settings.button_text_color }}
+            color: {{ section.settings.button_text_color }};
+            border: {{ section.settings.button_border_weight }}px solid {{section.settings.button_border_color}};
         }
         @media screen and (min-width: 768px) {
             .x-index-video-text-left-center {
@@ -392,6 +393,22 @@
         "id": "button_color",
         "label": "Button Color",
         "default": "#2a408e"
+      },
+      {
+        "type": "color",
+        "id": "button_border_color",
+        "label": "Button Border Color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "range",
+        "id": "button_border_weight",
+        "label": "Button Border Weight",
+        "min": 1,
+        "max": 5,
+        "step": 1,
+        "unit": "px",
+        "default": 1
       },
       {
         "type": "range",
