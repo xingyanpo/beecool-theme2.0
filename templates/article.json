@@ -26,6 +26,13 @@
     "main": {
       "type": "main-article",
       "blocks": {
+        "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd": {
+          "type": "article",
+          "settings": {
+            "article": "latest-news\/beecool-moped-style-ebikes-with-great-design-power",
+            "img": "shopify:\/\/shop_images\/47C21C62-1FB1-4729-B8E6-1B5A7465561B.jpg"
+          }
+        },
         "09f7d6e7-843a-4f89-8d94-c415332ba784": {
           "type": "article",
           "settings": {
@@ -39,19 +46,12 @@
             "article": "latest-news\/a-trailer-makes-your-ebike-complete",
             "img": "shopify:\/\/shop_images\/8EA4E6DA-0B3C-4F61-AC98-57BA1C8C142A.jpg"
           }
-        },
-        "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd": {
-          "type": "article",
-          "settings": {
-            "article": "latest-news\/with-ul-certification-beecool-bikes-make-your-ride-safe-and-further",
-            "img": "shopify:\/\/shop_images\/mmexport1630918456509.jpg"
-          }
         }
       },
       "block_order": [
+        "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd",
         "09f7d6e7-843a-4f89-8d94-c415332ba784",
-        "3e7c183c-26c2-45ec-a817-8b92d88c5fbc",
-        "a4b98147-3ab2-40ba-a8e7-bc0069d1e5bd"
+        "3e7c183c-26c2-45ec-a817-8b92d88c5fbc"
       ],
       "settings": {
         "show_on_scroll_navigation": false,
