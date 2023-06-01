@@ -10,14 +10,13 @@
         },
         "4533c794-279c-409e-b319-aebd7de7f517": {
           "type": "off",
-          "disabled": true,
           "settings": {
             "is_can_copy": false,
             "copy_img": "shopify:\/\/shop_images\/1_5483cbe7-fda4-4701-8a2f-ce944c8e6c5f.png",
             "copy_back_color": "#2a408e",
             "title": "Limited Gift",
             "copy_text": "",
-            "text": "<p><strong>Buy One Bundle Get 1 Free Cargo Trailer (Limited Amount)<\/strong><\/p>"
+            "text": "<p><strong>Buy Any Ebike Get 1 Free Basket<\/strong><\/p>"
           }
         },
         "variant_picker": {
