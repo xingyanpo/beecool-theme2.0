@@ -480,6 +480,7 @@
           "1092e9c5-657e-46c5-9f1b-4666bfd76874": {
             "type": "activity",
             "settings": {
+              "background_img": "",
               "activity_title": "Event",
               "activity_desc": "Now Buy any BeeCool model and get a free basket!",
               "button_text": "Get Now",
@@ -530,9 +531,11 @@
           "55879c5f-35a4-4240-98b0-35576855fdb6"
         ],
         "settings": {
+          "background_color": "#000000",
           "title_line_one": "Welcome To",
-          "title_line_two": "BeeCool",
-          "scroll_title": "Beecool Bikes"
+          "title_line_two": "OUR COOL OFFERS",
+          "scroll_title": "BeeCool Bikes",
+          "activity_count": 2
         }
       },
       "valentine-day": {
