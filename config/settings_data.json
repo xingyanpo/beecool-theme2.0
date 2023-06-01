@@ -89,7 +89,7 @@
           "message-1"
         ],
         "settings": {
-          "show_count_down": true,
+          "show_count_down": false,
           "show_count_down_url": "shopify:\/\/pages\/christmas-amazing-gifts",
           "banner_prefix": "Free Cargo Trailer Offer Ends In",
           "show_count_down_text": "",
