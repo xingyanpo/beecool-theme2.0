@@ -11,7 +11,11 @@
           transform: translate(0, 0);
       }
   }
-
+  .mini-popup-activity-img {background-repeat: no-repeat;background-position: center;background-size: cover;}
+  .mini-popup-subscribe-wrap {padding: 0 12px;text-align:center;}
+  .shielded-wire-activity {height: 15px;background-color: #000;}
+  .mini-popup-activity-wrap {background-color: rgba(0,0, 0, 0.3);padding:16px 0 0 0;transition:all 0.3s;}
+  .mini-popup-activity-wrap:hover {background-color: rgba(0,0, 0, 0);}
   .mini-popup {
       width: 100%;
       z-index: 999;
@@ -37,11 +41,10 @@
       overflow: hidden;
       width: 360px;
       position: fixed;
-      right: 100px;
-      bottom: 120px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
       border-radius: 6px;
-      max-height: 600px;
-      height: calc(100vh - 220px);
       background-color: #FFF;
       animation: easeInOut 1s ease;
       animation-fill-mode: forwards;
@@ -52,6 +55,7 @@
       height: 100%;
       overflow-y: auto;
       overflow-x: hidden;
+      background-color: {{ section.settings.background_color }}
   }
 
   .mini-popup-button-close {
@@ -103,10 +107,12 @@
   }
 
   .content-head-img {
+    {% if section.settings.title_img != blank %}
       background-image: url("{{ section.settings.title_img | image_url: width: 1080 }}");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+    {% endif %}
       width: 100%;
       height: 150px;
   }
@@ -124,19 +130,20 @@
       margin: 0;
       color: #FFF;
       font-weight: 600;
-      font-size: 30px;
+      font-size: 26px;
       line-height: 1;
   }
+ 
 
   .content-body-content {
       width: 92%;
       margin: 0 auto;
       box-shadow: 0 0 13px 0 rgb(0 0 0 / 9%);
-      transform: translate(0, -20px);
+      transform: translate(0, -40px);
       background-color: #FFF;
       border-radius: 6px;
   }
-  .product-recommend,.recommentded-accessories,.mini-popup-activity,.mini-popup-media {
+  .product-recommend,.recommentded-accessories,.mini-popup-media {
     padding:16px 0 0 0;
     box-sizing: border-box;
   }
@@ -236,42 +243,53 @@
     color: #FFF;
   }
 
-  .mini-popup-activity > h2 {
-    font-size: 16px;
+  .mini-popup-activity  h2 {
+    font-size: 24px;
     font-weight: 700;
     line-height: 150%;
     text-align: center;
-    color: #333;
+    color: #FFF;
     padding: 5px 0 5px 0;
+    transition: all 0.3s;
   }
-  .mini-popup-activity > p {
+  .mini-popup-activity:hover  h2 {
+    font-size: 26px;
+  }
+  .mini-popup-activity  p {
     line-height: 120%;
     margin-bottom: 20px;
     padding-left: 12px;
     padding-right: 12px;
-    color: #666;
-    font-size: 14px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
     text-align:center;
   }
-  .mini-popup-activity > .mini-popup-login {
+  .mini-popup-login {
     text-align:center;
-    padding: 10px 0 0 0;
+    padding: 20px 0 0 0;
   }
-  .mini-popup-activity > a {
+  .mini-popup-activity  a {
     width:120px;
     height:50px;
     border-radius: 6px;
-    background-color:#2a408e;
+    border: 2px solid #FFF;
     text-align:center;
     font-size: 16px;
+    font-weight: 600;
     color: #FFF;
     cursor: pointer;
-    margin:0 auto;
+    margin:0 auto 20px;
     padding: 10px 0;
     display: block;
+    transition:all 0.3s ;
+  }
+  .mini-popup-activity  a:hover {
+    background-color:#2a408e;
+    border: none;
   }
   .shielded-wire {
-    background-color: #EEE;
+    background-color: #ccc;
     height: 1px;
     width: 100%;
     margin: 30px 0 15px 0;
@@ -373,6 +391,7 @@
   }
 
   @media screen and (max-width: 768px) {
+     .mini-popup-activity-wrap:hover {background-color: rgba(0,0, 0, 0.3);}
       .mini-popup-content {
           width: 100%;
           right: 0;
@@ -415,7 +434,7 @@
       alt="mini-popup"
       class="mini-popup-button mini-popup-hide"
     >
-    <div class='mini-popup-button-warn' style="--button-show: none;">1</div>
+    <div class='mini-popup-button-warn' style="--button-show: none;">{{ section.settings.activity_count }}</div>
     </div>
   </div>
 
@@ -463,7 +482,7 @@
                   </div>
                   <div class='recommentded-accessories-right'>
                     <p>{{ product.title }}</p>
-                    <p style='color: #2a408e;font-weight: 500;font-size: 14px;'><span>{{ product.price | money_with_currency }}</span>{% if product.price != product.compare_at_price %}<span style="color:red;text-decoration: line-through;padding-left: 5px;">{{ product.compare_at_price | money_with_currency }}</span>{% endif %}</p>
+                    <p style='color: #2a408e;font-weight: 500;font-size: 14px;'><span>{{ product.price | money }}</span>{% if product.price != product.compare_at_price %}<span style="color:red;text-decoration: line-through;padding-left: 5px;">{{ product.compare_at_price | money }}</span>{% endif %}</p>
                     <div class='recommentded-accessories-right-button'>
                       <button><a href='{{ product.url }}'>See More</a></button>
                       {%- form 'product', product, is: 'product-form' -%}
@@ -484,31 +503,37 @@
               </div>
         
         {%- when 'activity' -%}
-            <div class="mini-popup-activity">
-              <h2>{{ block.settings.activity_title}}</h2>
-              <p>{{ block.settings.activity_desc }}</p>
-              <a href="{{ block.settings.button_url }}" {% if block.settings.is_opon_in_new_tag == true %}target="_blank"{% endif %}>{{ block.settings.button_text }}</a>
-              <p class='mini-popup-login'>Already have an account? <a href="/account/login">Sign in</a></p>
-              <div class='mini-popup-form'>
-                 {%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form' -%}
-                    {%- if form.posted_successfully? -%}
-                      <p class="alert alert--success alert--center form-success">{{ 'footer.newsletter.success' | t }}</p>
-                    {%- else -%}
-                      {%- if form.errors -%}
-                      <p class="alert alert--error alert--center form-error">{{ form.errors.messages['email'] }}</p>
-                    {%- endif -%}
-                      <div class='form__input-wrapper form-input-wrap'>
-                        <input type="hidden" name="contact[tags]" value="newsletter">
-                        <input placeholder="Enter your email address" type="email" id="footer[{{ section.id }}][contact][email]" name="contact[email]" class="form__field form__field--text from-field-text" required="">
-                        <label style='display:none;' for="footer[{{ section.id }}][contact][email]" class="form__floating-label">Enter your email address</label>
-                        <button type="submit" class="form__submit form__submit--tight button--primary form-button-submit">Subscribe</button>
-                      </div>
-                    {%- endif -%}
-                  {%- endform -%}
+            <div class="mini-popup-activity mini-popup-activity-img" {% if block.settings.background_img != blank  %}style="background-image: url({{  block.settings.background_img }})" {% endif %}>
+              <div class="mini-popup-activity-wrap">
+                <h2>{{ block.settings.activity_title}}</h2>
+                <p>{{ block.settings.activity_desc }}</p>
+                <a href="{{ block.settings.button_url }}" {% if block.settings.is_opon_in_new_tag == true %}target="_blank"{% endif %}>{{ block.settings.button_text }}</a>
+                <div class='shielded-wire-activity'></div>
               </div>
-              <div class='shielded-wire'></div>
             </div>
 
+        {% when "subscribe" %}
+          <div class='mini-popup-subscribe-wrap'>
+              <p class='mini-popup-login'>Already have an account? <a href="/account/login">Sign in</a></p>
+                  <div class='mini-popup-form'>
+                     {%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form' -%}
+                        {%- if form.posted_successfully? -%}
+                          <p class="alert alert--success alert--center form-success">{{ 'footer.newsletter.success' | t }}</p>
+                        {%- else -%}
+                          {%- if form.errors -%}
+                          <p class="alert alert--error alert--center form-error">{{ form.errors.messages['email'] }}</p>
+                        {%- endif -%}
+                          <div class='form__input-wrapper form-input-wrap'>
+                            <input type="hidden" name="contact[tags]" value="newsletter">
+                            <input placeholder="Enter your email address" type="email" id="footer[{{ section.id }}][contact][email]" name="contact[email]" class="form__field form__field--text from-field-text" required="">
+                            <label style='display:none;' for="footer[{{ section.id }}][contact][email]" class="form__floating-label">Enter your email address</label>
+                            <button type="submit" class="form__submit form__submit--tight button--primary form-button-submit">Subscribe</button>
+                          </div>
+                        {%- endif -%}
+                      {%- endform -%}
+                  </div>
+                  <div class='shielded-wire'></div>
+          </div>
         {%- when 'media' -%}
             <div class="mini-popup-media">
               <h2>{{ block.settings.media_title}}</h2>
@@ -519,6 +544,7 @@
                 <a href='{{ block.settings.twitter_url }}' target="_blank"><img src="{{ block.settings.twitter_img |image_url: width:1080 }}"></a>
                 <a href='{{ block.settings.tiktok_url }}' target="_blank"><img src="{{ block.settings.tiktok_img |image_url: width:1080 }}"></a>
               </div>
+            </div>
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -566,7 +592,7 @@
       let mini_popup_button_warn = document.querySelector('.mini-popup-button-warn')
 
       if(sessionStorage.getItem('mini_button_warn_isshwo')) {
-         mini_popup_button_warn.style.setProperty('--button-show', 'none')
+         mini_popup_button_warn.style.setProperty('--button-show', 'block')
       } else {
         mini_popup_button_warn.style.setProperty('--button-show', 'block')
       }
@@ -586,7 +612,7 @@
               mini_popup_button[1].classList.remove(calss_close)
               mini_popup_button[0].classList.add(calss_close)
               mini_popup_content.classList.remove(calss_close)
-              mini_popup_button_warn.style.setProperty('--button-show', 'none')
+              mini_popup_button_warn.style.setProperty('--button-show', 'block')
               sessionStorage.setItem('mini_button_warn_isshwo', true)
           }
       })
@@ -623,6 +649,12 @@
   "name": "Mini Popup",
   "settings": [
     {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#000000"
+    },
+    {
       "type": "text",
       "label": "Title Line 1",
       "id": "title_line_one",
@@ -643,7 +675,16 @@
       "type": "text",
       "label": "Scroll Title",
       "id": "scroll_title",
-      "default": "beecool bikes"
+      "default": "beeCool bikes"
+    },
+    {
+      "type": "range",
+      "id": "activity_count",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Activity Count",
+      "default": 2
     }
   ],
   "blocks": [
@@ -700,11 +741,23 @@
           "label": "Accessories"
         }
       ]
-    }, 
+    },
+    {
+      "name": "Subscribe",
+      "type": "subscribe",
+      "settings": [
+        
+      ]
+    },
     {
       "name": "Activity",
       "type": "activity",
       "settings": [
+        {
+          "type": "url",
+          "id": "background_img",
+          "label": "Background Image"
+        },
         {
           "type": "text",
           "id": "activity_title",
