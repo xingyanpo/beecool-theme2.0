@@ -488,6 +488,22 @@
               "is_opon_in_new_tag": false
             }
           },
+          "a00f0ac8-8c37-4995-b2d2-909d1ac0359a": {
+            "type": "activity",
+            "settings": {
+              "background_img": "https:\/\/cdn.shopifycdn.net\/s\/files\/1\/0554\/7098\/1274\/files\/278447744_5402708329774165_8801041878297420549_n.webp?v=1685347704",
+              "activity_title": "SAVE MORE Bundle",
+              "activity_desc": "Pick your color combination and basket pack with best discounts!",
+              "button_text": "Get Yours",
+              "button_url": "shopify:\/\/products\/pathfinders-black-bundle",
+              "is_opon_in_new_tag": false
+            }
+          },
+          "9ef621a5-46bb-4dec-9b7b-f1983a3cdb3d": {
+            "type": "subscribe",
+            "settings": {
+            }
+          },
           "95eb4b29-35f2-4dfb-ba15-b57e6f23dfeb": {
             "type": "product_recommend",
             "settings": {
@@ -526,6 +542,8 @@
         },
         "block_order": [
           "1092e9c5-657e-46c5-9f1b-4666bfd76874",
+          "a00f0ac8-8c37-4995-b2d2-909d1ac0359a",
+          "9ef621a5-46bb-4dec-9b7b-f1983a3cdb3d",
           "95eb4b29-35f2-4dfb-ba15-b57e6f23dfeb",
           "ac3fdf09-cae9-406a-804f-3a70f699bd25",
           "55879c5f-35a4-4240-98b0-35576855fdb6"
