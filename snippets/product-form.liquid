@@ -1150,7 +1150,7 @@
   })()
   {% endif %}
 
-  {% comment %}
+  {% if product.title != "Bee Pathfinders “Free Mix” Bundle" %}
  (function () {
   
     let add_to_cart = document.querySelector("#AddToCart")
@@ -1163,7 +1163,7 @@
       let product_id = document.querySelector('.product-form__buy-buttons .shopify-product-form').querySelector('[name="id"]').value
       let formData = {
        'items': [{
-        'id': 44446975689017,
+        'id': 45298400756025,
         'quantity': number_product_count
         },{
         'id':!!product_id ? parseInt(product_id) : {{ product.selected_or_first_available_variant.id }} ,
@@ -1187,7 +1187,7 @@
     })
   
 })()
-  {% endcomment %}
+  {% endif %}
 
   {% if product.title == "Bee Pathfinder Step-Thru" %}
     let product_color_selected = document.querySelectorAll(".color-swatch-list .color-swatch")
