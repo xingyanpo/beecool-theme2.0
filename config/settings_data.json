@@ -499,6 +499,17 @@
               "is_opon_in_new_tag": false
             }
           },
+          "3652c09a-cfde-4528-8220-ea2afc530daa": {
+            "type": "activity",
+            "settings": {
+              "background_img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/7098\/1274\/files\/0BAA1B7F-0B75-4c0a-9D92-B43C9136AA23.png?v=1686561593",
+              "activity_title": "Earn Cashback",
+              "activity_desc": "Own a BeeCool ebike? Join Bee Hive Program and earn money from us!",
+              "button_text": "Learn More",
+              "button_url": "https:\/\/ca.beecoolbikes.com\/pages\/experiencer",
+              "is_opon_in_new_tag": false
+            }
+          },
           "9ef621a5-46bb-4dec-9b7b-f1983a3cdb3d": {
             "type": "subscribe",
             "settings": {
@@ -543,6 +554,7 @@
         "block_order": [
           "1092e9c5-657e-46c5-9f1b-4666bfd76874",
           "a00f0ac8-8c37-4995-b2d2-909d1ac0359a",
+          "3652c09a-cfde-4528-8220-ea2afc530daa",
           "9ef621a5-46bb-4dec-9b7b-f1983a3cdb3d",
           "95eb4b29-35f2-4dfb-ba15-b57e6f23dfeb",
           "ac3fdf09-cae9-406a-804f-3a70f699bd25",
