@@ -1,12 +1,246 @@
+
+  <style>
+    #google-map {height:600px;}
+    .google-map {position: relative;}
+    .google-popup {position: absolute;left:0;top:0;bottom: 0;width: 300px;background-color: #FFF;transform: translateX(-100%);transition: all 0.5s; max-width: 100%;background:#EEE;}
+    .google-popup-show {transform: translateX(0);}
+    .google-popup-switch {width: 100%;height:60px;background-color: #2a408e;display:flex;align-items: center;color: #FFF;font-size: 22px;font-weight: 500;padding: 0 10px;cursor:pointer;}
+    .google-popup-switch > svg {fill: #FFF;width: 30px;height: 30px;margin-right:10px; }
+    .google-popup-content {height: 100%;}
+    .google-popup-content-wrap {padding: 10px 10px 0 10px;}
+    .google-popup-content-wrap > h4 {margin-bottom: 5px !important;color: #999;line-height:1.2;margin-top: 5px;}
+    .google-popup-content-wrap > p {margin-top: 0 !important;line-height: 1.2;padding:0 0 10px 0;}
+    .info-gather-wrap {background: #FFF;}
+    .info-gather {display: flex;flex-wrap: wrap;padding: 50px 0;align-items:center;}
+    .info-gather-left {width: 50%;padding: 20px;}
+    .info-gather-left > img {width: 100%;object-fit:cover;}
+    .info-gather-right {flex:1;padding: 20px;}
+    .info-gather-desc {margin-bottom: 20px;}
+    .info-gather-button {padding: 6px;background-color: #000;border-radius: 50px;color: #FFF;font-weight: 600;display: block;width: 160px;text-align:center;font-size: 22px;}
+    .info-gather-refer {margin-bottom: 20px;}
+    .google-map-title {text-align:center;}
+    .google-map-title > h1 {margin-top: 15px !important;}
+    .google-map-title > p {padding: 0 10px 10px;font-size: 18px;line-height: 1.2;}
+    .info-gather-popup {width:100%;height: 100%;position: fixed;left: 0;right: 0;top: 0;bottom: 0;background-color: rgba(0, 0, 0, 0.8);z-index:999;display:none;}
+    .info-gather-popup-wrap {width: 100%;height: 100%;position: relative;}
+    .info-gather-popup-wrap > iframe {height: 100%;}
+    .info-gather-popup-wrap svg {width: 30px;height: 30px; fill: #FFF;}
+    .info-gather-title-wrap {position:relative;}
+    .info-gather-title-img {position:absolute;right: 0; top: 0;transition: all 0.4s ;cursor:pointer;display:none;}
+    .info-gather-title {display:flex;align-items:center;}
+    .info-gather-title svg {width: 20px;height:20px; }
+    .info-gather-title-icon {cursor:pointer;}
+    .info-gather-title-img-show {display:block;}
+    .info-gather-popup-icon {cursor:pointer;position: absolute;right:  5px;top: 5px;}
+    
+
+    @media screen and (max-width: 992px) {
+      .info-gather-left {width: 100%;}
+      .info-gather-right {text-align: center;}
+      .info-gather-button {margin: 0 auto;}
+      .info-gather-title {justify-content:center;}
+      .info-gather-popup-wrap svg {fill: #000;}
+    }
+  </style>
+
+  <script>
+    window.my_event = function (info) {
+      document.querySelector(".google-popup-content-name").innerText = info.name
+      document.querySelector(".google-popup-content-time").innerText = info.time
+      document.querySelector(".google-popup-content-email").innerText = info.email
+      document.querySelector(".google-popup-content-phone").innerText = info.phone
+      document.querySelector(".google-popup-content-location").innerText = info.location
+      document.querySelector(".google-popup-content-model").innerText = info.model
+      document.querySelector(".google-popup-content-note").innerText = info.note
+
+      
+      let popup = document.querySelector(".google-popup")
+      popup.classList.add('google-popup-show')
+    }
+    
+    function initMap() {
+        let my_width = window.innerWidth
+        let my_zoom = my_width > 992 ? 4 : 2
+        let my_position = my_width > 992 ? { lat: 39.044397, lng: -95.908752 } : { lat: 38.486740, lng: -95.872554 }
+        const map = new google.maps.Map(document.getElementById("google-map"), {
+            zoom: my_zoom,
+            center: my_position,
+            mapTypeControl:false,
+            zoomControl:false,
+            streetViewControl:false
+        })
+        const tourStops = {{ page.metafields.custom.info }}
+      
+        const infoWindow = new google.maps.InfoWindow();
+        tourStops.forEach(([position, info], i) => {
+            const infomation = `
+            ${info.name}
+            `
+            const marker = new google.maps.Marker({
+                position,
+                map,
+                title: infomation,
+                optimized: false,
+            });
+            marker.addListener("click", () => {
+                infoWindow.close();
+                infoWindow.setContent(marker.getTitle());
+                infoWindow.open(marker.getMap(), marker);
+                window.my_event(info)
+            });
+        });
+    }
+    
+    window.initMap = initMap;
+  </script>
+
+<div class="google-map-title">
+  <h1>{{ section.settings.main_title }}</h1>
+  <p>{{ section.settings.main_desc }}</p>
+</div>
+
+<div class="google-map" data-info="{{ info }}"> 
+  <div id="google-map"></div>
+  <div class="google-popup">
+    <div class="google-popup-switch">
+      <svg t="1684399722455" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2404" width="200" height="200"><path d="M867.1 141.17H156.08c-17.67 0-32 14.33-32 32s14.33 32 32 32H867.1c17.67 0 32-14.33 32-32s-14.33-32-32-32zM867.92 367.52H403.2c-17.67 0-32 14.33-32 32s14.33 32 32 32h464.73c17.67 0 32-14.33 32-32s-14.33-32-32.01-32zM867.92 573.87H403.2c-17.67 0-32 14.33-32 32s14.33 32 32 32h464.73c17.67 0 32-14.33 32-32s-14.33-32-32.01-32zM867.92 800.22H156.9c-17.67 0-32 14.33-32 32s14.33 32 32 32h711.02c17.67 0 32-14.33 32-32 0-17.68-14.32-32-32-32zM312.01 367.52v270.35L137.47 489.71z" p-id="2405"></path></svg>
+      <span>BeeCool Bikes</span>
+      <svg style="margin-left: auto;" t="1673341495567" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2698" width="200" height="200">
+        <path d="M97.1 91.2c11.3-11.3 29.8-11.3 41.1 0l782.2 782.2c11.3 11.3 11.3 29.8 0 41.1s-29.8 11.3-41.1 0L97.1 132.2c-11.3-11.3-11.3-29.7 0-41z" fill="#ffffff" p-id="2699"></path>
+        <path d="M920.4 91.1c11.3 11.3 11.3 29.8 0 41.1L138.2 914.5c-11.3 11.3-29.8 11.3-41.1 0s-11.3-29.8 0-41.1L879.3 91.1c11.4-11.3 29.8-11.3 41.1 0z" fill="#ffffff" p-id="2700"></path>
+      </svg>
+    </div>
+    <div class="google-popup-content">
+      <div class="google-popup-content-wrap">
+        <h4>Name</h4>
+        <p class="google-popup-content-name"></p>
+        <h4>Time</h4>
+        <p class="google-popup-content-time"></p>
+        <h4>E-mail</h4>
+        <p class="google-popup-content-email"></p>
+        <h4>Phone number(Optional)</h4>
+        <p class="google-popup-content-phone"></p>
+        <h4>Vague Location (Street(Optional)/City/State/Country)</h4>
+        <p class="google-popup-content-location"></p>
+        <h4>Model</h4>
+        <p class="google-popup-content-model"></p>
+        <h4>Note(ex: Not available at weekend)</h4>
+        <p class="google-popup-content-note"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="info-gather-wrap">
+  <div class="info-gather x-width">
+    <div class="info-gather-left">
+      <img src={{ section.settings.img | img_url: '1024x' }}>
+    </div>
+    <div class="info-gather-right"> 
+      <div  class="info-gather-title-wrap">
+        <h1 class="info-gather-title"><span>{{ section.settings.title }}</span>&nbsp;<div class="info-gather-title-icon"><svg t="1684835356856" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3232" width="200" height="200"><path d="M514.048 54.272q95.232 0 178.688 36.352t145.92 98.304 98.304 145.408 35.84 178.688-35.84 178.176-98.304 145.408-145.92 98.304-178.688 35.84-178.176-35.84-145.408-98.304-98.304-145.408-35.84-178.176 35.84-178.688 98.304-145.408 145.408-98.304 178.176-36.352zM515.072 826.368q26.624 0 44.544-17.92t17.92-43.52q0-26.624-17.92-44.544t-44.544-17.92-44.544 17.92-17.92 44.544q0 25.6 17.92 43.52t44.544 17.92zM567.296 574.464q-1.024-16.384 20.48-34.816t48.128-40.96 49.152-50.688 24.576-65.024q2.048-39.936-8.192-74.752t-33.792-59.904-60.928-39.936-87.552-14.848q-62.464 0-103.936 22.016t-67.072 53.248-35.84 64.512-9.216 55.808q1.024 26.624 16.896 38.912t34.304 12.8 33.792-10.24 15.36-31.232q0-12.288 7.68-30.208t20.992-34.304 32.256-27.648 42.496-11.264q46.08 0 73.728 23.04t25.6 57.856q0 17.408-10.24 32.256t-26.112 28.672-33.792 27.648-33.792 28.672-26.624 32.256-11.776 37.888l1.024 38.912q0 15.36 14.336 29.184t37.888 14.848q23.552-1.024 37.376-15.36t12.8-32.768l0-24.576z" p-id="3233"></path></svg></div></h1>
+        <img  class="info-gather-title-img" src="https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/QQ_20230523174331.png?v=1684835173">
+      </div>
+      <div class="info-gather-desc">{{ section.settings.desc }}</div>
+      <div class="info-gather-refer">How to refer BeeCool to your friends: <a href="{{ section.settings.refer }}" style="font-weight: 500;color:#2a408e;cursor:pointer;text-decoration:underline;">refer Beecool</a></div>
+      <button class="info-gather-button">Sign Up</button>
+  </div>
+</div>
+
+<div class="info-gather-popup">
+ <div class="info-gather-popup-wrap">
+    <iframe title="Information" src="https://alt.jotfor.ms/231408724291050" allowtransparency="true" allow="geolocation; microphone; camera" allowfullscreen="true" name="212478659279069" id="lightbox-212478659279069" style="width: 752px; max-width: 100%;margin: 0 auto; display: block; overflow: hidden; border: none; background-color: white; height: 100%;"></iframe>
+    <div class="info-gather-popup-icon">
+      <svg t="1673341495567" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2698" width="200" height="200">
+        <path d="M97.1 91.2c11.3-11.3 29.8-11.3 41.1 0l782.2 782.2c11.3 11.3 11.3 29.8 0 41.1s-29.8 11.3-41.1 0L97.1 132.2c-11.3-11.3-11.3-29.7 0-41z"  p-id="2699"></path>
+        <path d="M920.4 91.1c11.3 11.3 11.3 29.8 0 41.1L138.2 914.5c-11.3 11.3-29.8 11.3-41.1 0s-11.3-29.8 0-41.1L879.3 91.1c11.4-11.3 29.8-11.3 41.1 0z"  p-id="2700"></path>
+      </svg>
+    </div>
+ </div>
+</div>
+
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXa3Z6TbDda-4ltpgaXbw8S1nNgxoBkZE&callback=initMap&v=weekly"
+      defer
+    ></script>
+
+<script>
+  {
+    let popup = document.querySelector(".google-popup")
+    let popup_switch = document.querySelector(".google-popup-switch")
+    popup_switch.addEventListener('click', () => {
+      popup.classList.remove('google-popup-show')
+    })
+    let popup_info = document.querySelector(".info-gather-popup"),
+        info_gather_button = document.querySelector(".info-gather-button")
+        close_icon = document.querySelector(".info-gather-popup-icon")
+    popup_info.addEventListener('click', (e) => {
+      popup_info.style.display = "none";
+    })
+    close_icon.addEventListener('click', (e) => {
+      popup_info.style.display = "none";
+    })
+    info_gather_button. addEventListener('click', () => {
+      popup_info.style.display = "block";
+    })
+
+    let icon_button = document.querySelector(".info-gather-title-icon"),
+         my_img = document.querySelector(".info-gather-title-img")
+    icon_button.addEventListener("click", () => {
+       if (!my_img.classList.contains("info-gather-title-img-show")) {
+         my_img.classList.add("info-gather-title-img-show")
+       }  else {
+         my_img.classList.remove("info-gather-title-img-show")
+       }
+     })
+    my_img.addEventListener("click", () => {
+      my_img.classList.remove("info-gather-title-img-show")
+      })
+    }
+</script>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Experiencer",
+    "settings": [
+      {
+        "type": "text",
+        "id": "main_title",
+        "label": "Title",
+        "default": "Find A BeeCool Rider Nearby"
+      },
+      {
+        "type": "textarea",
+        "id": "main_desc",
+        "label": "Description",
+        "default": "Our BeeCool riders would love to share their riding experience with you to better increase your knowledge and understanding about our products."
+      },
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Project Title",
+        "default": "BeeCool Rider Project"
+      },
+      {
+        "type": "richtext",
+        "id": "desc",
+        "label": "Project Description",
+        "default": "<p>The BeeCool Rider Project aims to connect BeeCool cycling enthusiasts with new customers, building a community that's beneficial for everyone.</p>"
+      },
+      {
+        "type": "url",
+        "id": "refer",
+        "label": "Refer"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Experiencer"
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
