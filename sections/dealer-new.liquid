@@ -1,12 +1,96 @@
+<style>
+  #google-map {height: 600px;width: 100%;}
+  .x-info-contact,.x-info-location,.x-info-phone,.x-info-email {font-size: 15px;color: #666;line-height: 1.5;padding: 0;margin: 0;}
+  .x-info-remark {font-size: 14px;color: #999;}
+  .x-info-title {font-size: 18px;color: #333;margin-bottom: 10px;}
+  .dealer-text-wrap {padding: 10px 5%;text-align: center;}
+  .dealer-important-info {background-color: #FF4B00;color: #FFF;padding: 10px;border-radius: 10px;margin-top: 10px;}
+</style>
+
+
+<script>
+    
+    function initMap() {
+        let my_width = window.innerWidth
+        let my_zoom = my_width > 992 ? 4 : 3
+        let my_position = my_width > 992 ? { lat: 39.044397, lng: -95.908752 } : { lat: 38.486740, lng: -95.872554 }
+        const map = new google.maps.Map(document.getElementById("google-map"), {
+            zoom: my_zoom,
+            center: my_position,
+            mapTypeControl:false,
+            zoomControl:false,
+            streetViewControl:false
+        })
+        const tourStops = {{ page.metafields.custom.info }}
+      
+        const infoWindow = new google.maps.InfoWindow();
+        tourStops.forEach(([position, info], i) => {
+            const infomation = `
+            <h3 class="x-info-title">${info.title}</h3>
+            <p class="x-info-contact">Contact: ${info.contact}</p>
+            <p class="x-info-location">Location： ${info.location}</p>
+            <p class="x-info-phone">Phone: ${info.phone}</p>
+            <p class="x-info-email">Email: ${info.email}</p>
+            <p class="x-info-remark">${info.remark}</p>
+            `
+            const marker = new google.maps.Marker({
+                position,
+                map,
+                title: infomation,
+                optimized: false,
+            });
+            marker.addListener("click", () => {
+                infoWindow.close();
+                infoWindow.setContent(marker.getTitle());
+                infoWindow.open(marker.getMap(), marker);
+            });
+        });
+    }
+    
+    window.initMap = initMap;
+  </script>
+
+<div class="dealer-new">
+  <div class="dealer-text-wrap">
+    <h1 class="dealer-title">{{ section.settings.title }}</h1>
+    <p class="dealer-subtitle">{{ section.settings.subtitle }}</p>
+    <p class="dealer-important-info">{{ section.settings.prompt }}</p>
+  </div>
+  <div id="google-map"></div>
+</div>
+
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXa3Z6TbDda-4ltpgaXbw8S1nNgxoBkZE&callback=initMap&v=weekly"
+      defer
+    ></script>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Dealer New",
+    "settings": [
+      {
+        "type":"text",
+        "id": "title",
+        "label": "Title",
+        "default": "Local Dealers"
+      },
+      {
+        "type": "textarea",
+        "id": "subtitle",
+        "label": "Subtitle",
+        "default": "Would you like to test or buy BeeCool e-bikes offline? Please check the following test spots or offline dealers. Email or call the representatives at the spot to make a reservation about the walk-in time for testing or offline purchase."
+      },
+      {
+        "type": "textarea",
+        "id": "prompt",
+        "label": "Prompt",
+        "default": "As for all the after-sales problems, please contact our official customer service staff directly and provide the corresponding proof for your issues. Do not contact our offline dealers directly for after-sales problems without consulting us first or we will not bear the repairing cost/purchase cost of the replacement parts unauthorized by our official customer service staff directly."
+      }
+    ],
+    "presets": [
+      {
+        "name": "Dealer New"
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
