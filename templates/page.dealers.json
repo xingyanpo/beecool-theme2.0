@@ -1,5 +1,13 @@
 {
   "sections": {
+    "af55dc4a-5fd7-4f88-b119-e605acc581b6": {
+      "type": "dealer-new",
+      "settings": {
+        "title": "Local Dealers",
+        "subtitle": "Would you like to test or buy BeeCool e-bikes offline? Please check the following test spots or offline dealers. Email or call the representatives at the spot to make a reservation about the walk-in time for testing or offline purchase.",
+        "prompt": "As for all the after-sales problems, please contact our official customer service staff directly and provide the corresponding proof for your issues. Do not contact our offline dealers directly for after-sales problems without consulting us first or we will not bear the repairing cost\/purchase cost of the replacement parts unauthorized by our official customer service staff directly."
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -10,6 +18,7 @@
     },
     "1662621338c52e7006": {
       "type": "jd-dealers-top",
+      "disabled": true,
       "blocks": {
         "f3194dc1-7e89-4732-bafd-0574f0f1d569": {
           "type": "dealers_top",
@@ -116,6 +125,7 @@
     }
   },
   "order": [
+    "af55dc4a-5fd7-4f88-b119-e605acc581b6",
     "main",
     "1662621338c52e7006",
     "16626153940d81d594"
