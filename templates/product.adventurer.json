@@ -64,7 +64,6 @@
         },
         "3b5b34d0-a0f7-4294-b9f8-df119b10fb07": {
           "type": "gifts",
-          "disabled": true,
           "settings": {
             "title": "Gift",
             "gift_products": [
