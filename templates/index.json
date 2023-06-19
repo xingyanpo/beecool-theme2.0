@@ -75,7 +75,6 @@
         },
         "slide-1": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-path-pc_5eeb74da-e9ac-44fe-848f-0b10d622c8c8.jpg",
             "mobile_image": "shopify:\/\/shop_images\/adv-1123-mobile_0a17f181-1dc1-4c99-b50e-16301921dae8.webp",
@@ -98,7 +97,6 @@
         },
         "32e02aa0-90a5-4597-81ba-8df70fdd4a31": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/pathfinder-thruBanner-orange-pc.webp",
             "mobile_image": "shopify:\/\/shop_images\/pathfinder-thru-orange-mobile.webp",
@@ -121,7 +119,6 @@
         },
         "87047e1f-ec91-45f8-8329-3ed9a14b0e78": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-path-pc_5eeb74da-e9ac-44fe-848f-0b10d622c8c8.jpg",
             "mobile_image": "shopify:\/\/shop_images\/path-mobile_2b1d183c-cf84-4f12-9901-66abcec19abf.jpg",
@@ -144,7 +141,6 @@
         },
         "4bbf498b-4bd8-4cc6-9389-377c96789716": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/path-thru_9b1b7ef4-206a-45ba-ae0a-29dc396b6441.webp",
             "mobile_image": "shopify:\/\/shop_images\/path-thru_-mobile.webp",
@@ -167,7 +163,6 @@
         },
         "8c56fdb2-0f31-4b14-b3d7-8c7e8414a9d3": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/cha-pc.webp",
             "mobile_image": "shopify:\/\/shop_images\/cha-mobile.webp",
@@ -190,7 +185,6 @@
         },
         "ffc80f47-2377-45a9-a47b-079d40dc79e1": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/1_2_22cf18e8-b54f-4e65-8c80-b3546a4cd0cd.webp",
             "mobile_image": "shopify:\/\/shop_images\/rambler.webp",
