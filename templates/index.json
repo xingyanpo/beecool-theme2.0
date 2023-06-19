@@ -2,6 +2,7 @@
   "sections": {
     "8ac63d6f-2830-4aad-ade3-e945ef9268e8": {
       "type": "index-banner-video",
+      "disabled": true,
       "settings": {
         "pc_text_position": "middle_bottom",
         "mobile_text_position": "right_bottom",
@@ -26,17 +27,16 @@
     },
     "slideshow": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "slide-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pc_66a651d9-f6c9-44e4-b18a-34485a3711b7.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/mobile_bc8599a3-4173-4711-91a5-ef096c4d47b7.jpg",
+            "image": "shopify:\/\/shop_images\/banner---ca.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/banner-mobile---ca.jpg",
             "text_position": "bottom_right",
             "subheading": "",
             "title": "",
-            "button_1_text": "Buy An Ebike",
+            "button_1_text": "Buy Now",
             "button_1_link": "https:\/\/ca.beecoolbikes.com\/collections\/all-e-bikes",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
@@ -52,6 +52,7 @@
         },
         "7ccf04ac-c041-454f-8445-8ec1bc0e048e": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/6d36d6ee1ebc3f54627de0e370f7efa3.webp",
             "mobile_image": "shopify:\/\/shop_images\/mobile.jpg",
@@ -74,6 +75,7 @@
         },
         "slide-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-path-pc_5eeb74da-e9ac-44fe-848f-0b10d622c8c8.jpg",
             "mobile_image": "shopify:\/\/shop_images\/adv-1123-mobile_0a17f181-1dc1-4c99-b50e-16301921dae8.webp",
@@ -96,6 +98,7 @@
         },
         "32e02aa0-90a5-4597-81ba-8df70fdd4a31": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/pathfinder-thruBanner-orange-pc.webp",
             "mobile_image": "shopify:\/\/shop_images\/pathfinder-thru-orange-mobile.webp",
@@ -118,6 +121,7 @@
         },
         "87047e1f-ec91-45f8-8329-3ed9a14b0e78": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-path-pc_5eeb74da-e9ac-44fe-848f-0b10d622c8c8.jpg",
             "mobile_image": "shopify:\/\/shop_images\/path-mobile_2b1d183c-cf84-4f12-9901-66abcec19abf.jpg",
@@ -140,6 +144,7 @@
         },
         "4bbf498b-4bd8-4cc6-9389-377c96789716": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/path-thru_9b1b7ef4-206a-45ba-ae0a-29dc396b6441.webp",
             "mobile_image": "shopify:\/\/shop_images\/path-thru_-mobile.webp",
@@ -162,6 +167,7 @@
         },
         "8c56fdb2-0f31-4b14-b3d7-8c7e8414a9d3": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/cha-pc.webp",
             "mobile_image": "shopify:\/\/shop_images\/cha-mobile.webp",
@@ -184,6 +190,7 @@
         },
         "ffc80f47-2377-45a9-a47b-079d40dc79e1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/1_2_22cf18e8-b54f-4e65-8c80-b3546a4cd0cd.webp",
             "mobile_image": "shopify:\/\/shop_images\/rambler.webp",
