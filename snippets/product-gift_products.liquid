@@ -1,0 +1,27 @@
+
+<div class="product-gifts">
+  <h2 class="product-gifts-title">{{ block.settings.title }}</h2>
+  {%- for product in block.settings.gift_products -%}
+  <div class="product-gifts-content">
+    <div class="product-gifts-content-wrap">
+      <div class="product-gifts-content-left">
+       <img
+            class="product-item__primary-image"
+            loading="lazy"
+            data-media-id="{{ product.featured_media.id | escape }}"
+            sizes="{{ sizes_attribute }}"
+            {% render 'image-attributes',
+              image: product.featured_media,
+              sizes: '200,300,400,500,600,700,800,900,1000,1100,1200'
+            %}
+        >
+      </div>
+      <div class="product-gifts-content-right">
+        <p class="product-gifts-content-title">{{ product.title }}</p>
+        <p class="product-gifts-content-price">{{ product.price | money }}</p>
+        <a class="product-gifts-content-button" href="{{ product.url }}">Learn More</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
