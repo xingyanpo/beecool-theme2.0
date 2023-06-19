@@ -2019,3 +2019,14 @@
 .fedex_all_boxBOttom_img {width:100%;display:flex;margin-bottom:25px;}
 .fedex_all_boxBOttom_img > img {width: 40%;object-fit:contain;padding-right:3%;}
 .fedex_all_boxBOttom_text {width:100%;}
+
+
+.product-gifts-title {font-size: 18px;margin:10px 0; padding-top: 10px;}
+.product-gifts-content {border: 0.5px solid #D8D8D8;border-radius: 10px;padding: 20px 0;margin-bottom: 10px;}
+.product-gifts-content-wrap {display:flex;}
+.product-gifts-content-left {width: 40%;}
+.product-gifts-content-left > img {width: 100%;object-fit:contain;}
+.product-gifts-content-right {flex:1;padding-left: 10px;}
+.product-gifts-content-title {line-height: 1.5;}
+.product-gifts-content-price {color:red;text-decoration: line-through; }
+.product-gifts-content-button {display:block;background-color: #000;color: #FFF;padding: 6px;width: 120px;text-align: center; border-radius: 50px;}
