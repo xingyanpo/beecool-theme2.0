@@ -19,6 +19,8 @@
           VARIANT PICKER BLOCK TYPE
           ----------------------------------------------------------------------------------------------------------------
         {%- endcomment -%}
+       {%- when 'gifts' -%}
+        {%- render "product-gift_products", block: block -%}
       {%- when 'variant_picker' -%}
         <div class="mobile">
           <div class="product_pay">
