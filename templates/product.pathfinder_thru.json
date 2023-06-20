@@ -65,8 +65,8 @@
         "f27403d2-fe00-4d0c-87a0-89b1d69bc552": {
           "type": "gifts",
           "settings": {
-            "title": "Gift",
-            "remark": "",
+            "title": "",
+            "remark": "<p><strong>Need 1 MORE Anniversary Pack or Trailer?<\/strong><\/p><p><strong>Add another one to your cart and use code<\/strong><\/p><p><strong>\"MOREFUN\" to save $75 on your 2nd Pack or Trailer<\/strong><\/p>",
             "gift_products": [
               "beecool-3rd-anniversary-pack",
               "foldable-ebike-cargo-trailer"
