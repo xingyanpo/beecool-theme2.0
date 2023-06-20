@@ -1,0 +1,535 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product-new",
+      "blocks": {
+        "4533c794-279c-409e-b319-aebd7de7f517": {
+          "type": "off",
+          "disabled": true,
+          "settings": {
+            "title": "$100 OFF",
+            "text": "<p>Buy any 2 Bee Cool electric bikes<br\/><\/p>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "atc_button_background": "#2a408e",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "#1f2633",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "94ff6497-bcb7-487c-95de-ea653891a1d0": {
+          "type": "fedex",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/0a1678a4e8bcbd2f544982aaa983ad21.webp",
+            "fedex": "High-quality",
+            "img2": "shopify:\/\/shop_images\/185.webp",
+            "ups": "Best-compatibility",
+            "text": "UPS offers a fast and safe shipping service on huge packages. So we highly recommend you select UPS to ship your Ebikes."
+          }
+        },
+        "426f5053-a8a7-4bbc-883a-d4e9bc913225": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "What's in the box?",
+            "text": "<h5>Default accessories<\/h5>\n            <p>\n             \n            \n              <small class=\"section-content__info\">1 x Bee Challenger Ebike<\/small>\n           \n              <small class=\"section-content__info\">1 x Bee Rambler Ebike (Battery & fenders included)<\/small>\n      \n              <small class=\"section-content__info\">1 x Assembling Tools<\/small>\n              <small class=\"section-content__info\">1 x User Manual<\/small>\n              <small class=\"section-content__info\">2 x Pedals<\/small>\n            <\/p>\n            <span class=\"x-info-box-btn\">View photos<\/span>"
+          }
+        },
+        "fa8b9b71-44ce-4121-ac33-e92069f5e399": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Delivery & Returns",
+            "text": "<ul>\n  <li class=\"product-delivery\">\n    <img src=\"https:\/\/cdn.shopifycdn.net\/s\/files\/1\/0554\/7098\/1274\/files\/Shipping.png?v=1657091075\" style=\"width:30px; margin-right: 10px;height:30px;\" alt=\"Free Shipping\">\n    <div class=\"hero__product-wrap__item\">\n      <h5 class=\"rte--nomargin\">Free Shipping<\/h5>\n      <small style=\"color:var(--colorSecond)\">Free shipping to the lower 48 states in the US.<\/small>\n    <\/div>\n  <\/li>\n  <li class=\"product-delivery\">\n    <img src=\"https:\/\/cdn.shopifycdn.net\/s\/files\/1\/0554\/7098\/1274\/files\/Warranty.png?v=1657091030\" style=\"width:30px; margin-right: 10px;height:30px;\" alt=\"2-Year Warranty\">\n    <div class=\"hero__product-wrap__item\">\n      <h5 class=\"rte--nomargin\">2-Year Warranty<\/h5>\n      <small style=\"color:var(--colorSecond)\">All Bee Cool bikes cover a 2-Year Warranty from the date of receiving the item.<\/small>\n    <\/div>\n  <\/li>\n  <li class=\"product-delivery\">\n    <img src=\"https:\/\/cdn.shopifycdn.net\/s\/files\/1\/0554\/7098\/1274\/files\/product-returns.png?v=1657091075\" style=\"width:30px; margin-right: 10px;height:30px;\" alt=\"14 Days Returns\">\n    <div class=\"hero__product-wrap__item\">\n      <h5 class=\"rte--nomargin\">14 Days Returns<\/h5>\n      <small style=\"color:var(--colorSecond)\">Customers are responsible for return shipping costs.<\/small>\n    <\/div>\n  <\/li>  \n<\/ul>"
+          }
+        },
+        "f0aeb6d6-caa0-4a9c-b64e-d3afd3de91ac": {
+          "type": "ScheduledToShip",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "4533c794-279c-409e-b319-aebd7de7f517",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "94ff6497-bcb7-487c-95de-ea653891a1d0",
+        "426f5053-a8a7-4bbc-883a-d4e9bc913225",
+        "fa8b9b71-44ce-4121-ac33-e92069f5e399",
+        "f0aeb6d6-caa0-4a9c-b64e-d3afd3de91ac"
+      ],
+      "settings": {
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_share_buttons": true,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": true,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "ead21ac2-5167-497a-a897-f97701d40dc9": {
+      "type": "jd-accessoryBlock",
+      "settings": {
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "disabled": true,
+      "blocks": {
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "description"
+      ],
+      "settings": {
+      }
+    },
+    "16607057527debbb37": {
+      "type": "jd-product-icon",
+      "disabled": true,
+      "blocks": {
+        "c47d9bd9-5b2d-40cf-a1c9-2f9b757f3394": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 73.99 73.7\"><defs><style>.cls-1,.cls-2,.cls-4{fill:none;}.cls-1,.cls-2,.cls-3,.cls-4{stroke:#040000;}.cls-1,.cls-2,.cls-3,.cls-4,.cls-5{stroke-miterlimit:10;}.cls-1{stroke-width:2px;}.cls-3,.cls-5{fill:#040000;}.cls-3{stroke-width:0.25px;}.cls-4{stroke-width:0.75px;}.cls-5{stroke:#000;stroke-width:0.5px;}<\/style><\/defs><circle class=\"cls-1\" cx=\"34.03\" cy=\"39.66\" r=\"18.63\"><\/circle><path class=\"cls-1\" d=\"M271.34,247.22a24.59,24.59,0,0,1,.64,5.6A24.85,24.85,0,1,1,247.13,228a26.77,26.77,0,0,1,2.85.16\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-1\" d=\"M279.46,247.08c.09,1,.14,5,.14,6a32.79,32.79,0,1,1-32.75-32.75s-7.17,2.57-9.8,9.75\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M241.2,277.94\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M214.1,244.06\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M213.91,266.93\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M221.91,255\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M237.76,228\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M215.59,243.3c.77,3,5.28,12.06,7,13.56\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M225,277.68c3.07.51,13.16,0,15.23-1\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-2\" d=\"M264.35,280.77c2.25-2.27,4.38-13.28,4.26-15.45\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-1\" d=\"M249.78,214.17l.23,16s15.11.84,19.33,17.31c12.12-.43,16.75-1,16.75-1S286.82,213.32,249.78,214.17Z\" transform=\"translate(-213.1 -213.15)\"><\/path><path class=\"cls-1\" d=\"M256.7,214.44l-.37,8.25s20.42,3.09,19.63,18.87l10-.42\" transform=\"translate(-213.1 -213.15)\"><\/path><circle class=\"cls-2\" cx=\"34.03\" cy=\"41.16\" r=\"2\"><\/circle><circle class=\"cls-2\" cx=\"34.03\" cy=\"31.16\" r=\"2\"><\/circle><circle class=\"cls-2\" cx=\"43.03\" cy=\"37.16\" r=\"2\"><\/circle><circle class=\"cls-2\" cx=\"39.03\" cy=\"48.16\" r=\"2\"><\/circle><circle class=\"cls-2\" cx=\"28.03\" cy=\"48.16\" r=\"2\"><\/circle><circle class=\"cls-2\" cx=\"25.03\" cy=\"37.16\" r=\"2\"><\/circle><circle class=\"cls-3\" cx=\"7.73\" cy=\"27.95\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"9.73\" cy=\"23.95\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"12.73\" cy=\"19.95\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"15.73\" cy=\"16.95\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"19.73\" cy=\"14.95\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"14.24\" cy=\"61.06\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"10.98\" cy=\"58\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"8\" cy=\"53.98\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"5.99\" cy=\"50.24\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"5.22\" cy=\"45.84\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"46.52\" cy=\"65.47\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"42.39\" cy=\"67.18\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"37.5\" cy=\"68.24\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"33.27\" cy=\"68.53\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"28.94\" cy=\"67.42\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"62.84\" cy=\"37.86\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"63.02\" cy=\"42.33\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"62.33\" cy=\"47.28\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"61.15\" cy=\"51.35\" r=\"0.75\"><\/circle><circle class=\"cls-3\" cx=\"58.62\" cy=\"55.04\" r=\"0.75\"><\/circle><path class=\"cls-4\" d=\"M267.72,226.38a3.35,3.35,0,1,1,5.08,4.27\" transform=\"translate(-213.1 -213.15)\"><\/path><circle class=\"cls-5\" cx=\"50.48\" cy=\"7.2\" r=\"0.5\"><\/circle><circle class=\"cls-5\" cx=\"66.48\" cy=\"22.2\" r=\"0.5\"><\/circle><\/svg>",
+            "text": "<p>Dual Hydraulic<br\/>Disc Brakes<\/p>"
+          }
+        },
+        "da1c8eb4-2170-47f5-bb91-a1e40b0470d9": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 122.59 72.55\"><defs><style>.cls-1{fill:none;stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}<\/style><\/defs><path class=\"cls-1\" d=\"M194.94,245.71c-6.82-.63-6.08,7.87-2.83,9a6.53,6.53,0,0,0,2.08.46h2.49\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M215.46,230.66c-9.62.22-9.69,10-9.69,10l-10.71.09v6\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M229.92,221.27\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M271.24,227a8.65,8.65,0,0,0-8.36,4.85s-12.7-.29-24.3-.29a9.07,9.07,0,0,0-8.66-4.34\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M285.7,224.16\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M305.34,255.22c4.63.29,5-3,5-5.1-.09-4.05-5.81-3.67-5.81-3.67l-.13-5.66s-4.41-.07-9.4.15c-.43-10.5-9.66-9.44-9.34-9.47\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M284.59,270.59c9.84.11,10.47-10.64,10.47-10.64l10.46-.07-.07-5.66\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M230,273.07c4.67.52,8.7-3.28,8.7-3.28s18.13.22,24.74.22c1,2.94,4.74,4.63,7.78,4.62\" transform=\"translate(-188.71 -213.72)\"><\/path><line class=\"cls-1\" x1=\"25.77\" y1=\"57.43\" x2=\"26.99\" y2=\"57.46\"><\/line><path class=\"cls-1\" d=\"M215.7,271.19s-6.87,1.2-9.73-10.69l-10.28.11v-5.46\" transform=\"translate(-188.71 -213.72)\"><\/path><path class=\"cls-1\" d=\"M193.68,254.6\" transform=\"translate(-188.71 -213.72)\"><\/path><polyline class=\"cls-1\" points=\"59.4 29.21 66.44 29.21 62.26 35.38 65.89 35.38 57.31 44.63 58.96 38.02 55.21 37.91 60.31 28.69\"><\/polyline><line class=\"cls-1\" x1=\"17.06\" y1=\"27.15\" x2=\"17.06\" y2=\"46.04\"><\/line><rect class=\"cls-1\" x=\"81.71\" y=\"1\" width=\"15.12\" height=\"70.55\" rx=\"7.28\"><\/rect><rect class=\"cls-1\" x=\"26.38\" y=\"1\" width=\"15.12\" height=\"70.55\" rx=\"7.28\"><\/rect><line class=\"cls-1\" x1=\"106.24\" y1=\"27.22\" x2=\"106.35\" y2=\"45.86\"><\/line><\/svg>",
+            "text": "<p>Continuous<br\/> 750WGeared HubMotor<\/p>"
+          }
+        },
+        "ca6e447d-e39c-462b-91e8-88194e167b40": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 114 59.3\"><defs><style>.cls-1{fill:none;stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}<\/style><\/defs><path class=\"cls-1\" d=\"M293.41,278.65H199.29c-2.92,0-5.29-2.37-5.29-6.21V225.71c0-2,2.37-4.36,5.29-4.36h94.12c2.92,0,5.28,2.37,5.28,4.36v46.73C298.69,276.28,296.33,278.65,293.41,278.65Z\" transform=\"translate(-193 -220.35)\"><\/path><rect class=\"cls-1\" x=\"83.42\" y=\"1\" height=\"57.3\"><\/rect><rect class=\"cls-1\" x=\"106.53\" y=\"17.64\" width=\"6.47\" height=\"20.33\" rx=\"1.42\"><\/rect><polyline class=\"cls-1\" points=\"39.95 9.46 33.41 28.91 42.03 29.28 39.39 46.57 51.28 25.5 42.09 25.32 48.03 9.82 39.45 9.82\"><\/polyline><\/svg>",
+            "text": "<p>Built-in<br\/> 48V20Ah Battery<\/p>"
+          }
+        },
+        "4b6d7790-cb09-4f76-ac16-53a8b0eb52a7": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 74 62\"><defs><style>.cls-1{fill:none;stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}<\/style><\/defs><rect class=\"cls-1\" x=\"1\" y=\"1\" width=\"72\" height=\"60\"><\/rect><rect class=\"cls-1\" x=\"18.91\" y=\"11.4\" width=\"10.56\" height=\"0.2\"><\/rect><rect class=\"cls-1\" x=\"18.91\" y=\"30.4\" width=\"10.56\" height=\"0.2\"><\/rect><rect class=\"cls-1\" x=\"244.91\" y=\"233\" width=\"0.19\" height=\"14.4\" transform=\"translate(277 261.4) rotate(180)\"><\/rect><rect class=\"cls-1\" x=\"228.91\" y=\"233\" width=\"0.19\" height=\"14.4\" transform=\"translate(245 261.4) rotate(180)\"><\/rect><rect class=\"cls-1\" x=\"18.91\" y=\"50.4\" width=\"10.56\" height=\"0.2\"><\/rect><rect class=\"cls-1\" x=\"244.91\" y=\"253\" width=\"0.19\" height=\"14.4\" transform=\"translate(277 301.4) rotate(180)\"><\/rect><rect class=\"cls-1\" x=\"228.91\" y=\"253\" width=\"0.19\" height=\"14.4\" transform=\"translate(245 301.4) rotate(180)\"><\/rect><rect class=\"cls-1\" x=\"44.91\" y=\"11.4\" width=\"10.56\" height=\"0.2\"><\/rect><rect class=\"cls-1\" x=\"44.91\" y=\"30.4\" width=\"10.56\" height=\"0.2\"><\/rect><rect class=\"cls-1\" x=\"270.91\" y=\"233\" width=\"0.19\" height=\"14.4\" transform=\"translate(329 261.4) rotate(180)\"><\/rect><rect class=\"cls-1\" x=\"254.91\" y=\"233\" width=\"0.19\" height=\"14.4\" transform=\"translate(297 261.4) rotate(180)\"><\/rect><rect class=\"cls-1\" x=\"44.91\" y=\"50.4\" width=\"10.56\" height=\"0.2\"><\/rect><rect class=\"cls-1\" x=\"270.91\" y=\"253\" width=\"0.19\" height=\"14.4\" transform=\"translate(329 301.4) rotate(180)\"><\/rect><rect class=\"cls-1\" x=\"254.91\" y=\"253\" width=\"0.19\" height=\"14.4\" transform=\"translate(297 301.4) rotate(180)\"><\/rect><\/svg>",
+            "text": "<p>See Riding<br\/> Data, Control Lights<\/p>"
+          }
+        },
+        "42f844f9-a2c5-48e5-b590-d856c383c519": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 68.08 71.22\"><defs><style>.cls-1,.cls-2ss{fill:none;stroke-miterlimit:10;stroke-width:2px;}.cls-1{stroke:#040000;stroke-linecap:round;}.cls-2ss{stroke:#000;}.cls-3{fill:#040000;}<\/style><\/defs><path class=\"cls-1\" d=\"M253.75,262.28a11.39,11.39,0,0,1-11.35-11.35h0a11.39,11.39,0,0,1,11.35-11.35l6.94.18\" transform=\"translate(-215.96 -213.89)\"><\/path><path class=\"cls-1\" d=\"M253.48,262.28h18.9A10.7,10.7,0,0,1,283,272.94h0a10.69,10.69,0,0,1-10.66,10.66H233.05\" transform=\"translate(-215.96 -213.89)\"><\/path>\n        <path class=\"cls-2ss\" d=\"M268.25,238.06c-.21.22-.42.42-.6.6l-.6-.6a29.6,29.6,0,0,1-6-8,15.67,15.67,0,0,1-1.6-7,8.18,8.18,0,0,1,16.36,0,15.7,15.7,0,0,1-1.56,7.22,29.92,29.92,0,0,1-6,7.78Z\" transform=\"translate(-215.96 -213.89)\"><\/path>\n        <path d=\"M264.61,238.06\" transform=\"translate(-215.96 -213.89)\"><\/path><path d=\"M267.62,221.72a2.36,2.36,0,1,0,2.35,2.36,2.36,2.36,0,0,0-2.35-2.36Z\" transform=\"translate(-215.96 -213.89)\"><\/path>\n        <path d=\"M267.65,225.15\" transform=\"translate(-215.96 -213.89)\"><\/path><ellipse class=\"cls-3\" cx=\"51.97\" cy=\"28.28\" rx=\"3.75\" ry=\"1.82\"><\/ellipse><path class=\"cls-2ss\" d=\"M225.77,279.18l-.61.6-.59-.6a29.81,29.81,0,0,1-6-8,15.8,15.8,0,0,1-1.59-7,8.18,8.18,0,1,1,16.35,0,15.73,15.73,0,0,1-1.56,7.22,29.79,29.79,0,0,1-6,7.78Z\" transform=\"translate(-215.96 -213.89)\"><\/path><path d=\"M222.12,279.18\" transform=\"translate(-215.96 -213.89)\"><\/path><path d=\"M225.14,262.84a2.35,2.35,0,1,0,2.35,2.35,2.36,2.36,0,0,0-2.35-2.35Z\" transform=\"translate(-215.96 -213.89)\"><\/path><path d=\"M225.17,266.26\" transform=\"translate(-215.96 -213.89)\"><\/path><ellipse class=\"cls-3\" cx=\"9.49\" cy=\"69.4\" rx=\"3.75\" ry=\"1.82\"><\/ellipse><\/svg>",
+            "text": "<p>40-65 Miles<br\/> Estimated Range<\/p>"
+          }
+        },
+        "af6b929a-ff40-4028-8fec-e86988df27c0": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 72.05 71.97\"><defs><style>.cls-1{fill:none;stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}.cls-2s{font-size:14.31px;fill:#231815;font-family:SourceHanSansCN-Bold-GBpc-EUC-H, Source Han Sans CN;}.cls-3{letter-spacing:-0.02em;}<\/style><\/defs><path class=\"cls-1\" d=\"M228.29,228.86,215.47,278.1s-3.08,7.53,6.15,6.84,60-.68,60-.68,4.62,0,3.08-7.7-12.82-47.7-12.82-47.7h-43.6Z\" transform=\"translate(-213.97 -214.01)\"><\/path><circle class=\"cls-1\" cx=\"36.03\" cy=\"7.92\" r=\"6.92\"><\/circle><text class=\"cls-2s\" transform=\"translate(22.7 48.93)\">L<tspan class=\"cls-3\" x=\"8.26\" y=\"0\">B<\/tspan><tspan x=\"17.73\" y=\"0\">S<\/tspan><\/text><\/svg>",
+            "text": "<p>350lbs <br\/>Payload Capacity<\/p>"
+          }
+        },
+        "84bb974a-180a-420d-959b-5ed873c5b9bc": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 70.31 72.92\"><defs><style>.cls-1{fill:none;stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#040000;}<\/style><\/defs><polygon class=\"cls-1\" points=\"1 6.69 1 71.92 40.14 71.92 40.14 6.69 29.54 6.69 28.04 1 14.84 1 13.81 6.69 1 6.69\"><\/polygon><path class=\"cls-1\" d=\"M258.06,287.12\" transform=\"translate(-214.84 -211.88)\"><\/path><path class=\"cls-1\" d=\"M255.69,283.33\" transform=\"translate(-214.84 -211.88)\"><\/path><path class=\"cls-1\" d=\"M275.62,239.21\" transform=\"translate(-214.84 -211.88)\"><\/path><path class=\"cls-1\" d=\"M255.69,283.8h14.47s5.46,0,5.46-7.09V238.65\" transform=\"translate(-214.84 -211.88)\"><\/path><rect class=\"cls-1\" x=\"52.24\" y=\"9.52\" width=\"17.08\" height=\"17.02\"><\/rect><rect class=\"cls-2\" x=\"57.09\" y=\"3.12\" width=\"1.69\" height=\"5.38\"><\/rect><rect class=\"cls-2\" x=\"62.76\" y=\"3.12\" width=\"1.69\" height=\"5.38\"><\/rect><polygon class=\"cls-1\" points=\"22.04 26.13 14.74 36.46 20.74 36.46 18.39 46.8 26.4 34.13 20.57 34.13 22.04 26.13\"><\/polygon><\/svg>",
+            "text": "<p>350lbs <br\/>Payload Capacity<\/p>"
+          }
+        },
+        "a2a2881d-4dee-4388-a356-b2b9b1a73fc7": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 84.32 84.36\">\n\t<defs>\n\t\t<style>\n\t\t\t.cls4-1 {\n\t\t\t\tfill: #060001;\n\t\t\t}\n\n\t\t\t.cls4-2,\n\t\t\t.cls4-3 {\n\t\t\t\tfill: none;\n\t\t\t\tstroke-miterlimit: 10;\n\t\t\t\tstroke-width: 2px;\n\t\t\t}\n\n\t\t\t.cls4-2 {\n\t\t\t\tstroke: #060001;\n\t\t\t}\n\n\t\t\t.cls4-3 {\n\t\t\t\tstroke: #040000;\n\t\t\t}\n\t\t<\/style>\n\t<\/defs>\n\t<path class=\"cls4-1\" d=\"M344.45,564.18a5.13,5.13,0,0,1,5.13,5.13v2.57H328.65v-2.57a5.13,5.13,0,0,1,5.12-5.13h10.68m0-2H333.77a7.13,7.13,0,0,0-7.12,7.13v3.2a1.37,1.37,0,0,0,1.37,1.37h22.19a1.37,1.37,0,0,0,1.37-1.37v-3.2a7.13,7.13,0,0,0-7.13-7.13Z\" transform=\"translate(-280.43 -562.18)\"><\/path>\n\t<path class=\"cls4-2\" d=\"M314.83,606.16H302.61c-2.57,0-4.66-1.62-4.66-3.62h0c0-2,2.09-3.62,4.66-3.62h12.22\" transform=\"translate(-280.43 -562.18)\"><\/path>\n\t<path class=\"cls4-2\" d=\"M315.33,632.39H303.11c-2.58,0-4.66-1.63-4.66-3.63h0c0-2,2.08-3.62,4.66-3.62h12.22\" transform=\"translate(-280.43 -562.18)\"><\/path>\n\t<path class=\"cls4-2\" d=\"M314.13,619.7h-28c-2.57,0-4.66-1.62-4.66-3.62h0c0-2,2.09-3.63,4.66-3.63h28\" transform=\"translate(-280.43 -562.18)\"><\/path>\n\t<rect class=\"cls4-2\" x=\"2.29\" y=\"62.96\" width=\"12\" height=\"7.24\" rx=\"3.62\"><\/rect>\n\t<path class=\"cls4-2\" d=\"M315.37,592.45H303.15c-2.57,0-4.66-1.62-4.66-3.62h0c0-2,2.09-3.62,4.66-3.62h12.22\" transform=\"translate(-280.43 -562.18)\"><\/path>\n\t<rect class=\"cls4-2\" x=\"2.33\" y=\"23.02\" width=\"12\" height=\"7.24\" rx=\"3.62\"><\/rect>\n\t<rect class=\"cls4-2\" x=\"34.52\" y=\"10.54\" width=\"48.8\" height=\"72.82\" rx=\"18.14\"><\/rect>\n\t<polygon class=\"cls4-3\" points=\"57.79 30.05 47.65 50.92 55.16 52.4 55.07 65.73 70.19 42.3 62.13 41.09 57.79 30.05\"><\/polygon>\n<\/svg>",
+            "text": "<p>3A Quick <br\/>Charger<\/p>"
+          }
+        },
+        "8077908a-be6d-4772-9d87-0c0919c8230d": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 80.38 80.38\">\n\t<defs>\n\t\t<style>\n\t\t\t.c_ls2-1 {\n\t\t\t\tfill: none;\n\t\t\t}\n\n\t\t\t.c_ls2-1,\n\t\t\t.c_ls2-2 {\n\t\t\t\tstroke: #040000;\n\t\t\t\tstroke-miterlimit: 10;\n\t\t\t\tstroke-width: 2px;\n\t\t\t}\n\n\t\t\t.c_ls2-2 {\n\t\t\t\tfill: #fff;\n\t\t\t}\n\t\t<\/style>\n\t<\/defs>\n\t<line class=\"c_ls2-1\" x1=\"40.01\" y1=\"8.54\" x2=\"40.01\" y2=\"71.96\"><\/line>\n\t<line class=\"c_ls2-1\" x1=\"24.15\" y1=\"12.79\" x2=\"55.86\" y2=\"67.71\"><\/line>\n\t<line class=\"c_ls2-1\" x1=\"12.55\" y1=\"24.4\" x2=\"67.47\" y2=\"56.1\"><\/line>\n\t<line class=\"c_ls2-1\" x1=\"8.3\" y1=\"40.25\" x2=\"71.71\" y2=\"40.25\"><\/line>\n\t<line class=\"c_ls2-1\" x1=\"12.55\" y1=\"56.1\" x2=\"67.47\" y2=\"24.4\"><\/line>\n\t<line class=\"c_ls2-1\" x1=\"24.15\" y1=\"67.71\" x2=\"55.86\" y2=\"12.79\"><\/line>\n\t<circle class=\"c_ls2-1\" cx=\"40.19\" cy=\"40.19\" r=\"39.18\"><\/circle>\n\t<circle class=\"c_ls2-1\" cx=\"40.19\" cy=\"40.19\" r=\"31.98\"><\/circle>\n\t<circle class=\"c_ls2-2\" cx=\"40.01\" cy=\"41.44\" r=\"12.28\"><\/circle>\n\t<circle class=\"c_ls2-1\" cx=\"40.01\" cy=\"41.44\" r=\"6.6\"><\/circle>\n<\/svg>",
+            "text": "<p>26\" x4\" <br\/>All-Terrain Fat Tires<\/p>"
+          }
+        },
+        "a7bbc340-d2eb-4365-bc8d-f96fb35a5219": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 70.28 103.7\">\n\t<defs>\n\t\t<style>\n\t\t\t.c_ls_3-1 {\n\t\t\t\tfill: none;\n\t\t\t\tstroke: #000;\n\t\t\t\tstroke-miterlimit: 10;\n\t\t\t\tstroke-width: 2px;\n\t\t\t}\n\t\t<\/style>\n\t<\/defs>\n\t<path class=\"c_ls_3-1\" d=\"M-163.77,616.79h-1.71V587h-8.42v29.75h-2.34c-2.58,0-4.67,1.2-4.67,2.67v8.22l1-.1a102.13,102.13,0,0,1,19.78,0l1,.1v-8.22C-159.09,618-161.18,616.79-163.77,616.79Z\" transform=\"translate(204.83 -586.04)\"><\/path>\n\t<path class=\"c_ls_3-1\" d=\"M-195.41,611v-3c0-.78-1.12-1.42-2.5-1.42h-3.43c-1.37,0-2.49.64-2.49,1.42v3Z\" transform=\"translate(204.83 -586.04)\"><\/path>\n\t<polygon class=\"c_ls_3-1\" points=\"1 29.3 1 45.91 9.42 44.24 9.42 29.3 1 29.3\"><\/polygon>\n\t<path class=\"c_ls_3-1\" d=\"M-144,610.37v-3c0-.78,1.12-1.42,2.49-1.42H-138c1.38,0,2.5.64,2.5,1.42v3Z\" transform=\"translate(204.83 -586.04)\"><\/path>\n\t<polygon class=\"c_ls_3-1\" points=\"69.28 28.7 69.28 45.91 60.86 44.24 60.86 28.7 69.28 28.7\"><\/polygon>\n\t<path class=\"c_ls_3-1\" d=\"M-137.31,641.8l-26.54-5.68a29.68,29.68,0,0,0-5.84-.65,29.68,29.68,0,0,0-5.84.65l-26.55,5.68c-1,.23-1.75.81-1.75,1.45v36.2l2.11,1.67v2.37c0,2.57,1.53,5.25,6,5.25h.29V647.06c0-.92,1.06-1.72,2.6-2l20.24-3.27a15.12,15.12,0,0,1,2.88-.33,15.12,15.12,0,0,1,2.88.33l20.24,3.27c1.54.25,2.6,1,2.6,2v41.68h.29c4.49,0,6-2.68,6-5.25v-2.37l2.11-1.67v-36.2C-135.55,642.61-136.25,642-137.31,641.8Z\" transform=\"translate(204.83 -586.04)\"><\/path>\n<\/svg>",
+            "text": "<p>Adjustable <br\/>Hydraulic Fork<\/p>"
+          }
+        },
+        "1f5f10d3-1d65-40c2-9039-4b5ff330fe1c": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 80.4 80.27\">\n\t<defs>\n\t\t<style>\n\t\t\t.cl_s-1,\n\t\t\t.cl_s-5,\n\t\t\t.cl_s-6 {\n\t\t\t\tfill: none;\n\t\t\t}\n\n\t\t\t.cl_s-1,\n\t\t\t.cl_s-2 {\n\t\t\t\tstroke: #040000;\n\t\t\t}\n\n\t\t\t.cl_s-1,\n\t\t\t.cl_s-2,\n\t\t\t.cl_s-3,\n\t\t\t.cl_s-4,\n\t\t\t.cl_s-5,\n\t\t\t.cl_s-6 {\n\t\t\t\tstroke-miterlimit: 10;\n\t\t\t}\n\n\t\t\t.cl_s-1,\n\t\t\t.cl_s-2,\n\t\t\t.cl_s-3,\n\t\t\t.cl_s-5 {\n\t\t\t\tstroke-width: 2px;\n\t\t\t}\n\n\t\t\t.cl_s-2,\n\t\t\t.cl_s-3,\n\t\t\t.cl_s-4 {\n\t\t\t\tfill: #fff;\n\t\t\t}\n\n\t\t\t.cl_s-3,\n\t\t\t.cl_s-4,\n\t\t\t.cl_s-5,\n\t\t\t.cl_s-6 {\n\t\t\t\tstroke: #000;\n\t\t\t}\n\t\t<\/style>\n\t<\/defs>\n\t<rect class=\"cl_s-1\" x=\"1\" y=\"1\" width=\"64.12\" height=\"78.27\"><\/rect>\n\t<circle class=\"cl_s-2\" cx=\"33.06\" cy=\"28.41\" r=\"20.62\"><\/circle>\n\t<line class=\"cl_s-1\" x1=\"32.63\" y1=\"7.33\" x2=\"33.49\" y2=\"49.49\"><\/line>\n\t<line class=\"cl_s-1\" x1=\"14.6\" y1=\"18.24\" x2=\"51.53\" y2=\"38.58\"><\/line>\n\t<line class=\"cl_s-1\" x1=\"15.02\" y1=\"39.32\" x2=\"51.1\" y2=\"17.5\"><\/line>\n\t<circle class=\"cl_s-2\" cx=\"33.06\" cy=\"28.41\" r=\"9.91\"><\/circle>\n\t<circle class=\"cl_s-1\" cx=\"19.72\" cy=\"65.48\" r=\"5.5\"><\/circle>\n\t<circle class=\"cl_s-1\" cx=\"35.78\" cy=\"65.48\" r=\"5.5\"><\/circle>\n\t<path class=\"cl_s-3\" d=\"M1517.9,665.74c-3.43,2.89-7.07,4.72-10.72,4.72s-7.28-1.72-10.71-4.72a32.63,32.63,0,0,1-3.33-3.32c-.21-.22-.32-.43-.53-.65.11-.21.32-.43.43-.64a22.49,22.49,0,0,1,3.11-3.43c3.32-3,7-4.82,11-4.82s7.72,1.82,11,4.82a30.21,30.21,0,0,1,3.11,3.43c.11.21.32.43.43.64a3,3,0,0,1-.53.65,32.62,32.62,0,0,1-3.33,3.32Z\" transform=\"translate(-1442.48 -598.51)\"><\/path>\n\t<path class=\"cl_s-4\" d=\"M1516,670.8\" transform=\"translate(-1442.48 -598.51)\"><\/path>\n\t<path class=\"cl_s-5\" d=\"M1507.62,657a5,5,0,1,0,5,5,5,5,0,0,0-5-5Z\" transform=\"translate(-1442.48 -598.51)\"><\/path>\n\t<path class=\"cl_s-6\" d=\"M1500.41,675.91\" transform=\"translate(-1442.48 -598.51)\"><\/path>\n<\/svg>",
+            "text": "<p>Color <br\/>Display<\/p>"
+          }
+        },
+        "eb2e25e0-0dab-44bd-bb75-7d83fb93d1c3": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 89.01 82.57\"><defs><style>.cls-1,.cls-2{fill:none;}.cls-1{stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}.cls-3{fill:#040000;}<\/style><\/defs><path class=\"cls-1\" d=\"M1014.4,599.51v22.36s3.15,1.19,9.24-1.79c0,17.89.75,33.09.75,33.09h-2.92l.32,11,2.6,1.49h12.54v-1.14l9-.2v7.41l10.75,8h34.76l9.92-8.45-.25-20.77-10.31-8-34.5-.25-10.69,8.5.12,3.92-7.06.2-.06-1.69-1.66.1-.19-39.4s-.23-5-7.47-4.77C1028,605.07,1024.27,597.72,1014.4,599.51Z\" transform=\"translate(-1013.4 -598.23)\"><\/path><polygon class=\"cls-1\" points=\"40.34 55.37 40.34 70.97 45.44 75.35 73.57 75.35 80.32 70.38 80.32 55.37 74.33 50.5 45.95 50.5 40.34 55.37\"><\/polygon><path class=\"cls-2\" d=\"M1053.74,660.16\" transform=\"translate(-1013.4 -598.23)\"><\/path><rect class=\"cls-3\" x=\"40.34\" y=\"61.81\" width=\"39.34\" height=\"1.79\"><\/rect><\/svg>",
+            "text": "<p>Electric <br\/>Pedal-Assist<\/p>"
+          }
+        },
+        "bf7ee25c-b5e5-459c-b39e-9d9be261bf32": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 112.73 85.97\"><defs><style>.cls-1{fill:none;}.cls-1,.cls-2{stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#fff;}<\/style><\/defs><polygon class=\"cls-1\" points=\"92.88 14.02 89.34 1.23 83.85 2.75 87.24 15.02 92.88 14.02\"><\/polygon><polygon class=\"cls-1\" points=\"95.86 47.8 106 82.84 111.5 81.32 101.72 45.97 95.86 47.8\"><\/polygon><path class=\"cls-1\" d=\"M1385.6,639.81l.26.89,5.92-1.85-6.52-23.54-5.64,1,.42,1.51h-54.13l-2.4-8.26-5.48,1.59,7.13,24.61-31.62,33.66,3.69,7-4.88.22.25,5.7,49.38-2.18,1.55-1.46h0Zm-82.07,36.33-3-5.79L1327,642.12l9.44,32.57Zm38.22-3.61-14.19-49h54l2,7.21Z\" transform=\"translate(-1291.31 -597.41)\"><\/path><circle class=\"cls-2\" cx=\"47.77\" cy=\"75.32\" r=\"7.95\"><\/circle><\/svg>",
+            "text": "<p>Flat Welding <br\/>Aluminum Frame<\/p>"
+          }
+        },
+        "9cb38dbf-2f52-43d8-81c5-c46b71fb5d19": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 105.95 76.69\"><defs><style>.cls-1,.cls-2{fill:none;stroke:#040000;stroke-miterlimit:10;}.cls-1{stroke-width:2px;}.cls-2{stroke-width:1.5px;}<\/style><\/defs><path class=\"cls-1\" d=\"M1152,614.34v14.32s12.5-.4,13.71,11.7l19.77.2V614.34l-2.42-1.61H1152Z\" transform=\"translate(-1149.13 -600.59)\"><\/path><path class=\"cls-1\" d=\"M1190.16,615.73v18.56l9.48-5.65h3s6.25,2.42,12.3-.2,28.84-14.52,28.84-14.52a20.33,20.33,0,0,0,8.07-8.27c2.62-5.45-3.22-3.83-3.63-3.83s-7.26,7.06-12.3,9.28-16.94,9.68-20.17,10.69-4.24,3-11.09,1.21S1190.16,615.73,1190.16,615.73Z\" transform=\"translate(-1149.13 -600.59)\"><\/path><path class=\"cls-1\" d=\"M1150.13,648.83v23.6s1.61,2.22,7,1.81V647S1152.55,644.8,1150.13,648.83Z\" transform=\"translate(-1149.13 -600.59)\"><\/path><polygon class=\"cls-1\" points=\"15.93 45.81 15.93 71.59 18.14 74.42 33.47 74.42 36.3 72 36.3 45.81 15.93 45.81\"><\/polygon><rect class=\"cls-1\" x=\"41.16\" y=\"46.06\" width=\"59.15\" height=\"26.02\"><\/rect><rect class=\"cls-1\" x=\"100.31\" y=\"42.59\" width=\"4.64\" height=\"33.11\" rx=\"2.28\"><\/rect><polyline class=\"cls-2\" points=\"24.99 53.34 22.35 60.34 24.98 61.1 22.77 66.78 29.87 59.16 26.51 58.89 28.95 53.96 24.45 53.73\"><\/polyline><\/svg>",
+            "text": "<p>Half <br\/>Twist Throttle<\/p>"
+          }
+        },
+        "4924655e-ca19-4127-8629-0a3d00aa72c5": {
+          "type": "productIcon",
+          "settings": {
+            "svg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 109.2 79.55\"><defs><style>.cls-1{fill:none;stroke:#040000;stroke-miterlimit:10;stroke-width:2px;}<\/style><\/defs><path class=\"cls-1\" d=\"M809.45,570.43s-6.08,4-2.56,8.54,12.17,17.39,21.13,17.69,11.21.92,25.94-4,46.1-9.46,58.91-7.32c-.33-3.06,1-10.38-9.29-11s-28.49,2.14-63.07-1.52S809.45,570.43,809.45,570.43Z\" transform=\"translate(-804.8 -569.23)\"><\/path><path class=\"cls-1\" d=\"M836.81,606.5s0,8.54,1.71,8.54h6.4l6.19,32.74h14.73l-6-36.6h2.78l.43-4.68s.85,2.24,7.47-1.42a61.05,61.05,0,0,0,11.31-8.14h-10l-4.91,3.87-15.37,1Z\" transform=\"translate(-804.8 -569.23)\"><\/path><\/svg>",
+            "text": "<p>Seat <br\/>Suspension<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c47d9bd9-5b2d-40cf-a1c9-2f9b757f3394",
+        "da1c8eb4-2170-47f5-bb91-a1e40b0470d9",
+        "ca6e447d-e39c-462b-91e8-88194e167b40",
+        "4b6d7790-cb09-4f76-ac16-53a8b0eb52a7",
+        "42f844f9-a2c5-48e5-b590-d856c383c519",
+        "af6b929a-ff40-4028-8fec-e86988df27c0",
+        "84bb974a-180a-420d-959b-5ed873c5b9bc",
+        "a2a2881d-4dee-4388-a356-b2b9b1a73fc7",
+        "8077908a-be6d-4772-9d87-0c0919c8230d",
+        "a7bbc340-d2eb-4365-bc8d-f96fb35a5219",
+        "1f5f10d3-1d65-40c2-9039-4b5ff330fe1c",
+        "eb2e25e0-0dab-44bd-bb75-7d83fb93d1c3",
+        "bf7ee25c-b5e5-459c-b39e-9d9be261bf32",
+        "9cb38dbf-2f52-43d8-81c5-c46b71fb5d19",
+        "4924655e-ca19-4127-8629-0a3d00aa72c5"
+      ],
+      "settings": {
+      }
+    },
+    "60537ec1-ae90-4e61-a047-d7134aca15f0": {
+      "type": "describe-video",
+      "disabled": true,
+      "settings": {
+        "top_title": "<p>Introducing Bee Adventurer<\/p>",
+        "bottom_title": "<p>Introducing the next generation<\/p>",
+        "text2": "<p>FulI suspension system, reliable brakes,<br\/>advanced lighting system<br\/>SHIMANO 7-speed transmission<\/p>",
+        "text1": "<p>a large capacity battery,<br\/>full suspension system, hydraulic disc<br\/>brakes and more cool features.<\/p>",
+        "handbrake_p_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7c50080a510345c8b6cc9ada31ef089f.mp4",
+        "handbrake_m_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/eb2322c1573d4d7799eff8874820eebe.mp4"
+      }
+    },
+    "7c8d2aed-cbcf-460f-b470-b7379c8c98a4": {
+      "type": "jd-product-scroll",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "16607060699df11384": {
+      "type": "jd-product-video",
+      "disabled": true,
+      "settings": {
+        "link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/dfc0a64bcd73425189a0796f78090f84.mp4"
+      }
+    },
+    "16623649202cdc4dd6": {
+      "type": "jd-productImage_describe",
+      "disabled": true,
+      "blocks": {
+        "7c66f518-1e74-46cc-a931-04f74ba8d7a5": {
+          "type": "productImage_describe",
+          "settings": {
+            "title": "<p>Intelligent Motor<\/p>",
+            "text": "<p>The high-speed continuous 750W brushless geared hub motor with 80 Nm of max torque, which gives you a maximum power and be unstoppable on bad terrains. We’d love to let you feel the passion and enjoy the pleasure of cycling!<\/p>",
+            "text_mobile": "<p>Tuned For Maximum Power And a Natural Ride-feel, Our new Motor Runs Near-Silently – Even At Top Speed.<\/p>",
+            "number": "750",
+            "number_company": "W",
+            "number_text": "Motor Power",
+            "number2": "86",
+            "number_company2": "Nm",
+            "number_text2": "86NmMax Motor Torque",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "7c66f518-1e74-46cc-a931-04f74ba8d7a5"
+      ],
+      "settings": {
+      }
+    },
+    "cb596b7c-2a8e-42be-897f-8d2dfa928ac2": {
+      "type": "jd-product-E-shifter",
+      "disabled": true,
+      "settings": {
+        "title": "<p>E-Shifter<\/p>",
+        "text": "<p>Industry-first automatic electronic gear shifting gives the smoothest ride ever. With four speeds to flatten every urban incline.<\/p>"
+      }
+    },
+    "1660721689a004f443": {
+      "type": "jd-product-battery",
+      "disabled": true,
+      "blocks": {
+        "182e8a6b-944e-487b-9882-779a367d2732": {
+          "type": "productBattery",
+          "settings": {
+            "title": "8.8ah",
+            "text": "Up to 35 miles"
+          }
+        },
+        "e593b7fc-536c-45a7-90d5-b203b18a9751": {
+          "type": "productBattery",
+          "settings": {
+            "title": "8.8ah",
+            "text": "Up to 35 miles"
+          }
+        },
+        "fc10a433-9898-4d0a-b30e-04c1aa35fcb9": {
+          "type": "productBattery",
+          "settings": {
+            "title": "8.8ah",
+            "text": "Up to 35 miles"
+          }
+        }
+      },
+      "block_order": [
+        "182e8a6b-944e-487b-9882-779a367d2732",
+        "e593b7fc-536c-45a7-90d5-b203b18a9751",
+        "fc10a433-9898-4d0a-b30e-04c1aa35fcb9"
+      ],
+      "settings": {
+        "link": "",
+        "link_mobile": "",
+        "title": "<p>Powerful, removable battery<\/p>",
+        "title_mobile": "<p>Powerful,<br\/>Removable Battery<\/p>",
+        "text": "<p>Speed, distance, battery level, light activation, loud<br\/> horn. You control the ride!<\/p>",
+        "text_mobile": "<p>Speed, distance, battery level, light activation, loud horn. You control the ride!<\/p>",
+        "data_title": "<p>8.8ah<\/p>",
+        "data_text": "<p>Up to 35 miles<\/p>",
+        "data_title2": "<p>86Nm<\/p>",
+        "data_text2": "<p>Up to 45 miles<\/p>",
+        "data_title3": "<p>14ah<\/p>",
+        "data_text3": "<p>Up to 60 miles<\/p>",
+        "buttonSvg": "<svg id=\"图层_1\" data-name=\"图层 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 122.79 141.79\"><defs><style>.cls-11{fill:#fff;}.cls-12{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;}<\/style><\/defs><path class=\"cls-11\" d=\"M250.26,181.1l59.39,34.29V284l-59.39,34.29L190.86,284V215.39l59.4-34.29m0-2.31-61.4,35.45v70.9l61.4,35.44,61.39-35.44v-70.9l-61.39-35.45Z\" transform=\"translate(-188.86 -178.79)\"><\/path><line class=\"cls-12\" x1=\"47.04\" y1=\"71.1\" x2=\"75.75\" y2=\"71.1\"><\/line><line class=\"cls-12\" x1=\"61.4\" y1=\"56.54\" x2=\"61.4\" y2=\"85.25\"><\/line><\/svg>",
+        "button": "Battery Details"
+      }
+    },
+    "166193136108e7c434": {
+      "type": "jd-product-Features",
+      "disabled": true,
+      "blocks": {
+        "2610141a-784a-4917-90c6-1d0cfbe38630": {
+          "type": "FeaturesBox",
+          "settings": {
+            "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
+          }
+        },
+        "5325a5d6-d070-4269-a6ec-b2abc0fee863": {
+          "type": "FeaturesBox",
+          "settings": {
+            "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
+          }
+        },
+        "2ac9a688-bb53-4a8f-8f82-e92a57c7ff87": {
+          "type": "FeaturesBox",
+          "settings": {
+            "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
+          }
+        },
+        "d106ac70-4edd-46d2-bc50-eca759aad226": {
+          "type": "FeaturesBox",
+          "settings": {
+            "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
+          }
+        },
+        "483a0fad-5d5c-4509-b910-2e944ca32842": {
+          "type": "FeaturesBox",
+          "settings": {
+            "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
+          }
+        },
+        "19235fbd-0c60-471d-958f-45687ea19f4c": {
+          "type": "FeaturesBox",
+          "settings": {
+            "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
+          }
+        },
+        "37e1a90d-5adc-4a86-9d6b-2d4858a1f42b": {
+          "type": "FeaturesBox",
+          "settings": {
+            "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
+          }
+        },
+        "cfc7af4c-07f0-4e60-8830-f0ea4b01d184": {
+          "type": "FeaturesBox",
+          "settings": {
+            "text": "<p>The backlight LCD display shows you all the key information and status ofthe ebike, including operation modes, speed, pedal assist level,battery capacity, wattmter,battery life, odometer, trip odometer, etc.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "2610141a-784a-4917-90c6-1d0cfbe38630",
+        "5325a5d6-d070-4269-a6ec-b2abc0fee863",
+        "2ac9a688-bb53-4a8f-8f82-e92a57c7ff87",
+        "d106ac70-4edd-46d2-bc50-eca759aad226",
+        "483a0fad-5d5c-4509-b910-2e944ca32842",
+        "19235fbd-0c60-471d-958f-45687ea19f4c",
+        "37e1a90d-5adc-4a86-9d6b-2d4858a1f42b",
+        "cfc7af4c-07f0-4e60-8830-f0ea4b01d184"
+      ],
+      "settings": {
+        "title": "<p>Other Cool Features You’ll Love<\/p>",
+        "title_mobile": "<p>Other Cool <br\/>Features You’ll Love<\/p>"
+      }
+    },
+    "1660713992681be75b": {
+      "type": "jd-details-bottomTab",
+      "disabled": true,
+      "blocks": {
+        "7b3527c6-e148-4775-93b5-bdeb6db38b38": {
+          "type": "categroy",
+          "settings": {
+            "cate_name": "Overall",
+            "text": "<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>Max height(with antenna)<\/div>\n\t\t<div>550 in<\/div>\n\t<\/div>\n<\/div>\n<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>Length<\/div>\n\t\t<div>157 in<\/div>\n\t<\/div>\n<\/div>\n<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>Wheelbase <\/div>\n\t\t<div>630 in<\/div>\n\t<\/div>\n<\/div>\n<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>wheel length<\/div>\n\t\t<div>81.8 in<\/div>\n\t<\/div>\n<\/div>\n<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>high<\/div>\n\t\t<div>680 in<\/div>\n\t<\/div>\n<\/div>\n<div class=\"box-de-leftBorder\">\n\t<div class=\"box-de-leftBox\">\n\t\t<div>handle to wheel<\/div>\n\t\t<div>157 in<\/div>\n\t<\/div>\n<\/div>"
+          }
+        },
+        "4d8b83aa-ad70-4823-8d3a-0ac863ac563e": {
+          "type": "categroy",
+          "settings": {
+            "cate_name": "Storage",
+            "text": ""
+          }
+        },
+        "e4fb19ae-738a-4eda-898a-33a081613a10": {
+          "type": "categroy",
+          "settings": {
+            "cate_name": "Off-Road  Perfomance",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "7b3527c6-e148-4775-93b5-bdeb6db38b38",
+        "4d8b83aa-ad70-4823-8d3a-0ac863ac563e",
+        "e4fb19ae-738a-4eda-898a-33a081613a10"
+      ],
+      "settings": {
+        "header": "Specs",
+        "see_more": "See more"
+      }
+    },
+    "166070776357b9a25b": {
+      "type": "jd-details-tab",
+      "disabled": true,
+      "blocks": {
+        "26f0e566-3a31-4043-9626-84fec010c8eb": {
+          "type": "categroy",
+          "settings": {
+            "cate_name": "Mountain Roads",
+            "cate_title": "",
+            "cate_text": "<p>With dual suspension, you can be confident when riding on the bumpy roads or some rugged trails among the woods or in the mountains.<br\/><\/p>"
+          }
+        },
+        "f42b426d-eeb0-41fb-991b-a7a1645ff16e": {
+          "type": "categroy",
+          "settings": {
+            "cate_name": "Fitness cycling",
+            "cate_title": "<p>Outbound Travel Meets More Needs<\/p>",
+            "cate_text": "<p>48V 20Ah Lithium-ion Battery Gives You longer Range. You are able To Travelover 60 Miles on a Charge Using Pedal-Assist <br\/>Mode And 40 Miles On Throttlepower Mode. We Want To Make Everyone Enjoy The Ride longer!<\/p>"
+          }
+        },
+        "4c2daef3-f4fb-46b5-aaa4-933b043d66c8": {
+          "type": "categroy",
+          "settings": {
+            "cate_name": "Mountain",
+            "cate_title": "<p>Outbound Travel Meets More Needs<\/p>",
+            "cate_text": "<p>48V 20Ah Lithium-ion Battery Gives You longer Range. You are able To Travelover 60 Miles on a Charge Using Pedal-Assist <br\/>Mode And 40 Miles On Throttlepower Mode. We Want To Make Everyone Enjoy The Ride longer!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "26f0e566-3a31-4043-9626-84fec010c8eb",
+        "f42b426d-eeb0-41fb-991b-a7a1645ff16e",
+        "4c2daef3-f4fb-46b5-aaa4-933b043d66c8"
+      ],
+      "settings": {
+        "header": "Bee Adventurer",
+        "desc": "<p>Bee Adventurer is one of our best equipped all-terrain electric bikes. The Bike is equipped with a 912-1008Wh Lithium-ion Battery, which gives the bike a long travel distance over 70 miles per charge on pedal-assist mode and 45 miles on throttle power mode. The continuous 750W motor and 4’’ fat tires lets the bike have maximum power to overcome any kinds of terrible terrain: soft sands, thick grass, heavy rain, slippery snow surface, steep rocks face. Our dual suspension system will bring you the max comfort.<\/p>",
+        "bgcolor": "#f4f7fe"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "recommendations_count": 4,
+        "products": [
+
+        ]
+      }
+    },
+    "sma_reviews_section_auto": {
+      "type": "reviews-importer-product",
+      "settings": {
+        "lai_product": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ead21ac2-5167-497a-a897-f97701d40dc9",
+    "product-content",
+    "16607057527debbb37",
+    "60537ec1-ae90-4e61-a047-d7134aca15f0",
+    "7c8d2aed-cbcf-460f-b470-b7379c8c98a4",
+    "16607060699df11384",
+    "16623649202cdc4dd6",
+    "cb596b7c-2a8e-42be-897f-8d2dfa928ac2",
+    "1660721689a004f443",
+    "166193136108e7c434",
+    "1660713992681be75b",
+    "166070776357b9a25b",
+    "product-recommendations",
+    "sma_reviews_section_auto"
+  ]
+}
