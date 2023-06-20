@@ -70,11 +70,11 @@
       <div class="pathfinder-series-right">
         <div class="pathfinder-series-images">
           <div class="pathfinder-series-image-trailer">
-            <img class="img-trailer" :src="img_trailer" v-show="trailer_isshow" loading="lazy"/>
+            <img class="img-trailer lazyload" :src="img_trailer" :data-src="img_trailer" v-show="trailer_isshow" />
           </div>
           <div class="pathfinder-series-image-bikes">
-            <img class="img-bike-top" :src="img_bike_top" loading="lazy"/>
-            <img class="img-bike-bottom" :src="img_bike_bottom" loading="lazy"/>
+            <img class="img-bike-top lazyload" :src="img_bike_top" :data-src="img_bike_top" />
+            <img class="img-bike-bottom lazyload" :src="img_bike_bottom" :data-src="img_bike_bottom" />
             
           </div>
         </div>
