@@ -47,10 +47,12 @@
           "type": "gifts",
           "settings": {
             "title": "Gift",
+            "remark": "",
             "gift_products": [
-              "beecool-3rd-anniversary-special-pack",
+              "beecool-3rd-anniversary-pack",
               "foldable-ebike-cargo-trailer"
-            ]
+            ],
+            "isshow_cart": true
           }
         },
         "54bc4e24-ca42-4e1a-a9a3-f9774c6d2da8": {
