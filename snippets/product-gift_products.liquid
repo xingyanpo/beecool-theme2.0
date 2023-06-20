@@ -19,7 +19,7 @@
       </div>
       <div class="product-gifts-content-right">
         <p class="product-gifts-content-title">{{ product.title }}</p>
-        <p class="product-gifts-content-price">{{ product.price | money }}</p>
+        <p class="product-gifts-content-price">{{ product.price | minus: 7500 | money }}</p>
         <div class="product-gifts-btns" {%- if block.settings.isshow_cart == false -%} style="justify-content: flex-start" {%- endif -%}>
           <a class="product-gifts-content-button" href="{{ product.url }}">Learn More</a>
           {% if block.settings.isshow_cart %}
