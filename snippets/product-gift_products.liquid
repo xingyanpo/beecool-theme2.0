@@ -1,6 +1,6 @@
 
 <div class="product-gifts">
-  <h2 class="product-gifts-title">{{ block.settings.title }}</h2>
+  {%- if block.settings.title != blank -%}<h2 class="product-gifts-title">{{ block.settings.title }}</h2>{%- endif -%}
   {%- if block.settings.remark != blank -%}<div class='product-gifts-remark'>{{ block.settings.remark }}</div> {%- endif -%}
   {%- for product in block.settings.gift_products -%}
   <div class="product-gifts-content">
