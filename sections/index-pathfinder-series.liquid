@@ -70,11 +70,11 @@
       <div class="pathfinder-series-right">
         <div class="pathfinder-series-images">
           <div class="pathfinder-series-image-trailer">
-            <img class="img-trailer lazyload" :src="img_trailer" :data-src="img_trailer" v-show="trailer_isshow" />
+            <img class="img-trailer lazyload" :src="imageInit(img_trailer, '480')" :data-src="img_trailer" v-show="trailer_isshow" />
           </div>
           <div class="pathfinder-series-image-bikes">
-            <img class="img-bike-top lazyload" :src="img_bike_top" :data-src="img_bike_top" />
-            <img class="img-bike-bottom lazyload" :src="img_bike_bottom" :data-src="img_bike_bottom" />
+            <img class="img-bike-top lazyload" :src="imageInit(img_bike_top, '480')" :data-src="img_bike_top" />
+            <img class="img-bike-bottom lazyload" :src="imageInit(img_bike_bottom, '480')" :data-src="img_bike_bottom" />
             
           </div>
         </div>
@@ -99,14 +99,14 @@
                    pathfinder: [
          {
            color: "#5B9BD5",
-           image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/10e5c340046fedce7d952110e7f010e6_560x.webp?v=1684138445",
+           image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/10e5c340046fedce7d952110e7f010e6.webp?v=1684138445",
            price: 2150,
            compare_price:2799,
            isshow: true
          },
           {
            color: "#000000",
-           image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/c61aee4cc5f49a04212a9a2a164dc7cb_560x.webp?v=1684138443",
+           image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/c61aee4cc5f49a04212a9a2a164dc7cb.webp?v=1684138443",
            price: 2150,
            compare_price:2799,
            isshow: false
@@ -115,49 +115,49 @@
           pathfinder_thru: [
              {
                color: "#FF0000",
-               image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/027e011675fdfade0ca538264d3540e1_560x.webp?v=1684138445",
+               image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/027e011675fdfade0ca538264d3540e1.webp?v=1684138445",
                price: 2149,
                compare_price:2799,
                isshow: true
              },
               {
                color: "#ED7D31",
-               image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/afd602fda06b99a9e4fc0185416f9359_560x.webp?v=1684138441",
+               image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/afd602fda06b99a9e4fc0185416f9359.webp?v=1684138441",
                price: 2149,
                compare_price:2799,
                isshow: false
              },
               {
                color: "#70AD47",
-               image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/8f73ec77df762ee3bcdecaa76c379351_560x.webp?v=1684138445",
+               image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/8f73ec77df762ee3bcdecaa76c379351.webp?v=1684138445",
                price: 2149,
                compare_price:2799,
                isshow: false
              },
               {
                color: "#5B9BD5",
-               image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/thru_6831e807-20ab-490b-97f9-9cdd4ef473e3_560x.webp?v=1684138445",
+               image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/thru_6831e807-20ab-490b-97f9-9cdd4ef473e3.webp?v=1684138445",
                price: 2149,
                compare_price:2799,
                isshow: false
              },
               {
                color: "#56237E",
-               image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4daf78bd1af84cb8446d49add5fc1037_560x.webp?v=1684138445",
+               image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/4daf78bd1af84cb8446d49add5fc1037.webp?v=1684138445",
                price: 2149,
                compare_price:2799,
                isshow: false
              },
               {
                color: "#F2F2F2",
-               image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/1e0946d5d8edc5b89e23dfd488285de3_560x.webp?v=1684138441",
+               image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/1e0946d5d8edc5b89e23dfd488285de3.webp?v=1684138441",
                price: 2149,
                compare_price:2799,
                isshow: false
              },
               {
                color: "#000000",
-               image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/thru_560x.webp?v=1684138444",
+               image: "https://cdn.shopify.com/s/files/1/0554/7098/1274/files/thru.webp?v=1684138444",
                price: 2149,
                compare_price:2799,
                isshow: false
@@ -166,14 +166,14 @@
                   trailer: [
                     {
                       name: '2 Gift Pack',
-                      image: "https://cdn.shopifycdn.net/s/files/1/0730/5969/6953/files/785e76cacd9c72b1b82224c2febe91e2.webp?v=1687247529",
+                      image: "https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/43fc36fc6705ab107c05071eae416914.webp?v=1687409177",
                       price: 300,
                       compare_price:338,
                       isshow: true
                     },
                     {
                       name: '1 Gift Pack',
-                      image: "https://cdn.shopifycdn.net/s/files/1/0730/5969/6953/files/0f546f659f8b8ec33959d2b8bfb6d2d1.webp?v=1687247529",
+                      image: "https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/31230fa3eae0147b47020c0f0cff33dc_394ceeb6-ed2e-4d98-b180-1be861cc034c.webp?v=1687409177",
                       price: 150,
                       compare_price:0,
                       isshow: false
@@ -194,7 +194,7 @@
                     },
                     {
                       name: '1 Gift Pack + 1 Trailer',
-                      image: "https://cdn.shopifycdn.net/s/files/1/0730/5969/6953/files/a04046e71fa2c55e78442b30abb19562.webp?v=1687247529",
+                      image: "https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/5b209f8d78ed1bbb02d1531e5f834965_c5742ea2-72fa-41aa-9935-af8a0ec2826f.webp?v=1687409177",
                       price: 300,
                       compare_price:338,
                       isshow: false
@@ -242,7 +242,21 @@
                   this.img_bike_top = this.pathfinder[0].image
                   this.img_bike_bottom = this.pathfinder_thru[0].image
                   this.img_trailer = this.trailer[0].image
+              },
+              imageInit (url, pixel = "320") {
+                if (url.indexOf(".webp") != -1) {
+                  return url.replace('.webp', `_${pixel}x.webp`)
+                } else if (url.indexOf(".png") != -1) {
+                  return url.replace('.png', `_${pixel}x.png`)
+                } else if (url.indexOf(".jpg") != -1) {
+                  return url.replace('.jpg', `_${pixel}x.jpg`)
+                } else if (url.indexOf(".jpeg") != -1) {
+                  return url.replace('.jpeg', `_${pixel}x.jpeg`)
+                } else {
+                  return url
+                }
               }
+
             },
             mounted() {
               this.init()
