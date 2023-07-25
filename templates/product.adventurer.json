@@ -65,13 +65,13 @@
         "3b5b34d0-a0f7-4294-b9f8-df119b10fb07": {
           "type": "gifts",
           "settings": {
-            "title": "",
-            "remark": "<p><strong>Need 1 MORE Anniversary Pack or Trailer?<\/strong><\/p><p><strong>Add another one to your cart and use code<\/strong><\/p><p><strong>\"MOREFUN\" to save $75 on your 2nd Pack or Trailer<\/strong><\/p>",
+            "title": "Free Trailer Or Accessories Pack For All BeeCool Models",
+            "remark": "<p><strong>Gift Comes With Your Order Automatically <\/strong><\/p>",
             "gift_products": [
               "beecool-3rd-anniversary-pack",
               "foldable-ebike-cargo-trailer"
             ],
-            "isshow_cart": true
+            "isshow_cart": false
           }
         },
         "1878aa0d-5dcc-408f-b726-7d083314177d": {
