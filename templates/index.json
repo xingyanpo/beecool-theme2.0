@@ -215,6 +215,9 @@
         "8c56fdb2-0f31-4b14-b3d7-8c7e8414a9d3",
         "ffc80f47-2377-45a9-a47b-079d40dc79e1"
       ],
+      "custom_css": [
+        ".product-meta__share-button-item--twitter {display: flex;}"
+      ],
       "settings": {
         "section_height": "auto",
         "transition_type": "sweep",
