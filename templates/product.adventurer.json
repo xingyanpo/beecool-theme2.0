@@ -123,6 +123,9 @@
         "426f5053-a8a7-4bbc-883a-d4e9bc913225",
         "fa8b9b71-44ce-4121-ac33-e92069f5e399"
       ],
+      "custom_css": [
+        ".product-meta__share-button-item--twitter {display: flex;}"
+      ],
       "settings": {
         "show_vendor": false,
         "show_sku": false,
