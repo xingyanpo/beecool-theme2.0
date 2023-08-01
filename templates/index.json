@@ -30,6 +30,7 @@
       "blocks": {
         "slide-2": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/banner---ca_2f160752-05fc-488c-9c5f-96f90f0d2bf6.jpg",
             "mobile_image": "shopify:\/\/shop_images\/banner-mobile---ca_8a77b3b1-4f07-4b05-93cd-2e467cf627bd.jpg",
@@ -52,6 +53,7 @@
         },
         "7ccf04ac-c041-454f-8445-8ec1bc0e048e": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/banner---_---ca_543e037a-40d3-4b15-b840-17d63021dd8a.jpg",
             "mobile_image": "shopify:\/\/shop_images\/banner-mobile---_---ca_4d709ee7-1f0e-4e85-8684-ed0ef6ad86b6.jpg",
@@ -75,8 +77,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner-path-pc_5eeb74da-e9ac-44fe-848f-0b10d622c8c8.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/adv-1123-mobile_0a17f181-1dc1-4c99-b50e-16301921dae8.webp",
+            "image": "shopify:\/\/shop_images\/adv--Trailer.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/mobile-adv--Trailer.jpg",
             "text_position": "bottom_right",
             "subheading": "Unlock Your Adventures Anywhere",
             "title": "Bee Adventurer",
@@ -97,8 +99,8 @@
         "32e02aa0-90a5-4597-81ba-8df70fdd4a31": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pathfinder-thruBanner-orange-pc.webp",
-            "mobile_image": "shopify:\/\/shop_images\/pathfinder-thru-orange-mobile.webp",
+            "image": "shopify:\/\/shop_images\/exp--Trailer.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/mobile-exp--Trailer.jpg",
             "text_position": "bottom_right",
             "subheading": "A Cozy Exploring on All Terrains",
             "title": "Bee Explorer",
@@ -119,8 +121,8 @@
         "87047e1f-ec91-45f8-8329-3ed9a14b0e78": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner-path-pc_5eeb74da-e9ac-44fe-848f-0b10d622c8c8.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/path-mobile_2b1d183c-cf84-4f12-9901-66abcec19abf.jpg",
+            "image": "shopify:\/\/shop_images\/path--Trailer.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/mobile-adv--Trailer.jpg",
             "text_position": "bottom_right",
             "subheading": "Your Well-Equipped Off-Road Mate",
             "title": "Bee Pathfinder",
@@ -141,8 +143,8 @@
         "4bbf498b-4bd8-4cc6-9389-377c96789716": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/path-thru_9b1b7ef4-206a-45ba-ae0a-29dc396b6441.webp",
-            "mobile_image": "shopify:\/\/shop_images\/path-thru_-mobile.webp",
+            "image": "shopify:\/\/shop_images\/path_thru--Trailer.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/mobile-path_thru--Trailer.jpg",
             "text_position": "bottom_right",
             "subheading": "Easy On, Easy Go",
             "title": "Bee Pathfinder Step-Thru",
@@ -163,8 +165,8 @@
         "8c56fdb2-0f31-4b14-b3d7-8c7e8414a9d3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/cha-pc.webp",
-            "mobile_image": "shopify:\/\/shop_images\/cha-mobile.webp",
+            "image": "shopify:\/\/shop_images\/pc-cha.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/mobile-cha.jpg",
             "text_position": "bottom_right",
             "subheading": "Ultra Powerful and Durable Beast",
             "title": "Bee Challenger",
@@ -185,8 +187,8 @@
         "ffc80f47-2377-45a9-a47b-079d40dc79e1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_2_22cf18e8-b54f-4e65-8c80-b3546a4cd0cd.webp",
-            "mobile_image": "shopify:\/\/shop_images\/rambler.webp",
+            "image": "shopify:\/\/shop_images\/pc-ram.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/mobile-ram.jpg",
             "text_position": "bottom_right",
             "subheading": "Pure Cruising Pleasure",
             "title": "Bee Rambler",
