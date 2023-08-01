@@ -81,7 +81,7 @@
           "message-1": {
             "type": "message",
             "settings": {
-              "text": "BeeCool Anniversary Offer: Free $469 CAD Trailer Or $469 CAD Gift Pack"
+              "text": "Buy 1 Ebike Get 1 Free Trailer"
             }
           }
         },
@@ -89,7 +89,7 @@
           "message-1"
         ],
         "settings": {
-          "show_count_down": true,
+          "show_count_down": false,
           "show_count_down_url": "shopify:\/\/pages\/christmas-amazing-gifts",
           "banner_prefix": "Free Accessories Pack &amp; Trailer Ends in",
           "show_count_down_text": "",
