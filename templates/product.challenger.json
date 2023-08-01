@@ -16,7 +16,7 @@
             "copy_back_color": "#2a408e",
             "title": "Limited Gift",
             "copy_text": "",
-            "text": "<p><strong>Buy Any Ebike Get 1 Free Trailer Or 1 Gift Pack<\/strong><\/p>"
+            "text": "<p><strong>Buy Any Ebike Get 1 Free Trailer<\/strong><\/p>"
           }
         },
         "variant_picker": {
@@ -46,10 +46,9 @@
         "981ac60a-9f30-4c93-8228-40a2472d8047": {
           "type": "gifts",
           "settings": {
-            "title": "Free Trailer Or Accessories Pack For All BeeCool Models",
+            "title": "Free Trailer For All BeeCool Models",
             "remark": "<p><strong>Gift Comes With Your Order Automatically <\/strong><\/p>",
             "gift_products": [
-              "beecool-3rd-anniversary-pack",
               "foldable-ebike-cargo-trailer"
             ],
             "isshow_cart": false
