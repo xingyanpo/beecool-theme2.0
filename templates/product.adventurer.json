@@ -65,10 +65,9 @@
         "3b5b34d0-a0f7-4294-b9f8-df119b10fb07": {
           "type": "gifts",
           "settings": {
-            "title": "Free Trailer Or Accessories Pack For All BeeCool Models",
+            "title": "Free Trailer For All BeeCool Models",
             "remark": "<p><strong>Gift Comes With Your Order Automatically <\/strong><\/p>",
             "gift_products": [
-              "beecool-3rd-anniversary-pack",
               "foldable-ebike-cargo-trailer"
             ],
             "isshow_cart": false
