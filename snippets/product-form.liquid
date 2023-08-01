@@ -1149,11 +1149,13 @@
     product_color_selected[0].querySelector("label").style.backgroundImage = "url('https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/cha_-1.jpg?v=1675845937')"
     product_color_selected[1].querySelector("label").style.backgroundImage = "url('https://cdn.shopifycdn.net/s/files/1/0554/7098/1274/files/cha_2bf9982a-79a0-4ba2-b8dc-46c873cd12e6.jpg?v=1675845341')"
     product_color_selected[2].querySelector("label").style.backgroundColor = "black"
-  })()
+  })();
   {% endif %}
 
 
   {% if product.title != "Bee Pathfinders “Free Mix” Bundle" %}
+ (function () {
+  
     let add_to_cart = document.querySelector("#AddToCart")
     let product_count = document.querySelector(".quantity-selector__input")
     let color_lists = document.querySelectorAll(".color-swatch-list .color-swatch")
@@ -1186,6 +1188,8 @@
         console.error('Error:', error);
       });
     })
+  
+})()
   {% endif %}
 
 
