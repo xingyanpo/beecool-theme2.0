@@ -481,7 +481,7 @@
             "type": "activity",
             "settings": {
               "background_img": "https:\/\/cdn.shopifycdn.net\/s\/files\/1\/0554\/7098\/1274\/files\/A7R08563-_2_111.jpg?v=1685352755",
-              "activity_title": "Anniversary Offer 1",
+              "activity_title": "Special Offer",
               "activity_desc": "Buy any ebike and get 1 FREE Cargo Trailer (Worth $469.00 CAD).",
               "button_text": "Get Offer",
               "button_url": "shopify:\/\/collections\/all-e-bikes",
@@ -490,6 +490,7 @@
           },
           "4382f61a-3f31-4d45-a044-f8d2621de135": {
             "type": "activity",
+            "disabled": true,
             "settings": {
               "background_img": "https:\/\/cdn.shopifycdn.net\/s\/files\/1\/0554\/7098\/1274\/files\/3_bcea5705-711d-4d9a-9007-01cddeeab133.jpg?v=1687162739",
               "activity_title": "Anniversary Offer 2",
@@ -577,7 +578,7 @@
           "title_line_one": "Welcome To",
           "title_line_two": "OUR COOL OFFERS",
           "scroll_title": "BeeCool Bikes",
-          "activity_count": 4
+          "activity_count": 3
         }
       },
       "valentine-day": {
