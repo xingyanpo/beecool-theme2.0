@@ -10,6 +10,7 @@
         },
         "4533c794-279c-409e-b319-aebd7de7f517": {
           "type": "off",
+          "disabled": true,
           "settings": {
             "is_can_copy": false,
             "copy_img": "shopify:\/\/shop_images\/1_5483cbe7-fda4-4701-8a2f-ce944c8e6c5f.png",
@@ -45,6 +46,7 @@
         },
         "7995c8f8-477a-4441-b12c-40787ebd5b70": {
           "type": "gifts",
+          "disabled": true,
           "settings": {
             "title": "Free Trailer For All BeeCool Models",
             "remark": "<p><strong>Gift Comes With Your Order Automatically <\/strong><\/p>",
@@ -380,7 +382,6 @@
     },
     "9b1ee68b-36ec-44b8-b4ea-494bf7b9b846": {
       "type": "product-youtube",
-      "disabled": true,
       "blocks": {
         "f4e04d54-ff7b-41fb-9872-516cb3279ed7": {
           "type": "image",
@@ -465,6 +466,7 @@
         "3e4920e1-dc29-498a-bcbb-123bf16b4d02",
         "05455b1e-80c6-455c-8062-aa98f874cfdf"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -740,7 +742,6 @@
     },
     "7bf06a01-ac06-4719-9cee-2f50522d8807": {
       "type": "jd-product-faq",
-      "disabled": true,
       "blocks": {
         "b892dc9b-42e5-4ae3-ae43-a7973f0e3118": {
           "type": "exhibition",
@@ -777,6 +778,7 @@
         "02ff5791-552e-4180-bc30-184a7f722df7",
         "06bd58bb-ff8f-438d-8405-226f2cf6b733"
       ],
+      "disabled": true,
       "settings": {
         "title": "Frequently Asked Questions"
       }
@@ -843,7 +845,6 @@
     },
     "product-content": {
       "type": "product-content",
-      "disabled": true,
       "blocks": {
         "description": {
           "type": "description",
@@ -854,6 +855,7 @@
       "block_order": [
         "description"
       ],
+      "disabled": true,
       "settings": {
       }
     }
