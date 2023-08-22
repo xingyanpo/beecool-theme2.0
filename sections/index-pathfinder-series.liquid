@@ -55,8 +55,8 @@
               <button :style="{ 'background-color': item.color }"></button>
             </div>
           </div>
-          <h4 v-if="!trailer.length === 1 && trailer[0].name !==='None'">Cargo Trailer</h4>
-          <div class="pathfinder-series-color-select" v-if="!trailer.length === 1 && trailer[0].name !==='None'">
+          <h4 v-if='isShowPartThree()'>Cargo Trailer</h4>
+          <div class="pathfinder-series-color-select" v-if='isShowPartThree()'>
             <div v-for="(item,index) in trailer" :class="{'pathfinder-series-color-select-trailer-warp': true, 'pathfinder-series-color-select-trailer-border':item.isshow}" :key="item.color" @click=colorHandle(item,index,'trailer')>
               <button :style="{ 'background-color': item.color }">[[item.name]]</button>
             </div>
@@ -246,6 +246,9 @@
             },
             comparePrice () {
               return this.compare_price.reduce((a, b) => a + b)
+            },
+            isShowPartThree () {
+              return this.trailer.length === 1 && this.trailer[0].name === "None"
             }
           }
         }).mount('#pathfinder-series')
