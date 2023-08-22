@@ -479,6 +479,7 @@
         "blocks": {
           "1092e9c5-657e-46c5-9f1b-4666bfd76874": {
             "type": "activity",
+            "disabled": true,
             "settings": {
               "background_img": "https:\/\/cdn.shopifycdn.net\/s\/files\/1\/0554\/7098\/1274\/files\/A7R08563-_2_111.jpg?v=1685352755",
               "activity_title": "Special Offer",
@@ -493,7 +494,7 @@
             "settings": {
               "background_img": "https:\/\/cdn.shopifycdn.net\/s\/files\/1\/0554\/7098\/1274\/files\/278447744_5402708329774165_8801041878297420549_n.webp?v=1685347704",
               "activity_title": "$1500 CAD+ OFF Bundle",
-              "activity_desc": "Pick your color combination and trailer pack with best discounts!",
+              "activity_desc": "Pick your color combination with best discounts!",
               "button_text": "Get Yours",
               "button_url": "shopify:\/\/products\/pathfinders-black-bundle",
               "is_opon_in_new_tag": false
