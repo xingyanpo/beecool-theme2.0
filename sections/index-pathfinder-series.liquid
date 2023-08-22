@@ -203,8 +203,8 @@
                    this.compare_price[1] = item.compare_price
                    this.img_bike_bottom = item.image
                 } else {
-                  this.trailer.forEach(item => item.isshow = false)
-                  this.trailer[index].isshow = true
+                  this.trailer?.forEach(item => item.isshow = false)
+                  this.trailer[index]?.isshow = true
                   this.price[2] = item.price
                   this.compare_price[2] = item.compare_price
                   this.img_trailer = item.image
@@ -216,11 +216,11 @@
                 }
               },
               init() {
-                  this.price = [this.pathfinder[0].price,this.pathfinder_thru[0].price,this.trailer[0].price]
-                  this.compare_price = [this.pathfinder[0].compare_price,this.pathfinder_thru[0].compare_price,this.trailer[0].compare_price]
+                  this.price = [this.pathfinder[0].price,this.pathfinder_thru[0].price,this.trailer[0]?.price]
+                  this.compare_price = [this.pathfinder[0].compare_price,this.pathfinder_thru[0].compare_price,this.trailer[0]?.compare_price]
                   this.img_bike_top = this.pathfinder[0].image
                   this.img_bike_bottom = this.pathfinder_thru[0].image
-                  this.img_trailer = this.trailer[0].image
+                  this.img_trailer = this.trailer[0]?.image
               },
               imageInit (url, pixel = "320") {
                 if (url.indexOf(".webp") != -1) {
