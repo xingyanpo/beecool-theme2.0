@@ -248,7 +248,7 @@
               return this.compare_price.reduce((a, b) => a + b)
             },
             isShowPartThree () {
-              return this.trailer.length === 1 && this.trailer[0].name === "None"
+              return this.trailer.length === 1 && this.trailer[0].name === "None" ? false : true
             }
           }
         }).mount('#pathfinder-series')
