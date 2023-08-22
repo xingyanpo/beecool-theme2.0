@@ -77,8 +77,8 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/adv--Trailer.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/mobile-adv--Trailer.jpg",
+            "image": "shopify:\/\/shop_images\/pc-adv.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/mobile-adv.jpg",
             "text_position": "bottom_right",
             "subheading": "Unlock Your Adventures Anywhere",
             "title": "Bee Adventurer",
@@ -99,8 +99,8 @@
         "32e02aa0-90a5-4597-81ba-8df70fdd4a31": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/exp--Trailer.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/mobile-exp--Trailer.jpg",
+            "image": "shopify:\/\/shop_images\/pc-exp.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/mobile-exp.jpg",
             "text_position": "bottom_right",
             "subheading": "A Cozy Exploring on All Terrains",
             "title": "Bee Explorer",
@@ -1152,7 +1152,6 @@
     },
     "b212ad72-41fd-48ac-9f4e-be359939d3f3": {
       "type": "jd-afterSales",
-      "disabled": true,
       "blocks": {
         "93ac4a81-7949-45c1-ae71-6a535f2ecee3": {
           "type": "afterSales",
@@ -1189,6 +1188,7 @@
         "16660654-d9c5-4230-96c0-1dc953242da7",
         "34b1e530-ee81-497d-a29a-79b4661bbaec"
       ],
+      "disabled": true,
       "settings": {
         "policy_color": "#f3f5f5",
         "policy_scolor_mobile": "#ffffff"
