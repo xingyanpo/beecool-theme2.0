@@ -478,14 +478,14 @@
           "type": "productImage_describe",
           "settings": {
             "title": "<p>Powerful Motor<\/p>",
-            "text": "<p>The high-speed continuous 1000W (peaking to 1300W) brushless geared hub motor with 105Nm(1000W) of max torque, which gives you a maximum power and be unstoppable on bad terrains. We’d love to let you feel the passion and enjoy the pleasure of cycling!<\/p>",
-            "text_mobile": "<p>The high-speed continuous 1000W (peaking to 1300W)brushless geared hub motor with  105Nm(1000W) of max torque, which gives you a maximum power and be unstoppable on bad terrains. We’d love to let you feel the passion and enjoy the pleasure of cycling!<\/p>",
+            "text": "<p>The high-speed continuous 1000W (peaking to 1300W) brushless geared hub motor with 110Nm of max torque, which gives you a maximum power and be unstoppable on bad terrains. We’d love to let you feel the passion and enjoy the pleasure of cycling!<\/p>",
+            "text_mobile": "<p>The high-speed continuous 1000W (peaking to 1300W)brushless geared hub motor with  110Nm of max torque, which gives you a maximum power and be unstoppable on bad terrains. We’d love to let you feel the passion and enjoy the pleasure of cycling!<\/p>",
             "number": "1000",
             "number_company": "W",
             "number_text": "Motor Power",
-            "number2": "105",
+            "number2": "110",
             "number_company2": "Nm",
-            "number_text2": "105Nm Max Motor Torque",
+            "number_text2": "110Nm Max Motor Torque",
             "bg_color": ""
           }
         }
