@@ -80,6 +80,7 @@
         "blocks": {
           "message-1": {
             "type": "message",
+            "disabled": true,
             "settings": {
               "text": "Save Up To $900 CAD\/eBike"
             }
