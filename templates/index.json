@@ -230,6 +230,7 @@
     },
     "eebc75bb-acdb-49c1-8f64-2913231b0ebe": {
       "type": "index-pathfinder-series",
+      "disabled": true,
       "settings": {
         "title": "Pathfinder \"Free Mix\" Bundle",
         "subtitle": "Make Your Color Combination",
