@@ -492,6 +492,7 @@
           },
           "a00f0ac8-8c37-4995-b2d2-909d1ac0359a": {
             "type": "activity",
+            "disabled": true,
             "settings": {
               "background_img": "https:\/\/cdn.shopifycdn.net\/s\/files\/1\/0554\/7098\/1274\/files\/278447744_5402708329774165_8801041878297420549_n.webp?v=1685347704",
               "activity_title": "$1100 CAD+ OFF Bundle",
