@@ -77,7 +77,7 @@
          <script>
         var infoShop='{{ shop.metafields.scm_review_importer.shop_info_setting | json}}';
         var dataApp= {
-            'host' : 'https://reviews.smartifyapps.com',
+            'host' : 'https://store.laireviews.com',
             'cdn' : 'https://d1bu6z2uxfnay3.cloudfront.net',
             'productShopifyId' : '{{ product.id }}',
             'shopName' : '{{ shop.permanent_domain | remove: ".myshopify.com"}}',
@@ -98,7 +98,7 @@
     </style>
   <\/`+ headTagSma +`>
   <`+ bodyTagSma +` style="" data-productidshopify="{{ product.id }}" class="home-page ">
-          <div id="scm-review-importer-value" data-url="https://reviews.smartifyapps.com/api/load-more-home-page" data-type= "homePage" data-shopname="{{ shop.permanent_domain}}" data-productidshopify="{{ product.id }}" data-pagecurrent="1" data-rate="null"
+          <div id="scm-review-importer-value" data-url="https://store.laireviews.com/api/load-more-home-page" data-type= "homePage" data-shopname="{{ shop.permanent_domain}}" data-productidshopify="{{ product.id }}" data-pagecurrent="1" data-rate="null"
              data-reviewperpage="10"></div>
             <div class="header-container"></div>
         <div id="reviewImporter">
@@ -201,7 +201,7 @@
          <script>
                   var infoShop='{{ shop.metafields.scm_review_importer.shop_info_setting | json}}';
                    var dataApp= {
-                   'host' : 'https://reviews.smartifyapps.com',
+                   'host' : 'https://store.laireviews.com',
                    'shopName' : '{{ shop.permanent_domain | remove: ".myshopify.com"}}'
                    };
                    var scmCustomData= `+ scmCustomData +` ;
@@ -213,7 +213,7 @@
     <\/`+ headTagSma +`>
  <`+ bodyTagSma +` style="display: none; opacity: 0;" class="">
      <div class="scm-review-importer-popup">
-              <div id="scm-review-importer-value" data-url="https://reviews.smartifyapps.com/api/load-more-home-page" data-type= "homePage" data-shopname="{{ shop.permanent_domain}}" data-productidshopify="{{ product.id }}" data-pagecurrent="1" data-rate="null"
+              <div id="scm-review-importer-value" data-url="https://store.laireviews.com/api/load-more-home-page" data-type= "homePage" data-shopname="{{ shop.permanent_domain}}" data-productidshopify="{{ product.id }}" data-pagecurrent="1" data-rate="null"
              data-reviewperpage="10"></div>
                 <div class="scm-row">
             <div class="scm-col-6 left">
