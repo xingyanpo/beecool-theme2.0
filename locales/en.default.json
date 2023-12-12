@@ -471,7 +471,10 @@
       "message_error_character": "Please replace the '<,>' character with the equivalent character",
       "message_error_file_upload": "Please upload a file smaller than 2MB.",
       "message_error_video_upload": "Please upload a video file smaller than 50MB",
-      "message_error_type_media_upload": "Not support this file."
+      "message_error_type_media_upload": "Not support this file.",
+      "purchase_to_leave_reviews": "Please make a purchase by this email address to leave us reviews.",
+      "log_in_to_leave_reviews": "Please login to an account to leave us reviews.",
+      "purchase_to_a_specific_product": "Please make a purchase for this product by this email address to leave us reviews."
     },
     "thank_you": {
       "des": "This message will automatically close in 8 seconds.",
@@ -502,7 +505,25 @@
       "badge": "Get {{discount_value}} off",
       "des": "We'll also send it by email",
       "photo": "Upload photo reviews to get {{discount_value}} off discount instantly",
-      "title": "Use the following discount code for {{discount_value}} off your next purchase"
+      "title": "Use the following discount code for {{discount_value}} off your next purchase",
+      "coupon_waiting_message": "Thank you for reviewing our product. The discount code will be sent to your email once the review is approved."
+    },
+    "qa": {
+      "qaAnswerField": "Your answer",
+      "qaQuestionField": "Your question",
+      "qaTitle": "Questions",
+      "qaFormTitle": "Ask a question",
+      "qaQuestionTitle": "Question:",
+      "qaAnswerTitle": "Answer:",
+      "qaStoreOwnerBadge": "Store owner",
+      "qaPastBuyerBadge": "Past customer",
+      "qaSuccessMessage": "Thank you!",
+      "qaFailMessage": "Submitted unsuccessfully!",
+      "qaAskQuestionBtn": "Ask a question",
+      "qaSubmitQuestionBtn": "Submit question",
+      "qaSubmitAnswerBtn": "Submit answer",
+      "qaReplyBtn": "Reply",
+      "qaLoadMoreAnswerBtn": "See more answers"
     }
   }
 }
