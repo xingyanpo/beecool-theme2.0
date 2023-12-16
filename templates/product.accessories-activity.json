@@ -101,7 +101,6 @@
     },
     "product-content": {
       "type": "product-content",
-      "disabled": true,
       "blocks": {
         "description": {
           "type": "description",
@@ -113,12 +112,12 @@
       "block_order": [
         "description"
       ],
+      "disabled": true,
       "settings": {
       }
     },
     "16607057527debbb37": {
       "type": "jd-product-icon",
-      "disabled": true,
       "blocks": {
         "c47d9bd9-5b2d-40cf-a1c9-2f9b757f3394": {
           "type": "productIcon",
@@ -243,6 +242,7 @@
         "9cb38dbf-2f52-43d8-81c5-c46b71fb5d19",
         "4924655e-ca19-4127-8629-0a3d00aa72c5"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -273,7 +273,6 @@
     },
     "16623649202cdc4dd6": {
       "type": "jd-productImage_describe",
-      "disabled": true,
       "blocks": {
         "7c66f518-1e74-46cc-a931-04f74ba8d7a5": {
           "type": "productImage_describe",
@@ -294,6 +293,7 @@
       "block_order": [
         "7c66f518-1e74-46cc-a931-04f74ba8d7a5"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -307,7 +307,6 @@
     },
     "1660721689a004f443": {
       "type": "jd-product-battery",
-      "disabled": true,
       "blocks": {
         "182e8a6b-944e-487b-9882-779a367d2732": {
           "type": "productBattery",
@@ -336,6 +335,7 @@
         "e593b7fc-536c-45a7-90d5-b203b18a9751",
         "fc10a433-9898-4d0a-b30e-04c1aa35fcb9"
       ],
+      "disabled": true,
       "settings": {
         "link": "",
         "link_mobile": "",
@@ -355,7 +355,6 @@
     },
     "166193136108e7c434": {
       "type": "jd-product-Features",
-      "disabled": true,
       "blocks": {
         "2610141a-784a-4917-90c6-1d0cfbe38630": {
           "type": "FeaturesBox",
@@ -416,6 +415,7 @@
         "37e1a90d-5adc-4a86-9d6b-2d4858a1f42b",
         "cfc7af4c-07f0-4e60-8830-f0ea4b01d184"
       ],
+      "disabled": true,
       "settings": {
         "title": "<p>Other Cool Features You’ll Love<\/p>",
         "title_mobile": "<p>Other Cool <br\/>Features You’ll Love<\/p>"
@@ -423,7 +423,6 @@
     },
     "1660713992681be75b": {
       "type": "jd-details-bottomTab",
-      "disabled": true,
       "blocks": {
         "7b3527c6-e148-4775-93b5-bdeb6db38b38": {
           "type": "categroy",
@@ -452,6 +451,7 @@
         "4d8b83aa-ad70-4823-8d3a-0ac863ac563e",
         "e4fb19ae-738a-4eda-898a-33a081613a10"
       ],
+      "disabled": true,
       "settings": {
         "header": "Specs",
         "see_more": "See more"
@@ -459,7 +459,6 @@
     },
     "166070776357b9a25b": {
       "type": "jd-details-tab",
-      "disabled": true,
       "blocks": {
         "26f0e566-3a31-4043-9626-84fec010c8eb": {
           "type": "categroy",
@@ -491,6 +490,7 @@
         "f42b426d-eeb0-41fb-991b-a7a1645ff16e",
         "4c2daef3-f4fb-46b5-aaa4-933b043d66c8"
       ],
+      "disabled": true,
       "settings": {
         "header": "Bee Adventurer",
         "desc": "<p>Bee Adventurer is one of our best equipped all-terrain electric bikes. The Bike is equipped with a 912-1008Wh Lithium-ion Battery, which gives the bike a long travel distance over 70 miles per charge on pedal-assist mode and 45 miles on throttle power mode. The continuous 750W motor and 4’’ fat tires lets the bike have maximum power to overcome any kinds of terrible terrain: soft sands, thick grass, heavy rain, slippery snow surface, steep rocks face. Our dual suspension system will bring you the max comfort.<\/p>",
@@ -509,9 +509,19 @@
       }
     },
     "sma_reviews_section_auto": {
-      "type": "reviews-importer-product",
+      "type": "apps",
+      "blocks": {
+        "sma_reviews_replace_section": {
+          "type": "shopify:\/\/apps\/lai-product-reviews\/blocks\/lai-product-section\/cad3c6c6-329e-4416-ba74-b79359b5b6e1",
+          "settings": {
+            "lai_product": ""
+          }
+        }
+      },
+      "block_order": [
+        "sma_reviews_replace_section"
+      ],
       "settings": {
-        "lai_product": ""
       }
     }
   },
