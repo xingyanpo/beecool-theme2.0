@@ -1,7 +1,19 @@
 {
   "sections": {
     "sma_reviews_section_auto": {
-      "type": "reviews-importer-section-happyPage",
+      "type": "apps",
+      "blocks": {
+        "sma_reviews_replace_home_page_section": {
+          "type": "shopify:\/\/apps\/lai-product-reviews\/blocks\/lai-home-page-section\/cad3c6c6-329e-4416-ba74-b79359b5b6e1",
+          "settings": {
+            "type_layout": "grid",
+            "source": "happyPage"
+          }
+        }
+      },
+      "block_order": [
+        "sma_reviews_replace_home_page_section"
+      ],
       "settings": {
       }
     },

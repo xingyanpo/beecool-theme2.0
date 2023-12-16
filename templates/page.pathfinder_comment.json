@@ -69,12 +69,19 @@
       }
     },
     "16618465422db69209": {
-      "type": "reviews-importer-product",
+      "type": "apps",
+      "blocks": {
+        "sma_reviews_replace_section": {
+          "type": "shopify:\/\/apps\/lai-product-reviews\/blocks\/lai-product-section\/cad3c6c6-329e-4416-ba74-b79359b5b6e1",
+          "settings": {
+            "lai_product": "bee-pathfinder-1"
+          }
+        }
+      },
+      "block_order": [
+        "sma_reviews_replace_section"
+      ],
       "settings": {
-        "title": "Bee Pathfinder Reviews",
-        "text": "Just ask our customers",
-        "lai_product": "bee-pathfinder-1",
-        "color": "#f9f9f9"
       }
     },
     "e16d0de9-5c9c-4d6e-b046-25a333fab375": {
