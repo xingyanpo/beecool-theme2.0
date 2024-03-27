@@ -30,9 +30,8 @@
       "blocks": {
         "6bd9a834-0d68-4af6-a409-62bd5a013c74": {
           "type": "collectionProduct2",
-          "disabled": true,
           "settings": {
-            "title": "BeeCool Bundle",
+            "title": "Bee Challenger",
             "text": "Spend Less and Ride More",
             "des": "<p>BeeCool offers you the most cost-effective bundle ever to help you save a lot. (The bundle will be counted as 1 e-bike product when it is applied with other available discounts)<\/p>",
             "product_single": "bee-challenger",
@@ -76,6 +75,7 @@
         },
         "4881de26-10b9-4fbd-85b5-580fa3eb15d4": {
           "type": "collectionProduct",
+          "disabled": true,
           "settings": {
             "title": "Moped-style E-bikes",
             "text": "All Terrain E-bikes",
