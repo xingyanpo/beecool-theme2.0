@@ -28,7 +28,7 @@
     "currency_code_enabled": false,
     "stagger_products_apparition": true,
     "round_color_swatches": true,
-    "color_swatch_config": "aurora:#005a8e\nred:red\nfull black:#666",
+    "color_swatch_config": "aurora:#005a8e\nred:red\nfull black:#666\nGun Metal:#5D5953",
     "show_vendor": false,
     "show_secondary_image": true,
     "product_add_to_cart": true,
