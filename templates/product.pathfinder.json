@@ -77,6 +77,7 @@
         },
         "1878aa0d-5dcc-408f-b726-7d083314177d": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_alignment": "center",
             "image_width": 350,
@@ -800,7 +801,8 @@
         "sma_reviews_replace_section": {
           "type": "shopify:\/\/apps\/lai-product-reviews\/blocks\/lai-product-section\/cad3c6c6-329e-4416-ba74-b79359b5b6e1",
           "settings": {
-            "lai_product": ""
+            "lai_product": "",
+            "title": ""
           }
         }
       },
@@ -808,6 +810,8 @@
         "sma_reviews_replace_section"
       ],
       "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
       }
     },
     "bafe000d-0a8f-4caf-9e24-8550c178dc1b": {
