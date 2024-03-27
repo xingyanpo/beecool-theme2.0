@@ -1200,4 +1200,11 @@
        product_color_selected[index].querySelector("label").style.backgroundColor = item
     })
   {% endif %}
+
+  {% if product.title == "Bee Adventurer" %}
+    (function () {
+      let product_color_selected = document.querySelectorAll(".color-swatch-list .color-swatch")
+      product_color_selected[3].querySelector("label").style.backgroundColor = "#5D5953"
+    })()
+  {% endif %}
 </script>
